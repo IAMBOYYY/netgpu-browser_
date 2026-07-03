@@ -29,8 +29,14 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug
 
+      - name: List APK folder
+        run: |
+          echo "Contents of apk directory:"
+          find app/build/outputs/apk -type f 2>/dev/null || echo "No apk folder found"
+      
+      
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: NETGPU-Browser-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/**/*.apk
