@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,13 +17,13 @@ import kotlinx.coroutines.plus
 import mozilla.components.browser.state.selector.findTabOrCustomTab
 import mozilla.components.browser.state.state.SessionState
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.R
-import org.mozilla.fenix.android.FenixDialogFragment
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentCookieBannerHandlingDetailsDialogBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.trackingprotection.ProtectionsState
-import org.mozilla.fenix.trackingprotection.ProtectionsStore
+import com.netgpu.browser.R
+import com.netgpu.browser.android.FenixDialogFragment
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentCookieBannerHandlingDetailsDialogBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.trackingprotection.ProtectionsState
+import com.netgpu.browser.trackingprotection.ProtectionsStore
 
 /**
  * A [FenixDialogFragment] that contains all the cookie banner details for a given tab.

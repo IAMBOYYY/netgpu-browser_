@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks.view
+package com.netgpu.browser.home.recentbookmarks.view
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -47,12 +47,12 @@ import mozilla.components.browser.icons.compose.Loader
 import mozilla.components.browser.icons.compose.Placeholder
 import mozilla.components.browser.icons.compose.WithIcon
 import mozilla.components.ui.colors.PhotonColors
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.Image
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.Image
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 private val cardShape = RoundedCornerShape(8.dp)
 
@@ -145,10 +145,10 @@ private fun RecentBookmarkItem(
                     testTagsAsResourceId = true
                     testTag = "recent.bookmark.title"
                 },
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
-                style = FirefoxTheme.typography.caption,
+                style = NetGpuBrowserTheme.typography.caption,
             )
 
             RecentBookmarksMenu(
@@ -240,7 +240,7 @@ private fun RecentBookmarksMenu(
         expanded = showMenu,
         onDismissRequest = { onDismissRequest() },
         modifier = Modifier
-            .background(color = FirefoxTheme.colors.layer2)
+            .background(color = NetGpuBrowserTheme.colors.layer2)
             .semantics {
                 testTagsAsResourceId = true
                 testTag = "recent.bookmark.menu"
@@ -255,7 +255,7 @@ private fun RecentBookmarksMenu(
             ) {
                 Text(
                     text = item.title,
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     maxLines = 1,
                     modifier = Modifier
                         .fillMaxHeight()
@@ -269,7 +269,7 @@ private fun RecentBookmarksMenu(
 @Composable
 @LightDarkPreview
 private fun RecentBookmarksPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         RecentBookmarks(
             bookmarks = listOf(
                 RecentBookmark(
@@ -294,7 +294,7 @@ private fun RecentBookmarksPreview() {
                 ),
             ),
             menuItems = listOf(),
-            backgroundColor = FirefoxTheme.colors.layer2,
+            backgroundColor = NetGpuBrowserTheme.colors.layer2,
         )
     }
 }

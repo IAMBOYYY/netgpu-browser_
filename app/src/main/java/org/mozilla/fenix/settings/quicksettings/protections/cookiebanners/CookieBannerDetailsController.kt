@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -22,13 +22,13 @@ import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.feature.session.SessionUseCases
 import mozilla.components.lib.publicsuffixlist.PublicSuffixList
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.trackingprotection.ProtectionsAction
-import org.mozilla.fenix.trackingprotection.ProtectionsStore
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.trackingprotection.ProtectionsAction
+import com.netgpu.browser.trackingprotection.ProtectionsStore
 
 /**
  * [CookieBannerDetailsController] controller.

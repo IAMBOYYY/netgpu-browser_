@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.recentlyclosed
+package com.netgpu.browser.library.recentlyclosed
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
@@ -15,11 +15,11 @@ import mozilla.components.concept.engine.prompt.ShareData
 import mozilla.components.feature.recentlyclosed.RecentlyClosedTabsStorage
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.RecentlyClosedTabs
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.RecentlyClosedTabs
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
 
 @Suppress("TooManyFunctions")
 interface RecentlyClosedController {

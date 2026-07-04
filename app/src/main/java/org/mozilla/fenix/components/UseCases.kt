@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.os.StrictMode
@@ -26,10 +26,10 @@ import mozilla.components.feature.top.sites.TopSitesStorage
 import mozilla.components.feature.top.sites.TopSitesUseCases
 import mozilla.components.support.locale.LocaleManager
 import mozilla.components.support.locale.LocaleUseCases
-import org.mozilla.fenix.components.bookmarks.BookmarksUseCase
-import org.mozilla.fenix.perf.StrictModeManager
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.wallpapers.WallpapersUseCases
+import com.netgpu.browser.components.bookmarks.BookmarksUseCase
+import com.netgpu.browser.perf.StrictModeManager
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.wallpapers.WallpapersUseCases
 
 /**
  * Component group for all use cases. Use cases are provided by feature

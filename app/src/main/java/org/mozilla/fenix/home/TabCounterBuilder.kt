@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.content.Context
 import androidx.core.content.ContextCompat
@@ -10,12 +10,12 @@ import androidx.navigation.NavController
 import mozilla.components.ui.tabcounter.TabCounter
 import mozilla.components.ui.tabcounter.TabCounterMenu
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.StartOnHome
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.components.toolbar.FenixTabCounterMenu
-import org.mozilla.fenix.ext.nav
+import com.netgpu.browser.GleanMetrics.StartOnHome
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.components.toolbar.FenixTabCounterMenu
+import com.netgpu.browser.ext.nav
 
 /**
  * Helper class for building the [FenixTabCounterMenu].

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.content.Context
 import android.view.View
@@ -15,17 +15,17 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.map
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentTabstray2Binding
-import org.mozilla.fenix.databinding.TabstrayMultiselectItemsBinding
-import org.mozilla.fenix.tabstray.NavigationInteractor
-import org.mozilla.fenix.tabstray.TabsTrayAction.ExitSelectMode
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayState.Mode
-import org.mozilla.fenix.tabstray.TabsTrayState.Mode.Select
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.ext.showWithTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentTabstray2Binding
+import com.netgpu.browser.databinding.TabstrayMultiselectItemsBinding
+import com.netgpu.browser.tabstray.NavigationInteractor
+import com.netgpu.browser.tabstray.TabsTrayAction.ExitSelectMode
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayState.Mode
+import com.netgpu.browser.tabstray.TabsTrayState.Mode.Select
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.ext.showWithTheme
 
 /**
  * A binding that shows/hides the multi-select banner of the selected count of tabs.

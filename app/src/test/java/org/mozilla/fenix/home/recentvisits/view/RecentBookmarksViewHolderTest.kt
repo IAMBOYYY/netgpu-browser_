@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits.view
+package com.netgpu.browser.home.recentvisits.view
 
 // TODO: Needs testImplementation 'androidx.compose.ui:ui-test-junit4:1.0.0-beta04'
 @Suppress("ForbiddenComment")

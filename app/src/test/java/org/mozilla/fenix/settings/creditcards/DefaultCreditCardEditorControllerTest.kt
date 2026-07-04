@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import android.content.DialogInterface
 import androidx.navigation.NavController
@@ -26,9 +26,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.CreditCards
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.creditcards.controller.DefaultCreditCardEditorController
+import com.netgpu.browser.GleanMetrics.CreditCards
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.creditcards.controller.DefaultCreditCardEditorController
 
 @RunWith(FenixRobolectricTestRunner::class) // for gleanTestRule
 class DefaultCreditCardEditorControllerTest {

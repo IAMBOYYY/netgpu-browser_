@@ -1,4 +1,4 @@
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import io.mockk.Runs
 import io.mockk.coEvery
@@ -17,14 +17,14 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.toHexColor
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_CARD_COLOR_DARK
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_CARD_COLOR_LIGHT
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_NAME
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_WALLPAPER_TEXT_COLOR
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.toHexColor
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_CARD_COLOR_DARK
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_CARD_COLOR_LIGHT
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_NAME
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_WALLPAPER_TEXT_COLOR
 import java.io.File
 import java.util.*
 import kotlin.random.Random

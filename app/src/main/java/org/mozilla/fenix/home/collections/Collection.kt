@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.collections
+package com.netgpu.browser.home.collections
 
 import android.content.Context
 import android.content.res.Configuration
@@ -35,13 +35,13 @@ import mozilla.components.browser.state.state.recover.RecoverableTab
 import mozilla.components.concept.engine.Engine
 import mozilla.components.feature.tab.collections.Tab
 import mozilla.components.feature.tab.collections.TabCollection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.R.drawable
-import org.mozilla.fenix.R.string
-import org.mozilla.fenix.compose.list.ExpandableListHeader
-import org.mozilla.fenix.ext.getIconColor
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.Theme
+import com.netgpu.browser.R
+import com.netgpu.browser.R.drawable
+import com.netgpu.browser.R.string
+import com.netgpu.browser.compose.list.ExpandableListHeader
+import com.netgpu.browser.ext.getIconColor
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.Theme
 
 /**
  * Rectangular shape with all corners rounded used to display a collapsed collection.
@@ -88,7 +88,7 @@ fun Collection(
             )
             .height(48.dp),
         shape = if (isExpanded) expandedCollectionShape else collapsedCollectionShape,
-        backgroundColor = FirefoxTheme.colors.layer2,
+        backgroundColor = NetGpuBrowserTheme.colors.layer2,
         elevation = 5.dp,
     ) {
         Row(
@@ -111,7 +111,7 @@ fun Collection(
 
             ExpandableListHeader(
                 headerText = collection.title,
-                headerTextStyle = FirefoxTheme.typography.headline7,
+                headerTextStyle = NetGpuBrowserTheme.typography.headline7,
                 expanded = isExpanded,
             ) {
                 if (isExpanded) {
@@ -122,7 +122,7 @@ fun Collection(
                             Icon(
                                 painter = painterResource(drawable.ic_share),
                                 contentDescription = stringResource(string.share_button_content_description),
-                                tint = FirefoxTheme.colors.iconPrimary,
+                                tint = NetGpuBrowserTheme.colors.iconPrimary,
                             )
                         }
 
@@ -136,7 +136,7 @@ fun Collection(
                                 contentDescription = stringResource(
                                     string.collection_menu_button_content_description,
                                 ),
-                                tint = FirefoxTheme.colors.iconPrimary,
+                                tint = NetGpuBrowserTheme.colors.iconPrimary,
                             )
 
                             CollectionMenu(
@@ -155,7 +155,7 @@ fun Collection(
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun CollectionDarkPreview() {
-    FirefoxTheme(Theme.Dark) {
+    NetGpuBrowserTheme(Theme.Dark) {
         Collection(
             collection = collectionPreview,
             expanded = false,
@@ -169,7 +169,7 @@ private fun CollectionDarkPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun CollectionDarkExpandedPreview() {
-    FirefoxTheme(Theme.Dark) {
+    NetGpuBrowserTheme(Theme.Dark) {
         Collection(
             collection = collectionPreview,
             expanded = true,
@@ -183,7 +183,7 @@ private fun CollectionDarkExpandedPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun CollectionLightPreview() {
-    FirefoxTheme(Theme.Light) {
+    NetGpuBrowserTheme(Theme.Light) {
         Collection(
             collection = collectionPreview,
             expanded = false,
@@ -197,7 +197,7 @@ private fun CollectionLightPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun CollectionLightExpandedPreview() {
-    FirefoxTheme(Theme.Light) {
+    NetGpuBrowserTheme(Theme.Light) {
         Collection(
             collection = collectionPreview,
             expanded = true,

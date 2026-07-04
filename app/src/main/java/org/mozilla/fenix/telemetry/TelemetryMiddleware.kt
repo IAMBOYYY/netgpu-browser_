@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.telemetry
+package com.netgpu.browser.telemetry
 
 import mozilla.components.browser.state.action.BrowserAction
 import mozilla.components.browser.state.action.ContentAction
@@ -21,13 +21,13 @@ import mozilla.components.lib.state.MiddlewareContext
 import mozilla.components.support.base.android.Clock
 import mozilla.components.support.base.log.logger.Logger
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.components.metrics.Event
-import org.mozilla.fenix.components.metrics.MetricController
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.GleanMetrics.EngineTab as EngineMetrics
+import com.netgpu.browser.Config
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.components.metrics.Event
+import com.netgpu.browser.components.metrics.MetricController
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.GleanMetrics.EngineTab as EngineMetrics
 
 /**
  * [Middleware] to record telemetry in response to [BrowserAction]s.

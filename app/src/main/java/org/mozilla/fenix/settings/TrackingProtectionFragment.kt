@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.os.Bundle
 import androidx.annotation.VisibleForTesting
@@ -12,20 +12,20 @@ import androidx.preference.DropDownPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.trackingprotection.TrackingProtectionMode
-import org.mozilla.fenix.utils.view.addToRadioGroup
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.trackingprotection.TrackingProtectionMode
+import com.netgpu.browser.utils.view.addToRadioGroup
 
 /**
  * Displays the toggle for tracking protection, options for tracking protection policy and a button
- * to open info about the tracking protection [org.mozilla.fenix.settings.TrackingProtectionFragment].
+ * to open info about the tracking protection [com.netgpu.browser.settings.TrackingProtectionFragment].
  */
 class TrackingProtectionFragment : PreferenceFragmentCompat() {
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -29,11 +29,11 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recenttabs.RecentTabsListFeature
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recenttabs.RecentTabsListFeature
 
 class RecentTabsListFeatureTest {
 

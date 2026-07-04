@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import android.os.Bundle
 import androidx.preference.CheckBoxPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SharedPreferenceUpdater
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SharedPreferenceUpdater
+import com.netgpu.browser.settings.requirePreference
 
 class DeleteBrowsingDataOnQuitFragment : PreferenceFragmentCompat() {
 

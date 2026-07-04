@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.content.Context
 import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
 import mozilla.components.concept.sync.Profile
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.nimbus.Onboarding as OnboardingConfig
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.nimbus.Onboarding as OnboardingConfig
 
 /**
  * Describes various states of the home fragment UI.
@@ -44,7 +44,7 @@ sealed class OnboardingState {
 
 class CurrentMode(
     private val context: Context,
-    private val onboarding: FenixOnboarding,
+    private val onboarding: NetGpuBrowserOnboarding,
     private val browsingModeManager: BrowsingModeManager,
     private val dispatchModeChanges: (mode: Mode) -> Unit,
 ) : AccountObserver {

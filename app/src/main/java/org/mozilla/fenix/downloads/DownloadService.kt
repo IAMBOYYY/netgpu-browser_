@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.feature.downloads.AbstractFetchDownloadService
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
 
 class DownloadService : AbstractFetchDownloadService() {
     override val httpClient by lazy { components.core.client }

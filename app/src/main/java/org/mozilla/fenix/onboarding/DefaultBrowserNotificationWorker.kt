@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -16,13 +16,13 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.ids.SharedIdsHelper
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.IntentUtils
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.createBaseNotification
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.IntentUtils
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.createBaseNotification
 import java.util.concurrent.TimeUnit
 
 class DefaultBrowserNotificationWorker(
@@ -75,10 +75,10 @@ class DefaultBrowserNotificationWorker(
     }
 
     companion object {
-        private const val NOTIFICATION_PENDING_INTENT_TAG = "org.mozilla.fenix.default.browser"
-        private const val INTENT_DEFAULT_BROWSER_NOTIFICATION = "org.mozilla.fenix.default.browser.intent"
-        private const val NOTIFICATION_TAG = "org.mozilla.fenix.default.browser.tag"
-        private const val NOTIFICATION_WORK_NAME = "org.mozilla.fenix.default.browser.work"
+        private const val NOTIFICATION_PENDING_INTENT_TAG = "com.netgpu.browser.default.browser"
+        private const val INTENT_DEFAULT_BROWSER_NOTIFICATION = "com.netgpu.browser.default.browser.intent"
+        private const val NOTIFICATION_TAG = "com.netgpu.browser.default.browser.tag"
+        private const val NOTIFICATION_WORK_NAME = "com.netgpu.browser.default.browser.work"
         private const val NOTIFICATION_DELAY = Settings.THREE_DAYS_MS
 
         fun isDefaultBrowserNotificationIntent(intent: Intent) =

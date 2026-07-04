@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.widget
+package com.netgpu.browser.widget
 
 import android.content.ComponentName
 import android.content.Intent
@@ -17,10 +17,10 @@ import com.google.android.gms.common.util.VisibleForTesting
 import mozilla.components.support.locale.LocaleManager
 import mozilla.components.support.utils.ext.getParcelableCompat
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.SearchWidget
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.GleanMetrics.SearchWidget
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.ext.components
 
 /**
  * Launches voice recognition then uses it to start a new web search.
@@ -115,7 +115,7 @@ class VoiceSearchActivity : AppCompatActivity() {
         this?.getBooleanExtra(SPEECH_PROCESSING, false) == true
 
     companion object {
-        internal const val PREVIOUS_INTENT = "org.mozilla.fenix.previous_intent"
+        internal const val PREVIOUS_INTENT = "com.netgpu.browser.previous_intent"
 
         /**
          * In [VoiceSearchActivity] activity, used to store if the speech processing should start.

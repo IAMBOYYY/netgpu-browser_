@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.search
+package com.netgpu.browser.settings.search
 
 import android.content.Context
 import mozilla.components.browser.menu.BrowserMenuBuilder
 import mozilla.components.browser.menu.item.SimpleBrowserMenuItem
-import org.mozilla.fenix.R
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.theme.ThemeManager
 
 class SearchEngineMenu(
     private val context: Context,

@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.viewholders
+package com.netgpu.browser.tabstray.viewholders
 
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.CallSuper
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.TrayPagerAdapter
-import org.mozilla.fenix.tabstray.browser.AbstractBrowserTrayList
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TrayPagerAdapter
+import com.netgpu.browser.tabstray.browser.AbstractBrowserTrayList
 
 /**
  * A shared view holder for browser tabs tray list.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.theme
+package com.netgpu.browser.theme
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 /**
- * A custom typography for Mozilla Firefox for Android (Fenix).
+ * A custom typography for Mozilla NETGPU BROWSER for Android (Fenix).
  *
  * @param headline5 Currently not in-use.
  * @param headline6 Used for headings on Onboarding Modals and App Bar Titles.
@@ -144,10 +144,10 @@ private fun TypographyPreview() {
         Pair("Overline", defaultTypography.overline),
     )
 
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         LazyColumn(
             modifier = Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.SpaceBetween,
         ) {

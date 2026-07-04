@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.listadapters
+package com.netgpu.browser.share.listadapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.concept.engine.prompt.ShareData
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ShareTabItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ShareTabItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
 
 /**
  * Adapter for a list of tabs to be shared.

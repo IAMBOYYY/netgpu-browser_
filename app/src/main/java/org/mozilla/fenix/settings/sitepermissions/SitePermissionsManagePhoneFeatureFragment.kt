@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import android.content.Intent
 import android.net.Uri
@@ -24,18 +24,18 @@ import androidx.navigation.fragment.navArgs
 import mozilla.components.feature.sitepermissions.SitePermissionsRules
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.ALLOWED
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.BLOCKED
-import org.mozilla.fenix.GleanMetrics.Autoplay
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentManageSitePermissionsFeaturePhoneBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY_AUDIBLE
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY_INAUDIBLE
-import org.mozilla.fenix.settings.setStartCheckedIndicator
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Autoplay
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentManageSitePermissionsFeaturePhoneBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY_AUDIBLE
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY_INAUDIBLE
+import com.netgpu.browser.settings.setStartCheckedIndicator
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.utils.Settings
 
 const val AUTOPLAY_BLOCK_ALL = 0
 const val AUTOPLAY_BLOCK_AUDIBLE = 1

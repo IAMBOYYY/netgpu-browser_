@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.content.Context
 import android.view.View
@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.compose.cfr.CFRPopup
 import mozilla.components.compose.cfr.CFRPopupProperties
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Onboarding
-import org.mozilla.fenix.GleanMetrics.RecentTabs
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.home.recentsyncedtabs.view.RecentSyncedTabViewHolder
-import org.mozilla.fenix.home.recenttabs.view.RecentTabsHeaderViewHolder
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.GleanMetrics.Onboarding
+import com.netgpu.browser.GleanMetrics.RecentTabs
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.home.recentsyncedtabs.view.RecentSyncedTabViewHolder
+import com.netgpu.browser.home.recenttabs.view.RecentTabsHeaderViewHolder
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Vertical padding needed to improve the visual alignment of the popup and respect the UX design.
@@ -74,11 +74,11 @@ class HomeCFRPresenter(
                 }
             },
             text = {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     Text(
                         text = context.getString(R.string.sync_cfr_message),
-                        color = FirefoxTheme.colors.textOnColorPrimary,
-                        style = FirefoxTheme.typography.body2,
+                        color = NetGpuBrowserTheme.colors.textOnColorPrimary,
+                        style = NetGpuBrowserTheme.typography.body2,
                     )
                 }
             },
@@ -111,11 +111,11 @@ class HomeCFRPresenter(
                 }
             },
             text = {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     Text(
                         text = context.getString(R.string.onboarding_home_screen_jump_back_contextual_hint_2),
-                        color = FirefoxTheme.colors.textOnColorPrimary,
-                        style = FirefoxTheme.typography.body2,
+                        color = NetGpuBrowserTheme.colors.textOnColorPrimary,
+                        style = NetGpuBrowserTheme.typography.body2,
                     )
                 }
             },

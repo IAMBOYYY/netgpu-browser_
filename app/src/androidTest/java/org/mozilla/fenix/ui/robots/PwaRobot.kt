@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.uiautomator.UiSelector
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.helpers.TestHelper.isExternalAppBrowserActivityInCurrentTask
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.isExternalAppBrowserActivityInCurrentTask
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
 
 class PwaRobot {
 

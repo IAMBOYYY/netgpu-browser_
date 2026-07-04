@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import android.text.InputType
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Logins
-import org.mozilla.fenix.R
+import com.netgpu.browser.GleanMetrics.Logins
+import com.netgpu.browser.R
 
 fun togglePasswordReveal(passwordText: TextView, revealPasswordButton: ImageButton) {
     val context = passwordText.context

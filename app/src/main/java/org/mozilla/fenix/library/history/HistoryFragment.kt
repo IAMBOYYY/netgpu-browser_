@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.app.Dialog
 import android.content.Context
@@ -39,24 +39,24 @@ import mozilla.components.service.fxa.sync.SyncReason
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.ktx.kotlin.toShortUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavHostActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.addons.showSnackBar
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.components.history.DefaultPagedHistoryProvider
-import org.mozilla.fenix.databinding.FragmentHistoryBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.setTextColor
-import org.mozilla.fenix.library.LibraryPageFragment
-import org.mozilla.fenix.utils.allowUndo
-import org.mozilla.fenix.GleanMetrics.History as GleanHistory
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavHostActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.addons.showSnackBar
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.components.history.DefaultPagedHistoryProvider
+import com.netgpu.browser.databinding.FragmentHistoryBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.setTextColor
+import com.netgpu.browser.library.LibraryPageFragment
+import com.netgpu.browser.utils.allowUndo
+import com.netgpu.browser.GleanMetrics.History as GleanHistory
 
 @SuppressWarnings("TooManyFunctions", "LargeClass")
 class HistoryFragment : LibraryPageFragment<History>(), UserInteractionHandler, MenuProvider {

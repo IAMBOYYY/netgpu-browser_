@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -21,13 +21,13 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.FragmentDeleteBrowsingDataBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.FragmentDeleteBrowsingDataBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.utils.Settings
 
 @SuppressWarnings("TooManyFunctions", "LargeClass")
 class DeleteBrowsingDataFragment : Fragment(R.layout.fragment_delete_browsing_data) {
@@ -184,9 +184,9 @@ class DeleteBrowsingDataFragment : Fragment(R.layout.fragment_delete_browsing_da
 
         updateItemCounts()
 
-        FenixSnackbar.make(
+        NetGpuBrowserSnackbar.make(
             view = requireView(),
-            duration = FenixSnackbar.LENGTH_SHORT,
+            duration = NetGpuBrowserSnackbar.LENGTH_SHORT,
             isDisplayedWithBrowserToolbar = true,
         )
             .setText(resources.getString(R.string.preferences_delete_browsing_data_snackbar))

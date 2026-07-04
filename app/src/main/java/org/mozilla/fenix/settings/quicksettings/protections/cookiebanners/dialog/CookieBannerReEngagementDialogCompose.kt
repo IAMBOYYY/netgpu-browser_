@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners.dialog
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners.dialog
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
@@ -31,16 +31,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.button.TextButton
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.defaultTypography
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.button.TextButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.defaultTypography
 
 @Composable
 @Preview(uiMode = UI_MODE_NIGHT_YES)
 @Preview(uiMode = UI_MODE_NIGHT_NO)
 private fun CookieBannerReEngagementDialogComposePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         CookieBannerReEngagementDialogCompose(
             dialogTitle = "Cookie banners begone!",
             dialogText =
@@ -79,7 +79,7 @@ fun CookieBannerReEngagementDialogCompose(
                 .fillMaxWidth()
                 .wrapContentHeight()
                 .clip(RoundedCornerShape(8.dp))
-                .background(color = FirefoxTheme.colors.layer1),
+                .background(color = NetGpuBrowserTheme.colors.layer1),
         ) {
             Column {
                 Row(
@@ -95,7 +95,7 @@ fun CookieBannerReEngagementDialogCompose(
                             end = 24.dp,
                             bottom = 8.dp,
                         ),
-                        color = FirefoxTheme.colors.textPrimary,
+                        color = NetGpuBrowserTheme.colors.textPrimary,
                         text = dialogTitle,
                         style = defaultTypography.headline7,
                     )
@@ -107,13 +107,13 @@ fun CookieBannerReEngagementDialogCompose(
                         Icon(
                             painter = painterResource(R.drawable.mozac_ic_close),
                             contentDescription = stringResource(R.string.content_description_close_button),
-                            tint = FirefoxTheme.colors.iconPrimary,
+                            tint = NetGpuBrowserTheme.colors.iconPrimary,
                         )
                     }
                 }
                 Text(
                     modifier = Modifier.padding(horizontal = 24.dp),
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     fontSize = 16.sp,
                     text = dialogText,
                     style = defaultTypography.body1,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.usage.StorageStats
 import android.app.usage.StorageStatsManager
@@ -17,7 +17,7 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.mozilla.fenix.GleanMetrics.StorageStats as Metrics
+import com.netgpu.browser.GleanMetrics.StorageStats as Metrics
 
 /**
  * A collection of functions related to measuring the [StorageStats] of the application such as data

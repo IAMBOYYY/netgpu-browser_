@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.accessibility.AccessibilityNodeInfo
 import android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction.ACTION_LONG_CLICK
 import androidx.appcompat.widget.AppCompatTextView
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * An [AppCompatTextView] that announces as link in screen readers for a11y purposes

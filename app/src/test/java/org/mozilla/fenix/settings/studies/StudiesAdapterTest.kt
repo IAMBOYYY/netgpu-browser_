@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.studies
+package com.netgpu.browser.settings.studies
 
 import android.view.View
 import android.widget.TextView
@@ -24,12 +24,12 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mozilla.experiments.nimbus.internal.EnrolledExperiment
-import org.mozilla.fenix.R
-import org.mozilla.fenix.gleanplumb.MESSAGING_FEATURE_ID
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.studies.CustomViewHolder.SectionViewHolder
-import org.mozilla.fenix.settings.studies.CustomViewHolder.StudyViewHolder
-import org.mozilla.fenix.settings.studies.StudiesAdapter.Section
+import com.netgpu.browser.R
+import com.netgpu.browser.gleanplumb.MESSAGING_FEATURE_ID
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.studies.CustomViewHolder.SectionViewHolder
+import com.netgpu.browser.settings.studies.CustomViewHolder.StudyViewHolder
+import com.netgpu.browser.settings.studies.StudiesAdapter.Section
 
 @RunWith(FenixRobolectricTestRunner::class)
 class StudiesAdapterTest {

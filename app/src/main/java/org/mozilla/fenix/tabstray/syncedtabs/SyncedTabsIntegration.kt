@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.syncedtabs
+package com.netgpu.browser.tabstray.syncedtabs
 
 import android.content.Context
 import androidx.lifecycle.LifecycleOwner
@@ -15,12 +15,12 @@ import mozilla.components.service.fxa.manager.FxaAccountManager
 import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.components.support.base.observer.Observable
 import mozilla.components.support.base.observer.ObserverRegistry
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.tabstray.FloatingActionButtonBinding
-import org.mozilla.fenix.tabstray.TabsTrayAction
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.ext.toComposeList
-import org.mozilla.fenix.tabstray.ext.toSyncedTabsListItem
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.tabstray.FloatingActionButtonBinding
+import com.netgpu.browser.tabstray.TabsTrayAction
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.ext.toComposeList
+import com.netgpu.browser.tabstray.ext.toSyncedTabsListItem
 
 /**
  * TabsTrayFragment delegate to handle all layout updates needed to display synced tabs and any errors.

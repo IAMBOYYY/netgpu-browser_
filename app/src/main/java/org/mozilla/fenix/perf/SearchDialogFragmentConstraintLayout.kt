@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.Context
 import android.graphics.Canvas
 import android.util.AttributeSet
 import androidx.constraintlayout.widget.ConstraintLayout
 import mozilla.components.concept.base.profiler.Profiler
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.perf.ProfilerMarkers.MEASURE_LAYOUT_DRAW_MARKER_NAME
-import org.mozilla.fenix.search.SearchDialogFragment
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.perf.ProfilerMarkers.MEASURE_LAYOUT_DRAW_MARKER_NAME
+import com.netgpu.browser.search.SearchDialogFragment
 
 /**
  * Adds markers for measure/layout/draw to the root layout of [SearchDialogFragment].

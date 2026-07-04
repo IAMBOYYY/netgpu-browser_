@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
@@ -77,59 +77,59 @@ import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
 import mozilla.components.support.ktx.android.content.res.resolveAttribute
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.HomeScreen
-import org.mozilla.fenix.GleanMetrics.UnifiedSearch
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.addons.showSnackBar
-import org.mozilla.fenix.browser.BrowserAnimator.Companion.getToolbarNavOptions
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.PrivateShortcutCreateManager
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.databinding.FragmentHomeBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.containsQueryParameters
-import org.mozilla.fenix.ext.hideToolbar
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.scaleToBottomOfView
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gleanplumb.DefaultMessageController
-import org.mozilla.fenix.gleanplumb.MessagingFeature
-import org.mozilla.fenix.gleanplumb.NimbusMessagingController
-import org.mozilla.fenix.home.mozonline.showPrivacyPopWindow
-import org.mozilla.fenix.home.pocket.DefaultPocketStoriesController
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmarksFeature
-import org.mozilla.fenix.home.recentbookmarks.controller.DefaultRecentBookmarksController
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabFeature
-import org.mozilla.fenix.home.recentsyncedtabs.controller.DefaultRecentSyncedTabController
-import org.mozilla.fenix.home.recenttabs.RecentTabsListFeature
-import org.mozilla.fenix.home.recenttabs.controller.DefaultRecentTabsController
-import org.mozilla.fenix.home.recentvisits.RecentVisitsFeature
-import org.mozilla.fenix.home.recentvisits.controller.DefaultRecentVisitsController
-import org.mozilla.fenix.home.sessioncontrol.DefaultSessionControlController
-import org.mozilla.fenix.home.sessioncontrol.SessionControlInteractor
-import org.mozilla.fenix.home.sessioncontrol.SessionControlView
-import org.mozilla.fenix.home.sessioncontrol.viewholders.CollectionHeaderViewHolder
-import org.mozilla.fenix.home.topsites.DefaultTopSitesView
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.perf.MarkersFragmentLifecycleCallbacks
-import org.mozilla.fenix.perf.runBlockingIncrement
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.tabstray.TabsTrayAccessPoint
-import org.mozilla.fenix.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
-import org.mozilla.fenix.utils.ToolbarPopupWindow
-import org.mozilla.fenix.utils.allowUndo
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.Config
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.HomeScreen
+import com.netgpu.browser.GleanMetrics.UnifiedSearch
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.addons.showSnackBar
+import com.netgpu.browser.browser.BrowserAnimator.Companion.getToolbarNavOptions
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.PrivateShortcutCreateManager
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.databinding.FragmentHomeBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.containsQueryParameters
+import com.netgpu.browser.ext.hideToolbar
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.scaleToBottomOfView
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gleanplumb.DefaultMessageController
+import com.netgpu.browser.gleanplumb.MessagingFeature
+import com.netgpu.browser.gleanplumb.NimbusMessagingController
+import com.netgpu.browser.home.mozonline.showPrivacyPopWindow
+import com.netgpu.browser.home.pocket.DefaultPocketStoriesController
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.recentbookmarks.RecentBookmarksFeature
+import com.netgpu.browser.home.recentbookmarks.controller.DefaultRecentBookmarksController
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabFeature
+import com.netgpu.browser.home.recentsyncedtabs.controller.DefaultRecentSyncedTabController
+import com.netgpu.browser.home.recenttabs.RecentTabsListFeature
+import com.netgpu.browser.home.recenttabs.controller.DefaultRecentTabsController
+import com.netgpu.browser.home.recentvisits.RecentVisitsFeature
+import com.netgpu.browser.home.recentvisits.controller.DefaultRecentVisitsController
+import com.netgpu.browser.home.sessioncontrol.DefaultSessionControlController
+import com.netgpu.browser.home.sessioncontrol.SessionControlInteractor
+import com.netgpu.browser.home.sessioncontrol.SessionControlView
+import com.netgpu.browser.home.sessioncontrol.viewholders.CollectionHeaderViewHolder
+import com.netgpu.browser.home.topsites.DefaultTopSitesView
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.perf.MarkersFragmentLifecycleCallbacks
+import com.netgpu.browser.perf.runBlockingIncrement
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.tabstray.TabsTrayAccessPoint
+import com.netgpu.browser.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
+import com.netgpu.browser.utils.ToolbarPopupWindow
+import com.netgpu.browser.utils.allowUndo
+import com.netgpu.browser.wallpapers.Wallpaper
 import java.lang.ref.WeakReference
 import kotlin.math.min
 
@@ -177,7 +177,7 @@ class HomeFragment : Fragment() {
 
     private val onboarding by lazy {
         requireComponents.strictMode.resetAfter(StrictMode.allowThreadDiskReads()) {
-            FenixOnboarding(requireContext())
+            NetGpuBrowserOnboarding(requireContext())
         }
     }
 
@@ -672,7 +672,7 @@ class HomeFragment : Fragment() {
                     val name = searchEngine?.name
                     val icon = searchEngine?.let {
                         // Changing dimensions doesn't not affect the icon size, not sure what the
-                        // code is doing:  https://github.com/mozilla-mobile/fenix/issues/27763
+                        // code is doing:  https://github.com/mozilla-mobile/netgpu_browser/issues/27763
                         val iconSize =
                             requireContext().resources.getDimensionPixelSize(R.dimen.preference_icon_drawable_size)
                         BitmapDrawable(requireContext().resources, searchEngine.icon).apply {
@@ -794,7 +794,7 @@ class HomeFragment : Fragment() {
                     override fun onAuthenticated(account: OAuthAccount, authType: AuthType) {
                         if (authType != AuthType.Existing) {
                             view?.let {
-                                FenixSnackbar.make(
+                                NetGpuBrowserSnackbar.make(
                                     view = it,
                                     duration = Snackbar.LENGTH_SHORT,
                                     isDisplayedWithBrowserToolbar = false,
@@ -977,7 +977,7 @@ class HomeFragment : Fragment() {
     private fun showRenamedSnackbar() {
         view?.let { view ->
             val string = view.context.getString(R.string.snackbar_collection_renamed)
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view = view,
                 duration = Snackbar.LENGTH_LONG,
                 isDisplayedWithBrowserToolbar = false,
@@ -996,7 +996,7 @@ class HomeFragment : Fragment() {
     }
 
     // TODO use [FenixTabCounterToolbarButton] instead of [TabCounter]:
-    // https://github.com/mozilla-mobile/fenix/issues/16792
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/16792
     private fun updateTabCounter(browserState: BrowserState) {
         val tabCount = if (browsingModeManager.mode.isPrivate) {
             browserState.privateTabs.size

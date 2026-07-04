@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.net.Uri
 import okhttp3.mockwebserver.MockWebServer
-import org.mozilla.fenix.helpers.ext.toUri
+import com.netgpu.browser.helpers.ext.toUri
 import java.util.concurrent.TimeUnit
 
 /**

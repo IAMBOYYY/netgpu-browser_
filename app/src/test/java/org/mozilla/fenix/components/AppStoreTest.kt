@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import io.mockk.every
@@ -24,34 +24,34 @@ import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.components.appstate.filterOut
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getFilteredStories
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.home.CurrentMode
-import org.mozilla.fenix.home.Mode
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesSelectedCategory
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.nimbus.MessageData
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.onboarding.FenixOnboarding
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.components.appstate.filterOut
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getFilteredStories
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.home.CurrentMode
+import com.netgpu.browser.home.Mode
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesSelectedCategory
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.nimbus.MessageData
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
 
 class AppStoreTest {
     private lateinit var context: Context
     private lateinit var accountManager: FxaAccountManager
-    private lateinit var onboarding: FenixOnboarding
+    private lateinit var onboarding: NetGpuBrowserOnboarding
     private lateinit var browsingModeManager: BrowsingModeManager
     private lateinit var currentMode: CurrentMode
     private lateinit var appState: AppState
@@ -336,7 +336,7 @@ class AppStoreTest {
             ),
         )
 
-        mockkStatic("org.mozilla.fenix.ext.AppStateKt") {
+        mockkStatic("com.netgpu.browser.ext.AppStateKt") {
             every { any<AppState>().getFilteredStories() } returns filteredStories
 
             appStore.dispatch(AppAction.SelectPocketStoriesCategory("another")).join()
@@ -365,7 +365,7 @@ class AppStoreTest {
             ),
         )
 
-        mockkStatic("org.mozilla.fenix.ext.AppStateKt") {
+        mockkStatic("com.netgpu.browser.ext.AppStateKt") {
             every { any<AppState>().getFilteredStories() } returns filteredStories
 
             appStore.dispatch(AppAction.DeselectPocketStoriesCategory("other")).join()
@@ -415,7 +415,7 @@ class AppStoreTest {
 
         appStore = AppStore(AppState())
 
-        mockkStatic("org.mozilla.fenix.ext.AppStateKt") {
+        mockkStatic("com.netgpu.browser.ext.AppStateKt") {
             val firstFilteredStories = listOf(mockk<PocketSponsoredStory>())
             every { any<AppState>().getFilteredStories() } returns firstFilteredStories
             appStore.dispatch(AppAction.PocketSponsoredStoriesChange(listOf(story1, story2))).join()
@@ -472,7 +472,7 @@ class AppStoreTest {
         val anotherStoriesCategory = PocketRecommendedStoriesCategory("another")
         appStore = AppStore(AppState())
 
-        mockkStatic("org.mozilla.fenix.ext.AppStateKt") {
+        mockkStatic("com.netgpu.browser.ext.AppStateKt") {
             val firstFilteredStories = listOf(mockk<PocketStory>())
             every { any<AppState>().getFilteredStories() } returns firstFilteredStories
 
@@ -508,7 +508,7 @@ class AppStoreTest {
         val selectedCategory = PocketRecommendedStoriesSelectedCategory("selected")
         appStore = AppStore(AppState())
 
-        mockkStatic("org.mozilla.fenix.ext.AppStateKt") {
+        mockkStatic("com.netgpu.browser.ext.AppStateKt") {
             val firstFilteredStories = listOf(mockk<PocketStory>())
             every { any<AppState>().getFilteredStories() } returns firstFilteredStories
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
@@ -15,19 +15,19 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
-import org.mozilla.fenix.onboarding.FenixOnboarding.Companion.CURRENT_ONBOARDING_VERSION
-import org.mozilla.fenix.onboarding.FenixOnboarding.Companion.LAST_VERSION_ONBOARDING_KEY
-import org.mozilla.fenix.perf.StrictModeManager
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding.Companion.CURRENT_ONBOARDING_VERSION
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding.Companion.LAST_VERSION_ONBOARDING_KEY
+import com.netgpu.browser.perf.StrictModeManager
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
-class FenixOnboardingTest {
+class NetGpuBrowserOnboardingTest {
 
-    private lateinit var onboarding: FenixOnboarding
+    private lateinit var onboarding: NetGpuBrowserOnboarding
     private lateinit var preferences: SharedPreferences
     private lateinit var preferencesEditor: SharedPreferences.Editor
     private lateinit var settings: Settings
@@ -43,7 +43,7 @@ class FenixOnboardingTest {
         every { context.getSharedPreferences(any(), MODE_PRIVATE) } returns preferences
         every { context.settings() } returns settings
 
-        onboarding = FenixOnboarding(context)
+        onboarding = NetGpuBrowserOnboarding(context)
     }
 
     @Test

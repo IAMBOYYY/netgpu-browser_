@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol
+package com.netgpu.browser.home.sessioncontrol
 
 import io.mockk.every
 import io.mockk.mockk
@@ -14,11 +14,11 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SessionControlViewTest {

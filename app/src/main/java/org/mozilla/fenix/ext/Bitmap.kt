@@ -1,4 +1,4 @@
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.graphics.Bitmap
 import android.graphics.Matrix

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
@@ -10,17 +10,17 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.openAppFromExternalLink
-import org.mozilla.fenix.helpers.TestHelper.restartApp
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.openAppFromExternalLink
+import com.netgpu.browser.helpers.TestHelper.restartApp
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  *  Tests for verifying the Homepage settings menu
@@ -224,7 +224,7 @@ class SettingsHomepageTest {
 
     @SmokeTest
     @Test
-    @Ignore("Intermittent test: https://github.com/mozilla-mobile/fenix/issues/26559")
+    @Ignore("Intermittent test: https://github.com/mozilla-mobile/netgpu_browser/issues/26559")
     fun setWallpaperTest() {
         val wallpapers = listOf(
             "Wallpaper Item: amethyst",

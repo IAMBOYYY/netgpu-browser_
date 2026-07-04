@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -12,9 +12,9 @@ import android.provider.Settings
 import android.text.SpannableString
 import androidx.annotation.VisibleForTesting
 import androidx.appcompat.app.AlertDialog
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.SupportUtils
 
 interface SyncController {
     fun handleCameraPermissionsNeeded()

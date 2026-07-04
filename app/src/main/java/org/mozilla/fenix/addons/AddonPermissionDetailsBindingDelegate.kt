@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.net.Uri
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.LinearLayoutManager
 import mozilla.components.feature.addons.Addon
 import mozilla.components.feature.addons.ui.AddonPermissionsAdapter
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddOnPermissionsBinding
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddOnPermissionsBinding
+import com.netgpu.browser.theme.ThemeManager
 
 interface AddonPermissionsDetailsInteractor {
 

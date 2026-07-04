@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.appstate
+package com.netgpu.browser.components.appstate
 
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.feature.top.sites.TopSite
@@ -10,20 +10,20 @@ import mozilla.components.lib.crash.Crash.NativeCodeCrash
 import mozilla.components.lib.state.Action
 import mozilla.components.service.pocket.PocketStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.gleanplumb.MessagingState
-import org.mozilla.fenix.home.Mode
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesSelectedCategory
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.library.history.PendingDeletionHistory
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.gleanplumb.MessagingState
+import com.netgpu.browser.home.Mode
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesSelectedCategory
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.library.history.PendingDeletionHistory
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.wallpapers.Wallpaper
 
 /**
  * [Action] implementation related to [AppStore].

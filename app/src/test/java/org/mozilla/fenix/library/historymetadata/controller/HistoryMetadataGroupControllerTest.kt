@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata.controller
+package com.netgpu.browser.library.historymetadata.controller
 
 import android.content.Context
 import androidx.navigation.NavController
@@ -30,18 +30,18 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.directionsEq
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.HistoryItemTimeGroup
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentAction
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentDirections
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentStore
-import org.mozilla.fenix.GleanMetrics.History as GleanHistory
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.directionsEq
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.HistoryItemTimeGroup
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentAction
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentDirections
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentStore
+import com.netgpu.browser.GleanMetrics.History as GleanHistory
 
 @RunWith(FenixRobolectricTestRunner::class)
 class HistoryMetadataGroupControllerTest {
@@ -75,7 +75,7 @@ class HistoryMetadataGroupControllerTest {
     )
     private val firefoxHistoryMetadataItem = History.Metadata(
         position = 1,
-        title = "Firefox",
+        title = "NETGPU BROWSER",
         url = "firefox.com",
         visitedAt = 0,
         historyTimeGroup = HistoryItemTimeGroup.timeGroupForTimestamp(0),

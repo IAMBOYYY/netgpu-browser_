@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.content.Context
 import mozilla.components.support.locale.LocaleManager
@@ -75,7 +75,7 @@ object FeatureFlags {
     /**
      * Enables storage maintenance feature.
      *
-     * Feature flag tracking: https://github.com/mozilla-mobile/fenix/issues/27759
+     * Feature flag tracking: https://github.com/mozilla-mobile/netgpu_browser/issues/27759
      * */
     val storageMaintenanceFeature = Config.channel.isNightlyOrDebug || Config.channel.isBeta
 }

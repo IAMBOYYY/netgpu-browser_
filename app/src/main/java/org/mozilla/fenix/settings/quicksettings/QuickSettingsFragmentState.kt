@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Context
 import androidx.annotation.DrawableRes
@@ -12,10 +12,10 @@ import mozilla.components.concept.engine.permission.SitePermissions.AutoplayStat
 import mozilla.components.feature.sitepermissions.SitePermissionsRules
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.AutoplayAction
 import mozilla.components.lib.state.State
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.trackingprotection.ProtectionsState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.trackingprotection.ProtectionsState
+import com.netgpu.browser.utils.Settings
 
 /**
  * [State] containing all data displayed to the user by this Fragment.

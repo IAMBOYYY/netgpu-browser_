@@ -1,4 +1,4 @@
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.content.res.Configuration
 import androidx.test.platform.app.InstrumentationRegistry
@@ -8,14 +8,14 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.verifyDarkThemeApplied
-import org.mozilla.fenix.helpers.TestHelper.verifyLightThemeApplied
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.verifyDarkThemeApplied
+import com.netgpu.browser.helpers.TestHelper.verifyLightThemeApplied
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 class OnboardingTest {
     private lateinit var mDevice: UiDevice

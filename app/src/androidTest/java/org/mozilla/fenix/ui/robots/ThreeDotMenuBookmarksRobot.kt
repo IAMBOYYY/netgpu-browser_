@@ -4,11 +4,11 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the Bookmarks three dot menu.

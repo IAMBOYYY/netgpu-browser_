@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
@@ -10,7 +10,7 @@ import android.view.View
 import androidx.appcompat.widget.SwitchCompat
 import androidx.preference.PreferenceViewHolder
 import androidx.preference.SwitchPreferenceCompat
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * Variation of [SwitchPreferenceCompat] that uses a custom widgetLayoutResource in order to implement

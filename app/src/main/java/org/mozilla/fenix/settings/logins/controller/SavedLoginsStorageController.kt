@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.controller
+package com.netgpu.browser.settings.logins.controller
 
 import android.util.Log
 import androidx.navigation.NavController
@@ -20,13 +20,13 @@ import mozilla.components.service.sync.logins.InvalidRecordException
 import mozilla.components.service.sync.logins.LoginsApiException
 import mozilla.components.service.sync.logins.NoSuchRecordException
 import mozilla.components.service.sync.logins.SyncableLoginsStorage
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.logins.LoginsAction
-import org.mozilla.fenix.settings.logins.LoginsFragmentStore
-import org.mozilla.fenix.settings.logins.fragment.AddLoginFragmentDirections
-import org.mozilla.fenix.settings.logins.fragment.EditLoginFragmentDirections
-import org.mozilla.fenix.settings.logins.mapToSavedLogin
-import org.mozilla.fenix.utils.ClipboardHandler
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.logins.LoginsAction
+import com.netgpu.browser.settings.logins.LoginsFragmentStore
+import com.netgpu.browser.settings.logins.fragment.AddLoginFragmentDirections
+import com.netgpu.browser.settings.logins.fragment.EditLoginFragmentDirections
+import com.netgpu.browser.settings.logins.mapToSavedLogin
+import com.netgpu.browser.utils.ClipboardHandler
 
 /**
  * Controller for all saved logins interactions with the password storage component

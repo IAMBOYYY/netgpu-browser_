@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser.compose
+package com.netgpu.browser.tabstray.browser.compose
 
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -15,11 +15,11 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.tabstray.TabsTray
 import mozilla.components.browser.tabstray.TabsTrayStyling
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.compose.tabstray.TabListItem
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.compose.tabstray.TabListItem
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 /**
  * A Compose ViewHolder implementation for "tab" items with list layout.

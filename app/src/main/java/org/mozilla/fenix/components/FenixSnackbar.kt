@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.graphics.Color
 import android.util.TypedValue
@@ -18,17 +18,17 @@ import androidx.core.widget.TextViewCompat
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.ContentViewCallback
 import com.google.android.material.snackbar.Snackbar
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FenixSnackbarBinding
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.NetGpuBrowserSnackbarBinding
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.settings
 
-class FenixSnackbar private constructor(
+class NetGpuBrowserSnackbar private constructor(
     parent: ViewGroup,
-    private val binding: FenixSnackbarBinding,
-    contentViewCallback: FenixSnackbarCallback,
+    private val binding: NetGpuBrowserSnackbarBinding,
+    contentViewCallback: NetGpuBrowserSnackbarCallback,
     isError: Boolean,
-) : BaseTransientBottomBar<FenixSnackbar>(parent, binding.root, contentViewCallback) {
+) : BaseTransientBottomBar<NetGpuBrowserSnackbar>(parent, binding.root, contentViewCallback) {
 
     init {
         view.setBackgroundColor(Color.TRANSPARENT)
@@ -48,9 +48,9 @@ class FenixSnackbar private constructor(
 
     fun setAppropriateBackground(isError: Boolean) {
         binding.snackbarLayout.background = if (isError) {
-            AppCompatResources.getDrawable(context, R.drawable.fenix_snackbar_error_background)
+            AppCompatResources.getDrawable(context, R.drawable.netgpu_browser_snackbar_error_background)
         } else {
-            AppCompatResources.getDrawable(context, R.drawable.fenix_snackbar_background)
+            AppCompatResources.getDrawable(context, R.drawable.netgpu_browser_snackbar_background)
         }
     }
 
@@ -100,7 +100,7 @@ class FenixSnackbar private constructor(
             duration: Int = LENGTH_LONG,
             isError: Boolean = false,
             isDisplayedWithBrowserToolbar: Boolean,
-        ): FenixSnackbar {
+        ): NetGpuBrowserSnackbar {
             val parent = findSuitableParent(view) ?: run {
                 throw IllegalArgumentException(
                     "No suitable parent found from the given view. Please provide a valid view.",
@@ -108,7 +108,7 @@ class FenixSnackbar private constructor(
             }
 
             val inflater = LayoutInflater.from(parent.context)
-            val binding = FenixSnackbarBinding.inflate(inflater, parent, false)
+            val binding = NetGpuBrowserSnackbarBinding.inflate(inflater, parent, false)
 
             val durationOrAccessibleDuration =
                 if (parent.context.settings().accessibilityServicesEnabled) {
@@ -117,12 +117,12 @@ class FenixSnackbar private constructor(
                     duration
                 }
 
-            val callback = FenixSnackbarCallback(binding.root)
+            val callback = NetGpuBrowserSnackbarCallback(binding.root)
             val shouldUseBottomToolbar = view.context.settings().shouldUseBottomToolbar
             val toolbarHeight = view.resources.getDimensionPixelSize(R.dimen.browser_toolbar_height)
             val dynamicToolbarEnabled = view.context.settings().isDynamicToolbarEnabled
 
-            return FenixSnackbar(parent, binding, callback, isError).also {
+            return NetGpuBrowserSnackbar(parent, binding, callback, isError).also {
                 it.duration = durationOrAccessibleDuration
 
                 it.view.updatePadding(
@@ -144,7 +144,7 @@ class FenixSnackbar private constructor(
 
                 if (parent.id == R.id.dynamicSnackbarContainer) {
                     (parent.layoutParams as? CoordinatorLayout.LayoutParams)?.apply {
-                        behavior = FenixSnackbarBehavior<FrameLayout>(
+                        behavior = NetGpuBrowserSnackbarBehavior<FrameLayout>(
                             context = view.context,
                             toolbarPosition = view.context.settings().toolbarPosition,
                         )
@@ -187,7 +187,7 @@ class FenixSnackbar private constructor(
     }
 }
 
-private class FenixSnackbarCallback(
+private class NetGpuBrowserSnackbarCallback(
     private val content: View,
 ) : ContentViewCallback {
 

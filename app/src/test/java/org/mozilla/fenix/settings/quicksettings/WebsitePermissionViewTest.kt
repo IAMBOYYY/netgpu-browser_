@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.widget.FrameLayout
 import android.widget.TextView
@@ -21,10 +21,10 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.SpinnerPermission
-import org.mozilla.fenix.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.ToggleablePermission
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.SpinnerPermission
+import com.netgpu.browser.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.ToggleablePermission
 import java.util.EnumMap
 
 @RunWith(FenixRobolectricTestRunner::class)

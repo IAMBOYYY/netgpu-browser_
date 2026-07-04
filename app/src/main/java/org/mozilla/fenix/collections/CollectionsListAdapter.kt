@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.view.updatePaddingRelative
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.support.ktx.android.view.putCompoundDrawablesRelativeWithIntrinsicBounds
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * An adapter for displaying an option to create a new collection and the list of existing

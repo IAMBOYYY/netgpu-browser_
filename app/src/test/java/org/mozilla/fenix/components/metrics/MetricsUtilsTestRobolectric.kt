@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import io.mockk.every
 import io.mockk.mockk
@@ -15,10 +15,10 @@ import org.junit.Assert.assertNull
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.components.metrics.MetricsUtilsTest.Companion.ENGINE_SOURCE_IDENTIFIER
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.components.metrics.MetricsUtilsTest.Companion.ENGINE_SOURCE_IDENTIFIER
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 /**
  * Just the Robolectric tests for MetricsUtil. Splitting these files out means our other tests will run more quickly.

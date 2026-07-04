@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -19,11 +19,11 @@ import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.BrowserToolbarPopupWindowBinding
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.BrowserToolbarPopupWindowBinding
+import com.netgpu.browser.ext.components
 import java.lang.ref.WeakReference
 
 object ToolbarPopupWindow {
@@ -53,7 +53,7 @@ object ToolbarPopupWindow {
             context.resources.getDimension(R.dimen.mozac_browser_menu_elevation)
 
         // This is a workaround for SDK<23 to allow popup dismissal on outside or back button press
-        // See: https://github.com/mozilla-mobile/fenix/issues/10027
+        // See: https://github.com/mozilla-mobile/netgpu_browser/issues/10027
         popupWindow.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         binding.copy.isVisible = copyVisible
@@ -70,7 +70,7 @@ object ToolbarPopupWindow {
                 )
 
                 view.get()?.let { toolbarView ->
-                    FenixSnackbar.make(
+                    NetGpuBrowserSnackbar.make(
                         view = toolbarView,
                         duration = Snackbar.LENGTH_SHORT,
                         isDisplayedWithBrowserToolbar = true,

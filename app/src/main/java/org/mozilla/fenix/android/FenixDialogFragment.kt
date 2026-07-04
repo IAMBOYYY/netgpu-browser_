@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.android
+package com.netgpu.browser.android
 
 import android.app.Dialog
 import android.graphics.Color
@@ -19,7 +19,7 @@ import androidx.appcompat.view.ContextThemeWrapper
 import com.google.android.material.R
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import org.mozilla.fenix.HomeActivity
+import com.netgpu.browser.HomeActivity
 
 /**
  * Base [AppCompatDialogFragment] that adds behaviour to create a top or bottom dialog.

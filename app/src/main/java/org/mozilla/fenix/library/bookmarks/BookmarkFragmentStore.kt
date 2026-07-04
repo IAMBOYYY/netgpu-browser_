@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.concept.storage.BookmarkNode
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.selection.SelectionHolder
 
 class BookmarkFragmentStore(
     initialState: BookmarkFragmentState,

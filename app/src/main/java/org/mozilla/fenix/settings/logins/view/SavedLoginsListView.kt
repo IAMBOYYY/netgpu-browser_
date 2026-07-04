@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.view
+package com.netgpu.browser.settings.logins.view
 
 import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentSavedLoginsBinding
-import org.mozilla.fenix.ext.addUnderline
-import org.mozilla.fenix.settings.logins.LoginsListState
-import org.mozilla.fenix.settings.logins.interactor.SavedLoginsInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentSavedLoginsBinding
+import com.netgpu.browser.ext.addUnderline
+import com.netgpu.browser.settings.logins.LoginsListState
+import com.netgpu.browser.settings.logins.interactor.SavedLoginsInteractor
 
 /**
  * View that contains and configures the Saved Logins List

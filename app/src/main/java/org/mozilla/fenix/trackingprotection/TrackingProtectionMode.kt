@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.os.Parcelable
 import androidx.annotation.StringRes
 import kotlinx.parcelize.Parcelize
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 @Parcelize
 enum class TrackingProtectionMode(

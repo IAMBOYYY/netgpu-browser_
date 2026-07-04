@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.content.ClipboardManager
 import android.content.Context
@@ -36,14 +36,14 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Services
-import org.mozilla.fenix.ext.bookmarkStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Services
+import com.netgpu.browser.ext.bookmarkStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.utils.Settings
 
 @Suppress("TooManyFunctions", "LargeClass")
 class BookmarkControllerTest {
@@ -74,7 +74,7 @@ class BookmarkControllerTest {
         "987",
         "123",
         2u,
-        "Firefox",
+        "NETGPU BROWSER",
         "https://www.mozilla.org/en-US/firefox/",
         0,
         null,

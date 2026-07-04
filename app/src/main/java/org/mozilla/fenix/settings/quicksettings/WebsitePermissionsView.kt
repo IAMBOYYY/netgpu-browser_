@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.view.LayoutInflater
 import android.view.View
@@ -14,19 +14,19 @@ import androidx.annotation.VisibleForTesting
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.QuicksettingsPermissionsBinding
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY
-import org.mozilla.fenix.settings.PhoneFeature.CAMERA
-import org.mozilla.fenix.settings.PhoneFeature.CROSS_ORIGIN_STORAGE_ACCESS
-import org.mozilla.fenix.settings.PhoneFeature.LOCATION
-import org.mozilla.fenix.settings.PhoneFeature.MEDIA_KEY_SYSTEM_ACCESS
-import org.mozilla.fenix.settings.PhoneFeature.MICROPHONE
-import org.mozilla.fenix.settings.PhoneFeature.NOTIFICATION
-import org.mozilla.fenix.settings.PhoneFeature.PERSISTENT_STORAGE
-import org.mozilla.fenix.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.SpinnerPermission
-import org.mozilla.fenix.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.ToggleablePermission
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.QuicksettingsPermissionsBinding
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY
+import com.netgpu.browser.settings.PhoneFeature.CAMERA
+import com.netgpu.browser.settings.PhoneFeature.CROSS_ORIGIN_STORAGE_ACCESS
+import com.netgpu.browser.settings.PhoneFeature.LOCATION
+import com.netgpu.browser.settings.PhoneFeature.MEDIA_KEY_SYSTEM_ACCESS
+import com.netgpu.browser.settings.PhoneFeature.MICROPHONE
+import com.netgpu.browser.settings.PhoneFeature.NOTIFICATION
+import com.netgpu.browser.settings.PhoneFeature.PERSISTENT_STORAGE
+import com.netgpu.browser.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.SpinnerPermission
+import com.netgpu.browser.settings.quicksettings.WebsitePermissionsView.PermissionViewHolder.ToggleablePermission
 import java.util.EnumMap
 
 /**

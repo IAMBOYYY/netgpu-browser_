@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
@@ -27,23 +27,23 @@ import androidx.test.uiautomator.Until
 import org.hamcrest.Matchers.allOf
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.MatcherHelper.assertCheckedItemWithResIdAndTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemContainingTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithDescriptionExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdAndTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.checkedItemWithResIdAndText
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithDescription
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResIdAndText
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.MatcherHelper.assertCheckedItemWithResIdAndTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemContainingTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithDescriptionExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdAndTextExists
+import com.netgpu.browser.helpers.MatcherHelper.checkedItemWithResIdAndText
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.MatcherHelper.itemWithDescription
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResIdAndText
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the three dot (main) menu.
@@ -109,7 +109,7 @@ class ThreeDotMenuMainRobot {
             historyButton,
             downloadsButton,
             addOnsButton,
-            // Disabled step due to https://github.com/mozilla-mobile/fenix/issues/26788
+            // Disabled step due to https://github.com/mozilla-mobile/netgpu_browser/issues/26788
             // syncAndSaveDataButton,
             desktopSiteButton,
             whatsNewButton,
@@ -332,7 +332,7 @@ class ThreeDotMenuMainRobot {
             return ReaderViewRobot.Transition()
         }
 
-        fun addToFirefoxHome(interact: BrowserRobot.() -> Unit): BrowserRobot.Transition {
+        fun addToNETGPU BROWSERHome(interact: BrowserRobot.() -> Unit): BrowserRobot.Transition {
             for (i in 1..RETRY_COUNT) {
                 try {
                     addToShortcutsButton.also {

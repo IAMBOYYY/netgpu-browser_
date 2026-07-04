@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.button
+package com.netgpu.browser.compose.button
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -21,9 +21,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Base component for buttons.
@@ -66,7 +66,7 @@ private fun Button(
         Text(
             text = text,
             color = textColor,
-            style = FirefoxTheme.typography.button,
+            style = NetGpuBrowserTheme.typography.button,
             maxLines = 1,
         )
     }
@@ -84,8 +84,8 @@ private fun Button(
 @Composable
 fun PrimaryButton(
     text: String,
-    textColor: Color = FirefoxTheme.colors.textActionPrimary,
-    backgroundColor: Color = FirefoxTheme.colors.actionPrimary,
+    textColor: Color = NetGpuBrowserTheme.colors.textActionPrimary,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.actionPrimary,
     icon: Painter? = null,
     onClick: () -> Unit,
 ) {
@@ -94,7 +94,7 @@ fun PrimaryButton(
         textColor = textColor,
         backgroundColor = backgroundColor,
         icon = icon,
-        tint = FirefoxTheme.colors.iconActionPrimary,
+        tint = NetGpuBrowserTheme.colors.iconActionPrimary,
         onClick = onClick,
     )
 }
@@ -111,8 +111,8 @@ fun PrimaryButton(
 @Composable
 fun SecondaryButton(
     text: String,
-    textColor: Color = FirefoxTheme.colors.textActionSecondary,
-    backgroundColor: Color = FirefoxTheme.colors.actionSecondary,
+    textColor: Color = NetGpuBrowserTheme.colors.textActionSecondary,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.actionSecondary,
     icon: Painter? = null,
     onClick: () -> Unit,
 ) {
@@ -121,7 +121,7 @@ fun SecondaryButton(
         textColor = textColor,
         backgroundColor = backgroundColor,
         icon = icon,
-        tint = FirefoxTheme.colors.iconActionSecondary,
+        tint = NetGpuBrowserTheme.colors.iconActionSecondary,
         onClick = onClick,
     )
 }
@@ -138,8 +138,8 @@ fun SecondaryButton(
 @Composable
 fun TertiaryButton(
     text: String,
-    textColor: Color = FirefoxTheme.colors.textActionTertiary,
-    backgroundColor: Color = FirefoxTheme.colors.actionTertiary,
+    textColor: Color = NetGpuBrowserTheme.colors.textActionTertiary,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.actionTertiary,
     icon: Painter? = null,
     onClick: () -> Unit,
 ) {
@@ -148,7 +148,7 @@ fun TertiaryButton(
         textColor = textColor,
         backgroundColor = backgroundColor,
         icon = icon,
-        tint = FirefoxTheme.colors.iconActionTertiary,
+        tint = NetGpuBrowserTheme.colors.iconActionTertiary,
         onClick = onClick,
     )
 }
@@ -165,8 +165,8 @@ fun TertiaryButton(
 @Composable
 fun DestructiveButton(
     text: String,
-    textColor: Color = FirefoxTheme.colors.textWarningButton,
-    backgroundColor: Color = FirefoxTheme.colors.actionSecondary,
+    textColor: Color = NetGpuBrowserTheme.colors.textWarningButton,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.actionSecondary,
     icon: Painter? = null,
     onClick: () -> Unit,
 ) {
@@ -175,7 +175,7 @@ fun DestructiveButton(
         textColor = textColor,
         backgroundColor = backgroundColor,
         icon = icon,
-        tint = FirefoxTheme.colors.iconWarningButton,
+        tint = NetGpuBrowserTheme.colors.iconWarningButton,
         onClick = onClick,
     )
 }
@@ -183,10 +183,10 @@ fun DestructiveButton(
 @Composable
 @LightDarkPreview
 private fun ButtonPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column(
             modifier = Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {

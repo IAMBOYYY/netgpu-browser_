@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.content.Context
 import android.graphics.Color
@@ -15,9 +15,9 @@ import androidx.navigation.NavOptions
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import mozilla.components.concept.engine.EngineView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.ext.settings
 import java.lang.ref.WeakReference
 
 /**

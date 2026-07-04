@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import android.content.Context
 import android.text.method.ScrollingMovementMethod
@@ -13,9 +13,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import mozilla.components.browser.state.state.content.DownloadState
 import mozilla.components.feature.downloads.AbstractFetchDownloadService
 import mozilla.components.feature.downloads.toMegabyteOrKilobyteString
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.DownloadDialogLayoutBinding
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.DownloadDialogLayoutBinding
+import com.netgpu.browser.ext.settings
 
 /**
  * [DynamicDownloadDialog] is used to show a view in the current tab to the user, triggered when

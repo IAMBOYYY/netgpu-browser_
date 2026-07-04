@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.viewholders
+package com.netgpu.browser.tabstray.viewholders
 
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.browser.state.selector.privateTabs
 import mozilla.components.browser.state.store.BrowserStore
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.ext.defaultBrowserLayoutColumns
-import org.mozilla.fenix.tabstray.ext.observeFirstInsert
-import org.mozilla.fenix.tabstray.ext.selectedPrivateTab
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.ext.defaultBrowserLayoutColumns
+import com.netgpu.browser.tabstray.ext.observeFirstInsert
+import com.netgpu.browser.tabstray.ext.selectedPrivateTab
 
 /**
  * View holder for the private tabs tray list.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding.view
+package com.netgpu.browser.onboarding.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -26,11 +26,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.button.PrimaryButton
-import org.mozilla.fenix.compose.button.SecondaryButton
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.button.PrimaryButton
+import com.netgpu.browser.compose.button.SecondaryButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * The ratio of the image height to the window height. This was determined from the designs in figma
@@ -57,7 +57,7 @@ fun OnboardingPage(
 ) {
     BoxWithConstraints(
         modifier = Modifier
-            .background(FirefoxTheme.colors.layer1)
+            .background(NetGpuBrowserTheme.colors.layer1)
             .padding(bottom = if (pageState.secondaryButtonText == null) 32.dp else 24.dp)
             .then(modifier),
     ) {
@@ -76,7 +76,7 @@ fun OnboardingPage(
                 Icon(
                     painter = painterResource(id = R.drawable.mozac_ic_close),
                     contentDescription = stringResource(R.string.content_description_close_button),
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
 
@@ -95,18 +95,18 @@ fun OnboardingPage(
 
                 Text(
                     text = pageState.title,
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     textAlign = TextAlign.Center,
-                    style = FirefoxTheme.typography.headline5,
+                    style = NetGpuBrowserTheme.typography.headline5,
                 )
 
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
                     text = pageState.description,
-                    color = FirefoxTheme.colors.textSecondary,
+                    color = NetGpuBrowserTheme.colors.textSecondary,
                     textAlign = TextAlign.Center,
-                    style = FirefoxTheme.typography.body2,
+                    style = NetGpuBrowserTheme.typography.body2,
                 )
             }
 
@@ -138,7 +138,7 @@ fun OnboardingPage(
 @LightDarkPreview
 @Composable
 private fun OnboardingPagePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         OnboardingPage(
             pageState = OnboardingPageState(
                 image = R.drawable.ic_notification_permission,

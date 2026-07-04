@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import androidx.navigation.NavController
 import mozilla.components.feature.addons.Addon
 import mozilla.components.feature.addons.ui.AddonsManagerAdapterDelegate
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.navigateSafe
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.navigateSafe
 
 /**
  * View used for managing add-ons.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,20 +13,20 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.R
-import org.mozilla.fenix.SecureFragment
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.ComponentCreditCardsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.redirectToReAuth
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.autofill.AutofillAction
-import org.mozilla.fenix.settings.autofill.AutofillFragmentState
-import org.mozilla.fenix.settings.autofill.AutofillFragmentStore
-import org.mozilla.fenix.settings.creditcards.controller.DefaultCreditCardsManagementController
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardsManagementInteractor
-import org.mozilla.fenix.settings.creditcards.interactor.DefaultCreditCardsManagementInteractor
-import org.mozilla.fenix.settings.creditcards.view.CreditCardsManagementView
+import com.netgpu.browser.R
+import com.netgpu.browser.SecureFragment
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.ComponentCreditCardsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.redirectToReAuth
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.autofill.AutofillAction
+import com.netgpu.browser.settings.autofill.AutofillFragmentState
+import com.netgpu.browser.settings.autofill.AutofillFragmentStore
+import com.netgpu.browser.settings.creditcards.controller.DefaultCreditCardsManagementController
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardsManagementInteractor
+import com.netgpu.browser.settings.creditcards.interactor.DefaultCreditCardsManagementInteractor
+import com.netgpu.browser.settings.creditcards.view.CreditCardsManagementView
 
 /**
  * Displays a list of saved credit cards.

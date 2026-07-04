@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import android.content.Context
 import android.content.DialogInterface
@@ -19,23 +19,23 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.support.ktx.kotlin.stripDefaultPort
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY
-import org.mozilla.fenix.settings.PhoneFeature.CAMERA
-import org.mozilla.fenix.settings.PhoneFeature.CROSS_ORIGIN_STORAGE_ACCESS
-import org.mozilla.fenix.settings.PhoneFeature.LOCATION
-import org.mozilla.fenix.settings.PhoneFeature.MEDIA_KEY_SYSTEM_ACCESS
-import org.mozilla.fenix.settings.PhoneFeature.MICROPHONE
-import org.mozilla.fenix.settings.PhoneFeature.NOTIFICATION
-import org.mozilla.fenix.settings.PhoneFeature.PERSISTENT_STORAGE
-import org.mozilla.fenix.settings.quicksettings.AutoplayValue
-import org.mozilla.fenix.settings.requirePreference
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY
+import com.netgpu.browser.settings.PhoneFeature.CAMERA
+import com.netgpu.browser.settings.PhoneFeature.CROSS_ORIGIN_STORAGE_ACCESS
+import com.netgpu.browser.settings.PhoneFeature.LOCATION
+import com.netgpu.browser.settings.PhoneFeature.MEDIA_KEY_SYSTEM_ACCESS
+import com.netgpu.browser.settings.PhoneFeature.MICROPHONE
+import com.netgpu.browser.settings.PhoneFeature.NOTIFICATION
+import com.netgpu.browser.settings.PhoneFeature.PERSISTENT_STORAGE
+import com.netgpu.browser.settings.quicksettings.AutoplayValue
+import com.netgpu.browser.settings.requirePreference
+import com.netgpu.browser.utils.Settings
 
 @SuppressWarnings("TooManyFunctions")
 class SitePermissionsDetailsExceptionsFragment : PreferenceFragmentCompat() {

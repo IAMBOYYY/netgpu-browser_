@@ -4,18 +4,18 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.content.Intent
 import android.view.ViewConfiguration.getLongPressTimeout
 import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.rule.ActivityTestRule
 import androidx.test.uiautomator.UiSelector
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.helpers.FeatureSettingsHelper.Companion.settings
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.onboarding.FenixOnboarding
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.helpers.FeatureSettingsHelper.Companion.settings
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
 
 /**
  * A [org.junit.Rule] to handle shared test set up for tests on [HomeActivity].
@@ -39,7 +39,7 @@ class HomeActivityTestRule(
         launchActivity: Boolean = true,
         skipOnboarding: Boolean = false,
         isHomeOnboardingDialogEnabled: Boolean = settings.showHomeOnboardingDialog &&
-            FenixOnboarding(appContext).userHasBeenOnboarded(),
+            NetGpuBrowserOnboarding(appContext).userHasBeenOnboarded(),
         isPocketEnabled: Boolean = settings.showPocketRecommendationsFeature,
         isJumpBackInCFREnabled: Boolean = settings.shouldShowJumpBackInCFR,
         isRecentTabsFeatureEnabled: Boolean = settings.showRecentTabsFeature,
@@ -140,7 +140,7 @@ class HomeActivityIntentTestRule internal constructor(
         launchActivity: Boolean = true,
         skipOnboarding: Boolean = false,
         isHomeOnboardingDialogEnabled: Boolean = settings.showHomeOnboardingDialog &&
-            FenixOnboarding(appContext).userHasBeenOnboarded(),
+            NetGpuBrowserOnboarding(appContext).userHasBeenOnboarded(),
         isPocketEnabled: Boolean = settings.showPocketRecommendationsFeature,
         isJumpBackInCFREnabled: Boolean = settings.shouldShowJumpBackInCFR,
         isRecentTabsFeatureEnabled: Boolean = settings.showRecentTabsFeature,
@@ -214,7 +214,7 @@ class HomeActivityIntentTestRule internal constructor(
      */
     fun updateCachedSettings() {
         isHomeOnboardingDialogEnabled =
-            settings.showHomeOnboardingDialog && FenixOnboarding(appContext).userHasBeenOnboarded()
+            settings.showHomeOnboardingDialog && NetGpuBrowserOnboarding(appContext).userHasBeenOnboarded()
         isPocketEnabled = settings.showPocketRecommendationsFeature
         isJumpBackInCFREnabled = settings.shouldShowJumpBackInCFR
         isRecentTabsFeatureEnabled = settings.showRecentTabsFeature
@@ -257,7 +257,7 @@ class HomeActivityIntentTestRule internal constructor(
 
 // changing the device preference for Touch and Hold delay, to avoid long-clicks instead of a single-click
 fun setLongTapTimeout(delay: Int) {
-    // Issue: https://github.com/mozilla-mobile/fenix/issues/25132
+    // Issue: https://github.com/mozilla-mobile/netgpu_browser/issues/25132
     var attempts = 0
     while (attempts++ < 3) {
         try {
@@ -272,7 +272,7 @@ fun setLongTapTimeout(delay: Int) {
 private fun skipOnboardingBeforeLaunch() {
     // The production code isn't aware that we're using
     // this API so it can be fragile.
-    FenixOnboarding(appContext).finish()
+    NetGpuBrowserOnboarding(appContext).finish()
 }
 
 private fun closeNotificationShade() {

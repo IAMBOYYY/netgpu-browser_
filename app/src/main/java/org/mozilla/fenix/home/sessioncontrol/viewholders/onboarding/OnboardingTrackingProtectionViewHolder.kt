@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding
+package com.netgpu.browser.home.sessioncontrol.viewholders.onboarding
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.GleanMetrics.Onboarding
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.OnboardingTrackingProtectionBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.onboarding.OnboardingRadioButton
-import org.mozilla.fenix.utils.view.addToRadioGroup
+import com.netgpu.browser.GleanMetrics.Onboarding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.OnboardingTrackingProtectionBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.onboarding.OnboardingRadioButton
+import com.netgpu.browser.utils.view.addToRadioGroup
 
 class OnboardingTrackingProtectionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 

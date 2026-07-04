@@ -1,4 +1,4 @@
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import io.mockk.Runs
 import io.mockk.every
@@ -12,8 +12,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SearchSelectorMenuTest {

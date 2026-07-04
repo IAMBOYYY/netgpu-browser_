@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding.view
+package com.netgpu.browser.onboarding.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -40,11 +40,11 @@ import androidx.compose.ui.unit.dp
 import com.google.accompanist.insets.navigationBarsPadding
 import com.google.accompanist.insets.statusBarsPadding
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.button.PrimaryButton
-import org.mozilla.fenix.compose.button.SecondaryButton
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.GleanMetrics.Onboarding as OnboardingMetrics
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.button.PrimaryButton
+import com.netgpu.browser.compose.button.SecondaryButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.GleanMetrics.Onboarding as OnboardingMetrics
 
 /**
  * Enum that represents the onboarding screen that is displayed.
@@ -57,7 +57,7 @@ private enum class OnboardingState {
 /**
  * A screen for displaying a welcome and sync sign in onboarding.
  *
- * @param isSyncSignIn Whether or not the user is signed into their Firefox Sync account.
+ * @param isSyncSignIn Whether or not the user is signed into their NETGPU BROWSER Sync account.
  * @param onDismiss Invoked when the user clicks on the close or "Skip" button.
  * @param onSignInButtonClick Invoked when the user clicks on the "Sign In" button
  */
@@ -71,7 +71,7 @@ fun Onboarding(
 
     Column(
         modifier = Modifier
-            .background(FirefoxTheme.colors.layer1)
+            .background(NetGpuBrowserTheme.colors.layer1)
             .fillMaxSize()
             .padding(bottom = 32.dp)
             .statusBarsPadding()
@@ -97,7 +97,7 @@ fun Onboarding(
                 Icon(
                     painter = painterResource(id = R.drawable.mozac_ic_close),
                     contentDescription = stringResource(R.string.onboarding_home_content_description_close_button),
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
         }
@@ -176,18 +176,18 @@ private fun OnboardingWelcomeContent() {
 
         Text(
             text = stringResource(id = R.string.onboarding_home_welcome_title_2),
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
             textAlign = TextAlign.Center,
-            style = FirefoxTheme.typography.headline5,
+            style = NetGpuBrowserTheme.typography.headline5,
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
             text = stringResource(id = R.string.onboarding_home_welcome_description),
-            color = FirefoxTheme.colors.textSecondary,
+            color = NetGpuBrowserTheme.colors.textSecondary,
             textAlign = TextAlign.Center,
-            style = FirefoxTheme.typography.body2,
+            style = NetGpuBrowserTheme.typography.body2,
         )
     }
 }
@@ -207,18 +207,18 @@ private fun OnboardingSyncSignInContent() {
 
         Text(
             text = stringResource(id = R.string.onboarding_home_sync_title_3),
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
             textAlign = TextAlign.Center,
-            style = FirefoxTheme.typography.headline5,
+            style = NetGpuBrowserTheme.typography.headline5,
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
             text = stringResource(id = R.string.onboarding_home_sync_description),
-            color = FirefoxTheme.colors.textSecondary,
+            color = NetGpuBrowserTheme.colors.textSecondary,
             textAlign = TextAlign.Center,
-            style = FirefoxTheme.typography.body2,
+            style = NetGpuBrowserTheme.typography.body2,
         )
     }
 }
@@ -256,9 +256,9 @@ private fun Indicators(onboardingState: OnboardingState) {
     ) {
         Indicator(
             color = if (onboardingState == OnboardingState.Welcome) {
-                FirefoxTheme.colors.indicatorActive
+                NetGpuBrowserTheme.colors.indicatorActive
             } else {
-                FirefoxTheme.colors.indicatorInactive
+                NetGpuBrowserTheme.colors.indicatorInactive
             },
         )
 
@@ -266,9 +266,9 @@ private fun Indicators(onboardingState: OnboardingState) {
 
         Indicator(
             color = if (onboardingState == OnboardingState.SyncSignIn) {
-                FirefoxTheme.colors.indicatorActive
+                NetGpuBrowserTheme.colors.indicatorActive
             } else {
-                FirefoxTheme.colors.indicatorInactive
+                NetGpuBrowserTheme.colors.indicatorInactive
             },
         )
     }
@@ -287,7 +287,7 @@ private fun Indicator(color: Color) {
 @Composable
 @Preview
 private fun OnboardingPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Onboarding(
             isSyncSignIn = false,
             onDismiss = {},

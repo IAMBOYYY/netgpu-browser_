@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -14,7 +14,7 @@ import mozilla.components.concept.engine.Engine
 import mozilla.components.concept.storage.HistoryStorage
 import mozilla.components.feature.downloads.DownloadsUseCases
 import mozilla.components.feature.tabs.TabsUseCases
-import org.mozilla.fenix.components.PermissionStorage
+import com.netgpu.browser.components.PermissionStorage
 import kotlin.coroutines.CoroutineContext
 
 interface DeleteBrowsingDataController {

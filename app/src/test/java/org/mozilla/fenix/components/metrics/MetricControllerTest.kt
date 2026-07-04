@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import io.mockk.MockKAnnotations
 import io.mockk.every
@@ -41,21 +41,21 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.AndroidAutofill
-import org.mozilla.fenix.GleanMetrics.Awesomebar
-import org.mozilla.fenix.GleanMetrics.BrowserSearch
-import org.mozilla.fenix.GleanMetrics.ContextualMenu
-import org.mozilla.fenix.GleanMetrics.CreditCards
-import org.mozilla.fenix.GleanMetrics.LoginDialog
-import org.mozilla.fenix.GleanMetrics.MediaNotification
-import org.mozilla.fenix.GleanMetrics.PerfAwesomebar
-import org.mozilla.fenix.GleanMetrics.ProgressiveWebApp
-import org.mozilla.fenix.GleanMetrics.SitePermissions
-import org.mozilla.fenix.GleanMetrics.SyncedTabs
-import org.mozilla.fenix.components.metrics.ReleaseMetricController.Companion
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.search.awesomebar.ShortcutsSuggestionProvider
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.AndroidAutofill
+import com.netgpu.browser.GleanMetrics.Awesomebar
+import com.netgpu.browser.GleanMetrics.BrowserSearch
+import com.netgpu.browser.GleanMetrics.ContextualMenu
+import com.netgpu.browser.GleanMetrics.CreditCards
+import com.netgpu.browser.GleanMetrics.LoginDialog
+import com.netgpu.browser.GleanMetrics.MediaNotification
+import com.netgpu.browser.GleanMetrics.PerfAwesomebar
+import com.netgpu.browser.GleanMetrics.ProgressiveWebApp
+import com.netgpu.browser.GleanMetrics.SitePermissions
+import com.netgpu.browser.GleanMetrics.SyncedTabs
+import com.netgpu.browser.components.metrics.ReleaseMetricController.Companion
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.search.awesomebar.ShortcutsSuggestionProvider
+import com.netgpu.browser.utils.Settings
 import mozilla.components.compose.browser.awesomebar.AwesomeBarFacts as ComposeAwesomeBarFacts
 
 @RunWith(FenixRobolectricTestRunner::class)

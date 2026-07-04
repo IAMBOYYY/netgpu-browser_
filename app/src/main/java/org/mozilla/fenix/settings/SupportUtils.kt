@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.content.Intent
@@ -11,17 +11,17 @@ import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.net.toUri
 import mozilla.components.support.ktx.android.content.appVersionName
 import mozilla.components.support.ktx.android.content.getColorFromAttr
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.account.AuthIntentReceiverActivity
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.account.AuthIntentReceiverActivity
 import java.io.UnsupportedEncodingException
 import java.net.URLEncoder
 import java.util.Locale
 
 object SupportUtils {
     const val RATE_APP_URL = "market://details?id=" + BuildConfig.APPLICATION_ID
-    const val POCKET_TRENDING_URL = "https://getpocket.com/fenix-top-articles"
+    const val POCKET_TRENDING_URL = "https://getpocket.com/netgpu_browser-top-articles"
     const val WIKIPEDIA_URL = "https://www.wikipedia.org/"
     const val FENIX_PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}"
     const val GOOGLE_URL = "https://www.google.com/"
@@ -88,7 +88,7 @@ object SupportUtils {
         return "https://support.mozilla.org/$langTag/kb/$escapedTopic"
     }
 
-    fun getFirefoxAccountSumoUrl(): String {
+    fun getNETGPU BROWSERAccountSumoUrl(): String {
         return "https://support.mozilla.org/kb/access-mozilla-services-firefox-account"
     }
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import androidx.lifecycle.Lifecycle
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -24,10 +24,10 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.PerfStartup
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.perf.StartupPathProvider.StartupPath
-import org.mozilla.fenix.perf.StartupStateProvider.StartupState
+import com.netgpu.browser.GleanMetrics.PerfStartup
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.perf.StartupPathProvider.StartupPath
+import com.netgpu.browser.perf.StartupStateProvider.StartupState
 
 private val validTelemetryLabels = run {
     val allStates = listOf("cold", "warm", "hot", "unknown")

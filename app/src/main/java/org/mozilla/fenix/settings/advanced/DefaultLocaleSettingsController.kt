@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.advanced
+package com.netgpu.browser.settings.advanced
 
 import android.app.Activity
 import android.content.Context
@@ -10,7 +10,7 @@ import mozilla.components.browser.state.action.SearchAction
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.support.locale.LocaleManager
 import mozilla.components.support.locale.LocaleUseCases
-import org.mozilla.fenix.nimbus.FxNimbus
+import com.netgpu.browser.nimbus.FxNimbus
 import java.util.Locale
 
 interface LocaleSettingsController {

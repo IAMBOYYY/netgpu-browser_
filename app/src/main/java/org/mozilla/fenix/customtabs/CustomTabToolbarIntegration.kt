@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.content.Context
 import mozilla.components.browser.toolbar.BrowserToolbar
 import mozilla.components.feature.toolbar.ToolbarFeature
-import org.mozilla.fenix.components.toolbar.ToolbarIntegration
-import org.mozilla.fenix.components.toolbar.ToolbarMenu
+import com.netgpu.browser.components.toolbar.ToolbarIntegration
+import com.netgpu.browser.components.toolbar.ToolbarMenu
 
 class CustomTabToolbarIntegration(
     context: Context,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -22,17 +22,17 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.SecureFragment
-import org.mozilla.fenix.databinding.FragmentCreditCardEditorBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.placeCursorAtEnd
-import org.mozilla.fenix.ext.redirectToReAuth
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.creditcards.controller.DefaultCreditCardEditorController
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardEditorInteractor
-import org.mozilla.fenix.settings.creditcards.interactor.DefaultCreditCardEditorInteractor
-import org.mozilla.fenix.settings.creditcards.view.CreditCardEditorView
+import com.netgpu.browser.R
+import com.netgpu.browser.SecureFragment
+import com.netgpu.browser.databinding.FragmentCreditCardEditorBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.placeCursorAtEnd
+import com.netgpu.browser.ext.redirectToReAuth
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.creditcards.controller.DefaultCreditCardEditorController
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardEditorInteractor
+import com.netgpu.browser.settings.creditcards.interactor.DefaultCreditCardEditorInteractor
+import com.netgpu.browser.settings.creditcards.view.CreditCardEditorView
 
 /**
  * Display a credit card editor for adding and editing a credit card.

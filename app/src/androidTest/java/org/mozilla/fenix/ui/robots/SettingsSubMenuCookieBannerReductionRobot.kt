@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.MatcherHelper.assertCheckedItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemContainingTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.checkedItemWithResId
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResId
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.packageName
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.MatcherHelper.assertCheckedItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemContainingTextExists
+import com.netgpu.browser.helpers.MatcherHelper.checkedItemWithResId
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResId
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.packageName
 
 /**
  * Implementation of Robot Pattern for the settings Cookie Banner Reduction sub menu.

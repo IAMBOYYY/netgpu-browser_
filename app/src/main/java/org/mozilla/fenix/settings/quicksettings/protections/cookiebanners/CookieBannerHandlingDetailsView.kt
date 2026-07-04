@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -15,9 +15,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.plus
 import mozilla.components.lib.publicsuffixlist.PublicSuffixList
 import mozilla.components.support.ktx.kotlin.toShortUrl
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentCookieBannerDetailsPanelBinding
-import org.mozilla.fenix.trackingprotection.ProtectionsState
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentCookieBannerDetailsPanelBinding
+import com.netgpu.browser.trackingprotection.ProtectionsState
 
 /**
  * MVI View that knows how to display cookie banner handling details for a site.

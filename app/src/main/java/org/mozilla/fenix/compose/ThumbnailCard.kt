@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -31,9 +31,9 @@ import mozilla.components.browser.icons.compose.Loader
 import mozilla.components.browser.icons.compose.Placeholder
 import mozilla.components.browser.icons.compose.WithIcon
 import mozilla.components.concept.base.images.ImageLoadRequest
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Card which will display a thumbnail. If a thumbnail is not available for [url], the favicon
@@ -66,13 +66,13 @@ fun ThumbnailCard(
     ) {
         if (inComposePreview) {
             Box(
-                modifier = Modifier.background(color = FirefoxTheme.colors.layer3),
+                modifier = Modifier.background(color = NetGpuBrowserTheme.colors.layer3),
             )
         } else {
             components.core.icons.Loader(url) {
                 Placeholder {
                     Box(
-                        modifier = Modifier.background(color = FirefoxTheme.colors.layer3),
+                        modifier = Modifier.background(color = NetGpuBrowserTheme.colors.layer3),
                     )
                 }
 
@@ -137,7 +137,7 @@ private fun ThumbnailImage(
 @Preview
 @Composable
 private fun ThumbnailCardPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         ThumbnailCard(
             url = "https://mozilla.com",
             key = "123",

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -15,7 +15,7 @@ import androidx.core.content.getSystemService
 import mozilla.components.support.ktx.kotlin.MAX_URI_LENGTH
 import mozilla.components.support.utils.SafeUrl
 import mozilla.components.support.utils.WebURLFinder
-import org.mozilla.fenix.perf.Performance.logger
+import com.netgpu.browser.perf.Performance.logger
 
 private const val MIME_TYPE_TEXT_PLAIN = "text/plain"
 private const val MIME_TYPE_TEXT_HTML = "text/html"
@@ -32,7 +32,7 @@ class ClipboardHandler(val context: Context) {
      * API as from Android 12 and above, accessing it will trigger a notification letting the user
      * know the app has accessed the clipboard, make sure when you call this API that users are
      * completely aware that we are accessing the clipboard.
-     * See for more details https://github.com/mozilla-mobile/fenix/issues/22271.
+     * See for more details https://github.com/mozilla-mobile/netgpu_browser/issues/22271.
      */
     var text: String?
         get() {
@@ -64,7 +64,7 @@ class ClipboardHandler(val context: Context) {
      * API as from Android 12 and above, accessing it will trigger a notification letting the user
      * know the app has accessed the clipboard, make sure when you call this API that users are
      * completely aware that we are accessing the clipboard.
-     * See for more details https://github.com/mozilla-mobile/fenix/issues/22271.
+     * See for more details https://github.com/mozilla-mobile/netgpu_browser/issues/22271.
      *
      */
     var sensitiveText: String?
@@ -88,7 +88,7 @@ class ClipboardHandler(val context: Context) {
      * API as from Android 12 and above, accessing it will trigger a notification letting the user
      * know the app has accessed the clipboard, make sure when you call this API that users are
      * completely aware that we are accessing the clipboard.
-     * See for more details https://github.com/mozilla-mobile/fenix/issues/22271.
+     * See for more details https://github.com/mozilla-mobile/netgpu_browser/issues/22271.
      */
     fun extractURL(): String? {
         return text?.let {

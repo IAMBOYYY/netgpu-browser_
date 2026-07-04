@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import mozilla.components.feature.tab.collections.TabCollection
 

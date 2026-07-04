@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import mozilla.components.service.fxa.ServerConfig
 import mozilla.components.service.fxa.ServerConfig.Server
 
 /**
- * Utility to configure Firefox Account stage servers.
+ * Utility to configure NETGPU BROWSER Account stage servers.
  */
 
 object FxaServer {

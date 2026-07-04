@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.os.Build
 import androidx.compose.ui.test.ExperimentalTestApi
@@ -34,20 +34,20 @@ import org.hamcrest.CoreMatchers.allOf
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants
-import org.mozilla.fenix.helpers.Constants.LONG_CLICK_DURATION
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.Constants.SPEECH_RECOGNITION
-import org.mozilla.fenix.helpers.SessionLoadedIdlingResource
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.isPackageInstalled
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.waitForObjects
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants
+import com.netgpu.browser.helpers.Constants.LONG_CLICK_DURATION
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.Constants.SPEECH_RECOGNITION
+import com.netgpu.browser.helpers.SessionLoadedIdlingResource
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.isPackageInstalled
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.waitForObjects
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the search fragment.
@@ -111,7 +111,7 @@ class SearchRobot {
         }
     }
 
-    fun verifyFirefoxSuggestResults(rule: ComposeTestRule, searchTerm: String, vararg searchSuggestions: String) {
+    fun verifyNETGPU BROWSERSuggestResults(rule: ComposeTestRule, searchTerm: String, vararg searchSuggestions: String) {
         rule.waitForIdle()
         for (i in 1..RETRY_COUNT) {
             try {

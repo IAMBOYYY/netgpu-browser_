@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import android.content.Context
 import android.util.AttributeSet
@@ -11,8 +11,8 @@ import android.view.View
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.withStyledAttributes
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.DeleteBrowsingDataItemBinding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.DeleteBrowsingDataItemBinding
 
 class DeleteBrowsingDataItem @JvmOverloads constructor(
     context: Context,

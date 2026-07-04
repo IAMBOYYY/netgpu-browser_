@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.viewholders
+package com.netgpu.browser.tabstray.viewholders
 
 import android.content.Context
 import android.view.View
@@ -16,21 +16,21 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.maxActiveTime
-import org.mozilla.fenix.ext.potentialInactiveTabs
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.ext.browserAdapter
-import org.mozilla.fenix.tabstray.ext.defaultBrowserLayoutColumns
-import org.mozilla.fenix.tabstray.ext.getNormalTrayTabs
-import org.mozilla.fenix.tabstray.ext.inactiveTabsAdapter
-import org.mozilla.fenix.tabstray.ext.isNormalTabInactive
-import org.mozilla.fenix.tabstray.ext.observeFirstInsert
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.maxActiveTime
+import com.netgpu.browser.ext.potentialInactiveTabs
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.ext.browserAdapter
+import com.netgpu.browser.tabstray.ext.defaultBrowserLayoutColumns
+import com.netgpu.browser.tabstray.ext.getNormalTrayTabs
+import com.netgpu.browser.tabstray.ext.inactiveTabsAdapter
+import com.netgpu.browser.tabstray.ext.isNormalTabInactive
+import com.netgpu.browser.tabstray.ext.observeFirstInsert
 
 /**
  * View holder for the normal tabs tray list.
@@ -119,7 +119,7 @@ class NormalBrowserPageViewHolder(
         }
     }
 
-    // Temporary hack until https://github.com/mozilla-mobile/fenix/issues/21901 where the
+    // Temporary hack until https://github.com/mozilla-mobile/netgpu_browser/issues/21901 where the
     // logic that shows/hides the "Your open tabs will be shown here." message will no longer be derived
     // from adapters, view holders, and item counts.
     override fun showTrayList(adapter: RecyclerView.Adapter<out RecyclerView.ViewHolder>): Boolean {

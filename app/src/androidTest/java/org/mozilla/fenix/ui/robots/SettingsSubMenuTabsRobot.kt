@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -14,8 +14,8 @@ import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers.allOf
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestHelper.mDevice
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestHelper.mDevice
 
 /**
  * Implementation of Robot Pattern for the settings Tabs sub menu.

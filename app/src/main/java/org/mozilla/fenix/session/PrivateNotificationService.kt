@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.session
+package com.netgpu.browser.session
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -11,9 +11,9 @@ import androidx.core.content.ContextCompat
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.feature.privatemode.notification.AbstractPrivateNotificationService
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
 import java.util.Locale
 
 /**

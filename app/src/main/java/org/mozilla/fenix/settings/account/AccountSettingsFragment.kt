@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.app.KeyguardManager
 import android.content.Context
@@ -35,18 +35,18 @@ import mozilla.components.service.fxa.sync.SyncStatusObserver
 import mozilla.components.service.fxa.sync.getLastSynced
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.GleanMetrics.SyncAccount
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.GleanMetrics.SyncAccount
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.requirePreference
 
 @SuppressWarnings("TooManyFunctions", "LargeClass")
 class AccountSettingsFragment : PreferenceFragmentCompat() {
@@ -378,9 +378,9 @@ class AccountSettingsFragment : PreferenceFragmentCompat() {
     private fun getChangeListenerForDeviceName(): Preference.OnPreferenceChangeListener {
         return Preference.OnPreferenceChangeListener { _, newValue ->
             accountSettingsInteractor.onChangeDeviceName(newValue as String) {
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = requireView(),
-                    duration = FenixSnackbar.LENGTH_LONG,
+                    duration = NetGpuBrowserSnackbar.LENGTH_LONG,
                     isDisplayedWithBrowserToolbar = false,
                 )
                     .setText(getString(R.string.empty_device_name_error))

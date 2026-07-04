@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.collections
+package com.netgpu.browser.home.collections
 
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -14,9 +14,9 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.tab.collections.Tab
 import mozilla.components.feature.tab.collections.TabCollection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.home.sessioncontrol.CollectionInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.home.sessioncontrol.CollectionInteractor
 
 /**
  * [RecyclerView.ViewHolder] for displaying an individual [Tab].

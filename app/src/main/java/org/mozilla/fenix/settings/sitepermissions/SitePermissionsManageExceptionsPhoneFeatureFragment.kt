@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -26,15 +26,15 @@ import kotlinx.coroutines.launch
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.concept.engine.permission.SitePermissions.Status.ALLOWED
 import mozilla.components.concept.engine.permission.SitePermissions.Status.BLOCKED
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.AutoplayValue
-import org.mozilla.fenix.settings.setStartCheckedIndicator
-import org.mozilla.fenix.settings.update
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.AutoplayValue
+import com.netgpu.browser.settings.setStartCheckedIndicator
+import com.netgpu.browser.settings.update
+import com.netgpu.browser.utils.Settings
 
 @SuppressWarnings("TooManyFunctions")
 class SitePermissionsManageExceptionsPhoneFeatureFragment : Fragment() {

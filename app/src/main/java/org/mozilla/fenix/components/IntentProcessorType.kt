@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Intent
 import mozilla.components.feature.intent.processing.IntentProcessor
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.customtabs.ExternalAppBrowserActivity
 
 enum class IntentProcessorType {
     EXTERNAL_APP, NEW_TAB, EXTERNAL_DEEPLINK, OTHER;

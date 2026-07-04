@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.browser.menu.facts.BrowserMenuFacts
@@ -34,25 +34,25 @@ import mozilla.components.support.base.facts.Facts
 import mozilla.components.support.base.log.logger.Logger
 import mozilla.components.support.webextensions.facts.WebExtensionFacts
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.GleanMetrics.Addons
-import org.mozilla.fenix.GleanMetrics.Addresses
-import org.mozilla.fenix.GleanMetrics.AndroidAutofill
-import org.mozilla.fenix.GleanMetrics.Awesomebar
-import org.mozilla.fenix.GleanMetrics.BrowserSearch
-import org.mozilla.fenix.GleanMetrics.ContextMenu
-import org.mozilla.fenix.GleanMetrics.ContextualMenu
-import org.mozilla.fenix.GleanMetrics.CreditCards
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.LoginDialog
-import org.mozilla.fenix.GleanMetrics.MediaNotification
-import org.mozilla.fenix.GleanMetrics.MediaState
-import org.mozilla.fenix.GleanMetrics.PerfAwesomebar
-import org.mozilla.fenix.GleanMetrics.ProgressiveWebApp
-import org.mozilla.fenix.GleanMetrics.SitePermissions
-import org.mozilla.fenix.GleanMetrics.SyncedTabs
-import org.mozilla.fenix.search.awesomebar.ShortcutsSuggestionProvider
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.GleanMetrics.Addons
+import com.netgpu.browser.GleanMetrics.Addresses
+import com.netgpu.browser.GleanMetrics.AndroidAutofill
+import com.netgpu.browser.GleanMetrics.Awesomebar
+import com.netgpu.browser.GleanMetrics.BrowserSearch
+import com.netgpu.browser.GleanMetrics.ContextMenu
+import com.netgpu.browser.GleanMetrics.ContextualMenu
+import com.netgpu.browser.GleanMetrics.CreditCards
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.LoginDialog
+import com.netgpu.browser.GleanMetrics.MediaNotification
+import com.netgpu.browser.GleanMetrics.MediaState
+import com.netgpu.browser.GleanMetrics.PerfAwesomebar
+import com.netgpu.browser.GleanMetrics.ProgressiveWebApp
+import com.netgpu.browser.GleanMetrics.SitePermissions
+import com.netgpu.browser.GleanMetrics.SyncedTabs
+import com.netgpu.browser.search.awesomebar.ShortcutsSuggestionProvider
+import com.netgpu.browser.utils.Settings
 import mozilla.components.compose.browser.awesomebar.AwesomeBarFacts as ComposeAwesomeBarFacts
 
 interface MetricController {

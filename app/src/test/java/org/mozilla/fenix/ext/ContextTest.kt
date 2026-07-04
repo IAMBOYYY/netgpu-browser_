@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.app.Activity
 import android.content.Context
@@ -24,9 +24,9 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import java.lang.String.format
 import java.util.Locale
 
@@ -35,7 +35,7 @@ class ContextTest {
 
     private lateinit var mockContext: Context
     private val selectedLocale = Locale("ro", "RO")
-    private val appName = "Firefox Preview"
+    private val appName = "NETGPU BROWSER Preview"
 
     private val mockId: Int = 11
 
@@ -61,7 +61,7 @@ class ContextTest {
 
         val result = mockContext.getStringWithArgSafe(mockId, appName)
 
-        assertEquals("Incearca noul Firefox Preview", result)
+        assertEquals("Incearca noul NETGPU BROWSER Preview", result)
     }
 
     @Test
@@ -74,25 +74,25 @@ class ContextTest {
 
         val result = mockContext.getStringWithArgSafe(mockId, appName)
 
-        assertEquals("Try the new Firefox Preview", result)
+        assertEquals("Try the new NETGPU BROWSER Preview", result)
     }
 
     @Test
     fun `GIVEN context WHEN seeking application of context THEN send back application context`() {
-        val expectedAppValue = ApplicationProvider.getApplicationContext<FenixApplication>()
+        val expectedAppValue = ApplicationProvider.getApplicationContext<NetGpuBrowserApplication>()
         assertEquals(expectedAppValue, testContext.application)
     }
 
     @Test
     fun `GIVEN context WHEN requiring components THEN send back application components`() {
-        val expectedComponentsValue = ApplicationProvider.getApplicationContext<FenixApplication>().components
+        val expectedComponentsValue = ApplicationProvider.getApplicationContext<NetGpuBrowserApplication>().components
         assertEquals(expectedComponentsValue, testContext.components)
     }
 
     @Test
     fun `GIVEN context WHEN getting metrics controller THEN send back metrics`() {
         every { testContext.components.analytics } returns mockk(relaxed = true)
-        val expectedMetricsValue = ApplicationProvider.getApplicationContext<FenixApplication>().components.analytics.metrics
+        val expectedMetricsValue = ApplicationProvider.getApplicationContext<NetGpuBrowserApplication>().components.analytics.metrics
         assertEquals(expectedMetricsValue, testContext.metrics)
     }
 
@@ -118,7 +118,7 @@ class ContextTest {
     @Test
     fun `GIVEN theme wrapper context without activity base context WHEN make it an activity THEN return null`() {
         val mockThemeWrapper = mockk<ContextThemeWrapper> {
-            every { baseContext } returns mockk<FenixApplication>()
+            every { baseContext } returns mockk<NetGpuBrowserApplication>()
         }
         val mockContext: Context = mockThemeWrapper
         assertNull(mockContext.asActivity())

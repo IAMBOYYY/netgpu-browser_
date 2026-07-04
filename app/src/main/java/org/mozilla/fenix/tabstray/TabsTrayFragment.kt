@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import android.content.res.Configuration
@@ -32,35 +32,35 @@ import mozilla.components.feature.downloads.ui.DownloadCancelDialogFragment
 import mozilla.components.feature.tabs.tabstray.TabsFeature
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.ComponentTabstray2Binding
-import org.mozilla.fenix.databinding.ComponentTabstrayFabBinding
-import org.mozilla.fenix.databinding.FragmentTabTrayDialogBinding
-import org.mozilla.fenix.databinding.TabsTrayTabCounter2Binding
-import org.mozilla.fenix.databinding.TabstrayMultiselectItemsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.home.HomeScreenViewModel
-import org.mozilla.fenix.share.ShareFragment
-import org.mozilla.fenix.tabstray.browser.SelectionBannerBinding
-import org.mozilla.fenix.tabstray.browser.SelectionBannerBinding.VisibilityModifier
-import org.mozilla.fenix.tabstray.browser.SelectionHandleBinding
-import org.mozilla.fenix.tabstray.browser.TabSorter
-import org.mozilla.fenix.tabstray.ext.anchorWithAction
-import org.mozilla.fenix.tabstray.ext.bookmarkMessage
-import org.mozilla.fenix.tabstray.ext.collectionMessage
-import org.mozilla.fenix.tabstray.ext.make
-import org.mozilla.fenix.tabstray.ext.showWithTheme
-import org.mozilla.fenix.tabstray.syncedtabs.SyncedTabsIntegration
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.ComponentTabstray2Binding
+import com.netgpu.browser.databinding.ComponentTabstrayFabBinding
+import com.netgpu.browser.databinding.FragmentTabTrayDialogBinding
+import com.netgpu.browser.databinding.TabsTrayTabCounter2Binding
+import com.netgpu.browser.databinding.TabstrayMultiselectItemsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.home.HomeScreenViewModel
+import com.netgpu.browser.share.ShareFragment
+import com.netgpu.browser.tabstray.browser.SelectionBannerBinding
+import com.netgpu.browser.tabstray.browser.SelectionBannerBinding.VisibilityModifier
+import com.netgpu.browser.tabstray.browser.SelectionHandleBinding
+import com.netgpu.browser.tabstray.browser.TabSorter
+import com.netgpu.browser.tabstray.ext.anchorWithAction
+import com.netgpu.browser.tabstray.ext.bookmarkMessage
+import com.netgpu.browser.tabstray.ext.collectionMessage
+import com.netgpu.browser.tabstray.ext.make
+import com.netgpu.browser.tabstray.ext.showWithTheme
+import com.netgpu.browser.tabstray.syncedtabs.SyncedTabsIntegration
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.utils.allowUndo
 import kotlin.math.max
 
 /**
@@ -552,7 +552,7 @@ class TabsTrayFragment : AppCompatDialogFragment() {
         isNewCollection: Boolean = false,
     ) {
         runIfFragmentIsAttached {
-            FenixSnackbar
+            NetGpuBrowserSnackbar
                 .make(requireView())
                 .collectionMessage(tabSize, isNewCollection)
                 .anchorWithAction(getSnackbarAnchor()) {
@@ -571,7 +571,7 @@ class TabsTrayFragment : AppCompatDialogFragment() {
     internal fun showBookmarkSnackbar(
         tabSize: Int,
     ) {
-        FenixSnackbar
+        NetGpuBrowserSnackbar
             .make(requireView())
             .bookmarkMessage(tabSize)
             .anchorWithAction(getSnackbarAnchor()) {

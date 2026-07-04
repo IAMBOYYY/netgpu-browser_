@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
-import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.customtabs.ExternalAppBrowserActivity
+import com.netgpu.browser.ext.components
 
 /**
- * A special custom tab for signing into a Firefox Account. The activity is closed once the user is signed in.
+ * A special custom tab for signing into a NETGPU BROWSER Account. The activity is closed once the user is signed in.
  */
 class AuthCustomTabActivity : ExternalAppBrowserActivity() {
 

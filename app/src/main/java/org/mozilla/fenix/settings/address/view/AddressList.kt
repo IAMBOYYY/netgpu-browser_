@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address.view
+package com.netgpu.browser.settings.address.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -16,12 +16,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import mozilla.components.concept.storage.Address
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.list.IconListItem
-import org.mozilla.fenix.compose.list.TextListItem
-import org.mozilla.fenix.settings.address.ext.getAddressLabel
-import org.mozilla.fenix.settings.address.ext.getFullName
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.list.IconListItem
+import com.netgpu.browser.compose.list.TextListItem
+import com.netgpu.browser.settings.address.ext.getAddressLabel
+import com.netgpu.browser.settings.address.ext.getFullName
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * A list of addresses.
@@ -60,8 +60,8 @@ fun AddressList(
 @Preview
 @Composable
 private fun AddressListPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer2)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer2)) {
             AddressList(
                 addresses = listOf(
                     Address(

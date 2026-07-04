@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import androidx.preference.PreferenceManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import mozilla.components.feature.accounts.FirefoxAccountsAuthFeature
+import mozilla.components.feature.accounts.NETGPU BROWSERAccountsAuthFeature
 import mozilla.components.feature.app.links.AppLinksInterceptor
 import mozilla.components.service.fxa.manager.FxaAccountManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.settings.SupportUtils
 
 /**
  * Component group which encapsulates foreground-friendly services.
@@ -25,7 +25,7 @@ class Services(
     private val accountManager: FxaAccountManager,
 ) {
     val accountsAuthFeature by lazyMonitored {
-        FirefoxAccountsAuthFeature(accountManager, FxaServer.REDIRECT_URL) { context, authUrl ->
+        NETGPU BROWSERAccountsAuthFeature(accountManager, FxaServer.REDIRECT_URL) { context, authUrl ->
             CoroutineScope(Dispatchers.Main).launch {
                 val intent = SupportUtils.createAuthCustomTabIntent(context, authUrl)
                 context.startActivity(intent)

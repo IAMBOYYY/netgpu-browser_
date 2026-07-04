@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata.view
+package com.netgpu.browser.library.historymetadata.view
 
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.HistoryMetadataGroupListItemBinding
-import org.mozilla.fenix.ext.hideAndDisable
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.historymetadata.interactor.HistoryMetadataGroupInteractor
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.HistoryMetadataGroupListItemBinding
+import com.netgpu.browser.ext.hideAndDisable
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.historymetadata.interactor.HistoryMetadataGroupInteractor
+import com.netgpu.browser.selection.SelectionHolder
 
 /**
  * View holder for a history metadata list item.

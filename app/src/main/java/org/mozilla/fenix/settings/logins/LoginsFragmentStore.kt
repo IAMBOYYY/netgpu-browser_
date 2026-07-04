@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
@@ -10,7 +10,7 @@ import mozilla.components.concept.storage.Login
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.utils.Settings
 
 /**
  * Class representing a parcelable saved logins item

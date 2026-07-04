@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser.compose
+package com.netgpu.browser.tabstray.browser.compose
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
@@ -13,9 +13,9 @@ import androidx.savedstate.SavedStateRegistryOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.tabstray.SelectableTabViewHolder
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.Theme
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.Theme
 
 /**
  * [RecyclerView.ViewHolder] used for Jetpack Compose UI content .
@@ -39,7 +39,7 @@ abstract class ComposeAbstractTabViewHolder(
      */
     fun bind(tab: TabSessionState) {
         composeView.setContent {
-            FirefoxTheme(theme = Theme.getTheme(allowPrivateTheme = tab.content.private)) {
+            NetGpuBrowserTheme(theme = Theme.getTheme(allowPrivateTheme = tab.content.private)) {
                 Content(tab)
             }
         }

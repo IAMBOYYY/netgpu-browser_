@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.addfolder
+package com.netgpu.browser.library.bookmarks.addfolder
 
 import android.os.Bundle
 import android.view.Menu
@@ -24,14 +24,14 @@ import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.BookmarksManagement
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentEditBookmarkBinding
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.library.bookmarks.BookmarksSharedViewModel
-import org.mozilla.fenix.library.bookmarks.friendlyRootTitle
+import com.netgpu.browser.GleanMetrics.BookmarksManagement
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentEditBookmarkBinding
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.library.bookmarks.BookmarksSharedViewModel
+import com.netgpu.browser.library.bookmarks.friendlyRootTitle
 
 /**
  * Menu to create a new bookmark folder.

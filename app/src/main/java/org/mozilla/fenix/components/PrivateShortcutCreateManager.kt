@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.app.PendingIntent
 import android.content.Context
@@ -10,10 +10,10 @@ import android.content.Intent
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
-import org.mozilla.fenix.utils.IntentUtils
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.home.intent.StartSearchIntentProcessor
+import com.netgpu.browser.utils.IntentUtils
 import java.util.UUID
 
 /**

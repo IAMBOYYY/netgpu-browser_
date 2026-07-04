@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.downloads
+package com.netgpu.browser.library.downloads
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -11,7 +11,7 @@ import mozilla.components.concept.menu.MenuController
 import mozilla.components.concept.menu.candidate.TextMenuCandidate
 import mozilla.components.concept.menu.candidate.TextStyle
 import mozilla.components.support.ktx.android.content.getColorFromAttr
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 class DownloadItemMenu(
     private val context: Context,

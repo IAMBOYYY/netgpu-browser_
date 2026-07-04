@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import androidx.paging.DataSource
 import io.mockk.coEvery
@@ -16,7 +16,7 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(FenixRobolectricTestRunner::class)

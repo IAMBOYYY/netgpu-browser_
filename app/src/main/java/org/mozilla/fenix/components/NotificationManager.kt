@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.annotation.TargetApi
 import android.app.Notification
@@ -20,9 +20,9 @@ import androidx.core.content.getSystemService
 import mozilla.components.concept.sync.Device
 import mozilla.components.concept.sync.TabData
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.utils.IntentUtils
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.utils.IntentUtils
 
 /**
  * Manages notification channels and allows displaying different types of notifications.

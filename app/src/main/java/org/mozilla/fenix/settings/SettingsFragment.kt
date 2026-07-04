@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
@@ -38,28 +38,28 @@ import mozilla.components.concept.sync.OAuthAccount
 import mozilla.components.concept.sync.Profile
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.ktx.android.view.showKeyboard
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.GleanMetrics.Addons
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.AmoCollectionOverrideDialogBinding
-import org.mozilla.fenix.ext.application
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.navigateToNotificationsSettings
-import org.mozilla.fenix.ext.openSetDefaultBrowserOption
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.perf.ProfilerViewModel
-import org.mozilla.fenix.settings.account.AccountUiView
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.Config
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.GleanMetrics.Addons
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.AmoCollectionOverrideDialogBinding
+import com.netgpu.browser.ext.application
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.navigateToNotificationsSettings
+import com.netgpu.browser.ext.openSetDefaultBrowserOption
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.perf.ProfilerViewModel
+import com.netgpu.browser.settings.account.AccountUiView
+import com.netgpu.browser.utils.Settings
 import kotlin.system.exitProcess
 
 @Suppress("LargeClass", "TooManyFunctions")

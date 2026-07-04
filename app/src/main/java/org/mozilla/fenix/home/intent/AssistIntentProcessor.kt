@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
 import androidx.navigation.navOptions
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.ext.nav
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.ext.nav
 
 /**
  * Long pressing home button should also open to the search fragment if Fenix is set as the

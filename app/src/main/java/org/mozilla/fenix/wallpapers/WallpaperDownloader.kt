@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
@@ -10,8 +10,8 @@ import kotlinx.coroutines.withContext
 import mozilla.components.concept.fetch.Client
 import mozilla.components.concept.fetch.Request
 import mozilla.components.concept.fetch.isSuccess
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.wallpapers.Wallpaper.Companion.getLocalPath
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.wallpapers.Wallpaper.Companion.getLocalPath
 import java.io.File
 import java.lang.IllegalStateException
 

@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.trackingprotection
+package com.netgpu.browser.exceptions.trackingprotection
 
 import androidx.recyclerview.widget.DiffUtil
 import mozilla.components.concept.engine.content.blocking.TrackingProtectionException
-import org.mozilla.fenix.R
-import org.mozilla.fenix.exceptions.ExceptionsAdapter
+import com.netgpu.browser.R
+import com.netgpu.browser.exceptions.ExceptionsAdapter
 
 /**
  * Adapter for a list of sites that are exempted from Tracking Protection,

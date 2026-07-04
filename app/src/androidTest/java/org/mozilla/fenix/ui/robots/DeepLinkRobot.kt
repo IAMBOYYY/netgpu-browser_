@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import androidx.test.platform.app.InstrumentationRegistry
-import org.mozilla.fenix.BuildConfig.DEEP_LINK_SCHEME
+import com.netgpu.browser.BuildConfig.DEEP_LINK_SCHEME
 
 class DeepLinkRobot {
     private fun openDeepLink(url: String) {

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
 import mozilla.components.browser.icons.BrowserIcons
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
-import org.mozilla.fenix.databinding.QuicksettingsWebsiteInfoBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
+import com.netgpu.browser.databinding.QuicksettingsWebsiteInfoBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
 
 /**
  * MVI View that knows to display a whether the current website uses a secure connection or not.

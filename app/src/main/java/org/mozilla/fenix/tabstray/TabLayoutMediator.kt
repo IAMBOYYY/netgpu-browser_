@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import androidx.annotation.VisibleForTesting
 import androidx.viewpager2.widget.ViewPager2
@@ -10,12 +10,12 @@ import com.google.android.material.tabs.TabLayout
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_NORMAL_TABS
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_PRIVATE_TABS
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_SYNCED_TABS
-import org.mozilla.fenix.utils.Do
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_NORMAL_TABS
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_PRIVATE_TABS
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_SYNCED_TABS
+import com.netgpu.browser.utils.Do
 
 /**
  * Selected the selected pager depending on the [BrowserStore] state and synchronizes user actions

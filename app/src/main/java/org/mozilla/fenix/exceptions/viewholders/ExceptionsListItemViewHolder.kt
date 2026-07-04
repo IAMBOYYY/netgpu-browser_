@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.viewholders
+package com.netgpu.browser.exceptions.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.browser.icons.BrowserIcons
 import mozilla.components.ui.widgets.WidgetSiteItemView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.exceptions.ExceptionsInteractor
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
+import com.netgpu.browser.R
+import com.netgpu.browser.exceptions.ExceptionsInteractor
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
 
 /**
  * View holder for a single website that is exempted from Tracking Protection or Logins.

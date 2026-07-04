@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import com.google.android.material.tabs.TabLayout
@@ -12,11 +12,11 @@ import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.privateTabs
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.ext.isNormalModeSelected
-import org.mozilla.fenix.tabstray.ext.isPrivateModeSelected
-import org.mozilla.fenix.tabstray.ext.isSyncedModeSelected
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.ext.isNormalModeSelected
+import com.netgpu.browser.tabstray.ext.isPrivateModeSelected
+import com.netgpu.browser.tabstray.ext.isSyncedModeSelected
 
 class TabsTrayMenu(
     private val context: Context,

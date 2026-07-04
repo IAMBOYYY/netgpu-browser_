@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import androidx.navigation.NavController
@@ -15,16 +15,16 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.engine.prompt.ShareData
 import mozilla.components.service.fxa.manager.FxaAccountManager
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.collections.CollectionsDialog
-import org.mozilla.fenix.collections.show
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.bookmarks.BookmarksUseCase
-import org.mozilla.fenix.home.HomeFragment
-import org.mozilla.fenix.tabstray.ext.getTabSessionState
-import org.mozilla.fenix.tabstray.ext.isActiveDownload
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.collections.CollectionsDialog
+import com.netgpu.browser.collections.show
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.bookmarks.BookmarksUseCase
+import com.netgpu.browser.home.HomeFragment
+import com.netgpu.browser.tabstray.ext.getTabSessionState
+import com.netgpu.browser.tabstray.ext.isActiveDownload
 import kotlin.coroutines.CoroutineContext
 
 /**

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import android.app.Activity
 import android.widget.FrameLayout
@@ -18,8 +18,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import org.robolectric.Robolectric
 
 @RunWith(FenixRobolectricTestRunner::class)

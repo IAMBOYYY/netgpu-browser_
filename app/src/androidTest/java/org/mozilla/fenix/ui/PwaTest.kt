@@ -1,17 +1,17 @@
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.core.net.toUri
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.Constants.PackageName.GMAIL_APP
-import org.mozilla.fenix.helpers.Constants.PackageName.PHONE_APP
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestHelper.assertNativeAppOpens
-import org.mozilla.fenix.ui.robots.customTabScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.pwaScreen
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.Constants.PackageName.GMAIL_APP
+import com.netgpu.browser.helpers.Constants.PackageName.PHONE_APP
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestHelper.assertNativeAppOpens
+import com.netgpu.browser.ui.robots.customTabScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.pwaScreen
 
 class PwaTest {
     /* Updated externalLinks.html to v2.0,
@@ -46,7 +46,7 @@ class PwaTest {
         }
     }
 
-    @Ignore("Failing, see: https://github.com/mozilla-mobile/fenix/issues/28212")
+    @Ignore("Failing, see: https://github.com/mozilla-mobile/netgpu_browser/issues/28212")
     @SmokeTest
     @Test
     fun emailLinkPWATest() {

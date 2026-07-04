@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards.view
+package com.netgpu.browser.settings.creditcards.view
 
 import android.content.res.ColorStateList
 import android.view.View
@@ -14,15 +14,15 @@ import mozilla.components.concept.storage.UpdatableCreditCardFields
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.utils.creditCardIIN
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentCreditCardEditorBinding
-import org.mozilla.fenix.ext.toEditable
-import org.mozilla.fenix.settings.creditcards.CreditCardEditorFragment
-import org.mozilla.fenix.settings.creditcards.CreditCardEditorState
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardEditorInteractor
-import org.mozilla.fenix.settings.creditcards.last4Digits
-import org.mozilla.fenix.settings.creditcards.toCreditCardNumber
-import org.mozilla.fenix.settings.creditcards.validateCreditCardNumber
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentCreditCardEditorBinding
+import com.netgpu.browser.ext.toEditable
+import com.netgpu.browser.settings.creditcards.CreditCardEditorFragment
+import com.netgpu.browser.settings.creditcards.CreditCardEditorState
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardEditorInteractor
+import com.netgpu.browser.settings.creditcards.last4Digits
+import com.netgpu.browser.settings.creditcards.toCreditCardNumber
+import com.netgpu.browser.settings.creditcards.validateCreditCardNumber
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.widget.FrameLayout
 import io.mockk.every
@@ -16,8 +16,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.QuicksettingsWebsiteInfoBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.databinding.QuicksettingsWebsiteInfoBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class WebsiteInfoViewTest {

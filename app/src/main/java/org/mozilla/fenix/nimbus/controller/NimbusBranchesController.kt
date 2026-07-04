@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus.controller
+package com.netgpu.browser.nimbus.controller
 
 import android.content.Context
 import androidx.navigation.NavController
 import mozilla.components.service.nimbus.NimbusApi
 import mozilla.components.service.nimbus.ui.NimbusBranchesAdapterDelegate
 import org.mozilla.experiments.nimbus.Branch
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.NimbusBranchesAction
-import org.mozilla.fenix.nimbus.NimbusBranchesFragmentDirections
-import org.mozilla.fenix.nimbus.NimbusBranchesStore
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.NimbusBranchesAction
+import com.netgpu.browser.nimbus.NimbusBranchesFragmentDirections
+import com.netgpu.browser.nimbus.NimbusBranchesStore
 
 /**
  * [NimbusBranchesFragment] controller. This implements [NimbusBranchesAdapterDelegate] to handle
@@ -44,9 +44,9 @@ class NimbusBranchesController(
             val snackbarText = context.getString(R.string.experiments_snackbar)
             val buttonText = context.getString(R.string.experiments_snackbar_button)
             context.getRootView()?.let { v ->
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = v,
-                    FenixSnackbar.LENGTH_LONG,
+                    NetGpuBrowserSnackbar.LENGTH_LONG,
                     isDisplayedWithBrowserToolbar = false,
                 )
                     .setText(snackbarText)

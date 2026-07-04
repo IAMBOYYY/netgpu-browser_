@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.content.Intent
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageClicked
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageDismissed
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageClicked
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageDismissed
 
 /**
  * Handles default interactions with the ui of GleanPlumb messages.

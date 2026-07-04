@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import android.os.Bundle
 import androidx.navigation.Navigation
@@ -10,13 +10,13 @@ import androidx.preference.Preference
 import androidx.preference.Preference.OnPreferenceClickListener
 import androidx.preference.PreferenceFragmentCompat
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Autoplay
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.GleanMetrics.Autoplay
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.requirePreference
 
 @SuppressWarnings("TooManyFunctions")
 class SitePermissionsFragment : PreferenceFragmentCompat() {

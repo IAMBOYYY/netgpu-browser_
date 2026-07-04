@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.BookmarksManagement
-import org.mozilla.fenix.HomeActivity
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.BookmarksManagement
+import com.netgpu.browser.HomeActivity
 
 /**
  * An interface that handles the view manipulation of the Bookmark Search, triggered by the Interactor

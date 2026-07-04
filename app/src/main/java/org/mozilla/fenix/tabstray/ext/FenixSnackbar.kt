@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import android.view.View
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.tabstray.TabsTrayFragment.Companion.ELEVATION
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.tabstray.TabsTrayFragment.Companion.ELEVATION
 
-internal fun FenixSnackbar.collectionMessage(
+internal fun NetGpuBrowserSnackbar.collectionMessage(
     tabSize: Int,
     isNewCollection: Boolean = false,
-): FenixSnackbar {
+): NetGpuBrowserSnackbar {
     val stringRes = when {
         isNewCollection -> {
             R.string.create_collection_tabs_saved_new_collection
@@ -28,9 +28,9 @@ internal fun FenixSnackbar.collectionMessage(
     return this
 }
 
-internal fun FenixSnackbar.bookmarkMessage(
+internal fun NetGpuBrowserSnackbar.bookmarkMessage(
     tabSize: Int,
-): FenixSnackbar {
+): NetGpuBrowserSnackbar {
     val stringRes = when {
         tabSize > 1 -> {
             R.string.snackbar_message_bookmarks_saved
@@ -43,10 +43,10 @@ internal fun FenixSnackbar.bookmarkMessage(
     return this
 }
 
-internal inline fun FenixSnackbar.anchorWithAction(
+internal inline fun NetGpuBrowserSnackbar.anchorWithAction(
     anchor: View?,
     crossinline action: () -> Unit,
-): FenixSnackbar {
+): NetGpuBrowserSnackbar {
     anchorView = anchor
     view.elevation = ELEVATION
 
@@ -57,7 +57,7 @@ internal inline fun FenixSnackbar.anchorWithAction(
     return this
 }
 
-internal fun FenixSnackbar.Companion.make(view: View) = make(
+internal fun NetGpuBrowserSnackbar.Companion.make(view: View) = make(
     duration = LENGTH_LONG,
     isDisplayedWithBrowserToolbar = true,
     view = view,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.tabstray
+package com.netgpu.browser.compose.tabstray
 
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.compose.foundation.Image
@@ -18,9 +18,9 @@ import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.state.createTab
 import mozilla.components.concept.engine.mediasession.MediaSession.PlaybackState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Controller buttons for the media (play/pause) state for the given [tab].
@@ -45,7 +45,7 @@ fun MediaImage(
         else -> return
     }
     val drawable = AppCompatResources.getDrawable(LocalContext.current, icon)
-    // Follow up ticket https://github.com/mozilla-mobile/fenix/issues/25774
+    // Follow up ticket https://github.com/mozilla-mobile/netgpu_browser/issues/25774
     Image(
         painter = rememberDrawablePainter(drawable = drawable),
         contentDescription = stringResource(contentDescription),
@@ -56,7 +56,7 @@ fun MediaImage(
 @Composable
 @LightDarkPreview
 private fun ImagePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         MediaImage(
             tab = createTab(url = "https://mozilla.com"),
             onMediaIconClicked = {},

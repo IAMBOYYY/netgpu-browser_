@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import io.mockk.MockKAnnotations
 import io.mockk.every
@@ -27,12 +27,12 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.utils.Settings
 
 class SearchFragmentStoreTest {
 
@@ -63,7 +63,7 @@ class SearchFragmentStoreTest {
         every { settings.showUnifiedSearchFeature } returns true
         every { settings.shouldShowHistorySuggestions } returns true
 
-        mockkStatic("org.mozilla.fenix.search.SearchFragmentStoreKt") {
+        mockkStatic("com.netgpu.browser.search.SearchFragmentStoreKt") {
             val expected = SearchFragmentState(
                 query = "",
                 url = "",
@@ -190,7 +190,7 @@ class SearchFragmentStoreTest {
         every { settings.shouldShowSearchSuggestions } returns true
         every { settings.shouldShowSearchSuggestionsInPrivate } returns true
 
-        mockkStatic("org.mozilla.fenix.search.SearchFragmentStoreKt") {
+        mockkStatic("com.netgpu.browser.search.SearchFragmentStoreKt") {
             store.dispatch(
                 SearchFragmentAction.SearchDefaultEngineSelected(
                     engine = searchEngine,

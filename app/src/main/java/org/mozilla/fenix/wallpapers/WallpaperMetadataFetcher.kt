@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -10,8 +10,8 @@ import mozilla.components.concept.fetch.Client
 import mozilla.components.concept.fetch.Request
 import org.json.JSONArray
 import org.json.JSONObject
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.utils.toHexColor
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.utils.toHexColor
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.ArrayAdapter
 import androidx.preference.DropDownPreference
 import androidx.preference.ListPreference
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 open class DropDownListPreference @JvmOverloads constructor(
     context: Context,

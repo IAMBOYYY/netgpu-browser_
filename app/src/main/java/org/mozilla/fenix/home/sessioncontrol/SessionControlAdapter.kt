@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol
+package com.netgpu.browser.home.sessioncontrol
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -15,36 +15,36 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.feature.top.sites.TopSite
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.home.BottomSpacerViewHolder
-import org.mozilla.fenix.home.TopPlaceholderViewHolder
-import org.mozilla.fenix.home.collections.CollectionViewHolder
-import org.mozilla.fenix.home.collections.TabInCollectionViewHolder
-import org.mozilla.fenix.home.pocket.PocketCategoriesViewHolder
-import org.mozilla.fenix.home.pocket.PocketRecommendationsHeaderViewHolder
-import org.mozilla.fenix.home.pocket.PocketStoriesViewHolder
-import org.mozilla.fenix.home.recentbookmarks.view.RecentBookmarksHeaderViewHolder
-import org.mozilla.fenix.home.recentbookmarks.view.RecentBookmarksViewHolder
-import org.mozilla.fenix.home.recentsyncedtabs.view.RecentSyncedTabViewHolder
-import org.mozilla.fenix.home.recenttabs.view.RecentTabViewHolder
-import org.mozilla.fenix.home.recenttabs.view.RecentTabsHeaderViewHolder
-import org.mozilla.fenix.home.recentvisits.view.RecentVisitsHeaderViewHolder
-import org.mozilla.fenix.home.recentvisits.view.RecentlyVisitedViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.CollectionHeaderViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.CustomizeHomeButtonViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.NoCollectionsMessageViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.PrivateBrowsingDescriptionViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.MessageCardViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingFinishViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingHeaderViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingManualSignInViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingPrivacyNoticeViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingSectionHeaderViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingThemePickerViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingToolbarPositionPickerViewHolder
-import org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding.OnboardingTrackingProtectionViewHolder
-import org.mozilla.fenix.home.topsites.TopSitePagerViewHolder
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.home.BottomSpacerViewHolder
+import com.netgpu.browser.home.TopPlaceholderViewHolder
+import com.netgpu.browser.home.collections.CollectionViewHolder
+import com.netgpu.browser.home.collections.TabInCollectionViewHolder
+import com.netgpu.browser.home.pocket.PocketCategoriesViewHolder
+import com.netgpu.browser.home.pocket.PocketRecommendationsHeaderViewHolder
+import com.netgpu.browser.home.pocket.PocketStoriesViewHolder
+import com.netgpu.browser.home.recentbookmarks.view.RecentBookmarksHeaderViewHolder
+import com.netgpu.browser.home.recentbookmarks.view.RecentBookmarksViewHolder
+import com.netgpu.browser.home.recentsyncedtabs.view.RecentSyncedTabViewHolder
+import com.netgpu.browser.home.recenttabs.view.RecentTabViewHolder
+import com.netgpu.browser.home.recenttabs.view.RecentTabsHeaderViewHolder
+import com.netgpu.browser.home.recentvisits.view.RecentVisitsHeaderViewHolder
+import com.netgpu.browser.home.recentvisits.view.RecentlyVisitedViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.CollectionHeaderViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.CustomizeHomeButtonViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.NoCollectionsMessageViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.PrivateBrowsingDescriptionViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.MessageCardViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingFinishViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingHeaderViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingManualSignInViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingPrivacyNoticeViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingSectionHeaderViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingThemePickerViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingToolbarPositionPickerViewHolder
+import com.netgpu.browser.home.sessioncontrol.viewholders.onboarding.OnboardingTrackingProtectionViewHolder
+import com.netgpu.browser.home.topsites.TopSitePagerViewHolder
 import mozilla.components.feature.tab.collections.Tab as ComponentTab
 
 sealed class AdapterItem(@LayoutRes val viewType: Int) {
@@ -77,7 +77,7 @@ sealed class AdapterItem(@LayoutRes val viewType: Int) {
          * each deleted [TopSite]. This is done in order to more easily identify the actual views
          * that need to be removed in [TopSitesPagerAdapter.update].
          *
-         * See https://github.com/mozilla-mobile/fenix/pull/20189#issuecomment-877124730
+         * See https://github.com/mozilla-mobile/netgpu_browser/pull/20189#issuecomment-877124730
          */
         @Suppress("ComplexCondition")
         override fun getChangePayload(newItem: AdapterItem): Any? {

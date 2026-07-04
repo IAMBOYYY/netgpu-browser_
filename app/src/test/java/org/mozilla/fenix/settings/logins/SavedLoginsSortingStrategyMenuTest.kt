@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import android.content.Context
 import androidx.appcompat.view.ContextThemeWrapper
@@ -19,10 +19,10 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.logins.SavedLoginsSortingStrategyMenu.Item
-import org.mozilla.fenix.settings.logins.interactor.SavedLoginsInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.logins.SavedLoginsSortingStrategyMenu.Item
+import com.netgpu.browser.settings.logins.interactor.SavedLoginsInteractor
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SavedLoginsSortingStrategyMenuTest {

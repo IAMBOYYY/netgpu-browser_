@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.trackingprotection
+package com.netgpu.browser.exceptions.trackingprotection
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,12 +10,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentExceptionsBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentExceptionsBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
 
 /**
  * Displays a list of sites that are exempted from Tracking Protection,

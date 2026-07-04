@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Context
 import android.content.DialogInterface
@@ -18,9 +18,9 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.QuicksettingsClearSiteDataBinding
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.QuicksettingsClearSiteDataBinding
+import com.netgpu.browser.ext.components
 
 /**
  * Contract declaring all possible user interactions with [ClearSiteDataView].

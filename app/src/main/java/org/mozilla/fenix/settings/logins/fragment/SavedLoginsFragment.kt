@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.fragment
+package com.netgpu.browser.settings.logins.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -24,25 +24,25 @@ import androidx.navigation.fragment.findNavController
 import mozilla.components.concept.menu.MenuController
 import mozilla.components.concept.menu.Orientation
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.SecureFragment
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentSavedLoginsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.redirectToReAuth
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.logins.LoginsAction
-import org.mozilla.fenix.settings.logins.LoginsFragmentStore
-import org.mozilla.fenix.settings.logins.SavedLoginsSortingStrategyMenu
-import org.mozilla.fenix.settings.logins.SortingStrategy
-import org.mozilla.fenix.settings.logins.controller.LoginsListController
-import org.mozilla.fenix.settings.logins.controller.SavedLoginsStorageController
-import org.mozilla.fenix.settings.logins.createInitialLoginsListState
-import org.mozilla.fenix.settings.logins.interactor.SavedLoginsInteractor
-import org.mozilla.fenix.settings.logins.view.SavedLoginsListView
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.SecureFragment
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentSavedLoginsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.redirectToReAuth
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.logins.LoginsAction
+import com.netgpu.browser.settings.logins.LoginsFragmentStore
+import com.netgpu.browser.settings.logins.SavedLoginsSortingStrategyMenu
+import com.netgpu.browser.settings.logins.SortingStrategy
+import com.netgpu.browser.settings.logins.controller.LoginsListController
+import com.netgpu.browser.settings.logins.controller.SavedLoginsStorageController
+import com.netgpu.browser.settings.logins.createInitialLoginsListState
+import com.netgpu.browser.settings.logins.interactor.SavedLoginsInteractor
+import com.netgpu.browser.settings.logins.view.SavedLoginsListView
 
 @SuppressWarnings("TooManyFunctions")
 class SavedLoginsFragment : SecureFragment(), MenuProvider {

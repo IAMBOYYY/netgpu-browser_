@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.Manifest
 import android.content.Context
@@ -13,13 +13,13 @@ import androidx.test.rule.GrantPermissionRule
 import org.junit.Assume.assumeTrue
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.MockLocationUpdatesRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.MockLocationUpdatesRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  *  Tests for verifying site permissions prompts & functionality

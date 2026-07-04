@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -18,11 +18,11 @@ import mozilla.components.feature.toolbar.ToolbarFeature
 import mozilla.components.feature.toolbar.ToolbarPresenter
 import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.interactor.BrowserToolbarInteractor
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.interactor.BrowserToolbarInteractor
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.ThemeManager
 
 /**
  * Feature configuring the toolbar when in display mode.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.topsites
+package com.netgpu.browser.home.topsites
 
 import android.view.LayoutInflater
 import androidx.lifecycle.LifecycleOwner
@@ -21,13 +21,13 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.GleanMetrics.TopSites
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.databinding.TopSiteItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.sessioncontrol.TopSiteInteractor
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.GleanMetrics.TopSites
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.databinding.TopSiteItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.sessioncontrol.TopSiteInteractor
 
 @RunWith(FenixRobolectricTestRunner::class)
 class TopSiteItemViewHolderTest {

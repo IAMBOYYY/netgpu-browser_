@@ -4,12 +4,12 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.rule.ActivityTestRule
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.helpers.idlingresource.AddonsInstallingIdlingResource
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.helpers.idlingresource.AddonsInstallingIdlingResource
 
 object IdlingResourceHelper {
 

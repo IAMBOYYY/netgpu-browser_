@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import androidx.core.net.toUri
@@ -11,10 +11,10 @@ import mozilla.components.feature.push.Protocol
 import mozilla.components.feature.push.PushConfig
 import mozilla.components.lib.crash.CrashReporter
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.push.FirebasePushService
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.push.FirebasePushService
 
 /**
  * Component group for push services. These components use services that strongly depend on

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.browser.state.selector.findTab
@@ -14,7 +14,7 @@ import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
 import mozilla.components.support.ktx.kotlin.toShortUrl
-import org.mozilla.fenix.components.TabCollectionStorage
+import com.netgpu.browser.components.TabCollectionStorage
 
 class CollectionCreationStore(
     initialState: CollectionCreationState,

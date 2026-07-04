@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.sync.ext
+package com.netgpu.browser.sync.ext
 
 import io.mockk.every
 import io.mockk.mockk
@@ -13,8 +13,8 @@ import mozilla.components.concept.sync.DeviceType
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.tabstray.ext.toComposeList
-import org.mozilla.fenix.tabstray.syncedtabs.SyncedTabsListItem
+import com.netgpu.browser.tabstray.ext.toComposeList
+import com.netgpu.browser.tabstray.syncedtabs.SyncedTabsListItem
 
 class SyncedDeviceTabsTest {
     private val noTabDevice = SyncedDeviceTabs(
@@ -68,7 +68,7 @@ class SyncedDeviceTabsTest {
             Tab(
                 history = listOf(
                     TabEntry(
-                        title = "Firefox",
+                        title = "NETGPU BROWSER",
                         url = "https://firefox.com",
                         iconUrl = null,
                     ),

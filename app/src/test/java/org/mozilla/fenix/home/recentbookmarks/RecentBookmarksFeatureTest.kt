@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks
+package com.netgpu.browser.home.recentbookmarks
 
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -18,10 +18,10 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.components.bookmarks.BookmarksUseCase
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.components.bookmarks.BookmarksUseCase
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class RecentBookmarksFeatureTest {

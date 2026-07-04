@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import android.view.LayoutInflater
 import android.view.View
@@ -16,10 +16,10 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.CreditCardListItemBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardsManagementInteractor
-import org.mozilla.fenix.settings.creditcards.view.CreditCardItemViewHolder
+import com.netgpu.browser.databinding.CreditCardListItemBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardsManagementInteractor
+import com.netgpu.browser.settings.creditcards.view.CreditCardItemViewHolder
 
 @RunWith(FenixRobolectricTestRunner::class)
 class CreditCardItemViewHolderTest {

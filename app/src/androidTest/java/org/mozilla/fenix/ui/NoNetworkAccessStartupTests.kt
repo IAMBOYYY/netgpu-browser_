@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.core.net.toUri
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.setNetworkEnabled
-import org.mozilla.fenix.helpers.TestHelper.verifyUrl
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.setNetworkEnabled
+import com.netgpu.browser.helpers.TestHelper.verifyUrl
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  * Tests to verify some main UI flows with Network connection off
@@ -35,7 +35,7 @@ class NoNetworkAccessStartupTests {
 
     // Test running on beta/release builds in CI:
     // caution when making changes to it, so they don't block the builds
-    // Based on STR from https://github.com/mozilla-mobile/fenix/issues/16886
+    // Based on STR from https://github.com/mozilla-mobile/netgpu_browser/issues/16886
     @Test
     fun noNetworkConnectionStartupTest() {
         setNetworkEnabled(false)
@@ -49,7 +49,7 @@ class NoNetworkAccessStartupTests {
         }
     }
 
-    // Based on STR from https://github.com/mozilla-mobile/fenix/issues/16886
+    // Based on STR from https://github.com/mozilla-mobile/netgpu_browser/issues/16886
     @Test
     fun networkInterruptedFromBrowserToHomeTest() {
         val url = "example.com"

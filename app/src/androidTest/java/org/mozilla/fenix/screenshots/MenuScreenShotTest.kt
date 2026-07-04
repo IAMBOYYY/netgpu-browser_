@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.screenshots
+package com.netgpu.browser.screenshots
 
 import android.os.SystemClock
 import androidx.test.espresso.Espresso.onView
@@ -19,17 +19,17 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.ui.robots.bookmarksMenu
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.swipeToBottom
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.ui.robots.bookmarksMenu
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.swipeToBottom
 import tools.fastlane.screengrab.Screengrab
 import tools.fastlane.screengrab.locale.LocaleTestRule
 

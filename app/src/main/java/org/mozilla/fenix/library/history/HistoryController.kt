@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.content.Context
 import androidx.navigation.NavController
@@ -16,16 +16,16 @@ import mozilla.components.browser.state.action.RecentlyClosedAction
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.browser.storage.sync.PlacesHistoryStorage
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.history.DefaultPagedHistoryProvider
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.library.history.HistoryFragment.DeleteConfirmationDialogFragment
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.GleanMetrics.History as GleanHistory
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.history.DefaultPagedHistoryProvider
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.navigateSafe
+import com.netgpu.browser.library.history.HistoryFragment.DeleteConfirmationDialogFragment
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.GleanMetrics.History as GleanHistory
 
 @Suppress("TooManyFunctions")
 interface HistoryController {
@@ -154,7 +154,7 @@ class DefaultHistoryController(
                 null -> GleanHistory.removedAll.record(NoExtras())
             }
             // We introduced more deleting options, but are keeping these actions for all options.
-            // The approach could be improved: https://github.com/mozilla-mobile/fenix/issues/26102
+            // The approach could be improved: https://github.com/mozilla-mobile/netgpu_browser/issues/26102
             browserStore.dispatch(RecentlyClosedAction.RemoveAllClosedTabAction)
             browserStore.dispatch(EngineAction.PurgeHistoryAction).join()
 

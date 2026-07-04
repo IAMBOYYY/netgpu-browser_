@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library
+package com.netgpu.browser.library
 
 import android.content.Context
 import android.util.AttributeSet
@@ -14,12 +14,12 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import mozilla.components.concept.menu.MenuController
 import mozilla.components.concept.menu.Orientation
-import org.mozilla.fenix.databinding.LibrarySiteItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.selection.SelectionInteractor
+import com.netgpu.browser.databinding.LibrarySiteItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.selection.SelectionInteractor
 
 class LibrarySiteItemView @JvmOverloads constructor(
     context: Context,

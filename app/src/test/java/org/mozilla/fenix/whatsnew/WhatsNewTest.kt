@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.whatsnew
+package com.netgpu.browser.whatsnew
 
 import androidx.preference.PreferenceManager
 import io.mockk.every
@@ -11,10 +11,10 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.ext.clearAndCommit
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.ext.clearAndCommit
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
 
 @RunWith(FenixRobolectricTestRunner::class)
 class WhatsNewTest {

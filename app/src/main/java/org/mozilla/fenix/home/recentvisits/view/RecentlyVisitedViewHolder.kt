@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits.view
+package com.netgpu.browser.home.recentvisits.view
 
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -11,16 +11,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.History
-import org.mozilla.fenix.GleanMetrics.RecentlyVisitedHomepage
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.home.recentvisits.interactor.RecentVisitsInteractor
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.GleanMetrics.History
+import com.netgpu.browser.GleanMetrics.RecentlyVisitedHomepage
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.home.recentvisits.interactor.RecentVisitsInteractor
+import com.netgpu.browser.wallpapers.WallpaperState
 
 /**
  * View holder for [RecentlyVisitedItem]s.

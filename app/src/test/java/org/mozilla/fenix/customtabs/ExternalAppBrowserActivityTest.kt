@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.content.Intent
 import android.os.Bundle
@@ -25,12 +25,12 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class ExternalAppBrowserActivityTest {

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.about
+package com.netgpu.browser.settings.about
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -16,23 +16,23 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.utils.ext.getPackageInfoCompat
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.crashes.CrashListActivity
-import org.mozilla.fenix.databinding.FragmentAboutBinding
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.about.AboutItemType.LICENSING_INFO
-import org.mozilla.fenix.settings.about.AboutItemType.PRIVACY_NOTICE
-import org.mozilla.fenix.settings.about.AboutItemType.RIGHTS
-import org.mozilla.fenix.settings.about.AboutItemType.SUPPORT
-import org.mozilla.fenix.settings.about.AboutItemType.WHATS_NEW
-import org.mozilla.fenix.utils.Do
-import org.mozilla.fenix.whatsnew.WhatsNew
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.crashes.CrashListActivity
+import com.netgpu.browser.databinding.FragmentAboutBinding
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.about.AboutItemType.LICENSING_INFO
+import com.netgpu.browser.settings.about.AboutItemType.PRIVACY_NOTICE
+import com.netgpu.browser.settings.about.AboutItemType.RIGHTS
+import com.netgpu.browser.settings.about.AboutItemType.SUPPORT
+import com.netgpu.browser.settings.about.AboutItemType.WHATS_NEW
+import com.netgpu.browser.utils.Do
+import com.netgpu.browser.whatsnew.WhatsNew
 import org.mozilla.geckoview.BuildConfig as GeckoViewBuildConfig
 
 /**

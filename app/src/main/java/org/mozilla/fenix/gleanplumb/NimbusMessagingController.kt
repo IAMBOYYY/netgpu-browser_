@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.content.Intent
 import android.net.Uri
 import androidx.core.net.toUri
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.GleanMetrics.Messaging
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.GleanMetrics.Messaging
 
 /**
  * Bookkeeping for message actions in terms of Glean messages and the messaging store.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import io.mockk.every
 import io.mockk.mockk
@@ -12,18 +12,18 @@ import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.service.pocket.PocketStory
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketStoriesController
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentbookmarks.controller.RecentBookmarksController
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recentsyncedtabs.controller.RecentSyncedTabController
-import org.mozilla.fenix.home.recenttabs.controller.RecentTabController
-import org.mozilla.fenix.home.recentvisits.controller.RecentVisitsController
-import org.mozilla.fenix.home.sessioncontrol.DefaultSessionControlController
-import org.mozilla.fenix.home.sessioncontrol.SessionControlInteractor
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketStoriesController
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentbookmarks.controller.RecentBookmarksController
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.controller.RecentSyncedTabController
+import com.netgpu.browser.home.recenttabs.controller.RecentTabController
+import com.netgpu.browser.home.recentvisits.controller.RecentVisitsController
+import com.netgpu.browser.home.sessioncontrol.DefaultSessionControlController
+import com.netgpu.browser.home.sessioncontrol.SessionControlInteractor
 
 class SessionControlInteractorTest {
 

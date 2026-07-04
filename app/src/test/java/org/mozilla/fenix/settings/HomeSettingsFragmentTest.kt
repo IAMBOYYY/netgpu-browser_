@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -22,15 +22,15 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 import org.robolectric.Robolectric
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -44,8 +44,8 @@ internal class HomeSettingsFragmentTest {
 
     @Before
     fun setup() {
-        mockkStatic("org.mozilla.fenix.ext.FragmentKt")
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.FragmentKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
         appPrefsEditor = mockk(relaxed = true)
         appPrefs = mockk(relaxed = true) {
             every { edit() } returns appPrefsEditor
@@ -66,8 +66,8 @@ internal class HomeSettingsFragmentTest {
 
     @After
     fun teardown() {
-        unmockkStatic("org.mozilla.fenix.ext.ContextKt")
-        unmockkStatic("org.mozilla.fenix.ext.FragmentKt")
+        unmockkStatic("com.netgpu.browser.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.ext.FragmentKt")
     }
 
     @Test

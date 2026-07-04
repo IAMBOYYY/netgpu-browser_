@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -14,7 +14,7 @@ import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
 import mozilla.components.lib.crash.CrashReporter
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.perf.StrictModeManager
+import com.netgpu.browser.perf.StrictModeManager
 
 /**
  * Miscellaneous FxA-related abnormalities.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.view.View
 import io.mockk.every
@@ -11,9 +11,9 @@ import io.mockk.verify
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
 
 class PrivateBrowsingButtonViewTest {
 

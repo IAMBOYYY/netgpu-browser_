@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.viewholders
+package com.netgpu.browser.tabstray.viewholders
 
 import android.view.LayoutInflater
 import android.view.View.GONE
@@ -16,13 +16,13 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.browser.AbstractBrowserTrayList
-import org.mozilla.fenix.tabstray.browser.BrowserTabsAdapter
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.browser.AbstractBrowserTrayList
+import com.netgpu.browser.tabstray.browser.BrowserTabsAdapter
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AbstractBrowserPageViewHolderTest {

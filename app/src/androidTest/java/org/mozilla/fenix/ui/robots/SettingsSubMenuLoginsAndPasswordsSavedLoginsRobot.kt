@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
@@ -23,19 +23,19 @@ import androidx.test.uiautomator.Until
 import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Assert.assertEquals
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemContainingTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemIsEnabledAndVisible
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResId
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.MatcherHelper.assertItemContainingTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemIsEnabledAndVisible
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResId
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the Privacy Settings > saved logins sub menu

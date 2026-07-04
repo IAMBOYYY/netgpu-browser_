@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.content.Context
 import android.view.View
@@ -15,22 +15,22 @@ import androidx.navigation.NavController
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.browser.menu.view.MenuButton
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.HomeScreen
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.accounts.AccountState
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.deletebrowsingdata.deleteAndQuit
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.whatsnew.WhatsNew
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.Config
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.HomeScreen
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.accounts.AccountState
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.deletebrowsingdata.deleteAndQuit
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.whatsnew.WhatsNew
 import java.lang.ref.WeakReference
-import org.mozilla.fenix.GleanMetrics.HomeMenu as HomeMenuMetrics
+import com.netgpu.browser.GleanMetrics.HomeMenu as HomeMenuMetrics
 
 /**
  * Helper class for building the [HomeMenu].
@@ -172,7 +172,7 @@ class HomeMenuBuilder(
                 deleteAndQuit(
                     activity = homeActivity,
                     coroutineScope = lifecycleOwner.lifecycleScope,
-                    snackbar = FenixSnackbar.make(
+                    snackbar = NetGpuBrowserSnackbar.make(
                         view = view,
                         isDisplayedWithBrowserToolbar = false,
                     ),

@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import androidx.core.content.edit
 import androidx.preference.Preference
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.ext.settings
 
 /**
  * Updates the corresponding [android.content.SharedPreferences] when the String [Preference] is changed.

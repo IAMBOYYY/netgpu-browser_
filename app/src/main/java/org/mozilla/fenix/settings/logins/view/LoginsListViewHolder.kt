@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.view
+package com.netgpu.browser.settings.logins.view
 
 import android.view.View
 import androidx.core.view.isVisible
-import org.mozilla.fenix.databinding.LoginsItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.ext.simplifiedUrl
-import org.mozilla.fenix.settings.logins.SavedLogin
-import org.mozilla.fenix.settings.logins.interactor.SavedLoginsInteractor
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.databinding.LoginsItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.ext.simplifiedUrl
+import com.netgpu.browser.settings.logins.SavedLogin
+import com.netgpu.browser.settings.logins.interactor.SavedLoginsInteractor
+import com.netgpu.browser.utils.view.ViewHolder
 
 class LoginsListViewHolder(
     val view: View,

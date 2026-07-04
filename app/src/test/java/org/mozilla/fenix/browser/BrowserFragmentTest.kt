@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.content.Context
 import android.view.View
@@ -34,18 +34,18 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.BrowserToolbarView
-import org.mozilla.fenix.components.toolbar.ToolbarIntegration
-import org.mozilla.fenix.ext.application
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.BrowserToolbarView
+import com.netgpu.browser.components.toolbar.ToolbarIntegration
+import com.netgpu.browser.ext.application
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class BrowserFragmentTest {
@@ -55,11 +55,11 @@ class BrowserFragmentTest {
     private lateinit var browserFragment: BrowserFragment
     private lateinit var view: View
     private lateinit var homeActivity: HomeActivity
-    private lateinit var fenixApplication: FenixApplication
+    private lateinit var netgpu_browserApplication: NetGpuBrowserApplication
     private lateinit var context: Context
     private lateinit var lifecycleOwner: MockedLifecycleOwner
     private lateinit var navController: NavController
-    private lateinit var onboarding: FenixOnboarding
+    private lateinit var onboarding: NetGpuBrowserOnboarding
 
     @get:Rule
     val coroutinesTestRule = MainCoroutineRule()
@@ -67,8 +67,8 @@ class BrowserFragmentTest {
     @Before
     fun setup() {
         context = mockk(relaxed = true)
-        fenixApplication = mockk(relaxed = true)
-        every { context.application } returns fenixApplication
+        netgpu_browserApplication = mockk(relaxed = true)
+        every { context.application } returns netgpu_browserApplication
 
         homeActivity = mockk(relaxed = true)
         view = mockk(relaxed = true)

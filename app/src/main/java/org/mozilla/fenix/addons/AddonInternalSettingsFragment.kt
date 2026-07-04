@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import mozilla.components.feature.addons.ui.translateName
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddOnInternalSettingsBinding
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddOnInternalSettingsBinding
+import com.netgpu.browser.ext.showToolbar
 
 /**
  * A fragment to show the internal settings of an add-on.

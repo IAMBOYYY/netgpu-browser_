@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -12,14 +12,14 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.Constants.defaultTopSitesList
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.exitMenu
-import org.mozilla.fenix.helpers.TestHelper.getSponsoredShortcutTitle
-import org.mozilla.fenix.ui.robots.homeScreen
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.Constants.defaultTopSitesList
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.exitMenu
+import com.netgpu.browser.helpers.TestHelper.getSponsoredShortcutTitle
+import com.netgpu.browser.ui.robots.homeScreen
 
 /**
  * Tests Sponsored shortcuts functionality
@@ -87,7 +87,7 @@ class SponsoredShortcutsTest {
         }
     }
 
-    @Ignore("Failing, see: https://github.com/mozilla-mobile/fenix/issues/25926")
+    @Ignore("Failing, see: https://github.com/mozilla-mobile/netgpu_browser/issues/25926")
     @Test
     fun verifySponsorsAndPrivacyLinkTest() {
         homeScreen {
@@ -158,7 +158,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(firstWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(firstWebPage.title)
         }.openNavigationToolbar {
@@ -166,7 +166,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(secondWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(secondWebPage.title)
         }.openNavigationToolbar {
@@ -174,7 +174,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(thirdWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(thirdWebPage.title)
         }.openNavigationToolbar {
@@ -182,7 +182,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fourthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifySponsoredShortcutDetails(sponsoredShortcutTitle, 2)
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle2, 3)
@@ -209,7 +209,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(firstWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(firstWebPage.title)
         }.openNavigationToolbar {
@@ -217,7 +217,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(secondWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(secondWebPage.title)
         }.openNavigationToolbar {
@@ -225,7 +225,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(thirdWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(thirdWebPage.title)
         }.openNavigationToolbar {
@@ -233,7 +233,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fourthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(fourthWebPage.title)
         }.openNavigationToolbar {
@@ -241,7 +241,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fifthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
         }.goToHomescreen {
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle, 2)
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle2, 3)

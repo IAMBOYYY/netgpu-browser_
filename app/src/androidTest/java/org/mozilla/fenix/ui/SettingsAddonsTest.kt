@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.view.View
 import okhttp3.mockwebserver.MockWebServer
@@ -10,19 +10,19 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RecyclerViewIdlingResource
-import org.mozilla.fenix.helpers.TestAssetHelper.getEnhancedTrackingProtectionAsset
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.helpers.TestHelper.registerAndCleanupIdlingResources
-import org.mozilla.fenix.helpers.ViewVisibilityIdlingResource
-import org.mozilla.fenix.ui.robots.addonsMenu
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RecyclerViewIdlingResource
+import com.netgpu.browser.helpers.TestAssetHelper.getEnhancedTrackingProtectionAsset
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.helpers.TestHelper.registerAndCleanupIdlingResources
+import com.netgpu.browser.helpers.ViewVisibilityIdlingResource
+import com.netgpu.browser.ui.robots.addonsMenu
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  *  Tests for verifying the functionality of installing or removing addons

@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.graphics.Bitmap
 import android.widget.EditText
@@ -49,31 +49,31 @@ import org.hamcrest.Matchers
 import org.junit.Assert
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.Constants.LISTS_MAXSWIPES
-import org.mozilla.fenix.helpers.Constants.LONG_CLICK_DURATION
-import org.mozilla.fenix.helpers.MatcherHelper.assertCheckedItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemContainingTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdAndDescriptionExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdAndTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.checkedItemWithResId
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResId
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResIdAndDescription
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResIdAndText
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.helpers.withBitmapDrawable
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.Constants.LISTS_MAXSWIPES
+import com.netgpu.browser.helpers.Constants.LONG_CLICK_DURATION
+import com.netgpu.browser.helpers.MatcherHelper.assertCheckedItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemContainingTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdAndDescriptionExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdAndTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.checkedItemWithResId
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResId
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResIdAndDescription
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResIdAndText
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.helpers.withBitmapDrawable
 
 /**
  * Implementation of Robot Pattern for the home screen menu.
@@ -346,7 +346,7 @@ class HomeScreenRobot {
 
     fun clickUndoSnackBarButton() = undoSnackBarButton.click()
 
-    fun clickFirefoxLogo() = homepageWordmark.click()
+    fun clickNETGPU BROWSERLogo() = homepageWordmark.click()
 
     fun verifyThoughtProvokingStories(enabled: Boolean) {
         if (enabled) {
@@ -523,7 +523,7 @@ class HomeScreenRobot {
         }
 
         fun openThreeDotMenu(interact: ThreeDotMenuMainRobot.() -> Unit): ThreeDotMenuMainRobot.Transition {
-            // Issue: https://github.com/mozilla-mobile/fenix/issues/21578
+            // Issue: https://github.com/mozilla-mobile/netgpu_browser/issues/21578
             try {
                 mDevice.waitNotNull(
                     Until.findObject(By.res("$packageName:id/menuButton")),

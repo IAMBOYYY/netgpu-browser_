@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -19,14 +19,14 @@ import androidx.test.uiautomator.Until
 import junit.framework.TestCase.assertTrue
 import org.hamcrest.Matchers.containsString
 import org.hamcrest.Matchers.not
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.helpers.isChecked
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.helpers.isChecked
 
 /**
  * Implementation of Robot Pattern for Enhanced Tracking Protection UI.

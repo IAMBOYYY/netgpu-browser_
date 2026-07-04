@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.onView
@@ -16,8 +16,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withParent
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Matchers.allOf
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the settings turn on sync option.

@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.UNKNOWN
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.UNKNOWN
 
 /**
  * A state machine representing application startup for use with [StartupTimeline]. Android

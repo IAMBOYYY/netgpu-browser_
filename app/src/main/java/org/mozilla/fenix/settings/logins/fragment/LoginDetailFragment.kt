@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.fragment
+package com.netgpu.browser.settings.logins.fragment
 
 import android.content.DialogInterface
 import android.os.Build
@@ -23,27 +23,27 @@ import androidx.navigation.fragment.navArgs
 import com.google.android.material.snackbar.Snackbar
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Logins
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.SecureFragment
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentLoginDetailBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.redirectToReAuth
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.ext.simplifiedUrl
-import org.mozilla.fenix.settings.logins.LoginsFragmentStore
-import org.mozilla.fenix.settings.logins.SavedLogin
-import org.mozilla.fenix.settings.logins.controller.SavedLoginsStorageController
-import org.mozilla.fenix.settings.logins.createInitialLoginsListState
-import org.mozilla.fenix.settings.logins.interactor.LoginDetailInteractor
-import org.mozilla.fenix.settings.logins.togglePasswordReveal
-import org.mozilla.fenix.settings.logins.view.LoginDetailsBindingDelegate
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Logins
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.SecureFragment
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentLoginDetailBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.redirectToReAuth
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.ext.simplifiedUrl
+import com.netgpu.browser.settings.logins.LoginsFragmentStore
+import com.netgpu.browser.settings.logins.SavedLogin
+import com.netgpu.browser.settings.logins.controller.SavedLoginsStorageController
+import com.netgpu.browser.settings.logins.createInitialLoginsListState
+import com.netgpu.browser.settings.logins.interactor.LoginDetailInteractor
+import com.netgpu.browser.settings.logins.togglePasswordReveal
+import com.netgpu.browser.settings.logins.view.LoginDetailsBindingDelegate
 
 /**
  * Displays saved login information for a single website.
@@ -181,7 +181,7 @@ class LoginDetailFragment : SecureFragment(R.layout.fragment_login_detail), Menu
     private fun showCopiedSnackbar(view: View, copiedItem: String) {
         // Only show a toast for Android 12 and lower.
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.S_V2) {
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view,
                 duration = Snackbar.LENGTH_SHORT,
                 isDisplayedWithBrowserToolbar = false,

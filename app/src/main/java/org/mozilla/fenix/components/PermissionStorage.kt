@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import androidx.paging.DataSource
@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.concept.engine.permission.SitePermissionsStorage
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.ext.components
 import kotlin.coroutines.CoroutineContext
 
 class PermissionStorage(

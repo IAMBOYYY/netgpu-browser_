@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.content.Context
 import androidx.fragment.app.FragmentActivity
@@ -13,10 +13,10 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.trackingprotection.TrackingProtectionMode.CUSTOM
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.trackingprotection.TrackingProtectionMode.CUSTOM
 import org.robolectric.Robolectric
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -26,7 +26,7 @@ class TrackingProtectionBlockingFragmentTest {
         val expectedTitle = testContext.getString(R.string.etp_cookies_title_2)
         val expectedDescription = testContext.getString(R.string.etp_cookies_description_2)
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk(relaxed = true) {
                 every { enabledTotalCookieProtection } returns true
             }
@@ -44,7 +44,7 @@ class TrackingProtectionBlockingFragmentTest {
         val expectedTitle = testContext.getString(R.string.etp_cookies_title)
         val expectedDescription = testContext.getString(R.string.etp_cookies_description)
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk(relaxed = true) {
                 every { enabledTotalCookieProtection } returns false
             }

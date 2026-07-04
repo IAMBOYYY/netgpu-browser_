@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.button
+package com.netgpu.browser.compose.button
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,8 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 import java.util.Locale
 
 /**
@@ -27,7 +27,7 @@ fun TextButton(
     text: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    textColor: Color = FirefoxTheme.colors.textAccent,
+    textColor: Color = NetGpuBrowserTheme.colors.textAccent,
 ) {
     androidx.compose.material.TextButton(
         onClick = onClick,
@@ -36,7 +36,7 @@ fun TextButton(
         Text(
             text = text.uppercase(Locale.getDefault()),
             color = textColor,
-            style = FirefoxTheme.typography.button,
+            style = NetGpuBrowserTheme.typography.button,
             maxLines = 1,
         )
     }
@@ -45,8 +45,8 @@ fun TextButton(
 @Composable
 @LightDarkPreview
 private fun TextButtonPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             TextButton(
                 text = "label",
                 onClick = {},

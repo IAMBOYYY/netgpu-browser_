@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.content.Context
 import android.widget.Toast
@@ -14,8 +14,8 @@ import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.MiddlewareContext
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.R
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.R
 import org.mozilla.gecko.util.ThreadUtils
 
 /**
@@ -32,7 +32,7 @@ class SaveToPDFMiddleware(
         action: BrowserAction,
     ) {
         if (action is EngineAction.SaveToPdfExceptionAction) {
-            // See https://github.com/mozilla-mobile/fenix/issues/27649 for more details,
+            // See https://github.com/mozilla-mobile/netgpu_browser/issues/27649 for more details,
             // why a Toast is used here.
             ThreadUtils.runOnUiThread {
                 Toast.makeText(context, R.string.unable_to_save_to_pdf_error, LENGTH_LONG).show()

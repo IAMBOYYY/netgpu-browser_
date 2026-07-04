@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.app.Notification
 import android.app.PendingIntent
 import android.content.Context
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * Create a [Notification] with default behaviour and styling.

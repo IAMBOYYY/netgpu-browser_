@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,11 +12,11 @@ import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
 import mozilla.components.support.base.feature.UserInteractionHandler
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentHistoryBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.library.LibraryPageView
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentHistoryBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.library.LibraryPageView
+import com.netgpu.browser.theme.ThemeManager
 
 /**
  * View that contains and configures the History List

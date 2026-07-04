@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
@@ -39,16 +39,16 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.components.PermissionStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.directionsEq
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.ext.shouldBeEnabled
-import org.mozilla.fenix.settings.toggle
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.components.PermissionStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.directionsEq
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.ext.shouldBeEnabled
+import com.netgpu.browser.settings.toggle
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class DefaultQuickSettingsControllerTest {

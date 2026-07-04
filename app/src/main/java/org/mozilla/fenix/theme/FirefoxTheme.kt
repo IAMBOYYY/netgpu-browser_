@@ -4,7 +4,7 @@
 
 @file:Suppress("MagicNumber")
 
-package org.mozilla.fenix.theme
+package com.netgpu.browser.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -19,8 +19,8 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import mozilla.components.ui.colors.PhotonColors
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.ext.settings
 
 /**
  * Indicates the theme that is displayed.
@@ -36,7 +36,7 @@ enum class Theme {
          * Returns the current [Theme] that is displayed.
          *
          * @param allowPrivateTheme Boolean used to control whether [Theme.Private] is an option
-         * for [FirefoxTheme] colors.
+         * for [NetGpuBrowserTheme] colors.
          *
          * @return the current [Theme] that is displayed.
          */
@@ -56,12 +56,12 @@ enum class Theme {
 }
 
 /**
- * The theme for Mozilla Firefox for Android (Fenix).
+ * The theme for Mozilla NETGPU BROWSER for Android (Fenix).
  *
  * @param theme The current [Theme] that is displayed.
  */
 @Composable
-fun FirefoxTheme(
+fun NetGpuBrowserTheme(
     theme: Theme = Theme.getTheme(),
     content: @Composable () -> Unit,
 ) {
@@ -71,23 +71,23 @@ fun FirefoxTheme(
         Theme.Private -> privateColorPalette
     }
 
-    ProvideFirefoxColors(colors) {
+    ProvideNETGPU BROWSERColors(colors) {
         MaterialTheme(
             content = content,
         )
     }
 }
 
-object FirefoxTheme {
-    val colors: FirefoxColors
+object NetGpuBrowserTheme {
+    val colors: NETGPU BROWSERColors
         @Composable
-        get() = localFirefoxColors.current
+        get() = localNETGPU BROWSERColors.current
 
     val typography: FenixTypography
         get() = defaultTypography
 }
 
-private val darkColorPalette = FirefoxColors(
+private val darkColorPalette = NETGPU BROWSERColors(
     layer1 = PhotonColors.DarkGrey60,
     layer2 = PhotonColors.DarkGrey30,
     layer3 = PhotonColors.DarkGrey80,
@@ -153,7 +153,7 @@ private val darkColorPalette = FirefoxColors(
     borderWarning = PhotonColors.Red40,
 )
 
-private val lightColorPalette = FirefoxColors(
+private val lightColorPalette = NETGPU BROWSERColors(
     layer1 = PhotonColors.LightGrey10,
     layer2 = PhotonColors.White,
     layer3 = PhotonColors.LightGrey20,
@@ -226,11 +226,11 @@ private val privateColorPalette = darkColorPalette.copy(
 )
 
 /**
- * A custom Color Palette for Mozilla Firefox for Android (Fenix).
+ * A custom Color Palette for Mozilla NETGPU BROWSER for Android (Fenix).
  */
 @Suppress("LargeClass", "LongParameterList")
 @Stable
-class FirefoxColors(
+class NETGPU BROWSERColors(
     layer1: Color,
     layer2: Color,
     layer3: Color,
@@ -543,7 +543,7 @@ class FirefoxColors(
     var borderWarning by mutableStateOf(borderWarning)
         private set
 
-    fun update(other: FirefoxColors) {
+    fun update(other: NETGPU BROWSERColors) {
         layer1 = other.layer1
         layer2 = other.layer2
         layer3 = other.layer3
@@ -610,7 +610,7 @@ class FirefoxColors(
     }
 
     /**
-     * Return a copy of this [FirefoxColors] and optionally overriding any of the provided values.
+     * Return a copy of this [NETGPU BROWSERColors] and optionally overriding any of the provided values.
      */
     fun copy(
         layer1: Color = this.layer1,
@@ -676,7 +676,7 @@ class FirefoxColors(
         borderAccent: Color = this.borderAccent,
         borderDisabled: Color = this.borderDisabled,
         borderWarning: Color = this.borderWarning,
-    ): FirefoxColors = FirefoxColors(
+    ): NETGPU BROWSERColors = NETGPU BROWSERColors(
         layer1 = layer1,
         layer2 = layer2,
         layer3 = layer3,
@@ -744,8 +744,8 @@ class FirefoxColors(
 }
 
 @Composable
-fun ProvideFirefoxColors(
-    colors: FirefoxColors,
+fun ProvideNETGPU BROWSERColors(
+    colors: NETGPU BROWSERColors,
     content: @Composable () -> Unit,
 ) {
     val colorPalette = remember {
@@ -754,9 +754,9 @@ fun ProvideFirefoxColors(
         colors.copy()
     }
     colorPalette.update(colors)
-    CompositionLocalProvider(localFirefoxColors provides colorPalette, content = content)
+    CompositionLocalProvider(localNETGPU BROWSERColors provides colorPalette, content = content)
 }
 
-private val localFirefoxColors = staticCompositionLocalOf<FirefoxColors> {
-    error("No FirefoxColors provided")
+private val localNETGPU BROWSERColors = staticCompositionLocalOf<NETGPU BROWSERColors> {
+    error("No NETGPU BROWSERColors provided")
 }

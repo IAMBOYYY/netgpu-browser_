@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -16,9 +16,9 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.not
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.TestHelper.getStringResource
 
 /**
  * Implementation of Robot Pattern for the Privacy Settings > saved logins sub menu

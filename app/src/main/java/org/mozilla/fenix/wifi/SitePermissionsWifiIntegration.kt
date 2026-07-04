@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wifi
+package com.netgpu.browser.wifi
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.ALLOWED
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.BLOCKED
 import mozilla.components.support.base.feature.LifecycleAwareFeature
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_ALLOW_ON_WIFI
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_ALLOW_ON_WIFI
+import com.netgpu.browser.utils.Settings
 
 /**
  * Handles implementation details of only setting up a WIFI connectivity listener if the current

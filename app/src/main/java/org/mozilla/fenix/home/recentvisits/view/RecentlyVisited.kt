@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits.view
+package com.netgpu.browser.home.recentvisits.view
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -51,14 +51,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.support.ktx.kotlin.trimmed
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Divider
-import org.mozilla.fenix.compose.EagerFlingBehavior
-import org.mozilla.fenix.compose.Favicon
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.Divider
+import com.netgpu.browser.compose.EagerFlingBehavior
+import com.netgpu.browser.compose.Favicon
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 // Number of recently visited items per column.
 private const val VISITS_PER_COLUMN = 3
@@ -76,7 +76,7 @@ private const val VISITS_PER_COLUMN = 3
 fun RecentlyVisited(
     recentVisits: List<RecentlyVisitedItem>,
     menuItems: List<RecentVisitMenuItem>,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     onRecentVisitClick: (RecentlyVisitedItem, Int) -> Unit = { _, _ -> },
 ) {
     Card(
@@ -295,7 +295,7 @@ private fun RecentlyVisitedTitle(
     Text(
         text = text,
         modifier = modifier,
-        color = FirefoxTheme.colors.textPrimary,
+        color = NetGpuBrowserTheme.colors.textPrimary,
         fontSize = 16.sp,
         overflow = TextOverflow.Ellipsis,
         maxLines = 1,
@@ -323,8 +323,8 @@ private fun RecentlyVisitedCaption(
         text = String.format(LocalContext.current.getString(stringId), count),
         modifier = modifier,
         color = when (isSystemInDarkTheme()) {
-            true -> FirefoxTheme.colors.textPrimary
-            false -> FirefoxTheme.colors.textSecondary
+            true -> NetGpuBrowserTheme.colors.textPrimary
+            false -> NetGpuBrowserTheme.colors.textSecondary
         },
         fontSize = 12.sp,
         overflow = TextOverflow.Ellipsis,
@@ -358,7 +358,7 @@ private fun RecentlyVisitedMenu(
         expanded = showMenu,
         onDismissRequest = { onDismissRequest() },
         modifier = Modifier
-            .background(color = FirefoxTheme.colors.layer2)
+            .background(color = NetGpuBrowserTheme.colors.layer2)
             .semantics {
                 testTagsAsResourceId = true
                 testTag = "recent.visit.menu"
@@ -373,7 +373,7 @@ private fun RecentlyVisitedMenu(
             ) {
                 Text(
                     text = item.title,
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     maxLines = 1,
                     modifier = Modifier
                         .fillMaxHeight()
@@ -399,7 +399,7 @@ private val LazyListState.atLeastHalfVisibleItems
 @Composable
 @Preview
 private fun RecentlyVisitedPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         RecentlyVisited(
             recentVisits = listOf(
                 RecentHistoryGroup(title = "running shoes"),

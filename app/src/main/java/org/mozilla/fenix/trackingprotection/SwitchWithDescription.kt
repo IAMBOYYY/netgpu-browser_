@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,7 +15,7 @@ import androidx.appcompat.widget.SwitchCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.withStyledAttributes
 import mozilla.components.support.ktx.android.view.putCompoundDrawablesRelativeWithIntrinsicBounds
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 private const val DEFAULT_DRAWABLE: Int = 0
 

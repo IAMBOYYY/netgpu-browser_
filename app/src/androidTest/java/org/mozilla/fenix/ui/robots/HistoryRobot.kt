@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.net.Uri
 import androidx.test.espresso.Espresso.onView
@@ -23,14 +23,14 @@ import org.hamcrest.Matchers
 import org.hamcrest.Matchers.allOf
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the history menu.

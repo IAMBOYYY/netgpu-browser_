@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import android.graphics.Bitmap
 import android.graphics.Bitmap.Config.ARGB_8888
@@ -33,18 +33,18 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.UnifiedSearch
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.search.SearchDialogFragmentStore
-import org.mozilla.fenix.search.SearchEngineSource
-import org.mozilla.fenix.search.SearchFragmentAction.SearchDefaultEngineSelected
-import org.mozilla.fenix.search.SearchFragmentAction.SearchHistoryEngineSelected
-import org.mozilla.fenix.search.SearchFragmentState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.UnifiedSearch
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.search.SearchDialogFragmentStore
+import com.netgpu.browser.search.SearchEngineSource
+import com.netgpu.browser.search.SearchFragmentAction.SearchDefaultEngineSelected
+import com.netgpu.browser.search.SearchFragmentAction.SearchHistoryEngineSelected
+import com.netgpu.browser.search.SearchFragmentState
+import com.netgpu.browser.utils.Settings
 import java.util.UUID
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -104,7 +104,7 @@ class SearchSelectorToolbarActionTest {
 
     @Test
     fun `GIVEN a binded search selector View WHEN a search engine is selected THEN update the icon`() {
-        mockkStatic("org.mozilla.fenix.search.toolbar.SearchSelectorToolbarActionKt") {
+        mockkStatic("com.netgpu.browser.search.toolbar.SearchSelectorToolbarActionKt") {
             val searchEngineIcon: BitmapDrawable = mockk(relaxed = true)
             every { any<SearchEngine>().getScaledIcon(any()) } returns searchEngineIcon
             val selector = SearchSelectorToolbarAction(store, mockk(), mockk())
@@ -133,7 +133,7 @@ class SearchSelectorToolbarActionTest {
     @Test
     fun `GIVEN the same view is binded multiple times WHEN the search engine changes THEN update the icon only once`() {
         // This scenario with the same View binded multiple times can happen after a "invalidateActions" call.
-        mockkStatic("org.mozilla.fenix.search.toolbar.SearchSelectorToolbarActionKt") {
+        mockkStatic("com.netgpu.browser.search.toolbar.SearchSelectorToolbarActionKt") {
             val searchEngineIcon: BitmapDrawable = mockk(relaxed = true)
             every { any<SearchEngine>().getScaledIcon(any()) } returns searchEngineIcon
             val selector = SearchSelectorToolbarAction(store, mockk(), mockk())
@@ -163,7 +163,7 @@ class SearchSelectorToolbarActionTest {
 
     @Test
     fun `GIVEN a binded search selector View WHEN a search engine is selected THEN update the icon only if a different search engine is selected`() {
-        mockkStatic("org.mozilla.fenix.search.toolbar.SearchSelectorToolbarActionKt") {
+        mockkStatic("com.netgpu.browser.search.toolbar.SearchSelectorToolbarActionKt") {
             val searchEngineIcon: BitmapDrawable = mockk(relaxed = true)
             every { any<SearchEngine>().getScaledIcon(any()) } returns searchEngineIcon
             val selector = SearchSelectorToolbarAction(store, mockk(), mockk())

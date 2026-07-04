@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import mozilla.components.browser.state.action.EngineAction
 import mozilla.components.browser.state.store.BrowserStore
@@ -15,8 +15,8 @@ import org.junit.Assert.assertNotNull
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SaveToPDFMiddlewareTest {

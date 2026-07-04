@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.sync
+package com.netgpu.browser.sync
 
 import android.content.Context
 import io.mockk.MockKAnnotations
@@ -18,7 +18,7 @@ import mozilla.components.feature.syncedtabs.storage.SyncedTabsStorage
 import mozilla.components.service.fxa.manager.FxaAccountManager
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.FenixApplication
+import com.netgpu.browser.NetGpuBrowserApplication
 
 class SyncedTabsIntegrationTest {
 
@@ -33,7 +33,7 @@ class SyncedTabsIntegrationTest {
         MockKAnnotations.init(this)
         every { syncedTabsStorage.stop() } just Runs
         every { accountManager.register(any(), owner = any(), autoPause = true) } just Runs
-        every { context.applicationContext } returns mockk<FenixApplication> {
+        every { context.applicationContext } returns mockk<NetGpuBrowserApplication> {
             every { components } returns mockk {
                 every { backgroundServices.syncedTabsStorage } returns syncedTabsStorage
             }

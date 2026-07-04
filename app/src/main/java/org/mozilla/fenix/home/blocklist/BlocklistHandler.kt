@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.blocklist
+package com.netgpu.browser.home.blocklist
 
 import android.net.Uri
 import androidx.annotation.VisibleForTesting
 import mozilla.components.support.ktx.kotlin.sha1
-import org.mozilla.fenix.ext.containsQueryParameters
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.containsQueryParameters
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.utils.Settings
 
 /**
  * Class for interacting with the a blocklist stored in [settings].

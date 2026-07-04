@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.downloads
+package com.netgpu.browser.library.downloads
 
 import android.content.Context
 import android.os.Bundle
@@ -25,19 +25,19 @@ import mozilla.components.browser.state.state.content.DownloadState
 import mozilla.components.feature.downloads.AbstractFetchDownloadService
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.base.feature.UserInteractionHandler
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentDownloadsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.filterNotExistsOnDisk
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.setTextColor
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.library.LibraryPageFragment
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentDownloadsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.filterNotExistsOnDisk
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.setTextColor
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.library.LibraryPageFragment
+import com.netgpu.browser.utils.allowUndo
 
 @SuppressWarnings("TooManyFunctions", "LargeClass")
 class DownloadFragment : LibraryPageFragment<DownloadItem>(), UserInteractionHandler, MenuProvider {

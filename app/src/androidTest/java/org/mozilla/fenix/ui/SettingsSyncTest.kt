@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -12,8 +12,8 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
 
 /**
  *  Tests for verifying the main three dot menu options
@@ -52,18 +52,18 @@ class SettingsSyncTest {
         // Open 3dot (main) menu
         // Select settings
         // Verify header: "Turn on Sync"
-        // Verify description: "Sync bookmarks, history, and more with your Firefox Account"
+        // Verify description: "Sync bookmarks, history, and more with your NETGPU BROWSER Account"
     }
 
     // SYNC
     @Ignore("This is a stub test, ignore for now")
     @Test
     fun turnOnSync() {
-        // Note this requires a test Firefox Account and a desktop
+        // Note this requires a test NETGPU BROWSER Account and a desktop
         // Open 3dot (main) menu
         // Select settings
         // Click on "Turn on Sync"
-        // Open Firefox on laptop and go to https://firefox.com/pair
+        // Open NETGPU BROWSER on laptop and go to https://firefox.com/pair
         // Pair with QR code and/or alternate method
         // Verify pairing
     }

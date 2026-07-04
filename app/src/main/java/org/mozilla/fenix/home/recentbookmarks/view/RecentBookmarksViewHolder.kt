@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks.view
+package com.netgpu.browser.home.recentbookmarks.view
 
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -11,12 +11,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.home.recentbookmarks.interactor.RecentBookmarksInteractor
-import org.mozilla.fenix.wallpapers.WallpaperState
-import org.mozilla.fenix.GleanMetrics.RecentBookmarks as RecentBookmarksMetrics
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.home.recentbookmarks.interactor.RecentBookmarksInteractor
+import com.netgpu.browser.wallpapers.WallpaperState
+import com.netgpu.browser.GleanMetrics.RecentBookmarks as RecentBookmarksMetrics
 
 class RecentBookmarksViewHolder(
     composeView: ComposeView,

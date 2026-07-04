@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.content.SharedPreferences.Editor
@@ -20,10 +20,10 @@ import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 import org.robolectric.Robolectric
 import kotlin.random.Random
 
@@ -69,7 +69,7 @@ class PreferenceBackedRadioButtonTest {
             .addAttribute(R.attr.preferenceKeyDefaultValue, "true")
             .build()
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns Settings(testContext)
 
             val button = PreferenceBackedRadioButton(testContext, attributes)
@@ -82,7 +82,7 @@ class PreferenceBackedRadioButtonTest {
     fun `GIVEN there is no backing preference or default value set vaWHEN initialized THEN set if checked as false`() {
         val attributes = Robolectric.buildAttributeSet().build()
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns Settings(testContext)
 
             val button = PreferenceBackedRadioButton(testContext, attributes)

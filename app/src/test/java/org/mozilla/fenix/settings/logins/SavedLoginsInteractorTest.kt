@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import io.mockk.every
 import io.mockk.mockk
@@ -12,11 +12,11 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.logins.controller.LoginsListController
-import org.mozilla.fenix.settings.logins.controller.SavedLoginsStorageController
-import org.mozilla.fenix.settings.logins.interactor.SavedLoginsInteractor
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.logins.controller.LoginsListController
+import com.netgpu.browser.settings.logins.controller.SavedLoginsStorageController
+import com.netgpu.browser.settings.logins.interactor.SavedLoginsInteractor
 import kotlin.random.Random
 
 @RunWith(FenixRobolectricTestRunner::class)

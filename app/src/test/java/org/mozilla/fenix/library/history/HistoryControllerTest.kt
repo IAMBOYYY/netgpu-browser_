@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import androidx.navigation.NavController
 import io.mockk.coVerifyOrder
@@ -25,12 +25,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.history.DefaultPagedHistoryProvider
-import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.history.DefaultPagedHistoryProvider
+import com.netgpu.browser.ext.navigateSafe
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class HistoryControllerTest {
@@ -167,7 +167,7 @@ class HistoryControllerTest {
     @Test
     fun `WHEN user confirms history deletion GIVEN timeFrame is null THEN delete all history, log the event, purge history and remove recently closed items`() {
         val controller = createController()
-        assertNull(org.mozilla.fenix.GleanMetrics.History.removedAll.testGetValue())
+        assertNull(com.netgpu.browser.GleanMetrics.History.removedAll.testGetValue())
 
         controller.handleDeleteTimeRangeConfirmed(null)
         coVerifyOrder {
@@ -178,13 +178,13 @@ class HistoryControllerTest {
             store.dispatch(HistoryFragmentAction.ExitDeletionMode)
         }
 
-        assertNotNull(org.mozilla.fenix.GleanMetrics.History.removedAll.testGetValue())
+        assertNotNull(com.netgpu.browser.GleanMetrics.History.removedAll.testGetValue())
     }
 
     @Test
     fun `WHEN user confirms history deletion GIVEN timeFrame is lastHour THEN delete visits between the time frame, log the event, purge history and remove recently closed items`() {
         val controller = createController()
-        assertNull(org.mozilla.fenix.GleanMetrics.History.removedLastHour.testGetValue())
+        assertNull(com.netgpu.browser.GleanMetrics.History.removedLastHour.testGetValue())
 
         controller.handleDeleteTimeRangeConfirmed(RemoveTimeFrame.LastHour)
         coVerifyOrder {
@@ -195,13 +195,13 @@ class HistoryControllerTest {
             store.dispatch(HistoryFragmentAction.ExitDeletionMode)
         }
 
-        assertNotNull(org.mozilla.fenix.GleanMetrics.History.removedLastHour.testGetValue())
+        assertNotNull(com.netgpu.browser.GleanMetrics.History.removedLastHour.testGetValue())
     }
 
     @Test
     fun `WHEN user confirms history deletion GIVEN timeFrame is todayAndYesterday THEN delete visits between the time frame, log the event, purge history and remove recently closed items`() {
         val controller = createController()
-        assertNull(org.mozilla.fenix.GleanMetrics.History.removedTodayAndYesterday.testGetValue())
+        assertNull(com.netgpu.browser.GleanMetrics.History.removedTodayAndYesterday.testGetValue())
 
         controller.handleDeleteTimeRangeConfirmed(RemoveTimeFrame.TodayAndYesterday)
         coVerifyOrder {
@@ -212,7 +212,7 @@ class HistoryControllerTest {
             store.dispatch(HistoryFragmentAction.ExitDeletionMode)
         }
 
-        assertNotNull(org.mozilla.fenix.GleanMetrics.History.removedTodayAndYesterday.testGetValue())
+        assertNotNull(com.netgpu.browser.GleanMetrics.History.removedTodayAndYesterday.testGetValue())
     }
 
     @Test

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -13,14 +13,14 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.notificationShade
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.notificationShade
 
 /**
  *  Tests for verifying basic functionality of tabbed browsing
@@ -142,7 +142,7 @@ class TabbedBrowsingTest {
     }
 
     @Test
-    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/fenix/issues/26087")
+    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/netgpu_browser/issues/26087")
     fun closeTabTest() {
         val genericURL = TestAssetHelper.getGenericAsset(mockWebServer, 1)
 
@@ -200,7 +200,7 @@ class TabbedBrowsingTest {
     }
 
     @Test
-    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/fenix/issues/26087")
+    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/netgpu_browser/issues/26087")
     fun closePrivateTabTest() {
         val genericURL = TestAssetHelper.getGenericAsset(mockWebServer, 1)
 
@@ -326,7 +326,7 @@ class TabbedBrowsingTest {
             verifyTabsTrayCounter()
             verifyExistingTabList()
             verifyNormalBrowsingNewTabButton()
-            // Disabled step due to ongoing tabs tray compose refactoring, see: https://github.com/mozilla-mobile/fenix/issues/21318
+            // Disabled step due to ongoing tabs tray compose refactoring, see: https://github.com/mozilla-mobile/netgpu_browser/issues/21318
             // verifyOpenedTabThumbnail()
             verifyExistingOpenTabs(defaultWebPage.title)
             verifyCloseTabsButton(defaultWebPage.title)

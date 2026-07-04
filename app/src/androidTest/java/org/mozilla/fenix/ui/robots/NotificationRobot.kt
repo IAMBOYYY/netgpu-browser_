@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.app.NotificationManager
 import android.content.Context
@@ -12,12 +12,12 @@ import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.ext.waitNotNull
 import java.lang.AssertionError
 
 class NotificationRobot {

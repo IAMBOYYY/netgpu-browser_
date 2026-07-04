@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
-import org.mozilla.fenix.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.Events
 
 private const val TELEMETRY_OTHER = "other"
 
@@ -37,7 +37,7 @@ private val allowedTelemetryPackages = setOf(
     // Device Actions
     "com.android.bluetooth",
     "com.google.android.gms",
-    "org.mozilla.fenix.COPY_LINK_TO_CLIPBOARD",
+    "com.netgpu.browser.COPY_LINK_TO_CLIPBOARD",
 )
 
 internal fun getShareToAppSafeExtra(appPackage: String): Events.ShareToAppExtra {

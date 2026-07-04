@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import androidx.annotation.ColorRes
@@ -35,17 +35,17 @@ import mozilla.components.feature.webcompat.reporter.WebCompatReporterFeature
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.accounts.FenixAccountManager
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.components.accounts.NetGpuBrowserAccountManager
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.ThemeManager
 
 /**
  * Builds the toolbar object used with the 3-dot menu in the browser fragment.
  * @param context a [Context] for accessing system resources.
  * @param store reference to the application's [BrowserStore].
- * @param hasAccountProblem If true, there was a problem signing into the Firefox account.
+ * @param hasAccountProblem If true, there was a problem signing into the NETGPU BROWSER account.
  * @param onItemTapped Called when a menu item is tapped.
  * @param lifecycleOwner View lifecycle owner used to determine when to cancel UI jobs.
  * @param bookmarksStorage Used to check if a page is bookmarked.
@@ -70,7 +70,7 @@ open class DefaultToolbarMenu(
 
     private val shouldDeleteDataOnQuit = context.settings().shouldDeleteBrowsingDataOnQuit
     private val shouldUseBottomToolbar = context.settings().shouldUseBottomToolbar
-    private val accountManager = FenixAccountManager(context)
+    private val accountManager = NetGpuBrowserAccountManager(context)
 
     private val selectedSession: TabSessionState?
         get() = store.state.selectedTab

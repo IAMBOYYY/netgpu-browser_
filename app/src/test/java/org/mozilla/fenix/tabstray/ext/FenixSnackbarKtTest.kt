@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import android.content.Context
 import android.view.View
@@ -18,18 +18,18 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.FenixSnackbarBehavior
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.MockkRetryTestRule
-import org.mozilla.fenix.tabstray.TabsTrayFragment.Companion.ELEVATION
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.NetGpuBrowserSnackbarBehavior
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.MockkRetryTestRule
+import com.netgpu.browser.tabstray.TabsTrayFragment.Companion.ELEVATION
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
-class FenixSnackbarKtTest {
+class NetGpuBrowserSnackbarKtTest {
 
     @get:Rule
     val mockkRule = MockkRetryTestRule()
@@ -44,7 +44,7 @@ class FenixSnackbarKtTest {
             every { getString(R.string.create_collection_tab_saved) }
                 .answers { "test3" }
         }
-        val snackbar: FenixSnackbar = mockk {
+        val snackbar: NetGpuBrowserSnackbar = mockk {
             every { context }.answers { mockContext }
         }
         every { snackbar.setText(any()) }.answers { snackbar }
@@ -68,7 +68,7 @@ class FenixSnackbarKtTest {
             every { getString(R.string.snackbar_message_bookmarks_saved) }
                 .answers { "test2" }
         }
-        val snackbar: FenixSnackbar = mockk {
+        val snackbar: NetGpuBrowserSnackbar = mockk {
             every { context }.answers { mockContext }
         }
         every { snackbar.setText(any()) }.answers { snackbar }
@@ -90,7 +90,7 @@ class FenixSnackbarKtTest {
         }
         val anchor: View = mockk(relaxed = true)
         val view: View = mockk(relaxed = true)
-        val snackbar: FenixSnackbar = mockk {
+        val snackbar: NetGpuBrowserSnackbar = mockk {
             every { context }.answers { mockContext }
         }
 
@@ -117,14 +117,14 @@ class FenixSnackbarKtTest {
         val settings: Settings = mockk(relaxed = true) {
             every { toolbarPosition } returns ToolbarPosition.BOTTOM
         }
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns settings
 
-            FenixSnackbar.make(view = container)
+            NetGpuBrowserSnackbar.make(view = container)
 
             val behavior = (container.layoutParams as? CoordinatorLayout.LayoutParams)?.behavior
-            assertTrue(behavior is FenixSnackbarBehavior)
-            assertEquals(ToolbarPosition.BOTTOM, (behavior as? FenixSnackbarBehavior)?.toolbarPosition)
+            assertTrue(behavior is NetGpuBrowserSnackbarBehavior)
+            assertEquals(ToolbarPosition.BOTTOM, (behavior as? NetGpuBrowserSnackbarBehavior)?.toolbarPosition)
         }
     }
 }

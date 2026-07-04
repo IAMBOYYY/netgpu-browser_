@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
@@ -15,14 +15,14 @@ import androidx.test.uiautomator.UiObject
 import androidx.test.uiautomator.UiObjectNotFoundException
 import androidx.test.uiautomator.UiSelector
 import junit.framework.TestCase.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.LONG_CLICK_DURATION
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.waitForObjects
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.LONG_CLICK_DURATION
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.waitForObjects
 
 /**
  *  Implementation of the robot pattern for Custom tabs

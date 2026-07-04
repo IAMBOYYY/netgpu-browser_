@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import mozilla.components.support.ktx.android.content.getDrawableWithTint
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * Updates views in [R.id.bottom_button_bar_layout] for collection creation.

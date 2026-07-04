@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding.view
+package com.netgpu.browser.onboarding.view
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -33,11 +33,11 @@ import androidx.compose.ui.unit.dp
 import com.google.accompanist.insets.navigationBarsPadding
 import com.google.accompanist.insets.statusBarsPadding
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Onboarding
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.button.PrimaryButton
-import org.mozilla.fenix.compose.button.SecondaryButton
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.GleanMetrics.Onboarding
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.button.PrimaryButton
+import com.netgpu.browser.compose.button.SecondaryButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Model containing data for the [NotificationPermissionPage].
@@ -98,7 +98,7 @@ private fun NotificationPermissionContent(
         val boxWithConstraintsScope = this
         Column(
             modifier = modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .fillMaxSize()
                 .padding(bottom = 32.dp)
                 .statusBarsPadding()
@@ -112,7 +112,7 @@ private fun NotificationPermissionContent(
                 Icon(
                     painter = painterResource(id = R.drawable.mozac_ic_close),
                     contentDescription = stringResource(R.string.content_description_close_button),
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
 
@@ -168,9 +168,9 @@ private fun NotificationPermissionPage(
                     id = pageState.title,
                     formatArgs = arrayOf(stringResource(R.string.app_name)),
                 ),
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 textAlign = TextAlign.Center,
-                style = FirefoxTheme.typography.headline5,
+                style = NetGpuBrowserTheme.typography.headline5,
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -180,9 +180,9 @@ private fun NotificationPermissionPage(
                     id = pageState.description,
                     formatArgs = arrayOf(stringResource(R.string.app_name)),
                 ),
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 textAlign = TextAlign.Center,
-                style = FirefoxTheme.typography.body2,
+                style = NetGpuBrowserTheme.typography.body2,
             )
         }
 
@@ -224,7 +224,7 @@ private const val IMAGE_HEIGHT_RATIO = 0.4f
 @Preview
 @Composable
 private fun NotificationPermissionScreenPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         NotificationPermissionDialogScreen(
             grantNotificationPermission = {},
             onDismiss = { },

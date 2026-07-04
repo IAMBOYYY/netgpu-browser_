@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.accounts
+package com.netgpu.browser.components.accounts
 
 import android.content.Context
 import io.mockk.every
@@ -14,11 +14,11 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertSame
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.ext.components
 
-class FenixAccountManagerTest {
+class NetGpuBrowserAccountManagerTest {
 
-    private lateinit var fenixFxaManager: FenixAccountManager
+    private lateinit var netgpu_browserFxaManager: NetGpuBrowserAccountManager
     private lateinit var accountManagerComponent: FxaAccountManager
     private lateinit var context: Context
     private lateinit var account: OAuthAccount
@@ -37,9 +37,9 @@ class FenixAccountManagerTest {
         every { accountManagerComponent.authenticatedAccount() } returns null
         every { accountManagerComponent.accountProfile() } returns null
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        val result = fenixFxaManager.accountProfileEmail
+        val result = netgpu_browserFxaManager.accountProfileEmail
 
         assertEquals(null, result)
     }
@@ -51,9 +51,9 @@ class FenixAccountManagerTest {
         every { accountManagerComponent.accountProfile()?.email } returns "firefoxIsFun@test.com"
         every { accountManagerComponent.accountNeedsReauth() } returns true
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        val result = fenixFxaManager.accountProfileEmail
+        val result = netgpu_browserFxaManager.accountProfileEmail
 
         assertEquals(null, result)
     }
@@ -66,9 +66,9 @@ class FenixAccountManagerTest {
         every { accountManagerComponent.accountProfile()?.email } returns accountEmail
         every { accountManagerComponent.accountNeedsReauth() } returns false
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        val result = fenixFxaManager.accountProfileEmail
+        val result = netgpu_browserFxaManager.accountProfileEmail
 
         assertEquals(accountEmail, result)
     }
@@ -77,17 +77,17 @@ class FenixAccountManagerTest {
     fun `GIVEN no account exists WHEN accountState is called THEN it returns AccountState#NO_ACCOUNT`() {
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
         every { accountManagerComponent.authenticatedAccount() } returns null
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        assertSame(AccountState.NO_ACCOUNT, fenixFxaManager.accountState)
+        assertSame(AccountState.NO_ACCOUNT, netgpu_browserFxaManager.accountState)
 
         // No account but signed in should not be possible. Test protecting against such a regression.
         every { accountManagerComponent.accountNeedsReauth() } returns false
-        assertSame(AccountState.NO_ACCOUNT, fenixFxaManager.accountState)
+        assertSame(AccountState.NO_ACCOUNT, netgpu_browserFxaManager.accountState)
 
         // No account and signed out still means no account. Test protecting against such a regression.
         every { accountManagerComponent.accountNeedsReauth() } returns true
-        assertSame(AccountState.NO_ACCOUNT, fenixFxaManager.accountState)
+        assertSame(AccountState.NO_ACCOUNT, netgpu_browserFxaManager.accountState)
     }
 
     @Test
@@ -95,9 +95,9 @@ class FenixAccountManagerTest {
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
         every { accountManagerComponent.authenticatedAccount() } returns mockk()
         every { accountManagerComponent.accountNeedsReauth() } returns true
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        val result = fenixFxaManager.accountState
+        val result = netgpu_browserFxaManager.accountState
 
         assertSame(AccountState.NEEDS_REAUTHENTICATION, result)
     }
@@ -107,9 +107,9 @@ class FenixAccountManagerTest {
         every { context.components.backgroundServices.accountManager } returns accountManagerComponent
         every { accountManagerComponent.authenticatedAccount() } returns mockk()
         every { accountManagerComponent.accountNeedsReauth() } returns false
-        fenixFxaManager = FenixAccountManager(context)
+        netgpu_browserFxaManager = NetGpuBrowserAccountManager(context)
 
-        val result = fenixFxaManager.accountState
+        val result = netgpu_browserFxaManager.accountState
 
         assertSame(AccountState.AUTHENTICATED, result)
     }

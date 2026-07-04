@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
@@ -12,9 +12,9 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.map
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.ext.removeSecure
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.removeSecure
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.utils.Settings
 
 /**
  * Sets TabsTrayFragment flags to secure when private tabs list is selected.

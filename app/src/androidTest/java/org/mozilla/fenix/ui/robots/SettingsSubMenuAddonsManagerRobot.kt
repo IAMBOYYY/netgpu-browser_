@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.util.Log
 import android.widget.RelativeLayout
@@ -31,17 +31,17 @@ import org.hamcrest.CoreMatchers.instanceOf
 import org.hamcrest.CoreMatchers.not
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.restartApp
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.restartApp
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the Addons Management Settings.

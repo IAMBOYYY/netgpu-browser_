@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
 
 /**
  * Displays font size controls for accessibility.

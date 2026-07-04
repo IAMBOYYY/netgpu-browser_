@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.Manifest.permission.ACCESS_COARSE_LOCATION
 import android.Manifest.permission.ACCESS_FINE_LOCATION
@@ -14,13 +14,13 @@ import kotlinx.parcelize.Parcelize
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.feature.sitepermissions.SitePermissionsRules
 import mozilla.components.support.ktx.android.content.isPermissionGranted
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_ALLOW_ALL
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_ALLOW_ON_WIFI
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_BLOCK_ALL
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_BLOCK_AUDIBLE
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_ALLOW_ALL
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_ALLOW_ON_WIFI
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_BLOCK_ALL
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_BLOCK_AUDIBLE
+import com.netgpu.browser.utils.Settings
 import android.Manifest.permission.CAMERA as CAMERA_PERMISSION
 
 @Parcelize

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -12,11 +12,11 @@ import androidx.test.uiautomator.UiScrollable
 import androidx.test.uiautomator.UiSelector
 import junit.framework.TestCase.assertTrue
 import org.hamcrest.CoreMatchers
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
 
 class SettingsSubMenuLanguageRobot {
     fun selectLanguage(language: String) {

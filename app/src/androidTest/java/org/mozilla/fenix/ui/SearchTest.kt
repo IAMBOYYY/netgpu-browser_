@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.content.Context
 import android.hardware.camera2.CameraManager
@@ -20,22 +20,22 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.Constants.PackageName.ANDROID_SETTINGS
-import org.mozilla.fenix.helpers.Constants.searchEngineCodes
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.SearchDispatcher
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.helpers.TestHelper.assertNativeAppOpens
-import org.mozilla.fenix.helpers.TestHelper.denyPermission
-import org.mozilla.fenix.helpers.TestHelper.exitMenu
-import org.mozilla.fenix.helpers.TestHelper.grantPermission
-import org.mozilla.fenix.helpers.TestHelper.longTapSelectItem
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.setCustomSearchEngine
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.multipleSelectionToolbar
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.Constants.PackageName.ANDROID_SETTINGS
+import com.netgpu.browser.helpers.Constants.searchEngineCodes
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.SearchDispatcher
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.helpers.TestHelper.assertNativeAppOpens
+import com.netgpu.browser.helpers.TestHelper.denyPermission
+import com.netgpu.browser.helpers.TestHelper.exitMenu
+import com.netgpu.browser.helpers.TestHelper.grantPermission
+import com.netgpu.browser.helpers.TestHelper.longTapSelectItem
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.setCustomSearchEngine
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.multipleSelectionToolbar
 
 /**
  *  Tests for verifying the search fragment
@@ -160,7 +160,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @SmokeTest
     @Test
     fun searchGroupShowsInRecentlyVisitedTest() {
@@ -195,7 +195,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @Test
     fun verifySearchGroupHistoryWithNoDuplicatesTest() {
         val firstPageUrl = getGenericAsset(searchMockServer, 1).url
@@ -247,7 +247,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Failing due to known bug, see https://github.com/mozilla-mobile/fenix/issues/23818")
+    @Ignore("Failing due to known bug, see https://github.com/mozilla-mobile/netgpu_browser/issues/23818")
     @Test
     fun searchGroupGeneratedInTheSameTabTest() {
         queryString = "test search"
@@ -277,7 +277,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @SmokeTest
     @Test
     fun noSearchGroupFromPrivateBrowsingTest() {
@@ -316,7 +316,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @SmokeTest
     @Test
     fun deleteItemsFromSearchGroupHistoryTest() {
@@ -365,7 +365,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @Test
     fun deleteSearchGroupFromHistoryTest() {
         queryString = "test search"
@@ -412,7 +412,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @Test
     fun reopenTabsFromSearchGroupTest() {
         val firstPageUrl = getGenericAsset(searchMockServer, 1).url
@@ -466,7 +466,7 @@ class SearchTest {
         }
     }
 
-    @Ignore("Test run timing out: https://github.com/mozilla-mobile/fenix/issues/27704")
+    @Ignore("Test run timing out: https://github.com/mozilla-mobile/netgpu_browser/issues/27704")
     @Test
     fun sharePageFromASearchGroupTest() {
         val firstPageUrl = getGenericAsset(searchMockServer, 1).url

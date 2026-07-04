@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.studies
+package com.netgpu.browser.settings.studies
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -19,10 +19,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.google.android.material.button.MaterialButton
 import org.mozilla.experiments.nimbus.internal.EnrolledExperiment
-import org.mozilla.fenix.R
-import org.mozilla.fenix.gleanplumb.MESSAGING_FEATURE_ID
-import org.mozilla.fenix.settings.studies.CustomViewHolder.SectionViewHolder
-import org.mozilla.fenix.settings.studies.CustomViewHolder.StudyViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.gleanplumb.MESSAGING_FEATURE_ID
+import com.netgpu.browser.settings.studies.CustomViewHolder.SectionViewHolder
+import com.netgpu.browser.settings.studies.CustomViewHolder.StudyViewHolder
 
 private const val VIEW_HOLDER_TYPE_SECTION = 0
 private const val VIEW_HOLDER_TYPE_STUDY = 1

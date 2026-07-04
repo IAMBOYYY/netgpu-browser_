@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders
+package com.netgpu.browser.home.sessioncontrol.viewholders
 
 import android.view.LayoutInflater
 import androidx.core.view.isVisible
@@ -18,10 +18,10 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.databinding.NoCollectionsMessageBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.sessioncontrol.CollectionInteractor
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.databinding.NoCollectionsMessageBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.sessioncontrol.CollectionInteractor
 
 @RunWith(FenixRobolectricTestRunner::class)
 class NoCollectionsMessageViewHolderTest {

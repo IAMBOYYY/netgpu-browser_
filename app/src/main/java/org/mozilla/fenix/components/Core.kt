@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.content.res.Configuration
@@ -79,27 +79,27 @@ import mozilla.components.service.sync.autofill.AutofillCreditCardsAddressesStor
 import mozilla.components.service.sync.logins.SyncableLoginsStorage
 import mozilla.components.support.base.worker.Frequency
 import mozilla.components.support.locale.LocaleManager
-import org.mozilla.fenix.AppRequestInterceptor
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.search.SearchMigration
-import org.mozilla.fenix.downloads.DownloadService
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gecko.GeckoProvider
-import org.mozilla.fenix.historymetadata.DefaultHistoryMetadataService
-import org.mozilla.fenix.historymetadata.HistoryMetadataMiddleware
-import org.mozilla.fenix.historymetadata.HistoryMetadataService
-import org.mozilla.fenix.media.MediaSessionService
-import org.mozilla.fenix.perf.StrictModeManager
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.advanced.getSelectedLocale
-import org.mozilla.fenix.share.SaveToPDFMiddleware
-import org.mozilla.fenix.telemetry.TelemetryMiddleware
-import org.mozilla.fenix.utils.getUndoDelay
+import com.netgpu.browser.AppRequestInterceptor
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.search.SearchMigration
+import com.netgpu.browser.downloads.DownloadService
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gecko.GeckoProvider
+import com.netgpu.browser.historymetadata.DefaultHistoryMetadataService
+import com.netgpu.browser.historymetadata.HistoryMetadataMiddleware
+import com.netgpu.browser.historymetadata.HistoryMetadataService
+import com.netgpu.browser.media.MediaSessionService
+import com.netgpu.browser.perf.StrictModeManager
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.advanced.getSelectedLocale
+import com.netgpu.browser.share.SaveToPDFMiddleware
+import com.netgpu.browser.telemetry.TelemetryMiddleware
+import com.netgpu.browser.utils.getUndoDelay
 import org.mozilla.geckoview.GeckoRuntime
 import java.util.UUID
 import java.util.concurrent.TimeUnit
@@ -154,10 +154,10 @@ class Core(
              * There are some issues around localization to be resolved, as well as questions around
              * the capacity of the WebCompat team, so the "Report site issue" feature should stay
              * disabled in Fenix Release builds for now.
-             * This is consistent with both Fennec and Firefox Desktop.
+             * This is consistent with both Fennec and NETGPU BROWSER Desktop.
              */
             if (Config.channel.isNightlyOrDebug || Config.channel.isBeta) {
-                WebCompatReporterFeature.install(it, "fenix")
+                WebCompatReporterFeature.install(it, "netgpu_browser")
             }
         }
     }
@@ -275,7 +275,7 @@ class Core(
                 // Instead we solely rely on GeckoView and the Android system to reclaim memory
                 // when needed. For details, see:
                 // https://bugzilla.mozilla.org/show_bug.cgi?id=1752594
-                // https://github.com/mozilla-mobile/fenix/issues/12731
+                // https://github.com/mozilla-mobile/netgpu_browser/issues/12731
                 // https://github.com/mozilla-mobile/android-components/issues/11300
                 // https://github.com/mozilla-mobile/android-components/issues/11653
                 trimMemoryAutomatically = false,
@@ -374,7 +374,7 @@ class Core(
     }
 
     /**
-     * The storage component to sync and persist tabs in a Firefox Sync account.
+     * The storage component to sync and persist tabs in a NETGPU BROWSER Sync account.
      */
     val lazyRemoteTabsStorage = lazyMonitored { RemoteTabsStorage(context) }
 
@@ -528,8 +528,8 @@ class Core(
     /**
      * Shared Preferences that encrypt/decrypt using Android KeyStore and lib-dataprotect for 23+
      * only on Nightly/Debug for now, otherwise simply stored.
-     * See https://github.com/mozilla-mobile/fenix/issues/8324
-     * Also, this needs revision. See https://github.com/mozilla-mobile/fenix/issues/19155
+     * See https://github.com/mozilla-mobile/netgpu_browser/issues/8324
+     * Also, this needs revision. See https://github.com/mozilla-mobile/netgpu_browser/issues/19155
      */
     private fun getSecureAbove22Preferences() =
         SecureAbove22Preferences(
@@ -538,7 +538,7 @@ class Core(
             forceInsecure = !Config.channel.isNightlyOrDebug,
         )
 
-    // Temporary. See https://github.com/mozilla-mobile/fenix/issues/19155
+    // Temporary. See https://github.com/mozilla-mobile/netgpu_browser/issues/19155
     private val lazySecurePrefs = lazyMonitored { getSecureAbove22Preferences() }
     val trackingProtectionPolicyFactory =
         TrackingProtectionPolicyFactory(context.settings(), context.resources)

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
@@ -15,12 +15,12 @@ import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.SyncAuth
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.GleanMetrics.SyncAuth
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
 
 class AccountProblemFragment : PreferenceFragmentCompat(), AccountObserver {
 

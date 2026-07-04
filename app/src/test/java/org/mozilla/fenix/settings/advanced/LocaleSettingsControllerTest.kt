@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.advanced
+package com.netgpu.browser.settings.advanced
 
 import android.app.Activity
 import io.mockk.Runs
@@ -44,7 +44,7 @@ class LocaleSettingsControllerTest {
         )
 
         mockkObject(LocaleManager)
-        mockkStatic("org.mozilla.fenix.settings.advanced.LocaleManagerExtensionKt")
+        mockkStatic("com.netgpu.browser.settings.advanced.LocaleManagerExtensionKt")
     }
 
     @Test

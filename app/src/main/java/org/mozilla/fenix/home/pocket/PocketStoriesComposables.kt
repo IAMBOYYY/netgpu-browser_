@@ -4,7 +4,7 @@
 
 @file:Suppress("MagicNumber")
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import android.graphics.Rect
 import android.net.Uri
@@ -62,19 +62,19 @@ import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStoryCaps
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStoryShim
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ClickableSubstringLink
-import org.mozilla.fenix.compose.EagerFlingBehavior
-import org.mozilla.fenix.compose.ListItemTabLarge
-import org.mozilla.fenix.compose.ListItemTabLargePlaceholder
-import org.mozilla.fenix.compose.ListItemTabSurface
-import org.mozilla.fenix.compose.SelectableChip
-import org.mozilla.fenix.compose.SelectableChipColors
-import org.mozilla.fenix.compose.StaggeredHorizontalGrid
-import org.mozilla.fenix.compose.TabSubtitleWithInterdot
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ClickableSubstringLink
+import com.netgpu.browser.compose.EagerFlingBehavior
+import com.netgpu.browser.compose.ListItemTabLarge
+import com.netgpu.browser.compose.ListItemTabLargePlaceholder
+import com.netgpu.browser.compose.ListItemTabSurface
+import com.netgpu.browser.compose.SelectableChip
+import com.netgpu.browser.compose.SelectableChipColors
+import com.netgpu.browser.compose.StaggeredHorizontalGrid
+import com.netgpu.browser.compose.TabSubtitleWithInterdot
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
@@ -129,10 +129,10 @@ fun PocketStory(
                     testTagsAsResourceId = true
                     testTag = "pocket.story.title"
                 },
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 2,
-                style = FirefoxTheme.typography.body2,
+                style = NetGpuBrowserTheme.typography.body2,
             )
         },
         subtitle = {
@@ -145,10 +145,10 @@ fun PocketStory(
                         testTagsAsResourceId = true
                         testTag = "pocket.story.publisher"
                     },
-                    color = FirefoxTheme.colors.textSecondary,
+                    color = NetGpuBrowserTheme.colors.textSecondary,
                     overflow = TextOverflow.Ellipsis,
                     maxLines = 1,
-                    style = FirefoxTheme.typography.caption,
+                    style = NetGpuBrowserTheme.typography.caption,
                 )
             } else if (isValidTimeToRead) {
                 Text(
@@ -157,10 +157,10 @@ fun PocketStory(
                         testTagsAsResourceId = true
                         testTag = "pocket.story.timeToRead"
                     },
-                    color = FirefoxTheme.colors.textSecondary,
+                    color = NetGpuBrowserTheme.colors.textSecondary,
                     overflow = TextOverflow.Ellipsis,
                     maxLines = 1,
-                    style = FirefoxTheme.typography.caption,
+                    style = NetGpuBrowserTheme.typography.caption,
                 )
             }
         },
@@ -205,10 +205,10 @@ fun PocketSponsoredStory(
                     testTagsAsResourceId = true
                     testTag = "pocket.sponsoredStory.title"
                 },
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 2,
-                style = FirefoxTheme.typography.body2,
+                style = NetGpuBrowserTheme.typography.body2,
             )
 
             Text(
@@ -217,10 +217,10 @@ fun PocketSponsoredStory(
                     testTagsAsResourceId = true
                     testTag = "pocket.sponsoredStory.identifier"
                 },
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
-                style = FirefoxTheme.typography.caption,
+                style = NetGpuBrowserTheme.typography.caption,
             )
 
             Text(
@@ -229,10 +229,10 @@ fun PocketSponsoredStory(
                     testTagsAsResourceId = true
                     testTag = "pocket.sponsoredStory.sponsor"
                 },
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
-                style = FirefoxTheme.typography.caption,
+                style = NetGpuBrowserTheme.typography.caption,
             )
         }
     }
@@ -257,7 +257,7 @@ fun PocketSponsoredStory(
 fun PocketStories(
     @PreviewParameter(PocketStoryProvider::class) stories: List<PocketStory>,
     contentPadding: Dp,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     onStoryShown: (PocketStory, Pair<Int, Int>) -> Unit,
     onStoryClicked: (PocketStory, Pair<Int, Int>) -> Unit,
     onDiscoverMoreClicked: (String) -> Unit,
@@ -482,8 +482,8 @@ fun PocketStoriesCategories(
 fun PoweredByPocketHeader(
     onLearnMoreClicked: (String) -> Unit,
     modifier: Modifier = Modifier,
-    textColor: Color = FirefoxTheme.colors.textPrimary,
-    linkTextColor: Color = FirefoxTheme.colors.textAccent,
+    textColor: Color = NetGpuBrowserTheme.colors.textPrimary,
+    linkTextColor: Color = NetGpuBrowserTheme.colors.textAccent,
 ) {
     val link = stringResource(R.string.pocket_stories_feature_learn_more)
     val text = stringResource(R.string.pocket_stories_feature_caption, link)
@@ -523,7 +523,7 @@ fun PoweredByPocketHeader(
                         testTag = "pocket.header.title"
                     },
                     color = textColor,
-                    style = FirefoxTheme.typography.caption,
+                    style = NetGpuBrowserTheme.typography.caption,
                 )
 
                 Box(
@@ -553,8 +553,8 @@ fun PoweredByPocketHeader(
 @Composable
 @Preview
 private fun PocketStoriesComposablesPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer2)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer2)) {
             Column {
                 PocketStories(
                     stories = getFakePocketStories(8),

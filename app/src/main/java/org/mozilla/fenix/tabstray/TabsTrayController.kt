@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import androidx.annotation.VisibleForTesting
 import androidx.navigation.NavController
@@ -21,27 +21,27 @@ import mozilla.components.feature.downloads.ui.DownloadCancelDialogFragment
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.lib.state.DelicateAction
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.DEFAULT_ACTIVE_DAYS
-import org.mozilla.fenix.ext.potentialInactiveTabs
-import org.mozilla.fenix.home.HomeFragment
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.browser.InactiveTabsController
-import org.mozilla.fenix.tabstray.browser.TabsTrayFabController
-import org.mozilla.fenix.tabstray.ext.isActiveDownload
-import org.mozilla.fenix.tabstray.ext.isSelect
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.DEFAULT_ACTIVE_DAYS
+import com.netgpu.browser.ext.potentialInactiveTabs
+import com.netgpu.browser.home.HomeFragment
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.browser.InactiveTabsController
+import com.netgpu.browser.tabstray.browser.TabsTrayFabController
+import com.netgpu.browser.tabstray.ext.isActiveDownload
+import com.netgpu.browser.tabstray.ext.isSelect
+import com.netgpu.browser.utils.Settings
 import java.util.concurrent.TimeUnit
-import org.mozilla.fenix.GleanMetrics.Tab as GleanTab
+import com.netgpu.browser.GleanMetrics.Tab as GleanTab
 
 /**
  * Controller for handling any actions in the tabs tray.

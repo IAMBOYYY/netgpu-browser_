@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.studies
+package com.netgpu.browser.settings.studies
 
 import android.content.Context
 import android.text.SpannableStringBuilder
@@ -24,14 +24,14 @@ import mozilla.components.service.nimbus.NimbusApi
 import mozilla.components.support.base.log.logger.Logger
 import mozilla.telemetry.glean.private.NoExtras
 import org.mozilla.experiments.nimbus.internal.EnrolledExperiment
-import org.mozilla.fenix.GleanMetrics.Preferences
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.SettingsStudiesBinding
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.SupportUtils.SumoTopic.OPT_OUT_STUDIES
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Preferences
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.SettingsStudiesBinding
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.SupportUtils.SumoTopic.OPT_OUT_STUDIES
+import com.netgpu.browser.utils.Settings
 import kotlin.system.exitProcess
 
 @Suppress("LongParameterList")

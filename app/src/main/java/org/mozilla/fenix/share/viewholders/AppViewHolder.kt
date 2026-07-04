@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.viewholders
+package com.netgpu.browser.share.viewholders
 
 import android.view.View
 import androidx.annotation.VisibleForTesting
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.AppShareListItemBinding
-import org.mozilla.fenix.share.ShareToAppsInteractor
-import org.mozilla.fenix.share.listadapters.AppShareOption
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.AppShareListItemBinding
+import com.netgpu.browser.share.ShareToAppsInteractor
+import com.netgpu.browser.share.listadapters.AppShareOption
 
 class AppViewHolder(
     itemView: View,

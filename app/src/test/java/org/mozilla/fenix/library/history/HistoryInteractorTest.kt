@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import io.mockk.every
 import io.mockk.mockk
@@ -15,8 +15,8 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.GleanMetrics.History as GleanHistory
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.History as GleanHistory
 
 @RunWith(FenixRobolectricTestRunner::class) // For GleanTestRule
 class HistoryInteractorTest {

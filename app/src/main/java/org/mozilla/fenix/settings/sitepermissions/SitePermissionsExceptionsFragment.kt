@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -30,11 +30,11 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.support.ktx.kotlin.stripDefaultPort
-import org.mozilla.fenix.NavHostActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.ext.nav
+import com.netgpu.browser.NavHostActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.ext.nav
 
 private const val MAX_ITEMS_PER_PAGE = 50
 

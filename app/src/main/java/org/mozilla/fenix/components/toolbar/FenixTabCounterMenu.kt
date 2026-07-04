@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
 import mozilla.components.concept.menu.candidate.DividerMenuCandidate
 import mozilla.components.concept.menu.candidate.MenuCandidate
 import mozilla.components.ui.tabcounter.TabCounterMenu
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
 
 class FenixTabCounterMenu(
     context: Context,

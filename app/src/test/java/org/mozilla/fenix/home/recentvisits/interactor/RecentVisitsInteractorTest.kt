@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits.interactor
+package com.netgpu.browser.home.recentvisits.interactor
 
 import io.mockk.mockk
 import io.mockk.verify
@@ -11,15 +11,15 @@ import mozilla.components.concept.storage.HistoryMetadata
 import mozilla.components.concept.storage.HistoryMetadataKey
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.home.pocket.PocketStoriesController
-import org.mozilla.fenix.home.recentbookmarks.controller.RecentBookmarksController
-import org.mozilla.fenix.home.recentsyncedtabs.controller.RecentSyncedTabController
-import org.mozilla.fenix.home.recenttabs.controller.RecentTabController
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.home.recentvisits.controller.RecentVisitsController
-import org.mozilla.fenix.home.sessioncontrol.DefaultSessionControlController
-import org.mozilla.fenix.home.sessioncontrol.SessionControlInteractor
+import com.netgpu.browser.home.pocket.PocketStoriesController
+import com.netgpu.browser.home.recentbookmarks.controller.RecentBookmarksController
+import com.netgpu.browser.home.recentsyncedtabs.controller.RecentSyncedTabController
+import com.netgpu.browser.home.recenttabs.controller.RecentTabController
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.home.recentvisits.controller.RecentVisitsController
+import com.netgpu.browser.home.sessioncontrol.DefaultSessionControlController
+import com.netgpu.browser.home.sessioncontrol.SessionControlInteractor
 
 class RecentVisitsInteractorTest {
     private val defaultSessionControlController: DefaultSessionControlController =

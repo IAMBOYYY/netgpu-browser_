@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.storage.sync.Tab
 import mozilla.components.browser.tabstray.TabsTray
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.browser.InactiveTabsInteractor
-import org.mozilla.fenix.tabstray.browser.TabsTrayFabInteractor
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.browser.InactiveTabsInteractor
+import com.netgpu.browser.tabstray.browser.TabsTrayFabInteractor
 
 /**
  * Interactor for responding to all user actions in the tabs tray.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
@@ -12,8 +12,8 @@ import androidx.lifecycle.ViewTreeLifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import androidx.savedstate.SavedStateRegistryOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.Theme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.Theme
 
 /**
  * [RecyclerView.ViewHolder] used for Jetpack Compose UI content .
@@ -42,7 +42,7 @@ abstract class ComposeViewHolder(
             ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed,
         )
         composeView.setContent {
-            FirefoxTheme(theme = Theme.getTheme(allowPrivateTheme = allowPrivateTheme)) {
+            NetGpuBrowserTheme(theme = Theme.getTheme(allowPrivateTheme = allowPrivateTheme)) {
                 Content()
             }
         }

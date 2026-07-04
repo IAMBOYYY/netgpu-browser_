@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.content.Context
 import androidx.core.app.NotificationManagerCompat
 import org.json.JSONObject
-import org.mozilla.fenix.ext.areNotificationsEnabledSafe
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.BrowsersCache
+import com.netgpu.browser.ext.areNotificationsEnabledSafe
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.BrowsersCache
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

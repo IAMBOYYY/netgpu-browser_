@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs.view
+package com.netgpu.browser.home.recentsyncedtabs.view
 
 import android.view.View
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -10,14 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recentsyncedtabs.interactor.RecentSyncedTabInteractor
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recentsyncedtabs.interactor.RecentSyncedTabInteractor
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
+import com.netgpu.browser.wallpapers.WallpaperState
 
 /**
  * View holder for a recent synced tab item.
@@ -59,14 +59,14 @@ class RecentSyncedTabViewHolder(
                 is RecentSyncedTabState.Success -> it.tabs.firstOrNull()
             }
             val buttonBackgroundColor = when {
-                syncedTab != null && isWallpaperNotDefault -> FirefoxTheme.colors.layer1
-                syncedTab != null -> FirefoxTheme.colors.actionSecondary
-                else -> FirefoxTheme.colors.layer3
+                syncedTab != null && isWallpaperNotDefault -> NetGpuBrowserTheme.colors.layer1
+                syncedTab != null -> NetGpuBrowserTheme.colors.actionSecondary
+                else -> NetGpuBrowserTheme.colors.layer3
             }
             val buttonTextColor = when {
                 wallpaperState.currentWallpaper.cardColorDark != null &&
-                    isSystemInDarkTheme() -> FirefoxTheme.colors.textPrimary
-                else -> FirefoxTheme.colors.textActionSecondary
+                    isSystemInDarkTheme() -> NetGpuBrowserTheme.colors.textPrimary
+                else -> NetGpuBrowserTheme.colors.textActionSecondary
             }
 
             RecentSyncedTab(

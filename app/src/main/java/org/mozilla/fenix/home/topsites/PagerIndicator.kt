@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.topsites
+package com.netgpu.browser.home.topsites
 
 import android.content.Context
 import android.util.AttributeSet
@@ -10,7 +10,7 @@ import android.util.TypedValue
 import android.view.View
 import android.widget.LinearLayout
 import androidx.core.view.MarginLayoutParamsCompat
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * A pager indicator widget to display the number of pages and the current selected page.

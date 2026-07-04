@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -19,12 +19,12 @@ import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
 import org.hamcrest.CoreMatchers.allOf
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.assertIsChecked
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.assertIsChecked
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the settings Delete Browsing Data sub menu.

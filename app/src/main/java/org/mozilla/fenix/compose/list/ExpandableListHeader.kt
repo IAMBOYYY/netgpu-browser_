@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.list
+package com.netgpu.browser.compose.list
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -23,8 +23,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Expandable header for sections of lists
@@ -41,7 +41,7 @@ import org.mozilla.fenix.theme.FirefoxTheme
 @Composable
 fun ExpandableListHeader(
     headerText: String,
-    headerTextStyle: TextStyle = FirefoxTheme.typography.headline8,
+    headerTextStyle: TextStyle = NetGpuBrowserTheme.typography.headline8,
     expanded: Boolean? = null,
     expandActionContentDescription: String? = null,
     collapseActionContentDescription: String? = null,
@@ -65,7 +65,7 @@ fun ExpandableListHeader(
         ) {
             Text(
                 text = headerText,
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 style = headerTextStyle,
                 maxLines = 1,
             )
@@ -83,7 +83,7 @@ fun ExpandableListHeader(
                         expandActionContentDescription
                     },
                     modifier = Modifier.size(20.dp),
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
         }
@@ -95,8 +95,8 @@ fun ExpandableListHeader(
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun TextOnlyHeaderPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             ExpandableListHeader(headerText = "Section title")
         }
     }
@@ -105,8 +105,8 @@ private fun TextOnlyHeaderPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun CollapsibleHeaderPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             ExpandableListHeader(
                 headerText = "Collapsible section title",
                 expanded = true,
@@ -121,8 +121,8 @@ private fun CollapsibleHeaderPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun HeaderWithClickableIconPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             ExpandableListHeader(headerText = "Section title") {
                 Box(
                     modifier = Modifier
@@ -133,7 +133,7 @@ private fun HeaderWithClickableIconPreview() {
                         painter = painterResource(R.drawable.ic_delete),
                         contentDescription = "click me",
                         modifier = Modifier.size(20.dp),
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                     )
                 }
             }
@@ -144,8 +144,8 @@ private fun HeaderWithClickableIconPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun CollapsibleHeaderWithClickableIconPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             ExpandableListHeader(
                 headerText = "Section title",
                 expanded = true,
@@ -159,7 +159,7 @@ private fun CollapsibleHeaderWithClickableIconPreview() {
                         painter = painterResource(R.drawable.ic_delete),
                         contentDescription = "click me",
                         modifier = Modifier.size(20.dp),
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                     )
                 }
             }

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -71,29 +71,29 @@ import mozilla.components.support.ktx.kotlin.toNormalizedUrl
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
 import mozilla.components.ui.autocomplete.InlineAutocompleteEditText
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Awesomebar
-import org.mozilla.fenix.GleanMetrics.VoiceSearch
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Core.Companion.BOOKMARKS_SEARCH_ENGINE_ID
-import org.mozilla.fenix.components.Core.Companion.HISTORY_SEARCH_ENGINE_ID
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.databinding.FragmentSearchDialogBinding
-import org.mozilla.fenix.databinding.SearchSuggestionsHintBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRectWithScreenLocation
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.registerForActivityResult
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.search.awesomebar.AwesomeBarView
-import org.mozilla.fenix.search.awesomebar.toSearchProviderState
-import org.mozilla.fenix.search.toolbar.IncreasedTapAreaActionDecorator
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.search.toolbar.SearchSelectorToolbarAction
-import org.mozilla.fenix.search.toolbar.ToolbarView
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Awesomebar
+import com.netgpu.browser.GleanMetrics.VoiceSearch
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Core.Companion.BOOKMARKS_SEARCH_ENGINE_ID
+import com.netgpu.browser.components.Core.Companion.HISTORY_SEARCH_ENGINE_ID
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.databinding.FragmentSearchDialogBinding
+import com.netgpu.browser.databinding.SearchSuggestionsHintBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRectWithScreenLocation
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.registerForActivityResult
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.search.awesomebar.AwesomeBarView
+import com.netgpu.browser.search.awesomebar.toSearchProviderState
+import com.netgpu.browser.search.toolbar.IncreasedTapAreaActionDecorator
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.search.toolbar.SearchSelectorToolbarAction
+import com.netgpu.browser.search.toolbar.ToolbarView
+import com.netgpu.browser.settings.SupportUtils
 
 typealias SearchDialogFragmentStore = SearchFragmentStore
 
@@ -143,9 +143,9 @@ class SearchDialogFragment : AppCompatDialogFragment(), UserInteractionHandler {
 
     override fun onStop() {
         super.onStop()
-        // https://github.com/mozilla-mobile/fenix/issues/14279
+        // https://github.com/mozilla-mobile/netgpu_browser/issues/14279
         // Let's reset back to the default behavior after we're done searching
-        // This will be addressed on https://github.com/mozilla-mobile/fenix/issues/17805
+        // This will be addressed on https://github.com/mozilla-mobile/netgpu_browser/issues/17805
         @Suppress("DEPRECATION")
         requireActivity().window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
     }
@@ -641,7 +641,7 @@ class SearchDialogFragment : AppCompatDialogFragment(), UserInteractionHandler {
     }
 
     @Suppress("DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     private fun createQrFeature(): QrFeature {
         return QrFeature(
             requireContext(),
@@ -692,7 +692,7 @@ class SearchDialogFragment : AppCompatDialogFragment(), UserInteractionHandler {
     }
 
     @Suppress("DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<String>,

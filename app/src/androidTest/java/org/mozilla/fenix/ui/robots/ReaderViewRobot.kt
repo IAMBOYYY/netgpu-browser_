@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Context
 import androidx.test.espresso.Espresso.onView
@@ -15,8 +15,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Assert.assertEquals
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for Reader View UI.

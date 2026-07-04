@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.Activity
 import android.os.Bundle
 import mozilla.components.concept.engine.Engine
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.android.DefaultActivityLifecycleCallbacks
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.android.DefaultActivityLifecycleCallbacks
 
 /**
  * Adds a profiler marker for each activity lifecycle callbacks. The callbacks are called by the
  * super method (e.g. [Activity.onCreate] so the markers occur sometime during the execution of
- * our implementation (e.g. [org.mozilla.fenix.HomeActivity.onCreate]) rather than at the beginning
+ * our implementation (e.g. [com.netgpu.browser.HomeActivity.onCreate]) rather than at the beginning
  * or end of that method.
  */
 class MarkersActivityLifecycleCallbacks(

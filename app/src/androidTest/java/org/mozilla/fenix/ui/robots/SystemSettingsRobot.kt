@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.intent.Intents
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasAction
 import androidx.test.uiautomator.UiSelector
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.mDevice
 
 class SystemSettingsRobot {
     fun verifySystemNotificationsView() = assertSystemNotificationsView()

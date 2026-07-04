@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.toHexColor
-import org.mozilla.fenix.wallpapers.Wallpaper.Companion.amethystName
-import org.mozilla.fenix.wallpapers.Wallpaper.Companion.beachVibeName
-import org.mozilla.fenix.wallpapers.Wallpaper.Companion.ceruleanName
-import org.mozilla.fenix.wallpapers.Wallpaper.Companion.sunriseName
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.toHexColor
+import com.netgpu.browser.wallpapers.Wallpaper.Companion.amethystName
+import com.netgpu.browser.wallpapers.Wallpaper.Companion.beachVibeName
+import com.netgpu.browser.wallpapers.Wallpaper.Companion.ceruleanName
+import com.netgpu.browser.wallpapers.Wallpaper.Companion.sunriseName
 import java.io.File
 import java.io.IOException
 
@@ -43,7 +43,7 @@ class LegacyWallpaperMigration(
                 downloadWallpaper(
                     Wallpaper.Default.copy(
                         name = wallpaperName,
-                        collection = Wallpaper.ClassicFirefoxCollection,
+                        collection = Wallpaper.ClassicNETGPU BROWSERCollection,
                         thumbnailFileState = Wallpaper.ImageFileState.Unavailable,
                         assetsFileState = Wallpaper.ImageFileState.Unavailable,
                     ),

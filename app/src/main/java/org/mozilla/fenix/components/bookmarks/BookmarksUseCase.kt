@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.bookmarks
+package com.netgpu.browser.components.bookmarks
 
 import androidx.annotation.WorkerThread
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.appservices.places.uniffi.PlacesApiException
 import mozilla.components.concept.storage.BookmarksStorage
 import mozilla.components.concept.storage.HistoryStorage
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
 import java.util.concurrent.TimeUnit
 
 /**

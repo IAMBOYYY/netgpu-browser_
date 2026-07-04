@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-package org.mozilla.fenix.library.historymetadata.view
+package com.netgpu.browser.library.historymetadata.view
 
 import android.view.LayoutInflater
 import androidx.navigation.Navigation
@@ -14,13 +14,13 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.HistoryMetadataGroupListItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.HistoryItemTimeGroup
-import org.mozilla.fenix.library.historymetadata.interactor.HistoryMetadataGroupInteractor
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.databinding.HistoryMetadataGroupListItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.HistoryItemTimeGroup
+import com.netgpu.browser.library.historymetadata.interactor.HistoryMetadataGroupInteractor
+import com.netgpu.browser.selection.SelectionHolder
 
 @RunWith(FenixRobolectricTestRunner::class)
 class HistoryMetadataGroupItemViewHolderTest {

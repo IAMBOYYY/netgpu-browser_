@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
-import org.mozilla.fenix.tabstray.Page
+import com.netgpu.browser.tabstray.Page
 
 /**
  * Interactor for all things related to the floating action button in the tabs tray.

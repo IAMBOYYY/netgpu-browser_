@@ -2,22 +2,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.downloads.viewholders
+package com.netgpu.browser.library.downloads.viewholders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.downloads.toMegabyteOrKilobyteString
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.DownloadListItemBinding
-import org.mozilla.fenix.databinding.LibrarySiteItemBinding
-import org.mozilla.fenix.ext.getIcon
-import org.mozilla.fenix.ext.hideAndDisable
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.library.downloads.DownloadFragmentState
-import org.mozilla.fenix.library.downloads.DownloadInteractor
-import org.mozilla.fenix.library.downloads.DownloadItem
-import org.mozilla.fenix.library.downloads.DownloadItemMenu
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.DownloadListItemBinding
+import com.netgpu.browser.databinding.LibrarySiteItemBinding
+import com.netgpu.browser.ext.getIcon
+import com.netgpu.browser.ext.hideAndDisable
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.library.downloads.DownloadFragmentState
+import com.netgpu.browser.library.downloads.DownloadInteractor
+import com.netgpu.browser.library.downloads.DownloadItem
+import com.netgpu.browser.library.downloads.DownloadItemMenu
+import com.netgpu.browser.selection.SelectionHolder
 
 class DownloadsListItemViewHolder(
     view: View,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.Context
 import android.os.Bundle
@@ -11,13 +11,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import mozilla.components.concept.engine.Engine
-import org.mozilla.fenix.browser.BaseBrowserFragment
-import org.mozilla.fenix.home.HomeFragment
+import com.netgpu.browser.browser.BaseBrowserFragment
+import com.netgpu.browser.home.HomeFragment
 
 /**
  * Adds a profiler marker for each fragment lifecycle callbacks. The callbacks are called by the
  * super method (e.g. [Fragment.onCreate] so the markers occur sometime during the execution of
- * our implementation (e.g. [org.mozilla.fenix.home.HomeFragment.onCreate]) rather than at the
+ * our implementation (e.g. [com.netgpu.browser.home.HomeFragment.onCreate]) rather than at the
  * beginning or end of that method.
  */
 @ExperimentalCoroutinesApi // reference to HomeFragment causes cascade.

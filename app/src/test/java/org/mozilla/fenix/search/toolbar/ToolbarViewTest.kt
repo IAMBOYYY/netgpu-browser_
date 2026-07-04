@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -36,15 +36,15 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.search.SearchEngineSource
-import org.mozilla.fenix.search.SearchFragmentState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.search.SearchEngineSource
+import com.netgpu.browser.search.SearchFragmentState
+import com.netgpu.browser.utils.Settings
 import java.util.UUID
 
 @RunWith(FenixRobolectricTestRunner::class)

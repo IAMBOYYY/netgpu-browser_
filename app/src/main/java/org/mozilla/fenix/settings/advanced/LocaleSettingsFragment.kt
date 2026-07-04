@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.advanced
+package com.netgpu.browser.settings.advanced
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,11 +19,11 @@ import androidx.lifecycle.Lifecycle
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.locale.LocaleUseCases
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentLocaleSettingsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentLocaleSettingsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.showToolbar
 
 class LocaleSettingsFragment : Fragment(), MenuProvider {
 

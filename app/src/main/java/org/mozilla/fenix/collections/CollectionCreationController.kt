@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.CoroutineScope
@@ -15,9 +15,9 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.ext.getDefaultCollectionNumber
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.ext.getDefaultCollectionNumber
 
 interface CollectionCreationController {
 

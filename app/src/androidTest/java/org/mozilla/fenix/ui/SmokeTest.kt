@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.view.View
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
@@ -19,29 +19,29 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.Constants.PackageName.YOUTUBE_APP
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RecyclerViewIdlingResource
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.assertNativeAppOpens
-import org.mozilla.fenix.helpers.TestHelper.createCustomTabIntent
-import org.mozilla.fenix.helpers.TestHelper.generateRandomString
-import org.mozilla.fenix.helpers.TestHelper.registerAndCleanupIdlingResources
-import org.mozilla.fenix.helpers.ViewVisibilityIdlingResource
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.customTabScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.notificationShade
-import org.mozilla.fenix.ui.robots.openEditURLView
-import org.mozilla.fenix.ui.robots.searchScreen
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.Constants.PackageName.YOUTUBE_APP
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RecyclerViewIdlingResource
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.assertNativeAppOpens
+import com.netgpu.browser.helpers.TestHelper.createCustomTabIntent
+import com.netgpu.browser.helpers.TestHelper.generateRandomString
+import com.netgpu.browser.helpers.TestHelper.registerAndCleanupIdlingResources
+import com.netgpu.browser.helpers.ViewVisibilityIdlingResource
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.customTabScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.notificationShade
+import com.netgpu.browser.ui.robots.openEditURLView
+import com.netgpu.browser.ui.robots.searchScreen
 
 /**
  * Test Suite that contains a part of the Smoke and Sanity tests defined in TestRail:
@@ -513,7 +513,7 @@ class SmokeTest {
             verifyExistingTabList()
             verifyExistingOpenTabs(website.title)
             verifyCloseTabsButton(website.title)
-            // Disabled step due to ongoing tabs tray compose refactoring, see: https://github.com/mozilla-mobile/fenix/issues/21318
+            // Disabled step due to ongoing tabs tray compose refactoring, see: https://github.com/mozilla-mobile/netgpu_browser/issues/21318
             // verifyOpenedTabThumbnail()
             verifyPrivateBrowsingNewTabButton()
         }

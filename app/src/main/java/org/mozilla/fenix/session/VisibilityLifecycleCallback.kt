@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.session
+package com.netgpu.browser.session
 
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.Application
 import android.content.Context
 import android.os.Bundle
-import org.mozilla.fenix.FenixApplication
+import com.netgpu.browser.NetGpuBrowserApplication
 
 /**
  * This ActivityLifecycleCallbacks implementations tracks if there is at least one activity in the
@@ -71,7 +71,7 @@ class VisibilityLifecycleCallback(private val activityManager: ActivityManager?)
          *          false otherwise.
          */
         internal fun finishAndRemoveTaskIfInBackground(context: Context): Boolean {
-            return (context.applicationContext as FenixApplication)
+            return (context.applicationContext as NetGpuBrowserApplication)
                 .visibilityLifecycleCallback?.finishAndRemoveTaskIfInBackground() ?: false
         }
     }

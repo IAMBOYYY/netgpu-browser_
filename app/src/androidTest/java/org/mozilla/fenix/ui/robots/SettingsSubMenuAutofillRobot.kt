@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -16,20 +16,20 @@ import androidx.test.uiautomator.UiSelector
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.endsWith
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemContainingTextExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithDescriptionExists
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithDescription
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResId
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.hasCousin
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.MatcherHelper.assertItemContainingTextExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithDescriptionExists
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.MatcherHelper.itemWithDescription
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResId
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.hasCousin
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.click
 
 class SettingsSubMenuAutofillRobot {
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.listadapters
+package com.netgpu.browser.share.listadapters
 
 import android.view.ViewGroup
 import io.mockk.Runs
@@ -16,9 +16,9 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.share.ShareInteractor
-import org.mozilla.fenix.share.viewholders.AppViewHolder
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.share.ShareInteractor
+import com.netgpu.browser.share.viewholders.AppViewHolder
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AppShareAdapterTest {

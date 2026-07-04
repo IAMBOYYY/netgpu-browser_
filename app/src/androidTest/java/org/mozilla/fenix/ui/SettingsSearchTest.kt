@@ -1,4 +1,4 @@
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
 import okhttp3.mockwebserver.MockWebServer
@@ -7,22 +7,22 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RecyclerViewIdlingResource
-import org.mozilla.fenix.helpers.SearchDispatcher
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.helpers.TestHelper.exitMenu
-import org.mozilla.fenix.helpers.TestHelper.runWithCondition
-import org.mozilla.fenix.helpers.TestHelper.setTextToClipBoard
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.util.ARABIC_LANGUAGE_HEADER
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RecyclerViewIdlingResource
+import com.netgpu.browser.helpers.SearchDispatcher
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.helpers.TestHelper.exitMenu
+import com.netgpu.browser.helpers.TestHelper.runWithCondition
+import com.netgpu.browser.helpers.TestHelper.setTextToClipBoard
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.util.ARABIC_LANGUAGE_HEADER
 
 class SettingsSearchTest {
     private lateinit var mockWebServer: MockWebServer
@@ -112,10 +112,10 @@ class SettingsSearchTest {
         homeScreen {
         }.openSearch {
             typeSearch("test")
-            verifyFirefoxSuggestResults(
+            verifyNETGPU BROWSERSuggestResults(
                 activityTestRule,
                 "test",
-                "Firefox Suggest",
+                "NETGPU BROWSER Suggest",
                 "Test_Page_1",
             )
         }.clickSearchSuggestion("Test_Page_1") {
@@ -144,10 +144,10 @@ class SettingsSearchTest {
         homeScreen {
         }.openSearch {
             typeSearch("test")
-            verifyFirefoxSuggestResults(
+            verifyNETGPU BROWSERSuggestResults(
                 activityTestRule,
                 "test",
-                "Firefox Suggest",
+                "NETGPU BROWSER Suggest",
                 "Test_Page_2",
             )
         }.clickSearchSuggestion("Test_Page_2") {
@@ -171,7 +171,7 @@ class SettingsSearchTest {
             typeSearch("test")
             verifyNoSuggestionsAreDisplayed(
                 activityTestRule,
-                "Firefox Suggest",
+                "NETGPU BROWSER Suggest",
                 "Test_Page_1",
                 "Test_Page_2",
             )
@@ -243,7 +243,7 @@ class SettingsSearchTest {
     // Test running on beta/release builds in CI:
     // caution when making changes to it, so they don't block the builds
     // Goes through the settings and changes the search suggestion toggle, then verifies it changes.
-    @Ignore("Failing, see: https://github.com/mozilla-mobile/fenix/issues/23817")
+    @Ignore("Failing, see: https://github.com/mozilla-mobile/netgpu_browser/issues/23817")
     @SmokeTest
     @Test
     fun toggleSearchSuggestionsTest() {

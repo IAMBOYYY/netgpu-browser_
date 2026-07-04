@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.collections
+package com.netgpu.browser.home.collections
 
 import android.content.Context
 import android.content.res.Configuration
@@ -29,14 +29,14 @@ import mozilla.components.browser.state.state.recover.RecoverableTab
 import mozilla.components.concept.engine.Engine
 import mozilla.components.feature.tab.collections.Tab
 import mozilla.components.feature.tab.collections.TabCollection
-import org.mozilla.fenix.R.string
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.Theme
+import com.netgpu.browser.R.string
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.Theme
 
 /**
- * Menu shown for a [org.mozilla.fenix.home.collections.Collection].
+ * Menu shown for a [com.netgpu.browser.home.collections.Collection].
  *
  * @see [DropdownMenu]
  *
@@ -61,7 +61,7 @@ fun CollectionMenu(
             expanded = showMenu,
             onDismissRequest = { onDismissRequest() },
             modifier = Modifier
-                .background(color = FirefoxTheme.colors.layer2),
+                .background(color = NetGpuBrowserTheme.colors.layer2),
         ) {
             for (item in menuItems) {
                 DropdownMenuItem(
@@ -119,13 +119,13 @@ fun getMenuItems(
     return listOfNotNull(
         CollectionMenuItem(
             title = stringResource(string.collection_open_tabs),
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
         ) {
             onOpenTabsTapped(collection)
         },
         CollectionMenuItem(
             title = stringResource(string.collection_rename),
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
         ) {
             onRenameCollectionTapped(collection)
         },
@@ -133,7 +133,7 @@ fun getMenuItems(
         if (hasOpenTabs()) {
             CollectionMenuItem(
                 title = stringResource(string.add_tab),
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
             ) {
                 onAddTabTapped(collection)
             }
@@ -143,7 +143,7 @@ fun getMenuItems(
 
         CollectionMenuItem(
             title = stringResource(string.collection_delete),
-            color = FirefoxTheme.colors.textWarning,
+            color = NetGpuBrowserTheme.colors.textWarning,
         ) {
             onDeleteCollectionTapped(collection)
         },
@@ -159,7 +159,7 @@ private fun hasOpenTabs() = when (inComposePreview) {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun CollectionMenuDarkPreview() {
-    FirefoxTheme(Theme.Dark) {
+    NetGpuBrowserTheme(Theme.Dark) {
         CollectionMenu(
             showMenu = true,
             menuItems = getMenuItems(
@@ -176,7 +176,7 @@ private fun CollectionMenuDarkPreview() {
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun CollectionMenuLightPreview() {
-    FirefoxTheme(Theme.Light) {
+    NetGpuBrowserTheme(Theme.Light) {
         CollectionMenu(
             showMenu = true,
             menuItems = getMenuItems(

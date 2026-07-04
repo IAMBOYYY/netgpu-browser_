@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb.state
+package com.netgpu.browser.gleanplumb.state
 
 import io.mockk.Runs
 import io.mockk.coEvery
@@ -24,24 +24,24 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.Evaluate
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageClicked
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageDismissed
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.Restore
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessages
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.gleanplumb.MessagingState
-import org.mozilla.fenix.gleanplumb.NimbusMessagingController
-import org.mozilla.fenix.gleanplumb.NimbusMessagingStorage
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.nimbus.MessageData
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.nimbus.StyleData
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.Evaluate
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageClicked
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageDismissed
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.Restore
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessages
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.gleanplumb.MessagingState
+import com.netgpu.browser.gleanplumb.NimbusMessagingController
+import com.netgpu.browser.gleanplumb.NimbusMessagingStorage
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.nimbus.MessageData
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.nimbus.StyleData
 
 @RunWith(FenixRobolectricTestRunner::class)
 class MessagingMiddlewareTest {

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import android.net.Uri
@@ -20,8 +20,8 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.intent.FennecBookmarkShortcutsIntentProcessor.Companion.ACTION_FENNEC_HOMESCREEN_SHORTCUT
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.intent.FennecBookmarkShortcutsIntentProcessor.Companion.ACTION_FENNEC_HOMESCREEN_SHORTCUT
 
 @RunWith(FenixRobolectricTestRunner::class)
 class FennecBookmarkShortcutsIntentProcessorTest {

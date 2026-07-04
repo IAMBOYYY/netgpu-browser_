@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.viewholders
+package com.netgpu.browser.share.viewholders
 
 import android.content.Context
 import android.view.View
@@ -10,11 +10,11 @@ import androidx.annotation.VisibleForTesting
 import androidx.core.content.ContextCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.concept.sync.DeviceType
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.AccountShareListItemBinding
-import org.mozilla.fenix.share.ShareToAccountDevicesInteractor
-import org.mozilla.fenix.share.listadapters.SyncShareOption
-import org.mozilla.fenix.utils.Do
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.AccountShareListItemBinding
+import com.netgpu.browser.share.ShareToAccountDevicesInteractor
+import com.netgpu.browser.share.listadapters.SyncShareOption
+import com.netgpu.browser.utils.Do
 
 class AccountDeviceViewHolder(
     itemView: View,

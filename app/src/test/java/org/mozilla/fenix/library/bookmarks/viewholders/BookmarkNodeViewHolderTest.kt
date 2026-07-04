@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.viewholders
+package com.netgpu.browser.library.bookmarks.viewholders
 
 import androidx.appcompat.content.res.AppCompatResources
 import io.mockk.Called
@@ -20,13 +20,13 @@ import mozilla.components.concept.storage.BookmarkNodeType
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.hideAndDisable
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.library.LibrarySiteItemView
-import org.mozilla.fenix.library.bookmarks.BookmarkFragmentInteractor
-import org.mozilla.fenix.library.bookmarks.BookmarkFragmentState
-import org.mozilla.fenix.library.bookmarks.BookmarkPayload
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.hideAndDisable
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.library.LibrarySiteItemView
+import com.netgpu.browser.library.bookmarks.BookmarkFragmentInteractor
+import com.netgpu.browser.library.bookmarks.BookmarkFragmentState
+import com.netgpu.browser.library.bookmarks.BookmarkPayload
 
 class BookmarkNodeViewHolderTest {
 

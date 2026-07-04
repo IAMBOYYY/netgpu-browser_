@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.annotation.SuppressLint
 import android.graphics.PointF
@@ -31,18 +31,18 @@ import mozilla.components.concept.engine.mediasession.MediaSession
 import mozilla.components.support.ktx.kotlin.MAX_URI_LENGTH
 import mozilla.components.support.ktx.kotlin.toShortUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Tab
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.removeAndDisable
-import org.mozilla.fenix.ext.removeTouchDelegate
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.ext.toDisplayTitle
+import com.netgpu.browser.GleanMetrics.Tab
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.removeAndDisable
+import com.netgpu.browser.ext.removeTouchDelegate
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.ext.toDisplayTitle
 
 /**
  * A RecyclerView ViewHolder implementation for "tab" items.
@@ -138,7 +138,7 @@ abstract class AbstractBrowserTabViewHolder(
         // Truncate to MAX_URI_LENGTH to prevent the UI from locking up for
         // extremely large URLs such as data URIs or bookmarklets. The same
         // is done in the toolbar and awesomebar:
-        // https://github.com/mozilla-mobile/fenix/issues/1824
+        // https://github.com/mozilla-mobile/netgpu_browser/issues/1824
         // https://github.com/mozilla-mobile/android-components/issues/6985
         urlView?.text = tab.content.url
             .toShortUrl(itemView.context.components.publicSuffixList)

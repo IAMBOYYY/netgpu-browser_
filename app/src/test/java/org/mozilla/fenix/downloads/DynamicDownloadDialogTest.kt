@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import android.webkit.MimeTypeMap
 import mozilla.components.browser.state.state.content.DownloadState
@@ -10,9 +10,9 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.downloads.DynamicDownloadDialog.Companion.getCannotOpenFileErrorMessage
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.downloads.DynamicDownloadDialog.Companion.getCannotOpenFileErrorMessage
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import org.robolectric.Shadows.shadowOf
 
 @RunWith(FenixRobolectricTestRunner::class)

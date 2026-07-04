@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions
+package com.netgpu.browser.exceptions
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -10,7 +10,7 @@ import android.widget.FrameLayout
 import androidx.annotation.VisibleForTesting
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.mozilla.fenix.databinding.ComponentExceptionsBinding
+import com.netgpu.browser.databinding.ComponentExceptionsBinding
 
 /**
  * View that contains and configures the Exceptions List

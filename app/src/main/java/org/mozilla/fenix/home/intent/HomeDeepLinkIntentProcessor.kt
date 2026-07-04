@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Context
 import android.content.Intent
@@ -13,16 +13,16 @@ import android.provider.Settings
 import androidx.navigation.NavController
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.GlobalDirections
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.ext.alreadyOnDestination
-import org.mozilla.fenix.ext.openSetDefaultBrowserOption
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.GlobalDirections
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.ext.alreadyOnDestination
+import com.netgpu.browser.ext.openSetDefaultBrowserOption
 
 /**
- * Deep links in the form of `fenix://host` open different parts of the app.
+ * Deep links in the form of `netgpu_browser://host` open different parts of the app.
  */
 class HomeDeepLinkIntentProcessor(
     private val activity: HomeActivity,
@@ -56,7 +56,7 @@ class HomeDeepLinkIntentProcessor(
             "settings_logins" -> GlobalDirections.SettingsLogins
             "settings_tracking_protection" -> GlobalDirections.SettingsTrackingProtection
             // We'd like to highlight views within the fragment
-            // https://github.com/mozilla-mobile/fenix/issues/11856
+            // https://github.com/mozilla-mobile/netgpu_browser/issues/11856
             // The current version of UI has these features in more complex screens.
             "settings_privacy" -> GlobalDirections.Settings
             "settings_wallpapers" -> GlobalDirections.WallpaperSettings

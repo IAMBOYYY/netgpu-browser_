@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -19,7 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Displays a list of items as a staggered horizontal grid placing them on ltr rows and continuing
@@ -120,8 +120,8 @@ fun StaggeredHorizontalGrid(
 @Composable
 @Preview
 private fun StaggeredHorizontalGridPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer2)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer2)) {
             StaggeredHorizontalGrid(
                 horizontalItemsSpacing = 8.dp,
                 arrangement = Arrangement.Center,

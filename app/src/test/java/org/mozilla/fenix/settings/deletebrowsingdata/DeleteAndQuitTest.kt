@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import io.mockk.coVerify
 import io.mockk.every
@@ -23,17 +23,17 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.PermissionStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.CACHE
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.COOKIES
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.DOWNLOADS
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.HISTORY
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.PERMISSIONS
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.TABS
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.PermissionStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.CACHE
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.COOKIES
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.DOWNLOADS
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.HISTORY
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.PERMISSIONS
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType.TABS
+import com.netgpu.browser.utils.Settings
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class DeleteAndQuitTest {
@@ -49,7 +49,7 @@ class DeleteAndQuitTest {
     private val iconsStorage: BrowserIcons = mockk()
     private val engine: Engine = mockk(relaxed = true)
     private val removeAllTabsUseCases: TabsUseCases.RemoveAllTabsUseCase = mockk(relaxed = true)
-    private val snackbar = mockk<FenixSnackbar>(relaxed = true)
+    private val snackbar = mockk<NetGpuBrowserSnackbar>(relaxed = true)
     private val downloadsUseCases: RemoveAllDownloadsUseCase = mockk(relaxed = true)
 
     @Before

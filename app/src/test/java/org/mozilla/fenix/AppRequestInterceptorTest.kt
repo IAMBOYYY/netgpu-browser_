@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.net.ConnectivityManager
 import androidx.core.content.getSystemService
@@ -22,13 +22,13 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.AppRequestInterceptor.Companion.HIGH_RISK_ERROR_PAGES
-import org.mozilla.fenix.AppRequestInterceptor.Companion.LOW_AND_MEDIUM_RISK_ERROR_PAGES
-import org.mozilla.fenix.GleanMetrics.ErrorPage
-import org.mozilla.fenix.components.Services
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.isOnline
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.AppRequestInterceptor.Companion.HIGH_RISK_ERROR_PAGES
+import com.netgpu.browser.AppRequestInterceptor.Companion.LOW_AND_MEDIUM_RISK_ERROR_PAGES
+import com.netgpu.browser.GleanMetrics.ErrorPage
+import com.netgpu.browser.components.Services
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.isOnline
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AppRequestInterceptorTest {
@@ -41,7 +41,7 @@ class AppRequestInterceptorTest {
 
     @Before
     fun setUp() {
-        mockkStatic("org.mozilla.fenix.ext.ConnectivityManagerKt")
+        mockkStatic("com.netgpu.browser.ext.ConnectivityManagerKt")
 
         every { testContext.getSystemService<ConnectivityManager>()!!.isOnline() } returns true
 

@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.privateTabs
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.TabSessionState
-import org.mozilla.fenix.ext.maxActiveTime
+import com.netgpu.browser.ext.maxActiveTime
 
 /**
  * The currently selected tab if there's one that is private.

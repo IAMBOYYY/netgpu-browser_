@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards.controller
+package com.netgpu.browser.settings.creditcards.controller
 
 import android.content.DialogInterface
 import androidx.navigation.NavController
@@ -14,9 +14,9 @@ import mozilla.components.concept.storage.NewCreditCardFields
 import mozilla.components.concept.storage.UpdatableCreditCardFields
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.service.sync.autofill.AutofillCreditCardsAddressesStorage
-import org.mozilla.fenix.GleanMetrics.CreditCards
-import org.mozilla.fenix.settings.creditcards.CreditCardEditorFragment
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardEditorInteractor
+import com.netgpu.browser.GleanMetrics.CreditCards
+import com.netgpu.browser.settings.creditcards.CreditCardEditorFragment
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardEditorInteractor
 
 /**
  * [CreditCardEditorFragment] controller. An interface that handles the view manipulation of the

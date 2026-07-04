@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.content.Context
 import androidx.appcompat.content.res.AppCompatResources
@@ -17,9 +17,9 @@ import kotlinx.coroutines.launch
 import mozilla.components.concept.fetch.Client
 import mozilla.components.concept.sync.Profile
 import mozilla.components.service.fxa.manager.FxaAccountManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.bitmapForUrl
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.bitmapForUrl
+import com.netgpu.browser.settings.requirePreference
 
 class AccountUiView(
     fragment: PreferenceFragmentCompat,
@@ -31,9 +31,9 @@ class AccountUiView(
 
     private val preferenceSignIn =
         fragment.requirePreference<Preference>(R.string.pref_key_sign_in)
-    private val preferenceFirefoxAccount =
+    private val preferenceNETGPU BROWSERAccount =
         fragment.requirePreference<AccountPreference>(R.string.pref_key_account)
-    private val preferenceFirefoxAccountAuthError =
+    private val preferenceNETGPU BROWSERAccountAuthError =
         fragment.requirePreference<AccountAuthErrorPreference>(R.string.pref_key_account_auth_error)
     private val accountPreferenceCategory =
         fragment.requirePreference<PreferenceCategory>(R.string.pref_key_account_category)
@@ -58,37 +58,37 @@ class AccountUiView(
             if (avatarUrl != null) {
                 avatarJob = scope.launch {
                     val roundedAvatarDrawable = toRoundedDrawable(avatarUrl, context)
-                    preferenceFirefoxAccount.icon = roundedAvatarDrawable ?: genericAvatar(context)
+                    preferenceNETGPU BROWSERAccount.icon = roundedAvatarDrawable ?: genericAvatar(context)
                 }
             } else {
                 avatarJob = null
-                preferenceFirefoxAccount.icon = genericAvatar(context)
+                preferenceNETGPU BROWSERAccount.icon = genericAvatar(context)
             }
 
             preferenceSignIn.onPreferenceClickListener = null
-            preferenceFirefoxAccountAuthError.isVisible = false
-            preferenceFirefoxAccount.isVisible = true
+            preferenceNETGPU BROWSERAccountAuthError.isVisible = false
+            preferenceNETGPU BROWSERAccount.isVisible = true
             accountPreferenceCategory.isVisible = true
 
-            preferenceFirefoxAccount.displayName = profile?.displayName
-            preferenceFirefoxAccount.email = profile?.email
+            preferenceNETGPU BROWSERAccount.displayName = profile?.displayName
+            preferenceNETGPU BROWSERAccount.email = profile?.email
 
             // Signed-in, need to re-authenticate.
         } else if (account != null && accountManager.accountNeedsReauth()) {
-            preferenceFirefoxAccount.isVisible = false
-            preferenceFirefoxAccountAuthError.isVisible = true
+            preferenceNETGPU BROWSERAccount.isVisible = false
+            preferenceNETGPU BROWSERAccountAuthError.isVisible = true
             accountPreferenceCategory.isVisible = true
 
             preferenceSignIn.isVisible = false
             preferenceSignIn.onPreferenceClickListener = null
 
-            preferenceFirefoxAccountAuthError.email = profile?.email
+            preferenceNETGPU BROWSERAccountAuthError.email = profile?.email
 
             // Signed-out.
         } else {
             preferenceSignIn.isVisible = true
-            preferenceFirefoxAccount.isVisible = false
-            preferenceFirefoxAccountAuthError.isVisible = false
+            preferenceNETGPU BROWSERAccount.isVisible = false
+            preferenceNETGPU BROWSERAccountAuthError.isVisible = false
             accountPreferenceCategory.isVisible = false
         }
     }

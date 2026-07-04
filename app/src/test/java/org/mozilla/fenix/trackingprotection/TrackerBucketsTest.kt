@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import mozilla.components.concept.engine.EngineSession.TrackingProtectionPolicy.TrackingCategory.CRYPTOMINING
 import mozilla.components.concept.engine.EngineSession.TrackingProtectionPolicy.TrackingCategory.FINGERPRINTING
@@ -12,8 +12,8 @@ import mozilla.components.concept.engine.content.blocking.TrackerLog
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
 
 private typealias FenixTrackingProtectionCategory = TrackingProtectionCategory
 class TrackerBucketsTest {

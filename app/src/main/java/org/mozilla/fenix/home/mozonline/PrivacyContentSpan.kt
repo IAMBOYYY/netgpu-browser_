@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.mozonline
+package com.netgpu.browser.home.mozonline
 
 import android.content.Context
 import android.content.Intent
@@ -26,7 +26,7 @@ class PrivacyContentSpan(var pos: Int, var context: Context) :
     ClickableSpan() {
     override fun onClick(widget: View) {
         /**
-         *  To avoid users directly using fenix by clicking these urls before
+         *  To avoid users directly using netgpu_browser by clicking these urls before
          *  they click positive button of privacy notice alert dialog, start
          *  PrivacyContentDisplayActivity to display them.
          */

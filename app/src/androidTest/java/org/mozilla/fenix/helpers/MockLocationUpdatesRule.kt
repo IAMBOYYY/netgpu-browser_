@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.content.Context
 import android.location.Location
@@ -12,7 +12,7 @@ import android.os.SystemClock
 import android.util.Log
 import androidx.test.core.app.ApplicationProvider
 import org.junit.rules.ExternalResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.mDevice
 import java.util.Date
 import kotlin.random.Random
 

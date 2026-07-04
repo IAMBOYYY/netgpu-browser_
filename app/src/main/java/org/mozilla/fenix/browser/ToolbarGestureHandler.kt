@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -25,11 +25,11 @@ import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.support.ktx.android.view.getRectWithViewLocation
 import mozilla.components.support.utils.ext.bottom
 import mozilla.components.support.utils.ext.mandatorySystemGestureInsets
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getRectWithScreenLocation
-import org.mozilla.fenix.ext.getWindowInsets
-import org.mozilla.fenix.ext.isKeyboardVisible
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getRectWithScreenLocation
+import com.netgpu.browser.ext.getWindowInsets
+import com.netgpu.browser.ext.isKeyboardVisible
+import com.netgpu.browser.ext.settings
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min

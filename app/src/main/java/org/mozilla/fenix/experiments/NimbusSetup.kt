@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.experiments
+package com.netgpu.browser.experiments
 
 import android.content.Context
 import mozilla.components.service.nimbus.NimbusApi
@@ -11,14 +11,14 @@ import mozilla.components.service.nimbus.NimbusBuilder
 import mozilla.components.support.base.log.logger.Logger
 import org.mozilla.experiments.nimbus.NimbusInterface
 import org.mozilla.experiments.nimbus.internal.NimbusException
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gleanplumb.CustomAttributeProvider
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.nimbus.NimbusSystem
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gleanplumb.CustomAttributeProvider
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.nimbus.NimbusSystem
+import com.netgpu.browser.utils.Settings
 
 /**
  * The maximum amount of time the app launch will be blocked to load experiments from disk.
@@ -40,14 +40,14 @@ fun createNimbus(context: Context, urlString: String?): NimbusApi {
         context.settings().isFirstNimbusRun = false
     }
 
-    // The name "fenix" here corresponds to the app_name defined for the family of apps
+    // The name "netgpu_browser" here corresponds to the app_name defined for the family of apps
     // that encompasses all of the channels for the Fenix app.  This is defined upstream in
     // the telemetry system. For more context on where the app_name come from see:
     // https://probeinfo.telemetry.mozilla.org/v2/glean/app-listings
     // and
     // https://github.com/mozilla/probe-scraper/blob/master/repositories.yaml
     val appInfo = NimbusAppInfo(
-        appName = "fenix",
+        appName = "netgpu_browser",
         // Note: Using BuildConfig.BUILD_TYPE is important here so that it matches the value
         // passed into Glean. `Config.channel.toString()` turned out to be non-deterministic
         // and would mostly produce the value `Beta` and rarely would produce `beta`.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -10,11 +10,11 @@ import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify
 import org.junit.Test
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_NORMAL_TABS
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_PRIVATE_TABS
-import org.mozilla.fenix.tabstray.TrayPagerAdapter.Companion.POSITION_SYNCED_TABS
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_NORMAL_TABS
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_PRIVATE_TABS
+import com.netgpu.browser.tabstray.TrayPagerAdapter.Companion.POSITION_SYNCED_TABS
 
 class TabLayoutMediatorTest {
     private val modeManager: BrowsingModeManager = mockk(relaxed = true)

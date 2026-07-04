@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import android.content.Context
 import android.content.res.Resources
@@ -19,7 +19,7 @@ class ContextKtTest {
 
     @Test
     fun `WHEN screen density is very low THEN numberOfGridColumns will still be a minimum of 2`() {
-        mockkStatic("org.mozilla.fenix.tabstray.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.tabstray.ext.ContextKt")
 
         val context = mockk<Context>()
         val resources = mockk<Resources>()
@@ -34,6 +34,6 @@ class ContextKtTest {
 
         assertEquals(2, result)
 
-        unmockkStatic("org.mozilla.fenix.tabstray.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.tabstray.ext.ContextKt")
     }
 }

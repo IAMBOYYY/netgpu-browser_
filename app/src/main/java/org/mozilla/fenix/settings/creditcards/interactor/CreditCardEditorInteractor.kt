@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards.interactor
+package com.netgpu.browser.settings.creditcards.interactor
 
 import mozilla.components.concept.storage.NewCreditCardFields
 import mozilla.components.concept.storage.UpdatableCreditCardFields
-import org.mozilla.fenix.settings.creditcards.controller.CreditCardEditorController
+import com.netgpu.browser.settings.creditcards.controller.CreditCardEditorController
 
 /**
  * Interface for the credit card editor Interactor.

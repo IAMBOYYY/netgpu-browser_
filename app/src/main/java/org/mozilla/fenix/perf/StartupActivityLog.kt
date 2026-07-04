@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.Activity
 import android.app.Application
@@ -15,7 +15,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import mozilla.components.support.base.log.Log
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.android.DefaultActivityLifecycleCallbacks
+import com.netgpu.browser.android.DefaultActivityLifecycleCallbacks
 
 private val logger = Logger("StartupActivityLog")
 

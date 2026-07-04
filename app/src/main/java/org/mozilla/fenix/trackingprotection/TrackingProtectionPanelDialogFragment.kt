@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.app.Dialog
 import android.graphics.Color
@@ -38,15 +38,15 @@ import mozilla.components.support.base.log.logger.Logger
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentTrackingProtectionBinding
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentTrackingProtectionBinding
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.settings.SupportUtils
 
 @Suppress("TooManyFunctions")
 class TrackingProtectionPanelDialogFragment : AppCompatDialogFragment(), UserInteractionHandler {

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.content.Context
 import android.graphics.Typeface
@@ -28,17 +28,17 @@ import mozilla.components.feature.addons.ui.AddonInstallationDialogFragment
 import mozilla.components.feature.addons.ui.AddonsManagerAdapter
 import mozilla.components.feature.addons.ui.PermissionsDialogFragment
 import mozilla.components.feature.addons.ui.translateName
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.FragmentAddOnsManagementBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.FragmentAddOnsManagementBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.theme.ThemeManager
 import java.lang.ref.WeakReference
 import java.util.concurrent.CancellationException
 
@@ -177,7 +177,7 @@ class AddonsManagementFragment : Fragment(R.layout.fragment_add_ons_management) 
     internal fun showErrorSnackBar(text: String) {
         runIfFragmentIsAttached {
             view?.let {
-                showSnackBar(it, text, FenixSnackbar.LENGTH_LONG)
+                showSnackBar(it, text, NetGpuBrowserSnackbar.LENGTH_LONG)
             }
         }
     }
@@ -244,7 +244,7 @@ class AddonsManagementFragment : Fragment(R.layout.fragment_add_ons_management) 
             // but we still want to be able to process user selection of the 'allowInPrivateBrowsing' pref.
             // This is a best-effort attempt to do so - retain a weak reference to the application context
             // (to avoid a leak), which we attempt to use to access addonManager.
-            // See https://github.com/mozilla-mobile/fenix/issues/15816
+            // See https://github.com/mozilla-mobile/netgpu_browser/issues/15816
             val weakApplicationContext: WeakReference<Context> = WeakReference(context)
 
             val dialog = AddonInstallationDialogFragment.newInstance(

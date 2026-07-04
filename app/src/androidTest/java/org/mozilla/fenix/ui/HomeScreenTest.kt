@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
 import androidx.test.platform.app.InstrumentationRegistry
@@ -15,15 +15,15 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.Constants.POCKET_RECOMMENDED_STORIES_UTM_PARAM
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.Constants.POCKET_RECOMMENDED_STORIES_UTM_PARAM
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  *  Tests for verifying the presence of home screen and first-run homescreen elements
@@ -207,7 +207,7 @@ class HomeScreenTest {
         }
     }
 
-    @Ignore("Failed, see: https://github.com/mozilla-mobile/fenix/issues/28098")
+    @Ignore("Failed, see: https://github.com/mozilla-mobile/netgpu_browser/issues/28098")
     @Test
     fun openPocketDiscoverMoreTest() {
         activityTestRule.activityRule.applySettingsExceptions {
@@ -227,7 +227,7 @@ class HomeScreenTest {
         }
     }
 
-    @Ignore("failing after a design refactor, see https://github.com/mozilla-mobile/fenix/issues/28472")
+    @Ignore("failing after a design refactor, see https://github.com/mozilla-mobile/netgpu_browser/issues/28472")
     @Test
     fun selectStoriesByTopicItemTest() {
         activityTestRule.activityRule.applySettingsExceptions {

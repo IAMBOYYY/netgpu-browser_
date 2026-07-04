@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.view.View
-import org.mozilla.fenix.R
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.utils.view.ViewHolder
 
 /**
  * View holder for a synchronous, unconditional and invisible placeholder.  This is to anchor home to

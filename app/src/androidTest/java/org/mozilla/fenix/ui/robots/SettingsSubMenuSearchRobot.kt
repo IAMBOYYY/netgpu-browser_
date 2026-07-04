@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
@@ -28,14 +28,14 @@ import org.hamcrest.CoreMatchers.not
 import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.endsWith
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.hasCousin
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.isChecked
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.hasCousin
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.isChecked
 
 /**
  * Implementation of Robot Pattern for the settings search sub menu.
@@ -255,7 +255,7 @@ class SettingsSubMenuSearchRobot {
 
     fun openEngineOverflowMenu(searchEngineName: String) {
         mDevice.findObject(
-            UiSelector().resourceId("org.mozilla.fenix.debug:id/overflow_menu"),
+            UiSelector().resourceId("com.netgpu.browser.debug:id/overflow_menu"),
         ).waitForExists(waitingTime)
         threeDotMenu(searchEngineName).click()
     }

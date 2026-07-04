@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.content.Context
 import androidx.core.content.ContextCompat.getColor
@@ -24,16 +24,16 @@ import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
 import mozilla.components.support.ktx.android.content.getColorFromAttr
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.accounts.AccountState
-import org.mozilla.fenix.components.accounts.FenixAccountManager
-import org.mozilla.fenix.components.toolbar.BrowserMenuSignIn
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.whatsnew.WhatsNew
+import com.netgpu.browser.Config
+import com.netgpu.browser.R
+import com.netgpu.browser.components.accounts.AccountState
+import com.netgpu.browser.components.accounts.NetGpuBrowserAccountManager
+import com.netgpu.browser.components.toolbar.BrowserMenuSignIn
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.whatsnew.WhatsNew
 
 @Suppress("LargeClass", "LongMethod")
 class HomeMenu(
@@ -69,7 +69,7 @@ class HomeMenu(
     private val syncDisconnectedBackgroundColor =
         context.getColorFromAttr(R.attr.syncDisconnectedBackground)
 
-    private val accountManager = FenixAccountManager(context)
+    private val accountManager = NetGpuBrowserAccountManager(context)
 
     // 'Reconnect' and 'Quit' items aren't needed most of the time, so we'll only create the if necessary.
     private val reconnectToSyncItem by lazy {

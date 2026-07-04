@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.view.LayoutInflater
 import io.mockk.every
@@ -17,12 +17,12 @@ import mozilla.components.browser.tabstray.TabsAdapter.Companion.PAYLOAD_HIGHLIG
 import mozilla.components.support.test.robolectric.testContext
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.TabTrayItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.databinding.TabTrayItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 @RunWith(FenixRobolectricTestRunner::class)
 class BrowserTabsAdapterTest {

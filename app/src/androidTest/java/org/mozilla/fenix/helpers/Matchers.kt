@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.graphics.Bitmap
 import android.view.View
@@ -15,7 +15,7 @@ import org.hamcrest.CoreMatchers.not
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
-import org.mozilla.fenix.helpers.matchers.BitmapDrawableMatcher
+import com.netgpu.browser.helpers.matchers.BitmapDrawableMatcher
 import androidx.test.espresso.matcher.ViewMatchers.isChecked as espressoIsChecked
 import androidx.test.espresso.matcher.ViewMatchers.isEnabled as espressoIsEnabled
 import androidx.test.espresso.matcher.ViewMatchers.isSelected as espressoIsSelected

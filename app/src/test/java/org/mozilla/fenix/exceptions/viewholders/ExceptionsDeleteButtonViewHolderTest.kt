@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.viewholders
+package com.netgpu.browser.exceptions.viewholders
 
 import android.view.View
 import com.google.android.material.button.MaterialButton
@@ -16,8 +16,8 @@ import io.mockk.slot
 import io.mockk.verify
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.exceptions.ExceptionsInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.exceptions.ExceptionsInteractor
 
 class ExceptionsDeleteButtonViewHolderTest {
 

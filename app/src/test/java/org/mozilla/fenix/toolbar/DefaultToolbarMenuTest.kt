@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.toolbar
+package com.netgpu.browser.toolbar
 
 import android.content.Context
 import android.net.Uri
@@ -25,8 +25,8 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.components.toolbar.DefaultToolbarMenu
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.components.toolbar.DefaultToolbarMenu
+import com.netgpu.browser.ext.settings
 
 class DefaultToolbarMenuTest {
 
@@ -87,7 +87,7 @@ class DefaultToolbarMenuTest {
     }
 
     @Test
-    @Ignore("Intermittent test: https://github.com/mozilla-mobile/fenix/issues/18822")
+    @Ignore("Intermittent test: https://github.com/mozilla-mobile/netgpu_browser/issues/18822")
     fun `WHEN the bottom toolbar is set THEN the first item in the list is not the navigation`() {
         every { context.settings().shouldUseBottomToolbar } returns true
         createMenu()
@@ -102,7 +102,7 @@ class DefaultToolbarMenuTest {
     }
 
     @Test
-    @Ignore("Intermittent test: https://github.com/mozilla-mobile/fenix/issues/18822")
+    @Ignore("Intermittent test: https://github.com/mozilla-mobile/netgpu_browser/issues/18822")
     fun `WHEN the top toolbar is set THEN the first item in the list is the navigation`() {
         every { context.settings().shouldUseBottomToolbar } returns false
         createMenu()
@@ -117,7 +117,7 @@ class DefaultToolbarMenuTest {
     }
 
     @Test
-    @Ignore("Intermittent test: https://github.com/mozilla-mobile/fenix/issues/18822")
+    @Ignore("Intermittent test: https://github.com/mozilla-mobile/netgpu_browser/issues/18822")
     fun `WHEN the bottom toolbar is set THEN the nav menu should be the last item`() {
         every { context.settings().shouldUseBottomToolbar } returns true
 
@@ -133,7 +133,7 @@ class DefaultToolbarMenuTest {
     }
 
     @Test
-    @Ignore("Intermittent test: https://github.com/mozilla-mobile/fenix/issues/18822")
+    @Ignore("Intermittent test: https://github.com/mozilla-mobile/netgpu_browser/issues/18822")
     fun `WHEN the top toolbar is set THEN settings should be the last item`() {
         every { context.settings().shouldUseBottomToolbar } returns false
 

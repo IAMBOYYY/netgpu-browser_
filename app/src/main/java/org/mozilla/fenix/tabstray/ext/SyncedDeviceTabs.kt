@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import mozilla.components.browser.storage.sync.SyncedDeviceTabs
 import mozilla.components.support.ktx.kotlin.trimmed
-import org.mozilla.fenix.tabstray.syncedtabs.SyncedTabsListItem
+import com.netgpu.browser.tabstray.syncedtabs.SyncedTabsListItem
 
 /**
  * Converts a list of [SyncedDeviceTabs] into a list of [SyncedTabsListItem].

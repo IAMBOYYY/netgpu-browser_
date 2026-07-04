@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
@@ -19,12 +19,12 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
-import org.mozilla.fenix.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SpeechProcessingIntentProcessorTest {

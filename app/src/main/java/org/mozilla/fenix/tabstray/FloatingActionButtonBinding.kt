@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -10,8 +10,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.browser.TabsTrayFabInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.browser.TabsTrayFabInteractor
 
 /**
  * A binding that show a FAB in tab tray used to open a new tab.

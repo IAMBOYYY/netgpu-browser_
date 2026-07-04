@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabhistory
+package com.netgpu.browser.tabhistory
 
 import android.view.View
 import io.mockk.CapturingSlot
@@ -38,7 +38,7 @@ class TabHistoryViewHolderTest {
         isSelected = true,
     )
     private val unselectedItem = TabHistoryItem(
-        title = "Firefox",
+        title = "NETGPU BROWSER",
         url = "https://firefox.com",
         index = 1,
         isSelected = false,
@@ -69,7 +69,7 @@ class TabHistoryViewHolderTest {
     fun `binds title and url`() {
         holder.bind(unselectedItem)
 
-        verify { view.setText(label = "Firefox", caption = "https://firefox.com") }
+        verify { view.setText(label = "NETGPU BROWSER", caption = "https://firefox.com") }
         verify { icons.loadIntoView(view.iconView, IconRequest("https://firefox.com")) }
     }
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.content.Context
 import android.os.Bundle
@@ -24,14 +24,14 @@ import mozilla.components.browser.state.selector.findTabOrCustomTab
 import mozilla.components.concept.engine.prompt.PromptRequest
 import mozilla.components.feature.accounts.push.SendTabUseCases
 import mozilla.components.feature.share.RecentAppsStorage
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.FragmentShareBinding
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.Theme
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.FragmentShareBinding
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.Theme
 
 class ShareFragment : AppCompatDialogFragment() {
 
@@ -79,7 +79,7 @@ class ShareFragment : AppCompatDialogFragment() {
                 context = requireContext(),
                 shareSubject = args.shareSubject,
                 shareData = shareData,
-                snackbar = FenixSnackbar.make(
+                snackbar = NetGpuBrowserSnackbar.make(
                     view = requireActivity().getRootView()!!,
                     isDisplayedWithBrowserToolbar = true,
                 ),
@@ -123,7 +123,7 @@ class ShareFragment : AppCompatDialogFragment() {
                 isVisible = true
                 setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
                 setContent {
-                    FirefoxTheme(theme = Theme.getTheme(allowPrivateTheme = false)) {
+                    NetGpuBrowserTheme(theme = Theme.getTheme(allowPrivateTheme = false)) {
                         SaveToPDFItem {
                             shareInteractor.onSaveToPDF(tabId = args.sessionId)
                         }

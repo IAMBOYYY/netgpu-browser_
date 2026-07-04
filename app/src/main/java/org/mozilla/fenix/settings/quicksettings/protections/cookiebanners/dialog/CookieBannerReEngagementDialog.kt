@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners.dialog
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,13 +14,13 @@ import mozilla.components.concept.engine.EngineSession.CookieBannerHandlingMode.
 import mozilla.components.concept.engine.EngineSession.CookieBannerHandlingMode.REJECT_ALL
 import mozilla.components.concept.engine.Settings
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Displays a cookie banner dialog fragment that contains the dialog compose and his logic.
@@ -35,7 +35,7 @@ class CookieBannerReEngagementDialog : DialogFragment() {
         CookieBanners.visitedReEngagementDialog.record(NoExtras())
 
         setContent {
-            FirefoxTheme {
+            NetGpuBrowserTheme {
                 val cookieBannerDialogSelectedVariant =
                     CookieBannerReEngagementDialogUtils.getCookieBannerDialogVariants(requireContext())
                 CookieBannerReEngagementDialogCompose(
@@ -51,7 +51,7 @@ class CookieBannerReEngagementDialog : DialogFragment() {
                         getEngineSettings().cookieBannerHandlingDetectOnlyMode = false
                         reload()
                         requireContext().getRootView()?.let {
-                            FenixSnackbar.make(
+                            NetGpuBrowserSnackbar.make(
                                 view = it,
                                 duration = LENGTH_SNACKBAR_DURATION,
                                 isDisplayedWithBrowserToolbar = true,

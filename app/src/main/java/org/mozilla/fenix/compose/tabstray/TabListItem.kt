@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.tabstray
+package com.netgpu.browser.compose.tabstray
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -28,11 +28,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.state.createTab
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ThumbnailCard
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.ext.toShortUrl
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ThumbnailCard
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.ext.toShortUrl
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * List item used to display a tab that supports clicks,
@@ -63,9 +63,9 @@ fun TabListItem(
     onLongClick: (tab: TabSessionState) -> Unit,
 ) {
     val contentBackgroundColor = if (isSelected) {
-        FirefoxTheme.colors.layerAccentNonOpaque
+        NetGpuBrowserTheme.colors.layerAccentNonOpaque
     } else {
-        FirefoxTheme.colors.layer1
+        NetGpuBrowserTheme.colors.layer1
     }
     Row(
         modifier = Modifier
@@ -94,13 +94,13 @@ fun TabListItem(
                 text = tab.content.title,
                 fontSize = 16.sp,
                 maxLines = 2,
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
             )
 
             Text(
                 text = tab.content.url.toShortUrl(),
                 fontSize = 12.sp,
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
             )
         }
 
@@ -115,7 +115,7 @@ fun TabListItem(
                         id = R.string.close_tab_title,
                         tab.content.title,
                     ),
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
         }
@@ -143,7 +143,7 @@ private fun Thumbnail(
                     .size(size = 40.dp)
                     .align(alignment = Alignment.Center),
                 shape = CircleShape,
-                backgroundColor = FirefoxTheme.colors.layerAccent,
+                backgroundColor = NetGpuBrowserTheme.colors.layerAccent,
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.mozac_ic_check),
@@ -169,7 +169,7 @@ private fun Thumbnail(
 @Composable
 @LightDarkPreview
 private fun TabListItemPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         TabListItem(
             tab = createTab(url = "www.mozilla.com", title = "Mozilla"),
             onCloseClick = {},
@@ -183,7 +183,7 @@ private fun TabListItemPreview() {
 @Composable
 @LightDarkPreview
 private fun SelectedTabListItemPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         TabListItem(
             tab = createTab(url = "www.mozilla.com", title = "Mozilla"),
             onCloseClick = {},

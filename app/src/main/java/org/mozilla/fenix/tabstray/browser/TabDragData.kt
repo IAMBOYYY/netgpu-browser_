@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.graphics.PointF
 import mozilla.components.browser.state.state.TabSessionState

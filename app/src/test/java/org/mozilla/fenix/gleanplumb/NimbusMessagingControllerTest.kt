@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.content.Intent
 import android.net.Uri
@@ -24,11 +24,11 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mozilla.experiments.nimbus.NullVariables
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.GleanMetrics.Messaging
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.nimbus.MessageData
-import org.mozilla.fenix.nimbus.StyleData
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.GleanMetrics.Messaging
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.nimbus.MessageData
+import com.netgpu.browser.nimbus.StyleData
 import java.util.UUID
 
 private const val MOCK_TIME_MILLIS = 1000L

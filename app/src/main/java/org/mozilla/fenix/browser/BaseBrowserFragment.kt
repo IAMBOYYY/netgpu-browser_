@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.app.KeyguardManager
 import android.content.Context
@@ -98,54 +98,54 @@ import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.kotlin.getOrigin
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.GleanMetrics.MediaState
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.OnBackLongPressedListener
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.readermode.DefaultReaderModeController
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.FindInPageIntegration
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.components.toolbar.BrowserFragmentState
-import org.mozilla.fenix.components.toolbar.BrowserFragmentStore
-import org.mozilla.fenix.components.toolbar.BrowserToolbarView
-import org.mozilla.fenix.components.toolbar.DefaultBrowserToolbarController
-import org.mozilla.fenix.components.toolbar.DefaultBrowserToolbarMenuController
-import org.mozilla.fenix.components.toolbar.ToolbarIntegration
-import org.mozilla.fenix.components.toolbar.interactor.BrowserToolbarInteractor
-import org.mozilla.fenix.components.toolbar.interactor.DefaultBrowserToolbarInteractor
-import org.mozilla.fenix.crashes.CrashContentIntegration
-import org.mozilla.fenix.databinding.FragmentBrowserBinding
-import org.mozilla.fenix.downloads.DownloadService
-import org.mozilla.fenix.downloads.DynamicDownloadDialog
-import org.mozilla.fenix.downloads.FirstPartyDownloadDialog
-import org.mozilla.fenix.downloads.StartDownloadDialog
-import org.mozilla.fenix.downloads.ThirdPartyDownloadDialog
-import org.mozilla.fenix.ext.accessibilityManager
-import org.mozilla.fenix.ext.breadcrumb
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.hideToolbar
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.registerForActivityResult
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.home.HomeScreenViewModel
-import org.mozilla.fenix.home.SharedViewModel
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.perf.MarkersFragmentLifecycleCallbacks
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.biometric.BiometricPromptFeature
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.utils.allowUndo
-import org.mozilla.fenix.wifi.SitePermissionsWifiIntegration
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.GleanMetrics.MediaState
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.OnBackLongPressedListener
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.readermode.DefaultReaderModeController
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.FindInPageIntegration
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.components.toolbar.BrowserFragmentState
+import com.netgpu.browser.components.toolbar.BrowserFragmentStore
+import com.netgpu.browser.components.toolbar.BrowserToolbarView
+import com.netgpu.browser.components.toolbar.DefaultBrowserToolbarController
+import com.netgpu.browser.components.toolbar.DefaultBrowserToolbarMenuController
+import com.netgpu.browser.components.toolbar.ToolbarIntegration
+import com.netgpu.browser.components.toolbar.interactor.BrowserToolbarInteractor
+import com.netgpu.browser.components.toolbar.interactor.DefaultBrowserToolbarInteractor
+import com.netgpu.browser.crashes.CrashContentIntegration
+import com.netgpu.browser.databinding.FragmentBrowserBinding
+import com.netgpu.browser.downloads.DownloadService
+import com.netgpu.browser.downloads.DynamicDownloadDialog
+import com.netgpu.browser.downloads.FirstPartyDownloadDialog
+import com.netgpu.browser.downloads.StartDownloadDialog
+import com.netgpu.browser.downloads.ThirdPartyDownloadDialog
+import com.netgpu.browser.ext.accessibilityManager
+import com.netgpu.browser.ext.breadcrumb
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.hideToolbar
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.registerForActivityResult
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.home.HomeScreenViewModel
+import com.netgpu.browser.home.SharedViewModel
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.perf.MarkersFragmentLifecycleCallbacks
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.biometric.BiometricPromptFeature
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.utils.allowUndo
+import com.netgpu.browser.wifi.SitePermissionsWifiIntegration
 import java.lang.ref.WeakReference
 import mozilla.components.feature.session.behavior.ToolbarPosition as MozacToolbarPosition
 
@@ -219,7 +219,7 @@ abstract class BaseBrowserFragment :
     private val homeViewModel: HomeScreenViewModel by activityViewModels()
 
     @VisibleForTesting
-    internal val onboarding by lazy { FenixOnboarding(requireContext()) }
+    internal val onboarding by lazy { NetGpuBrowserOnboarding(requireContext()) }
 
     private var currentStartDownloadDialog: StartDownloadDialog? = null
 
@@ -312,7 +312,7 @@ abstract class BaseBrowserFragment :
     }
 
     @Suppress("ComplexMethod", "LongMethod", "DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     @CallSuper
     internal open fun initializeUI(view: View, tab: SessionState) {
         val context = requireContext()
@@ -1355,9 +1355,9 @@ abstract class BaseBrowserFragment :
 
                 withContext(Main) {
                     view?.let {
-                        FenixSnackbar.make(
+                        NetGpuBrowserSnackbar.make(
                             view = binding.dynamicSnackbarContainer,
-                            duration = FenixSnackbar.LENGTH_LONG,
+                            duration = NetGpuBrowserSnackbar.LENGTH_LONG,
                             isDisplayedWithBrowserToolbar = true,
                         )
                             .setText(getString(R.string.bookmark_saved_snackbar))
@@ -1376,9 +1376,9 @@ abstract class BaseBrowserFragment :
             } catch (e: PlacesApiException.UrlParseFailed) {
                 withContext(Main) {
                     view?.let {
-                        FenixSnackbar.make(
+                        NetGpuBrowserSnackbar.make(
                             view = binding.dynamicSnackbarContainer,
-                            duration = FenixSnackbar.LENGTH_LONG,
+                            duration = NetGpuBrowserSnackbar.LENGTH_LONG,
                             isDisplayedWithBrowserToolbar = true,
                         )
                             .setText(getString(R.string.bookmark_invalid_url_error))
@@ -1419,7 +1419,7 @@ abstract class BaseBrowserFragment :
         if (inFullScreen) {
             // Close find in page bar if opened
             findInPageIntegration.onBackPressed()
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view = binding.dynamicSnackbarContainer,
                 duration = Snackbar.LENGTH_SHORT,
                 isDisplayedWithBrowserToolbar = false,
@@ -1505,7 +1505,7 @@ abstract class BaseBrowserFragment :
         context: Context,
         downloadState: DownloadState,
     ) {
-        FenixSnackbar.make(
+        NetGpuBrowserSnackbar.make(
             view = container,
             duration = Snackbar.LENGTH_SHORT,
             isDisplayedWithBrowserToolbar = true,
@@ -1521,7 +1521,7 @@ abstract class BaseBrowserFragment :
 
         val onboardingLinksList: List<String> = listOf(
             SupportUtils.getMozillaPageUrl(SupportUtils.MozillaPage.PRIVATE_NOTICE),
-            SupportUtils.getFirefoxAccountSumoUrl(),
+            SupportUtils.getNETGPU BROWSERAccountSumoUrl(),
         )
     }
 

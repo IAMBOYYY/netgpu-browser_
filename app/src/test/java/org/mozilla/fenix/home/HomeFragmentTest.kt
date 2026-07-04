@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import android.content.Context
 import io.mockk.every
@@ -20,14 +20,14 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.Core
-import org.mozilla.fenix.ext.application
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.home.HomeFragment.Companion.AMAZON_SPONSORED_TITLE
-import org.mozilla.fenix.home.HomeFragment.Companion.EBAY_SPONSORED_TITLE
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.Core
+import com.netgpu.browser.ext.application
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.home.HomeFragment.Companion.AMAZON_SPONSORED_TITLE
+import com.netgpu.browser.home.HomeFragment.Companion.EBAY_SPONSORED_TITLE
+import com.netgpu.browser.utils.Settings
 
 class HomeFragmentTest {
 
@@ -42,11 +42,11 @@ class HomeFragmentTest {
         context = mockk(relaxed = true)
         core = mockk(relaxed = true)
 
-        val fenixApplication: FenixApplication = mockk(relaxed = true)
+        val netgpu_browserApplication: NetGpuBrowserApplication = mockk(relaxed = true)
 
         homeFragment = spyk(HomeFragment())
 
-        every { context.application } returns fenixApplication
+        every { context.application } returns netgpu_browserApplication
         every { homeFragment.context } answers { context }
         every { context.components.settings } answers { settings }
         every { context.components.core } answers { core }
@@ -84,7 +84,7 @@ class HomeFragmentTest {
         }
         val eBayTopSite = TopSite.Provided(1L, EBAY_SPONSORED_TITLE, "eBay.com", "", "", "", 0L)
         val amazonTopSite = TopSite.Provided(2L, AMAZON_SPONSORED_TITLE, "Amazon.com", "", "", "", 0L)
-        val firefoxTopSite = TopSite.Provided(3L, "Firefox", "mozilla.org", "", "", "", 0L)
+        val firefoxTopSite = TopSite.Provided(3L, "NETGPU BROWSER", "mozilla.org", "", "", "", 0L)
         val providedTopSites = listOf(eBayTopSite, amazonTopSite, firefoxTopSite)
 
         val topSitesConfig = homeFragment.getTopSitesConfig()

@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.core.net.toUri
 import androidx.test.platform.app.InstrumentationRegistry
@@ -11,20 +11,20 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.FeatureSettingsHelperDelegate
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.createCustomTabIntent
-import org.mozilla.fenix.helpers.TestHelper.openAppFromExternalLink
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.customTabScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.notificationShade
-import org.mozilla.fenix.ui.robots.openEditURLView
-import org.mozilla.fenix.ui.robots.searchScreen
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.FeatureSettingsHelperDelegate
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.createCustomTabIntent
+import com.netgpu.browser.helpers.TestHelper.openAppFromExternalLink
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.customTabScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.notificationShade
+import com.netgpu.browser.ui.robots.openEditURLView
+import com.netgpu.browser.ui.robots.searchScreen
 
 class CustomTabsTest {
     private lateinit var mDevice: UiDevice

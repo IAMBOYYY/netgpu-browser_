@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.biometric
+package com.netgpu.browser.settings.biometric
 
 import android.os.Build.VERSION_CODES.M
 import android.os.Build.VERSION_CODES.N
@@ -29,9 +29,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.biometric.ext.isEnrolled
-import org.mozilla.fenix.settings.biometric.ext.isHardwareAvailable
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.biometric.ext.isEnrolled
+import com.netgpu.browser.settings.biometric.ext.isHardwareAvailable
 import org.robolectric.annotation.Config
 
 @RunWith(FenixRobolectricTestRunner::class)

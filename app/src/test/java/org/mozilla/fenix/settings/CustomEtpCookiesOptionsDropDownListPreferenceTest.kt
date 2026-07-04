@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import androidx.preference.Preference
@@ -14,9 +14,9 @@ import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class CustomEtpCookiesOptionsDropDownListPreferenceTest {
@@ -27,7 +27,7 @@ class CustomEtpCookiesOptionsDropDownListPreferenceTest {
         ) + defaultEntries
         val expectedValues = arrayOf(testContext.getString(R.string.total_protection)) + defaultValues
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns true
             }
@@ -42,7 +42,7 @@ class CustomEtpCookiesOptionsDropDownListPreferenceTest {
 
     @Test
     fun `GIVEN total cookie protection is disabled WHEN using this preference THEN don't show the total cookie protection option`() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns false
             }

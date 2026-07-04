@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.Manifest
 import android.app.ActivityManager
@@ -59,17 +59,17 @@ import org.hamcrest.Matcher
 import org.junit.Assert
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.helpers.idlingresource.NetworkConnectionIdlingResource
-import org.mozilla.fenix.ui.robots.BrowserRobot
-import org.mozilla.fenix.utils.IntentUtils
+import com.netgpu.browser.Config
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.customtabs.ExternalAppBrowserActivity
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.helpers.idlingresource.NetworkConnectionIdlingResource
+import com.netgpu.browser.ui.robots.BrowserRobot
+import com.netgpu.browser.utils.IntentUtils
 import org.mozilla.gecko.util.ThreadUtils
 import java.io.File
 import java.util.Locale

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -22,10 +22,10 @@ import mozilla.components.support.ktx.android.content.res.resolveAttribute
 import mozilla.components.support.ktx.android.view.toScope
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.UnifiedSearch
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.search.SearchDialogFragmentStore
+import com.netgpu.browser.GleanMetrics.UnifiedSearch
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.search.SearchDialogFragmentStore
 
 /**
  * A [Toolbar.Action] implementation that shows a [SearchSelector].

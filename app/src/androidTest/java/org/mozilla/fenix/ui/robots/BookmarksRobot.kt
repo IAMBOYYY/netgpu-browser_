@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.net.Uri
 import androidx.test.espresso.Espresso.onView
@@ -31,13 +31,13 @@ import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.containsString
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the bookmarks menu.
@@ -205,7 +205,7 @@ class BookmarksRobot {
 
     fun saveEditBookmark() {
         saveBookmarkButton().click()
-        mDevice.findObject(UiSelector().resourceId("org.mozilla.fenix.debug:id/bookmark_list")).waitForExists(waitingTime)
+        mDevice.findObject(UiSelector().resourceId("com.netgpu.browser.debug:id/bookmark_list")).waitForExists(waitingTime)
     }
 
     fun clickParentFolderSelector() = bookmarkFolderSelector().click()

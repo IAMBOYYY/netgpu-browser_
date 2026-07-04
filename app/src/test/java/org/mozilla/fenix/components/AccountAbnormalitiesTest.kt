@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import io.mockk.Called
 import io.mockk.every
@@ -16,9 +16,9 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.fail
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
-import org.mozilla.fenix.perf.StrictModeManager
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.perf.StrictModeManager
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AccountAbnormalitiesTest {

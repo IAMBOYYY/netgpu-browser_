@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import io.mockk.every
 import io.mockk.mockk
@@ -16,12 +16,12 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.home.pocket.POCKET_STORIES_DEFAULT_CATEGORY_NAME
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesSelectedCategory
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.home.pocket.POCKET_STORIES_DEFAULT_CATEGORY_NAME
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesSelectedCategory
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.utils.Settings
 import java.util.concurrent.TimeUnit
 import kotlin.random.Random
 

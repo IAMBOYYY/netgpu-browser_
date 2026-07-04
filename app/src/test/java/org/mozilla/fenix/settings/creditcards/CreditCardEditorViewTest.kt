@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import android.view.LayoutInflater
 import android.view.View
@@ -28,13 +28,13 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentCreditCardEditorBinding
-import org.mozilla.fenix.ext.toEditable
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.creditcards.CreditCardEditorFragment.Companion.NUMBER_OF_YEARS_TO_SHOW
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardEditorInteractor
-import org.mozilla.fenix.settings.creditcards.view.CreditCardEditorView
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentCreditCardEditorBinding
+import com.netgpu.browser.ext.toEditable
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.creditcards.CreditCardEditorFragment.Companion.NUMBER_OF_YEARS_TO_SHOW
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardEditorInteractor
+import com.netgpu.browser.settings.creditcards.view.CreditCardEditorView
 import java.util.Calendar
 
 @RunWith(FenixRobolectricTestRunner::class)

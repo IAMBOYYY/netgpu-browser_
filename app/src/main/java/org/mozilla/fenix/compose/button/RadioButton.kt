@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.button
+package com.netgpu.browser.compose.button
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -19,8 +19,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Radio Button.
@@ -42,9 +42,9 @@ fun RadioButton(
         modifier = modifier,
         enabled = enabled,
         colors = RadioButtonDefaults.colors(
-            selectedColor = FirefoxTheme.colors.formSelected,
-            unselectedColor = FirefoxTheme.colors.formDefault,
-            disabledColor = FirefoxTheme.colors.formDisabled,
+            selectedColor = NetGpuBrowserTheme.colors.formSelected,
+            unselectedColor = NetGpuBrowserTheme.colors.formDefault,
+            disabledColor = NetGpuBrowserTheme.colors.formDisabled,
         ),
         onClick = onClick,
     )
@@ -56,9 +56,9 @@ private fun RadioButtonPreview() {
     val radioOptions = listOf("One", "Two", "Three")
     val (selectedOption, onOptionSelected) = remember { mutableStateOf(radioOptions[1]) }
 
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column(
-            modifier = Modifier.background(FirefoxTheme.colors.layer1),
+            modifier = Modifier.background(NetGpuBrowserTheme.colors.layer1),
         ) {
             radioOptions.forEach { text ->
                 val selected = text == selectedOption

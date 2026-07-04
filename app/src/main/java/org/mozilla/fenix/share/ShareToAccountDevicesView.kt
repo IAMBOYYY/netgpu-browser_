@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import mozilla.components.concept.sync.Device
-import org.mozilla.fenix.databinding.ShareToAccountDevicesBinding
-import org.mozilla.fenix.share.listadapters.AccountDevicesShareAdapter
-import org.mozilla.fenix.share.listadapters.SyncShareOption
+import com.netgpu.browser.databinding.ShareToAccountDevicesBinding
+import com.netgpu.browser.share.listadapters.AccountDevicesShareAdapter
+import com.netgpu.browser.share.listadapters.SyncShareOption
 
 /**
  * Callbacks for possible user interactions on the [ShareToAccountDevicesView]

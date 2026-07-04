@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.os.Bundle
 import androidx.preference.EditTextPreference
@@ -10,9 +10,9 @@ import androidx.preference.Preference
 import androidx.preference.Preference.OnPreferenceClickListener
 import androidx.preference.PreferenceFragmentCompat
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
 import kotlin.system.exitProcess
 
 /**

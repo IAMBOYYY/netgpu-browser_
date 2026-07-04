@@ -4,7 +4,7 @@
 
 @file:Suppress("unused", "UNUSED_PARAMETER")
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State

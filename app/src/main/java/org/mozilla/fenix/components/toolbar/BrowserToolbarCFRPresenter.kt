@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -27,14 +27,14 @@ import mozilla.components.compose.cfr.CFRPopup.PopupAlignment.INDICATOR_CENTERED
 import mozilla.components.compose.cfr.CFRPopupProperties
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.SupportUtils.SumoTopic.TOTAL_COOKIE_PROTECTION
-import org.mozilla.fenix.settings.quicksettings.protections.cookiebanners.dialog.CookieBannerReEngagementDialogUtils
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.SupportUtils.SumoTopic.TOTAL_COOKIE_PROTECTION
+import com.netgpu.browser.settings.quicksettings.protections.cookiebanners.dialog.CookieBannerReEngagementDialogUtils
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.utils.Settings
 
 /**
  * Vertical padding needed to improve the visual alignment of the popup and respect the UX design.
@@ -122,19 +122,19 @@ class BrowserToolbarCFRPresenter(
                 tryToShowCookieBannerDialogIfNeeded()
             },
             text = {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     Text(
                         text = context.getString(R.string.tcp_cfr_message),
-                        color = FirefoxTheme.colors.textOnColorPrimary,
-                        style = FirefoxTheme.typography.body2,
+                        color = NetGpuBrowserTheme.colors.textOnColorPrimary,
+                        style = NetGpuBrowserTheme.typography.body2,
                     )
                 }
             },
             action = {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     Text(
                         text = context.getString(R.string.tcp_cfr_learn_more),
-                        color = FirefoxTheme.colors.textOnColorPrimary,
+                        color = NetGpuBrowserTheme.colors.textOnColorPrimary,
                         modifier = Modifier.clickable {
                             context.components.useCases.tabsUseCases.selectOrAddTab.invoke(
                                 SupportUtils.getSumoURLForTopic(
@@ -145,7 +145,7 @@ class BrowserToolbarCFRPresenter(
                             TrackingProtection.tcpSumoLinkClicked.record(NoExtras())
                             tcpCfrPopup?.dismiss()
                         },
-                        style = FirefoxTheme.typography.body2.copy(
+                        style = NetGpuBrowserTheme.typography.body2.copy(
                             textDecoration = TextDecoration.Underline,
                         ),
                     )

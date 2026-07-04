@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.preference.R
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +16,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers.allOf
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the settings Site Permissions sub menu.

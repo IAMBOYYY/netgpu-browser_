@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import mozilla.components.lib.state.Action
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.trackingprotection.ProtectionsState
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.trackingprotection.ProtectionsState
 
 /**
  * Parent [Action] for all the [QuickSettingsFragmentState] changes.

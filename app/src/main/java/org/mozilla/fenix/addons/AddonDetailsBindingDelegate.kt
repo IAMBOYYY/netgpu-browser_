@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.net.Uri
 import android.text.SpannableStringBuilder
@@ -16,8 +16,8 @@ import androidx.core.text.getSpans
 import mozilla.components.feature.addons.Addon
 import mozilla.components.feature.addons.ui.translateDescription
 import mozilla.components.feature.addons.ui.updatedAtDate
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddOnDetailsBinding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddOnDetailsBinding
 import java.text.DateFormat
 import java.text.NumberFormat
 import java.util.Locale

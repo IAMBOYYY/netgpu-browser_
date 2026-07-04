@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.screenshots
+package com.netgpu.browser.screenshots
 
 import android.os.SystemClock
 import androidx.test.platform.app.InstrumentationRegistry
@@ -14,10 +14,10 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.ui.robots.homeScreen
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.ui.robots.homeScreen
 import tools.fastlane.screengrab.Screengrab
 import tools.fastlane.screengrab.locale.LocaleTestRule
 

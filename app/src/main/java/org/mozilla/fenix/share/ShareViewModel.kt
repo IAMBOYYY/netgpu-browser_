@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.app.Application
 import android.content.Context
@@ -25,12 +25,12 @@ import mozilla.components.concept.sync.DeviceCapability
 import mozilla.components.feature.share.RecentAppsStorage
 import mozilla.components.service.fxa.manager.FxaAccountManager
 import mozilla.components.support.utils.ext.queryIntentActivitiesCompat
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.isOnline
-import org.mozilla.fenix.share.DefaultShareController.Companion.ACTION_COPY_LINK_TO_CLIPBOARD
-import org.mozilla.fenix.share.listadapters.AppShareOption
-import org.mozilla.fenix.share.listadapters.SyncShareOption
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.isOnline
+import com.netgpu.browser.share.DefaultShareController.Companion.ACTION_COPY_LINK_TO_CLIPBOARD
+import com.netgpu.browser.share.listadapters.AppShareOption
+import com.netgpu.browser.share.listadapters.SyncShareOption
 
 class ShareViewModel(application: Application) : AndroidViewModel(application) {
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs.view
+package com.netgpu.browser.home.recentsyncedtabs.view
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -45,13 +45,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.concept.sync.DeviceType
 import mozilla.components.support.ktx.kotlin.trimmed
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Image
-import org.mozilla.fenix.compose.ThumbnailCard
-import org.mozilla.fenix.compose.button.SecondaryButton
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.Image
+import com.netgpu.browser.compose.ThumbnailCard
+import com.netgpu.browser.compose.button.SecondaryButton
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * A recent synced tab card.
@@ -69,9 +69,9 @@ import org.mozilla.fenix.theme.FirefoxTheme
 @Composable
 fun RecentSyncedTab(
     tab: RecentSyncedTab?,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
-    buttonBackgroundColor: Color = FirefoxTheme.colors.actionSecondary,
-    buttonTextColor: Color = FirefoxTheme.colors.textActionSecondary,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
+    buttonBackgroundColor: Color = NetGpuBrowserTheme.colors.actionSecondary,
+    buttonTextColor: Color = NetGpuBrowserTheme.colors.textActionSecondary,
     onRecentSyncedTabClick: (RecentSyncedTab) -> Unit,
     onSeeAllSyncedTabsButtonClick: () -> Unit,
     onRemoveSyncedTab: (RecentSyncedTab) -> Unit,
@@ -130,7 +130,7 @@ fun RecentSyncedTab(
                     } else {
                         Text(
                             text = tab.title.trimmed(),
-                            color = FirefoxTheme.colors.textPrimary,
+                            color = NetGpuBrowserTheme.colors.textPrimary,
                             fontSize = 14.sp,
                             overflow = TextOverflow.Ellipsis,
                             maxLines = 2,
@@ -141,7 +141,7 @@ fun RecentSyncedTab(
                         if (tab == null) {
                             Box(
                                 modifier = Modifier
-                                    .background(FirefoxTheme.colors.layer3)
+                                    .background(NetGpuBrowserTheme.colors.layer3)
                                     .size(18.dp),
                             )
                         } else {
@@ -161,7 +161,7 @@ fun RecentSyncedTab(
                         } else {
                             Text(
                                 text = tab.deviceDisplayName,
-                                color = FirefoxTheme.colors.textSecondary,
+                                color = NetGpuBrowserTheme.colors.textSecondary,
                                 fontSize = 12.sp,
                                 overflow = TextOverflow.Ellipsis,
                                 maxLines = 1,
@@ -198,7 +198,7 @@ private fun RecentTabImagePlaceholder() {
         modifier = Modifier
             .size(108.dp, 80.dp)
             .clip(RoundedCornerShape(8.dp))
-            .background(color = FirefoxTheme.colors.layer3),
+            .background(color = NetGpuBrowserTheme.colors.layer3),
     )
 }
 
@@ -225,7 +225,7 @@ private fun TextLinePlaceHolder() {
         modifier = Modifier
             .height(12.dp)
             .fillMaxWidth()
-            .background(FirefoxTheme.colors.layer3),
+            .background(NetGpuBrowserTheme.colors.layer3),
     )
 }
 
@@ -252,7 +252,7 @@ private fun SyncedTabDropdown(
         expanded = showMenu && tab != null,
         onDismissRequest = { onDismiss() },
         modifier = Modifier
-            .background(color = FirefoxTheme.colors.layer2),
+            .background(color = NetGpuBrowserTheme.colors.layer2),
     ) {
         DropdownMenuItem(
             onClick = {
@@ -261,7 +261,7 @@ private fun SyncedTabDropdown(
         ) {
             Text(
                 text = stringResource(id = R.string.recent_synced_tab_menu_item_remove),
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 maxLines = 1,
                 modifier = Modifier
                     .fillMaxHeight()
@@ -275,13 +275,13 @@ private fun SyncedTabDropdown(
 @Composable
 private fun LoadedRecentSyncedTab() {
     val tab = RecentSyncedTab(
-        deviceDisplayName = "Firefox on MacBook",
+        deviceDisplayName = "NETGPU BROWSER on MacBook",
         deviceType = DeviceType.DESKTOP,
         title = "This is a long site title",
         url = "https://mozilla.org",
         previewImageUrl = "https://mozilla.org",
     )
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         RecentSyncedTab(
             tab = tab,
             onRecentSyncedTabClick = {},
@@ -294,10 +294,10 @@ private fun LoadedRecentSyncedTab() {
 @Preview
 @Composable
 private fun LoadingRecentSyncedTab() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         RecentSyncedTab(
             tab = null,
-            buttonBackgroundColor = FirefoxTheme.colors.layer3,
+            buttonBackgroundColor = NetGpuBrowserTheme.colors.layer3,
             onRecentSyncedTabClick = {},
             onSeeAllSyncedTabsButtonClick = {},
             onRemoveSyncedTab = {},

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gecko
+package com.netgpu.browser.gecko
 
 import android.content.Context
 import mozilla.components.browser.engine.gecko.autofill.GeckoAutocompleteStorageDelegate
@@ -14,9 +14,9 @@ import mozilla.components.concept.storage.LoginsStorage
 import mozilla.components.lib.crash.handler.CrashHandlerService
 import mozilla.components.service.sync.autofill.GeckoCreditCardsAddressesStorageDelegate
 import mozilla.components.service.sync.logins.GeckoLoginStorageDelegate
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.Config
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
 import org.mozilla.geckoview.ContentBlocking
 import org.mozilla.geckoview.ContentBlocking.SafeBrowsingProvider
 import org.mozilla.geckoview.GeckoRuntime

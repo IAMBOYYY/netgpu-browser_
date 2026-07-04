@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding
+package com.netgpu.browser.home.sessioncontrol.viewholders.onboarding
 
 import android.view.View
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -13,16 +13,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.ComposeView
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.MessageCard
-import org.mozilla.fenix.compose.MessageCardColors
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.home.sessioncontrol.SessionControlInteractor
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.MessageCard
+import com.netgpu.browser.compose.MessageCardColors
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.home.sessioncontrol.SessionControlInteractor
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
+import com.netgpu.browser.wallpapers.WallpaperState
 
 /**
  * View holder for the Nimbus Message Card.
@@ -61,10 +61,10 @@ class MessageCardViewHolder(
         var (_, _, _, _, buttonColor, buttonTextColor) = MessageCardColors.buildMessageCardColors()
 
         if (isWallpaperNotDefault) {
-            buttonColor = FirefoxTheme.colors.layer1
+            buttonColor = NetGpuBrowserTheme.colors.layer1
 
             if (!isSystemInDarkTheme()) {
-                buttonTextColor = FirefoxTheme.colors.textActionSecondary
+                buttonTextColor = NetGpuBrowserTheme.colors.textActionSecondary
             }
         }
 

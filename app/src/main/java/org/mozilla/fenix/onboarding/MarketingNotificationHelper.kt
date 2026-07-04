@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 // Channel ID was not updated when it was renamed to marketing.  Thus, we'll have to continue
 // to use this ID as the marketing channel ID
-const val MARKETING_CHANNEL_ID = "org.mozilla.fenix.default.browser.channel"
+const val MARKETING_CHANNEL_ID = "com.netgpu.browser.default.browser.channel"
 
 // For notification that uses the marketing notification channel, IDs should be unique.
 const val DEFAULT_BROWSER_NOTIFICATION_ID = 1

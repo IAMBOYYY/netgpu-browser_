@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabhistory
+package com.netgpu.browser.tabhistory
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import mozilla.components.ui.widgets.WidgetSiteItemView
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 data class TabHistoryItem(
     val title: String,

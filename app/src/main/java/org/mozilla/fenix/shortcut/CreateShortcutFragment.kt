@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.shortcut
+package com.netgpu.browser.shortcut
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,10 +13,10 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import mozilla.components.browser.state.selector.selectedTab
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentCreateShortcutBinding
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentCreateShortcutBinding
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.ext.requireComponents
 
 class CreateShortcutFragment : DialogFragment() {
     private var _binding: FragmentCreateShortcutBinding? = null

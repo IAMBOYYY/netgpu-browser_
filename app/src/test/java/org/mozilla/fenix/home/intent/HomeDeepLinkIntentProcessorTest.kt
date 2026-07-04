@@ -2,7 +2,7 @@
 * License, v. 2.0. If a copy of the MPL was not distributed with this
 * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import android.content.pm.PackageInfo
@@ -23,13 +23,13 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.BuildConfig.DEEP_LINK_SCHEME
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.BuildConfig.DEEP_LINK_SCHEME
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.SupportUtils
 import org.robolectric.annotation.Config
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -57,7 +57,7 @@ class HomeDeepLinkIntentProcessorTest {
     }
 
     @Test
-    fun `return true if scheme is fenix`() {
+    fun `return true if scheme is netgpu_browser`() {
         assertTrue(processorHome.process(testIntent("test"), navController, out))
 
         verify { activity wasNot Called }
@@ -66,8 +66,8 @@ class HomeDeepLinkIntentProcessorTest {
     }
 
     @Test
-    fun `return true if scheme is a fenix variant`() {
-        assertTrue(processorHome.process(testIntent("fenix-beta://test"), navController, out))
+    fun `return true if scheme is a netgpu_browser variant`() {
+        assertTrue(processorHome.process(testIntent("netgpu_browser-beta://test"), navController, out))
 
         verify { activity wasNot Called }
         verify { navController wasNot Called }
@@ -254,10 +254,10 @@ class HomeDeepLinkIntentProcessorTest {
         val packageManager: PackageManager = mockk()
         val packageInfo = PackageInfo()
 
-        every { activity.packageName } returns "org.mozilla.fenix"
+        every { activity.packageName } returns "com.netgpu.browser"
         every { activity.packageManager } returns packageManager
         @Suppress("DEPRECATION")
-        every { packageManager.getPackageInfo("org.mozilla.fenix", 0) } returns packageInfo
+        every { packageManager.getPackageInfo("com.netgpu.browser", 0) } returns packageInfo
         packageInfo.versionName = "versionName"
 
         assertTrue(processorHome.process(testIntent("make_default_browser"), navController, out))

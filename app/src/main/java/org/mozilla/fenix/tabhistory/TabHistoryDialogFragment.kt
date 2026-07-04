@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabhistory
+package com.netgpu.browser.tabhistory
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,9 +18,9 @@ import mozilla.components.browser.state.selector.findCustomTabOrSelectedTab
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentTabHistoryDialogBinding
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentTabHistoryDialogBinding
+import com.netgpu.browser.ext.requireComponents
 
 class TabHistoryDialogFragment : BottomSheetDialogFragment() {
 

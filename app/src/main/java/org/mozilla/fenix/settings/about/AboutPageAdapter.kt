@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.about
+package com.netgpu.browser.settings.about
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import org.mozilla.fenix.settings.about.viewholders.AboutItemViewHolder
+import com.netgpu.browser.settings.about.viewholders.AboutItemViewHolder
 
 class AboutPageAdapter(private val listener: AboutPageListener) :
     ListAdapter<AboutPageItem, AboutItemViewHolder>(DiffCallback) {

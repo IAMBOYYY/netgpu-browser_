@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address
+package com.netgpu.browser.settings.address
 
 import androidx.annotation.StringRes
 import androidx.annotation.VisibleForTesting
 import mozilla.components.concept.storage.Address
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 internal const val DEFAULT_COUNTRY = "US"
 

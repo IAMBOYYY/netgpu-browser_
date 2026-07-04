@@ -7,7 +7,7 @@
 // methods so we suppress the check.
 @file:Suppress("MozillaStrictModeSuppression")
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.os.Build
 import android.os.Handler
@@ -19,8 +19,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import mozilla.components.support.ktx.android.os.resetAfter
 import mozilla.components.support.utils.ManufacturerCodes
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.components.Components
+import com.netgpu.browser.Config
+import com.netgpu.browser.components.Components
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicLong
 
@@ -124,7 +124,7 @@ open class StrictModeManager(
         }
 
         // Calling resetAfter takes 1-2ms (unknown device) so we only execute it if StrictMode can
-        // actually be enabled. https://github.com/mozilla-mobile/fenix/issues/11617
+        // actually be enabled. https://github.com/mozilla-mobile/netgpu_browser/issues/11617
         return if (isEnabledByBuildConfig) {
             // This can overflow and crash. However, it's unlikely we'll suppress StrictMode 9
             // quintillion times in a build config where StrictMode is enabled so we don't handle it

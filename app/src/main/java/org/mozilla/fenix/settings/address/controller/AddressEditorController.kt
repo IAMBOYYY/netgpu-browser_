@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address.controller
+package com.netgpu.browser.settings.address.controller
 
 import androidx.navigation.NavController
 import kotlinx.coroutines.CoroutineScope
@@ -10,8 +10,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.concept.storage.UpdatableAddressFields
 import mozilla.components.service.sync.autofill.AutofillCreditCardsAddressesStorage
-import org.mozilla.fenix.settings.address.AddressEditorFragment
-import org.mozilla.fenix.settings.address.interactor.AddressEditorInteractor
+import com.netgpu.browser.settings.address.AddressEditorFragment
+import com.netgpu.browser.settings.address.interactor.AddressEditorInteractor
 
 /**
  * [AddressEditorFragment] controller. An interface that handles the view manipulation of the

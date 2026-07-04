@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.content.Context
 import androidx.preference.PreferenceManager
 import mozilla.components.service.glean.config.Configuration
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.R
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.R
 
 /**
  * Get custom Glean server URL if available.

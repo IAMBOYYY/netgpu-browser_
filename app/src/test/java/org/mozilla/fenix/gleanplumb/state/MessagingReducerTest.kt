@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb.state
+package com.netgpu.browser.gleanplumb.state
 
 import io.mockk.mockk
 import org.junit.Assert.assertFalse
@@ -10,16 +10,16 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessages
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.components.appstate.AppStoreReducer
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.gleanplumb.MessagingState
-import org.mozilla.fenix.nimbus.MessageData
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.nimbus.StyleData
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessages
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.components.appstate.AppStoreReducer
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.gleanplumb.MessagingState
+import com.netgpu.browser.nimbus.MessageData
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.nimbus.StyleData
 
 class MessagingReducerTest {
 

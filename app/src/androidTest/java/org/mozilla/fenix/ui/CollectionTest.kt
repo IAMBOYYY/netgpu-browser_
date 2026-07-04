@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
 import androidx.test.platform.app.InstrumentationRegistry
@@ -13,15 +13,15 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.collectionRobot
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.tabDrawer
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.collectionRobot
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.tabDrawer
 
 /**
  *  Tests for verifying basic functionality of tab collections
@@ -397,7 +397,7 @@ class CollectionTest {
     }
 
     @Test
-    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/fenix/issues/26087")
+    @Ignore("Failing after compose migration. See: https://github.com/mozilla-mobile/netgpu_browser/issues/26087")
     fun selectTabOnLongTapTest() {
         val firstWebPage = getGenericAsset(mockWebServer, 1)
         val secondWebPage = getGenericAsset(mockWebServer, 2)

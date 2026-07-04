@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.fragment
+package com.netgpu.browser.settings.logins.fragment
 
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -24,19 +24,19 @@ import androidx.navigation.fragment.findNavController
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentAddLoginBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.redirectToReAuth
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.ext.toEditable
-import org.mozilla.fenix.settings.logins.LoginsFragmentStore
-import org.mozilla.fenix.settings.logins.SavedLogin
-import org.mozilla.fenix.settings.logins.controller.SavedLoginsStorageController
-import org.mozilla.fenix.settings.logins.createInitialLoginsListState
-import org.mozilla.fenix.settings.logins.interactor.AddLoginInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentAddLoginBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.redirectToReAuth
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.ext.toEditable
+import com.netgpu.browser.settings.logins.LoginsFragmentStore
+import com.netgpu.browser.settings.logins.SavedLogin
+import com.netgpu.browser.settings.logins.controller.SavedLoginsStorageController
+import com.netgpu.browser.settings.logins.createInitialLoginsListState
+import com.netgpu.browser.settings.logins.interactor.AddLoginInteractor
 
 /**
  * Displays the editable new login information for a single website

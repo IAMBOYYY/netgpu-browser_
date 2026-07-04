@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits.controller
+package com.netgpu.browser.home.recentvisits.controller
 
 import androidx.navigation.NavController
 import kotlinx.coroutines.CoroutineScope
@@ -12,14 +12,14 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.storage.HistoryMetadataStorage
 import mozilla.components.feature.tabs.TabsUseCases.SelectOrAddUseCase
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.RecentSearches
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.library.history.toHistoryMetadata
+import com.netgpu.browser.GleanMetrics.RecentSearches
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.library.history.toHistoryMetadata
 
 /**
  * All possible updates following user interactions with the "Recent visits" section from the Home screen.

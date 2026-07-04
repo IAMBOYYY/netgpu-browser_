@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.MiddlewareContext
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.GleanMetrics.TabsTray
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.GleanMetrics.TabsTray
 
 /**
  * [Middleware] that reacts to various [TabsTrayAction]s.

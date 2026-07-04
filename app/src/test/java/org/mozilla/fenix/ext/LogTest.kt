@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.util.Log
 import io.mockk.every
@@ -12,8 +12,8 @@ import io.mockk.mockkStatic
 import io.mockk.verify
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.ReleaseChannel
+import com.netgpu.browser.Config
+import com.netgpu.browser.ReleaseChannel
 
 class LogTest {
 

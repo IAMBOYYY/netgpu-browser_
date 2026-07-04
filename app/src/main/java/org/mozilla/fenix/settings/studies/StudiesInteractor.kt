@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.studies
+package com.netgpu.browser.settings.studies
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.service.nimbus.NimbusApi
 import org.mozilla.experiments.nimbus.NimbusInterface
 import org.mozilla.experiments.nimbus.internal.EnrolledExperiment
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
 import kotlin.system.exitProcess
 
 interface StudiesInteractor {

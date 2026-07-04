@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.about
+package com.netgpu.browser.settings.about
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -13,9 +13,9 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAboutLibrariesBinding
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAboutLibrariesBinding
+import com.netgpu.browser.ext.showToolbar
 import java.nio.charset.Charset
 import java.util.Locale
 

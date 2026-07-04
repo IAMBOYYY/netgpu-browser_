@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.core.net.toUri
 import mozilla.components.concept.engine.utils.EngineReleaseChannel
@@ -11,17 +11,17 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestHelper.assertExternalAppOpens
-import org.mozilla.fenix.helpers.TestHelper.deleteDownloadedFileOnStorage
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.runWithCondition
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.downloadRobot
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.notificationShade
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestHelper.assertExternalAppOpens
+import com.netgpu.browser.helpers.TestHelper.deleteDownloadedFileOnStorage
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.runWithCondition
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.downloadRobot
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.notificationShade
 
 /**
  *  Tests for verifying basic functionality of download
@@ -123,7 +123,7 @@ class DownloadTest {
         }.clickDownload {}
         mDevice.openNotification()
         notificationShade {
-            verifySystemNotificationExists("Firefox Fenix")
+            verifySystemNotificationExists("NETGPU BROWSER Fenix")
             expandNotificationMessage()
             clickDownloadNotificationControlButton("PAUSE")
             clickDownloadNotificationControlButton("RESUME")

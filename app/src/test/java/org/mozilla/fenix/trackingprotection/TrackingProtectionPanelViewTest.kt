@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.content.Context
 import android.view.ViewGroup
@@ -23,13 +23,13 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
 
 @RunWith(FenixRobolectricTestRunner::class)
 class TrackingProtectionPanelViewTest {
@@ -59,7 +59,7 @@ class TrackingProtectionPanelViewTest {
 
     @Test
     fun testNormalModeUi() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk(relaxed = true)
 
             view.update(baseState.copy(mode = ProtectionsState.Mode.Normal))
@@ -73,7 +73,7 @@ class TrackingProtectionPanelViewTest {
 
     @Test
     fun testNormalModeUiCookiesWithTotalCookieProtectionEnabled() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns true
             }
@@ -88,7 +88,7 @@ class TrackingProtectionPanelViewTest {
 
     @Test
     fun testNormalModeUiCookiesWithTotalCookieProtectionDisabled() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns false
             }
@@ -129,7 +129,7 @@ class TrackingProtectionPanelViewTest {
 
     @Test
     fun testPrivateModeUiCookiesWithTotalCookieProtectionEnabled() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns true
             }
@@ -152,7 +152,7 @@ class TrackingProtectionPanelViewTest {
 
     @Test
     fun testPrivateModeUiCookiesWithTotalCookieProtectionDisabled() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk {
                 every { enabledTotalCookieProtection } returns false
             }

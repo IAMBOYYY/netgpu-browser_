@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
@@ -21,12 +21,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.directionsEq
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.logins.controller.SavedLoginsStorageController
-import org.mozilla.fenix.settings.logins.fragment.EditLoginFragmentDirections
-import org.mozilla.fenix.utils.ClipboardHandler
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.directionsEq
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.logins.controller.SavedLoginsStorageController
+import com.netgpu.browser.settings.logins.fragment.EditLoginFragmentDirections
+import com.netgpu.browser.utils.ClipboardHandler
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SavedLoginsStorageControllerTest {

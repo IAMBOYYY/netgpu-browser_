@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import mozilla.components.concept.engine.prompt.ShareData
-import org.mozilla.fenix.databinding.ShareCloseBinding
-import org.mozilla.fenix.share.listadapters.ShareTabsAdapter
+import com.netgpu.browser.databinding.ShareCloseBinding
+import com.netgpu.browser.share.listadapters.ShareTabsAdapter
 
 /**
  * Callbacks for possible user interactions on the [ShareCloseView]

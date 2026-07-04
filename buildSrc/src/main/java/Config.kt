@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import org.gradle.api.Project
-import org.mozilla.fenix.gradle.ext.execReadStandardOutOrThrow
+import com.netgpu.browser.gradle.ext.execReadStandardOutOrThrow
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.util.Date

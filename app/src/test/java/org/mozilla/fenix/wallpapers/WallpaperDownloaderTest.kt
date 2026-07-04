@@ -1,4 +1,4 @@
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import io.mockk.every
 import io.mockk.mockk
@@ -14,7 +14,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
-import org.mozilla.fenix.BuildConfig
+import com.netgpu.browser.BuildConfig
 import java.io.File
 import java.lang.IllegalStateException
 

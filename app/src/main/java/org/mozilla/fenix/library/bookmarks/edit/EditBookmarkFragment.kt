@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.edit
+package com.netgpu.browser.library.bookmarks.edit
 
 import android.content.DialogInterface
 import android.content.res.ColorStateList
@@ -38,19 +38,19 @@ import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
 import mozilla.components.support.ktx.kotlin.toShortUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.BookmarksManagement
-import org.mozilla.fenix.NavHostActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.FragmentEditBookmarkBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.placeCursorAtEnd
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.setToolbarColors
-import org.mozilla.fenix.library.bookmarks.BookmarksSharedViewModel
-import org.mozilla.fenix.library.bookmarks.friendlyRootTitle
+import com.netgpu.browser.GleanMetrics.BookmarksManagement
+import com.netgpu.browser.NavHostActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.FragmentEditBookmarkBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.placeCursorAtEnd
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.setToolbarColors
+import com.netgpu.browser.library.bookmarks.BookmarksSharedViewModel
+import com.netgpu.browser.library.bookmarks.friendlyRootTitle
 
 /**
  * Menu to edit the name, URL, and location of a bookmark item.
@@ -227,7 +227,7 @@ class EditBookmarkFragment : Fragment(R.layout.fragment_edit_bookmark), MenuProv
                                 .popBackStack()
 
                             bookmarkNode?.let { bookmark ->
-                                FenixSnackbar.make(
+                                NetGpuBrowserSnackbar.make(
                                     view = activity.getRootView()!!,
                                     isDisplayedWithBrowserToolbar = args.requiresSnackbarPaddingForToolbar,
                                 )

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Intent
 import androidx.navigation.NavController
@@ -58,24 +58,24 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.ReaderMode
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserAnimator
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.browser.readermode.ReaderModeController
-import org.mozilla.fenix.collections.SaveCollectionStep
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.accounts.AccountState
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.directionsEq
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.deletebrowsingdata.deleteAndQuit
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.ReaderMode
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserAnimator
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.browser.readermode.ReaderModeController
+import com.netgpu.browser.collections.SaveCollectionStep
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.accounts.AccountState
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.directionsEq
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.deletebrowsingdata.deleteAndQuit
+import com.netgpu.browser.utils.Settings
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(FenixRobolectricTestRunner::class)
@@ -105,7 +105,7 @@ class DefaultBrowserToolbarMenuControllerTest {
 
     @RelaxedMockK private lateinit var browserAnimator: BrowserAnimator
 
-    @RelaxedMockK private lateinit var snackbar: FenixSnackbar
+    @RelaxedMockK private lateinit var snackbar: NetGpuBrowserSnackbar
 
     @RelaxedMockK private lateinit var tabCollectionStorage: TabCollectionStorage
 
@@ -129,12 +129,12 @@ class DefaultBrowserToolbarMenuControllerTest {
         MockKAnnotations.init(this)
 
         mockkStatic(
-            "org.mozilla.fenix.settings.deletebrowsingdata.DeleteAndQuitKt",
+            "com.netgpu.browser.settings.deletebrowsingdata.DeleteAndQuitKt",
         )
         every { deleteAndQuit(any(), any(), any()) } just Runs
 
-        mockkObject(FenixSnackbar.Companion)
-        every { FenixSnackbar.make(any(), any(), any(), any()) } returns snackbar
+        mockkObject(NetGpuBrowserSnackbar.Companion)
+        every { NetGpuBrowserSnackbar.make(any(), any(), any(), any()) } returns snackbar
 
         every { activity.components.useCases.sessionUseCases } returns sessionUseCases
         every { activity.components.useCases.customTabsUseCases } returns customTabUseCases
@@ -160,8 +160,8 @@ class DefaultBrowserToolbarMenuControllerTest {
 
     @After
     fun tearDown() {
-        unmockkStatic("org.mozilla.fenix.settings.deletebrowsingdata.DeleteAndQuitKt")
-        unmockkObject(FenixSnackbar.Companion)
+        unmockkStatic("com.netgpu.browser.settings.deletebrowsingdata.DeleteAndQuitKt")
+        unmockkObject(NetGpuBrowserSnackbar.Companion)
     }
 
     @Test

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.preference.R
 import androidx.recyclerview.widget.RecyclerView
@@ -23,12 +23,12 @@ import androidx.test.espresso.matcher.ViewMatchers.withParentIndex
 import androidx.test.espresso.matcher.ViewMatchers.withResourceName
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers.allOf
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.assertIsChecked
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.isChecked
-import org.mozilla.fenix.helpers.isEnabled
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.assertIsChecked
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.isChecked
+import com.netgpu.browser.helpers.isEnabled
 
 /**
  * Implementation of Robot Pattern for the settings Enhanced Tracking Protection sub menu.
@@ -105,7 +105,7 @@ class SettingsSubMenuEnhancedTrackingProtectionRobot {
 private fun assertNavigationToolBarHeader() {
     onView(
         allOf(
-            withParent(withId(org.mozilla.fenix.R.id.navigationToolbar)),
+            withParent(withId(com.netgpu.browser.R.id.navigationToolbar)),
             withText("Enhanced Tracking Protection"),
         ),
     )
@@ -151,19 +151,19 @@ private fun assertEnhancedTrackingProtectionOptionsState(enabled: Boolean) {
     onView(withText("Standard (default)"))
         .check(matches(isEnabled(enabled)))
 
-    onView(withText(org.mozilla.fenix.R.string.preference_enhanced_tracking_protection_standard_description_4))
+    onView(withText(com.netgpu.browser.R.string.preference_enhanced_tracking_protection_standard_description_4))
         .check(matches(isEnabled(enabled)))
 
     onView(withText("Strict"))
         .check(matches(isEnabled(enabled)))
 
-    onView(withText(org.mozilla.fenix.R.string.preference_enhanced_tracking_protection_strict_description_3))
+    onView(withText(com.netgpu.browser.R.string.preference_enhanced_tracking_protection_strict_description_3))
         .check(matches(isEnabled(enabled)))
 
     onView(withText("Custom"))
         .check(matches(isEnabled(enabled)))
 
-    onView(withText(org.mozilla.fenix.R.string.preference_enhanced_tracking_protection_custom_description_2))
+    onView(withText(com.netgpu.browser.R.string.preference_enhanced_tracking_protection_custom_description_2))
         .check(matches(isEnabled(enabled)))
 }
 
@@ -184,7 +184,7 @@ private fun assertRadioButtonDefaults() {
 
     onView(
         allOf(
-            withId(org.mozilla.fenix.R.id.radio_button),
+            withId(com.netgpu.browser.R.id.radio_button),
             hasSibling(withText("Standard (default)")),
         ),
     ).assertIsChecked(true)

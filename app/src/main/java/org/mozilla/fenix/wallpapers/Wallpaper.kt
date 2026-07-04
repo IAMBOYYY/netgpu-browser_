@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.utils.Settings
 import java.util.Date
 
 /**
@@ -65,9 +65,9 @@ data class Wallpaper(
         we find a better way of handling the edge cases around this collection. It is generally
         safer to do comparison directly with the collection name.
         */
-        const val classicFirefoxCollectionName = "classic-firefox"
-        val ClassicFirefoxCollection = Collection(
-            name = classicFirefoxCollectionName,
+        const val classicNETGPU BROWSERCollectionName = "classic-firefox"
+        val ClassicNETGPU BROWSERCollection = Collection(
+            name = classicNETGPU BROWSERCollectionName,
             heading = null,
             description = null,
             learnMoreUrl = null,

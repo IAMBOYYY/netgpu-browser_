@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import android.os.Build
 import android.view.autofill.AutofillManager
@@ -15,25 +15,25 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestAssetHelper.getStorageTestAsset
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.helpers.TestHelper.exitMenu
-import org.mozilla.fenix.helpers.TestHelper.generateRandomString
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.openAppFromExternalLink
-import org.mozilla.fenix.helpers.TestHelper.restartApp
-import org.mozilla.fenix.helpers.TestHelper.setNetworkEnabled
-import org.mozilla.fenix.ui.robots.addToHomeScreen
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.settingsScreen
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestAssetHelper.getStorageTestAsset
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.helpers.TestHelper.exitMenu
+import com.netgpu.browser.helpers.TestHelper.generateRandomString
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.openAppFromExternalLink
+import com.netgpu.browser.helpers.TestHelper.restartApp
+import com.netgpu.browser.helpers.TestHelper.setNetworkEnabled
+import com.netgpu.browser.ui.robots.addToHomeScreen
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.settingsScreen
 
 /**
  *  Tests for verifying the main three dot menu options

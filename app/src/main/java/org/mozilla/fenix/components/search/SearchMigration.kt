@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.search
+package com.netgpu.browser.components.search
 
 import android.content.Context
 import android.content.SharedPreferences
 import mozilla.components.browser.state.search.SearchEngine
 import mozilla.components.feature.search.ext.parseLegacySearchEngine
 import mozilla.components.feature.search.middleware.SearchMiddleware
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.ext.components
 import org.xmlpull.v1.XmlPullParserException
 import java.io.BufferedInputStream
 import java.io.IOException

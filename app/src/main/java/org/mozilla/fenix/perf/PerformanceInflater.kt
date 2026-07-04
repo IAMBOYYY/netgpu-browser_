@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.Context
 import android.util.AttributeSet
@@ -11,8 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
 import mozilla.components.concept.base.profiler.Profiler
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getAndIncrementNoOverflow
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getAndIncrementNoOverflow
 import java.lang.reflect.Modifier.PRIVATE
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -23,7 +23,7 @@ private val classPrefixList = arrayOf(
 )
 
 /**
- * Counts the number of inflations fenix does. This class behaves only as an inflation counter since
+ * Counts the number of inflations netgpu_browser does. This class behaves only as an inflation counter since
  * it takes the `inflater` that is given by the base system. This is done in order not to change
  * the behavior of the app since all we want to do is count the inflations done.
  */

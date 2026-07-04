@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.core.net.toUri
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  * Tests that verify errors encountered while browsing websites: unsafe pages, connection errors, etc

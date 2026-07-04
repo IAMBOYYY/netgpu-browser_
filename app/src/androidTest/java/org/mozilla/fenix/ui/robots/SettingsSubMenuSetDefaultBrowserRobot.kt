@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
-import org.mozilla.fenix.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.mDevice
 
 class SettingsSubMenuSetDefaultBrowserRobot {
     class Transition {

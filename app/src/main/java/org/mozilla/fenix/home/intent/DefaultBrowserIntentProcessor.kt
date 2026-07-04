@@ -2,21 +2,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
 import mozilla.components.concept.engine.EngineSession
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.ext.openSetDefaultBrowserOption
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.onboarding.DefaultBrowserNotificationWorker.Companion.isDefaultBrowserNotificationIntent
-import org.mozilla.fenix.onboarding.ReEngagementNotificationWorker
-import org.mozilla.fenix.onboarding.ReEngagementNotificationWorker.Companion.isReEngagementNotificationIntent
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.ext.openSetDefaultBrowserOption
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.onboarding.DefaultBrowserNotificationWorker.Companion.isDefaultBrowserNotificationIntent
+import com.netgpu.browser.onboarding.ReEngagementNotificationWorker
+import com.netgpu.browser.onboarding.ReEngagementNotificationWorker.Companion.isReEngagementNotificationIntent
 
 /**
  * When the default browser notification is tapped we need to launch [openSetDefaultBrowserOption]

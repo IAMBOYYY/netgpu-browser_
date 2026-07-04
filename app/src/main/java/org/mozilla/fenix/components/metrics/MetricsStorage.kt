@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.app.Activity
 import android.app.Application
@@ -11,10 +11,10 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.support.utils.ext.getPackageInfoCompat
-import org.mozilla.fenix.android.DefaultActivityLifecycleCallbacks
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.android.DefaultActivityLifecycleCallbacks
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.utils.Settings
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

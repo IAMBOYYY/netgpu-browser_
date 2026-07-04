@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recenttabs.controller
+package com.netgpu.browser.home.recenttabs.controller
 
 import androidx.navigation.NavController
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.feature.tabs.TabsUseCases.SelectTabUseCase
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.RecentTabs
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.inProgressMediaTab
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recenttabs.interactor.RecentTabInteractor
+import com.netgpu.browser.GleanMetrics.RecentTabs
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.inProgressMediaTab
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recenttabs.interactor.RecentTabInteractor
 
 /**
  * An interface that handles the view manipulation of the recent tabs in the Home screen.

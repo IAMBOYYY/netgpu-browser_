@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.intent
+package com.netgpu.browser.intent
 
 import android.content.Intent
 import mozilla.components.feature.intent.processing.IntentProcessor
-import org.mozilla.fenix.BuildConfig
+import com.netgpu.browser.BuildConfig
 
 /**
  * Process public deep links that are coming from external apps.

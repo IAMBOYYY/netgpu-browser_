@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -13,9 +13,9 @@ import mozilla.components.browser.tabstray.TabsAdapter.Companion.PAYLOAD_DONT_HI
 import mozilla.components.browser.tabstray.TabsAdapter.Companion.PAYLOAD_HIGHLIGHT_SELECTED_ITEM
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayState.Mode
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayState.Mode
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 /**
  * Notifies the adapter when the selection mode changes.

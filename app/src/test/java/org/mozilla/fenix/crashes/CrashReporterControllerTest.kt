@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.crashes
+package com.netgpu.browser.crashes
 
 import androidx.navigation.NavController
 import io.mockk.Called
@@ -13,12 +13,12 @@ import io.mockk.verify
 import mozilla.components.lib.crash.Crash.NativeCodeCrash
 import mozilla.components.support.test.ext.joinBlocking
 import org.junit.Test
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.utils.Settings
 
 class CrashReporterControllerTest {
 

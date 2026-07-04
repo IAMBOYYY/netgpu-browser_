@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.graphics.Rect
 import android.os.Build
@@ -17,7 +17,7 @@ import androidx.annotation.VisibleForTesting
 import androidx.core.view.WindowInsetsCompat
 import mozilla.components.support.ktx.android.util.dpToPx
 import mozilla.components.support.utils.ext.bottom
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 fun View.increaseTapArea(@Dimension(unit = DP) extraDps: Int) {
     val dips = extraDps.dpToPx(resources.displayMetrics)

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.content.Context
 import android.content.Intent
@@ -73,78 +73,78 @@ import mozilla.components.support.utils.SafeIntent
 import mozilla.components.support.utils.toSafeIntent
 import mozilla.components.support.webextensions.WebExtensionPopupFeature
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.GleanMetrics.StartOnHome
-import org.mozilla.fenix.addons.AddonDetailsFragmentDirections
-import org.mozilla.fenix.addons.AddonPermissionsDetailsFragmentDirections
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.browser.browsingmode.DefaultBrowsingModeManager
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.metrics.BreadcrumbsRecorder
-import org.mozilla.fenix.databinding.ActivityHomeBinding
-import org.mozilla.fenix.exceptions.trackingprotection.TrackingProtectionExceptionsFragmentDirections
-import org.mozilla.fenix.ext.alreadyOnDestination
-import org.mozilla.fenix.ext.areNotificationsEnabledSafe
-import org.mozilla.fenix.ext.breadcrumb
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.hasTopDestination
-import org.mozilla.fenix.ext.isNotificationChannelEnabled
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.setNavigationIcon
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gleanplumb.MessageNotificationWorker
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.intent.AssistIntentProcessor
-import org.mozilla.fenix.home.intent.CrashReporterIntentProcessor
-import org.mozilla.fenix.home.intent.DefaultBrowserIntentProcessor
-import org.mozilla.fenix.home.intent.HomeDeepLinkIntentProcessor
-import org.mozilla.fenix.home.intent.OpenBrowserIntentProcessor
-import org.mozilla.fenix.home.intent.OpenSpecificTabIntentProcessor
-import org.mozilla.fenix.home.intent.SpeechProcessingIntentProcessor
-import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
-import org.mozilla.fenix.library.bookmarks.BookmarkFragmentDirections
-import org.mozilla.fenix.library.bookmarks.DesktopFolders
-import org.mozilla.fenix.library.history.HistoryFragmentDirections
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentDirections
-import org.mozilla.fenix.library.recentlyclosed.RecentlyClosedFragmentDirections
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.onboarding.DefaultBrowserNotificationWorker
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.onboarding.MARKETING_CHANNEL_ID
-import org.mozilla.fenix.onboarding.ReEngagementNotificationWorker
-import org.mozilla.fenix.onboarding.ensureMarketingChannelExists
-import org.mozilla.fenix.perf.MarkersActivityLifecycleCallbacks
-import org.mozilla.fenix.perf.MarkersFragmentLifecycleCallbacks
-import org.mozilla.fenix.perf.Performance
-import org.mozilla.fenix.perf.PerformanceInflater
-import org.mozilla.fenix.perf.ProfilerMarkers
-import org.mozilla.fenix.perf.StartupPathProvider
-import org.mozilla.fenix.perf.StartupTimeline
-import org.mozilla.fenix.perf.StartupTypeTelemetry
-import org.mozilla.fenix.search.SearchDialogFragmentDirections
-import org.mozilla.fenix.session.PrivateNotificationService
-import org.mozilla.fenix.settings.CookieBannersFragmentDirections
-import org.mozilla.fenix.settings.HttpsOnlyFragmentDirections
-import org.mozilla.fenix.settings.SettingsFragmentDirections
-import org.mozilla.fenix.settings.TrackingProtectionFragmentDirections
-import org.mozilla.fenix.settings.about.AboutFragmentDirections
-import org.mozilla.fenix.settings.logins.fragment.LoginDetailFragmentDirections
-import org.mozilla.fenix.settings.logins.fragment.SavedLoginsAuthFragmentDirections
-import org.mozilla.fenix.settings.search.AddSearchEngineFragmentDirections
-import org.mozilla.fenix.settings.search.EditCustomSearchEngineFragmentDirections
-import org.mozilla.fenix.settings.studies.StudiesFragmentDirections
-import org.mozilla.fenix.settings.wallpaper.WallpaperSettingsFragmentDirections
-import org.mozilla.fenix.share.AddNewDeviceFragmentDirections
-import org.mozilla.fenix.tabhistory.TabHistoryDialogFragment
-import org.mozilla.fenix.tabstray.TabsTrayFragment
-import org.mozilla.fenix.tabstray.TabsTrayFragmentDirections
-import org.mozilla.fenix.theme.DefaultThemeManager
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.trackingprotection.TrackingProtectionPanelDialogFragmentDirections
-import org.mozilla.fenix.utils.BrowsersCache
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.GleanMetrics.StartOnHome
+import com.netgpu.browser.addons.AddonDetailsFragmentDirections
+import com.netgpu.browser.addons.AddonPermissionsDetailsFragmentDirections
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.browser.browsingmode.DefaultBrowsingModeManager
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.metrics.BreadcrumbsRecorder
+import com.netgpu.browser.databinding.ActivityHomeBinding
+import com.netgpu.browser.exceptions.trackingprotection.TrackingProtectionExceptionsFragmentDirections
+import com.netgpu.browser.ext.alreadyOnDestination
+import com.netgpu.browser.ext.areNotificationsEnabledSafe
+import com.netgpu.browser.ext.breadcrumb
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.hasTopDestination
+import com.netgpu.browser.ext.isNotificationChannelEnabled
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.setNavigationIcon
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gleanplumb.MessageNotificationWorker
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.intent.AssistIntentProcessor
+import com.netgpu.browser.home.intent.CrashReporterIntentProcessor
+import com.netgpu.browser.home.intent.DefaultBrowserIntentProcessor
+import com.netgpu.browser.home.intent.HomeDeepLinkIntentProcessor
+import com.netgpu.browser.home.intent.OpenBrowserIntentProcessor
+import com.netgpu.browser.home.intent.OpenSpecificTabIntentProcessor
+import com.netgpu.browser.home.intent.SpeechProcessingIntentProcessor
+import com.netgpu.browser.home.intent.StartSearchIntentProcessor
+import com.netgpu.browser.library.bookmarks.BookmarkFragmentDirections
+import com.netgpu.browser.library.bookmarks.DesktopFolders
+import com.netgpu.browser.library.history.HistoryFragmentDirections
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentDirections
+import com.netgpu.browser.library.recentlyclosed.RecentlyClosedFragmentDirections
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.onboarding.DefaultBrowserNotificationWorker
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.onboarding.MARKETING_CHANNEL_ID
+import com.netgpu.browser.onboarding.ReEngagementNotificationWorker
+import com.netgpu.browser.onboarding.ensureMarketingChannelExists
+import com.netgpu.browser.perf.MarkersActivityLifecycleCallbacks
+import com.netgpu.browser.perf.MarkersFragmentLifecycleCallbacks
+import com.netgpu.browser.perf.Performance
+import com.netgpu.browser.perf.PerformanceInflater
+import com.netgpu.browser.perf.ProfilerMarkers
+import com.netgpu.browser.perf.StartupPathProvider
+import com.netgpu.browser.perf.StartupTimeline
+import com.netgpu.browser.perf.StartupTypeTelemetry
+import com.netgpu.browser.search.SearchDialogFragmentDirections
+import com.netgpu.browser.session.PrivateNotificationService
+import com.netgpu.browser.settings.CookieBannersFragmentDirections
+import com.netgpu.browser.settings.HttpsOnlyFragmentDirections
+import com.netgpu.browser.settings.SettingsFragmentDirections
+import com.netgpu.browser.settings.TrackingProtectionFragmentDirections
+import com.netgpu.browser.settings.about.AboutFragmentDirections
+import com.netgpu.browser.settings.logins.fragment.LoginDetailFragmentDirections
+import com.netgpu.browser.settings.logins.fragment.SavedLoginsAuthFragmentDirections
+import com.netgpu.browser.settings.search.AddSearchEngineFragmentDirections
+import com.netgpu.browser.settings.search.EditCustomSearchEngineFragmentDirections
+import com.netgpu.browser.settings.studies.StudiesFragmentDirections
+import com.netgpu.browser.settings.wallpaper.WallpaperSettingsFragmentDirections
+import com.netgpu.browser.share.AddNewDeviceFragmentDirections
+import com.netgpu.browser.tabhistory.TabHistoryDialogFragment
+import com.netgpu.browser.tabstray.TabsTrayFragment
+import com.netgpu.browser.tabstray.TabsTrayFragmentDirections
+import com.netgpu.browser.theme.DefaultThemeManager
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.trackingprotection.TrackingProtectionPanelDialogFragmentDirections
+import com.netgpu.browser.utils.BrowsersCache
+import com.netgpu.browser.utils.Settings
 import java.lang.ref.WeakReference
 import java.util.Locale
 
@@ -187,7 +187,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
         supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
     }
 
-    private val onboarding by lazy { FenixOnboarding(applicationContext) }
+    private val onboarding by lazy { NetGpuBrowserOnboarding(applicationContext) }
 
     private val externalSourceIntentProcessors by lazy {
         listOf(
@@ -426,7 +426,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
             }
 
             // We attempt to send metrics onResume so that the start of new user sessions is not
-            // missed. Previously, this was done in FenixApplication::onCreate, but it was decided
+            // missed. Previously, this was done in NetGpuBrowserApplication::onCreate, but it was decided
             // that we should not rely on the application being killed between user sessions.
             components.appStore.dispatch(AppAction.ResumedMetricsAction)
 
@@ -443,7 +443,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
 
         // This was done in order to refresh search engines when app is running in background
         // and the user changes the system language
-        // More details here: https://github.com/mozilla-mobile/fenix/pull/27793#discussion_r1029892536
+        // More details here: https://github.com/mozilla-mobile/netgpu_browser/pull/27793#discussion_r1029892536
         components.core.store.dispatch(SearchAction.RefreshSearchEnginesAction)
     }
 
@@ -689,7 +689,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
     }
 
     @Deprecated("Deprecated in Java")
-    // https://github.com/mozilla-mobile/fenix/issues/19919
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19919
     final override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         supportFragmentManager.primaryNavigationFragment?.childFragmentManager?.fragments?.forEach {
             if (it is ActivityResultHandler && it.onActivityResult(requestCode, data, resultCode)) {
@@ -704,7 +704,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
         val isAndroidN =
             Build.VERSION.SDK_INT == Build.VERSION_CODES.N || Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1
         // Huawei devices seem to have problems with onKeyLongPress
-        // See https://github.com/mozilla-mobile/fenix/issues/13498
+        // See https://github.com/mozilla-mobile/netgpu_browser/issues/13498
         return isAndroidN || ManufacturerCodes.isHuawei
     }
 

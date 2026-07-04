@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.view.LayoutInflater
 import android.view.View
@@ -14,8 +14,8 @@ import mozilla.components.support.test.robolectric.testContext
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.FragmentAddOnPermissionsBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.databinding.FragmentAddOnPermissionsBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AddonPermissionDetailsBindingDelegateTest {

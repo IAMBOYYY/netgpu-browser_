@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.content.Intent
 import android.net.Uri
@@ -14,10 +14,10 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import mozilla.components.feature.addons.ui.UnsupportedAddonsAdapter
 import mozilla.components.feature.addons.ui.UnsupportedAddonsAdapterDelegate
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentNotYetSupportedAddonsBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentNotYetSupportedAddonsBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.showToolbar
 
 private const val LEARN_MORE_URL =
     "https://support.mozilla.org/kb/add-compatibility-firefox-preview"

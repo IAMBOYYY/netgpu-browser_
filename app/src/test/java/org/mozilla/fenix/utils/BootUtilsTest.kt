@@ -1,4 +1,4 @@
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.os.Build
 import io.mockk.every
@@ -8,8 +8,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.BootUtils.Companion.getBootIdentifier
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.BootUtils.Companion.getBootIdentifier
 import org.robolectric.annotation.Config
 
 private const val NO_BOOT_IDENTIFIER = "no boot identifier available"

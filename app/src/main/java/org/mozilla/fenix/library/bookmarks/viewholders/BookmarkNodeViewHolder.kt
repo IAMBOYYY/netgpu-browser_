@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.viewholders
+package com.netgpu.browser.library.bookmarks.viewholders
 
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -11,19 +11,19 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.concept.storage.BookmarkNode
 import mozilla.components.concept.storage.BookmarkNodeType
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.hideAndDisable
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.ext.removeAndDisable
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.library.LibrarySiteItemView
-import org.mozilla.fenix.library.bookmarks.BookmarkFragmentState
-import org.mozilla.fenix.library.bookmarks.BookmarkItemMenu
-import org.mozilla.fenix.library.bookmarks.BookmarkPayload
-import org.mozilla.fenix.library.bookmarks.BookmarkViewInteractor
-import org.mozilla.fenix.library.bookmarks.inRoots
-import org.mozilla.fenix.utils.Do
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.hideAndDisable
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.ext.removeAndDisable
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.library.LibrarySiteItemView
+import com.netgpu.browser.library.bookmarks.BookmarkFragmentState
+import com.netgpu.browser.library.bookmarks.BookmarkItemMenu
+import com.netgpu.browser.library.bookmarks.BookmarkPayload
+import com.netgpu.browser.library.bookmarks.BookmarkViewInteractor
+import com.netgpu.browser.library.bookmarks.inRoots
+import com.netgpu.browser.utils.Do
 
 /**
  * Base class for bookmark node view holders.

@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Intent
 import android.net.Uri
@@ -41,22 +41,22 @@ import org.hamcrest.CoreMatchers
 import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.endsWith
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.LISTS_MAXSWIPES
-import org.mozilla.fenix.helpers.Constants.PackageName.GOOGLE_PLAY_SERVICES
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.MatcherHelper.itemContainingText
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.hasCousin
-import org.mozilla.fenix.helpers.TestHelper.isPackageInstalled
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.ui.robots.SettingsRobot.Companion.DEFAULT_APPS_SETTINGS_ACTION
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.LISTS_MAXSWIPES
+import com.netgpu.browser.helpers.Constants.PackageName.GOOGLE_PLAY_SERVICES
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.MatcherHelper.itemContainingText
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.hasCousin
+import com.netgpu.browser.helpers.TestHelper.isPackageInstalled
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.ui.robots.SettingsRobot.Companion.DEFAULT_APPS_SETTINGS_ACTION
 
 /**
  * Implementation of Robot Pattern for the settings menu.
@@ -114,7 +114,7 @@ class SettingsRobot {
     fun verifyAboutHeading() = assertAboutHeading()
 
     fun verifyRateOnGooglePlay() = assertTrue(rateOnGooglePlayHeading().waitForExists(waitingTime))
-    fun verifyAboutFirefoxPreview() = assertTrue(aboutFirefoxHeading().waitForExists(waitingTime))
+    fun verifyAboutNETGPU BROWSERPreview() = assertTrue(aboutNETGPU BROWSERHeading().waitForExists(waitingTime))
     fun verifyGooglePlayRedirect() = assertGooglePlayRedirect()
 
     class Transition {
@@ -132,9 +132,9 @@ class SettingsRobot {
             return BrowserRobot.Transition()
         }
 
-        fun openAboutFirefoxPreview(interact: SettingsSubMenuAboutRobot.() -> Unit):
+        fun openAboutNETGPU BROWSERPreview(interact: SettingsSubMenuAboutRobot.() -> Unit):
             SettingsSubMenuAboutRobot.Transition {
-            aboutFirefoxHeading().click()
+            aboutNETGPU BROWSERHeading().click()
             SettingsSubMenuAboutRobot().interact()
             return SettingsSubMenuAboutRobot.Transition()
         }
@@ -586,7 +586,7 @@ private fun rateOnGooglePlayHeading(): UiObject {
     return rateOnGooglePlay
 }
 
-private fun aboutFirefoxHeading(): UiObject {
+private fun aboutNETGPU BROWSERHeading(): UiObject {
     for (i in 1..RETRY_COUNT) {
         try {
             settingsList().scrollToEnd(LISTS_MAXSWIPES)

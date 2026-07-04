@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.mozonline
+package com.netgpu.browser.home.mozonline
 
 import android.app.Activity
 import android.content.Context
@@ -11,10 +11,10 @@ import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.metrics.MetricServiceType
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.metrics.MetricServiceType
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
 import kotlin.system.exitProcess
 
 fun showPrivacyPopWindow(context: Context, activity: Activity) {
@@ -49,7 +49,7 @@ fun showPrivacyPopWindow(context: Context, activity: Activity) {
         Spanned.SPAN_INCLUSIVE_INCLUSIVE,
     )
 
-    // Users can only use fenix after they agree with the privacy notice
+    // Users can only use netgpu_browser after they agree with the privacy notice
     val builder = AlertDialog.Builder(activity)
         .setPositiveButton(
             context.getString(R.string.privacy_notice_positive_button),

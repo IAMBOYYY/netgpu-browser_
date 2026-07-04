@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import io.mockk.every
 import io.mockk.spyk
@@ -21,9 +21,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
 import java.util.Calendar
 
 @RunWith(FenixRobolectricTestRunner::class)

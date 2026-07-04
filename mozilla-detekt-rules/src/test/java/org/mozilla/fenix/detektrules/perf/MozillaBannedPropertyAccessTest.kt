@@ -4,7 +4,7 @@
 
 @file:Suppress("Deprecation")
 
-package org.mozilla.fenix.detektrules.perf
+package com.netgpu.browser.detektrules.perf
 
 import io.gitlab.arturbosch.detekt.api.Config
 import io.gitlab.arturbosch.detekt.test.lint

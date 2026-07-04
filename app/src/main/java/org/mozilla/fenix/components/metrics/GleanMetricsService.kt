@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import mozilla.components.service.glean.Glean
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.ext.components
 
 private class EventWrapper<T : Enum<T>>(
     private val recorder: ((Map<T, String>?) -> Unit),
@@ -70,7 +70,7 @@ class GleanMetricsService(
 
     override fun start() {
         logger.debug("Enabling Glean.")
-        // Initialization of Glean already happened in FenixApplication.
+        // Initialization of Glean already happened in NetGpuBrowserApplication.
         Glean.setUploadEnabled(true)
 
         if (initialized) return

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.crashes
+package com.netgpu.browser.crashes
 
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -16,10 +16,10 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.crashes.CrashContentView.Companion.TAP_INCREASE_DP
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.crashes.CrashContentView.Companion.TAP_INCREASE_DP
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class CrashContentViewTest {
@@ -53,7 +53,7 @@ class CrashContentViewTest {
         view.controller = controller
         assertFalse(view.isBindingInitialized)
 
-        mockkStatic("org.mozilla.fenix.ext.ViewKt") {
+        mockkStatic("com.netgpu.browser.ext.ViewKt") {
             view.inflateViewIfNecessary()
 
             assertTrue(view.isBindingInitialized)

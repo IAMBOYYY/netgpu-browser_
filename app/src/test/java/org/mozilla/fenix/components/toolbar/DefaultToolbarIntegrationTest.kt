@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import io.mockk.every
@@ -16,8 +16,8 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class DefaultToolbarIntegrationTest {
@@ -25,7 +25,7 @@ class DefaultToolbarIntegrationTest {
 
     @Before
     fun setup() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
         every { any<Context>().components } returns mockk {
             every { core } returns mockk {
                 every { store } returns BrowserStore()
@@ -47,7 +47,7 @@ class DefaultToolbarIntegrationTest {
 
     @After
     fun teardown() {
-        unmockkStatic("org.mozilla.fenix.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.ext.ContextKt")
     }
 
     @Test

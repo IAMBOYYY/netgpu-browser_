@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.recentlyclosed
+package com.netgpu.browser.library.recentlyclosed
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import mozilla.components.browser.state.state.recover.TabState
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.selection.SelectionHolder
 
 class RecentlyClosedAdapter(
     private val interactor: RecentlyClosedFragmentInteractor,

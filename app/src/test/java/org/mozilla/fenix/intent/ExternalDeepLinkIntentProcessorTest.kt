@@ -1,12 +1,12 @@
-package org.mozilla.fenix.intent
+package com.netgpu.browser.intent
 
 import android.content.Intent
 import android.net.Uri
 import junit.framework.TestCase
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class ExternalDeepLinkIntentProcessorTest : TestCase() {

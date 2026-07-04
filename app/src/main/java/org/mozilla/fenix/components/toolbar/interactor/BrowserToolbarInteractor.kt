@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar.interactor
+package com.netgpu.browser.components.toolbar.interactor
 
 import mozilla.components.ui.tabcounter.TabCounterMenu
-import org.mozilla.fenix.components.toolbar.BrowserToolbarController
-import org.mozilla.fenix.components.toolbar.BrowserToolbarMenuController
-import org.mozilla.fenix.components.toolbar.ToolbarMenu
+import com.netgpu.browser.components.toolbar.BrowserToolbarController
+import com.netgpu.browser.components.toolbar.BrowserToolbarMenuController
+import com.netgpu.browser.components.toolbar.ToolbarMenu
 
 /**
  * Interface for the browser toolbar interactor. This interface is implemented by objects that

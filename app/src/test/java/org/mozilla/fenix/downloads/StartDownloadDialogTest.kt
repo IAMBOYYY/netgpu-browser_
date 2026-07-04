@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import android.app.Activity
 import android.content.Context
@@ -28,11 +28,11 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.StartDownloadDialogLayoutBinding
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.StartDownloadDialogLayoutBinding
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 import org.robolectric.Robolectric
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -61,7 +61,7 @@ class StartDownloadDialogTest {
         }
         val dialog = TestDownloadDialog(activity)
 
-        mockkStatic("mozilla.components.support.ktx.android.view.WindowKt", "org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("mozilla.components.support.ktx.android.view.WindowKt", "com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk(relaxed = true)
             val fluentDialog = dialog.show(dialogContainer)
 
@@ -107,7 +107,7 @@ class StartDownloadDialogTest {
             it.layoutParams = CoordinatorLayout.LayoutParams(0, 0)
         }
         val dialog = TestDownloadDialog(activity)
-        mockkStatic("mozilla.components.support.ktx.android.view.WindowKt", "org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("mozilla.components.support.ktx.android.view.WindowKt", "com.netgpu.browser.ext.ContextKt") {
             every { any<Context>().settings() } returns mockk(relaxed = true)
             dialog.show(dialogContainer)
             dialog.binding = StartDownloadDialogLayoutBinding
@@ -181,7 +181,7 @@ class StartDownloadDialogTest {
             it.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
         }
 
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             val dialog = TestDownloadDialog(activity)
 
             val settings: Settings = mockk {
@@ -211,7 +211,7 @@ class StartDownloadDialogTest {
             dialogParent.addView(it)
             it.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
         }
-        mockkStatic("org.mozilla.fenix.ext.ContextKt") {
+        mockkStatic("com.netgpu.browser.ext.ContextKt") {
             val settings: Settings = mockk {
                 every { accessibilityServicesEnabled } returns true
             }

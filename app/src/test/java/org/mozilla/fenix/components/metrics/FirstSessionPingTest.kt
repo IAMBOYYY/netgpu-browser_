@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import io.mockk.Runs
@@ -13,8 +13,8 @@ import io.mockk.mockkStatic
 import io.mockk.spyk
 import io.mockk.verify
 import org.junit.Test
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.Settings
 
 internal class FirstSessionPingTest {
 
@@ -22,7 +22,7 @@ internal class FirstSessionPingTest {
     fun `checkAndSend() triggers the ping if it wasn't marked as triggered`() {
         val mockedContext: Context = mockk(relaxed = true)
         val mockedSettings: Settings = mockk(relaxed = true)
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
         every { mockedContext.settings() } returns mockedSettings
         val mockAp = spyk(FirstSessionPing(mockedContext), recordPrivateCalls = true)
         every { mockAp.checkMetricsNotEmpty() } returns true

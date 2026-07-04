@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.view.KeyEvent
 import android.view.KeyEvent.ACTION_DOWN
@@ -28,14 +28,14 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.platform.app.InstrumentationRegistry
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.Matcher
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.assertIsEnabled
-import org.mozilla.fenix.helpers.isEnabled
-import org.mozilla.fenix.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.DECIMAL_CONVERSION
-import org.mozilla.fenix.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.MIN_VALUE
-import org.mozilla.fenix.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.STEP_SIZE
-import org.mozilla.fenix.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.TEXT_SIZE
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.assertIsEnabled
+import com.netgpu.browser.helpers.isEnabled
+import com.netgpu.browser.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.DECIMAL_CONVERSION
+import com.netgpu.browser.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.MIN_VALUE
+import com.netgpu.browser.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.STEP_SIZE
+import com.netgpu.browser.ui.robots.SettingsSubMenuAccessibilityRobot.Companion.TEXT_SIZE
 import kotlin.math.roundToInt
 
 /**
@@ -104,23 +104,23 @@ private fun assertFontSize() {
 }
 
 private fun assertSliderBar() {
-    onView(withId(org.mozilla.fenix.R.id.sampleText))
+    onView(withId(com.netgpu.browser.R.id.sampleText))
         .check(matches(withText("This is sample text. It is here to show how text will appear when you increase or decrease the size with this setting.")))
 
-    onView(withId(org.mozilla.fenix.R.id.seekbar_value))
+    onView(withId(com.netgpu.browser.R.id.seekbar_value))
         .check(matches(withText("100%")))
 
-    onView(withId(org.mozilla.fenix.R.id.seekbar))
+    onView(withId(com.netgpu.browser.R.id.seekbar))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)))
 }
 
 private fun adjustTextSizeSlider(seekBarPercentage: Int) {
-    onView(withId(org.mozilla.fenix.R.id.seekbar))
+    onView(withId(com.netgpu.browser.R.id.seekbar))
         .perform(SeekBarChangeProgressViewAction(seekBarPercentage))
 }
 
 private fun assertTextSizePercentage(textSize: Int) {
-    onView(withId(org.mozilla.fenix.R.id.sampleText))
+    onView(withId(com.netgpu.browser.R.id.sampleText))
         .check(textSizePercentageEquals(textSize))
 }
 
@@ -131,11 +131,11 @@ private fun assertMenuItemsAreDisabled() {
 
     onView(withText(strFont)).assertIsEnabled(false)
 
-    onView(withId(org.mozilla.fenix.R.id.sampleText)).assertIsEnabled(false)
+    onView(withId(com.netgpu.browser.R.id.sampleText)).assertIsEnabled(false)
 
-    onView(withId(org.mozilla.fenix.R.id.seekbar_value)).assertIsEnabled(false)
+    onView(withId(com.netgpu.browser.R.id.seekbar_value)).assertIsEnabled(false)
 
-    onView(withId(org.mozilla.fenix.R.id.seekbar)).assertIsEnabled(false)
+    onView(withId(com.netgpu.browser.R.id.seekbar)).assertIsEnabled(false)
 }
 
 private fun goBackButton() =

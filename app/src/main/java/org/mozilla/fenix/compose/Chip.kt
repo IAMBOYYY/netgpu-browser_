@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -23,8 +23,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Default layout for a clickable chip.
@@ -42,8 +42,8 @@ private fun Chip(
     text: String,
     modifier: Modifier = Modifier,
     isSquare: Boolean = false,
-    backgroundColor: Color = FirefoxTheme.colors.actionPrimary,
-    textColor: Color = FirefoxTheme.colors.textActionPrimary,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.actionPrimary,
+    textColor: Color = NetGpuBrowserTheme.colors.textActionPrimary,
     onClick: () -> Unit,
 ) {
     androidx.compose.material.Chip(
@@ -57,7 +57,7 @@ private fun Chip(
         Text(
             text = text,
             color = textColor,
-            style = FirefoxTheme.typography.body2,
+            style = NetGpuBrowserTheme.typography.body2,
         )
     }
 }
@@ -117,10 +117,10 @@ data class SelectableChipColors(
          */
         @Composable
         fun buildColors(
-            selectedBackgroundColor: Color = FirefoxTheme.colors.actionPrimary,
-            unselectedBackgroundColor: Color = FirefoxTheme.colors.actionTertiary,
-            selectedTextColor: Color = FirefoxTheme.colors.textActionPrimary,
-            unselectedTextColor: Color = FirefoxTheme.colors.textActionTertiary,
+            selectedBackgroundColor: Color = NetGpuBrowserTheme.colors.actionPrimary,
+            unselectedBackgroundColor: Color = NetGpuBrowserTheme.colors.actionTertiary,
+            selectedTextColor: Color = NetGpuBrowserTheme.colors.textActionPrimary,
+            unselectedTextColor: Color = NetGpuBrowserTheme.colors.textActionTertiary,
         ) = SelectableChipColors(
             selectedBackgroundColor = selectedBackgroundColor,
             unselectedBackgroundColor = unselectedBackgroundColor,
@@ -133,10 +133,10 @@ data class SelectableChipColors(
 @Composable
 @LightDarkPreview
 private fun ChipPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column(
             modifier = Modifier
-                .background(FirefoxTheme.colors.layer1),
+                .background(NetGpuBrowserTheme.colors.layer1),
             verticalArrangement = Arrangement.SpaceEvenly,
         ) {
             Chip(
@@ -157,11 +157,11 @@ private fun ChipPreview() {
 @Preview(name = "Selectable Chip", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview(name = "Selectable Chip", uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun SelectableChipPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(FirefoxTheme.colors.layer1),
+                .background(NetGpuBrowserTheme.colors.layer1),
             horizontalArrangement = Arrangement.SpaceEvenly,
         ) {
             SelectableChip(text = "ChirpOne", isSelected = false) {}
@@ -174,11 +174,11 @@ private fun SelectableChipPreview() {
 @Preview(name = "Custom Colors", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview(name = "Custom Colors", uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun SelectableChipWithCustomColorsPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(FirefoxTheme.colors.layer1),
+                .background(NetGpuBrowserTheme.colors.layer1),
             horizontalArrangement = Arrangement.SpaceEvenly,
         ) {
             SelectableChip(

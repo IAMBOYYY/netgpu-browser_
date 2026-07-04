@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import androidx.navigation.NavController
 import mozilla.components.browser.state.action.ContentAction
@@ -16,20 +16,20 @@ import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.ktx.kotlin.isUrl
 import mozilla.components.ui.tabcounter.TabCounterMenu
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.ReaderMode
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserAnimator
-import org.mozilla.fenix.browser.BrowserAnimator.Companion.getToolbarNavOptions
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.readermode.ReaderModeController
-import org.mozilla.fenix.components.toolbar.interactor.BrowserToolbarInteractor
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.home.HomeScreenViewModel
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.ReaderMode
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserAnimator
+import com.netgpu.browser.browser.BrowserAnimator.Companion.getToolbarNavOptions
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.readermode.ReaderModeController
+import com.netgpu.browser.components.toolbar.interactor.BrowserToolbarInteractor
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.home.HomeScreenViewModel
 
 /**
  * An interface that handles the view manipulation of the BrowserToolbar, triggered by the Interactor

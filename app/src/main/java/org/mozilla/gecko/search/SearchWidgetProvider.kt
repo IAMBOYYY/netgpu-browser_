@@ -21,14 +21,14 @@ import androidx.annotation.Dimension.Companion.DP
 import androidx.annotation.VisibleForTesting
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.toBitmap
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
-import org.mozilla.fenix.utils.IntentUtils
-import org.mozilla.fenix.widget.VoiceSearchActivity
-import org.mozilla.fenix.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.home.intent.StartSearchIntentProcessor
+import com.netgpu.browser.utils.IntentUtils
+import com.netgpu.browser.widget.VoiceSearchActivity
+import com.netgpu.browser.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
 
 class SearchWidgetProvider : AppWidgetProvider() {
     // Implementation note:

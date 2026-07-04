@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.studies
+package com.netgpu.browser.settings.studies
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.databinding.SettingsStudiesBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.databinding.SettingsStudiesBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
 
 /**
  * Lets the users control studies settings.

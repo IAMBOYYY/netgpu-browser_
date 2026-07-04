@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.service.pocket.PocketStory
 import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
 import mozilla.components.service.pocket.ext.getCurrentFlightImpressions
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.GleanMetrics.Pocket
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.GleanMetrics.Pocket
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
 
 /**
  * Contract for how all user interactions with the Pocket stories feature are to be handled.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import android.view.View.VISIBLE
@@ -18,9 +18,9 @@ import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.infobanner.InfoBanner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.infobanner.InfoBanner
+import com.netgpu.browser.utils.Settings
 import kotlin.math.max
 
 @OptIn(ExperimentalCoroutinesApi::class)

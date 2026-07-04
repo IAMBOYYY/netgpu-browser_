@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks.controller
+package com.netgpu.browser.home.recentbookmarks.controller
 
 import androidx.navigation.NavController
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags.Companion.ALLOW_JAVASCRIPT_URL
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.RecentBookmarks
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentbookmarks.interactor.RecentBookmarksInteractor
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.RecentBookmarks
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentbookmarks.interactor.RecentBookmarksInteractor
 
 /**
  * An interface that handles the view manipulation of the recently saved bookmarks on the

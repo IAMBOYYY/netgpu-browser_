@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import android.content.pm.PackageManager
 import mozilla.components.support.utils.ext.getPackageInfoCompat
-import org.mozilla.fenix.utils.BrowsersCache
+import com.netgpu.browser.utils.BrowsersCache
 
 object MozillaProductDetector {
     enum class MozillaProducts(val productName: String) {
@@ -19,8 +19,8 @@ object MozillaProductDetector {
         FIREFOX_LITE("org.mozilla.rocket"),
         REFERENCE_BROWSER("org.mozilla.reference.browser"),
         REFERENCE_BROWSER_DEBUG("org.mozilla.reference.browser.debug"),
-        FENIX("org.mozilla.fenix"),
-        FENIX_NIGHTLY("org.mozilla.fenix.nightly"),
+        FENIX("com.netgpu.browser"),
+        FENIX_NIGHTLY("com.netgpu.browser.nightly"),
         FOCUS("org.mozilla.focus"),
         KLAR("org.mozilla.klar"),
 

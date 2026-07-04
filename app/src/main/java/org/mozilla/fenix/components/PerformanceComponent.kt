@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import mozilla.components.support.utils.RunWhenReadyQueue
-import org.mozilla.fenix.perf.ColdStartupDurationTelemetry
-import org.mozilla.fenix.perf.VisualCompletenessQueue
-import org.mozilla.fenix.perf.lazyMonitored
+import com.netgpu.browser.perf.ColdStartupDurationTelemetry
+import com.netgpu.browser.perf.VisualCompletenessQueue
+import com.netgpu.browser.perf.lazyMonitored
 
 /**
  * Component group for all functionality related to performance.

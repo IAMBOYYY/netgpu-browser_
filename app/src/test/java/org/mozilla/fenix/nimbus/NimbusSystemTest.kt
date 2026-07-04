@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus
+package com.netgpu.browser.nimbus
 
 import android.content.Context
 import io.mockk.every
@@ -16,9 +16,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.mozilla.experiments.nimbus.NimbusInterface
-import org.mozilla.fenix.experiments.maybeFetchExperiments
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.experiments.maybeFetchExperiments
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.Settings
 
 class NimbusSystemTest {
 

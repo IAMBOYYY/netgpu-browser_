@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.search
+package com.netgpu.browser.settings.search
 
 import android.os.Bundle
 import android.view.Menu
@@ -21,15 +21,15 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.components.browser.icons.IconRequest
 import mozilla.components.browser.state.search.SearchEngine
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.CustomSearchEngineBinding
-import org.mozilla.fenix.databinding.FragmentAddSearchEngineBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.CustomSearchEngineBinding
+import com.netgpu.browser.databinding.FragmentAddSearchEngineBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SupportUtils
 
 /**
  * Fragment to enter a custom search engine name and URL template.
@@ -142,9 +142,9 @@ class EditCustomSearchEngineFragment : Fragment(R.layout.fragment_add_search_eng
                         .getString(R.string.search_edit_custom_engine_success_message, name)
 
                     view?.also {
-                        FenixSnackbar.make(
+                        NetGpuBrowserSnackbar.make(
                             view = it,
-                            duration = FenixSnackbar.LENGTH_SHORT,
+                            duration = NetGpuBrowserSnackbar.LENGTH_SHORT,
                             isDisplayedWithBrowserToolbar = false,
                         )
                             .setText(successMessage)

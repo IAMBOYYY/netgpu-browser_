@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus.view
+package com.netgpu.browser.nimbus.view
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.service.nimbus.ui.NimbusBranchAdapter
-import org.mozilla.fenix.nimbus.NimbusBranchesState
-import org.mozilla.fenix.nimbus.controller.NimbusBranchesController
+import com.netgpu.browser.nimbus.NimbusBranchesState
+import com.netgpu.browser.nimbus.controller.NimbusBranchesController
 
 /**
  * View used for managing a Nimbus experiment's branches.

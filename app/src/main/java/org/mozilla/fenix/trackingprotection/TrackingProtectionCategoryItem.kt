@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.withStyledAttributes
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.TrackingProtectionCategoryBinding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.TrackingProtectionCategoryBinding
 
 class TrackingProtectionCategoryItem @JvmOverloads constructor(
     context: Context,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,7 +15,7 @@ import androidx.core.graphics.BlendModeColorFilterCompat.createBlendModeColorFil
 import androidx.core.graphics.BlendModeCompat.SRC_IN
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.android.view.putCompoundDrawablesRelativeWithIntrinsicBounds
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * An [AppCompatEditText] that shows a clear button to the user.

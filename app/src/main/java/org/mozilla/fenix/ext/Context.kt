@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.app.Activity
 import android.content.Context
@@ -16,18 +16,18 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityManager
 import androidx.annotation.StringRes
 import mozilla.components.support.locale.LocaleManager
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.metrics.MetricController
-import org.mozilla.fenix.settings.advanced.getSelectedLocale
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.metrics.MetricController
+import com.netgpu.browser.settings.advanced.getSelectedLocale
 import java.lang.String.format
 import java.util.Locale
 
 /**
  * Get the BrowserApplication object from a context.
  */
-val Context.application: FenixApplication
-    get() = applicationContext as FenixApplication
+val Context.application: NetGpuBrowserApplication
+    get() = applicationContext as NetGpuBrowserApplication
 
 /**
  * Get the requireComponents of this application.

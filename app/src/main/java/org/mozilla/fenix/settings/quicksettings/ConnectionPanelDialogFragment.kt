@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,10 +16,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.plus
 import mozilla.components.browser.state.selector.findTabOrCustomTab
 import mozilla.components.browser.state.state.SessionState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.android.FenixDialogFragment
-import org.mozilla.fenix.databinding.FragmentConnectionDetailsDialogBinding
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.R
+import com.netgpu.browser.android.FenixDialogFragment
+import com.netgpu.browser.databinding.FragmentConnectionDetailsDialogBinding
+import com.netgpu.browser.ext.requireComponents
 
 class ConnectionPanelDialogFragment : FenixDialogFragment() {
     @VisibleForTesting

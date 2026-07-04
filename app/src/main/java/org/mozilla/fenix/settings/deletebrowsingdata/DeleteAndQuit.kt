@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import android.app.Activity
 import com.google.android.material.snackbar.Snackbar
@@ -11,15 +11,15 @@ import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
 
 /**
  * Deletes selected browsing data and finishes the activity.
  */
-fun deleteAndQuit(activity: Activity, coroutineScope: CoroutineScope, snackbar: FenixSnackbar?) {
+fun deleteAndQuit(activity: Activity, coroutineScope: CoroutineScope, snackbar: NetGpuBrowserSnackbar?) {
     coroutineScope.launch {
         val settings = activity.settings()
         val controller = DefaultDeleteBrowsingDataController(

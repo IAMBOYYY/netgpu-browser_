@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.helpers.ETPPolicy.CUSTOM
-import org.mozilla.fenix.helpers.ETPPolicy.STANDARD
-import org.mozilla.fenix.helpers.ETPPolicy.STRICT
-import org.mozilla.fenix.helpers.FeatureSettingsHelper.Companion.settings
-import org.mozilla.fenix.helpers.TestHelper.appContext
-import org.mozilla.fenix.onboarding.FenixOnboarding
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.helpers.ETPPolicy.CUSTOM
+import com.netgpu.browser.helpers.ETPPolicy.STANDARD
+import com.netgpu.browser.helpers.ETPPolicy.STRICT
+import com.netgpu.browser.helpers.FeatureSettingsHelper.Companion.settings
+import com.netgpu.browser.helpers.TestHelper.appContext
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
+import com.netgpu.browser.utils.Settings
 
 /**
  * Helper for querying the status and modifying various features and settings in the application.
@@ -44,11 +44,11 @@ class FeatureSettingsHelperDelegate : FeatureSettingsHelper {
 
     override var isHomeOnboardingDialogEnabled: Boolean
         get() = updatedFeatureFlags.isHomeOnboardingDialogEnabled &&
-            FenixOnboarding(appContext).userHasBeenOnboarded()
+            NetGpuBrowserOnboarding(appContext).userHasBeenOnboarded()
         set(value) {
             updatedFeatureFlags.isHomeOnboardingDialogEnabled = value
             updatedFeatureFlags.homeOnboardingDialogVersion = when (value) {
-                true -> FenixOnboarding.CURRENT_ONBOARDING_VERSION
+                true -> NetGpuBrowserOnboarding.CURRENT_ONBOARDING_VERSION
                 false -> 0
             }
         }
@@ -151,14 +151,14 @@ private fun setETPPolicy(policy: ETPPolicy) {
 }
 
 private fun getHomeOnboardingVersion(): Int {
-    return FenixOnboarding(appContext)
+    return NetGpuBrowserOnboarding(appContext)
         .preferences
-        .getInt(FenixOnboarding.LAST_VERSION_ONBOARDING_KEY, 0)
+        .getInt(NetGpuBrowserOnboarding.LAST_VERSION_ONBOARDING_KEY, 0)
 }
 
 private fun setHomeOnboardingVersion(version: Int) {
-    FenixOnboarding(appContext)
+    NetGpuBrowserOnboarding(appContext)
         .preferences.edit()
-        .putInt(FenixOnboarding.LAST_VERSION_ONBOARDING_KEY, version)
+        .putInt(NetGpuBrowserOnboarding.LAST_VERSION_ONBOARDING_KEY, version)
         .commit()
 }

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.app.Dialog
 import android.content.Context
@@ -26,13 +26,13 @@ import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.android.util.dpToPx
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.infobanner.InfoBanner
-import org.mozilla.fenix.databinding.ComponentTabstray2Binding
-import org.mozilla.fenix.databinding.OnboardingInactiveTabsCfrBinding
-import org.mozilla.fenix.ext.potentialInactiveTabs
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.infobanner.InfoBanner
+import com.netgpu.browser.databinding.ComponentTabstray2Binding
+import com.netgpu.browser.databinding.OnboardingInactiveTabsCfrBinding
+import com.netgpu.browser.ext.potentialInactiveTabs
+import com.netgpu.browser.utils.Settings
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class TabsTrayInactiveTabsOnboardingBinding(

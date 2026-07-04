@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -12,8 +12,8 @@ import mozilla.components.concept.fetch.MutableHeaders
 import mozilla.components.concept.fetch.Request
 import mozilla.components.concept.fetch.Response
 import org.json.JSONObject
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -84,7 +84,7 @@ private val networking_threads = arrayOf(
  * Profiler settings enum for grouping features and settings together
  */
 enum class ProfilerSettings(val threads: Array<String>, val features: Array<String>) {
-    Firefox(firefox_threads, firefox_features),
+    NETGPU BROWSER(firefox_threads, firefox_features),
     Graphics(graphics_threads, graphics_features),
     Media(media_threads, media_features),
     Networking(networking_threads, networking_features),
@@ -152,7 +152,7 @@ object ProfilerUtils {
     }
 
     /**
-     * This will either save the profile locally or send it as a URL to the Firefox profiler server
+     * This will either save the profile locally or send it as a URL to the NETGPU BROWSER profiler server
      *
      * @param context Activity context to get access to the profiler API through components.core...
      * @param profile Data returned from GeckoView as a GZIP ByteArray

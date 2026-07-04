@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -10,11 +10,11 @@ import androidx.core.view.isGone
 import androidx.core.view.isInvisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.CollectionTabListRowBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.CollectionTabListRowBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.utils.view.ViewHolder
 
 class CollectionCreationTabListAdapter(
     private val interactor: CollectionCreationInteractor,

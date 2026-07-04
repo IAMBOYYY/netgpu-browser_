@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.content.Context
 import android.view.ViewGroup
@@ -20,11 +20,11 @@ import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.infobanner.DynamicInfoBanner
-import org.mozilla.fenix.browser.infobanner.InfoBanner
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.infobanner.DynamicInfoBanner
+import com.netgpu.browser.browser.infobanner.InfoBanner
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.utils.Settings
 
 /**
  * Displays an [InfoBanner] when a user visits a website that can be opened in an installed native app.

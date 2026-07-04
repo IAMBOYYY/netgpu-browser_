@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata
+package com.netgpu.browser.library.historymetadata
 
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.PendingDeletionHistory
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.PendingDeletionHistory
 
 /**
  * The [Store] for holding the [HistoryMetadataGroupFragmentState] and applying
@@ -31,7 +31,7 @@ sealed class HistoryMetadataGroupFragmentAction : Action {
     data class Deselect(val item: History.Metadata) : HistoryMetadataGroupFragmentAction()
 
     /**
-     * Updates the set of items marked for removal from the [org.mozilla.fenix.components.AppStore]
+     * Updates the set of items marked for removal from the [com.netgpu.browser.components.AppStore]
      * to the [HistoryMetadataGroupFragmentStore], to be hidden from the UI.
      */
     data class UpdatePendingDeletionItems(val pendingDeletionItems: Set<PendingDeletionHistory>) :
@@ -41,7 +41,7 @@ sealed class HistoryMetadataGroupFragmentAction : Action {
     object DeleteAll : HistoryMetadataGroupFragmentAction()
 
     /**
-     * Updates the empty state of [org.mozilla.fenix.library.historymetadata.view.HistoryMetadataGroupView].
+     * Updates the empty state of [com.netgpu.browser.library.historymetadata.view.HistoryMetadataGroupView].
      */
     data class ChangeEmptyState(val isEmpty: Boolean) : HistoryMetadataGroupFragmentAction()
 }

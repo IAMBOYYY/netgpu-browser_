@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.widget
+package com.netgpu.browser.widget
 
 import android.app.Activity.RESULT_CANCELED
 import android.app.Activity.RESULT_OK
@@ -26,14 +26,14 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.HomeActivity.Companion.OPEN_TO_BROWSER_AND_LOAD
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
-import org.mozilla.fenix.widget.VoiceSearchActivity.Companion.PREVIOUS_INTENT
-import org.mozilla.fenix.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.HomeActivity.Companion.OPEN_TO_BROWSER_AND_LOAD
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.widget.VoiceSearchActivity.Companion.PREVIOUS_INTENT
+import com.netgpu.browser.widget.VoiceSearchActivity.Companion.SPEECH_PROCESSING
 import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 import org.robolectric.android.controller.ActivityController
@@ -57,7 +57,7 @@ class VoiceSearchActivityTest {
     }
 
     private fun allowVoiceIntentToResolveActivity() {
-        val context = ApplicationProvider.getApplicationContext<FenixApplication>()
+        val context = ApplicationProvider.getApplicationContext<NetGpuBrowserApplication>()
         val shadowPackageManager = shadowOf(context.packageManager)
         val component = ComponentName("com.test", "Test")
         shadowPackageManager.addActivityIfNotPresent(component)

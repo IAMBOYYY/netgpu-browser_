@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import io.mockk.mockk
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Components
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Components
 
 /**
  * An override of our application for use in Robolectric-based unit tests. We're forced to override
  * because our standard application fails to initialize in Robolectric with exceptions like:
  * "Crash handler service must run in a separate process".
  */
-class FenixRobolectricTestApplication : FenixApplication() {
+class FenixRobolectricTestApplication : NetGpuBrowserApplication() {
 
     override fun onCreate() {
         super.onCreate()
@@ -38,8 +38,8 @@ class FenixRobolectricTestApplication : FenixApplication() {
         // theme but will use the platform's default team so we set our theme here. We change it here
         // rather than the production application because, upon testing, the production code appears
         // appears to be working correctly. Context here:
-        // https://github.com/mozilla-mobile/fenix/pull/15646#issuecomment-707345798
-        // https://github.com/mozilla-mobile/fenix/pull/15646#issuecomment-709411141
+        // https://github.com/mozilla-mobile/netgpu_browser/pull/15646#issuecomment-707345798
+        // https://github.com/mozilla-mobile/netgpu_browser/pull/15646#issuecomment-709411141
         setTheme(R.style.NormalTheme)
     }
 }

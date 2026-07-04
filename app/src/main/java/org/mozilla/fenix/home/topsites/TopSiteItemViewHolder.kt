@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.topsites
+package com.netgpu.browser.home.topsites
 
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
@@ -27,20 +27,20 @@ import mozilla.components.feature.top.sites.TopSite
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.GleanMetrics.TopSites
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.TopSiteItemBinding
-import org.mozilla.fenix.ext.bitmapForUrl
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.isSystemInDarkTheme
-import org.mozilla.fenix.ext.loadIntoView
-import org.mozilla.fenix.ext.name
-import org.mozilla.fenix.home.sessioncontrol.TopSiteInteractor
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.GleanMetrics.TopSites
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.TopSiteItemBinding
+import com.netgpu.browser.ext.bitmapForUrl
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.isSystemInDarkTheme
+import com.netgpu.browser.ext.loadIntoView
+import com.netgpu.browser.ext.name
+import com.netgpu.browser.home.sessioncontrol.TopSiteInteractor
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.utils.view.ViewHolder
 
 @SuppressLint("ClickableViewAccessibility")
 class TopSiteItemViewHolder(
@@ -69,9 +69,9 @@ class TopSiteItemViewHolder(
                     )
                     is TopSiteItemMenu.Item.RemoveTopSite -> {
                         interactor.onRemoveTopSiteClicked(topSite)
-                        FenixSnackbar.make(
+                        NetGpuBrowserSnackbar.make(
                             view = it,
-                            duration = FenixSnackbar.LENGTH_LONG,
+                            duration = NetGpuBrowserSnackbar.LENGTH_LONG,
                             isDisplayedWithBrowserToolbar = false,
                         )
                             .setText(it.context.getString(R.string.snackbar_top_site_removed))

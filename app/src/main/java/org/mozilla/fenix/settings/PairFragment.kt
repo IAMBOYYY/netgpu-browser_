@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.pm.PackageManager
 import android.os.Build
@@ -17,17 +17,17 @@ import androidx.navigation.fragment.findNavController
 import mozilla.components.feature.qr.QrFeature
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
 
 class PairFragment : Fragment(R.layout.fragment_pair), UserInteractionHandler {
 
     private val qrFeature = ViewBoundFeatureWrapper<QrFeature>()
 
     @Suppress("DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -40,7 +40,7 @@ class PairFragment : Fragment(R.layout.fragment_pair), UserInteractionHandler {
                 },
                 onScanResult = { pairingUrl ->
                     // By the time we get a scan result, we may not be attached to the context anymore.
-                    // See https://github.com/mozilla-mobile/fenix/issues/15812
+                    // See https://github.com/mozilla-mobile/netgpu_browser/issues/15812
                     if (context == null) {
                         findNavController().popBackStack(
                             R.id.turnOnSyncFragment,
@@ -71,7 +71,7 @@ class PairFragment : Fragment(R.layout.fragment_pair), UserInteractionHandler {
                 },
                 scanMessage =
                 if (requireContext().settings().allowDomesticChinaFxaServer &&
-                    org.mozilla.fenix.Config.channel.isMozillaOnline
+                    com.netgpu.browser.Config.channel.isMozillaOnline
                 ) {
                     R.string.pair_instructions_2_cn
                 } else {

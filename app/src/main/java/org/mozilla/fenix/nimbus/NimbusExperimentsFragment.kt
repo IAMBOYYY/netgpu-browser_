@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus
+package com.netgpu.browser.nimbus
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,11 @@ import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.nimbus.view.NimbusExperiments
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.nimbus.view.NimbusExperiments
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Fragment use for managing Nimbus experiments.
@@ -33,7 +33,7 @@ class NimbusExperimentsFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View = ComposeView(requireContext()).apply {
         setContent {
-            FirefoxTheme {
+            NetGpuBrowserTheme {
                 val experiments =
                     requireContext().components.analytics.experiments.getAvailableExperiments()
 

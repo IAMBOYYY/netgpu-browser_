@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.widget.RadioButton
 import androidx.annotation.StringRes
@@ -12,7 +12,7 @@ import androidx.preference.PreferenceFragmentCompat
 import mozilla.components.concept.engine.permission.SitePermissions
 import mozilla.components.support.ktx.android.content.res.resolveAttribute
 import mozilla.components.support.ktx.android.view.putCompoundDrawablesRelative
-import org.mozilla.fenix.ext.getPreferenceKey
+import com.netgpu.browser.ext.getPreferenceKey
 
 fun SitePermissions.toggle(featurePhone: PhoneFeature): SitePermissions {
     return update(featurePhone, get(featurePhone).toggle())
@@ -53,7 +53,7 @@ fun SitePermissions.update(field: PhoneFeature, value: SitePermissions.Status) =
 
 /**
  * In devices with Android 6, when we use android:button="@null" android:drawableStart doesn't work via xml
- * as a result we have to apply it programmatically. More info about this issue https://github.com/mozilla-mobile/fenix/issues/1414
+ * as a result we have to apply it programmatically. More info about this issue https://github.com/mozilla-mobile/netgpu_browser/issues/1414
  */
 fun RadioButton.setStartCheckedIndicator() {
     val attr = context.theme.resolveAttribute(android.R.attr.listChoiceIndicatorSingle)

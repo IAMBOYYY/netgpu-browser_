@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.fragment
+package com.netgpu.browser.settings.logins.fragment
 
 import android.app.KeyguardManager
 import android.content.Context
@@ -26,19 +26,19 @@ import mozilla.components.feature.autofill.preference.AutofillPreference
 import mozilla.components.service.fxa.SyncEngine
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
-import org.mozilla.fenix.GleanMetrics.Logins
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.registerForActivityResult
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SharedPreferenceUpdater
-import org.mozilla.fenix.settings.SyncPreferenceView
-import org.mozilla.fenix.settings.biometric.BiometricPromptFeature
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.GleanMetrics.Logins
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.registerForActivityResult
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SharedPreferenceUpdater
+import com.netgpu.browser.settings.SyncPreferenceView
+import com.netgpu.browser.settings.biometric.BiometricPromptFeature
+import com.netgpu.browser.settings.requirePreference
 
 @Suppress("TooManyFunctions")
 class SavedLoginsAuthFragment : PreferenceFragmentCompat() {
@@ -60,7 +60,7 @@ class SavedLoginsAuthFragment : PreferenceFragmentCompat() {
     /**
      * There is a bug where while the biometric prompt is showing, you were able to quickly navigate
      * so we are disabling the settings that navigate while authenticating.
-     * https://github.com/mozilla-mobile/fenix/issues/12312
+     * https://github.com/mozilla-mobile/netgpu_browser/issues/12312
      */
     private fun togglePrefsEnabledWhileAuthenticating(enabled: Boolean) {
         requirePreference<Preference>(R.string.pref_key_sync_logins).isEnabled = enabled
@@ -72,7 +72,7 @@ class SavedLoginsAuthFragment : PreferenceFragmentCompat() {
         runIfFragmentIsAttached {
             viewLifecycleOwner.lifecycleScope.launch(Main) {
                 // Workaround for likely biometric library bug
-                // https://github.com/mozilla-mobile/fenix/issues/8438
+                // https://github.com/mozilla-mobile/netgpu_browser/issues/8438
                 delay(SHORT_DELAY_MS)
                 navigateToSavedLoginsFragment()
             }

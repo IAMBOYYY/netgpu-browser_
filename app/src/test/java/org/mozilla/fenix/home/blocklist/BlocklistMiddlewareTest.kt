@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.blocklist
+package com.netgpu.browser.home.blocklist
 
 import io.mockk.every
 import io.mockk.mockk
@@ -15,15 +15,15 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class BlocklistMiddlewareTest {
@@ -88,7 +88,7 @@ class BlocklistMiddlewareTest {
     fun `GIVEN non-empty blocklist with specific pages WHEN action intercepted with matching host THEN unchanged by middleware`() {
         val updatedBookmark = RecentBookmark(url = "https://github.com/")
 
-        every { mockSettings.homescreenBlocklist } returns setOf("https://github.com/mozilla-mobile/fenix".stripAndHash())
+        every { mockSettings.homescreenBlocklist } returns setOf("https://github.com/mozilla-mobile/netgpu_browser".stripAndHash())
         val middleware = BlocklistMiddleware(blocklistHandler)
         val appStore = AppStore(
             AppState(),

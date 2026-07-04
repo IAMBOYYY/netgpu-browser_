@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.push
+package com.netgpu.browser.push
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,8 +17,8 @@ import mozilla.components.feature.push.AutoPushFeature
 import mozilla.components.feature.push.PushScope
 import mozilla.components.service.fxa.manager.FxaAccountManager
 import mozilla.components.service.fxa.manager.ext.withConstellation
-import org.mozilla.fenix.components.BackgroundServices
-import org.mozilla.fenix.components.Push
+import com.netgpu.browser.components.BackgroundServices
+import com.netgpu.browser.components.Push
 
 /**
  * A lazy initializer for FxaAccountManager if it isn't already initialized.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import io.mockk.every
 import io.mockk.mockk
@@ -23,14 +23,14 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.GleanMetrics.Pocket
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.GleanMetrics.Pocket
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class) // For gleanTestRule
 class DefaultPocketStoriesControllerTest {

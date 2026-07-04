@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Context
 import androidx.test.espresso.Espresso.onView
@@ -21,13 +21,13 @@ import androidx.test.uiautomator.Until
 import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.endsWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.hasCousin
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.hasCousin
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the Privacy Settings > logins and passwords sub menu

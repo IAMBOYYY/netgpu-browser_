@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.wallpaper
+package com.netgpu.browser.settings.wallpaper
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -49,10 +49,10 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ClickableSubstringLink
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ClickableSubstringLink
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
 
 /**
  * The screen for controlling settings around Wallpapers. When a new wallpaper is selected,
@@ -82,7 +82,7 @@ fun WallpaperSettings(
             .fillMaxWidth()
             .fillMaxHeight()
             .verticalScroll(rememberScrollState())
-            .background(color = FirefoxTheme.colors.layer1)
+            .background(color = NetGpuBrowserTheme.colors.layer1)
             .padding(
                 end = 12.dp,
                 start = 12.dp,
@@ -122,11 +122,11 @@ private fun WallpaperGroupHeading(
     // and descriptions so they could be localized.
     // In the future, we may want to either use the dynamic wallpaper properties with localized fallbacks
     // or invest in a method of localizing the remote strings themselves.
-    if (collection.name == Wallpaper.classicFirefoxCollectionName) {
+    if (collection.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
         Text(
             text = stringResource(R.string.wallpaper_classic_title, stringResource(R.string.firefox)),
-            color = FirefoxTheme.colors.textSecondary,
-            style = FirefoxTheme.typography.subtitle2,
+            color = NetGpuBrowserTheme.colors.textSecondary,
+            style = NetGpuBrowserTheme.typography.subtitle2,
         )
     } else {
         val label = stringResource(id = R.string.a11y_action_label_wallpaper_collection_learn_more)
@@ -147,8 +147,8 @@ private fun WallpaperGroupHeading(
         ) {
             Text(
                 text = stringResource(R.string.wallpaper_limited_edition_title),
-                color = FirefoxTheme.colors.textSecondary,
-                style = FirefoxTheme.typography.subtitle2,
+                color = NetGpuBrowserTheme.colors.textSecondary,
+                style = NetGpuBrowserTheme.typography.subtitle2,
             )
 
             Spacer(modifier = Modifier.height(2.dp))
@@ -157,8 +157,8 @@ private fun WallpaperGroupHeading(
                 val text = stringResource(R.string.wallpaper_limited_edition_description)
                 Text(
                     text = text,
-                    color = FirefoxTheme.colors.textSecondary,
-                    style = FirefoxTheme.typography.caption,
+                    color = NetGpuBrowserTheme.colors.textSecondary,
+                    style = NetGpuBrowserTheme.typography.caption,
                 )
             } else {
                 val link = stringResource(R.string.wallpaper_learn_more)
@@ -168,8 +168,8 @@ private fun WallpaperGroupHeading(
 
                 ClickableSubstringLink(
                     text = text,
-                    textColor = FirefoxTheme.colors.textSecondary,
-                    linkTextColor = FirefoxTheme.colors.textAccent,
+                    textColor = NetGpuBrowserTheme.colors.textSecondary,
+                    linkTextColor = NetGpuBrowserTheme.colors.textAccent,
                     linkTextDecoration = TextDecoration.Underline,
                     clickableStartIndex = linkStartIndex,
                     clickableEndIndex = linkEndIndex,
@@ -262,12 +262,12 @@ private fun WallpaperThumbnailItem(
     val thumbnailShape = RoundedCornerShape(8.dp)
     val border = if (isSelected) {
         Modifier.border(
-            BorderStroke(width = 3.dp, color = FirefoxTheme.colors.borderAccent),
+            BorderStroke(width = 3.dp, color = NetGpuBrowserTheme.colors.borderAccent),
             thumbnailShape,
         )
     } else if (wallpaper.name == Wallpaper.defaultName) {
         Modifier.border(
-            BorderStroke(width = 1.dp, color = FirefoxTheme.colors.borderPrimary),
+            BorderStroke(width = 1.dp, color = NetGpuBrowserTheme.colors.borderPrimary),
             thumbnailShape,
         )
     } else {
@@ -295,7 +295,7 @@ private fun WallpaperThumbnailItem(
     Surface(
         elevation = 4.dp,
         shape = thumbnailShape,
-        color = FirefoxTheme.colors.layer1,
+        color = NetGpuBrowserTheme.colors.layer1,
         modifier = Modifier
             .fillMaxWidth()
             .aspectRatio(aspectRatio)
@@ -319,7 +319,7 @@ private fun WallpaperThumbnailItem(
                     .size(24.dp),
             ) {
                 CircularProgressIndicator(
-                    color = FirefoxTheme.colors.borderAccent,
+                    color = NetGpuBrowserTheme.colors.borderAccent,
                 )
             }
         }
@@ -329,7 +329,7 @@ private fun WallpaperThumbnailItem(
 @Preview
 @Composable
 private fun WallpaperThumbnailsPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         WallpaperSettings(
             defaultWallpaper = Wallpaper.Default,
             loadWallpaperResource = { null },

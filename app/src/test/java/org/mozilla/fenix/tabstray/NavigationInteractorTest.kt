@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import androidx.navigation.NavController
@@ -34,13 +34,13 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.collections.CollectionsDialog
-import org.mozilla.fenix.collections.show
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.bookmarks.BookmarksUseCase
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.collections.CollectionsDialog
+import com.netgpu.browser.collections.show
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.bookmarks.BookmarksUseCase
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import mozilla.components.browser.state.state.createTab as createStateTab
 
 @RunWith(FenixRobolectricTestRunner::class) // for gleanTestRule
@@ -185,7 +185,7 @@ class NavigationInteractorTest {
 
     @Test
     fun `onSaveToCollections calls navigation on DefaultNavigationInteractor`() {
-        mockkStatic("org.mozilla.fenix.collections.CollectionsDialogKt")
+        mockkStatic("com.netgpu.browser.collections.CollectionsDialogKt")
 
         every { any<CollectionsDialog>().show(any()) } answers { }
         assertNull(TabsTray.saveToCollection.testGetValue())
@@ -194,7 +194,7 @@ class NavigationInteractorTest {
 
         assertNotNull(TabsTray.saveToCollection.testGetValue())
 
-        unmockkStatic("org.mozilla.fenix.collections.CollectionsDialogKt")
+        unmockkStatic("com.netgpu.browser.collections.CollectionsDialogKt")
     }
 
     @Test

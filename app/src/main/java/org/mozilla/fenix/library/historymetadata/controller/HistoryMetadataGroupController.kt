@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata.controller
+package com.netgpu.browser.library.historymetadata.controller
 
 import android.content.Context
 import androidx.navigation.NavController
@@ -15,17 +15,17 @@ import mozilla.components.browser.storage.sync.PlacesHistoryStorage
 import mozilla.components.concept.engine.prompt.ShareData
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.toPendingDeletionHistory
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragment.DeleteAllConfirmationDialogFragment
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentAction
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentDirections
-import org.mozilla.fenix.library.historymetadata.HistoryMetadataGroupFragmentStore
-import org.mozilla.fenix.GleanMetrics.History as GleanHistory
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.toPendingDeletionHistory
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragment.DeleteAllConfirmationDialogFragment
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentAction
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentDirections
+import com.netgpu.browser.library.historymetadata.HistoryMetadataGroupFragmentStore
+import com.netgpu.browser.GleanMetrics.History as GleanHistory
 
 /**
  * An interface that handles the view manipulation of the history metadata group in the History

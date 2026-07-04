@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.app.Application
 import android.app.PendingIntent
@@ -15,25 +15,25 @@ import mozilla.components.lib.crash.service.CrashReporterService
 import mozilla.components.lib.crash.service.GleanCrashReporterService
 import mozilla.components.lib.crash.service.MozillaSocorroService
 import mozilla.components.service.nimbus.NimbusApi
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.GleanMetrics.Messaging
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ReleaseChannel
-import org.mozilla.fenix.components.metrics.AdjustMetricsService
-import org.mozilla.fenix.components.metrics.DefaultMetricsStorage
-import org.mozilla.fenix.components.metrics.GleanMetricsService
-import org.mozilla.fenix.components.metrics.MetricController
-import org.mozilla.fenix.components.metrics.MetricsStorage
-import org.mozilla.fenix.experiments.createNimbus
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gleanplumb.CustomAttributeProvider
-import org.mozilla.fenix.gleanplumb.NimbusMessagingStorage
-import org.mozilla.fenix.gleanplumb.OnDiskMessageMetadataStorage
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.utils.BrowsersCache
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.GleanMetrics.Messaging
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ReleaseChannel
+import com.netgpu.browser.components.metrics.AdjustMetricsService
+import com.netgpu.browser.components.metrics.DefaultMetricsStorage
+import com.netgpu.browser.components.metrics.GleanMetricsService
+import com.netgpu.browser.components.metrics.MetricController
+import com.netgpu.browser.components.metrics.MetricsStorage
+import com.netgpu.browser.experiments.createNimbus
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gleanplumb.CustomAttributeProvider
+import com.netgpu.browser.gleanplumb.NimbusMessagingStorage
+import com.netgpu.browser.gleanplumb.OnDiskMessageMetadataStorage
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.utils.BrowsersCache
 import org.mozilla.geckoview.BuildConfig.MOZ_APP_BUILDID
 import org.mozilla.geckoview.BuildConfig.MOZ_APP_VENDOR
 import org.mozilla.geckoview.BuildConfig.MOZ_APP_VERSION
@@ -65,7 +65,7 @@ class Analytics(
                 BuildConfig.SENTRY_TOKEN,
                 tags = mapOf(
                     "geckoview" to "$MOZ_APP_VERSION-$MOZ_APP_BUILDID",
-                    "fenix.git" to BuildConfig.GIT_HASH,
+                    "netgpu_browser.git" to BuildConfig.GIT_HASH,
                 ),
                 environment = BuildConfig.BUILD_TYPE,
                 sendEventForNativeCrashes = false, // Do not send native crashes to Sentry

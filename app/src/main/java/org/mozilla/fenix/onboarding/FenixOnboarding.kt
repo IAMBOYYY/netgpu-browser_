@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -10,11 +10,11 @@ import android.os.StrictMode
 import androidx.annotation.VisibleForTesting
 import mozilla.components.support.ktx.android.content.PreferencesHolder
 import mozilla.components.support.ktx.android.content.intPreference
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
 
-class FenixOnboarding(context: Context) : PreferencesHolder {
+class NetGpuBrowserOnboarding(context: Context) : PreferencesHolder {
 
     private val strictMode = context.components.strictMode
     private val settings = context.settings()
@@ -62,12 +62,12 @@ class FenixOnboarding(context: Context) : PreferencesHolder {
         /**
          * Name of the shared preferences file.
          */
-        private const val PREF_NAME_ONBOARDING_KEY = "fenix.onboarding"
+        private const val PREF_NAME_ONBOARDING_KEY = "netgpu_browser.onboarding"
 
         /**
          * Key for [onboardedVersion].
          */
         @VisibleForTesting
-        internal const val LAST_VERSION_ONBOARDING_KEY = "fenix.onboarding.last_version"
+        internal const val LAST_VERSION_ONBOARDING_KEY = "netgpu_browser.onboarding.last_version"
     }
 }

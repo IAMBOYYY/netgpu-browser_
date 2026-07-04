@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol
+package com.netgpu.browser.home.sessioncontrol
 
 import io.mockk.every
 import io.mockk.mockk
@@ -10,9 +10,9 @@ import mozilla.components.feature.top.sites.TopSite
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Test
-import org.mozilla.fenix.home.sessioncontrol.AdapterItem.CollectionItem
-import org.mozilla.fenix.home.sessioncontrol.AdapterItem.TopSitePager
-import org.mozilla.fenix.home.sessioncontrol.AdapterItem.TopSitePagerPayload
+import com.netgpu.browser.home.sessioncontrol.AdapterItem.CollectionItem
+import com.netgpu.browser.home.sessioncontrol.AdapterItem.TopSitePager
+import com.netgpu.browser.home.sessioncontrol.AdapterItem.TopSitePagerPayload
 
 class SessionControlAdapterTest {
 

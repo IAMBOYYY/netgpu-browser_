@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.syncedtabs
+package com.netgpu.browser.tabstray.syncedtabs
 
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import mozilla.components.support.test.libstate.ext.waitUntilIdle
@@ -11,8 +11,8 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.tabstray.TabsTrayAction
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TabsTrayAction
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 class SyncButtonBindingTest {
     @OptIn(ExperimentalCoroutinesApi::class)

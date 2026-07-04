@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Represents all state related to the Wallpapers feature.
@@ -40,7 +40,7 @@ data class WallpaperState(
                     Color(currentWallpaper.cardColorLight)
                 }
             }
-            else -> FirefoxTheme.colors.layer2
+            else -> NetGpuBrowserTheme.colors.layer2
         }
 
     /**

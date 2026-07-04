@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.app.Activity
 import android.app.Application
@@ -17,9 +17,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.lib.crash.CrashReporter
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.ext.settings
 
 class AdjustMetricsService(
     private val application: Application,

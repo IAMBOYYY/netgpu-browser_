@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.view.Gravity
@@ -11,8 +11,8 @@ import androidx.annotation.VisibleForTesting
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.children
 import androidx.core.view.isVisible
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.ToolbarPosition
 
 /**
  * [CoordinatorLayout.Behavior] to be used by a snackbar that want to ensure it it always positioned
@@ -22,7 +22,7 @@ import org.mozilla.fenix.components.toolbar.ToolbarPosition
  * @param toolbarPosition Where the toolbar is positioned on the screen.
  * Depending on it's position (top / bottom) the snackbar will be shown below / above the toolbar.
  */
-class FenixSnackbarBehavior<V : View>(
+class NetGpuBrowserSnackbarBehavior<V : View>(
     context: Context,
     @get:VisibleForTesting internal val toolbarPosition: ToolbarPosition,
 ) : CoordinatorLayout.Behavior<V>(context, null) {

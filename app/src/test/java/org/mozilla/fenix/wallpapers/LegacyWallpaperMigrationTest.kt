@@ -1,4 +1,4 @@
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import io.mockk.mockk
 import io.mockk.verify
@@ -10,11 +10,11 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.toHexColor
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_MEI_WALLPAPER_NAME
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_NAME
-import org.mozilla.fenix.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_WALLPAPER_TEXT_COLOR
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.toHexColor
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_MEI_WALLPAPER_NAME
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_PANDA_WALLPAPER_NAME
+import com.netgpu.browser.wallpapers.LegacyWallpaperMigration.Companion.TURNING_RED_WALLPAPER_TEXT_COLOR
 import java.io.File
 
 class LegacyWallpaperMigrationTest {
@@ -172,7 +172,7 @@ class LegacyWallpaperMigrationTest {
             downloadWallpaper(
                 withArg {
                     assertEquals(Wallpaper.ceruleanName, it.name)
-                    assertEquals(Wallpaper.ClassicFirefoxCollection, it.collection)
+                    assertEquals(Wallpaper.ClassicNETGPU BROWSERCollection, it.collection)
                 },
             )
         }
@@ -184,7 +184,7 @@ class LegacyWallpaperMigrationTest {
             downloadWallpaper(
                 withArg {
                     assertEquals(Wallpaper.sunriseName, it.name)
-                    assertEquals(Wallpaper.ClassicFirefoxCollection, it.collection)
+                    assertEquals(Wallpaper.ClassicNETGPU BROWSERCollection, it.collection)
                 },
             )
         }
@@ -196,7 +196,7 @@ class LegacyWallpaperMigrationTest {
             downloadWallpaper(
                 withArg {
                     assertEquals(Wallpaper.amethystName, it.name)
-                    assertEquals(Wallpaper.ClassicFirefoxCollection, it.collection)
+                    assertEquals(Wallpaper.ClassicNETGPU BROWSERCollection, it.collection)
                 },
             )
         }

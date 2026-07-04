@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.content.Context
 import android.content.Intent
@@ -28,17 +28,17 @@ import mozilla.components.feature.pwa.feature.WebAppSiteControlsFeature
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
 import mozilla.components.support.ktx.android.arch.lifecycle.addObservers
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BaseBrowserFragment
-import org.mozilla.fenix.browser.CustomTabContextMenuCandidate
-import org.mozilla.fenix.browser.FenixSnackbarDelegate
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BaseBrowserFragment
+import com.netgpu.browser.browser.CustomTabContextMenuCandidate
+import com.netgpu.browser.browser.NetGpuBrowserSnackbarDelegate
+import com.netgpu.browser.components.components
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
 
 /**
  * Fragment used for browsing the web within external apps.
@@ -201,7 +201,7 @@ class ExternalAppBrowserFragment : BaseBrowserFragment(), UserInteractionHandler
         context,
         context.components.useCases.contextMenuUseCases,
         view,
-        FenixSnackbarDelegate(view),
+        NetGpuBrowserSnackbarDelegate(view),
     )
 
     companion object {

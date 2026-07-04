@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address
+package com.netgpu.browser.settings.address
 
 import android.view.LayoutInflater
 import android.view.View
@@ -24,12 +24,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Addresses
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddressEditorBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.address.interactor.AddressEditorInteractor
-import org.mozilla.fenix.settings.address.view.AddressEditorView
+import com.netgpu.browser.GleanMetrics.Addresses
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddressEditorBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.address.interactor.AddressEditorInteractor
+import com.netgpu.browser.settings.address.view.AddressEditorView
 
 @RunWith(FenixRobolectricTestRunner::class) // For gleanTestRule
 class AddressEditorViewTest {

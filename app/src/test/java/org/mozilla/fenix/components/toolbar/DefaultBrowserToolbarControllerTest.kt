@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
@@ -41,19 +41,19 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.ReaderMode
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserAnimator
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.browser.browsingmode.SimpleBrowsingModeManager
-import org.mozilla.fenix.browser.readermode.ReaderModeController
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.HomeScreenViewModel
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.ReaderMode
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserAnimator
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.SimpleBrowsingModeManager
+import com.netgpu.browser.browser.readermode.ReaderModeController
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.HomeScreenViewModel
 
 @RunWith(FenixRobolectricTestRunner::class)
 class DefaultBrowserToolbarControllerTest {

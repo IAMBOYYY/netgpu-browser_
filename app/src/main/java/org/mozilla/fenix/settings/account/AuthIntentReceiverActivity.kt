@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.app.Activity
 import android.content.Intent
@@ -10,9 +10,9 @@ import android.os.Bundle
 import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
 
 /**
  * Processes incoming intents and sends them to the corresponding activity.

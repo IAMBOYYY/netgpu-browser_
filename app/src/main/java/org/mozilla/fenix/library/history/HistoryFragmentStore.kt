@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
@@ -122,12 +122,12 @@ sealed class HistoryFragmentAction : Action {
     data class RemoveItemForRemoval(val item: History) : HistoryFragmentAction()
 
     /**
-     * Updates the empty state of [org.mozilla.fenix.library.history.HistoryView].
+     * Updates the empty state of [com.netgpu.browser.library.history.HistoryView].
      */
     data class ChangeEmptyState(val isEmpty: Boolean) : HistoryFragmentAction()
 
     /**
-     * Updates the set of items marked for removal from the [org.mozilla.fenix.components.AppStore]
+     * Updates the set of items marked for removal from the [com.netgpu.browser.components.AppStore]
      * to the [HistoryFragmentStore], to be hidden from the UI.
      */
     data class UpdatePendingDeletionItems(val pendingDeletionItems: Set<PendingDeletionHistory>) :

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -38,16 +38,16 @@ import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.databinding.FragmentBookmarkSearchDialogBinding
-import org.mozilla.fenix.databinding.SearchSuggestionsHintBinding
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.library.bookmarks.awesomebar.AwesomeBarView
-import org.mozilla.fenix.library.bookmarks.toolbar.ToolbarView
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.databinding.FragmentBookmarkSearchDialogBinding
+import com.netgpu.browser.databinding.SearchSuggestionsHintBinding
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.library.bookmarks.awesomebar.AwesomeBarView
+import com.netgpu.browser.library.bookmarks.toolbar.ToolbarView
+import com.netgpu.browser.settings.SupportUtils
 
 @Suppress("TooManyFunctions", "LargeClass")
 class BookmarkSearchDialogFragment : AppCompatDialogFragment(), UserInteractionHandler {

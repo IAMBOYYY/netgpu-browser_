@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -25,8 +25,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Default layout of a large tab shown in a list taking String arguments for title and caption.
@@ -52,7 +52,7 @@ fun ListItemTabLarge(
     imageUrl: String,
     title: String,
     caption: String? = null,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     onClick: (() -> Unit)? = null,
 ) {
     ListItemTabSurface(
@@ -62,7 +62,7 @@ fun ListItemTabLarge(
     ) {
         Text(
             text = title,
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
             fontSize = 14.sp,
             overflow = TextOverflow.Ellipsis,
             maxLines = 3,
@@ -71,7 +71,7 @@ fun ListItemTabLarge(
         if (caption != null) {
             Text(
                 text = caption,
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 fontSize = 12.sp,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
@@ -105,7 +105,7 @@ fun ListItemTabLarge(
 @Composable
 fun ListItemTabLarge(
     imageUrl: String,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     onClick: () -> Unit,
     title: @Composable () -> Unit,
     subtitle: @Composable (() -> Unit)? = null,
@@ -133,7 +133,7 @@ fun ListItemTabLarge(
 @Composable
 fun ListItemTabSurface(
     imageUrl: String,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     contentPadding: PaddingValues = PaddingValues(16.dp),
     onClick: (() -> Unit)? = null,
     tabDetails: @Composable () -> Unit,
@@ -173,7 +173,7 @@ fun ListItemTabSurface(
 @Composable
 @LightDarkPreview
 private fun ListItemTabLargePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         ListItemTabLarge(
             imageUrl = "",
             title = "This is a very long title for a tab but needs to be so for this preview",
@@ -185,13 +185,13 @@ private fun ListItemTabLargePreview() {
 @Composable
 @LightDarkPreview
 private fun ListItemTabSurfacePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         ListItemTabSurface(
             imageUrl = "",
         ) {
             Text(
                 text = "This can be anything",
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 fontSize = 22.sp,
             )
         }
@@ -201,14 +201,14 @@ private fun ListItemTabSurfacePreview() {
 @Composable
 @LightDarkPreview
 private fun ListItemTabSurfaceWithCustomBackgroundPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         ListItemTabSurface(
             imageUrl = "",
             backgroundColor = Color.Cyan,
         ) {
             Text(
                 text = "This can be anything",
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 fontSize = 22.sp,
             )
         }

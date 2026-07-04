@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.Manifest
 import android.os.Bundle
@@ -21,15 +21,15 @@ import mozilla.components.support.ktx.android.content.hasCamera
 import mozilla.components.support.ktx.android.content.isPermissionGranted
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.GleanMetrics.SyncAuth
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.databinding.FragmentTurnOnSyncBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.Config
+import com.netgpu.browser.GleanMetrics.SyncAuth
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.databinding.FragmentTurnOnSyncBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
 
 class TurnOnSyncFragment : Fragment(), AccountObserver {
 
@@ -154,11 +154,11 @@ class TurnOnSyncFragment : Fragment(), AccountObserver {
             return
         }
         val snackbarText = requireContext().getString(R.string.sync_syncing_in_progress)
-        val snackbarLength = FenixSnackbar.LENGTH_SHORT
+        val snackbarLength = NetGpuBrowserSnackbar.LENGTH_SHORT
 
         // Since the snackbar can be presented in BrowserFragment or in SettingsFragment we must
         // base our display method on the padSnackbar argument
-        FenixSnackbar.make(
+        NetGpuBrowserSnackbar.make(
             view = requireView(),
             duration = snackbarLength,
             isDisplayedWithBrowserToolbar = args.padSnackbar,

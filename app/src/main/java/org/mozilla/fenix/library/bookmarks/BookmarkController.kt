@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -20,15 +20,15 @@ import mozilla.components.concept.storage.BookmarkNodeType
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.service.fxa.SyncEngine
 import mozilla.components.service.fxa.sync.SyncReason
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.ext.bookmarkStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.ext.bookmarkStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.navigateSafe
+import com.netgpu.browser.utils.Settings
 
 @VisibleForTesting
 internal const val WARN_OPEN_ALL_SIZE = 15

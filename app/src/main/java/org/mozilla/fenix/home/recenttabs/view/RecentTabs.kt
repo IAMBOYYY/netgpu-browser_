@@ -4,7 +4,7 @@
 
 @file:Suppress("MagicNumber", "TooManyFunctions")
 
-package org.mozilla.fenix.home.recenttabs.view
+package com.netgpu.browser.home.recenttabs.view
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -57,13 +57,13 @@ import mozilla.components.browser.state.state.ContentState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.support.ktx.kotlin.trimmed
 import mozilla.components.ui.colors.PhotonColors
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.Image
-import org.mozilla.fenix.compose.ThumbnailCard
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.Image
+import com.netgpu.browser.compose.ThumbnailCard
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * A list of recent tabs to jump back to.
@@ -78,7 +78,7 @@ import org.mozilla.fenix.theme.FirefoxTheme
 fun RecentTabs(
     recentTabs: List<RecentTab>,
     menuItems: List<RecentTabMenuItem>,
-    backgroundColor: Color = FirefoxTheme.colors.layer2,
+    backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
     onRecentTabClick: (String) -> Unit = {},
 ) {
     Column(
@@ -162,7 +162,7 @@ private fun RecentTabItem(
                         testTagsAsResourceId = true
                         testTag = "recent.tab.title"
                     },
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     fontSize = 14.sp,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
@@ -186,7 +186,7 @@ private fun RecentTabItem(
                             testTagsAsResourceId = true
                             testTag = "recent.tab.url"
                         },
-                        color = FirefoxTheme.colors.textSecondary,
+                        color = NetGpuBrowserTheme.colors.textSecondary,
                         fontSize = 12.sp,
                         overflow = TextOverflow.Ellipsis,
                         maxLines = 1,
@@ -263,7 +263,7 @@ private fun RecentTabMenu(
         expanded = showMenu,
         onDismissRequest = { onDismissRequest() },
         modifier = Modifier
-            .background(color = FirefoxTheme.colors.layer2)
+            .background(color = NetGpuBrowserTheme.colors.layer2)
             .semantics {
                 testTagsAsResourceId = true
                 testTag = "recent.tab.menu"
@@ -278,7 +278,7 @@ private fun RecentTabMenu(
             ) {
                 Text(
                     text = item.title,
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     maxLines = 1,
                     modifier = Modifier
                         .fillMaxHeight()
@@ -368,7 +368,7 @@ private fun RecentTabsPreview() {
         ),
     )
 
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         RecentTabs(
             recentTabs = listOf(
                 tab,

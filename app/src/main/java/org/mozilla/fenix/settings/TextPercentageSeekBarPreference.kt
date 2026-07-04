@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 /*
  * Copyright 2018 The Android Open Source Project
@@ -37,7 +37,7 @@ import android.widget.TextView
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.RangeInfoCompat.RANGE_TYPE_PERCENT
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 import java.text.NumberFormat
 import kotlin.math.PI
 import kotlin.math.abs

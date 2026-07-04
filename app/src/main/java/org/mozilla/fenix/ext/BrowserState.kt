@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.selectedNormalTab
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.feature.tabs.ext.hasMediaPlayed
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.tabstray.ext.isNormalTabInactive
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.tabstray.ext.isNormalTabInactive
+import com.netgpu.browser.utils.Settings
 import java.util.concurrent.TimeUnit
 
 /**

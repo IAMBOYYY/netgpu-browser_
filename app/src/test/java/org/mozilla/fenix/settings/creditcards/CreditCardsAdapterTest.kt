@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards
+package com.netgpu.browser.settings.creditcards
 
 import mozilla.components.concept.storage.CreditCard
 import mozilla.components.concept.storage.CreditCardNumber
@@ -10,7 +10,7 @@ import mozilla.components.support.utils.CreditCardNetworkType
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.settings.creditcards.view.CreditCardsAdapter
+import com.netgpu.browser.settings.creditcards.view.CreditCardsAdapter
 
 class CreditCardsAdapterTest {
 

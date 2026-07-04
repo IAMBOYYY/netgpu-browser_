@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.background
@@ -26,16 +26,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.button.RadioButton
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.button.RadioButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Dialogue top level card for the profiler.
  */
 @Composable
 fun ProfilerDialogueCard(content: @Composable () -> Unit) {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Card(
             elevation = 8.dp,
             shape = RoundedCornerShape(12.dp),
@@ -111,12 +111,12 @@ fun WaitForProfilerDialog(
 @Composable
 @LightDarkPreview
 private fun ProfilerLabeledRadioButtonPreview() {
-    val radioOptions = listOf("Firefox", "Graphics", "Media", "Networking")
-    val selectedOption = remember { mutableStateOf("Firefox") }
+    val radioOptions = listOf("NETGPU BROWSER", "Graphics", "Media", "Networking")
+    val selectedOption = remember { mutableStateOf("NETGPU BROWSER") }
 
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column(
-            modifier = Modifier.background(FirefoxTheme.colors.layer1),
+            modifier = Modifier.background(NetGpuBrowserTheme.colors.layer1),
         ) {
             radioOptions.forEach { text ->
                 ProfilerLabeledRadioButton(

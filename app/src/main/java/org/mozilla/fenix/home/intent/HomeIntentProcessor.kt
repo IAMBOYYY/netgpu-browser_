@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
 
 /**
- * Processor for Android intents received in [org.mozilla.fenix.HomeActivity].
+ * Processor for Android intents received in [com.netgpu.browser.HomeActivity].
  */
 interface HomeIntentProcessor {
 

@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import mozilla.components.concept.engine.EngineSession.TrackingProtectionPolicy.TrackingCategory
 import mozilla.components.concept.engine.content.blocking.Tracker
 import mozilla.components.concept.engine.content.blocking.TrackerLog
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.TRACKING_CONTENT
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.TRACKING_CONTENT
 import java.util.EnumMap
 
 typealias BucketMap = Map<TrackingProtectionCategory, List<TrackerLog>>

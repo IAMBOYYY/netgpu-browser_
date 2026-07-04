@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.syncintegration
+package com.netgpu.browser.syncintegration
 
 import android.os.SystemClock.sleep
 import android.widget.EditText
@@ -21,16 +21,16 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.ext.toUri
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.ui.robots.accountSettings
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.robots.settingsSubMenuLoginsAndPassword
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.ext.toUri
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.ui.robots.accountSettings
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.robots.settingsSubMenuLoginsAndPassword
 
 @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class SyncIntegrationTest {
@@ -61,7 +61,7 @@ class SyncIntegrationTest {
         tapReturnToPreviousApp()
         // Let's wait until homescreen is shown to go to three dot menu
         TestAssetHelper.waitingTime
-        mDevice.waitNotNull(Until.findObjects(By.res("org.mozilla.fenix.debug:id/counter_root")))
+        mDevice.waitNotNull(Until.findObjects(By.res("com.netgpu.browser.debug:id/counter_root")))
         homeScreen {
         }.openThreeDotMenu {
         }.openHistory {
@@ -223,7 +223,7 @@ class SyncIntegrationTest {
 
         /* Wait until the Settings shows the account synced */
         mDevice.waitNotNull(Until.findObjects(By.text("Account")), TestAssetHelper.waitingTime)
-        mDevice.waitNotNull(Until.findObjects(By.res("org.mozilla.fenix.debug:id/email")), TestAssetHelper.waitingTime)
+        mDevice.waitNotNull(Until.findObjects(By.res("com.netgpu.browser.debug:id/email")), TestAssetHelper.waitingTime)
         TestAssetHelper.waitingTime
         // Go to Homescreen
         mDevice.pressBack()

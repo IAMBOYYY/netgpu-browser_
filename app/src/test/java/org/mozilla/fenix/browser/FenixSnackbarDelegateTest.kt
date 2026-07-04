@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.view.View
 import io.mockk.MockKAnnotations
@@ -16,18 +16,18 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.FenixSnackbar.Companion.LENGTH_SHORT
-import org.mozilla.fenix.helpers.MockkRetryTestRule
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.NetGpuBrowserSnackbar.Companion.LENGTH_SHORT
+import com.netgpu.browser.helpers.MockkRetryTestRule
 
-class FenixSnackbarDelegateTest {
+class NetGpuBrowserSnackbarDelegateTest {
 
     @MockK private lateinit var view: View
 
     @MockK(relaxed = true)
-    private lateinit var snackbar: FenixSnackbar
-    private lateinit var delegate: FenixSnackbarDelegate
+    private lateinit var snackbar: NetGpuBrowserSnackbar
+    private lateinit var delegate: NetGpuBrowserSnackbarDelegate
 
     @get:Rule
     val mockkRule = MockkRetryTestRule()
@@ -35,21 +35,21 @@ class FenixSnackbarDelegateTest {
     @Before
     fun setup() {
         MockKAnnotations.init(this)
-        mockkObject(FenixSnackbar.Companion)
+        mockkObject(NetGpuBrowserSnackbar.Companion)
 
-        delegate = FenixSnackbarDelegate(view)
+        delegate = NetGpuBrowserSnackbarDelegate(view)
         every {
-            FenixSnackbar.make(view, LENGTH_SHORT, isDisplayedWithBrowserToolbar = true)
+            NetGpuBrowserSnackbar.make(view, LENGTH_SHORT, isDisplayedWithBrowserToolbar = true)
         } returns snackbar
         every { snackbar.setText(any()) } returns snackbar
         every { snackbar.setAction(any(), any()) } returns snackbar
-        every { view.context.getString(R.string.app_name) } returns "Firefox"
+        every { view.context.getString(R.string.app_name) } returns "NETGPU BROWSER"
         every { view.context.getString(R.string.edit) } returns "Edit"
     }
 
     @After
     fun teardown() {
-        unmockkObject(FenixSnackbar.Companion)
+        unmockkObject(NetGpuBrowserSnackbar.Companion)
     }
 
     @Test
@@ -62,7 +62,7 @@ class FenixSnackbarDelegateTest {
             listener = null,
         )
 
-        verify { snackbar.setText("Firefox") }
+        verify { snackbar.setText("NETGPU BROWSER") }
         verify(exactly = 0) { snackbar.setAction(any(), any()) }
         verify { snackbar.show() }
     }
@@ -77,7 +77,7 @@ class FenixSnackbarDelegateTest {
             listener = {},
         )
 
-        verify { snackbar.setText("Firefox") }
+        verify { snackbar.setText("NETGPU BROWSER") }
         verify(exactly = 0) { snackbar.setAction(any(), any()) }
         verify { snackbar.show() }
     }
@@ -92,7 +92,7 @@ class FenixSnackbarDelegateTest {
             listener = null,
         )
 
-        verify { snackbar.setText("Firefox") }
+        verify { snackbar.setText("NETGPU BROWSER") }
         verify(exactly = 0) { snackbar.setAction(any(), any()) }
         verify { snackbar.show() }
     }
@@ -108,7 +108,7 @@ class FenixSnackbarDelegateTest {
             listener = listener,
         )
 
-        verify { snackbar.setText("Firefox") }
+        verify { snackbar.setText("NETGPU BROWSER") }
         verify {
             snackbar.setAction(
                 "Edit",

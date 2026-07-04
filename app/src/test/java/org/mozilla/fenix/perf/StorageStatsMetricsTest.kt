@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.usage.StorageStats
 import android.app.usage.StorageStatsManager
@@ -19,8 +19,8 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.GleanMetrics.StorageStats as Metrics
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.StorageStats as Metrics
 
 @RunWith(FenixRobolectricTestRunner::class) // gleanTestRule
 class StorageStatsMetricsTest {

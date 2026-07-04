@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.session
+package com.netgpu.browser.session
 
 import android.content.ComponentName
 import android.content.Intent
@@ -22,10 +22,10 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.HomeActivity.Companion.PRIVATE_BROWSING_MODE
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.HomeActivity.Companion.PRIVATE_BROWSING_MODE
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 import org.robolectric.android.controller.ServiceController

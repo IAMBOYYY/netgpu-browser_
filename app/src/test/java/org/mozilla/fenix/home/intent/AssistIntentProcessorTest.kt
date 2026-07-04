@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
@@ -13,11 +13,11 @@ import io.mockk.verify
 import org.junit.Assert.assertFalse
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AssistIntentProcessorTest {

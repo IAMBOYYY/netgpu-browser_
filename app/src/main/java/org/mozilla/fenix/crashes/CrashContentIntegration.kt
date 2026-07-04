@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.crashes
+package com.netgpu.browser.crashes
 
 import android.view.ViewGroup.MarginLayoutParams
 import androidx.navigation.NavController
@@ -18,9 +18,9 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.browser.toolbar.BrowserToolbar
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.utils.Settings
 
 /**
  * Helper for observing [BrowserStore] and show an in-app crash reporter for tabs with content crashes.

@@ -2,34 +2,34 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol
+package com.netgpu.browser.home.sessioncontrol
 
 import mozilla.components.feature.tab.collections.Tab
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.feature.top.sites.TopSite
 import mozilla.components.service.pocket.PocketStory
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketStoriesController
-import org.mozilla.fenix.home.pocket.PocketStoriesInteractor
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentbookmarks.controller.RecentBookmarksController
-import org.mozilla.fenix.home.recentbookmarks.interactor.RecentBookmarksInteractor
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.home.recentsyncedtabs.controller.RecentSyncedTabController
-import org.mozilla.fenix.home.recentsyncedtabs.interactor.RecentSyncedTabInteractor
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.recenttabs.controller.RecentTabController
-import org.mozilla.fenix.home.recenttabs.interactor.RecentTabInteractor
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.home.recentvisits.controller.RecentVisitsController
-import org.mozilla.fenix.home.recentvisits.interactor.RecentVisitsInteractor
-import org.mozilla.fenix.search.toolbar.SearchSelectorInteractor
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketStoriesController
+import com.netgpu.browser.home.pocket.PocketStoriesInteractor
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentbookmarks.controller.RecentBookmarksController
+import com.netgpu.browser.home.recentbookmarks.interactor.RecentBookmarksInteractor
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.controller.RecentSyncedTabController
+import com.netgpu.browser.home.recentsyncedtabs.interactor.RecentSyncedTabInteractor
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.recenttabs.controller.RecentTabController
+import com.netgpu.browser.home.recenttabs.interactor.RecentTabInteractor
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.home.recentvisits.controller.RecentVisitsController
+import com.netgpu.browser.home.recentvisits.interactor.RecentVisitsInteractor
+import com.netgpu.browser.search.toolbar.SearchSelectorInteractor
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.wallpapers.WallpaperState
 
 /**
  * Interface for tab related actions in the [SessionControlInteractor].

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address.view
+package com.netgpu.browser.settings.address.view
 
 import android.content.Context
 import android.content.DialogInterface
@@ -16,16 +16,16 @@ import mozilla.components.concept.storage.Address
 import mozilla.components.concept.storage.UpdatableAddressFields
 import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
-import org.mozilla.fenix.GleanMetrics.Addresses
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddressEditorBinding
-import org.mozilla.fenix.ext.placeCursorAtEnd
-import org.mozilla.fenix.settings.address.AddressEditorFragment
-import org.mozilla.fenix.settings.address.AddressUtils.countries
-import org.mozilla.fenix.settings.address.Country
-import org.mozilla.fenix.settings.address.DEFAULT_COUNTRY
-import org.mozilla.fenix.settings.address.interactor.AddressEditorInteractor
-import org.mozilla.fenix.settings.address.toCountryCode
+import com.netgpu.browser.GleanMetrics.Addresses
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddressEditorBinding
+import com.netgpu.browser.ext.placeCursorAtEnd
+import com.netgpu.browser.settings.address.AddressEditorFragment
+import com.netgpu.browser.settings.address.AddressUtils.countries
+import com.netgpu.browser.settings.address.Country
+import com.netgpu.browser.settings.address.DEFAULT_COUNTRY
+import com.netgpu.browser.settings.address.interactor.AddressEditorInteractor
+import com.netgpu.browser.settings.address.toCountryCode
 
 /**
  * An address editor for adding or updating an address.

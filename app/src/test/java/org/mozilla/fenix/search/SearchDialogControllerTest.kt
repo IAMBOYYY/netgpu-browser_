@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.NavController
@@ -39,21 +39,21 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.SearchShortcuts
-import org.mozilla.fenix.GleanMetrics.UnifiedSearch
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Core
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.search.SearchDialogFragmentDirections.Companion.actionGlobalAddonsManagementFragment
-import org.mozilla.fenix.search.SearchDialogFragmentDirections.Companion.actionGlobalSearchEngineFragment
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.SearchShortcuts
+import com.netgpu.browser.GleanMetrics.UnifiedSearch
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Core
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.search.SearchDialogFragmentDirections.Companion.actionGlobalAddonsManagementFragment
+import com.netgpu.browser.search.SearchDialogFragmentDirections.Companion.actionGlobalSearchEngineFragment
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class) // for gleanTestRule
 class SearchDialogControllerTest {
@@ -138,7 +138,7 @@ class SearchDialogControllerTest {
 
     @Test
     fun handleSearchCommitted() {
-        val searchTerm = "Firefox"
+        val searchTerm = "NETGPU BROWSER"
 
         createController().handleUrlCommitted(searchTerm)
 
@@ -156,7 +156,7 @@ class SearchDialogControllerTest {
     fun `WHEN the search engine is added by the application THEN do not load URL`() {
         every { searchEngine.type } returns SearchEngine.Type.APPLICATION
 
-        val searchTerm = "Firefox"
+        val searchTerm = "NETGPU BROWSER"
         var dismissDialogInvoked = false
 
         createController(
@@ -180,7 +180,7 @@ class SearchDialogControllerTest {
     @Test
     fun handleCrashesUrlCommitted() {
         val url = "about:crashes"
-        every { activity.packageName } returns "org.mozilla.fenix"
+        every { activity.packageName } returns "com.netgpu.browser"
 
         createController().handleUrlCommitted(url)
 
@@ -240,7 +240,7 @@ class SearchDialogControllerTest {
 
     @Test
     fun handleTextChangedNonEmpty() {
-        val text = "fenix"
+        val text = "netgpu_browser"
 
         createController().handleTextChanged(text)
 
@@ -358,7 +358,7 @@ class SearchDialogControllerTest {
 
     @Test
     fun handleSearchTermsTapped() {
-        val searchTerms = "fenix"
+        val searchTerms = "netgpu_browser"
 
         createController().handleSearchTermsTapped(searchTerms)
 

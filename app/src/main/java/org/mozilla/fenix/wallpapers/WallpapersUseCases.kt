@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import android.content.Context
 import android.content.res.Configuration
@@ -12,13 +12,13 @@ import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.concept.fetch.Client
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.ext.isSystemInDarkTheme
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.ext.isSystemInDarkTheme
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.Settings
 import java.io.File
 import java.util.Date
 

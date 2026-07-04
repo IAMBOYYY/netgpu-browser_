@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
@@ -14,10 +14,10 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.fragment.app.DialogFragment
 import com.google.accompanist.insets.ProvideWindowInsets
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.onboarding.view.NotificationPermissionDialogScreen
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.onboarding.view.NotificationPermissionDialogScreen
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Dialog displaying notification pre-permission prompt.
@@ -44,7 +44,7 @@ class HomeNotificationPermissionDialogFragment : DialogFragment() {
         setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
         setContent {
             ProvideWindowInsets {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     NotificationPermissionDialogScreen(
                         onDismiss = ::onDismiss,
                         grantNotificationPermission = {

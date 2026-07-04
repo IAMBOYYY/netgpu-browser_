@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.shortcut
+package com.netgpu.browser.shortcut
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LifecycleOwner
@@ -16,10 +16,10 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.feature.pwa.WebAppUseCases
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.utils.Settings
 
 /**
  * Displays the [PwaOnboardingDialogFragment] info dialog when a PWA is opened in the browser for the third time.

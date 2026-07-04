@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins
+package com.netgpu.browser.settings.logins
 
 import androidx.navigation.NavController
 import io.mockk.mockk
@@ -15,13 +15,13 @@ import org.junit.Assert.assertNull
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Logins
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.logins.controller.LoginsListController
-import org.mozilla.fenix.settings.logins.fragment.SavedLoginsFragmentDirections
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Logins
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.logins.controller.LoginsListController
+import com.netgpu.browser.settings.logins.fragment.SavedLoginsFragmentDirections
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class LoginsListControllerTest {

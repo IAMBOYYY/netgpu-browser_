@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import mozilla.components.browser.state.state.createTab
 import mozilla.components.concept.storage.HistoryMetadataKey
@@ -10,7 +10,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.ext.DEFAULT_ACTIVE_DAYS
+import com.netgpu.browser.ext.DEFAULT_ACTIVE_DAYS
 import java.util.concurrent.TimeUnit
 
 class TabSessionStateKtTest {

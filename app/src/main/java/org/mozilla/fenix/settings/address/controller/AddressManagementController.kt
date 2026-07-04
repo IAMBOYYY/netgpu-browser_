@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address.controller
+package com.netgpu.browser.settings.address.controller
 
 import androidx.navigation.NavController
 import mozilla.components.concept.storage.Address
-import org.mozilla.fenix.settings.address.AddressManagementFragment
-import org.mozilla.fenix.settings.address.AddressManagementFragmentDirections
-import org.mozilla.fenix.settings.address.interactor.AddressManagementInteractor
+import com.netgpu.browser.settings.address.AddressManagementFragment
+import com.netgpu.browser.settings.address.AddressManagementFragmentDirections
+import com.netgpu.browser.settings.address.interactor.AddressManagementInteractor
 
 /**
  * [AddressManagementFragment] controller. An interface that handles the view manipulation of

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import androidx.annotation.StringRes
 import mozilla.components.browser.state.state.SessionState
@@ -10,7 +10,7 @@ import mozilla.components.concept.engine.content.blocking.TrackerLog
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * The [Store] for holding the [ProtectionsState] and applying [ProtectionsAction]s.

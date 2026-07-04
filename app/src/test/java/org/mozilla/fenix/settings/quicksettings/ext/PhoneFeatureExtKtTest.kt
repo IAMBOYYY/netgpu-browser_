@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.ext
+package com.netgpu.browser.settings.quicksettings.ext
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -12,7 +12,7 @@ import mozilla.components.concept.engine.permission.SitePermissions
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.settings.PhoneFeature
+import com.netgpu.browser.settings.PhoneFeature
 
 class PhoneFeatureExtKtTest {
     @Test

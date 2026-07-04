@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders
+package com.netgpu.browser.home.sessioncontrol.viewholders
 
 import android.view.View
 import androidx.compose.foundation.clickable
@@ -25,10 +25,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.LifecycleOwner
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.home.sessioncontrol.TabSessionInteractor
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.home.sessioncontrol.TabSessionInteractor
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * View holder for a private browsing description.
@@ -81,7 +81,7 @@ fun PrivateBrowsingDescription(
                 stringResource(R.string.app_name),
             ),
             modifier = Modifier.padding(top = 4.dp),
-            color = FirefoxTheme.colors.textPrimary,
+            color = NetGpuBrowserTheme.colors.textPrimary,
             fontSize = 14.sp,
             lineHeight = 20.sp,
         )
@@ -102,7 +102,7 @@ fun PrivateBrowsingDescription(
                 text = stringResource(R.string.private_browsing_common_myths),
                 modifier = Modifier.padding(top = 10.dp),
                 style = TextStyle(
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     fontSize = 14.sp,
                     textDecoration = TextDecoration.Underline,
                     textDirection = TextDirection.Content,
@@ -115,7 +115,7 @@ fun PrivateBrowsingDescription(
 @Composable
 @Preview
 private fun PrivateBrowsingDescriptionPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         PrivateBrowsingDescription(
             onLearnMoreClick = {},
         )

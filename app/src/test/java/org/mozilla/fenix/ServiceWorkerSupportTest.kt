@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.content.Context
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -22,20 +22,20 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection.FromHome
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.BrowserDirection.FromHome
+import com.netgpu.browser.ext.components
 
 @RunWith(AndroidJUnit4::class)
 class ServiceWorkerSupportTest {
     @Before
     fun setup() {
         // Needed to mock the response of the "Context.components" extension property.
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
     }
 
     @After
     fun teardown() {
-        unmockkStatic("org.mozilla.fenix.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.ext.ContextKt")
     }
 
     @Test

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history.awesomebar
+package com.netgpu.browser.library.history.awesomebar
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,11 +15,11 @@ import mozilla.components.compose.browser.awesomebar.AwesomeBarDefaults
 import mozilla.components.compose.browser.awesomebar.AwesomeBarOrientation
 import mozilla.components.concept.awesomebar.AwesomeBar
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.theme.ThemeManager
 
 /**
  * This wrapper wraps the `AwesomeBar()` composable and exposes it as a `View` and `concept-awesomebar`
@@ -48,7 +48,7 @@ class AwesomeBarWrapper @JvmOverloads constructor(
             AwesomeBarOrientation.TOP
         }
 
-        FirefoxTheme {
+        NetGpuBrowserTheme {
             AwesomeBar(
                 text = text.value,
                 providers = providers.value,

@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupActivity
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.UNKNOWN
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupState.Cold
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.getNextState
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupActivity
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.UNKNOWN
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupState.Cold
+import com.netgpu.browser.perf.StartupTimelineStateMachine.getNextState
 
 class StartupTimelineStateMachineTest {
 

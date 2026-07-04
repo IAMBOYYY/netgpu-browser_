@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.browser.state.search.SearchEngine
@@ -13,11 +13,11 @@ import mozilla.components.browser.state.state.selectedOrDefaultSearchEngine
 import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.utils.Settings
 
 /**
  * The [Store] for holding the [SearchFragmentState] and applying [SearchFragmentAction]s.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import mozilla.components.support.images.compose.loader.ImageLoader
 import mozilla.components.support.images.compose.loader.WithImage
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.components.components
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * A composable that lays out and draws the image from a given URL while showing a default placeholder
@@ -76,7 +76,7 @@ fun Image(
 @Composable
 @Preview
 private fun ImagePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Image(
             url = "https://mozilla.com",
             modifier = Modifier.height(100.dp).width(200.dp),

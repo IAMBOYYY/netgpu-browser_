@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -11,24 +11,24 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.Constants.defaultTopSitesList
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RetryTestRule
-import org.mozilla.fenix.helpers.TestAssetHelper.getGenericAsset
-import org.mozilla.fenix.helpers.TestHelper.generateRandomString
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.waitUntilSnackbarGone
-import org.mozilla.fenix.ui.robots.browserScreen
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.Constants.defaultTopSitesList
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RetryTestRule
+import com.netgpu.browser.helpers.TestAssetHelper.getGenericAsset
+import com.netgpu.browser.helpers.TestHelper.generateRandomString
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.waitUntilSnackbarGone
+import com.netgpu.browser.ui.robots.browserScreen
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
 
 /**
  * Tests Top Sites functionality
  *
- * - Verifies 'Add to Firefox Home' UI functionality
+ * - Verifies 'Add to NETGPU BROWSER Home' UI functionality
  * - Verifies 'Top Sites' context menu UI functionality
  * - Verifies 'Top Site' usage UI functionality
  * - Verifies existence of default top sites available on the home-screen
@@ -60,7 +60,7 @@ class TopSitesTest {
 
     @SmokeTest
     @Test
-    fun verifyAddToFirefoxHome() {
+    fun verifyAddToNETGPU BROWSERHome() {
         val defaultWebPage = getGenericAsset(mockWebServer, 1)
 
         navigationToolbar {
@@ -68,7 +68,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -85,7 +85,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -112,7 +112,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -135,7 +135,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -157,7 +157,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -178,7 +178,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -200,7 +200,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToFirefoxHome {
+        }.addToNETGPU BROWSERHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()

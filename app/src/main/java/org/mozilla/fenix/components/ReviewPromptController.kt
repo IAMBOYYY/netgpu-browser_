@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.app.Activity
 import androidx.annotation.VisibleForTesting
@@ -10,8 +10,8 @@ import com.google.android.play.core.review.ReviewInfo
 import com.google.android.play.core.review.ReviewManager
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.withContext
-import org.mozilla.fenix.GleanMetrics.ReviewPrompt
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.ReviewPrompt
+import com.netgpu.browser.utils.Settings
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import android.util.Base64
@@ -14,8 +14,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.browser.state.search.SearchEngine
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.Metrics
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.Metrics
 import java.io.IOException
 import java.security.NoSuchAlgorithmException
 import java.security.spec.InvalidKeySpecException
@@ -61,7 +61,7 @@ object MetricsUtils {
      * function to help with unit tests.
      */
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
-    internal fun getHashingSalt(): String = "org.mozilla.fenix-salt"
+    internal fun getHashingSalt(): String = "com.netgpu.browser-salt"
 
     /**
      * Query the Google Advertising API to get the Google Advertising ID.

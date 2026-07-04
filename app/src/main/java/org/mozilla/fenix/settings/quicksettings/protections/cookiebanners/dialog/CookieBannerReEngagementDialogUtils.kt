@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners.dialog
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners.dialog
 
 import android.content.Context
 import androidx.navigation.NavController
 import mozilla.components.concept.engine.EngineSession.CookieBannerHandlingStatus
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.nimbus.CookieBannersSection
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.nimbus.CookieBannersSection
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.utils.Settings
 
 private const val CONTROL_VARIANT = 0
 private const val VARIANT_ONE = 1

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.content.Context
 import android.util.AttributeSet
@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.core.view.isGone
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 import kotlin.properties.Delegates
 
 class AccountAuthErrorPreference @JvmOverloads constructor(

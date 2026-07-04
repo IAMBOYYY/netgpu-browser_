@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.list
+package com.netgpu.browser.compose.list
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -24,9 +24,9 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Favicon
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.Favicon
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 private val LIST_ITEM_HEIGHT = 56.dp
 
@@ -73,7 +73,7 @@ fun TextListItem(
                 Icon(
                     painter = iconPainter,
                     contentDescription = iconDescription,
-                    tint = FirefoxTheme.colors.iconPrimary,
+                    tint = NetGpuBrowserTheme.colors.iconPrimary,
                 )
             }
         }
@@ -124,7 +124,7 @@ fun FaviconListItem(
                     Icon(
                         painter = iconPainter,
                         contentDescription = iconDescription,
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                     )
                 }
             }
@@ -165,7 +165,7 @@ fun IconListItem(
                 painter = beforeIconPainter,
                 contentDescription = beforeIconDescription,
                 modifier = Modifier.padding(horizontal = 16.dp),
-                tint = FirefoxTheme.colors.iconPrimary,
+                tint = NetGpuBrowserTheme.colors.iconPrimary,
             )
         },
         afterListAction = {
@@ -179,7 +179,7 @@ fun IconListItem(
                     Icon(
                         painter = afterIconPainter,
                         contentDescription = afterIconDescription,
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                     )
                 }
             }
@@ -227,16 +227,16 @@ private fun ListItem(
         ) {
             Text(
                 text = label,
-                color = FirefoxTheme.colors.textPrimary,
-                style = FirefoxTheme.typography.subtitle1,
+                color = NetGpuBrowserTheme.colors.textPrimary,
+                style = NetGpuBrowserTheme.typography.subtitle1,
                 maxLines = 1,
             )
 
             description?.let {
                 Text(
                     text = description,
-                    color = FirefoxTheme.colors.textSecondary,
-                    style = FirefoxTheme.typography.body2,
+                    color = NetGpuBrowserTheme.colors.textSecondary,
+                    style = NetGpuBrowserTheme.typography.body2,
                     maxLines = maxDescriptionLines,
                 )
             }
@@ -249,8 +249,8 @@ private fun ListItem(
 @Composable
 @Preview(name = "TextListItem", uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun TextListItemPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             TextListItem(label = "Label only")
         }
     }
@@ -259,8 +259,8 @@ private fun TextListItemPreview() {
 @Composable
 @Preview(name = "TextListItem with a description", uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun TextListItemWithDescriptionPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             TextListItem(
                 label = "Label + description",
                 description = "Description text",
@@ -272,8 +272,8 @@ private fun TextListItemWithDescriptionPreview() {
 @Composable
 @Preview(name = "TextListItem with a right icon", uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun TextListItemWithIconPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             TextListItem(
                 label = "Label + right icon",
                 iconPainter = painterResource(R.drawable.ic_menu),
@@ -287,8 +287,8 @@ private fun TextListItemWithIconPreview() {
 @Composable
 @Preview(name = "IconListItem", uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun IconListItemPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             IconListItem(
                 label = "Left icon list item",
                 beforeIconPainter = painterResource(R.drawable.ic_folder_icon),
@@ -304,8 +304,8 @@ private fun IconListItemPreview() {
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 private fun IconListItemWithRightIconPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             IconListItem(
                 label = "Left icon list item + right icon",
                 beforeIconPainter = painterResource(R.drawable.ic_folder_icon),
@@ -324,8 +324,8 @@ private fun IconListItemWithRightIconPreview() {
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 private fun FaviconListItemPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             FaviconListItem(
                 label = "Favicon + right icon + clicks",
                 description = "Description text",

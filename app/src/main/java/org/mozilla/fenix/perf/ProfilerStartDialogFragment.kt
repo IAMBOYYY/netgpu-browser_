@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -38,8 +38,8 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import mozilla.components.concept.base.profiler.Profiler
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
 
 /**
  * Dialogue to start the Gecko profiler in Fenix without the use of ADB.

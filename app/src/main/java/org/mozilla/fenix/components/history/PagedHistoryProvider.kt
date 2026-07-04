@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.history
+package com.netgpu.browser.components.history
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.browser.storage.sync.PlacesHistoryStorage
@@ -11,9 +11,9 @@ import mozilla.components.concept.storage.HistoryMetadataKey
 import mozilla.components.concept.storage.VisitInfo
 import mozilla.components.concept.storage.VisitType
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.HistoryItemTimeGroup
-import org.mozilla.fenix.utils.Settings.Companion.SEARCH_GROUP_MINIMUM_SITES
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.HistoryItemTimeGroup
+import com.netgpu.browser.utils.Settings.Companion.SEARCH_GROUP_MINIMUM_SITES
 
 private const val BUFFER_TIME = 15000 /* 15 seconds in ms */
 

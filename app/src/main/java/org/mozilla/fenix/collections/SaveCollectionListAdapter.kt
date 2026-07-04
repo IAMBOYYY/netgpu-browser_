@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -10,11 +10,11 @@ import androidx.core.graphics.BlendModeColorFilterCompat.createBlendModeColorFil
 import androidx.core.graphics.BlendModeCompat.SRC_IN
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.tab.collections.TabCollection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.description
-import org.mozilla.fenix.databinding.CollectionsListItemBinding
-import org.mozilla.fenix.ext.getIconColor
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.components.description
+import com.netgpu.browser.databinding.CollectionsListItemBinding
+import com.netgpu.browser.ext.getIconColor
+import com.netgpu.browser.utils.view.ViewHolder
 
 class SaveCollectionListAdapter(
     private val interactor: CollectionCreationInteractor,

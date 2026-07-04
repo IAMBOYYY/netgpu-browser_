@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
@@ -46,36 +46,36 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.HomeScreen
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.GleanMetrics.RecentBookmarks
-import org.mozilla.fenix.GleanMetrics.RecentTabs
-import org.mozilla.fenix.GleanMetrics.TopSites
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Analytics
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.gleanplumb.MessageController
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recenttabs.RecentTab
-import org.mozilla.fenix.home.sessioncontrol.DefaultSessionControlController
-import org.mozilla.fenix.onboarding.WallpaperOnboardingDialogFragment.Companion.THUMBNAILS_SELECTION_COUNT
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.wallpapers.Wallpaper
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.HomeScreen
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.GleanMetrics.RecentBookmarks
+import com.netgpu.browser.GleanMetrics.RecentTabs
+import com.netgpu.browser.GleanMetrics.TopSites
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Analytics
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.gleanplumb.MessageController
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recenttabs.RecentTab
+import com.netgpu.browser.home.sessioncontrol.DefaultSessionControlController
+import com.netgpu.browser.onboarding.WallpaperOnboardingDialogFragment.Companion.THUMBNAILS_SELECTION_COUNT
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.wallpapers.Wallpaper
+import com.netgpu.browser.wallpapers.WallpaperState
 import mozilla.components.feature.tab.collections.Tab as ComponentTab
 
 @RunWith(FenixRobolectricTestRunner::class) // For gleanTestRule

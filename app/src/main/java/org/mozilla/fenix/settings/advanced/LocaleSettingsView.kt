@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.advanced
+package com.netgpu.browser.settings.advanced
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentLocaleSettingsBinding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentLocaleSettingsBinding
 import java.util.Locale
 
 interface LocaleSettingsViewInteractor {

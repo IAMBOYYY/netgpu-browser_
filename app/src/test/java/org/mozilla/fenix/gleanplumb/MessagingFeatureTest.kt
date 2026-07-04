@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import io.mockk.spyk
 import io.mockk.verify
@@ -10,9 +10,9 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import mozilla.components.support.test.rule.MainCoroutineRule
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction
-import org.mozilla.fenix.nimbus.MessageSurfaceId
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction
+import com.netgpu.browser.nimbus.MessageSurfaceId
 
 class MessagingFeatureTest {
     @OptIn(ExperimentalCoroutinesApi::class)

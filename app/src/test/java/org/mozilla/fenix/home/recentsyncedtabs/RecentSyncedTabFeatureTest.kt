@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs
+package com.netgpu.browser.home.recentsyncedtabs
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import io.mockk.coEvery
@@ -45,9 +45,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.RecentSyncedTabs
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
+import com.netgpu.browser.GleanMetrics.RecentSyncedTabs
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
 
 @RunWith(AndroidJUnit4::class)
 class RecentSyncedTabFeatureTest {

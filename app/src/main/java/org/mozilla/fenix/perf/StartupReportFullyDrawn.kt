@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.Activity
 import android.view.View
 import androidx.core.view.doOnPreDraw
 import mozilla.components.support.ktx.android.view.reportFullyDrawnSafe
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.home.topsites.TopSiteItemViewHolder
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
-import org.mozilla.fenix.perf.StartupTimelineStateMachine.StartupState
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.home.topsites.TopSiteItemViewHolder
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.APP_LINK
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupDestination.HOMESCREEN
+import com.netgpu.browser.perf.StartupTimelineStateMachine.StartupState
 
 /**
  * Instruments the Android framework method [Activity.reportFullyDrawn], which prints time to visual

@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
 import mozilla.components.support.utils.SafeIntent
 import mozilla.components.support.utils.toSafeIntent
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
 
 /**
- * The [org.mozilla.fenix.IntentReceiverActivity] may set the [HomeActivity.OPEN_TO_BROWSER] flag
+ * The [com.netgpu.browser.IntentReceiverActivity] may set the [HomeActivity.OPEN_TO_BROWSER] flag
  * when the browser should be opened in response to an intent.
  */
 class OpenBrowserIntentProcessor(

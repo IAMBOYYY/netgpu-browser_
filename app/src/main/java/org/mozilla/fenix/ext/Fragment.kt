@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.app.Activity
 import android.content.Intent
@@ -18,9 +18,9 @@ import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import mozilla.components.concept.base.crash.Breadcrumb
-import org.mozilla.fenix.NavHostActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Components
+import com.netgpu.browser.NavHostActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Components
 
 /**
  * Get the requireComponents of this application.

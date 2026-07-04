@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.annotation.VisibleForTesting
 import androidx.annotation.VisibleForTesting.Companion.PACKAGE_PRIVATE
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.ext.components
 
 class PrivateBrowserTrayList @JvmOverloads constructor(
     context: Context,

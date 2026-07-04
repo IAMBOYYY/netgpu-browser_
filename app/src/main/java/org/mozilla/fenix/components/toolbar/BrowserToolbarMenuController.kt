@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Intent
 import androidx.annotation.VisibleForTesting
@@ -28,27 +28,27 @@ import mozilla.components.feature.top.sites.PinnedSiteStorage
 import mozilla.components.feature.top.sites.TopSite
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.ReaderMode
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserAnimator
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.browser.readermode.ReaderModeController
-import org.mozilla.fenix.collections.SaveCollectionStep
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.accounts.AccountState
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.ext.openSetDefaultBrowserOption
-import org.mozilla.fenix.settings.deletebrowsingdata.deleteAndQuit
-import org.mozilla.fenix.utils.Do
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.ReaderMode
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.BrowserAnimator
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.browser.readermode.ReaderModeController
+import com.netgpu.browser.collections.SaveCollectionStep
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.accounts.AccountState
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.navigateSafe
+import com.netgpu.browser.ext.openSetDefaultBrowserOption
+import com.netgpu.browser.settings.deletebrowsingdata.deleteAndQuit
+import com.netgpu.browser.utils.Do
+import com.netgpu.browser.utils.Settings
 
 /**
  * An interface that handles events from the BrowserToolbar menu, triggered by the Interactor
@@ -94,7 +94,7 @@ class DefaultBrowserToolbarMenuController(
         trackToolbarItemInteraction(item)
 
         Do exhaustive when (item) {
-            // TODO: These can be removed for https://github.com/mozilla-mobile/fenix/issues/17870
+            // TODO: These can be removed for https://github.com/mozilla-mobile/netgpu_browser/issues/17870
             // todo === Start ===
             is ToolbarMenu.Item.InstallPwaToHomeScreen -> {
                 settings.installPwaOpened = true
@@ -151,8 +151,8 @@ class DefaultBrowserToolbarMenuController(
                 // We need to show the snackbar while the browsing data is deleting (if "Delete
                 // browsing data on quit" is activated). After the deletion is over, the snackbar
                 // is dismissed.
-                val snackbar: FenixSnackbar? = activity.getRootView()?.let { v ->
-                    FenixSnackbar.make(
+                val snackbar: NetGpuBrowserSnackbar? = activity.getRootView()?.let { v ->
+                    NetGpuBrowserSnackbar.make(
                         view = v,
                         duration = Snackbar.LENGTH_LONG,
                         isDisplayedWithBrowserToolbar = true,
@@ -273,7 +273,7 @@ class DefaultBrowserToolbarMenuController(
                             }
                         }.join()
 
-                        FenixSnackbar.make(
+                        NetGpuBrowserSnackbar.make(
                             view = swipeRefresh,
                             duration = Snackbar.LENGTH_SHORT,
                             isDisplayedWithBrowserToolbar = true,
@@ -377,7 +377,7 @@ class DefaultBrowserToolbarMenuController(
                         }.join()
                     }
 
-                    FenixSnackbar.make(
+                    NetGpuBrowserSnackbar.make(
                         view = swipeRefresh,
                         duration = Snackbar.LENGTH_SHORT,
                         isDisplayedWithBrowserToolbar = true,
@@ -406,7 +406,7 @@ class DefaultBrowserToolbarMenuController(
     private fun trackToolbarItemInteraction(item: ToolbarMenu.Item) {
         when (item) {
             is ToolbarMenu.Item.OpenInFenix ->
-                Events.browserMenuAction.record(Events.BrowserMenuActionExtra("open_in_fenix"))
+                Events.browserMenuAction.record(Events.BrowserMenuActionExtra("open_in_netgpu_browser"))
             is ToolbarMenu.Item.InstallPwaToHomeScreen ->
                 Events.browserMenuAction.record(Events.BrowserMenuActionExtra("add_to_homescreen"))
             is ToolbarMenu.Item.Quit ->

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb.state
+package com.netgpu.browser.gleanplumb.state
 
 import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.CoroutineScope
@@ -10,18 +10,18 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.MiddlewareContext
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.Evaluate
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageClicked
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.MessageDismissed
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.Restore
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
-import org.mozilla.fenix.components.appstate.AppAction.MessagingAction.UpdateMessages
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.gleanplumb.NimbusMessagingController
-import org.mozilla.fenix.gleanplumb.NimbusMessagingStorage
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.ConsumeMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.Evaluate
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageClicked
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.MessageDismissed
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.Restore
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessageToShow
+import com.netgpu.browser.components.appstate.AppAction.MessagingAction.UpdateMessages
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.gleanplumb.NimbusMessagingController
+import com.netgpu.browser.gleanplumb.NimbusMessagingStorage
 
 typealias AppStoreMiddlewareContext = MiddlewareContext<AppState, AppAction>
 

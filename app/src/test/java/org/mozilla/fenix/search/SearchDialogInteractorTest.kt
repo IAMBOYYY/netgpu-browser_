@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import io.mockk.mockk
 import io.mockk.verify
@@ -10,7 +10,7 @@ import kotlinx.coroutines.test.runTest
 import mozilla.components.browser.state.search.SearchEngine
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
 
 class SearchDialogInteractorTest {
 

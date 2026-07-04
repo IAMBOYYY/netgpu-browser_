@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import android.view.View
 import androidx.annotation.VisibleForTesting
 import mozilla.components.concept.toolbar.Toolbar
-import org.mozilla.fenix.ext.increaseTapArea
+import com.netgpu.browser.ext.increaseTapArea
 
 /**
  * A Decorator that accepts a [Toolbar.Action] and increases its tap area.

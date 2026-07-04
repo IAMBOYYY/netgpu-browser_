@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.clearText
@@ -15,11 +15,11 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.Until
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the find in page UI.
@@ -40,11 +40,11 @@ class FindInPageRobot {
     }
 
     fun enterFindInPageQuery(expectedText: String) {
-        mDevice.waitNotNull(Until.findObject(By.res("org.mozilla.fenix.debug:id/find_in_page_query_text")), waitingTime)
+        mDevice.waitNotNull(Until.findObject(By.res("com.netgpu.browser.debug:id/find_in_page_query_text")), waitingTime)
         findInPageQuery().perform(clearText())
-        mDevice.waitNotNull(Until.gone(By.res("org.mozilla.fenix.debug:id/find_in_page_result_text")), waitingTime)
+        mDevice.waitNotNull(Until.gone(By.res("com.netgpu.browser.debug:id/find_in_page_result_text")), waitingTime)
         findInPageQuery().perform(typeText(expectedText))
-        mDevice.waitNotNull(Until.findObject(By.res("org.mozilla.fenix.debug:id/find_in_page_result_text")), waitingTime)
+        mDevice.waitNotNull(Until.findObject(By.res("com.netgpu.browser.debug:id/find_in_page_result_text")), waitingTime)
     }
 
     fun verifyFindNextInPageResult(ratioCounter: String) {

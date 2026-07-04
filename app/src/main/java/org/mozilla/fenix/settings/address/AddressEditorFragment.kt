@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address
+package com.netgpu.browser.settings.address
 
 import android.os.Bundle
 import android.view.Menu
@@ -15,16 +15,16 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.SecureFragment
-import org.mozilla.fenix.databinding.FragmentAddressEditorBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.address.controller.DefaultAddressEditorController
-import org.mozilla.fenix.settings.address.interactor.AddressEditorInteractor
-import org.mozilla.fenix.settings.address.interactor.DefaultAddressEditorInteractor
-import org.mozilla.fenix.settings.address.view.AddressEditorView
+import com.netgpu.browser.R
+import com.netgpu.browser.SecureFragment
+import com.netgpu.browser.databinding.FragmentAddressEditorBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.address.controller.DefaultAddressEditorController
+import com.netgpu.browser.settings.address.interactor.AddressEditorInteractor
+import com.netgpu.browser.settings.address.interactor.DefaultAddressEditorInteractor
+import com.netgpu.browser.settings.address.view.AddressEditorView
 
 /**
  * Displays an address editor for adding and editing an address.

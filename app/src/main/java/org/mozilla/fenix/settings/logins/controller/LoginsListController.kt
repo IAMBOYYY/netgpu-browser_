@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.controller
+package com.netgpu.browser.settings.logins.controller
 
 import androidx.navigation.NavController
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Logins
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.settings.logins.LoginsAction
-import org.mozilla.fenix.settings.logins.LoginsFragmentStore
-import org.mozilla.fenix.settings.logins.SavedLogin
-import org.mozilla.fenix.settings.logins.SortingStrategy
-import org.mozilla.fenix.settings.logins.fragment.SavedLoginsFragmentDirections
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Logins
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.settings.logins.LoginsAction
+import com.netgpu.browser.settings.logins.LoginsFragmentStore
+import com.netgpu.browser.settings.logins.SavedLogin
+import com.netgpu.browser.settings.logins.SortingStrategy
+import com.netgpu.browser.settings.logins.fragment.SavedLoginsFragmentDirections
+import com.netgpu.browser.utils.Settings
 
 /**
  * Controller for the saved logins list

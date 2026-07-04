@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,13 +12,13 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.browser.state.store.BrowserStore
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.tabstray.browser.BrowserTabsAdapter
-import org.mozilla.fenix.tabstray.browser.InactiveTabsAdapter
-import org.mozilla.fenix.tabstray.viewholders.AbstractPageViewHolder
-import org.mozilla.fenix.tabstray.viewholders.NormalBrowserPageViewHolder
-import org.mozilla.fenix.tabstray.viewholders.PrivateBrowserPageViewHolder
-import org.mozilla.fenix.tabstray.viewholders.SyncedTabsPageViewHolder
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.tabstray.browser.BrowserTabsAdapter
+import com.netgpu.browser.tabstray.browser.InactiveTabsAdapter
+import com.netgpu.browser.tabstray.viewholders.AbstractPageViewHolder
+import com.netgpu.browser.tabstray.viewholders.NormalBrowserPageViewHolder
+import com.netgpu.browser.tabstray.viewholders.PrivateBrowserPageViewHolder
+import com.netgpu.browser.tabstray.viewholders.SyncedTabsPageViewHolder
 
 @Suppress("LongParameterList")
 class TrayPagerAdapter(
@@ -95,7 +95,7 @@ class TrayPagerAdapter(
     /**
      * Until [TrayPagerAdapter] is replaced with a Compose implementation, [SyncedTabsPageViewHolder]
      * will need to be called with an empty bind() function since it no longer needs an adapter to render.
-     * For more details: https://github.com/mozilla-mobile/fenix/issues/21318
+     * For more details: https://github.com/mozilla-mobile/netgpu_browser/issues/21318
      */
     override fun onBindViewHolder(viewHolder: AbstractPageViewHolder, position: Int) {
         when (viewHolder) {

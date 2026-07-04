@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.content.Intent
 import androidx.annotation.VisibleForTesting
@@ -14,10 +14,10 @@ import mozilla.components.concept.engine.manifest.WebAppManifestParser
 import mozilla.components.feature.intent.ext.getSessionId
 import mozilla.components.feature.pwa.ext.getWebAppManifest
 import mozilla.components.support.utils.SafeIntent
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.ext.components
 import java.security.InvalidParameterException
 
 /**

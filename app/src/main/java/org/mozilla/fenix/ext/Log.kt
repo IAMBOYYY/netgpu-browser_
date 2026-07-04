@@ -4,10 +4,10 @@
 
 @file:Suppress("NOTHING_TO_INLINE")
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.util.Log
-import org.mozilla.fenix.Config
+import com.netgpu.browser.Config
 
 /**
  * Will print to `Log.d()` only for debug release channels.

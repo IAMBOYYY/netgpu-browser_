@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.listadapters
+package com.netgpu.browser.share.listadapters
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import org.mozilla.fenix.share.ShareToAppsInteractor
-import org.mozilla.fenix.share.viewholders.AppViewHolder
+import com.netgpu.browser.share.ShareToAppsInteractor
+import com.netgpu.browser.share.viewholders.AppViewHolder
 
 /**
  * Adapter for a list of apps that can be shared to.

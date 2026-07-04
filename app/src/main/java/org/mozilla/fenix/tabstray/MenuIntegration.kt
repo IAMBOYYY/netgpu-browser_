@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
 import com.google.android.material.tabs.TabLayout
 import mozilla.components.browser.menu.BrowserMenuBuilder
 import mozilla.components.browser.state.store.BrowserStore
-import org.mozilla.fenix.utils.Do
+import com.netgpu.browser.utils.Do
 
 /**
  * A wrapper class that building the tabs tray menu that handles item clicks.

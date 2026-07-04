@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.syncedtabs
+package com.netgpu.browser.tabstray.syncedtabs
 
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
@@ -11,8 +11,8 @@ import kotlinx.coroutines.flow.map
 import mozilla.components.feature.syncedtabs.view.SyncedTabsView
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 /**
  * An [AbstractBinding] that invokes the [onSyncNow] callback when the [TabsTrayState.syncing] is

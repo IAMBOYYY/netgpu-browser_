@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,10 +14,10 @@ import mozilla.components.browser.state.action.WebExtensionAction
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.concept.engine.EngineView
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddOnInternalSettingsBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddOnInternalSettingsBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
 
 /**
  * A fragment to show the web extension action popup with [EngineView].

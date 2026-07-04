@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -17,14 +17,14 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 import mozilla.components.support.base.ids.SharedIdsHelper
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.utils.IntentUtils
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.createBaseNotification
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.utils.IntentUtils
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.createBaseNotification
 import java.util.concurrent.TimeUnit
 
 /**
@@ -90,10 +90,10 @@ class ReEngagementNotificationWorker(
 
     companion object {
         const val NOTIFICATION_TARGET_URL = "https://www.mozilla.org/firefox/privacy/"
-        private const val NOTIFICATION_PENDING_INTENT_TAG = "org.mozilla.fenix.re-engagement"
-        private const val INTENT_RE_ENGAGEMENT_NOTIFICATION = "org.mozilla.fenix.re-engagement.intent"
-        private const val NOTIFICATION_TAG = "org.mozilla.fenix.re-engagement.tag"
-        private const val NOTIFICATION_WORK_NAME = "org.mozilla.fenix.re-engagement.work"
+        private const val NOTIFICATION_PENDING_INTENT_TAG = "com.netgpu.browser.re-engagement"
+        private const val INTENT_RE_ENGAGEMENT_NOTIFICATION = "com.netgpu.browser.re-engagement.intent"
+        private const val NOTIFICATION_TAG = "com.netgpu.browser.re-engagement.tag"
+        private const val NOTIFICATION_WORK_NAME = "com.netgpu.browser.re-engagement.work"
         private const val NOTIFICATION_DELAY = Settings.TWO_DAYS_MS
 
         // We are trying to reach the users that are inactive after the initial 24 hours

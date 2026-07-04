@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.os.Build
 import androidx.test.espresso.Espresso.onView
@@ -20,11 +20,11 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.Matchers.endsWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.hasCousin
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.hasCousin
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the settings Theme sub menu.

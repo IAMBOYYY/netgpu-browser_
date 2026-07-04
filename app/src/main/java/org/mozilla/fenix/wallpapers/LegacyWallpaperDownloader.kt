@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
@@ -11,7 +11,7 @@ import mozilla.components.concept.fetch.Client
 import mozilla.components.concept.fetch.Request
 import mozilla.components.concept.fetch.isSuccess
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.BuildConfig
+import com.netgpu.browser.BuildConfig
 import java.io.File
 
 /**

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -11,9 +11,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.GleanMetrics.Activation
-import org.mozilla.fenix.GleanMetrics.Pings
-import org.mozilla.fenix.components.metrics.MetricsUtils.getHashedIdentifier
+import com.netgpu.browser.GleanMetrics.Activation
+import com.netgpu.browser.GleanMetrics.Pings
+import com.netgpu.browser.components.metrics.MetricsUtils.getHashedIdentifier
 
 class ActivationPing(private val context: Context) {
     companion object {

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home
+package com.netgpu.browser.home
 
 import androidx.annotation.VisibleForTesting
 import androidx.datastore.core.DataStore
@@ -18,13 +18,13 @@ import mozilla.components.service.pocket.PocketStoriesService
 import mozilla.components.service.pocket.PocketStory
 import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.datastore.SelectedPocketStoriesCategories
-import org.mozilla.fenix.datastore.SelectedPocketStoriesCategories.SelectedPocketStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesSelectedCategory
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.datastore.SelectedPocketStoriesCategories
+import com.netgpu.browser.datastore.SelectedPocketStoriesCategories.SelectedPocketStoriesCategory
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesSelectedCategory
 
 /**
  * [AppStore] middleware reacting in response to Pocket related [Action]s.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders
+package com.netgpu.browser.home.sessioncontrol.viewholders
 
 import android.view.View
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -17,13 +17,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.button.TertiaryButton
-import org.mozilla.fenix.home.sessioncontrol.CustomizeHomeIteractor
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.button.TertiaryButton
+import com.netgpu.browser.home.sessioncontrol.CustomizeHomeIteractor
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.WallpaperState
 
 class CustomizeHomeButtonViewHolder(
     composeView: ComposeView,
@@ -45,7 +45,7 @@ class CustomizeHomeButtonViewHolder(
     override fun Content() {
         val wallpaperState = components.appStore
             .observeAsComposableState { state -> state.wallpaperState }.value ?: WallpaperState.default
-        var buttonColor: Color = FirefoxTheme.colors.actionTertiary
+        var buttonColor: Color = NetGpuBrowserTheme.colors.actionTertiary
 
         wallpaperState.composeRunIfWallpaperCardColorsAreAvailable { cardColorLight, cardColorDark ->
             buttonColor = if (isSystemInDarkTheme()) {

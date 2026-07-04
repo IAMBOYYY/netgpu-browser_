@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -22,10 +22,10 @@ import mozilla.components.browser.state.state.ExternalAppType
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.support.base.ids.cancel
 import mozilla.components.support.base.ids.notify
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
- * Displays a "Powered by Firefox Preview" notification when a Trusted Web Activity is running.
+ * Displays a "Powered by NETGPU BROWSER Preview" notification when a Trusted Web Activity is running.
  */
 class PoweredByNotification(
     private val applicationContext: Context,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.content.Context
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ import kotlinx.coroutines.withContext
 import mozilla.components.browser.state.state.SessionState
 import mozilla.components.concept.engine.cookiehandling.CookieBannersStorage
 import mozilla.components.concept.engine.permission.SitePermissions
-import org.mozilla.fenix.browser.BrowserFragmentDirections
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.browser.BrowserFragmentDirections
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
 
 /**
  * Interactor for the tracking protection panel

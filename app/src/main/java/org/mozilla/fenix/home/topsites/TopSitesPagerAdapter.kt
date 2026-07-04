@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.topsites
+package com.netgpu.browser.home.topsites
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,10 +11,10 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import mozilla.components.feature.top.sites.TopSite
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.home.sessioncontrol.AdapterItem.TopSitePagerPayload
-import org.mozilla.fenix.home.sessioncontrol.TopSiteInteractor
-import org.mozilla.fenix.home.topsites.TopSitePagerViewHolder.Companion.TOP_SITES_PER_PAGE
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.home.sessioncontrol.AdapterItem.TopSitePagerPayload
+import com.netgpu.browser.home.sessioncontrol.TopSiteInteractor
+import com.netgpu.browser.home.topsites.TopSitePagerViewHolder.Companion.TOP_SITES_PER_PAGE
 
 class TopSitesPagerAdapter(
     private val appStore: AppStore,

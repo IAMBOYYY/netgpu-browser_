@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.text.Editable
 import androidx.compose.runtime.Composable
 import mozilla.components.support.ktx.kotlin.MAX_URI_LENGTH
 import mozilla.components.support.ktx.kotlin.toShortUrl
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.inComposePreview
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.inComposePreview
 
 /**
  * Shortens URLs to be more user friendly, by applying [String.toShortUrl]
@@ -20,7 +20,7 @@ fun String.toShortUrl(): String {
     // Truncate to MAX_URI_LENGTH to prevent the UI from locking up for
     // extremely large URLs such as data URIs or bookmarklets. The same
     // is done in the toolbar and awesomebar:
-    // https://github.com/mozilla-mobile/fenix/issues/1824
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/1824
     // https://github.com/mozilla-mobile/android-components/issues/6985
     return if (inComposePreview) {
         this.take(MAX_URI_LENGTH)

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.graphics.Rect
 import android.os.Build
@@ -27,8 +27,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import org.robolectric.annotation.Config
 
 @RunWith(FenixRobolectricTestRunner::class)
@@ -45,7 +45,7 @@ class ViewTest {
         MockKAnnotations.init(this)
         mockkStatic("mozilla.components.support.ktx.android.util.DisplayMetricsKt")
         mockkStatic("mozilla.components.support.utils.ext.WindowInsetsCompatKt")
-        mockkStatic("org.mozilla.fenix.ext.ViewKt")
+        mockkStatic("com.netgpu.browser.ext.ViewKt")
 
         every { view.context } answers { testContext }
         every { view.resources.getDimensionPixelSize(any()) } answers {

@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import com.google.android.material.tabs.TabLayout
-import org.mozilla.fenix.tabstray.TrayPagerAdapter
+import com.netgpu.browser.tabstray.TrayPagerAdapter
 
 fun TabLayout.isNormalModeSelected(): Boolean {
     return selectedTabPosition == TrayPagerAdapter.POSITION_NORMAL_TABS

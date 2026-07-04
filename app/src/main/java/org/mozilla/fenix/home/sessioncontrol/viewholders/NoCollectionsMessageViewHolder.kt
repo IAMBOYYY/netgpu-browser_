@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders
+package com.netgpu.browser.home.sessioncontrol.viewholders
 
 import android.view.View
 import androidx.compose.ui.graphics.Color
@@ -16,13 +16,13 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.databinding.NoCollectionsMessageBinding
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.ext.isSystemInDarkTheme
-import org.mozilla.fenix.home.sessioncontrol.CollectionInteractor
-import org.mozilla.fenix.utils.view.ViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.databinding.NoCollectionsMessageBinding
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.ext.isSystemInDarkTheme
+import com.netgpu.browser.home.sessioncontrol.CollectionInteractor
+import com.netgpu.browser.utils.view.ViewHolder
 
 class NoCollectionsMessageViewHolder(
     view: View,

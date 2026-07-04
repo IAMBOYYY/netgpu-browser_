@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.search
+package com.netgpu.browser.settings.search
 
 import android.content.Context
 import android.content.res.Resources
@@ -30,12 +30,12 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.lib.state.ext.flow
 import mozilla.components.support.ktx.android.view.toScope
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.SearchEngineRadioButtonBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.SearchEngineRadioButtonBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.allowUndo
 
 class RadioSearchEngineListPreference @JvmOverloads constructor(
     context: Context,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.content.Context
 import android.view.View
@@ -10,8 +10,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.settings
 import java.util.concurrent.atomic.AtomicBoolean
 
 internal const val UNDO_DELAY = 3000L
@@ -35,12 +35,12 @@ fun Context.getUndoDelay(): Long {
  *
  * Execution of suspend blocks happens on [Dispatchers.Main].
  *
- * @param view A [View] used to determine a parent for the [FenixSnackbar].
- * @param message A message displayed as part of [FenixSnackbar].
- * @param undoActionTitle Label for the action associated with the [FenixSnackbar].
+ * @param view A [View] used to determine a parent for the [NetGpuBrowserSnackbar].
+ * @param message A message displayed as part of [NetGpuBrowserSnackbar].
+ * @param undoActionTitle Label for the action associated with the [NetGpuBrowserSnackbar].
  * @param onCancel A suspend block to execute in case of cancellation.
- * @param operation A suspend block to execute if user doesn't cancel via the displayed [FenixSnackbar].
- * @param anchorView A [View] to which [FenixSnackbar] should be anchored.
+ * @param operation A suspend block to execute if user doesn't cancel via the displayed [NetGpuBrowserSnackbar].
+ * @param anchorView A [View] to which [NetGpuBrowserSnackbar] should be anchored.
  */
 @Suppress("LongParameterList")
 fun CoroutineScope.allowUndo(
@@ -59,10 +59,10 @@ fun CoroutineScope.allowUndo(
 
     @Suppress("ComplexCondition")
     fun showUndoSnackbar() {
-        val snackbar = FenixSnackbar
+        val snackbar = NetGpuBrowserSnackbar
             .make(
                 view = view,
-                duration = FenixSnackbar.LENGTH_INDEFINITE,
+                duration = NetGpuBrowserSnackbar.LENGTH_INDEFINITE,
                 isDisplayedWithBrowserToolbar = paddedForBottomToolbar,
             )
             .setText(message)

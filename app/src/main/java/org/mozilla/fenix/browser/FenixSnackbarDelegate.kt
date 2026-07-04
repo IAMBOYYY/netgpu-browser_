@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.view.View
 import androidx.annotation.StringRes
 import mozilla.components.feature.contextmenu.ContextMenuCandidate
-import org.mozilla.fenix.components.FenixSnackbar
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
 
-class FenixSnackbarDelegate(private val view: View) : ContextMenuCandidate.SnackbarDelegate {
+class NetGpuBrowserSnackbarDelegate(private val view: View) : ContextMenuCandidate.SnackbarDelegate {
 
     override fun show(
         snackBarParentView: View,
@@ -19,18 +19,18 @@ class FenixSnackbarDelegate(private val view: View) : ContextMenuCandidate.Snack
         listener: ((v: View) -> Unit)?,
     ) {
         if (listener != null && action != 0) {
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view = view,
-                duration = FenixSnackbar.LENGTH_SHORT,
+                duration = NetGpuBrowserSnackbar.LENGTH_SHORT,
                 isDisplayedWithBrowserToolbar = true,
             )
                 .setText(view.context.getString(text))
                 .setAction(view.context.getString(action)) { listener.invoke(view) }
                 .show()
         } else {
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view,
-                duration = FenixSnackbar.LENGTH_SHORT,
+                duration = NetGpuBrowserSnackbar.LENGTH_SHORT,
                 isDisplayedWithBrowserToolbar = true,
             )
                 .setText(view.context.getString(text))

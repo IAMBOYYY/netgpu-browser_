@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.os.Build
 import android.os.StrictMode
@@ -50,10 +50,10 @@ class ThreadPenaltyDeathWithIgnoresListener(
             containsInstrumentedHooksClass(violation)
 
     private fun isSamsungLgEdmStorageProviderStartupViolation(violation: Violation): Boolean {
-        // Root issue: https://github.com/mozilla-mobile/fenix/issues/17920
+        // Root issue: https://github.com/mozilla-mobile/netgpu_browser/issues/17920
         //
         // This fix may address the issues seen in this bug:
-        // https://github.com/mozilla-mobile/fenix/issues/15430
+        // https://github.com/mozilla-mobile/netgpu_browser/issues/15430
         // So we might be able to back out the changes made there. However, I don't have a device to
         // test so I didn't bother.
         //
@@ -74,7 +74,7 @@ class ThreadPenaltyDeathWithIgnoresListener(
     }
 
     private fun containsInstrumentedHooksClass(violation: Violation): Boolean {
-        // See https://github.com/mozilla-mobile/fenix/issues/21695
+        // See https://github.com/mozilla-mobile/netgpu_browser/issues/21695
         // When deploying debug builds from Android Studio then we may hit a DiskReadViolation
         // occasionally. There's an upstream fix for this, but the stable version of Android Studio
         // still seems to be affected.

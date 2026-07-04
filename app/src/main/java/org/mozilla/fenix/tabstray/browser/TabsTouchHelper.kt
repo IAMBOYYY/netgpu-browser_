@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
@@ -16,7 +16,7 @@ import mozilla.components.browser.tabstray.TabsTray
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.android.content.getDrawableWithTint
 import mozilla.components.support.ktx.android.util.dpToPx
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * A callback for consumers to know when a [RecyclerView.ViewHolder] is about to be touched.

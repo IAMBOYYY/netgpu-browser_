@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.selectfolder
+package com.netgpu.browser.library.bookmarks.selectfolder
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,13 +23,13 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.concept.storage.BookmarkNode
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentSelectBookmarkFolderBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.library.bookmarks.BookmarksSharedViewModel
-import org.mozilla.fenix.library.bookmarks.DesktopFolders
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentSelectBookmarkFolderBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.library.bookmarks.BookmarksSharedViewModel
+import com.netgpu.browser.library.bookmarks.DesktopFolders
 
 class SelectBookmarkFolderFragment : Fragment(), MenuProvider {
     private var _binding: FragmentSelectBookmarkFolderBinding? = null

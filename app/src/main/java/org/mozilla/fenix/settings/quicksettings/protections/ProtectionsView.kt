@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections
+package com.netgpu.browser.settings.quicksettings.protections
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -25,12 +25,12 @@ import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.core.view.isVisible
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.databinding.QuicksettingsProtectionsPanelBinding
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.trackingprotection.ProtectionsState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.databinding.QuicksettingsProtectionsPanelBinding
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.trackingprotection.ProtectionsState
+import com.netgpu.browser.utils.Settings
 
 /**
  * MVI View that displays the tracking protection, cookie banner handling toggles and the navigation
@@ -102,7 +102,7 @@ class ProtectionsView(
         binding.cookieBannerItem.apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     CookieBannerItem(
                         label = label,
                         description = description,
@@ -135,7 +135,7 @@ private fun CookieBannerItem(
             painter = startIconPainter,
             contentDescription = null,
             modifier = Modifier.padding(horizontal = 0.dp),
-            tint = FirefoxTheme.colors.iconPrimary,
+            tint = NetGpuBrowserTheme.colors.iconPrimary,
         )
         Column(
             modifier = Modifier
@@ -144,14 +144,14 @@ private fun CookieBannerItem(
         ) {
             Text(
                 text = label,
-                color = FirefoxTheme.colors.textPrimary,
-                style = FirefoxTheme.typography.subtitle1,
+                color = NetGpuBrowserTheme.colors.textPrimary,
+                style = NetGpuBrowserTheme.typography.subtitle1,
                 maxLines = 1,
             )
             Text(
                 text = description,
-                color = FirefoxTheme.colors.textSecondary,
-                style = FirefoxTheme.typography.body2,
+                color = NetGpuBrowserTheme.colors.textSecondary,
+                style = NetGpuBrowserTheme.typography.body2,
                 maxLines = 1,
             )
         }
@@ -161,7 +161,7 @@ private fun CookieBannerItem(
                 .size(24.dp),
             painter = endIconPainter,
             contentDescription = null,
-            tint = FirefoxTheme.colors.iconPrimary,
+            tint = NetGpuBrowserTheme.colors.iconPrimary,
         )
     }
 }
@@ -169,8 +169,8 @@ private fun CookieBannerItem(
 @Composable
 @LightDarkPreview
 private fun CookieBannerItemPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             CookieBannerItem(
                 label = "Cookie Banner Reduction",
                 description = "On for this site",

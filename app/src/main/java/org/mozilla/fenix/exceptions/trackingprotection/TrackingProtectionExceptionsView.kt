@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.trackingprotection
+package com.netgpu.browser.exceptions.trackingprotection
 
 import android.text.method.LinkMovementMethod
 import android.view.ViewGroup
 import mozilla.components.concept.engine.content.blocking.TrackingProtectionException
-import org.mozilla.fenix.exceptions.ExceptionsView
-import org.mozilla.fenix.ext.addUnderline
+import com.netgpu.browser.exceptions.ExceptionsView
+import com.netgpu.browser.ext.addUnderline
 
 class TrackingProtectionExceptionsView(
     container: ViewGroup,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.content.Context
 import android.content.DialogInterface
@@ -41,22 +41,22 @@ import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.ktx.kotlin.toShortUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.BookmarksManagement
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.NavHostActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentBookmarkBinding
-import org.mozilla.fenix.ext.bookmarkStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.minus
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.setTextColor
-import org.mozilla.fenix.library.LibraryPageFragment
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.GleanMetrics.BookmarksManagement
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.NavHostActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentBookmarkBinding
+import com.netgpu.browser.ext.bookmarkStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.minus
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.setTextColor
+import com.netgpu.browser.library.LibraryPageFragment
+import com.netgpu.browser.utils.allowUndo
 
 /**
  * The screen that displays the user's bookmark list in their Library.
@@ -126,9 +126,9 @@ class BookmarkFragment : LibraryPageFragment<BookmarkNode>(), UserInteractionHan
 
     private fun showSnackBarWithText(text: String) {
         view?.let {
-            FenixSnackbar.make(
+            NetGpuBrowserSnackbar.make(
                 view = it,
-                duration = FenixSnackbar.LENGTH_LONG,
+                duration = NetGpuBrowserSnackbar.LENGTH_LONG,
                 isDisplayedWithBrowserToolbar = false,
             ).setText(text).show()
         }
@@ -280,7 +280,7 @@ class BookmarkFragment : LibraryPageFragment<BookmarkNode>(), UserInteractionHan
     private suspend fun refreshBookmarks() {
         // The bookmark tree in our 'state' can be null - meaning, no bookmark tree has been selected.
         // If that's the case, we don't know what node to refresh, and so we bail out.
-        // See https://github.com/mozilla-mobile/fenix/issues/4671
+        // See https://github.com/mozilla-mobile/netgpu_browser/issues/4671
         val currentGuid = bookmarkStore.state.tree?.guid ?: return
         loadBookmarkNode(currentGuid)
             ?.let { node ->

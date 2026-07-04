@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.trackingprotection
+package com.netgpu.browser.trackingprotection
 
 import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
@@ -21,17 +21,17 @@ import mozilla.components.browser.state.state.CustomTabSessionState
 import mozilla.components.concept.engine.content.blocking.TrackerLog
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentTrackingProtectionPanelBinding
-import org.mozilla.fenix.ext.addUnderline
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.REDIRECT_TRACKERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
-import org.mozilla.fenix.trackingprotection.TrackingProtectionCategory.TRACKING_CONTENT
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentTrackingProtectionPanelBinding
+import com.netgpu.browser.ext.addUnderline
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CROSS_SITE_TRACKING_COOKIES
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.CRYPTOMINERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.FINGERPRINTERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.REDIRECT_TRACKERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.SOCIAL_MEDIA_TRACKERS
+import com.netgpu.browser.trackingprotection.TrackingProtectionCategory.TRACKING_CONTENT
 
 /**
  * Interface for the TrackingProtectionPanelViewInteractor. This interface is implemented by objects that want

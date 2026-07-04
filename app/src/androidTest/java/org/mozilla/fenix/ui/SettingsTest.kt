@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -12,8 +12,8 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityTestRule
 
 /**
  *  Tests for verifying the main three dot menu options
@@ -69,7 +69,7 @@ class SettingsTest {
         // Verify header: "About"
         // Verify item: "Help"
         // Verify item: "Rate on Google Play"
-        // Verify item: "About Firefox Preview"
+        // Verify item: "About NETGPU BROWSER Preview"
         //
     }
 
@@ -116,14 +116,14 @@ class SettingsTest {
 
     @Ignore("This is a stub test, ignore for now")
     @Test
-    fun verifyAboutFirefoxPreview() {
+    fun verifyAboutNETGPU BROWSERPreview() {
         // Open 3dot (main) menu
         // Select settings
-        // Click on "Verify About Firefox Preview"
+        // Click on "Verify About NETGPU BROWSER Preview"
         // Verify about page contains....
         // Build #
         // Version #
-        // "Firefox Preview is produced by Mozilla"
+        // "NETGPU BROWSER Preview is produced by Mozilla"
         // Day, Date, timestamp
         // "Open source libraries we use"
     }

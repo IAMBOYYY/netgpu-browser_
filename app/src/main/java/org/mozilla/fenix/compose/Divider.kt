@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -16,8 +16,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Generic divider.
@@ -30,7 +30,7 @@ fun Divider(
 ) {
     androidx.compose.material.Divider(
         modifier = modifier,
-        color = FirefoxTheme.colors.borderPrimary,
+        color = NetGpuBrowserTheme.colors.borderPrimary,
     )
 }
 
@@ -40,10 +40,10 @@ fun Divider(
 @Composable
 @LightDarkPreview
 private fun VerticalDividerPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Box(
             Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .height(75.dp),
         ) {
             Row {
@@ -74,10 +74,10 @@ private fun VerticalDividerPreview() {
 @Composable
 @LightDarkPreview
 private fun HorizontalDividerPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Box(
             Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .width(100.dp)
                 .height(175.dp),
         ) {

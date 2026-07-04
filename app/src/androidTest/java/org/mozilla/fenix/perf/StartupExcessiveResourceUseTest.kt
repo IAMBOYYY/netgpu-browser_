@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.view.View
 import android.view.ViewGroup
@@ -15,8 +15,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.HomeActivityTestRule
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.HomeActivityTestRule
 
 // BEFORE CHANGING EXPECTED_* VALUES, PLEASE READ THE TEST CLASS KDOC.
 
@@ -41,7 +41,7 @@ private const val EXPECTED_SUPPRESSION_COUNT = 18
  *
  * runBlocking indicates that we're blocking the current thread waiting for the result of another
  * coroutine. While the main thread is blocked, 1) we can't handle user input and the user may feel
- * Firefox is slow and 2) we can't use the main thread to continue initialization that must occur on
+ * NETGPU BROWSER is slow and 2) we can't use the main thread to continue initialization that must occur on
  * the main thread (like initializing UI), slowing down start up overall. Blocking calls should
  * generally be replaced with a slow operation on a background thread launching onto the main thread
  * when completed. However, in a very small number of cases, blocking may be impossible to avoid.
@@ -119,7 +119,7 @@ class StartupExcessiveResourceUseTest {
 
         // This below asserts fail in Firebase with different values for
         // "actualRecyclerViewConstraintLayoutChildren" or "actualNumberOfInflations"
-        // See https://github.com/mozilla-mobile/fenix/pull/26512 and https://github.com/mozilla-mobile/fenix/issues/25142
+        // See https://github.com/mozilla-mobile/netgpu_browser/pull/26512 and https://github.com/mozilla-mobile/netgpu_browser/issues/25142
         //
         // val rootView = activityTestRule.activity.findViewById<LinearLayout>(R.id.rootContainer)
         // val actualRecyclerViewConstraintLayoutChildren = countRecyclerViewConstraintLayoutChildren(rootView, null)

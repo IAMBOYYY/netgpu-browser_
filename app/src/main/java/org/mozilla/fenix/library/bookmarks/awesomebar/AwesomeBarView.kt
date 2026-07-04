@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.awesomebar
+package com.netgpu.browser.library.bookmarks.awesomebar
 
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.feature.awesomebar.provider.BookmarksStorageSuggestionProvider
 import mozilla.components.feature.session.SessionUseCases
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.library.bookmarks.BookmarkSearchFragmentState
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.library.bookmarks.BookmarkSearchFragmentState
 
 /**
  * View that contains and configures the BrowserAwesomeBar

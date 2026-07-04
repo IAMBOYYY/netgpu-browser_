@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus
+package com.netgpu.browser.nimbus
 
 import android.R
 import android.app.Activity
@@ -22,13 +22,13 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mozilla.experiments.nimbus.Branch
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.getRootView
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.nimbus.controller.NimbusBranchesController
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.getRootView
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.nimbus.controller.NimbusBranchesController
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class NimbusBranchesControllerTest {
@@ -42,7 +42,7 @@ class NimbusBranchesControllerTest {
     private lateinit var settings: Settings
     private lateinit var activity: Context
     private lateinit var components: Components
-    private lateinit var snackbar: FenixSnackbar
+    private lateinit var snackbar: NetGpuBrowserSnackbar
     private lateinit var rootView: View
 
     @Before
@@ -58,13 +58,13 @@ class NimbusBranchesControllerTest {
             every { getRootView() } returns rootView
         }
 
-        mockkObject(FenixSnackbar)
-        every { FenixSnackbar.make(any(), any(), any(), any()) } returns snackbar
+        mockkObject(NetGpuBrowserSnackbar)
+        every { NetGpuBrowserSnackbar.make(any(), any(), any(), any()) } returns snackbar
 
         every { activity.settings() } returns settings
 
         every { navController.currentDestination } returns mockk {
-            every { id } returns org.mozilla.fenix.R.id.nimbusBranchesFragment
+            every { id } returns com.netgpu.browser.R.id.nimbusBranchesFragment
         }
 
         nimbusBranchesStore = NimbusBranchesStore(NimbusBranchesState(emptyList()))

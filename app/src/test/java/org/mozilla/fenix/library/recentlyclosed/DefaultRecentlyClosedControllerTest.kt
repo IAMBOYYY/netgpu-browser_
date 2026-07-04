@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.recentlyclosed
+package com.netgpu.browser.library.recentlyclosed
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
@@ -32,13 +32,13 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.RecentlyClosedTabs
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.ext.directionsEq
-import org.mozilla.fenix.ext.optionsEq
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.RecentlyClosedTabs
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.ext.directionsEq
+import com.netgpu.browser.ext.optionsEq
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class DefaultRecentlyClosedControllerTest {

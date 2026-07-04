@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.session
+package com.netgpu.browser.session
 
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
 import mozilla.components.support.utils.RunWhenReadyQueue
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.settings.account.AuthIntentReceiverActivity
-import org.mozilla.fenix.widget.VoiceSearchActivity
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.settings.account.AuthIntentReceiverActivity
+import com.netgpu.browser.widget.VoiceSearchActivity
 
 /**
  * These callbacks handle binding performance code to the activity lifecycle.

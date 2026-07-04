@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.autofill
+package com.netgpu.browser.settings.autofill
 
 import android.app.KeyguardManager
 import android.content.Context
@@ -26,18 +26,18 @@ import kotlinx.coroutines.launch
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.service.fxa.SyncEngine
 import mozilla.components.service.sync.autofill.AutofillCreditCardsAddressesStorage
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SharedPreferenceUpdater
-import org.mozilla.fenix.settings.SyncPreferenceView
-import org.mozilla.fenix.settings.biometric.BiometricPromptPreferenceFragment
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SharedPreferenceUpdater
+import com.netgpu.browser.settings.SyncPreferenceView
+import com.netgpu.browser.settings.biometric.BiometricPromptPreferenceFragment
+import com.netgpu.browser.settings.requirePreference
 
 /**
  * Autofill settings fragment displays a list of settings related to autofilling, adding and
@@ -65,7 +65,7 @@ class AutofillSettingFragment : BiometricPromptPreferenceFragment() {
         runIfFragmentIsAttached {
             viewLifecycleOwner.lifecycleScope.launch(Dispatchers.Main) {
                 // Workaround for likely biometric library bug
-                // https://github.com/mozilla-mobile/fenix/issues/8438
+                // https://github.com/mozilla-mobile/netgpu_browser/issues/8438
                 delay(SHORT_DELAY_MS)
                 navigateToCreditCardManagementFragment()
             }

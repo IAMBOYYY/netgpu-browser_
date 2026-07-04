@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -17,15 +17,15 @@ import mozilla.components.feature.session.SessionUseCases.ReloadUrlUseCase
 import mozilla.components.support.base.feature.OnNeedToRequestPermissions
 import mozilla.components.support.ktx.kotlin.getOrigin
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.GleanMetrics.TrackingProtection
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.components.PermissionStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.ext.shouldBeEnabled
-import org.mozilla.fenix.settings.toggle
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.GleanMetrics.TrackingProtection
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.components.PermissionStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.ext.shouldBeEnabled
+import com.netgpu.browser.settings.toggle
+import com.netgpu.browser.utils.Settings
 
 /**
  * [QuickSettingsSheetDialogFragment] controller.

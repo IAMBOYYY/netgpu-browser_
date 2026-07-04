@@ -4,7 +4,7 @@
 
 @file:Suppress("MagicNumber")
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import android.view.View
 import androidx.compose.foundation.background
@@ -21,11 +21,11 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * [RecyclerView.ViewHolder] for displaying the Pocket feature header.
@@ -49,8 +49,8 @@ class PocketRecommendationsHeaderViewHolder(
         val wallpaperState = components.appStore
             .observeAsComposableState { state -> state.wallpaperState }.value
 
-        var textColor = FirefoxTheme.colors.textPrimary
-        var linkTextColor = FirefoxTheme.colors.textAccent
+        var textColor = NetGpuBrowserTheme.colors.textPrimary
+        var linkTextColor = NetGpuBrowserTheme.colors.textAccent
 
         wallpaperState?.currentWallpaper?.let { currentWallpaper ->
             currentWallpaper.textColor?.let {
@@ -80,8 +80,8 @@ class PocketRecommendationsHeaderViewHolder(
 @Composable
 @LightDarkPreview
 private fun PocketRecommendationsFooterViewHolderPreview() {
-    FirefoxTheme {
-        Box(modifier = Modifier.background(color = FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(modifier = Modifier.background(color = NetGpuBrowserTheme.colors.layer1)) {
             PoweredByPocketHeader(
                 onLearnMoreClicked = {},
             )

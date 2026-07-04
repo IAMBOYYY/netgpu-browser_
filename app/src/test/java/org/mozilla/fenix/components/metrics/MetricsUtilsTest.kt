@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.metrics
+package com.netgpu.browser.components.metrics
 
 import android.content.Context
 import android.util.Base64
@@ -70,7 +70,7 @@ class MetricsUtilsTest {
     @Test
     fun `getHashedIdentifier() returns a hashed identifier`() = runTest {
         val testId = "test-value-id"
-        val testPackageName = "org.mozilla-test.fenix"
+        val testPackageName = "org.mozilla-test.netgpu_browser"
         val mockedHexReturn = "mocked-HEX"
 
         // Mock the Base64 to record the byte array that is passed in,

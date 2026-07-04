@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers.idlingresource
+package com.netgpu.browser.helpers.idlingresource
 
 import android.view.View
 import android.view.View.VISIBLE
 import androidx.fragment.app.FragmentManager
 import androidx.test.espresso.IdlingResource
-import org.mozilla.fenix.R
-import org.mozilla.fenix.addons.AddonsManagementFragment
+import com.netgpu.browser.R
+import com.netgpu.browser.addons.AddonsManagementFragment
 
 class AddonsLoadingIdlingResource(val fragmentManager: FragmentManager) : IdlingResource {
     private var resourceCallback: IdlingResource.ResourceCallback? = null

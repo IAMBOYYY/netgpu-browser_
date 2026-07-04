@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.sitepermissions
+package com.netgpu.browser.settings.sitepermissions
 
 import io.mockk.every
 import io.mockk.mockk
@@ -11,11 +11,11 @@ import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.AL
 import mozilla.components.feature.sitepermissions.SitePermissionsRules.Action.BLOCKED
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY_AUDIBLE
-import org.mozilla.fenix.settings.PhoneFeature.AUTOPLAY_INAUDIBLE
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.wifi.SitePermissionsWifiIntegration
-import org.mozilla.fenix.wifi.WifiConnectionMonitor
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY_AUDIBLE
+import com.netgpu.browser.settings.PhoneFeature.AUTOPLAY_INAUDIBLE
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.wifi.SitePermissionsWifiIntegration
+import com.netgpu.browser.wifi.WifiConnectionMonitor
 
 class SitePermissionsWifiIntegrationTest {
     lateinit var settings: Settings

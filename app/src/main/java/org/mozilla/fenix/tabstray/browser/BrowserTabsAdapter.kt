@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -16,16 +16,16 @@ import mozilla.components.browser.tabstray.SelectableTabViewHolder
 import mozilla.components.browser.tabstray.TabsAdapter.Companion.PAYLOAD_DONT_HIGHLIGHT_SELECTED_ITEM
 import mozilla.components.browser.tabstray.TabsAdapter.Companion.PAYLOAD_HIGHLIGHT_SELECTED_ITEM
 import mozilla.components.browser.thumbnails.loader.ThumbnailLoader
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.databinding.TabTrayGridItemBinding
-import org.mozilla.fenix.databinding.TabTrayItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.browser.compose.ComposeGridViewHolder
-import org.mozilla.fenix.tabstray.browser.compose.ComposeListViewHolder
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.databinding.TabTrayGridItemBinding
+import com.netgpu.browser.databinding.TabTrayItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.browser.compose.ComposeGridViewHolder
+import com.netgpu.browser.tabstray.browser.compose.ComposeListViewHolder
 
 /**
  * A [RecyclerView.Adapter] for browser tabs.

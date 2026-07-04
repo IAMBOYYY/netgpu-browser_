@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import android.view.View
 import androidx.compose.foundation.layout.Box
@@ -22,12 +22,12 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.home.HomeSectionHeader
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.home.HomeSectionHeader
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.WallpaperState
 
 /**
  * [RecyclerView.ViewHolder] for displaying the list of [PocketRecommendedStory]s from [AppStore].
@@ -60,7 +60,7 @@ class PocketStoriesViewHolder(
             .observeAsComposableState { state -> state.wallpaperState }.value ?: WallpaperState.default
 
         /* This was originally done to address this perf issue:
-         * https://github.com/mozilla-mobile/fenix/issues/25545 for details.
+         * https://github.com/mozilla-mobile/netgpu_browser/issues/25545 for details.
          * It was determined that Pocket content was becoming available before the first frame was
          * rendered more regularly. Including Pocket in the first render pass significantly
          * increases time-to-render in lower-end devices. By waiting until the first frame has
@@ -104,7 +104,7 @@ class PocketStoriesViewHolder(
 @Composable
 @Preview
 fun PocketStoriesViewHolderPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column {
             HomeSectionHeader(
                 headerText = stringResource(R.string.pocket_stories_header_1),
@@ -116,7 +116,7 @@ fun PocketStoriesViewHolderPreview() {
             PocketStories(
                 stories = getFakePocketStories(8),
                 contentPadding = 0.dp,
-                backgroundColor = FirefoxTheme.colors.layer2,
+                backgroundColor = NetGpuBrowserTheme.colors.layer2,
                 onStoryShown = { _, _ -> },
                 onStoryClicked = { _, _ -> },
                 onDiscoverMoreClicked = {},

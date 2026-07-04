@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser.infobanner
+package com.netgpu.browser.browser.infobanner
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import android.view.LayoutInflater
 import android.view.View.GONE
 import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
-import org.mozilla.fenix.databinding.InfoBannerBinding
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.databinding.InfoBannerBinding
+import com.netgpu.browser.ext.settings
 
 /**
  * Displays an Info Banner in the specified container with a message and an optional action.

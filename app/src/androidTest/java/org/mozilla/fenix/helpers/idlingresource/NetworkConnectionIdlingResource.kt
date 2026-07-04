@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers.idlingresource
+package com.netgpu.browser.helpers.idlingresource
 
 import android.net.ConnectivityManager
 import androidx.core.content.getSystemService
 import androidx.test.espresso.IdlingResource
 import androidx.test.platform.app.InstrumentationRegistry
-import org.mozilla.fenix.ext.isOnline
+import com.netgpu.browser.ext.isOnline
 
 /**
  * An IdlingResource implementation that waits until the network connection is online or offline.

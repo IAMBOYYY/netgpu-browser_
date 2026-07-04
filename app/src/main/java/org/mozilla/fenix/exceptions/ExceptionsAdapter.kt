@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions
+package com.netgpu.browser.exceptions
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.ui.widgets.WidgetSiteItemView
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsDeleteButtonViewHolder
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsHeaderViewHolder
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsListItemViewHolder
+import com.netgpu.browser.exceptions.viewholders.ExceptionsDeleteButtonViewHolder
+import com.netgpu.browser.exceptions.viewholders.ExceptionsHeaderViewHolder
+import com.netgpu.browser.exceptions.viewholders.ExceptionsListItemViewHolder
 
 /**
  * Adapter for a list of sites that are exempted from saving logins or tracking protection,

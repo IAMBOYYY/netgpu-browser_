@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits
+package com.netgpu.browser.home.recentvisits
 
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -28,14 +28,14 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItemInternal.HistoryGroupInternal
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItemInternal.HistoryHighlightInternal
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItemInternal.HistoryGroupInternal
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItemInternal.HistoryHighlightInternal
+import com.netgpu.browser.utils.Settings
 import kotlin.random.Random
 
 @OptIn(ExperimentalCoroutinesApi::class)

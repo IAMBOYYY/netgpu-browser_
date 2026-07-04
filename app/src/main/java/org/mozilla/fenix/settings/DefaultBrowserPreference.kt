@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 import com.google.android.material.switchmaterial.SwitchMaterial
-import org.mozilla.fenix.R
-import org.mozilla.fenix.utils.BrowsersCache
+import com.netgpu.browser.R
+import com.netgpu.browser.utils.BrowsersCache
 
 class DefaultBrowserPreference @JvmOverloads constructor(
     context: Context,

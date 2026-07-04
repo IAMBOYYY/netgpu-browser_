@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import androidx.navigation.NavController
@@ -19,12 +19,12 @@ import org.junit.Assert.assertNull
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.onboarding.ReEngagementNotificationWorker
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingModeManager
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.onboarding.ReEngagementNotificationWorker
 
 @RunWith(FenixRobolectricTestRunner::class)
 class DefaultBrowserIntentProcessorTest {
@@ -51,7 +51,7 @@ class DefaultBrowserIntentProcessorTest {
         val activity: HomeActivity = mockk()
 
         val intent = Intent().apply {
-            putExtra("org.mozilla.fenix.default.browser.intent", true)
+            putExtra("com.netgpu.browser.default.browser.intent", true)
         }
         every { activity.startActivity(any()) } returns Unit
         every { activity.applicationContext } returns testContext
@@ -76,7 +76,7 @@ class DefaultBrowserIntentProcessorTest {
         val browsingModeManager: BrowsingModeManager = mockk(relaxed = true)
 
         val intent = Intent().apply {
-            putExtra("org.mozilla.fenix.re-engagement.intent", true)
+            putExtra("com.netgpu.browser.re-engagement.intent", true)
         }
         every { activity.applicationContext } returns testContext
         every { activity.browsingModeManager } returns browsingModeManager

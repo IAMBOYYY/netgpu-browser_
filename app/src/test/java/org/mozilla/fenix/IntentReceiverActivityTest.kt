@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.app.Activity
 import android.content.Intent
@@ -31,16 +31,16 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.components.IntentProcessorType
-import org.mozilla.fenix.components.IntentProcessors
-import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.perf.TestStrictModeManager
-import org.mozilla.fenix.shortcut.NewTabShortcutIntentProcessor
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.components.IntentProcessorType
+import com.netgpu.browser.components.IntentProcessors
+import com.netgpu.browser.customtabs.ExternalAppBrowserActivity
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.perf.TestStrictModeManager
+import com.netgpu.browser.shortcut.NewTabShortcutIntentProcessor
+import com.netgpu.browser.utils.Settings
 import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 
@@ -55,7 +55,7 @@ class IntentReceiverActivityTest {
 
     @Before
     fun setup() {
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
         settings = mockk()
         intentProcessors = mockk()
 
@@ -74,7 +74,7 @@ class IntentReceiverActivityTest {
 
     @After
     fun teardown() {
-        unmockkStatic("org.mozilla.fenix.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.ext.ContextKt")
     }
 
     @Test

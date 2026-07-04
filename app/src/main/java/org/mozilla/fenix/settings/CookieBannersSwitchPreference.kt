@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.ext.settings
 
 /**
  * Cookie banners switch preference with a learn more link.

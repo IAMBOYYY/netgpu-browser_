@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.app.Activity
 import android.app.Notification
@@ -23,13 +23,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import mozilla.components.support.base.ids.SharedIdsHelper
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.onboarding.MARKETING_CHANNEL_ID
-import org.mozilla.fenix.utils.BootUtils
-import org.mozilla.fenix.utils.IntentUtils
-import org.mozilla.fenix.utils.createBaseNotification
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.onboarding.MARKETING_CHANNEL_ID
+import com.netgpu.browser.utils.BootUtils
+import com.netgpu.browser.utils.IntentUtils
+import com.netgpu.browser.utils.createBaseNotification
 import java.util.concurrent.TimeUnit
 
 const val CLICKED_MESSAGE_ID = "clickedMessageId"
@@ -136,9 +136,9 @@ class MessageNotificationWorker(
     }
 
     companion object {
-        private const val NOTIFICATION_PENDING_INTENT_TAG = "org.mozilla.fenix.message"
-        private const val MESSAGE_TAG = "org.mozilla.fenix.message.tag"
-        private const val MESSAGE_WORK_NAME = "org.mozilla.fenix.message.work"
+        private const val NOTIFICATION_PENDING_INTENT_TAG = "com.netgpu.browser.message"
+        private const val MESSAGE_TAG = "com.netgpu.browser.message.tag"
+        private const val MESSAGE_WORK_NAME = "com.netgpu.browser.message.work"
 
         /**
          * Initialize the [Worker] to begin polling Nimbus.

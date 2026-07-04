@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Placeholder of a [ListItemTabLarge] with the same dimensions but only a centered text.
@@ -49,7 +49,7 @@ fun ListItemTabLargePlaceholder(
             .size(328.dp, 116.dp)
             .clickable { onClick() },
         shape = RoundedCornerShape(8.dp),
-        backgroundColor = FirefoxTheme.colors.layer2,
+        backgroundColor = NetGpuBrowserTheme.colors.layer2,
         elevation = 6.dp,
     ) {
         Column(
@@ -60,7 +60,7 @@ fun ListItemTabLargePlaceholder(
         ) {
             Text(
                 text = text,
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 textAlign = TextAlign.Center,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
@@ -73,7 +73,7 @@ fun ListItemTabLargePlaceholder(
 @Composable
 @Preview
 private fun ListItemTabLargePlaceholderPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         ListItemTabLargePlaceholder(text = "Item placeholder")
     }
 }

@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.creditcards.view
+package com.netgpu.browser.settings.creditcards.view
 
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentCreditCardsBinding
-import org.mozilla.fenix.settings.autofill.AutofillFragmentState
-import org.mozilla.fenix.settings.creditcards.interactor.CreditCardsManagementInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentCreditCardsBinding
+import com.netgpu.browser.settings.autofill.AutofillFragmentState
+import com.netgpu.browser.settings.creditcards.interactor.CreditCardsManagementInteractor
 
 /**
  * Shows a list of credit cards.

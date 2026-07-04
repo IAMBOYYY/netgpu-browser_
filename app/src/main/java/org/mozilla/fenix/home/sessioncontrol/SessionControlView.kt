@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol
+package com.netgpu.browser.home.sessioncontrol
 
 import android.view.View
 import androidx.annotation.VisibleForTesting
@@ -12,22 +12,22 @@ import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.feature.top.sites.TopSite
 import mozilla.components.service.pocket.PocketStory
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.shouldShowRecentSyncedTabs
-import org.mozilla.fenix.ext.shouldShowRecentTabs
-import org.mozilla.fenix.gleanplumb.Message
-import org.mozilla.fenix.home.Mode
-import org.mozilla.fenix.home.OnboardingState
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.nimbus.OnboardingPanel
-import org.mozilla.fenix.onboarding.HomeCFRPresenter
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.nimbus.Onboarding as OnboardingConfig
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.shouldShowRecentSyncedTabs
+import com.netgpu.browser.ext.shouldShowRecentTabs
+import com.netgpu.browser.gleanplumb.Message
+import com.netgpu.browser.home.Mode
+import com.netgpu.browser.home.OnboardingState
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.nimbus.OnboardingPanel
+import com.netgpu.browser.onboarding.HomeCFRPresenter
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.nimbus.Onboarding as OnboardingConfig
 
 // This method got a little complex with the addition of the tab tray feature flag
 // When we remove the tabs from the home screen this will get much simpler again.

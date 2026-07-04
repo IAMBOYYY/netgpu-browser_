@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
@@ -11,8 +11,8 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.browser.tabstray.TabsTray
 import mozilla.components.lib.state.helpers.AbstractBinding
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayStore
 
 /**
  * A private tabs observer that updates the provided [TabsTray].

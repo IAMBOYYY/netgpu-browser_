@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.view.LayoutInflater
 import android.view.View
@@ -14,9 +14,9 @@ import androidx.recyclerview.widget.RecyclerView
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.concept.storage.BookmarkNode
 import mozilla.components.concept.storage.BookmarkNodeType
-import org.mozilla.fenix.library.LibrarySiteItemView
-import org.mozilla.fenix.library.bookmarks.viewholders.BookmarkNodeViewHolder
-import org.mozilla.fenix.library.bookmarks.viewholders.BookmarkSeparatorViewHolder
+import com.netgpu.browser.library.LibrarySiteItemView
+import com.netgpu.browser.library.bookmarks.viewholders.BookmarkNodeViewHolder
+import com.netgpu.browser.library.bookmarks.viewholders.BookmarkSeparatorViewHolder
 
 class BookmarkAdapter(private val emptyView: View, private val interactor: BookmarkViewInteractor) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -38,7 +38,7 @@ class BookmarkAdapter(private val emptyView: View, private val interactor: Bookm
             }
         }
         // Display folders above all other bookmarks. Exclude separators.
-        // For separator removal, see discussion in https://github.com/mozilla-mobile/fenix/issues/15214
+        // For separator removal, see discussion in https://github.com/mozilla-mobile/netgpu_browser/issues/15214
         val newTree = folders + notFolders - separators
 
         val diffUtil = DiffUtil.calculateDiff(

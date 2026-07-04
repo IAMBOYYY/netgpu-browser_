@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.app.Activity
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
@@ -13,8 +13,8 @@ import mozilla.components.feature.customtabs.CustomTabsToolbarFeature
 import mozilla.components.feature.tabs.CustomTabsUseCases
 import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.components.support.base.feature.UserInteractionHandler
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.ToolbarMenu
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.ToolbarMenu
 
 @Suppress("LongParameterList")
 class CustomTabsIntegration(

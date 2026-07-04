@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import androidx.recyclerview.widget.ConcatAdapter
-import org.mozilla.fenix.tabstray.browser.BrowserTabsAdapter
-import org.mozilla.fenix.tabstray.browser.InactiveTabsAdapter
+import com.netgpu.browser.tabstray.browser.BrowserTabsAdapter
+import com.netgpu.browser.tabstray.browser.InactiveTabsAdapter
 
 /**
  * A convenience binding for retrieving the [BrowserTabsAdapter] from the [ConcatAdapter].

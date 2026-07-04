@@ -1,4 +1,4 @@
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import io.mockk.every
@@ -12,8 +12,8 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.wallpapers.WallpaperMetadataFetcher.Companion.currentJsonVersion
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.wallpapers.WallpaperMetadataFetcher.Companion.currentJsonVersion
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

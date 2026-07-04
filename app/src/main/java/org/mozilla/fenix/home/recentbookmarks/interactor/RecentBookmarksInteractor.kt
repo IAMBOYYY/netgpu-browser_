@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks.interactor
+package com.netgpu.browser.home.recentbookmarks.interactor
 
-import org.mozilla.fenix.home.recentbookmarks.RecentBookmark
-import org.mozilla.fenix.home.sessioncontrol.SessionControlInteractor
+import com.netgpu.browser.home.recentbookmarks.RecentBookmark
+import com.netgpu.browser.home.sessioncontrol.SessionControlInteractor
 
 /**
  * Interface for recently saved bookmark related actions in the [SessionControlInteractor].

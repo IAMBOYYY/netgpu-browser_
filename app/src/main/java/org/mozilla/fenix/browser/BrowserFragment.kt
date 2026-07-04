@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.content.Context
 import android.os.StrictMode
@@ -36,21 +36,21 @@ import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.GleanMetrics.ReaderMode
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.components.toolbar.BrowserToolbarView
-import org.mozilla.fenix.components.toolbar.ToolbarMenu
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.settings.quicksettings.protections.cookiebanners.dialog.CookieBannerReEngagementDialogUtils
-import org.mozilla.fenix.shortcut.PwaOnboardingObserver
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.GleanMetrics.ReaderMode
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.components.toolbar.BrowserToolbarView
+import com.netgpu.browser.components.toolbar.ToolbarMenu
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.settings.quicksettings.protections.cookiebanners.dialog.CookieBannerReEngagementDialogUtils
+import com.netgpu.browser.shortcut.PwaOnboardingObserver
+import com.netgpu.browser.theme.ThemeManager
 
 /**
  * Fragment used for browsing the web within the main app.
@@ -441,7 +441,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
                         R.string.create_collection_tab_saved
                     }
                 }
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = binding.dynamicSnackbarContainer,
                     duration = Snackbar.LENGTH_SHORT,
                     isDisplayedWithBrowserToolbar = true,
@@ -474,7 +474,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
             context.components.useCases.tabsUseCases,
             context.components.useCases.contextMenuUseCases,
             view,
-            FenixSnackbarDelegate(view),
+            NetGpuBrowserSnackbarDelegate(view),
         ) + ContextMenuCandidate.createOpenInExternalAppCandidate(
             requireContext(),
             contextMenuCandidateAppLinksUseCases,

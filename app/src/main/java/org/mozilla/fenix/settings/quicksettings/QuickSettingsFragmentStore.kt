@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -13,14 +13,14 @@ import mozilla.components.lib.state.Action
 import mozilla.components.lib.state.Reducer
 import mozilla.components.lib.state.State
 import mozilla.components.lib.state.Store
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.QuickSettingsFragmentStore.Companion.createStore
-import org.mozilla.fenix.settings.quicksettings.WebsiteInfoState.Companion.createWebsiteInfoState
-import org.mozilla.fenix.settings.quicksettings.ext.shouldBeEnabled
-import org.mozilla.fenix.settings.quicksettings.ext.shouldBeVisible
-import org.mozilla.fenix.trackingprotection.ProtectionsState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.QuickSettingsFragmentStore.Companion.createStore
+import com.netgpu.browser.settings.quicksettings.WebsiteInfoState.Companion.createWebsiteInfoState
+import com.netgpu.browser.settings.quicksettings.ext.shouldBeEnabled
+import com.netgpu.browser.settings.quicksettings.ext.shouldBeVisible
+import com.netgpu.browser.trackingprotection.ProtectionsState
+import com.netgpu.browser.utils.Settings
 import java.util.EnumMap
 
 /**

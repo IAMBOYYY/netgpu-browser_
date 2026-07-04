@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -22,8 +22,8 @@ import mozilla.components.browser.icons.IconRequest
 import mozilla.components.browser.icons.compose.Loader
 import mozilla.components.browser.icons.compose.Placeholder
 import mozilla.components.browser.icons.compose.WithIcon
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.components.components
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Load and display the favicon of a particular website.
@@ -89,7 +89,7 @@ private fun FaviconPlaceholder(
             .size(size)
             .clip(RoundedCornerShape(2.dp))
             .background(
-                color = FirefoxTheme.colors.layer2,
+                color = NetGpuBrowserTheme.colors.layer2,
             ),
     )
 }
@@ -97,8 +97,8 @@ private fun FaviconPlaceholder(
 @Composable
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 private fun FaviconPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             Favicon(
                 url = "www.mozilla.com",
                 size = 64.dp,

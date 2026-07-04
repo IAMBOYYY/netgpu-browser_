@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.wallpaper
+package com.netgpu.browser.settings.wallpaper
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,17 +18,17 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.launch
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.service.glean.private.NoExtras
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.GleanMetrics.Wallpapers
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.GleanMetrics.Wallpapers
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
 
 class WallpaperSettingsFragment : Fragment() {
     private val appStore by lazy {
@@ -48,7 +48,7 @@ class WallpaperSettingsFragment : Fragment() {
         val wallpaperSettings = ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     val wallpapers = appStore.observeAsComposableState { state ->
                         state.wallpaperState.availableWallpapers
                     }.value ?: listOf()
@@ -62,7 +62,7 @@ class WallpaperSettingsFragment : Fragment() {
                         wallpaperGroups = if (FeatureFlags.wallpaperV2Enabled) {
                             wallpapers.groupByDisplayableCollection()
                         } else {
-                            mapOf(Wallpaper.ClassicFirefoxCollection to wallpapers)
+                            mapOf(Wallpaper.ClassicNETGPU BROWSERCollection to wallpapers)
                         },
                         defaultWallpaper = Wallpaper.Default,
                         selectedWallpaper = currentWallpaper,
@@ -107,7 +107,7 @@ class WallpaperSettingsFragment : Fragment() {
     ) {
         when (result) {
             Wallpaper.ImageFileState.Downloaded -> {
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = view,
                     isDisplayedWithBrowserToolbar = false,
                 )
@@ -127,7 +127,7 @@ class WallpaperSettingsFragment : Fragment() {
                 )
             }
             Wallpaper.ImageFileState.Error -> {
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = view,
                     isDisplayedWithBrowserToolbar = false,
                 )

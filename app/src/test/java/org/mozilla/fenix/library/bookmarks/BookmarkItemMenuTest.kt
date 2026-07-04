@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import android.content.Context
 import androidx.appcompat.view.ContextThemeWrapper
@@ -21,10 +21,10 @@ import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.bookmarkStorage
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.library.bookmarks.BookmarkItemMenu.Item
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.bookmarkStorage
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.library.bookmarks.BookmarkItemMenu.Item
 
 @RunWith(FenixRobolectricTestRunner::class)
 class BookmarkItemMenuTest {
@@ -44,7 +44,7 @@ class BookmarkItemMenuTest {
     @Test
     fun `delete item has special styling`() = runBlocking {
         var deleteItem: TextMenuCandidate? = null
-        mockkStatic("org.mozilla.fenix.ext.BookmarkNodeKt") {
+        mockkStatic("com.netgpu.browser.ext.BookmarkNodeKt") {
             every { any<Context>().bookmarkStorage } returns mockk(relaxed = true)
 
             deleteItem = menu.menuItems(BookmarkNodeType.SEPARATOR, "").last()
@@ -65,7 +65,7 @@ class BookmarkItemMenuTest {
     fun `edit item appears for folders`() = runBlocking {
         // empty folder
         var emptyFolderItems: List<TextMenuCandidate>? = null
-        mockkStatic("org.mozilla.fenix.ext.BookmarkNodeKt") {
+        mockkStatic("com.netgpu.browser.ext.BookmarkNodeKt") {
             every { any<Context>().bookmarkStorage } returns mockk(relaxed = true)
 
             emptyFolderItems = menu.menuItems(BookmarkNodeType.FOLDER, "")
@@ -75,7 +75,7 @@ class BookmarkItemMenuTest {
 
         // not empty
         var folderItems: List<TextMenuCandidate>? = null
-        mockkStatic("org.mozilla.fenix.ext.BookmarkNodeKt") {
+        mockkStatic("com.netgpu.browser.ext.BookmarkNodeKt") {
             coEvery { any<Context>().bookmarkStorage.getTree("")?.children } returns listOf(mockk(relaxed = true))
 
             folderItems = menu.menuItems(BookmarkNodeType.FOLDER, "")
@@ -106,7 +106,7 @@ class BookmarkItemMenuTest {
     @Test
     fun `all item appears for sites`() = runBlocking {
         var siteItems: List<TextMenuCandidate>? = null
-        mockkStatic("org.mozilla.fenix.ext.BookmarkNodeKt") {
+        mockkStatic("com.netgpu.browser.ext.BookmarkNodeKt") {
             every { any<Context>().bookmarkStorage } returns mockk(relaxed = true)
 
             siteItems = menu.menuItems(BookmarkNodeType.ITEM, "")

@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.topsites
+package com.netgpu.browser.home.topsites
 
 import android.view.View
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.feature.top.sites.TopSite
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.databinding.ComponentTopSitesBinding
-import org.mozilla.fenix.home.sessioncontrol.TopSiteInteractor
-import org.mozilla.fenix.utils.AccessibilityGridLayoutManager
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.databinding.ComponentTopSitesBinding
+import com.netgpu.browser.home.sessioncontrol.TopSiteInteractor
+import com.netgpu.browser.utils.AccessibilityGridLayoutManager
 
 class TopSiteViewHolder(
     view: View,

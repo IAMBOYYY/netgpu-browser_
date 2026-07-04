@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.content.Context
 import android.content.res.Configuration
@@ -42,19 +42,19 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.TabsTray
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentTabstray2Binding
-import org.mozilla.fenix.databinding.ComponentTabstrayFabBinding
-import org.mozilla.fenix.databinding.FragmentTabTrayDialogBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.helpers.MockkRetryTestRule
-import org.mozilla.fenix.home.HomeScreenViewModel
-import org.mozilla.fenix.tabstray.ext.showWithTheme
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.GleanMetrics.TabsTray
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentTabstray2Binding
+import com.netgpu.browser.databinding.ComponentTabstrayFabBinding
+import com.netgpu.browser.databinding.FragmentTabTrayDialogBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.MockkRetryTestRule
+import com.netgpu.browser.home.HomeScreenViewModel
+import com.netgpu.browser.tabstray.ext.showWithTheme
+import com.netgpu.browser.utils.allowUndo
 
 @RunWith(FenixRobolectricTestRunner::class)
 class TabsTrayFragmentTest {
@@ -92,7 +92,7 @@ class TabsTrayFragmentTest {
     @Test
     fun `WHEN showUndoSnackbarForTab is called for a private tab with new tab button visible THEN an appropriate snackbar is shown`() {
         try {
-            mockkStatic("org.mozilla.fenix.utils.UndoKt")
+            mockkStatic("com.netgpu.browser.utils.UndoKt")
             mockkStatic("androidx.lifecycle.LifecycleOwnerKt")
             val lifecycleScope: LifecycleCoroutineScope = mockk(relaxed = true)
             every { any<LifecycleOwner>().lifecycleScope } returns lifecycleScope
@@ -116,7 +116,7 @@ class TabsTrayFragmentTest {
                 )
             }
         } finally {
-            unmockkStatic("org.mozilla.fenix.utils.UndoKt")
+            unmockkStatic("com.netgpu.browser.utils.UndoKt")
             unmockkStatic("androidx.lifecycle.LifecycleOwnerKt")
         }
     }
@@ -124,7 +124,7 @@ class TabsTrayFragmentTest {
     @Test
     fun `WHEN showUndoSnackbarForTab is called for a private tab with new tab button not visible THEN an appropriate snackbar is shown`() {
         try {
-            mockkStatic("org.mozilla.fenix.utils.UndoKt")
+            mockkStatic("com.netgpu.browser.utils.UndoKt")
             mockkStatic("androidx.lifecycle.LifecycleOwnerKt")
             val lifecycleScope: LifecycleCoroutineScope = mockk(relaxed = true)
             every { any<LifecycleOwner>().lifecycleScope } returns lifecycleScope
@@ -147,7 +147,7 @@ class TabsTrayFragmentTest {
                 )
             }
         } finally {
-            unmockkStatic("org.mozilla.fenix.utils.UndoKt")
+            unmockkStatic("com.netgpu.browser.utils.UndoKt")
             unmockkStatic("androidx.lifecycle.LifecycleOwnerKt")
         }
     }
@@ -155,7 +155,7 @@ class TabsTrayFragmentTest {
     @Test
     fun `WHEN showUndoSnackbarForTab is called for a normal tab with new tab button visible THEN an appropriate snackbar is shown`() {
         try {
-            mockkStatic("org.mozilla.fenix.utils.UndoKt")
+            mockkStatic("com.netgpu.browser.utils.UndoKt")
             mockkStatic("androidx.lifecycle.LifecycleOwnerKt")
             val lifecycleScope: LifecycleCoroutineScope = mockk(relaxed = true)
             every { any<LifecycleOwner>().lifecycleScope } returns lifecycleScope
@@ -179,7 +179,7 @@ class TabsTrayFragmentTest {
                 )
             }
         } finally {
-            unmockkStatic("org.mozilla.fenix.utils.UndoKt")
+            unmockkStatic("com.netgpu.browser.utils.UndoKt")
             unmockkStatic("androidx.lifecycle.LifecycleOwnerKt")
         }
     }
@@ -187,7 +187,7 @@ class TabsTrayFragmentTest {
     @Test
     fun `WHEN showUndoSnackbarForTab is called for a normal tab with new tab button not visible THEN an appropriate snackbar is shown`() {
         try {
-            mockkStatic("org.mozilla.fenix.utils.UndoKt")
+            mockkStatic("com.netgpu.browser.utils.UndoKt")
             mockkStatic("androidx.lifecycle.LifecycleOwnerKt")
             val lifecycleScope: LifecycleCoroutineScope = mockk(relaxed = true)
             every { any<LifecycleOwner>().lifecycleScope } returns lifecycleScope
@@ -210,7 +210,7 @@ class TabsTrayFragmentTest {
                 )
             }
         } finally {
-            unmockkStatic("org.mozilla.fenix.utils.UndoKt")
+            unmockkStatic("com.netgpu.browser.utils.UndoKt")
             unmockkStatic("androidx.lifecycle.LifecycleOwnerKt")
         }
     }
@@ -242,7 +242,7 @@ class TabsTrayFragmentTest {
     @Test
     fun `WHEN setupMenu is called THEN it sets a 3 dot menu click listener to open the tray menu`() {
         try {
-            mockkStatic("org.mozilla.fenix.tabstray.ext.BrowserMenuKt")
+            mockkStatic("com.netgpu.browser.tabstray.ext.BrowserMenuKt")
             val navigationInteractor: NavigationInteractor = mockk()
             every { context.components.core.store } returns mockk()
             every { fragment.tabsTrayStore } returns mockk()
@@ -263,7 +263,7 @@ class TabsTrayFragmentTest {
             verify { menuBuilder.build() }
             verify { menu.showWithTheme(tabsTrayBinding.tabTrayOverflow) }
         } finally {
-            unmockkStatic("org.mozilla.fenix.tabstray.ext.BrowserMenuKt")
+            unmockkStatic("com.netgpu.browser.tabstray.ext.BrowserMenuKt")
         }
     }
 
@@ -312,7 +312,7 @@ class TabsTrayFragmentTest {
         try {
             mockkStatic("androidx.fragment.app.FragmentViewModelLazyKt")
             mockkStatic("androidx.navigation.fragment.FragmentKt")
-            mockkStatic("org.mozilla.fenix.ext.NavControllerKt")
+            mockkStatic("com.netgpu.browser.ext.NavControllerKt")
             val viewModel: HomeScreenViewModel = mockk(relaxed = true)
             every { fragment.homeViewModel } returns viewModel
             val navController: NavController = mockk(relaxed = true)
@@ -323,7 +323,7 @@ class TabsTrayFragmentTest {
             verify { viewModel.sessionToDelete = "test" }
             verify { navController.navigate(NavGraphDirections.actionGlobalHome()) }
         } finally {
-            unmockkStatic("org.mozilla.fenix.ext.NavControllerKt")
+            unmockkStatic("com.netgpu.browser.ext.NavControllerKt")
             unmockkStatic("androidx.navigation.fragment.FragmentKt")
             unmockkStatic("androidx.fragment.app.FragmentViewModelLazyKt")
         }

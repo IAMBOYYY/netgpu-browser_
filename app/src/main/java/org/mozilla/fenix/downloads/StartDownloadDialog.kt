@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.downloads
+package com.netgpu.browser.downloads
 
 import android.app.Activity
 import android.app.Dialog
@@ -27,10 +27,10 @@ import mozilla.components.feature.downloads.ui.DownloaderApp
 import mozilla.components.feature.downloads.ui.DownloaderAppAdapter
 import mozilla.components.support.ktx.android.view.setNavigationBarTheme
 import mozilla.components.support.ktx.android.view.setStatusBarTheme
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.DialogScrimBinding
-import org.mozilla.fenix.databinding.StartDownloadDialogLayoutBinding
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.DialogScrimBinding
+import com.netgpu.browser.databinding.StartDownloadDialogLayoutBinding
+import com.netgpu.browser.ext.settings
 
 /**
  * Parent of all download views that can mimic a modal [Dialog].

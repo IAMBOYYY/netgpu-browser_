@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import io.mockk.MockKAnnotations
 import io.mockk.every
@@ -18,8 +18,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 private const val URL_MOZILLA = "www.mozilla.org"
 private const val SESSION_ID_MOZILLA = "0"

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.awesomebar
+package com.netgpu.browser.search.awesomebar
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -31,16 +31,16 @@ import mozilla.components.feature.syncedtabs.DeviceIndicators
 import mozilla.components.feature.syncedtabs.SyncedTabsStorageSuggestionProvider
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.support.ktx.android.content.getColorFromAttr
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.Core.Companion.METADATA_HISTORY_SUGGESTION_LIMIT
-import org.mozilla.fenix.components.Core.Companion.METADATA_SHORTCUT_SUGGESTION_LIMIT
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.search.SearchEngineSource
-import org.mozilla.fenix.search.SearchFragmentState
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.Core.Companion.METADATA_HISTORY_SUGGESTION_LIMIT
+import com.netgpu.browser.components.Core.Companion.METADATA_SHORTCUT_SUGGESTION_LIMIT
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.search.SearchEngineSource
+import com.netgpu.browser.search.SearchFragmentState
 
 /**
  * View that contains and configures the BrowserAwesomeBar

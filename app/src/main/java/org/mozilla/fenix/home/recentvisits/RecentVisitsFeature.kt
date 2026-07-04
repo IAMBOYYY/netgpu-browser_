@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits
+package com.netgpu.browser.home.recentvisits
 
 import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.CoroutineDispatcher
@@ -17,14 +17,14 @@ import mozilla.components.concept.storage.HistoryHighlightWeights
 import mozilla.components.concept.storage.HistoryMetadata
 import mozilla.components.concept.storage.HistoryMetadataStorage
 import mozilla.components.support.base.feature.LifecycleAwareFeature
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.home.HomeFragment
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItemInternal.HistoryGroupInternal
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItemInternal.HistoryHighlightInternal
-import org.mozilla.fenix.utils.Settings.Companion.SEARCH_GROUP_MINIMUM_SITES
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.home.HomeFragment
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryHighlight
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItemInternal.HistoryGroupInternal
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItemInternal.HistoryHighlightInternal
+import com.netgpu.browser.utils.Settings.Companion.SEARCH_GROUP_MINIMUM_SITES
 import kotlin.math.max
 
 @VisibleForTesting internal const val MAX_RESULTS_TOTAL = 9

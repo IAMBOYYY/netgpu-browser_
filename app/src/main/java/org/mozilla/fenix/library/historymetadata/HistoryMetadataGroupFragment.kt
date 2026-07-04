@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata
+package com.netgpu.browser.library.historymetadata
 
 import android.app.Dialog
 import android.content.Context
@@ -28,25 +28,25 @@ import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.lib.state.ext.flowScoped
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.ktx.kotlin.toShortUrl
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.addons.showSnackBar
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentHistoryMetadataGroupBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
-import org.mozilla.fenix.ext.setTextColor
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.library.LibraryPageFragment
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.historymetadata.controller.DefaultHistoryMetadataGroupController
-import org.mozilla.fenix.library.historymetadata.interactor.DefaultHistoryMetadataGroupInteractor
-import org.mozilla.fenix.library.historymetadata.interactor.HistoryMetadataGroupInteractor
-import org.mozilla.fenix.library.historymetadata.view.HistoryMetadataGroupView
-import org.mozilla.fenix.utils.allowUndo
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.addons.showSnackBar
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentHistoryMetadataGroupBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
+import com.netgpu.browser.ext.setTextColor
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.library.LibraryPageFragment
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.historymetadata.controller.DefaultHistoryMetadataGroupController
+import com.netgpu.browser.library.historymetadata.interactor.DefaultHistoryMetadataGroupInteractor
+import com.netgpu.browser.library.historymetadata.interactor.HistoryMetadataGroupInteractor
+import com.netgpu.browser.library.historymetadata.view.HistoryMetadataGroupView
+import com.netgpu.browser.utils.allowUndo
 
 /**
  * Displays a list of history metadata items for a history metadata search group.

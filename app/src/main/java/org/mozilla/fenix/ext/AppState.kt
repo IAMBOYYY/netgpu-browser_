@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.service.pocket.PocketStory
@@ -10,13 +10,13 @@ import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
 import mozilla.components.service.pocket.ext.hasFlightImpressionsLimitReached
 import mozilla.components.service.pocket.ext.hasLifetimeImpressionsLimitReached
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.home.blocklist.BlocklistHandler
-import org.mozilla.fenix.home.pocket.POCKET_STORIES_DEFAULT_CATEGORY_NAME
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesCategory
-import org.mozilla.fenix.home.pocket.PocketStory
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.home.blocklist.BlocklistHandler
+import com.netgpu.browser.home.pocket.POCKET_STORIES_DEFAULT_CATEGORY_NAME
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesCategory
+import com.netgpu.browser.home.pocket.PocketStory
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.utils.Settings
 
 /**
  * Total count of all stories to show irrespective of their type.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.toolbar
+package com.netgpu.browser.search.toolbar
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -17,12 +17,12 @@ import mozilla.components.feature.toolbar.ToolbarAutocompleteFeature
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.android.content.res.resolveAttribute
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.Core
-import org.mozilla.fenix.search.SearchEngineSource
-import org.mozilla.fenix.search.SearchFragmentState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.Core
+import com.netgpu.browser.search.SearchEngineSource
+import com.netgpu.browser.search.SearchFragmentState
+import com.netgpu.browser.utils.Settings
 
 /**
  * Interface for the Toolbar Interactor. This interface is implemented by objects that want
@@ -82,7 +82,7 @@ class ToolbarView(
             setOnUrlCommitListener {
                 // We're hiding the keyboard as early as possible to prevent the engine view
                 // from resizing in case the BrowserFragment is being displayed before the
-                // keyboard is gone: https://github.com/mozilla-mobile/fenix/issues/8399
+                // keyboard is gone: https://github.com/mozilla-mobile/netgpu_browser/issues/8399
                 hideKeyboard()
                 interactor.onUrlCommitted(it, fromHomeFragment)
                 false

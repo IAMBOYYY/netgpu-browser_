@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
-import org.mozilla.fenix.R
-import org.mozilla.fenix.library.downloads.DownloadItem
+import com.netgpu.browser.R
+import com.netgpu.browser.library.downloads.DownloadItem
 
 // While this looks complex, it's actually pretty simple.
 @SuppressWarnings("ComplexMethod")

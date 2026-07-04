@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.tabstray
+package com.netgpu.browser.compose.tabstray
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -42,13 +42,13 @@ import androidx.compose.ui.unit.sp
 import androidx.core.text.BidiFormatter
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.state.createTab
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Divider
-import org.mozilla.fenix.compose.Favicon
-import org.mozilla.fenix.compose.HorizontalFadingEdgeBox
-import org.mozilla.fenix.compose.ThumbnailCard
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.Divider
+import com.netgpu.browser.compose.Favicon
+import com.netgpu.browser.compose.HorizontalFadingEdgeBox
+import com.netgpu.browser.compose.ThumbnailCard
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Tab grid item used to display a tab that supports clicks,
@@ -81,7 +81,7 @@ fun TabGridItem(
     val tabBorderModifier = if (isSelected && !multiSelectionEnabled) {
         Modifier.border(
             4.dp,
-            FirefoxTheme.colors.borderAccent,
+            NetGpuBrowserTheme.colors.borderAccent,
             RoundedCornerShape(12.dp),
         )
     } else {
@@ -106,10 +106,10 @@ fun TabGridItem(
                 ),
             elevation = 0.dp,
             shape = RoundedCornerShape(dimensionResource(id = R.dimen.tab_tray_grid_item_border_radius)),
-            border = BorderStroke(1.dp, FirefoxTheme.colors.borderPrimary),
+            border = BorderStroke(1.dp, NetGpuBrowserTheme.colors.borderPrimary),
         ) {
             Column(
-                modifier = Modifier.background(FirefoxTheme.colors.layer2),
+                modifier = Modifier.background(NetGpuBrowserTheme.colors.layer2),
             ) {
                 Row(
                     modifier = Modifier
@@ -131,7 +131,7 @@ fun TabGridItem(
                             .requiredHeight(30.dp)
                             .padding(7.dp, 5.dp)
                             .clipToBounds(),
-                        backgroundColor = FirefoxTheme.colors.layer2,
+                        backgroundColor = NetGpuBrowserTheme.colors.layer2,
                         isContentRtl = BidiFormatter.getInstance().isRtl(tab.content.title),
                     ) {
                         Text(
@@ -140,7 +140,7 @@ fun TabGridItem(
                             maxLines = 1,
                             softWrap = false,
                             style = TextStyle(
-                                color = FirefoxTheme.colors.textPrimary,
+                                color = NetGpuBrowserTheme.colors.textPrimary,
                                 textDirection = TextDirection.Content,
                             ),
                         )
@@ -149,7 +149,7 @@ fun TabGridItem(
                     Icon(
                         painter = painterResource(id = R.drawable.mozac_ic_close),
                         contentDescription = stringResource(id = R.string.close_tab),
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                         modifier = Modifier
                             .clickable { onCloseClick(tab) }
                             .size(24.dp)
@@ -192,13 +192,13 @@ private fun Thumbnail(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(FirefoxTheme.colors.layer2),
+            .background(NetGpuBrowserTheme.colors.layer2),
     ) {
         ThumbnailCard(
             url = tab.content.url,
             key = tab.id,
             size = LocalConfiguration.current.screenWidthDp.dp,
-            backgroundColor = FirefoxTheme.colors.layer2,
+            backgroundColor = NetGpuBrowserTheme.colors.layer2,
             modifier = Modifier.fillMaxSize(),
         )
 
@@ -206,7 +206,7 @@ private fun Thumbnail(
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(FirefoxTheme.colors.layerAccentNonOpaque),
+                    .background(NetGpuBrowserTheme.colors.layerAccentNonOpaque),
             )
 
             Card(
@@ -214,7 +214,7 @@ private fun Thumbnail(
                     .size(size = 40.dp)
                     .align(alignment = Alignment.Center),
                 shape = CircleShape,
-                backgroundColor = FirefoxTheme.colors.layerAccent,
+                backgroundColor = NetGpuBrowserTheme.colors.layerAccent,
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.mozac_ic_check),
@@ -232,7 +232,7 @@ private fun Thumbnail(
 @Composable
 @LightDarkPreview
 private fun TabGridItemPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         TabGridItem(
             tab = createTab(
                 url = "www.mozilla.com",
@@ -249,7 +249,7 @@ private fun TabGridItemPreview() {
 @Composable
 @LightDarkPreview
 private fun TabGridItemSelectedPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         TabGridItem(
             tab = createTab(url = "www.mozilla.com", title = "Mozilla"),
             isSelected = true,
@@ -264,7 +264,7 @@ private fun TabGridItemSelectedPreview() {
 @Composable
 @LightDarkPreview
 private fun TabGridItemMultiSelectedPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         TabGridItem(
             tab = createTab(url = "www.mozilla.com", title = "Mozilla"),
             multiSelectionEnabled = true,

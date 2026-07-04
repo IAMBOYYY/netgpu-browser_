@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.view.Window
 import android.view.WindowManager
@@ -20,9 +20,9 @@ import mozilla.components.support.test.rule.MainCoroutineRule
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.ext.removeSecure
-import org.mozilla.fenix.ext.secure
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.ext.removeSecure
+import com.netgpu.browser.ext.secure
+import com.netgpu.browser.utils.Settings
 
 class SecureTabsTrayBindingTest {
 

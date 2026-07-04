@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.Activity
-import org.mozilla.fenix.perf.AppStartReasonProvider.StartReason
-import org.mozilla.fenix.perf.StartupActivityLog.LogEntry
+import com.netgpu.browser.perf.AppStartReasonProvider.StartReason
+import com.netgpu.browser.perf.StartupActivityLog.LogEntry
 
 /**
  * Identifies the "state" of start up where state can be COLD/WARM/HOT and possibly others. See

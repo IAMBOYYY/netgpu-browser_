@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.Intent
 import android.os.SystemClock
@@ -10,8 +10,8 @@ import android.view.View
 import androidx.core.view.doOnPreDraw
 import mozilla.components.support.base.log.logger.Logger
 import mozilla.components.support.utils.SafeIntent
-import org.mozilla.fenix.GleanMetrics.PerfStartup
-import org.mozilla.fenix.HomeActivity
+import com.netgpu.browser.GleanMetrics.PerfStartup
+import com.netgpu.browser.HomeActivity
 import java.util.concurrent.TimeUnit
 
 private val logger = Logger("ColdStartupDuration")

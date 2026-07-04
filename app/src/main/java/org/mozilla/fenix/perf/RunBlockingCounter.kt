@@ -7,12 +7,12 @@
 // methods so we suppress the check.
 @file:Suppress("MozillaRunBlockingCheck")
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import androidx.annotation.VisibleForTesting
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.runBlocking
-import org.mozilla.fenix.ext.getAndIncrementNoOverflow
+import com.netgpu.browser.ext.getAndIncrementNoOverflow
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.coroutines.CoroutineContext
 

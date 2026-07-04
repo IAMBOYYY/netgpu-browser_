@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
@@ -16,7 +16,7 @@ import mozilla.components.concept.engine.EngineView
 import mozilla.components.feature.findinpage.FindInPageFeature
 import mozilla.components.feature.findinpage.view.FindInPageView
 import mozilla.components.support.base.feature.LifecycleAwareFeature
-import org.mozilla.fenix.components.FindInPageIntegration.ToolbarInfo
+import com.netgpu.browser.components.FindInPageIntegration.ToolbarInfo
 
 /**
  * BrowserFragment delegate to handle all layout updates needed to show or hide the find in page bar.

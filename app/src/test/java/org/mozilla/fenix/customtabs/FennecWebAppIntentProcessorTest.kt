@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import io.mockk.mockk
 import mozilla.components.feature.pwa.ManifestStorage
@@ -12,7 +12,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import java.io.File
 
 @RunWith(FenixRobolectricTestRunner::class)

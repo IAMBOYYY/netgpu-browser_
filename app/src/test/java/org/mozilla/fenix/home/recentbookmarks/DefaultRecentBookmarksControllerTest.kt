@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks
+package com.netgpu.browser.home.recentbookmarks
 
 import androidx.navigation.NavController
 import io.mockk.Runs
@@ -25,12 +25,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.RecentBookmarks
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.recentbookmarks.controller.DefaultRecentBookmarksController
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.RecentBookmarks
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.recentbookmarks.controller.DefaultRecentBookmarksController
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(FenixRobolectricTestRunner::class)

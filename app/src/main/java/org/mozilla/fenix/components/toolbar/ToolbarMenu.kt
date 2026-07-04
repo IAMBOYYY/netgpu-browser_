@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import mozilla.components.browser.menu.BrowserMenuBuilder
 import mozilla.components.browser.menu.item.BrowserMenuItemToolbar
-import org.mozilla.fenix.components.accounts.AccountState
+import com.netgpu.browser.components.accounts.AccountState
 
 interface ToolbarMenu {
     sealed class Item {

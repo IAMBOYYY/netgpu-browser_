@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.content.pm.PackageManager
 import android.os.Build
@@ -28,24 +28,24 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Addons
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.GleanMetrics.Preferences
-import org.mozilla.fenix.GleanMetrics.SearchDefaultEngine
-import org.mozilla.fenix.GleanMetrics.TopSites
-import org.mozilla.fenix.components.metrics.MozillaProductDetector
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.BrowsersCache
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.GleanMetrics.Addons
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.GleanMetrics.Preferences
+import com.netgpu.browser.GleanMetrics.SearchDefaultEngine
+import com.netgpu.browser.GleanMetrics.TopSites
+import com.netgpu.browser.components.metrics.MozillaProductDetector
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.BrowsersCache
+import com.netgpu.browser.utils.Settings
 import org.robolectric.annotation.Config
 
 @RunWith(FenixRobolectricTestRunner::class)
-class FenixApplicationTest {
+class NetGpuBrowserApplicationTest {
 
     @get:Rule val gleanTestRule = GleanTestRule(ApplicationProvider.getApplicationContext())
 
-    private lateinit var application: FenixApplication
+    private lateinit var application: NetGpuBrowserApplication
     private lateinit var browsersCache: BrowsersCache
     private lateinit var mozillaProductDetector: MozillaProductDetector
     private lateinit var browserStore: BrowserStore
@@ -89,7 +89,7 @@ class FenixApplicationTest {
     @Test
     @Config(sdk = [Build.VERSION_CODES.O])
     fun `WHEN setStartupMetrics is called THEN sets some base metrics`() {
-        val expectedAppName = "org.mozilla.fenix"
+        val expectedAppName = "com.netgpu.browser"
         val expectedAppInstallSource = "org.mozilla.install.source"
         val settings = spyk(Settings(testContext))
         val application = spyk(application)

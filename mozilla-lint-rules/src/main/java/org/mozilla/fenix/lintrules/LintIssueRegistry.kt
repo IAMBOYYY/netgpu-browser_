@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.lintrules
+package com.netgpu.browser.lintrules
 
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.client.api.Vendor
 import com.android.tools.lint.detector.api.Issue
-import org.mozilla.fenix.lintrules.perf.ConstraintLayoutPerfDetector
+import com.netgpu.browser.lintrules.perf.ConstraintLayoutPerfDetector
 
 /**
  * Registry which provides a list of our custom lint checks to be performed on an Android project.
@@ -25,6 +25,6 @@ class LintIssueRegistry : IssueRegistry() {
     ) + ConstraintLayoutPerfDetector.ISSUES + ContextCompatDetector.ISSUES
     override val vendor: Vendor = Vendor(
         vendorName = "Mozilla",
-        identifier = "mozilla-fenix",
+        identifier = "mozilla-netgpu_browser",
     )
 }

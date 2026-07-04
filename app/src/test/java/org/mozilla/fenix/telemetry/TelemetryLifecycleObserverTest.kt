@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.telemetry
+package com.netgpu.browser.telemetry
 
 import androidx.test.core.app.ApplicationProvider
 import io.mockk.mockk
@@ -22,8 +22,8 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.GleanMetrics.EngineTab as EngineMetrics
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.EngineTab as EngineMetrics
 
 @RunWith(FenixRobolectricTestRunner::class)
 class TelemetryLifecycleObserverTest {

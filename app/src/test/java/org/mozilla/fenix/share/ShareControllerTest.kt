@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
@@ -38,13 +38,13 @@ import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.SyncAccount
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.share.listadapters.AppShareOption
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.SyncAccount
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.share.listadapters.AppShareOption
 
 @RunWith(FenixRobolectricTestRunner::class)
 class ShareControllerTest {
@@ -64,7 +64,7 @@ class ShareControllerTest {
     private val textToShare = "${shareData[0].url}\n\n${shareData[1].url}"
     private val sendTabUseCases = mockk<SendTabUseCases>(relaxed = true)
     private val saveToPdfUseCase = mockk<SessionUseCases.SaveToPdfUseCase>(relaxed = true)
-    private val snackbar = mockk<FenixSnackbar>(relaxed = true)
+    private val snackbar = mockk<NetGpuBrowserSnackbar>(relaxed = true)
     private val navController = mockk<NavController>(relaxed = true)
     private val dismiss = mockk<(ShareController.Result) -> Unit>(relaxed = true)
     private val recentAppStorage = mockk<RecentAppsStorage>(relaxed = true)

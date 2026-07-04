@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
@@ -14,10 +14,10 @@ import androidx.core.content.withStyledAttributes
 import androidx.core.text.HtmlCompat
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.utils.view.GroupableRadioButton
-import org.mozilla.fenix.utils.view.uncheckAll
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.utils.view.GroupableRadioButton
+import com.netgpu.browser.utils.view.uncheckAll
 
 @Suppress("RestrictedApi")
 open class RadioButtonPreference @JvmOverloads constructor(

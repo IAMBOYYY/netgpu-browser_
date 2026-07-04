@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.address
+package com.netgpu.browser.settings.address
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,17 +17,17 @@ import kotlinx.coroutines.launch
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Addresses
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.settings.address.controller.DefaultAddressManagementController
-import org.mozilla.fenix.settings.address.interactor.AddressManagementInteractor
-import org.mozilla.fenix.settings.address.interactor.DefaultAddressManagementInteractor
-import org.mozilla.fenix.settings.address.view.AddressList
-import org.mozilla.fenix.settings.autofill.AutofillAction
-import org.mozilla.fenix.settings.autofill.AutofillFragmentState
-import org.mozilla.fenix.settings.autofill.AutofillFragmentStore
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.GleanMetrics.Addresses
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.settings.address.controller.DefaultAddressManagementController
+import com.netgpu.browser.settings.address.interactor.AddressManagementInteractor
+import com.netgpu.browser.settings.address.interactor.DefaultAddressManagementInteractor
+import com.netgpu.browser.settings.address.view.AddressList
+import com.netgpu.browser.settings.autofill.AutofillAction
+import com.netgpu.browser.settings.autofill.AutofillFragmentState
+import com.netgpu.browser.settings.autofill.AutofillFragmentStore
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Displays a list of saved addresses.
@@ -56,7 +56,7 @@ class AddressManagementFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                FirefoxTheme {
+                NetGpuBrowserTheme {
                     val addresses = store.observeAsComposableState { state -> state.addresses }
 
                     AddressList(

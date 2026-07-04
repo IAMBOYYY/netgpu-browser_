@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,9 +33,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.perf.ProfilerUtils.handleProfileSave
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.perf.ProfilerUtils.handleProfileSave
 
 /**
  * Dialogue to stop the Gecko profiler without using ADB.

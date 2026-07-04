@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs.controller
+package com.netgpu.browser.home.recentsyncedtabs.controller
 
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
@@ -27,14 +27,14 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.RecentSyncedTabs
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.home.HomeFragmentDirections
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
-import org.mozilla.fenix.tabstray.Page
-import org.mozilla.fenix.tabstray.TabsTrayAccessPoint
+import com.netgpu.browser.GleanMetrics.RecentSyncedTabs
+import com.netgpu.browser.R
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.home.HomeFragmentDirections
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.tabstray.Page
+import com.netgpu.browser.tabstray.TabsTrayAccessPoint
 
 @RunWith(AndroidJUnit4::class)
 class DefaultRecentSyncedTabControllerTest {

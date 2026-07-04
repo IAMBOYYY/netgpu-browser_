@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.wallpapers
+package com.netgpu.browser.wallpapers
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.clickable
@@ -26,9 +26,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.wallpaper.WallpaperThumbnails
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.wallpaper.WallpaperThumbnails
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * A view that shows content of a WallpaperOnboarding dialog.
@@ -53,7 +53,7 @@ fun WallpaperOnboarding(
     onSelectWallpaper: (Wallpaper) -> Unit,
 ) {
     Surface(
-        color = FirefoxTheme.colors.layer2,
+        color = NetGpuBrowserTheme.colors.layer2,
         shape = RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp),
     ) {
         Column(
@@ -63,7 +63,7 @@ fun WallpaperOnboarding(
             Icon(
                 painter = painterResource(id = R.drawable.mozac_ic_close),
                 contentDescription = stringResource(id = R.string.close_tab),
-                tint = FirefoxTheme.colors.iconPrimary,
+                tint = NetGpuBrowserTheme.colors.iconPrimary,
                 modifier = Modifier
                     .clickable { onCloseClicked() }
                     .size(24.dp)
@@ -74,20 +74,20 @@ fun WallpaperOnboarding(
 
             Text(
                 text = stringResource(R.string.wallpapers_onboarding_dialog_title_text),
-                color = FirefoxTheme.colors.textPrimary,
+                color = NetGpuBrowserTheme.colors.textPrimary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
-                style = FirefoxTheme.typography.headline7,
+                style = NetGpuBrowserTheme.typography.headline7,
             )
 
             Spacer(modifier = Modifier.height(4.dp))
 
             Text(
                 text = stringResource(R.string.wallpapers_onboarding_dialog_body_text),
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
-                style = FirefoxTheme.typography.caption,
+                style = NetGpuBrowserTheme.typography.caption,
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -110,10 +110,10 @@ fun WallpaperOnboarding(
             ) {
                 Text(
                     text = stringResource(R.string.wallpapers_onboarding_dialog_explore_more_button_text),
-                    color = FirefoxTheme.colors.textAccent,
+                    color = NetGpuBrowserTheme.colors.textAccent,
                     overflow = TextOverflow.Ellipsis,
                     maxLines = 1,
-                    style = FirefoxTheme.typography.button,
+                    style = NetGpuBrowserTheme.typography.button,
                 )
             }
         }
@@ -124,7 +124,7 @@ fun WallpaperOnboarding(
 @ExperimentalMaterialApi
 @Composable
 private fun WallpaperSnackbarPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         WallpaperOnboarding(
             wallpapers = listOf(Wallpaper.Default),
             currentWallpaper = Wallpaper.Default,

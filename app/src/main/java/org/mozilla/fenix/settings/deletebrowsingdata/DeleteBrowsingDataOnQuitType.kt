@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.deletebrowsingdata
+package com.netgpu.browser.settings.deletebrowsingdata
 
 import android.content.Context
 import androidx.annotation.StringRes
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
 
 enum class DeleteBrowsingDataOnQuitType(@StringRes private val prefKey: Int) {
     TABS(R.string.pref_key_delete_open_tabs_on_quit),

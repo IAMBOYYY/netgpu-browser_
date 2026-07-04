@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.os.StrictMode
@@ -20,8 +20,8 @@ import mozilla.components.feature.tab.collections.TabCollectionStorage
 import mozilla.components.support.base.observer.Observable
 import mozilla.components.support.base.observer.ObserverRegistry
 import mozilla.components.support.ktx.kotlin.toShortUrl
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.perf.StrictModeManager
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.perf.StrictModeManager
 
 private const val COLLECTION_MAX_TITLE_LENGTH = 20
 
@@ -29,7 +29,7 @@ class TabCollectionStorage(
     private val context: Context,
     strictMode: StrictModeManager,
     private val delegate: Observable<Observer> = ObserverRegistry(),
-) : Observable<org.mozilla.fenix.components.TabCollectionStorage.Observer> by delegate {
+) : Observable<com.netgpu.browser.components.TabCollectionStorage.Observer> by delegate {
 
     /**
      * Interface to be implemented by classes that want to observe the storage

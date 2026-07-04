@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import org.mozilla.fenix.library.history.viewholders.HistoryListItemViewHolder
-import org.mozilla.fenix.selection.SelectionHolder
+import com.netgpu.browser.library.history.viewholders.HistoryListItemViewHolder
+import com.netgpu.browser.selection.SelectionHolder
 
 /**
  * Adapter for the list of visited pages, that uses Paging 3 versions of the Paging library.

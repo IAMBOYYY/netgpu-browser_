@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
@@ -10,31 +10,31 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.FenixApplication
-import org.mozilla.fenix.R
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.AndroidAssetDispatcher
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.RecyclerViewIdlingResource
-import org.mozilla.fenix.helpers.TestAssetHelper
-import org.mozilla.fenix.helpers.TestAssetHelper.getLoremIpsumAsset
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.registerAndCleanupIdlingResources
-import org.mozilla.fenix.helpers.TestHelper.runWithSystemLocaleChanged
-import org.mozilla.fenix.ui.SettingsBasicsTest.CreditCard.MOCK_CREDIT_CARD_NUMBER
-import org.mozilla.fenix.ui.SettingsBasicsTest.CreditCard.MOCK_EXPIRATION_MONTH
-import org.mozilla.fenix.ui.SettingsBasicsTest.CreditCard.MOCK_EXPIRATION_YEAR
-import org.mozilla.fenix.ui.SettingsBasicsTest.CreditCard.MOCK_LAST_CARD_DIGITS
-import org.mozilla.fenix.ui.SettingsBasicsTest.CreditCard.MOCK_NAME_ON_CARD
-import org.mozilla.fenix.ui.robots.checkTextSizeOnWebsite
-import org.mozilla.fenix.ui.robots.homeScreen
-import org.mozilla.fenix.ui.robots.navigationToolbar
-import org.mozilla.fenix.ui.util.FRENCH_LANGUAGE_HEADER
-import org.mozilla.fenix.ui.util.FRENCH_SYSTEM_LOCALE_OPTION
-import org.mozilla.fenix.ui.util.FR_SETTINGS
-import org.mozilla.fenix.ui.util.ROMANIAN_LANGUAGE_HEADER
+import com.netgpu.browser.NetGpuBrowserApplication
+import com.netgpu.browser.R
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.AndroidAssetDispatcher
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.RecyclerViewIdlingResource
+import com.netgpu.browser.helpers.TestAssetHelper
+import com.netgpu.browser.helpers.TestAssetHelper.getLoremIpsumAsset
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.registerAndCleanupIdlingResources
+import com.netgpu.browser.helpers.TestHelper.runWithSystemLocaleChanged
+import com.netgpu.browser.ui.SettingsBasicsTest.CreditCard.MOCK_CREDIT_CARD_NUMBER
+import com.netgpu.browser.ui.SettingsBasicsTest.CreditCard.MOCK_EXPIRATION_MONTH
+import com.netgpu.browser.ui.SettingsBasicsTest.CreditCard.MOCK_EXPIRATION_YEAR
+import com.netgpu.browser.ui.SettingsBasicsTest.CreditCard.MOCK_LAST_CARD_DIGITS
+import com.netgpu.browser.ui.SettingsBasicsTest.CreditCard.MOCK_NAME_ON_CARD
+import com.netgpu.browser.ui.robots.checkTextSizeOnWebsite
+import com.netgpu.browser.ui.robots.homeScreen
+import com.netgpu.browser.ui.robots.navigationToolbar
+import com.netgpu.browser.ui.util.FRENCH_LANGUAGE_HEADER
+import com.netgpu.browser.ui.util.FRENCH_SYSTEM_LOCALE_OPTION
+import com.netgpu.browser.ui.util.FR_SETTINGS
+import com.netgpu.browser.ui.util.ROMANIAN_LANGUAGE_HEADER
 import java.time.LocalDate
 import java.util.Locale
 
@@ -92,7 +92,7 @@ class SettingsBasicsTest {
     @Test
     fun changeAccessibiltySettings() {
         // Goes through the settings and changes the default text on a webpage, then verifies if the text has changed.
-        val fenixApp = activityIntentTestRule.activity.applicationContext as FenixApplication
+        val netgpu_browserApp = activityIntentTestRule.activity.applicationContext as NetGpuBrowserApplication
         val webpage = getLoremIpsumAsset(mockWebServer).url
 
         // This value will represent the text size percentage the webpage will scale to. The default value is 100%.
@@ -110,7 +110,7 @@ class SettingsBasicsTest {
         }.goBack {
         }.openNavigationToolbar {
         }.enterURLAndEnterToBrowser(webpage) {
-            checkTextSizeOnWebsite(textSizePercentage, fenixApp.components)
+            checkTextSizeOnWebsite(textSizePercentage, netgpu_browserApp.components)
         }.openThreeDotMenu {
         }.openSettings {
         }.openAccessibilitySubMenu {
@@ -205,13 +205,13 @@ class SettingsBasicsTest {
             typeInSearchBar("French")
             selectLanguageSearchResult("Français")
             verifyLanguageHeaderIsTranslated(FRENCH_LANGUAGE_HEADER)
-            // Add this step when https://github.com/mozilla-mobile/fenix/issues/26733 is fixed
+            // Add this step when https://github.com/mozilla-mobile/netgpu_browser/issues/26733 is fixed
             // verifyLanguageListIsDisplayed()
         }
     }
 
     // Because it requires changing system prefs, this test will run only on Debug builds
-    @Ignore("Failing due to app translation bug, see: https://github.com/mozilla-mobile/fenix/issues/26729")
+    @Ignore("Failing due to app translation bug, see: https://github.com/mozilla-mobile/netgpu_browser/issues/26729")
     @Test
     fun frenchSystemLocaleTest() {
         val frenchLocale = Locale("fr", "FR")

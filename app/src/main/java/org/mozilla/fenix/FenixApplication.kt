@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import android.annotation.SuppressLint
 import android.net.Uri
@@ -60,62 +60,62 @@ import mozilla.components.support.rusthttp.RustHttpConfig
 import mozilla.components.support.rustlog.RustLog
 import mozilla.components.support.utils.logElapsedTime
 import mozilla.components.support.webextensions.WebExtensionSupport
-import org.mozilla.fenix.GleanMetrics.Addons
-import org.mozilla.fenix.GleanMetrics.AndroidAutofill
-import org.mozilla.fenix.GleanMetrics.CustomizeHome
-import org.mozilla.fenix.GleanMetrics.Events.marketingNotificationAllowed
-import org.mozilla.fenix.GleanMetrics.GleanBuildInfo
-import org.mozilla.fenix.GleanMetrics.Metrics
-import org.mozilla.fenix.GleanMetrics.PerfStartup
-import org.mozilla.fenix.GleanMetrics.Preferences
-import org.mozilla.fenix.GleanMetrics.SearchDefaultEngine
-import org.mozilla.fenix.GleanMetrics.TopSites
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.Core
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.metrics.MetricServiceType
-import org.mozilla.fenix.components.metrics.MozillaProductDetector
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.experiments.maybeFetchExperiments
-import org.mozilla.fenix.ext.areNotificationsEnabledSafe
-import org.mozilla.fenix.ext.containsQueryParameters
-import org.mozilla.fenix.ext.getCustomGleanServerUrlIfAvailable
-import org.mozilla.fenix.ext.isCustomEngine
-import org.mozilla.fenix.ext.isKnownSearchDomain
-import org.mozilla.fenix.ext.isNotificationChannelEnabled
-import org.mozilla.fenix.ext.setCustomEndpointIfAvailable
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.onboarding.MARKETING_CHANNEL_ID
-import org.mozilla.fenix.perf.MarkersActivityLifecycleCallbacks
-import org.mozilla.fenix.perf.ProfilerMarkerFactProcessor
-import org.mozilla.fenix.perf.StartupTimeline
-import org.mozilla.fenix.perf.StorageStatsMetrics
-import org.mozilla.fenix.perf.runBlockingIncrement
-import org.mozilla.fenix.push.PushFxaIntegration
-import org.mozilla.fenix.push.WebPushEngineIntegration
-import org.mozilla.fenix.session.PerformanceActivityLifecycleCallbacks
-import org.mozilla.fenix.session.VisibilityLifecycleCallback
-import org.mozilla.fenix.settings.CustomizationFragment
-import org.mozilla.fenix.telemetry.TelemetryLifecycleObserver
-import org.mozilla.fenix.utils.BrowsersCache
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.GleanMetrics.Addons
+import com.netgpu.browser.GleanMetrics.AndroidAutofill
+import com.netgpu.browser.GleanMetrics.CustomizeHome
+import com.netgpu.browser.GleanMetrics.Events.marketingNotificationAllowed
+import com.netgpu.browser.GleanMetrics.GleanBuildInfo
+import com.netgpu.browser.GleanMetrics.Metrics
+import com.netgpu.browser.GleanMetrics.PerfStartup
+import com.netgpu.browser.GleanMetrics.Preferences
+import com.netgpu.browser.GleanMetrics.SearchDefaultEngine
+import com.netgpu.browser.GleanMetrics.TopSites
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.Core
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.metrics.MetricServiceType
+import com.netgpu.browser.components.metrics.MozillaProductDetector
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.experiments.maybeFetchExperiments
+import com.netgpu.browser.ext.areNotificationsEnabledSafe
+import com.netgpu.browser.ext.containsQueryParameters
+import com.netgpu.browser.ext.getCustomGleanServerUrlIfAvailable
+import com.netgpu.browser.ext.isCustomEngine
+import com.netgpu.browser.ext.isKnownSearchDomain
+import com.netgpu.browser.ext.isNotificationChannelEnabled
+import com.netgpu.browser.ext.setCustomEndpointIfAvailable
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.onboarding.MARKETING_CHANNEL_ID
+import com.netgpu.browser.perf.MarkersActivityLifecycleCallbacks
+import com.netgpu.browser.perf.ProfilerMarkerFactProcessor
+import com.netgpu.browser.perf.StartupTimeline
+import com.netgpu.browser.perf.StorageStatsMetrics
+import com.netgpu.browser.perf.runBlockingIncrement
+import com.netgpu.browser.push.PushFxaIntegration
+import com.netgpu.browser.push.WebPushEngineIntegration
+import com.netgpu.browser.session.PerformanceActivityLifecycleCallbacks
+import com.netgpu.browser.session.VisibilityLifecycleCallback
+import com.netgpu.browser.settings.CustomizationFragment
+import com.netgpu.browser.telemetry.TelemetryLifecycleObserver
+import com.netgpu.browser.utils.BrowsersCache
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
+import com.netgpu.browser.wallpapers.Wallpaper
 import java.util.UUID
 import java.util.concurrent.TimeUnit
 
 /**
  *The main application class for Fenix. Records data to measure initialization performance.
- *  Installs [CrashReporter], initializes [Glean]  in fenix builds and setup Megazord in the main process.
+ *  Installs [CrashReporter], initializes [Glean]  in netgpu_browser builds and setup Megazord in the main process.
  */
 @Suppress("Registered", "TooManyFunctions", "LargeClass")
-open class FenixApplication : LocaleAwareApplication(), Provider {
+open class NetGpuBrowserApplication : LocaleAwareApplication(), Provider {
     init {
         recordOnInit() // DO NOT MOVE ANYTHING ABOVE HERE: the timing of this measurement is critical.
     }
 
-    private val logger = Logger("FenixApplication")
+    private val logger = Logger("NetGpuBrowserApplication")
 
     open val components by lazy { Components(this) }
 
@@ -200,7 +200,7 @@ open class FenixApplication : LocaleAwareApplication(), Provider {
     open fun setupInMainProcessOnly() {
         // ⚠️ DO NOT ADD ANYTHING ABOVE THIS LINE.
         // Especially references to the engine/BrowserStore which can alter the app initialization.
-        // See: https://github.com/mozilla-mobile/fenix/issues/26320
+        // See: https://github.com/mozilla-mobile/netgpu_browser/issues/26320
         //
         // We can initialize Nimbus before Glean because Glean will queue messages
         // before it's initialized.
@@ -382,7 +382,7 @@ open class FenixApplication : LocaleAwareApplication(), Provider {
             queue.runIfReadyOrQueue {
                 GlobalScope.launch(Dispatchers.IO) {
                     components.analytics.experiments.maybeFetchExperiments(
-                        context = this@FenixApplication,
+                        context = this@NetGpuBrowserApplication,
                     )
                 }
             }
@@ -458,7 +458,7 @@ open class FenixApplication : LocaleAwareApplication(), Provider {
      * Initiate Megazord sequence! Megazord Battle Mode!
      *
      * The application-services combined libraries are known as the "megazord". We use the default `full`
-     * megazord - it contains everything that fenix needs, and (currently) nothing more.
+     * megazord - it contains everything that netgpu_browser needs, and (currently) nothing more.
      *
      * Documentation on what megazords are, and why they're needed:
      * - https://github.com/mozilla/application-services/blob/master/docs/design/megazords.md
@@ -501,7 +501,7 @@ open class FenixApplication : LocaleAwareApplication(), Provider {
         super.onTrimMemory(level)
 
         // Additional logging and breadcrumb to debug memory issues:
-        // https://github.com/mozilla-mobile/fenix/issues/12731
+        // https://github.com/mozilla-mobile/netgpu_browser/issues/12731
 
         logger.info("onTrimMemory(), level=$level, main=${isMainProcess()}")
 
@@ -589,7 +589,7 @@ open class FenixApplication : LocaleAwareApplication(), Provider {
         // We avoid blocking the main thread for BrowsersCache on startup by loading it on
         // background thread.
         GlobalScope.launch(Dispatchers.Default) {
-            BrowsersCache.all(this@FenixApplication)
+            BrowsersCache.all(this@NetGpuBrowserApplication)
         }
     }
 

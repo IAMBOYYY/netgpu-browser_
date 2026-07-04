@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.awesomebar
+package com.netgpu.browser.search.awesomebar
 
 import android.app.Activity
 import android.graphics.drawable.VectorDrawable
@@ -33,15 +33,15 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.Core.Companion
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.search.SearchEngineSource
-import org.mozilla.fenix.search.awesomebar.AwesomeBarView.SearchProviderState
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.Core.Companion
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.search.SearchEngineSource
+import com.netgpu.browser.search.awesomebar.AwesomeBarView.SearchProviderState
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AwesomeBarViewTest {
@@ -51,7 +51,7 @@ class AwesomeBarViewTest {
     @Before
     fun setup() {
         // The following setup is needed to complete the init block of AwesomeBarView
-        mockkStatic("org.mozilla.fenix.ext.ContextKt")
+        mockkStatic("com.netgpu.browser.ext.ContextKt")
         mockkStatic("mozilla.components.support.ktx.android.content.ContextKt")
         mockkObject(AwesomeBarView.Companion)
         every { any<Activity>().components.core.engine } returns mockk()
@@ -79,7 +79,7 @@ class AwesomeBarViewTest {
 
     @After
     fun tearDown() {
-        unmockkStatic("org.mozilla.fenix.ext.ContextKt")
+        unmockkStatic("com.netgpu.browser.ext.ContextKt")
         unmockkStatic("mozilla.components.support.ktx.android.content.ContextKt")
         unmockkObject(AwesomeBarView.Companion)
     }

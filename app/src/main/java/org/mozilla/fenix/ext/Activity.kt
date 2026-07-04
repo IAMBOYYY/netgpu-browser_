@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.app.Activity
 import android.app.role.RoleManager
@@ -16,10 +16,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import mozilla.components.concept.base.crash.Breadcrumb
 import mozilla.components.concept.engine.EngineSession
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.settings.SupportUtils
 
 /**
  * Attempts to call immersive mode using the View to hide the status bar and navigation buttons.
@@ -36,7 +36,7 @@ import org.mozilla.fenix.settings.SupportUtils
 )
 fun Activity.enterToImmersiveMode() {
     window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
-    // This will be addressed on https://github.com/mozilla-mobile/fenix/issues/17804
+    // This will be addressed on https://github.com/mozilla-mobile/netgpu_browser/issues/17804
     @Suppress("DEPRECATION")
     window.decorView.systemUiVisibility = (
         View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION

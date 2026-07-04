@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -21,9 +21,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.tabstray.TabsTrayInfoBannerBinding.Companion.TAB_COUNT_SHOW_CFR
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.tabstray.TabsTrayInfoBannerBinding.Companion.TAB_COUNT_SHOW_CFR
+import com.netgpu.browser.utils.Settings
 
 @RunWith(FenixRobolectricTestRunner::class)
 @OptIn(ExperimentalCoroutinesApi::class)

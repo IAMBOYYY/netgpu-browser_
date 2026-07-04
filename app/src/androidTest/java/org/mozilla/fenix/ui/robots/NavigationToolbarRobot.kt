@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.net.Uri
 import android.os.Build
@@ -30,15 +30,15 @@ import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.not
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.SessionLoadedIdlingResource
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.SessionLoadedIdlingResource
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for the URL toolbar.
@@ -188,7 +188,7 @@ class NavigationToolbarRobot {
             )
 
             // On Android 12 or above we don't SHOW the URL unless the user requests to do so.
-            // See for mor information https://github.com/mozilla-mobile/fenix/issues/22271
+            // See for mor information https://github.com/mozilla-mobile/netgpu_browser/issues/22271
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
                 mDevice.waitNotNull(
                     Until.findObject(By.res("$packageName:id/clipboard_url")),

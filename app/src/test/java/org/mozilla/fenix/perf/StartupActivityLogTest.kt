@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.app.Activity
 import android.app.Application
@@ -18,7 +18,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.perf.StartupActivityLog.LogEntry
+import com.netgpu.browser.perf.StartupActivityLog.LogEntry
 
 class StartupActivityLogTest {
 

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import io.mockk.mockk
 import io.mockk.verify
@@ -17,9 +17,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.BookmarksManagement
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.GleanMetrics.BookmarksManagement
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @SuppressWarnings("TooManyFunctions", "LargeClass")
 @RunWith(FenixRobolectricTestRunner::class) // For GleanTestRule

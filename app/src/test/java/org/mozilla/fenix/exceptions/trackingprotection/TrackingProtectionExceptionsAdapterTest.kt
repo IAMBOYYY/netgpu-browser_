@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.trackingprotection
+package com.netgpu.browser.exceptions.trackingprotection
 
 import android.content.Context
 import android.widget.FrameLayout
@@ -17,13 +17,13 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.R
-import org.mozilla.fenix.exceptions.ExceptionsAdapter
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsDeleteButtonViewHolder
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsHeaderViewHolder
-import org.mozilla.fenix.exceptions.viewholders.ExceptionsListItemViewHolder
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.R
+import com.netgpu.browser.exceptions.ExceptionsAdapter
+import com.netgpu.browser.exceptions.viewholders.ExceptionsDeleteButtonViewHolder
+import com.netgpu.browser.exceptions.viewholders.ExceptionsHeaderViewHolder
+import com.netgpu.browser.exceptions.viewholders.ExceptionsListItemViewHolder
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 
 @RunWith(FenixRobolectricTestRunner::class)
 class TrackingProtectionExceptionsAdapterTest {

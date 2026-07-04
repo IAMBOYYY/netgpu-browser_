@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings
+package com.netgpu.browser.settings.quicksettings
 
 import android.content.Intent
 import android.content.pm.PackageManager.PERMISSION_GRANTED
@@ -26,15 +26,15 @@ import mozilla.components.lib.state.ext.consumeFlow
 import mozilla.components.lib.state.ext.consumeFrom
 import mozilla.components.support.base.log.logger.Logger
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifAnyChanged
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.R
-import org.mozilla.fenix.android.FenixDialogFragment
-import org.mozilla.fenix.databinding.FragmentQuickSettingsDialogSheetBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.quicksettings.protections.ProtectionsView
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.R
+import com.netgpu.browser.android.FenixDialogFragment
+import com.netgpu.browser.databinding.FragmentQuickSettingsDialogSheetBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.quicksettings.protections.ProtectionsView
 
 /**
  * Dialog that presents the user with information about
@@ -67,7 +67,7 @@ class QuickSettingsSheetDialogFragment : FenixDialogFragment() {
     override val layoutId: Int = R.layout.fragment_quick_settings_dialog_sheet
 
     @Suppress("DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

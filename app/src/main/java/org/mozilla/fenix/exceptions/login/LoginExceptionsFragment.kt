@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.login
+package com.netgpu.browser.exceptions.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,11 +14,11 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.plus
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentExceptionsBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.showToolbar
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentExceptionsBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.showToolbar
 
 /**
  * Displays a list of sites that are exempted from saving logins,

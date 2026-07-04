@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
@@ -13,12 +13,12 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.tabstray.TabsTray
 import mozilla.components.browser.tabstray.TabsTrayStyling
 import mozilla.components.concept.base.images.ImageLoader
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.TabTrayGridItemBinding
-import org.mozilla.fenix.ext.increaseTapArea
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.tabstray.TabsTrayInteractor
-import org.mozilla.fenix.tabstray.TabsTrayStore
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.TabTrayGridItemBinding
+import com.netgpu.browser.ext.increaseTapArea
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.tabstray.TabsTrayInteractor
+import com.netgpu.browser.tabstray.TabsTrayStore
 import kotlin.math.max
 
 sealed class BrowserTabViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

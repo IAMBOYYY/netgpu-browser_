@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentvisits
+package com.netgpu.browser.home.recentvisits
 
 import io.mockk.Called
 import io.mockk.every
@@ -30,9 +30,9 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.historymetadata.HistoryMetadataMiddleware
-import org.mozilla.fenix.historymetadata.HistoryMetadataService
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.historymetadata.HistoryMetadataMiddleware
+import com.netgpu.browser.historymetadata.HistoryMetadataService
 
 @RunWith(FenixRobolectricTestRunner::class)
 class HistoryMetadataMiddlewareTest {
@@ -201,7 +201,7 @@ class HistoryMetadataMiddlewareTest {
         // Parent navigates away.
         store.dispatch(ContentAction.UpdateUrlAction(parentTab.id, "https://firefox.com")).joinBlocking()
         store.dispatch(ContentAction.UpdateSearchTermsAction(parentTab.id, "")).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(3, this.count())
             assertEquals("https://firefox.com", this[2].url)
@@ -277,7 +277,7 @@ class HistoryMetadataMiddlewareTest {
         store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("", "https://google.com?url=https://mozilla.org")), currentIndex = 0)).joinBlocking()
         store.dispatch(ContentAction.UpdateUrlAction(tab.id, "https://mozilla.org")).joinBlocking()
         store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("Mozilla", "https://mozilla.org")), currentIndex = 0)).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
 
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(4, this.count())
@@ -333,7 +333,7 @@ class HistoryMetadataMiddlewareTest {
         // Direct load occurs on child tab. Search terms should be cleared.
         store.dispatch(EngineAction.LoadUrlAction(tab.id, "https://firefox.com")).joinBlocking()
         store.dispatch(ContentAction.UpdateUrlAction(tab.id, "https://firefox.com")).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("", "https://google.com?url=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("", "https://google.com?url=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(3, this.count())
             assertEquals("https://firefox.com", this[2].url)
@@ -345,7 +345,7 @@ class HistoryMetadataMiddlewareTest {
         store.dispatch(EngineAction.LoadUrlAction(parentTab.id, "https://firefox.com")).joinBlocking()
         store.dispatch(ContentAction.UpdateSearchTermsAction(parentTab.id, "")).joinBlocking()
         store.dispatch(ContentAction.UpdateUrlAction(parentTab.id, "https://firefox.com")).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(4, this.count())
             assertEquals("https://firefox.com", this[3].url)
@@ -390,7 +390,7 @@ class HistoryMetadataMiddlewareTest {
         // Direct load occurs on child tab. Search terms should be cleared.
         store.dispatch(EngineAction.OptimizedLoadUrlTriggeredAction(tab.id, "https://firefox.com")).joinBlocking()
         store.dispatch(ContentAction.UpdateUrlAction(tab.id, "https://firefox.com")).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("", "https://google.com?url=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(tab.id, listOf(HistoryItem("", "https://google.com?url=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(3, this.count())
             assertEquals("https://firefox.com", this[2].url)
@@ -402,7 +402,7 @@ class HistoryMetadataMiddlewareTest {
         store.dispatch(EngineAction.OptimizedLoadUrlTriggeredAction(parentTab.id, "https://firefox.com")).joinBlocking()
         store.dispatch(ContentAction.UpdateSearchTermsAction(parentTab.id, "")).joinBlocking()
         store.dispatch(ContentAction.UpdateUrlAction(parentTab.id, "https://firefox.com")).joinBlocking()
-        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("Firefox", "https://firefox.com")), 1)).joinBlocking()
+        store.dispatch(ContentAction.UpdateHistoryStateAction(parentTab.id, listOf(HistoryItem("Google - mozilla website", "https://google.com?q=mozilla+website"), HistoryItem("NETGPU BROWSER", "https://firefox.com")), 1)).joinBlocking()
         with((service as TestingMetadataService).createdMetadata) {
             assertEquals(4, this.count())
             assertEquals("https://firefox.com", this[3].url)

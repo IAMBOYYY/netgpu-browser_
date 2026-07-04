@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -15,9 +15,9 @@ import kotlinx.coroutines.launch
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.feature.tab.collections.TabCollection
 import mozilla.components.support.ktx.android.view.showKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.TabCollectionStorage
-import org.mozilla.fenix.ext.getDefaultCollectionNumber
+import com.netgpu.browser.R
+import com.netgpu.browser.components.TabCollectionStorage
+import com.netgpu.browser.ext.getDefaultCollectionNumber
 
 /**
  * A lambda that is invoked when a confirmation button in a [CollectionsDialog] is clicked.

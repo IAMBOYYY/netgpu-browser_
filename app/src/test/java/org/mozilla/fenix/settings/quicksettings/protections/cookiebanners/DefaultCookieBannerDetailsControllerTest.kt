@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.quicksettings.protections.cookiebanners
+package com.netgpu.browser.settings.quicksettings.protections.cookiebanners
 
 import android.content.Context
 import androidx.fragment.app.Fragment
@@ -41,12 +41,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.CookieBanners
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.trackingprotection.ProtectionsAction
-import org.mozilla.fenix.trackingprotection.ProtectionsStore
+import com.netgpu.browser.GleanMetrics.CookieBanners
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.trackingprotection.ProtectionsAction
+import com.netgpu.browser.trackingprotection.ProtectionsStore
 
 @RunWith(FenixRobolectricTestRunner::class)
 internal class DefaultCookieBannerDetailsControllerTest {

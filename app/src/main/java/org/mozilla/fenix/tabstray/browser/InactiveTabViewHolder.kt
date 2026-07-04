@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.browser
+package com.netgpu.browser.tabstray.browser
 
 import android.view.View
 import androidx.compose.runtime.Composable
@@ -14,16 +14,16 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.lifecycle.LifecycleOwner
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.tabstray.TabsTrayFragment
-import org.mozilla.fenix.tabstray.TabsTrayState
-import org.mozilla.fenix.tabstray.TabsTrayStore
-import org.mozilla.fenix.tabstray.TrayPagerAdapter
-import org.mozilla.fenix.tabstray.inactivetabs.InactiveTabsList
-import org.mozilla.fenix.GleanMetrics.TabsTray as TabsTrayMetrics
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.tabstray.TabsTrayFragment
+import com.netgpu.browser.tabstray.TabsTrayState
+import com.netgpu.browser.tabstray.TabsTrayStore
+import com.netgpu.browser.tabstray.TrayPagerAdapter
+import com.netgpu.browser.tabstray.inactivetabs.InactiveTabsList
+import com.netgpu.browser.GleanMetrics.TabsTray as TabsTrayMetrics
 
 /**
  * The [ComposeViewHolder] for displaying the section of inactive tabs in [TrayPagerAdapter].
@@ -84,9 +84,9 @@ class InactiveTabViewHolder(
     private fun showConfirmationSnackbar() {
         val context = composeView.context
         val text = context.getString(R.string.inactive_tabs_auto_close_message_snackbar)
-        val snackbar = FenixSnackbar.make(
+        val snackbar = NetGpuBrowserSnackbar.make(
             view = composeView,
-            duration = FenixSnackbar.LENGTH_SHORT,
+            duration = NetGpuBrowserSnackbar.LENGTH_SHORT,
             isDisplayedWithBrowserToolbar = true,
         ).setText(text)
         snackbar.view.elevation = TabsTrayFragment.ELEVATION

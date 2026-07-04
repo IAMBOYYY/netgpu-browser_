@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.customannotations.SmokeTest
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.ui.robots.homeScreen
+import com.netgpu.browser.customannotations.SmokeTest
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.ui.robots.homeScreen
 
 /**
  *  Tests for verifying the new onboarding features.

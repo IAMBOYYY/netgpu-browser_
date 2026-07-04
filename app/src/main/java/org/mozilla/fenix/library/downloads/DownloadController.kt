@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.downloads
+package com.netgpu.browser.library.downloads
 
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
 
 interface DownloadController {
     fun handleOpen(item: DownloadItem, mode: BrowsingMode? = null)

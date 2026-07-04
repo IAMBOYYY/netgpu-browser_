@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share.viewholders
+package com.netgpu.browser.share.viewholders
 
 import android.view.LayoutInflater
 import io.mockk.Called
@@ -16,10 +16,10 @@ import org.junit.Assert.assertFalse
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.AccountShareListItemBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.share.ShareToAccountDevicesInteractor
-import org.mozilla.fenix.share.listadapters.SyncShareOption
+import com.netgpu.browser.databinding.AccountShareListItemBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.share.ShareToAccountDevicesInteractor
+import com.netgpu.browser.share.listadapters.SyncShareOption
 
 @RunWith(FenixRobolectricTestRunner::class)
 class AccountDeviceViewHolderTest {

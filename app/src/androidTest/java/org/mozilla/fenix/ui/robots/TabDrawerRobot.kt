@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Context
 import android.view.View
@@ -36,20 +36,20 @@ import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.anyOf
 import org.hamcrest.CoreMatchers.containsString
 import org.hamcrest.Matcher
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeShort
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.scrollToElementByText
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.clickAtLocationInView
-import org.mozilla.fenix.helpers.ext.waitNotNull
-import org.mozilla.fenix.helpers.idlingresource.BottomSheetBehaviorStateIdlingResource
-import org.mozilla.fenix.helpers.isSelected
-import org.mozilla.fenix.helpers.matchers.BottomSheetBehaviorHalfExpandedMaxRatioMatcher
-import org.mozilla.fenix.helpers.matchers.BottomSheetBehaviorStateMatcher
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeShort
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.scrollToElementByText
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.clickAtLocationInView
+import com.netgpu.browser.helpers.ext.waitNotNull
+import com.netgpu.browser.helpers.idlingresource.BottomSheetBehaviorStateIdlingResource
+import com.netgpu.browser.helpers.isSelected
+import com.netgpu.browser.helpers.matchers.BottomSheetBehaviorHalfExpandedMaxRatioMatcher
+import com.netgpu.browser.helpers.matchers.BottomSheetBehaviorStateMatcher
 
 /**
  * Implementation of Robot Pattern for the home screen menu.

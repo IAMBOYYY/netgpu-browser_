@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gradle.tasks
+package com.netgpu.browser.gradle.tasks
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.Input

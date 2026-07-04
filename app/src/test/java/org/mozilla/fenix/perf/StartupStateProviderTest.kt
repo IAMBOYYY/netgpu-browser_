@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import io.mockk.MockKAnnotations
 import io.mockk.every
@@ -12,11 +12,11 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.IntentReceiverActivity
-import org.mozilla.fenix.perf.AppStartReasonProvider.StartReason
-import org.mozilla.fenix.perf.StartupActivityLog.LogEntry
-import org.mozilla.fenix.perf.StartupStateProvider.StartupState
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.IntentReceiverActivity
+import com.netgpu.browser.perf.AppStartReasonProvider.StartReason
+import com.netgpu.browser.perf.StartupActivityLog.LogEntry
+import com.netgpu.browser.perf.StartupStateProvider.StartupState
 
 class StartupStateProviderTest {
 

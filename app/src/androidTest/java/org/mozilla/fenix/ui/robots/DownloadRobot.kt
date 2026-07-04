@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Intent
 import android.util.Log
@@ -21,16 +21,16 @@ import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
 import org.hamcrest.CoreMatchers
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.PackageName.GOOGLE_APPS_PHOTOS
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.assertExternalAppOpens
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.PackageName.GOOGLE_APPS_PHOTOS
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.assertExternalAppOpens
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 
 /**
  * Implementation of Robot Pattern for download UI handling.

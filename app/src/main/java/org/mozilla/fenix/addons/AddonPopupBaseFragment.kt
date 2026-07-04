@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.os.Bundle
 import android.view.View
@@ -20,7 +20,7 @@ import mozilla.components.concept.engine.window.WindowRequest
 import mozilla.components.feature.prompts.PromptFeature
 import mozilla.components.support.base.feature.UserInteractionHandler
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.ext.requireComponents
 
 /**
  * Provides shared functionality to our fragments for add-on settings and
@@ -34,7 +34,7 @@ abstract class AddonPopupBaseFragment : Fragment(), EngineSession.Observer, User
     private var canGoBack: Boolean = false
 
     @Suppress("DEPRECATION")
-    // https://github.com/mozilla-mobile/fenix/issues/19920
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/19920
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         session?.let {
             promptsFeature.set(

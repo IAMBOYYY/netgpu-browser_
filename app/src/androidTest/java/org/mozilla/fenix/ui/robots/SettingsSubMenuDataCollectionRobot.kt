@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -13,10 +13,10 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withParent
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import org.hamcrest.CoreMatchers.allOf
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.assertIsEnabled
-import org.mozilla.fenix.helpers.click
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.assertIsEnabled
+import com.netgpu.browser.helpers.click
 
 /**
  * Implementation of Robot Pattern for the settings Data Collection sub menu.
@@ -37,8 +37,8 @@ class SettingsSubMenuDataCollectionRobot {
         verifyDataCollectionOptions()
         verifyUsageAndTechnicalDataSwitchDefault()
         verifyMarketingDataSwitchDefault()
-        // Temporarily disabled until https://github.com/mozilla-mobile/fenix/issues/17086 and
-        // https://github.com/mozilla-mobile/fenix/issues/17143 are resolved:
+        // Temporarily disabled until https://github.com/mozilla-mobile/netgpu_browser/issues/17086 and
+        // https://github.com/mozilla-mobile/netgpu_browser/issues/17143 are resolved:
         // verifyExperimentsSwitchDefault()
     }
 
@@ -82,8 +82,8 @@ private fun assertDataCollectionOptions() {
     onView(withText(marketingDataText))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)))
 
-    // Temporarily disabled until https://github.com/mozilla-mobile/fenix/issues/17086 and
-    // https://github.com/mozilla-mobile/fenix/issues/17143 are resolved:
+    // Temporarily disabled until https://github.com/mozilla-mobile/netgpu_browser/issues/17086 and
+    // https://github.com/mozilla-mobile/netgpu_browser/issues/17143 are resolved:
     // onView(withText(R.string.preference_experiments_2)).check(matches(withEffectiveVisibility(Visibility.VISIBLE)))
     // onView(withText(R.string.preference_experiments_summary_2)).check(matches(withEffectiveVisibility(Visibility.VISIBLE)))
 }

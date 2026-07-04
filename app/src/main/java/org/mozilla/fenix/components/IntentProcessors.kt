@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 // We need to do full suppressing as we have a import, that is deprecated.
-// Follow-up https://github.com/mozilla-mobile/fenix/issues/25091
+// Follow-up https://github.com/mozilla-mobile/netgpu_browser/issues/25091
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import mozilla.components.browser.state.store.BrowserStore
@@ -21,10 +21,10 @@ import mozilla.components.feature.session.SessionUseCases
 import mozilla.components.feature.tabs.CustomTabsUseCases
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.feature.webnotifications.WebNotificationIntentProcessor
-import org.mozilla.fenix.customtabs.FennecWebAppIntentProcessor
-import org.mozilla.fenix.home.intent.FennecBookmarkShortcutsIntentProcessor
-import org.mozilla.fenix.intent.ExternalDeepLinkIntentProcessor
-import org.mozilla.fenix.perf.lazyMonitored
+import com.netgpu.browser.customtabs.FennecWebAppIntentProcessor
+import com.netgpu.browser.home.intent.FennecBookmarkShortcutsIntentProcessor
+import com.netgpu.browser.intent.ExternalDeepLinkIntentProcessor
+import com.netgpu.browser.perf.lazyMonitored
 
 /**
  * Component group for miscellaneous components.

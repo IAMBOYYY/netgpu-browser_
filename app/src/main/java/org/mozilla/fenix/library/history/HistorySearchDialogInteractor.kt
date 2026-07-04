@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags
-import org.mozilla.fenix.library.history.awesomebar.AwesomeBarInteractor
-import org.mozilla.fenix.library.history.toolbar.ToolbarInteractor
+import com.netgpu.browser.library.history.awesomebar.AwesomeBarInteractor
+import com.netgpu.browser.library.history.toolbar.ToolbarInteractor
 
 /**
  * Interactor for the history search

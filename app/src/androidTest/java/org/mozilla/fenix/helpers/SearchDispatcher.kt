@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import android.os.Handler
 import android.os.Looper
@@ -23,7 +23,7 @@ import java.io.InputStream
  * If the dispatcher is unable to read a requested asset, it will fail the test by throwing an
  * Exception on the main thread.
  *
- * @sample [org.mozilla.fenix.ui.SearchTest]
+ * @sample [com.netgpu.browser.ui.SearchTest]
  */
 class SearchDispatcher : Dispatcher() {
     private val mainThreadHandler = Handler(Looper.getMainLooper())

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.collections
+package com.netgpu.browser.home.collections
 
 import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
@@ -39,12 +39,12 @@ import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.recover.RecoverableTab
 import mozilla.components.concept.engine.Engine
 import mozilla.components.feature.tab.collections.Tab
-import org.mozilla.fenix.R.drawable
-import org.mozilla.fenix.R.string
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.list.FaviconListItem
-import org.mozilla.fenix.ext.toShortUrl
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R.drawable
+import com.netgpu.browser.R.string
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.list.FaviconListItem
+import com.netgpu.browser.ext.toShortUrl
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Rectangular shape with only right angles used to display a middle tab.
@@ -106,7 +106,7 @@ fun CollectionItem(
             modifier = clippingModifier
                 .fillMaxWidth(),
             shape = if (isLastInCollection) BOTTOM_TAB_SHAPE else MIDDLE_TAB_SHAPE,
-            backgroundColor = FirefoxTheme.colors.layer2,
+            backgroundColor = NetGpuBrowserTheme.colors.layer2,
             elevation = 5.dp,
         ) {
             FaviconListItem(
@@ -137,7 +137,7 @@ private fun DismissedTabBackground(
 ) {
     Card(
         modifier = Modifier.fillMaxSize(),
-        backgroundColor = FirefoxTheme.colors.layer3,
+        backgroundColor = NetGpuBrowserTheme.colors.layer3,
         shape = if (isLastInCollection) BOTTOM_TAB_SHAPE else MIDDLE_TAB_SHAPE,
         elevation = 0.dp,
     ) {
@@ -154,7 +154,7 @@ private fun DismissedTabBackground(
                     .alpha(
                         if (dismissDirection == StartToEnd) 1f else 0f,
                     ),
-                tint = FirefoxTheme.colors.iconWarning,
+                tint = NetGpuBrowserTheme.colors.iconWarning,
             )
 
             Icon(
@@ -166,7 +166,7 @@ private fun DismissedTabBackground(
                     .alpha(
                         if (dismissDirection == EndToStart) 1f else 0f,
                     ),
-                tint = FirefoxTheme.colors.iconWarning,
+                tint = NetGpuBrowserTheme.colors.iconWarning,
             )
         }
     }
@@ -192,7 +192,7 @@ private fun Modifier.clipTop() = this.then(
 @Composable
 @LightDarkPreview
 private fun TabInCollectionPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Column {
             Box(modifier = Modifier.height(56.dp)) {
                 DismissedTabBackground(
@@ -227,7 +227,7 @@ private fun TabInCollectionPreview() {
 
 private val tabPreview = object : Tab {
     override val id = 2L
-    override val title = "Mozilla-Firefox"
+    override val title = "Mozilla-NETGPU BROWSER"
     override val url = "https://www.mozilla.org/en-US/firefox/whats-new-in-last-version"
 
     override fun restore(

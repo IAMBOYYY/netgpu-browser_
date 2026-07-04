@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.size
@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import mozilla.components.support.images.compose.loader.Fallback
 import mozilla.components.support.images.compose.loader.ImageLoaderScope
 import mozilla.components.support.images.compose.loader.Placeholder
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Renders the app default image placeholder while the image is still getting loaded.
@@ -67,13 +67,13 @@ internal fun DefaultImagePlaceholder(
     modifier: Modifier,
     contentDescription: String? = null,
 ) {
-    Image(ColorPainter(FirefoxTheme.colors.layer2), contentDescription, modifier)
+    Image(ColorPainter(NetGpuBrowserTheme.colors.layer2), contentDescription, modifier)
 }
 
 @Composable
 @Preview
 private fun DefaultImagePlaceholderPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         DefaultImagePlaceholder(
             Modifier
                 .size(200.dp, 100.dp)

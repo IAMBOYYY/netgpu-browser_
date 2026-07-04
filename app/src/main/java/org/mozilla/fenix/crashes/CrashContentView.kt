@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.crashes
+package com.netgpu.browser.crashes
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.annotation.VisibleForTesting
 import androidx.constraintlayout.widget.ConstraintLayout
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ViewCrashReporterBinding
-import org.mozilla.fenix.ext.increaseTapArea
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ViewCrashReporterBinding
+import com.netgpu.browser.ext.increaseTapArea
 
 /**
  * View shown when a tab crashes. Intended to entirely overlay an EngineView.

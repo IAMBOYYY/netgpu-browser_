@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.perf
+package com.netgpu.browser.perf
 
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
 import mozilla.components.support.base.log.logger.Logger
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.onboarding.FenixOnboarding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding
 import android.provider.Settings as AndroidSettings
 
 /**
@@ -39,9 +39,9 @@ object Performance {
 
     /**
      * The checks for the charging state and ADB debugging are checks in case another application
-     * tries to leverage this intent to trigger a code path for Firefox that shouldn't be used unless
+     * tries to leverage this intent to trigger a code path for NETGPU BROWSER that shouldn't be used unless
      * it is for testing visual metrics. These checks aren't full proof but most of our users won't have
-     * ADB on and charging at the same time when running Firefox.
+     * ADB on and charging at the same time when running NETGPU BROWSER.
      */
     private fun isPerformanceTest(intent: Intent, context: Context): Boolean {
         if (!intent.getBooleanExtra(EXTRA_IS_PERFORMANCE_TEST, false)) {
@@ -70,7 +70,7 @@ object Performance {
      * Bypasses the onboarding screen on launch
      */
     private fun disableOnboarding(context: Context) {
-        FenixOnboarding(context).finish()
+        NetGpuBrowserOnboarding(context).finish()
     }
 
     /**

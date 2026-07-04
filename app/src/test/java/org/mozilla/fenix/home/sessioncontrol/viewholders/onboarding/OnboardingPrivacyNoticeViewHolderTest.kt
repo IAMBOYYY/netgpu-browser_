@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.sessioncontrol.viewholders.onboarding
+package com.netgpu.browser.home.sessioncontrol.viewholders.onboarding
 
 import android.view.LayoutInflater
 import androidx.appcompat.view.ContextThemeWrapper
@@ -18,12 +18,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.Onboarding
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.OnboardingPrivacyNoticeBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.home.sessioncontrol.OnboardingInteractor
+import com.netgpu.browser.GleanMetrics.Onboarding
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.OnboardingPrivacyNoticeBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.home.sessioncontrol.OnboardingInteractor
 
 @RunWith(FenixRobolectricTestRunner::class)
 class OnboardingPrivacyNoticeViewHolderTest {

@@ -2,20 +2,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.appstate
+package com.netgpu.browser.components.appstate
 
 import androidx.annotation.VisibleForTesting
 import mozilla.components.service.pocket.PocketStory.PocketRecommendedStory
 import mozilla.components.service.pocket.PocketStory.PocketSponsoredStory
 import mozilla.components.service.pocket.ext.recordNewImpression
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.ext.filterOutTab
-import org.mozilla.fenix.ext.getFilteredStories
-import org.mozilla.fenix.gleanplumb.state.MessagingReducer
-import org.mozilla.fenix.home.pocket.PocketRecommendedStoriesSelectedCategory
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTabState
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem
-import org.mozilla.fenix.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.ext.filterOutTab
+import com.netgpu.browser.ext.getFilteredStories
+import com.netgpu.browser.gleanplumb.state.MessagingReducer
+import com.netgpu.browser.home.pocket.PocketRecommendedStoriesSelectedCategory
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTabState
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem
+import com.netgpu.browser.home.recentvisits.RecentlyVisitedItem.RecentHistoryGroup
 
 /**
  * Reducer for [AppStore].

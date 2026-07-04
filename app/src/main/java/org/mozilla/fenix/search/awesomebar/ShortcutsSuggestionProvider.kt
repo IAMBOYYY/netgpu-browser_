@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search.awesomebar
+package com.netgpu.browser.search.awesomebar
 
 import android.content.Context
 import androidx.appcompat.content.res.AppCompatResources
@@ -14,7 +14,7 @@ import mozilla.components.browser.state.state.searchEngines
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.awesomebar.AwesomeBar
 import mozilla.components.support.ktx.android.content.getColorFromAttr
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 import java.util.UUID
 
 /**

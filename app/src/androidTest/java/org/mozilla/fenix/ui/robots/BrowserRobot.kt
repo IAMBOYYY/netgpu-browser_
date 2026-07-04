@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions", "TooGenericExceptionCaught")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.content.Context
 import android.content.Intent
@@ -40,23 +40,23 @@ import org.hamcrest.CoreMatchers.allOf
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.Constants.LONG_CLICK_DURATION
-import org.mozilla.fenix.helpers.Constants.RETRY_COUNT
-import org.mozilla.fenix.helpers.MatcherHelper
-import org.mozilla.fenix.helpers.MatcherHelper.assertItemWithResIdExists
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResId
-import org.mozilla.fenix.helpers.MatcherHelper.itemWithResIdAndText
-import org.mozilla.fenix.helpers.SessionLoadedIdlingResource
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTimeLong
-import org.mozilla.fenix.helpers.TestHelper.getStringResource
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.helpers.TestHelper.waitForObjects
-import org.mozilla.fenix.helpers.click
-import org.mozilla.fenix.helpers.ext.waitNotNull
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.Constants.LONG_CLICK_DURATION
+import com.netgpu.browser.helpers.Constants.RETRY_COUNT
+import com.netgpu.browser.helpers.MatcherHelper
+import com.netgpu.browser.helpers.MatcherHelper.assertItemWithResIdExists
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResId
+import com.netgpu.browser.helpers.MatcherHelper.itemWithResIdAndText
+import com.netgpu.browser.helpers.SessionLoadedIdlingResource
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTimeLong
+import com.netgpu.browser.helpers.TestHelper.getStringResource
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.helpers.TestHelper.waitForObjects
+import com.netgpu.browser.helpers.click
+import com.netgpu.browser.helpers.ext.waitNotNull
 import java.time.LocalDate
 
 class BrowserRobot {
@@ -92,7 +92,7 @@ class BrowserRobot {
     }
 
     fun verifyRateOnGooglePlayURL() {
-        verifyUrl("play.google.com/store/apps/details?id=org.mozilla.fenix")
+        verifyUrl("play.google.com/store/apps/details?id=com.netgpu.browser")
     }
 
     /* Asserts that the text within DOM element with ID="testContent" has the given text, i.e.

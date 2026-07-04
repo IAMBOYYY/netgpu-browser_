@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.content.ActivityNotFoundException
 import android.content.ClipData
@@ -33,12 +33,12 @@ import mozilla.components.feature.session.SessionUseCases
 import mozilla.components.feature.share.RecentAppsStorage
 import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.support.ktx.kotlin.isExtensionUrl
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.SyncAccount
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.nav
-import org.mozilla.fenix.share.listadapters.AppShareOption
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.SyncAccount
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.nav
+import com.netgpu.browser.share.listadapters.AppShareOption
 
 /**
  * [ShareFragment] controller.
@@ -71,7 +71,7 @@ interface ShareController {
  * @param shareSubject desired message subject used when sharing through 3rd party apps, like email clients.
  * @param shareData the list of [ShareData]s that can be shared.
  * @param sendTabUseCases instance of [SendTabUseCases] which allows sending tabs to account devices.
- * @param snackbar - instance of [FenixSnackbar] for displaying styled snackbars
+ * @param snackbar - instance of [NetGpuBrowserSnackbar] for displaying styled snackbars
  * @param navController - [NavController] used for navigation.
  * @param dismiss - callback signalling sharing can be closed.
  */
@@ -82,7 +82,7 @@ class DefaultShareController(
     private val shareData: List<ShareData>,
     private val sendTabUseCases: SendTabUseCases,
     private val saveToPdfUseCase: SessionUseCases.SaveToPdfUseCase,
-    private val snackbar: FenixSnackbar,
+    private val snackbar: NetGpuBrowserSnackbar,
     private val navController: NavController,
     private val recentAppsStorage: RecentAppsStorage,
     private val viewLifecycleScope: CoroutineScope,
@@ -129,7 +129,7 @@ class DefaultShareController(
             when (e) {
                 is SecurityException, is ActivityNotFoundException -> {
                     snackbar.setText(context.getString(R.string.share_error_snackbar))
-                    snackbar.setLength(FenixSnackbar.LENGTH_LONG)
+                    snackbar.setLength(NetGpuBrowserSnackbar.LENGTH_LONG)
                     snackbar.show()
                     ShareController.Result.SHARE_ERROR
                 }
@@ -249,11 +249,11 @@ class DefaultShareController(
 
         clipboardManager.setPrimaryClip(clipData)
         snackbar.setText(context.getString(R.string.toast_copy_link_to_clipboard))
-        snackbar.setLength(FenixSnackbar.LENGTH_SHORT)
+        snackbar.setLength(NetGpuBrowserSnackbar.LENGTH_SHORT)
         snackbar.show()
     }
 
     companion object {
-        const val ACTION_COPY_LINK_TO_CLIPBOARD = "org.mozilla.fenix.COPY_LINK_TO_CLIPBOARD"
+        const val ACTION_COPY_LINK_TO_CLIPBOARD = "com.netgpu.browser.COPY_LINK_TO_CLIPBOARD"
     }
 }

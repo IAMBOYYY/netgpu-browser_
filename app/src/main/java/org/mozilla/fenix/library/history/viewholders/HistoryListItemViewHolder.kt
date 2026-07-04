@@ -2,22 +2,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history.viewholders
+package com.netgpu.browser.library.history.viewholders
 
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.HistoryListItemBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.hideAndDisable
-import org.mozilla.fenix.ext.showAndEnable
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.HistoryFragmentState
-import org.mozilla.fenix.library.history.HistoryInteractor
-import org.mozilla.fenix.library.history.HistoryItemTimeGroup
-import org.mozilla.fenix.selection.SelectionHolder
-import org.mozilla.fenix.utils.Do
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.HistoryListItemBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.hideAndDisable
+import com.netgpu.browser.ext.showAndEnable
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.HistoryFragmentState
+import com.netgpu.browser.library.history.HistoryInteractor
+import com.netgpu.browser.library.history.HistoryItemTimeGroup
+import com.netgpu.browser.selection.SelectionHolder
+import com.netgpu.browser.utils.Do
 
 class HistoryListItemViewHolder(
     view: View,

@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.ui.robots
+package com.netgpu.browser.ui.robots
 
 import android.os.Build
 import android.widget.TextView
@@ -27,15 +27,15 @@ import mozilla.components.support.utils.ext.getPackageInfoCompat
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Assert.assertTrue
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.Constants.LISTS_MAXSWIPES
-import org.mozilla.fenix.helpers.TestAssetHelper.waitingTime
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.helpers.TestHelper.appName
-import org.mozilla.fenix.helpers.TestHelper.mDevice
-import org.mozilla.fenix.helpers.TestHelper.packageName
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.Constants.LISTS_MAXSWIPES
+import com.netgpu.browser.helpers.TestAssetHelper.waitingTime
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.helpers.TestHelper.appName
+import com.netgpu.browser.helpers.TestHelper.mDevice
+import com.netgpu.browser.helpers.TestHelper.packageName
+import com.netgpu.browser.settings.SupportUtils
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatterBuilder
@@ -48,7 +48,7 @@ import java.util.Date
  */
 class SettingsSubMenuAboutRobot {
 
-    fun verifyAboutFirefoxPreview() = assertFirefoxPreviewPage()
+    fun verifyAboutNETGPU BROWSERPreview() = assertNETGPU BROWSERPreviewPage()
 
     class Transition {
         fun goBack(interact: SettingsRobot.() -> Unit): SettingsRobot.Transition {
@@ -60,7 +60,7 @@ class SettingsSubMenuAboutRobot {
     }
 }
 
-private fun assertFirefoxPreviewPage() {
+private fun assertNETGPU BROWSERPreviewPage() {
     assertVersionNumber()
     assertProductCompany()
     assertCurrentTimestamp()
@@ -71,14 +71,14 @@ private fun navigateBackToAboutPage(itemToInteract: () -> Unit) {
     navigationToolbar {
     }.openThreeDotMenu {
     }.openSettings {
-    }.openAboutFirefoxPreview {
+    }.openAboutNETGPU BROWSERPreview {
         itemToInteract()
     }
 }
 
 private fun verifyListElements() {
     assertAboutToolbar()
-    assertWhatIsNewInFirefoxPreview()
+    assertWhatIsNewInNETGPU BROWSERPreview()
     navigateBackToAboutPage(::assertSupport)
     assertCrashes()
     navigateBackToAboutPage(::assertPrivacyNotice)
@@ -123,13 +123,13 @@ private fun assertProductCompany() {
 private fun assertCurrentTimestamp() {
     onView(withId(R.id.build_date))
         // Currently UI tests run against debug builds, which display a hard-coded string 'debug build'
-        // instead of the date. See https://github.com/mozilla-mobile/fenix/pull/10812#issuecomment-633746833
+        // instead of the date. See https://github.com/mozilla-mobile/netgpu_browser/pull/10812#issuecomment-633746833
         .check(matches(withText(containsString("debug build"))))
     // This assertion should be valid for non-debug build types.
     // .check(BuildDateAssertion.isDisplayedDateAccurate())
 }
 
-private fun assertWhatIsNewInFirefoxPreview() {
+private fun assertWhatIsNewInNETGPU BROWSERPreview() {
     aboutMenuList.scrollToEnd(LISTS_MAXSWIPES)
 
     onView(withText("What’s new in $appName"))
@@ -146,7 +146,7 @@ private fun assertSupport() {
 
     TestHelper.verifyUrl(
         "support.mozilla.org",
-        "org.mozilla.fenix.debug:id/mozac_browser_toolbar_url_view",
+        "com.netgpu.browser.debug:id/mozac_browser_toolbar_url_view",
         R.id.mozac_browser_toolbar_url_view,
     )
 }
@@ -155,7 +155,7 @@ private fun assertCrashes() {
     navigationToolbar {
     }.openThreeDotMenu {
     }.openSettings {
-    }.openAboutFirefoxPreview {}
+    }.openAboutNETGPU BROWSERPreview {}
 
     aboutMenuList.scrollToEnd(LISTS_MAXSWIPES)
 
@@ -183,7 +183,7 @@ private fun assertPrivacyNotice() {
 
     TestHelper.verifyUrl(
         "/privacy/firefox",
-        "org.mozilla.fenix.debug:id/mozac_browser_toolbar_url_view",
+        "com.netgpu.browser.debug:id/mozac_browser_toolbar_url_view",
         R.id.mozac_browser_toolbar_url_view,
     )
 }
@@ -197,7 +197,7 @@ private fun assertKnowYourRights() {
 
     TestHelper.verifyUrl(
         SupportUtils.SumoTopic.YOUR_RIGHTS.topicStr,
-        "org.mozilla.fenix.debug:id/mozac_browser_toolbar_url_view",
+        "com.netgpu.browser.debug:id/mozac_browser_toolbar_url_view",
         R.id.mozac_browser_toolbar_url_view,
     )
 }
@@ -211,7 +211,7 @@ private fun assertLicensingInformation() {
 
     TestHelper.verifyUrl(
         "about:license",
-        "org.mozilla.fenix.debug:id/mozac_browser_toolbar_url_view",
+        "com.netgpu.browser.debug:id/mozac_browser_toolbar_url_view",
         R.id.mozac_browser_toolbar_url_view,
     )
 }

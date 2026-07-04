@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.intent
+package com.netgpu.browser.home.intent
 
 import android.content.Intent
 import android.util.Log
@@ -10,8 +10,8 @@ import androidx.navigation.NavController
 import mozilla.components.lib.crash.Crash
 import mozilla.components.lib.crash.Crash.NativeCodeCrash
 import mozilla.components.lib.crash.CrashReporter
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
 
 /**
  * Process the [Intent] from [CrashReporter] through which the app is informed about

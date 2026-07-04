@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import android.content.Context
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 import java.util.Calendar
 import java.util.Date
 

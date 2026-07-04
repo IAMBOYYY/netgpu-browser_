@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.annotation.SuppressLint
 import android.app.Application
@@ -17,33 +17,33 @@ import mozilla.components.feature.addons.update.DefaultAddonUpdater
 import mozilla.components.feature.autofill.AutofillConfiguration
 import mozilla.components.lib.publicsuffixlist.PublicSuffixList
 import mozilla.components.support.base.worker.Frequency
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.autofill.AutofillConfirmActivity
-import org.mozilla.fenix.autofill.AutofillSearchActivity
-import org.mozilla.fenix.autofill.AutofillUnlockActivity
-import org.mozilla.fenix.components.appstate.AppState
-import org.mozilla.fenix.components.metrics.MetricsMiddleware
-import org.mozilla.fenix.datastore.pocketStoriesSelectedCategoriesDataStore
-import org.mozilla.fenix.ext.asRecentTabs
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.filterState
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.sort
-import org.mozilla.fenix.gleanplumb.state.MessagingMiddleware
-import org.mozilla.fenix.home.PocketUpdatesMiddleware
-import org.mozilla.fenix.home.blocklist.BlocklistHandler
-import org.mozilla.fenix.home.blocklist.BlocklistMiddleware
-import org.mozilla.fenix.perf.AppStartReasonProvider
-import org.mozilla.fenix.perf.StartupActivityLog
-import org.mozilla.fenix.perf.StartupStateProvider
-import org.mozilla.fenix.perf.StrictModeManager
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.utils.ClipboardHandler
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.wifi.WifiConnectionMonitor
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.autofill.AutofillConfirmActivity
+import com.netgpu.browser.autofill.AutofillSearchActivity
+import com.netgpu.browser.autofill.AutofillUnlockActivity
+import com.netgpu.browser.components.appstate.AppState
+import com.netgpu.browser.components.metrics.MetricsMiddleware
+import com.netgpu.browser.datastore.pocketStoriesSelectedCategoriesDataStore
+import com.netgpu.browser.ext.asRecentTabs
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.filterState
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.sort
+import com.netgpu.browser.gleanplumb.state.MessagingMiddleware
+import com.netgpu.browser.home.PocketUpdatesMiddleware
+import com.netgpu.browser.home.blocklist.BlocklistHandler
+import com.netgpu.browser.home.blocklist.BlocklistMiddleware
+import com.netgpu.browser.perf.AppStartReasonProvider
+import com.netgpu.browser.perf.StartupActivityLog
+import com.netgpu.browser.perf.StartupStateProvider
+import com.netgpu.browser.perf.StrictModeManager
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.utils.ClipboardHandler
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.wifi.WifiConnectionMonitor
 import java.util.concurrent.TimeUnit
 
 private const val AMO_COLLECTION_MAX_CACHE_AGE = 2 * 24 * 60L // Two days in minutes

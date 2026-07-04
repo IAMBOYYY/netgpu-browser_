@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -16,7 +16,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * [Text] containing a substring styled as an URL informing when this is clicked.
@@ -32,8 +32,8 @@ import org.mozilla.fenix.theme.FirefoxTheme
 @Composable
 fun ClickableSubstringLink(
     text: String,
-    textColor: Color = FirefoxTheme.colors.textPrimary,
-    linkTextColor: Color = FirefoxTheme.colors.textAccent,
+    textColor: Color = NetGpuBrowserTheme.colors.textPrimary,
+    linkTextColor: Color = NetGpuBrowserTheme.colors.textAccent,
     linkTextDecoration: TextDecoration? = null,
     clickableStartIndex: Int,
     clickableEndIndex: Int,
@@ -94,8 +94,8 @@ fun ClickableSubstringLink(
 private fun ClickableSubstringTextPreview() {
     val text = "This text contains a link"
 
-    FirefoxTheme {
-        Box(modifier = Modifier.background(color = FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(modifier = Modifier.background(color = NetGpuBrowserTheme.colors.layer1)) {
             ClickableSubstringLink(
                 text = text,
                 linkTextDecoration = TextDecoration.Underline,

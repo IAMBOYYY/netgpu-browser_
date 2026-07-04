@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import mozilla.components.browser.state.search.SearchEngine
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags
-import org.mozilla.fenix.search.awesomebar.AwesomeBarInteractor
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.search.toolbar.ToolbarInteractor
+import com.netgpu.browser.search.awesomebar.AwesomeBarInteractor
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.search.toolbar.ToolbarInteractor
 
 /**
  * Interactor for the search screen

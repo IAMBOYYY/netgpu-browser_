@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import androidx.test.espresso.IdlingResourceTimeoutException
 import androidx.test.espresso.NoMatchingViewException
@@ -12,9 +12,9 @@ import kotlinx.coroutines.runBlocking
 import org.junit.rules.TestRule
 import org.junit.runner.Description
 import org.junit.runners.model.Statement
-import org.mozilla.fenix.components.PermissionStorage
-import org.mozilla.fenix.helpers.IdlingResourceHelper.unregisterAllIdlingResources
-import org.mozilla.fenix.helpers.TestHelper.appContext
+import com.netgpu.browser.components.PermissionStorage
+import com.netgpu.browser.helpers.IdlingResourceHelper.unregisterAllIdlingResources
+import com.netgpu.browser.helpers.TestHelper.appContext
 
 /**
  *  Rule to retry flaky tests for a given number of times, catching some of the more common exceptions.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray
+package com.netgpu.browser.tabstray
 
 import androidx.appcompat.content.res.AppCompatResources
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -18,8 +18,8 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.browser.TabsTrayFabInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.browser.TabsTrayFabInteractor
 
 class FloatingActionButtonBindingTest {
 

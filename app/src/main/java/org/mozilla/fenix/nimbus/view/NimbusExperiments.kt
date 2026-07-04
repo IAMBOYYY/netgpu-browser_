@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.nimbus.view
+package com.netgpu.browser.nimbus.view
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
@@ -10,9 +10,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import org.mozilla.experiments.nimbus.AvailableExperiment
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.list.TextListItem
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.list.TextListItem
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * List of Nimbus Experiments.
@@ -52,7 +52,7 @@ private fun NimbusExperimentsPreview() {
         referenceBranch = null,
     )
 
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         NimbusExperiments(
             experiments = listOf(
                 testExperiment,

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import android.view.View
@@ -13,8 +13,8 @@ import androidx.annotation.VisibleForTesting
 import androidx.core.content.ContextCompat
 import mozilla.components.browser.menu.BrowserMenu
 import mozilla.components.browser.menu.item.BrowserMenuImageText
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
 
 /**
  * A menu item for displaying account information. The item computes the label on every bind call,

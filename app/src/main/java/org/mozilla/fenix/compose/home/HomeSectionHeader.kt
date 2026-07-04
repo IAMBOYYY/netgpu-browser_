@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose.home
+package com.netgpu.browser.compose.home
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -24,11 +24,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.inComposePreview
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.inComposePreview
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
 
 /**
  * Homepage header.
@@ -60,12 +60,12 @@ fun HomeSectionHeader(
 
         HomeSectionHeaderContent(
             headerText = headerText,
-            textColor = wallpaperAdaptedTextColor ?: FirefoxTheme.colors.textPrimary,
+            textColor = wallpaperAdaptedTextColor ?: NetGpuBrowserTheme.colors.textPrimary,
             description = description,
             showAllTextColor = if (isWallpaperDefault) {
-                FirefoxTheme.colors.textAccent
+                NetGpuBrowserTheme.colors.textAccent
             } else {
-                wallpaperAdaptedTextColor ?: FirefoxTheme.colors.textAccent
+                wallpaperAdaptedTextColor ?: NetGpuBrowserTheme.colors.textAccent
             },
             onShowAllClick = onShowAllClick,
         )
@@ -83,9 +83,9 @@ fun HomeSectionHeader(
 @Composable
 private fun HomeSectionHeaderContent(
     headerText: String,
-    textColor: Color = FirefoxTheme.colors.textPrimary,
+    textColor: Color = NetGpuBrowserTheme.colors.textPrimary,
     description: String = "",
-    showAllTextColor: Color = FirefoxTheme.colors.textAccent,
+    showAllTextColor: Color = NetGpuBrowserTheme.colors.textAccent,
     onShowAllClick: (() -> Unit)? = null,
 ) {
     Row(
@@ -100,7 +100,7 @@ private fun HomeSectionHeaderContent(
             color = textColor,
             overflow = TextOverflow.Ellipsis,
             maxLines = 2,
-            style = FirefoxTheme.typography.headline6,
+            style = NetGpuBrowserTheme.typography.headline6,
         )
 
         onShowAllClick?.let {
@@ -123,7 +123,7 @@ private fun HomeSectionHeaderContent(
 @Composable
 @Preview
 private fun HomeSectionsHeaderPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         HomeSectionHeader(
             headerText = stringResource(R.string.recently_saved_title),
             description = stringResource(R.string.recently_saved_show_all_content_description_2),

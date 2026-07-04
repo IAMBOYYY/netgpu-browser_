@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components
+package com.netgpu.browser.components
 
 import android.content.Context
 import android.os.Build
@@ -38,15 +38,15 @@ import mozilla.components.service.glean.private.NoExtras
 import mozilla.components.service.sync.autofill.AutofillCreditCardsAddressesStorage
 import mozilla.components.service.sync.logins.SyncableLoginsStorage
 import mozilla.components.support.utils.RunWhenReadyQueue
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.GleanMetrics.SyncAuth
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.perf.StrictModeManager
-import org.mozilla.fenix.perf.lazyMonitored
-import org.mozilla.fenix.sync.SyncedTabsIntegration
+import com.netgpu.browser.Config
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.GleanMetrics.SyncAuth
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.perf.StrictModeManager
+import com.netgpu.browser.perf.lazyMonitored
+import com.netgpu.browser.sync.SyncedTabsIntegration
 
 /**
  * Component group for background services. These are the components that need to be accessed from within a
@@ -87,7 +87,7 @@ class BackgroundServices(
 
         // Enable encryption for account state on supported API levels (23+).
         // Just on Nightly and local builds for now.
-        // Enabling this for all channels is tracked in https://github.com/mozilla-mobile/fenix/issues/6704
+        // Enabling this for all channels is tracked in https://github.com/mozilla-mobile/netgpu_browser/issues/6704
         secureStateAtRest = Config.channel.isNightlyOrDebug,
     )
 

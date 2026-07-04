@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.util.AttributeSet
@@ -10,8 +10,8 @@ import android.widget.CompoundButton.OnCheckedChangeListener
 import androidx.annotation.VisibleForTesting
 import androidx.appcompat.widget.AppCompatRadioButton
 import androidx.core.content.withStyledAttributes
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.settings
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.settings
 
 /**
  * [AppCompatRadioButton] backed by a boolean `SharedPreference`.

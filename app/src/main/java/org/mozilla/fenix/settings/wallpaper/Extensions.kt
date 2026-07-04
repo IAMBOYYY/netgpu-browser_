@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.wallpaper
+package com.netgpu.browser.settings.wallpaper
 
-import org.mozilla.fenix.onboarding.WallpaperOnboardingDialogFragment.Companion.CLASSIC_WALLPAPERS_COUNT
-import org.mozilla.fenix.onboarding.WallpaperOnboardingDialogFragment.Companion.SEASONAL_WALLPAPERS_COUNT
-import org.mozilla.fenix.onboarding.WallpaperOnboardingDialogFragment.Companion.THUMBNAILS_SELECTION_COUNT
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.onboarding.WallpaperOnboardingDialogFragment.Companion.CLASSIC_WALLPAPERS_COUNT
+import com.netgpu.browser.onboarding.WallpaperOnboardingDialogFragment.Companion.SEASONAL_WALLPAPERS_COUNT
+import com.netgpu.browser.onboarding.WallpaperOnboardingDialogFragment.Companion.THUMBNAILS_SELECTION_COUNT
+import com.netgpu.browser.wallpapers.Wallpaper
 
 /**
  * The extension function to group wallpapers into the appropriate collections for display.
@@ -21,7 +21,7 @@ fun List<Wallpaper>.groupByDisplayableCollection(): Map<Wallpaper.Collection, Li
         val wallpapers = it.value.filter { wallpaper ->
             wallpaper.thumbnailFileState == Wallpaper.ImageFileState.Downloaded
         }
-        if (it.key.name == Wallpaper.classicFirefoxCollectionName) {
+        if (it.key.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
             it.key to listOf(Wallpaper.Default) + wallpapers
         } else {
             it.key to wallpapers
@@ -29,10 +29,10 @@ fun List<Wallpaper>.groupByDisplayableCollection(): Map<Wallpaper.Collection, Li
     }.toMap().let { result ->
         // Ensure the default is shown in the classic firefox collection even if those wallpapers are
         // missing
-        if (result.keys.any { it.name == Wallpaper.classicFirefoxCollectionName }) {
+        if (result.keys.any { it.name == Wallpaper.classicNETGPU BROWSERCollectionName }) {
             result
         } else {
-            result.plus(Wallpaper.ClassicFirefoxCollection to listOf(Wallpaper.Default))
+            result.plus(Wallpaper.ClassicNETGPU BROWSERCollection to listOf(Wallpaper.Default))
         }
     }
 
@@ -52,7 +52,7 @@ fun List<Wallpaper>.getWallpapersForOnboarding(): List<Wallpaper> {
     for (wallpaper in this) {
         if (wallpaper == Wallpaper.Default) continue
 
-        if (wallpaper.collection.name == Wallpaper.classicFirefoxCollectionName) {
+        if (wallpaper.collection.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
             classicWallpapers.add(wallpaper)
         } else {
             seasonalWallpapers.add(wallpaper)

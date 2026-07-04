@@ -4,7 +4,7 @@
 
 @file:Suppress("DEPRECATION")
 
-package org.mozilla.fenix.glean
+package com.netgpu.browser.glean
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
@@ -32,11 +32,11 @@ import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.GleanMetrics.GleanBuildInfo
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.helpers.HomeActivityTestRule
-import org.mozilla.fenix.helpers.MockWebServerHelper
+import com.netgpu.browser.GleanMetrics.GleanBuildInfo
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.helpers.HomeActivityTestRule
+import com.netgpu.browser.helpers.MockWebServerHelper
 import java.io.BufferedReader
 import java.io.ByteArrayInputStream
 import java.util.concurrent.TimeUnit

@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import mozilla.components.feature.top.sites.TopSite
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.settings.SupportUtils
 
 /**
  * Returns the type name of the [TopSite].

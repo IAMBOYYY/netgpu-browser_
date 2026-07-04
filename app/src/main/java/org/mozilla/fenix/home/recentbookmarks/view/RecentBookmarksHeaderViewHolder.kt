@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks.view
+package com.netgpu.browser.home.recentbookmarks.view
 
 import android.view.View
 import androidx.compose.foundation.layout.Column
@@ -14,10 +14,10 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleOwner
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.home.HomeSectionHeader
-import org.mozilla.fenix.home.recentbookmarks.interactor.RecentBookmarksInteractor
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.home.HomeSectionHeader
+import com.netgpu.browser.home.recentbookmarks.interactor.RecentBookmarksInteractor
 
 /**
  * View holder for the recent bookmarks header and "Show all" button.

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
@@ -14,7 +14,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 class AccountSettingsInteractorTest {
 

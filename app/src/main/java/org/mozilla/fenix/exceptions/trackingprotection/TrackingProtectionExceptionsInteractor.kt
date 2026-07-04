@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.exceptions.trackingprotection
+package com.netgpu.browser.exceptions.trackingprotection
 
 import mozilla.components.concept.engine.content.blocking.TrackingProtectionException
 import mozilla.components.feature.session.TrackingProtectionUseCases
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.exceptions.ExceptionsInteractor
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.exceptions.ExceptionsInteractor
+import com.netgpu.browser.settings.SupportUtils
 
 interface TrackingProtectionExceptionsInteractor : ExceptionsInteractor<TrackingProtectionException> {
     /**

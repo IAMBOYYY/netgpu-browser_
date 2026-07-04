@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.helpers
+package com.netgpu.browser.helpers
 
 import io.mockk.MockKException
 import io.mockk.unmockkAll
@@ -18,8 +18,8 @@ import org.junit.runners.model.Statement
  *
  * See:
  * https://github.com/mockk/mockk/issues/598
- * https://github.com/mozilla-mobile/fenix/issues/21952
- * https://github.com/mozilla-mobile/fenix/issues/22240
+ * https://github.com/mozilla-mobile/netgpu_browser/issues/21952
+ * https://github.com/mozilla-mobile/netgpu_browser/issues/22240
  */
 class MockkRetryTestRule(val maxTries: Int = 3) : TestRule {
 

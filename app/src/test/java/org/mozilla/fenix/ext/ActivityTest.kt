@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ext
+package com.netgpu.browser.ext
 
 import android.app.Activity
 import android.view.View
@@ -11,14 +11,14 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import org.robolectric.Robolectric
 import org.robolectric.Shadows.shadowOf
 
 @RunWith(FenixRobolectricTestRunner::class)
 class ActivityTest {
 
-    // This will be addressed on https://github.com/mozilla-mobile/fenix/issues/17804
+    // This will be addressed on https://github.com/mozilla-mobile/netgpu_browser/issues/17804
     @Suppress("DEPRECATION")
     @Test
     fun testEnterImmersiveMode() {

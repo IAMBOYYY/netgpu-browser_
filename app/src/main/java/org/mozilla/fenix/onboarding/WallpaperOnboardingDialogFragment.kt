@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.onboarding
+package com.netgpu.browser.onboarding
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -21,17 +21,17 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.launch
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Wallpapers
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.FenixSnackbar
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.settings.wallpaper.getWallpapersForOnboarding
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.Wallpaper
-import org.mozilla.fenix.wallpapers.WallpaperOnboarding
+import com.netgpu.browser.GleanMetrics.Wallpapers
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.components.NetGpuBrowserSnackbar
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.settings.wallpaper.getWallpapersForOnboarding
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.Wallpaper
+import com.netgpu.browser.wallpapers.WallpaperOnboarding
 
 /**
  * Dialog displaying the wallpapers onboarding.
@@ -84,7 +84,7 @@ class WallpaperOnboardingDialogFragment : BottomSheetDialogFragment() {
         setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
 
         setContent {
-            FirefoxTheme {
+            NetGpuBrowserTheme {
                 val wallpapers = appStore.observeAsComposableState { state ->
                     state.wallpaperState.availableWallpapers.getWallpapersForOnboarding()
                 }.value ?: listOf()
@@ -131,7 +131,7 @@ class WallpaperOnboardingDialogFragment : BottomSheetDialogFragment() {
                 )
             }
             Wallpaper.ImageFileState.Error -> {
-                FenixSnackbar.make(
+                NetGpuBrowserSnackbar.make(
                     view = view,
                     isDisplayedWithBrowserToolbar = false,
                 )

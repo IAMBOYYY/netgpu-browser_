@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.toolbar
+package com.netgpu.browser.components.toolbar
 
 import android.content.Context
 import android.graphics.Color
@@ -22,15 +22,15 @@ import mozilla.components.browser.toolbar.BrowserToolbar
 import mozilla.components.browser.toolbar.behavior.BrowserToolbarBehavior
 import mozilla.components.browser.toolbar.display.DisplayToolbar
 import mozilla.components.support.ktx.util.URLStringUtils
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.interactor.BrowserToolbarInteractor
-import org.mozilla.fenix.customtabs.CustomTabToolbarIntegration
-import org.mozilla.fenix.customtabs.CustomTabToolbarMenu
-import org.mozilla.fenix.ext.bookmarkStorage
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.theme.ThemeManager
-import org.mozilla.fenix.utils.Settings
-import org.mozilla.fenix.utils.ToolbarPopupWindow
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.interactor.BrowserToolbarInteractor
+import com.netgpu.browser.customtabs.CustomTabToolbarIntegration
+import com.netgpu.browser.customtabs.CustomTabToolbarMenu
+import com.netgpu.browser.ext.bookmarkStorage
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.theme.ThemeManager
+import com.netgpu.browser.utils.Settings
+import com.netgpu.browser.utils.ToolbarPopupWindow
 import java.lang.ref.WeakReference
 import mozilla.components.browser.toolbar.behavior.ToolbarPosition as MozacToolbarPosition
 

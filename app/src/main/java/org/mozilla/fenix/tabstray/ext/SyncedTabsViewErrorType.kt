@@ -2,14 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.tabstray.ext
+package com.netgpu.browser.tabstray.ext
 
 import android.content.Context
 import androidx.navigation.NavController
 import mozilla.components.feature.syncedtabs.view.SyncedTabsView
-import org.mozilla.fenix.NavGraphDirections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.tabstray.syncedtabs.SyncedTabsListItem
+import com.netgpu.browser.NavGraphDirections
+import com.netgpu.browser.R
+import com.netgpu.browser.tabstray.syncedtabs.SyncedTabsListItem
 
 /**
  * Converts [SyncedTabsView.ErrorType] to [SyncedTabsListItem.Error] with a lambda for ONLY

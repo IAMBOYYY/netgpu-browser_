@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix
+package com.netgpu.browser
 
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
@@ -10,7 +10,7 @@ import mozilla.components.browser.state.state.SessionState
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags
 import mozilla.components.concept.engine.serviceworker.ServiceWorkerDelegate
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.ext.components
 
 /**
  * Fenix own version of the `ServiceWorkerSupportFeature` from Android-Components

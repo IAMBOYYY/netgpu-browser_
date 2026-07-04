@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.toolbar
+package com.netgpu.browser.library.bookmarks.toolbar
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -12,8 +12,8 @@ import mozilla.components.browser.toolbar.BrowserToolbar
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.support.ktx.android.content.res.resolveAttribute
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.library.bookmarks.BookmarkSearchFragmentState
+import com.netgpu.browser.R
+import com.netgpu.browser.library.bookmarks.BookmarkSearchFragmentState
 
 /**
  * Interface for the Toolbar Interactor. This interface is implemented by objects that want

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs
+package com.netgpu.browser.home.recentsyncedtabs
 
 import android.content.Context
 import kotlinx.coroutines.CoroutineScope
@@ -25,9 +25,9 @@ import mozilla.components.support.base.feature.LifecycleAwareFeature
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
 import mozilla.components.support.ktx.kotlinx.coroutines.flow.ifChanged
 import mozilla.telemetry.glean.GleanTimerId
-import org.mozilla.fenix.GleanMetrics.RecentSyncedTabs
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
+import com.netgpu.browser.GleanMetrics.RecentSyncedTabs
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
 import java.util.concurrent.TimeUnit
 
 /**
@@ -122,7 +122,7 @@ class RecentSyncedTabFeature(
             }
             .ifEmpty { return }
             // We want to get the last device used based on the most recent accessed tab,
-            // as described here: https://github.com/mozilla-mobile/fenix/issues/26398
+            // as described here: https://github.com/mozilla-mobile/netgpu_browser/issues/26398
             .sortedByDescending { deviceTab -> deviceTab.tab.lastUsed }
             .take(MAX_RECENT_SYNCED_TABS)
             .map { deviceTab ->

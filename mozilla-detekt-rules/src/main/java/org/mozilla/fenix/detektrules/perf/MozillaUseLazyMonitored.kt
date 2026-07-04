@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.detektrules.perf
+package com.netgpu.browser.detektrules.perf
 
 import androidx.annotation.VisibleForTesting
 import androidx.annotation.VisibleForTesting.Companion.PRIVATE
@@ -80,6 +80,6 @@ open class MozillaUseLazyMonitored(config: Config) : Rule(config) {
             "Push",
             "Services",
             "UseCases",
-        ).map { "app/src/main/java/org/mozilla/fenix/components/$it.kt" }
+        ).map { "app/src/main/java/org/mozilla/netgpu_browser/components/$it.kt" }
     }
 }

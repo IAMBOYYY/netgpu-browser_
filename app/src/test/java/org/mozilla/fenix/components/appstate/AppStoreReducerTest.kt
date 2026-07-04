@@ -2,17 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.components.appstate
+package com.netgpu.browser.components.appstate
 
 import io.mockk.mockk
 import mozilla.components.lib.crash.Crash.NativeCodeCrash
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.mozilla.fenix.components.appstate.AppAction.AddNonFatalCrash
-import org.mozilla.fenix.components.appstate.AppAction.RemoveAllNonFatalCrashes
-import org.mozilla.fenix.components.appstate.AppAction.RemoveNonFatalCrash
-import org.mozilla.fenix.components.appstate.AppAction.UpdateInactiveExpanded
+import com.netgpu.browser.components.appstate.AppAction.AddNonFatalCrash
+import com.netgpu.browser.components.appstate.AppAction.RemoveAllNonFatalCrashes
+import com.netgpu.browser.components.appstate.AppAction.RemoveNonFatalCrash
+import com.netgpu.browser.components.appstate.AppAction.UpdateInactiveExpanded
 
 class AppStoreReducerTest {
     @Test

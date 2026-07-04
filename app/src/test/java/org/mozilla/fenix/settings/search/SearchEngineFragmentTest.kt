@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.search
+package com.netgpu.browser.settings.search
 
 import android.content.SharedPreferences
 import androidx.preference.CheckBoxPreference
@@ -16,11 +16,11 @@ import io.mockk.verify
 import mozilla.components.support.test.robolectric.testContext
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.utils.Settings
 import org.mozilla.gecko.search.SearchWidgetProvider
 
 @RunWith(FenixRobolectricTestRunner::class)

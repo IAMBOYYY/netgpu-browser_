@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser
+package com.netgpu.browser.browser
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,11 +15,11 @@ import androidx.core.view.doOnNextLayout
 import androidx.core.view.updateLayoutParams
 import mozilla.components.browser.thumbnails.loader.ThumbnailLoader
 import mozilla.components.concept.base.images.ImageLoadRequest
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.TabPreviewBinding
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.TabPreviewBinding
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.ThemeManager
 import kotlin.math.max
 
 class TabPreview @JvmOverloads constructor(

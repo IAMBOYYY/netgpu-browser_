@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.about
+package com.netgpu.browser.settings.about
 
 import android.content.Context
 import android.view.View
@@ -21,8 +21,8 @@ import io.mockk.verify
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.R
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.R
+import com.netgpu.browser.utils.Settings
 
 class SecretDebugMenuTriggerTest {
 

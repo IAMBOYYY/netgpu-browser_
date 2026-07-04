@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks.selectfolder
+package com.netgpu.browser.library.bookmarks.selectfolder
 
 import android.view.View
 import android.view.ViewGroup
@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.concept.storage.BookmarkNode
-import org.mozilla.fenix.R
-import org.mozilla.fenix.library.LibrarySiteItemView
-import org.mozilla.fenix.library.bookmarks.BookmarkNodeWithDepth
-import org.mozilla.fenix.library.bookmarks.BookmarksSharedViewModel
-import org.mozilla.fenix.library.bookmarks.flatNodeList
-import org.mozilla.fenix.library.bookmarks.selectfolder.SelectBookmarkFolderAdapter.BookmarkFolderViewHolder
+import com.netgpu.browser.R
+import com.netgpu.browser.library.LibrarySiteItemView
+import com.netgpu.browser.library.bookmarks.BookmarkNodeWithDepth
+import com.netgpu.browser.library.bookmarks.BookmarksSharedViewModel
+import com.netgpu.browser.library.bookmarks.flatNodeList
+import com.netgpu.browser.library.bookmarks.selectfolder.SelectBookmarkFolderAdapter.BookmarkFolderViewHolder
 
 class SelectBookmarkFolderAdapter(private val sharedViewModel: BookmarksSharedViewModel) :
     ListAdapter<BookmarkNodeWithDepth, BookmarkFolderViewHolder>(DiffCallback) {

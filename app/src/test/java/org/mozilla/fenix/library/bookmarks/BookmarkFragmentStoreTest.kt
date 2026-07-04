@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.bookmarks
+package com.netgpu.browser.library.bookmarks
 
 import kotlinx.coroutines.test.runTest
 import mozilla.components.concept.storage.BookmarkNode
@@ -222,7 +222,7 @@ class BookmarkFragmentStoreTest {
         "987",
         "123",
         2u,
-        "Firefox",
+        "NETGPU BROWSER",
         "https://www.mozilla.org/en-US/firefox/",
         0,
         null,

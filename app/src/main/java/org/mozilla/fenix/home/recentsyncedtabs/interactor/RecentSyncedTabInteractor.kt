@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentsyncedtabs.interactor
+package com.netgpu.browser.home.recentsyncedtabs.interactor
 
-import org.mozilla.fenix.home.recentsyncedtabs.RecentSyncedTab
+import com.netgpu.browser.home.recentsyncedtabs.RecentSyncedTab
 
 /**
  * Interface for recent synced tab related actions in the Home screen.

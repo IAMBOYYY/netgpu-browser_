@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.browser.readermode
+package com.netgpu.browser.browser.readermode
 
 import android.view.View
 import android.widget.Button
@@ -10,7 +10,7 @@ import android.widget.RadioButton
 import androidx.appcompat.content.res.AppCompatResources
 import mozilla.components.feature.readerview.ReaderViewFeature
 import mozilla.components.support.base.feature.ViewBoundFeatureWrapper
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 /**
  * An interface that exposes the hide and show reader view functions of a ReaderViewFeature

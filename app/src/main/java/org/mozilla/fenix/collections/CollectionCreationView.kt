@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.os.Handler
 import android.os.Looper
@@ -22,10 +22,10 @@ import mozilla.components.support.ktx.android.view.hideKeyboard
 import mozilla.components.support.ktx.android.view.showKeyboard
 import mozilla.components.support.ktx.kotlin.toShortUrl
 import mozilla.telemetry.glean.private.NoExtras
-import org.mozilla.fenix.GleanMetrics.Collections
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.ComponentCollectionCreationBinding
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.GleanMetrics.Collections
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.ComponentCollectionCreationBinding
+import com.netgpu.browser.ext.components
 
 class CollectionCreationView(
     private val container: ViewGroup,

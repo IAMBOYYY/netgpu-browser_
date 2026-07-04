@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.ui
+package com.netgpu.browser.ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
@@ -12,12 +12,12 @@ import org.junit.Rule
 import org.junit.Test
 import org.mozilla.experiments.nimbus.NimbusInterface
 import org.mozilla.experiments.nimbus.internal.NimbusException
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.gleanplumb.CustomAttributeProvider
-import org.mozilla.fenix.helpers.HomeActivityIntentTestRule
-import org.mozilla.fenix.helpers.TestHelper
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.nimbus.Messaging
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.gleanplumb.CustomAttributeProvider
+import com.netgpu.browser.helpers.HomeActivityIntentTestRule
+import com.netgpu.browser.helpers.TestHelper
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.nimbus.Messaging
 
 /**
  * Test to instantiate Nimbus and automatically test all trigger expressions shipping with the app.

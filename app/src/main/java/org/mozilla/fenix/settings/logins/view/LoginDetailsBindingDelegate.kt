@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.logins.view
+package com.netgpu.browser.settings.logins.view
 
-import org.mozilla.fenix.databinding.FragmentLoginDetailBinding
-import org.mozilla.fenix.settings.logins.LoginsListState
+import com.netgpu.browser.databinding.FragmentLoginDetailBinding
+import com.netgpu.browser.settings.logins.LoginsListState
 
 /**
  * View that contains and configures the Login Details

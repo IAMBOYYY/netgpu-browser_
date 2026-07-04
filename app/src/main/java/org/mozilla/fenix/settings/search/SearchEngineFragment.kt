@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.search
+package com.netgpu.browser.settings.search
 
 import android.os.Bundle
 import androidx.core.content.edit
@@ -12,12 +12,12 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import mozilla.components.support.ktx.android.view.hideKeyboard
-import org.mozilla.fenix.R
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SharedPreferenceUpdater
-import org.mozilla.fenix.settings.requirePreference
+import com.netgpu.browser.R
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SharedPreferenceUpdater
+import com.netgpu.browser.settings.requirePreference
 import org.mozilla.gecko.search.SearchWidgetProvider
 
 class SearchEngineFragment : PreferenceFragmentCompat() {

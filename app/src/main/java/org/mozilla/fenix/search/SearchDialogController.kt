@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -18,24 +18,24 @@ import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.engine.EngineSession.LoadUrlFlags
 import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.support.ktx.kotlin.isUrl
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.GleanMetrics.Events
-import org.mozilla.fenix.GleanMetrics.SearchShortcuts
-import org.mozilla.fenix.GleanMetrics.UnifiedSearch
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.Core
-import org.mozilla.fenix.components.Core.Companion.BOOKMARKS_SEARCH_ENGINE_ID
-import org.mozilla.fenix.components.Core.Companion.HISTORY_SEARCH_ENGINE_ID
-import org.mozilla.fenix.components.Core.Companion.TABS_SEARCH_ENGINE_ID
-import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.crashes.CrashListActivity
-import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.search.toolbar.SearchSelectorInteractor
-import org.mozilla.fenix.search.toolbar.SearchSelectorMenu
-import org.mozilla.fenix.settings.SupportUtils
-import org.mozilla.fenix.utils.Settings
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.GleanMetrics.Events
+import com.netgpu.browser.GleanMetrics.SearchShortcuts
+import com.netgpu.browser.GleanMetrics.UnifiedSearch
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.components.Core
+import com.netgpu.browser.components.Core.Companion.BOOKMARKS_SEARCH_ENGINE_ID
+import com.netgpu.browser.components.Core.Companion.HISTORY_SEARCH_ENGINE_ID
+import com.netgpu.browser.components.Core.Companion.TABS_SEARCH_ENGINE_ID
+import com.netgpu.browser.components.metrics.MetricsUtils
+import com.netgpu.browser.crashes.CrashListActivity
+import com.netgpu.browser.ext.navigateSafe
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.search.toolbar.SearchSelectorInteractor
+import com.netgpu.browser.search.toolbar.SearchSelectorMenu
+import com.netgpu.browser.settings.SupportUtils
+import com.netgpu.browser.utils.Settings
 
 /**
  * An interface that handles the view manipulation of the Search, triggered by the Interactor

@@ -4,7 +4,7 @@
 
 @file:Suppress("TooManyFunctions")
 
-package org.mozilla.fenix.tabstray.inactivetabs
+package com.netgpu.browser.tabstray.inactivetabs
 
 import android.content.res.Configuration
 import androidx.compose.foundation.BorderStroke
@@ -36,13 +36,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.browser.state.state.ContentState
 import mozilla.components.browser.state.state.TabSessionState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.button.TextButton
-import org.mozilla.fenix.compose.list.ExpandableListHeader
-import org.mozilla.fenix.compose.list.FaviconListItem
-import org.mozilla.fenix.ext.toShortUrl
-import org.mozilla.fenix.tabstray.ext.toDisplayTitle
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.button.TextButton
+import com.netgpu.browser.compose.list.ExpandableListHeader
+import com.netgpu.browser.compose.list.FaviconListItem
+import com.netgpu.browser.ext.toShortUrl
+import com.netgpu.browser.tabstray.ext.toDisplayTitle
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 private val ROUNDED_CORNER_SHAPE = RoundedCornerShape(8.dp)
 
@@ -75,10 +75,10 @@ fun InactiveTabsList(
     Card(
         modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
         shape = ROUNDED_CORNER_SHAPE,
-        backgroundColor = FirefoxTheme.colors.layer2,
+        backgroundColor = NetGpuBrowserTheme.colors.layer2,
         border = BorderStroke(
             width = 1.dp,
-            color = FirefoxTheme.colors.borderPrimary,
+            color = NetGpuBrowserTheme.colors.borderPrimary,
         ),
     ) {
         Column(
@@ -135,7 +135,7 @@ private fun InactiveTabsHeader(
 ) {
     ExpandableListHeader(
         headerText = stringResource(R.string.inactive_tabs_title),
-        headerTextStyle = FirefoxTheme.typography.headline7,
+        headerTextStyle = NetGpuBrowserTheme.typography.headline7,
         expanded = expanded,
         expandActionContentDescription = stringResource(R.string.inactive_tabs_expand_content_description),
         collapseActionContentDescription = stringResource(R.string.inactive_tabs_collapse_content_description),
@@ -148,7 +148,7 @@ private fun InactiveTabsHeader(
             Icon(
                 painter = painterResource(R.drawable.ic_delete),
                 contentDescription = stringResource(R.string.inactive_tabs_delete_all),
-                tint = FirefoxTheme.colors.iconPrimary,
+                tint = NetGpuBrowserTheme.colors.iconPrimary,
             )
         }
     }
@@ -168,10 +168,10 @@ private fun InactiveTabsAutoClosePrompt(
     Card(
         modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
         shape = ROUNDED_CORNER_SHAPE,
-        backgroundColor = FirefoxTheme.colors.layer2,
+        backgroundColor = NetGpuBrowserTheme.colors.layer2,
         border = BorderStroke(
             width = 1.dp,
-            color = FirefoxTheme.colors.borderPrimary,
+            color = NetGpuBrowserTheme.colors.borderPrimary,
         ),
     ) {
         Column(
@@ -185,9 +185,9 @@ private fun InactiveTabsAutoClosePrompt(
             ) {
                 Text(
                     text = stringResource(R.string.tab_tray_inactive_auto_close_title),
-                    color = FirefoxTheme.colors.textPrimary,
+                    color = NetGpuBrowserTheme.colors.textPrimary,
                     modifier = Modifier.weight(1f),
-                    style = FirefoxTheme.typography.headline8,
+                    style = NetGpuBrowserTheme.typography.headline8,
                 )
 
                 IconButton(
@@ -198,7 +198,7 @@ private fun InactiveTabsAutoClosePrompt(
                         painter = painterResource(R.drawable.mozac_ic_close_20),
                         contentDescription =
                         stringResource(R.string.tab_tray_inactive_auto_close_button_content_description),
-                        tint = FirefoxTheme.colors.iconPrimary,
+                        tint = NetGpuBrowserTheme.colors.iconPrimary,
                     )
                 }
             }
@@ -208,7 +208,7 @@ private fun InactiveTabsAutoClosePrompt(
                     R.string.tab_tray_inactive_auto_close_body_2,
                     stringResource(R.string.app_name),
                 ),
-                color = FirefoxTheme.colors.textSecondary,
+                color = NetGpuBrowserTheme.colors.textSecondary,
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 14.sp,
             )
@@ -225,8 +225,8 @@ private fun InactiveTabsAutoClosePrompt(
 @Preview(name = "Auto close dialog dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Preview(name = "Auto close dialog light", uiMode = Configuration.UI_MODE_NIGHT_NO)
 private fun InactiveTabsAutoClosePromptPreview() {
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             InactiveTabsAutoClosePrompt(
                 onDismissClick = {},
                 onEnableAutoCloseClick = {},
@@ -242,8 +242,8 @@ private fun InactiveTabsListPreview() {
     var expanded by remember { mutableStateOf(true) }
     var showAutoClosePrompt by remember { mutableStateOf(true) }
 
-    FirefoxTheme {
-        Box(Modifier.background(FirefoxTheme.colors.layer1)) {
+    NetGpuBrowserTheme {
+        Box(Modifier.background(NetGpuBrowserTheme.colors.layer1)) {
             InactiveTabsList(
                 inactiveTabs = generateFakeInactiveTabsList(),
                 expanded = expanded,

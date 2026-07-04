@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -14,9 +14,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.databinding.ShareCloseBinding
-import org.mozilla.fenix.helpers.FenixRobolectricTestRunner
-import org.mozilla.fenix.share.listadapters.ShareTabsAdapter
+import com.netgpu.browser.databinding.ShareCloseBinding
+import com.netgpu.browser.helpers.FenixRobolectricTestRunner
+import com.netgpu.browser.share.listadapters.ShareTabsAdapter
 
 @RunWith(FenixRobolectricTestRunner::class)
 class ShareCloseViewTest {

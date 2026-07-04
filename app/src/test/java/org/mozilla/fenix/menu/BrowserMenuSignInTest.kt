@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.menu
+package com.netgpu.browser.menu
 
 import android.R
 import android.content.Context
@@ -15,9 +15,9 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.components.toolbar.BrowserMenuSignIn
-import org.mozilla.fenix.ext.components
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.components.toolbar.BrowserMenuSignIn
+import com.netgpu.browser.ext.components
 
 @RunWith(AndroidJUnit4::class)
 class BrowserMenuSignInTest {
@@ -50,7 +50,7 @@ class BrowserMenuSignInTest {
         every { components.backgroundServices.syncStore.state.account } returns null
 
         assertEquals(
-            testContext.getString(org.mozilla.fenix.R.string.sync_menu_sync_and_save_data),
+            testContext.getString(com.netgpu.browser.R.string.sync_menu_sync_and_save_data),
             BrowserMenuSignIn(R.color.black).getLabel(context),
         )
     }
@@ -61,7 +61,7 @@ class BrowserMenuSignInTest {
         every { components.backgroundServices.syncStore.state.account } returns account
 
         assertEquals(
-            testContext.getString(org.mozilla.fenix.R.string.sync_menu_sync_and_save_data),
+            testContext.getString(com.netgpu.browser.R.string.sync_menu_sync_and_save_data),
             BrowserMenuSignIn(R.color.black).getLabel(context),
         )
     }
@@ -72,7 +72,7 @@ class BrowserMenuSignInTest {
         every { components.backgroundServices.syncStore.state.account } returns null
 
         assertEquals(
-            testContext.getString(org.mozilla.fenix.R.string.browser_menu_account_settings),
+            testContext.getString(com.netgpu.browser.R.string.browser_menu_account_settings),
             BrowserMenuSignIn(R.color.black).getLabel(context),
         )
     }

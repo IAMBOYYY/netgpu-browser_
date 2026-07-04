@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.customtabs
+package com.netgpu.browser.customtabs
 
 import android.content.Context
 import android.graphics.Typeface
@@ -21,12 +21,12 @@ import mozilla.components.browser.menu.item.SimpleBrowserMenuItem
 import mozilla.components.browser.state.selector.findCustomTab
 import mozilla.components.browser.state.state.CustomTabSessionState
 import mozilla.components.browser.state.store.BrowserStore
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.toolbar.ToolbarMenu
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getStringWithArgSafe
-import org.mozilla.fenix.ext.settings
-import org.mozilla.fenix.theme.ThemeManager
+import com.netgpu.browser.R
+import com.netgpu.browser.components.toolbar.ToolbarMenu
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getStringWithArgSafe
+import com.netgpu.browser.ext.settings
+import com.netgpu.browser.theme.ThemeManager
 import java.util.Locale
 
 /**
@@ -162,7 +162,7 @@ class CustomTabToolbarMenu(
     }
 
     private val openInFenix = SimpleBrowserMenuItem(
-        label = context.getString(R.string.browser_menu_open_in_fenix, appName),
+        label = context.getString(R.string.browser_menu_open_in_netgpu_browser, appName),
         textColorResource = primaryTextColor(),
     ) {
         onItemTapped.invoke(ToolbarMenu.Item.OpenInFenix)

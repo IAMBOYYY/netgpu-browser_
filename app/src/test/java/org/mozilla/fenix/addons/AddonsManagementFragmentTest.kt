@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.addons
+package com.netgpu.browser.addons
 
 import android.content.Context
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -13,7 +13,7 @@ import io.mockk.verify
 import mozilla.components.feature.addons.Addon
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.R
+import com.netgpu.browser.R
 
 class AddonsManagementFragmentTest {
 

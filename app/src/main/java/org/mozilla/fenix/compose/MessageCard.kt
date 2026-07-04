@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.compose
+package com.netgpu.browser.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -27,10 +27,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.button.PrimaryButton
-import org.mozilla.fenix.theme.FirefoxTheme
+import com.netgpu.browser.R
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.button.PrimaryButton
+import com.netgpu.browser.theme.NetGpuBrowserTheme
 
 /**
  * Message Card.
@@ -82,7 +82,7 @@ fun MessageCard(
                         color = messageColors.titleTextColor,
                         overflow = TextOverflow.Ellipsis,
                         maxLines = 2,
-                        style = FirefoxTheme.typography.headline7,
+                        style = NetGpuBrowserTheme.typography.headline7,
                     )
 
                     MessageCardIconButton(
@@ -179,12 +179,12 @@ data class MessageCardColors(
          */
         @Composable
         fun buildMessageCardColors(
-            backgroundColor: Color = FirefoxTheme.colors.layer2,
-            titleTextColor: Color = FirefoxTheme.colors.textPrimary,
-            messageTextColor: Color = FirefoxTheme.colors.textSecondary,
-            iconColor: Color = FirefoxTheme.colors.iconPrimary,
-            buttonColor: Color = FirefoxTheme.colors.actionPrimary,
-            buttonTextColor: Color = FirefoxTheme.colors.textActionPrimary,
+            backgroundColor: Color = NetGpuBrowserTheme.colors.layer2,
+            titleTextColor: Color = NetGpuBrowserTheme.colors.textPrimary,
+            messageTextColor: Color = NetGpuBrowserTheme.colors.textSecondary,
+            iconColor: Color = NetGpuBrowserTheme.colors.iconPrimary,
+            buttonColor: Color = NetGpuBrowserTheme.colors.actionPrimary,
+            buttonTextColor: Color = NetGpuBrowserTheme.colors.textActionPrimary,
         ): MessageCardColors =
             MessageCardColors(
                 backgroundColor = backgroundColor,
@@ -200,10 +200,10 @@ data class MessageCardColors(
 @Composable
 @LightDarkPreview
 private fun MessageCardPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Box(
             Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .padding(all = 16.dp),
         ) {
             MessageCard(
@@ -219,10 +219,10 @@ private fun MessageCardPreview() {
 @Composable
 @LightDarkPreview
 private fun MessageCardWithoutTitlePreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Box(
             modifier = Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .padding(all = 16.dp),
         ) {
             MessageCard(
@@ -237,10 +237,10 @@ private fun MessageCardWithoutTitlePreview() {
 @Composable
 @LightDarkPreview
 private fun MessageCardWithButtonLabelPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         Box(
             modifier = Modifier
-                .background(FirefoxTheme.colors.layer1)
+                .background(NetGpuBrowserTheme.colors.layer1)
                 .padding(all = 16.dp),
         ) {
             MessageCard(

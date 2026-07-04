@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings
+package com.netgpu.browser.settings
 
 import android.content.Context
 import android.content.pm.PackageInfo
@@ -60,10 +60,10 @@ class SupportUtilsTest {
         val packageManager: PackageManager = mockk()
         val packageInfo = PackageInfo()
 
-        every { context.packageName } returns "org.mozilla.fenix"
+        every { context.packageName } returns "com.netgpu.browser"
         every { context.packageManager } returns packageManager
         @Suppress("DEPRECATION")
-        every { packageManager.getPackageInfo("org.mozilla.fenix", 0) } returns packageInfo
+        every { packageManager.getPackageInfo("com.netgpu.browser", 0) } returns packageInfo
         packageInfo.versionName = versionName
 
         return context

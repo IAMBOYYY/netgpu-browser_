@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.gleanplumb
+package com.netgpu.browser.gleanplumb
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -12,14 +12,14 @@ import org.mozilla.experiments.nimbus.GleanPlumbInterface
 import org.mozilla.experiments.nimbus.GleanPlumbMessageHelper
 import org.mozilla.experiments.nimbus.internal.FeatureHolder
 import org.mozilla.experiments.nimbus.internal.NimbusException
-import org.mozilla.fenix.nimbus.ControlMessageBehavior
-import org.mozilla.fenix.nimbus.MessageSurfaceId
-import org.mozilla.fenix.nimbus.Messaging
-import org.mozilla.fenix.nimbus.StyleData
+import com.netgpu.browser.nimbus.ControlMessageBehavior
+import com.netgpu.browser.nimbus.MessageSurfaceId
+import com.netgpu.browser.nimbus.Messaging
+import com.netgpu.browser.nimbus.StyleData
 
 /**
  * This ID must match the name given in the `nimbus.fml.yaml` file, which
- * itself generates the classname for [org.mozilla.fenix.nimbus.Messaging].
+ * itself generates the classname for [com.netgpu.browser.nimbus.Messaging].
  *
  * If that ever changes, it should also change here.
  *

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.pocket
+package com.netgpu.browser.home.pocket
 
 import android.view.View
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -18,14 +18,14 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import mozilla.components.lib.state.ext.observeAsComposableState
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.components
-import org.mozilla.fenix.compose.ComposeViewHolder
-import org.mozilla.fenix.compose.SelectableChipColors
-import org.mozilla.fenix.compose.annotation.LightDarkPreview
-import org.mozilla.fenix.compose.home.HomeSectionHeader
-import org.mozilla.fenix.theme.FirefoxTheme
-import org.mozilla.fenix.wallpapers.WallpaperState
+import com.netgpu.browser.R
+import com.netgpu.browser.components.components
+import com.netgpu.browser.compose.ComposeViewHolder
+import com.netgpu.browser.compose.SelectableChipColors
+import com.netgpu.browser.compose.annotation.LightDarkPreview
+import com.netgpu.browser.compose.home.HomeSectionHeader
+import com.netgpu.browser.theme.NetGpuBrowserTheme
+import com.netgpu.browser.wallpapers.WallpaperState
 
 internal const val POCKET_CATEGORIES_SELECTED_AT_A_TIME_COUNT = 8
 
@@ -66,13 +66,13 @@ class PocketCategoriesViewHolder(
             if (isSystemInDarkTheme()) {
                 selectedBackgroundColor = cardColorDark
                 unselectedBackgroundColor = cardColorLight
-                selectedTextColor = FirefoxTheme.colors.textActionPrimary
-                unselectedTextColor = FirefoxTheme.colors.textActionSecondary
+                selectedTextColor = NetGpuBrowserTheme.colors.textActionPrimary
+                unselectedTextColor = NetGpuBrowserTheme.colors.textActionSecondary
             } else {
                 selectedBackgroundColor = cardColorLight
                 unselectedBackgroundColor = cardColorDark
-                selectedTextColor = FirefoxTheme.colors.textActionSecondary
-                unselectedTextColor = FirefoxTheme.colors.textActionPrimary
+                selectedTextColor = NetGpuBrowserTheme.colors.textActionSecondary
+                unselectedTextColor = NetGpuBrowserTheme.colors.textActionPrimary
             }
         }
 
@@ -129,7 +129,7 @@ private fun PocketTopics(
 @Composable
 @LightDarkPreview
 private fun PocketCategoriesViewHolderPreview() {
-    FirefoxTheme {
+    NetGpuBrowserTheme {
         PocketTopics(
             categories = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
                 .split(" ")

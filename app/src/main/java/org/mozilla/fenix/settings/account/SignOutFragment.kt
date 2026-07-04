@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.settings.account
+package com.netgpu.browser.settings.account
 
 import android.app.Dialog
 import android.os.Bundle
@@ -17,10 +17,10 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.coroutines.launch
 import mozilla.components.service.fxa.manager.FxaAccountManager
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentSignOutBinding
-import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.ext.runIfFragmentIsAttached
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentSignOutBinding
+import com.netgpu.browser.ext.requireComponents
+import com.netgpu.browser.ext.runIfFragmentIsAttached
 
 class SignOutFragment : AppCompatDialogFragment() {
     private lateinit var accountManager: FxaAccountManager

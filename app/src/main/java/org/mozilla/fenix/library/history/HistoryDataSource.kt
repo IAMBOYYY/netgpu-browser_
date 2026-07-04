@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.history
+package com.netgpu.browser.library.history
 
 import androidx.annotation.VisibleForTesting
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import org.mozilla.fenix.components.history.HistoryDB
-import org.mozilla.fenix.components.history.PagedHistoryProvider
+import com.netgpu.browser.components.history.HistoryDB
+import com.netgpu.browser.components.history.PagedHistoryProvider
 
 /**
  * PagingSource of History items, used in History Screen. It is the data source for the

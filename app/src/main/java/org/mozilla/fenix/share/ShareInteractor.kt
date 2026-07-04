@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import mozilla.components.concept.sync.Device
-import org.mozilla.fenix.share.listadapters.AppShareOption
+import com.netgpu.browser.share.listadapters.AppShareOption
 
 /**
  * Interactor for the share screen.

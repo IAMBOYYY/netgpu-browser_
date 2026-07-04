@@ -2,18 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.share
+package com.netgpu.browser.share
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import org.mozilla.fenix.BrowserDirection
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.R
-import org.mozilla.fenix.databinding.FragmentAddNewDeviceBinding
-import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.SupportUtils
+import com.netgpu.browser.BrowserDirection
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.R
+import com.netgpu.browser.databinding.FragmentAddNewDeviceBinding
+import com.netgpu.browser.ext.showToolbar
+import com.netgpu.browser.settings.SupportUtils
 
 /**
  * Fragment to add a new device. Tabs can be shared to devices after they are added.

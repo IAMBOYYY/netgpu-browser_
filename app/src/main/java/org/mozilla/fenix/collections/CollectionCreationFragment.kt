@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.collections
+package com.netgpu.browser.collections
 
 import android.app.Dialog
 import android.os.Bundle
@@ -13,10 +13,10 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
 import mozilla.components.lib.state.ext.consumeFrom
-import org.mozilla.fenix.R
-import org.mozilla.fenix.components.StoreProvider
-import org.mozilla.fenix.databinding.FragmentCreateCollectionBinding
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.R
+import com.netgpu.browser.components.StoreProvider
+import com.netgpu.browser.databinding.FragmentCreateCollectionBinding
+import com.netgpu.browser.ext.requireComponents
 
 class CollectionCreationFragment : DialogFragment() {
     private lateinit var collectionCreationView: CollectionCreationView

@@ -2,15 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.shortcut
+package com.netgpu.browser.shortcut
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import mozilla.components.feature.intent.processing.IntentProcessor
 import mozilla.components.support.utils.SafeIntent
-import org.mozilla.fenix.HomeActivity
-import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
+import com.netgpu.browser.HomeActivity
+import com.netgpu.browser.home.intent.StartSearchIntentProcessor
 
 class NewTabShortcutIntentProcessor : IntentProcessor {
 
@@ -36,7 +36,7 @@ class NewTabShortcutIntentProcessor : IntentProcessor {
     }
 
     companion object {
-        const val ACTION_OPEN_TAB = "org.mozilla.fenix.OPEN_TAB"
-        const val ACTION_OPEN_PRIVATE_TAB = "org.mozilla.fenix.OPEN_PRIVATE_TAB"
+        const val ACTION_OPEN_TAB = "com.netgpu.browser.OPEN_TAB"
+        const val ACTION_OPEN_PRIVATE_TAB = "com.netgpu.browser.OPEN_PRIVATE_TAB"
     }
 }

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.utils
+package com.netgpu.browser.utils
 
 import android.accessibilityservice.AccessibilityServiceInfo.CAPABILITY_CAN_PERFORM_GESTURES
 import android.app.Application
@@ -29,30 +29,30 @@ import mozilla.components.support.ktx.android.content.longPreference
 import mozilla.components.support.ktx.android.content.stringPreference
 import mozilla.components.support.ktx.android.content.stringSetPreference
 import mozilla.components.support.locale.LocaleManager
-import org.mozilla.fenix.BuildConfig
-import org.mozilla.fenix.Config
-import org.mozilla.fenix.FeatureFlags
-import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
-import org.mozilla.fenix.components.metrics.MozillaProductDetector
-import org.mozilla.fenix.components.settings.counterPreference
-import org.mozilla.fenix.components.settings.featureFlagPreference
-import org.mozilla.fenix.components.settings.lazyFeatureFlagPreference
-import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.ext.components
-import org.mozilla.fenix.ext.getPreferenceKey
-import org.mozilla.fenix.nimbus.CookieBannersSection
-import org.mozilla.fenix.nimbus.FxNimbus
-import org.mozilla.fenix.nimbus.HomeScreenSection
-import org.mozilla.fenix.nimbus.Mr2022Section
-import org.mozilla.fenix.settings.PhoneFeature
-import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
-import org.mozilla.fenix.settings.logins.SavedLoginsSortingStrategyMenu
-import org.mozilla.fenix.settings.logins.SortingStrategy
-import org.mozilla.fenix.settings.registerOnSharedPreferenceChangeListener
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_BLOCK_ALL
-import org.mozilla.fenix.settings.sitepermissions.AUTOPLAY_BLOCK_AUDIBLE
-import org.mozilla.fenix.wallpapers.Wallpaper
+import com.netgpu.browser.BuildConfig
+import com.netgpu.browser.Config
+import com.netgpu.browser.FeatureFlags
+import com.netgpu.browser.R
+import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.components.metrics.MozillaProductDetector
+import com.netgpu.browser.components.settings.counterPreference
+import com.netgpu.browser.components.settings.featureFlagPreference
+import com.netgpu.browser.components.settings.lazyFeatureFlagPreference
+import com.netgpu.browser.components.toolbar.ToolbarPosition
+import com.netgpu.browser.ext.components
+import com.netgpu.browser.ext.getPreferenceKey
+import com.netgpu.browser.nimbus.CookieBannersSection
+import com.netgpu.browser.nimbus.FxNimbus
+import com.netgpu.browser.nimbus.HomeScreenSection
+import com.netgpu.browser.nimbus.Mr2022Section
+import com.netgpu.browser.settings.PhoneFeature
+import com.netgpu.browser.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
+import com.netgpu.browser.settings.logins.SavedLoginsSortingStrategyMenu
+import com.netgpu.browser.settings.logins.SortingStrategy
+import com.netgpu.browser.settings.registerOnSharedPreferenceChangeListener
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_BLOCK_ALL
+import com.netgpu.browser.settings.sitepermissions.AUTOPLAY_BLOCK_AUDIBLE
+import com.netgpu.browser.wallpapers.Wallpaper
 import java.security.InvalidParameterException
 import java.util.UUID
 
@@ -66,7 +66,7 @@ private const val AUTOPLAY_USER_SETTING = "AUTOPLAY_USER_SETTING"
 class Settings(private val appContext: Context) : PreferencesHolder {
 
     companion object {
-        const val FENIX_PREFERENCES = "fenix_preferences"
+        const val FENIX_PREFERENCES = "netgpu_browser_preferences"
 
         private const val BLOCKED_INT = 0
         private const val ASK_TO_ALLOW_INT = 1

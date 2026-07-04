@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.library.historymetadata
+package com.netgpu.browser.library.historymetadata
 
 import kotlinx.coroutines.test.runTest
 import mozilla.components.concept.storage.HistoryMetadataKey
@@ -11,10 +11,10 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.library.history.History
-import org.mozilla.fenix.library.history.HistoryItemTimeGroup
-import org.mozilla.fenix.library.history.PendingDeletionHistory
-import org.mozilla.fenix.library.history.toPendingDeletionHistory
+import com.netgpu.browser.library.history.History
+import com.netgpu.browser.library.history.HistoryItemTimeGroup
+import com.netgpu.browser.library.history.PendingDeletionHistory
+import com.netgpu.browser.library.history.toPendingDeletionHistory
 
 class HistoryMetadataGroupFragmentStoreTest {
 
@@ -32,7 +32,7 @@ class HistoryMetadataGroupFragmentStoreTest {
     )
     private val firefoxHistoryMetadataItem = History.Metadata(
         position = 1,
-        title = "Firefox",
+        title = "NETGPU BROWSER",
         url = "firefox.com",
         visitedAt = 0,
         historyTimeGroup = HistoryItemTimeGroup.timeGroupForTimestamp(0),

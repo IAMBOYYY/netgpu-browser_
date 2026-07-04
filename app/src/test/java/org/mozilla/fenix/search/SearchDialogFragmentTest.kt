@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.search
+package com.netgpu.browser.search
 
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavBackStackEntry
@@ -25,8 +25,8 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertSame
 import org.junit.Before
 import org.junit.Test
-import org.mozilla.fenix.components.Components
-import org.mozilla.fenix.ext.requireComponents
+import com.netgpu.browser.components.Components
+import com.netgpu.browser.ext.requireComponents
 
 internal class SearchDialogFragmentTest {
     private val navController: NavController = mockk()
@@ -104,7 +104,7 @@ internal class SearchDialogFragmentTest {
             }
         }
         mockkStatic(
-            "org.mozilla.fenix.ext.FragmentKt",
+            "com.netgpu.browser.ext.FragmentKt",
             "mozilla.components.browser.state.state.SearchStateKt",
         ) {
             every { any<Fragment>().requireComponents } returns components
@@ -133,7 +133,7 @@ internal class SearchDialogFragmentTest {
             }
         }
         mockkStatic(
-            "org.mozilla.fenix.ext.FragmentKt",
+            "com.netgpu.browser.ext.FragmentKt",
             "mozilla.components.browser.state.state.SearchStateKt",
         ) {
             every { any<Fragment>().requireComponents } returns components

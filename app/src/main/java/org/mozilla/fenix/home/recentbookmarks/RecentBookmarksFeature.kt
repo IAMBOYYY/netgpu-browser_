@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.fenix.home.recentbookmarks
+package com.netgpu.browser.home.recentbookmarks
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
@@ -11,9 +11,9 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import mozilla.components.concept.storage.BookmarkNode
 import mozilla.components.support.base.feature.LifecycleAwareFeature
-import org.mozilla.fenix.components.AppStore
-import org.mozilla.fenix.components.appstate.AppAction
-import org.mozilla.fenix.components.bookmarks.BookmarksUseCase
+import com.netgpu.browser.components.AppStore
+import com.netgpu.browser.components.appstate.AppAction
+import com.netgpu.browser.components.bookmarks.BookmarksUseCase
 
 /**
  * View-bound feature that retrieves a list of recently added [BookmarkNode]s and dispatches
