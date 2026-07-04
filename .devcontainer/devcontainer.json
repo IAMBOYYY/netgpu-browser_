@@ -1,0 +1,8 @@
+{
+  "name": "Fenix OpenCode Space",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "npm install -g opencode-ai@latest && echo '\n.opencode_data/' >> .gitignore && mkdir -p $(pwd)/.opencode_data && mkdir -p ~/.local/share && ln -sfn $(pwd)/.opencode_data ~/.local/share/opencode"
+}
