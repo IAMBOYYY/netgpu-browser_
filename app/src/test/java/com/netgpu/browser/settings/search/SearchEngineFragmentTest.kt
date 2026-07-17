@@ -21,7 +21,7 @@ import com.netgpu.browser.R
 import com.netgpu.browser.ext.components
 import com.netgpu.browser.helpers.FenixRobolectricTestRunner
 import com.netgpu.browser.utils.Settings
-import org.mozilla.gecko.search.SearchWidgetProvider
+import com.netgpu.gecko.search.SearchWidgetProvider
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SearchEngineFragmentTest {

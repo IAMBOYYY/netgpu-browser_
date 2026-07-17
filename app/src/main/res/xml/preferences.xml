@@ -24,11 +24,11 @@
         app:isPreferenceVisible="false"
         android:layout="@layout/preference_category_no_icon_style">
 
-        <org.mozilla.fenix.settings.account.AccountPreference
+        <com.netgpu.browser.settings.account.AccountPreference
             android:icon="@drawable/ic_account"
             android:key="@string/pref_key_account" />
 
-        <org.mozilla.fenix.settings.account.AccountAuthErrorPreference
+        <com.netgpu.browser.settings.account.AccountAuthErrorPreference
             android:icon="@drawable/ic_account_warning"
             android:key="@string/pref_key_account_auth_error" />
     </androidx.preference.PreferenceCategory>
@@ -82,7 +82,7 @@
             app:iconSpaceReserved="false"
             android:title="@string/preferences_language" />
 
-        <org.mozilla.fenix.settings.DefaultBrowserPreference
+        <com.netgpu.browser.settings.DefaultBrowserPreference
             android:key="@string/pref_key_make_default_browser"
             app:iconSpaceReserved="false"
             android:title="@string/preferences_set_as_default_browser" />

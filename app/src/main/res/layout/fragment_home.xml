@@ -145,7 +145,7 @@
                 android:focusable="false"
                 android:importantForAccessibility="no" />
 
-            <org.mozilla.fenix.search.toolbar.SearchSelector
+            <com.netgpu.browser.search.toolbar.SearchSelector
                 android:id="@+id/search_selector_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/title"
         tools:text="Firefox will clear this site’s cookies and refresh the page. Clearing all cookies may sign you out or empty shopping carts." />
 
-    <org.mozilla.fenix.trackingprotection.SwitchWithDescription
+    <com.netgpu.browser.trackingprotection.SwitchWithDescription
         android:id="@+id/cookieBannerSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

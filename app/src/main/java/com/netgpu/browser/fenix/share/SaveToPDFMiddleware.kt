@@ -16,7 +16,7 @@ import mozilla.components.lib.state.MiddlewareContext
 import mozilla.telemetry.glean.private.NoExtras
 import com.netgpu.browser.GleanMetrics.Events
 import com.netgpu.browser.R
-import org.mozilla.gecko.util.ThreadUtils
+import com.netgpu.gecko.util.ThreadUtils
 
 /**
  * [BrowserAction] middleware reacting in response to Save to PDF related [Action]s.

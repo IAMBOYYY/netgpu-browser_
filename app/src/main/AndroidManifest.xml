@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.mozilla.fenix">
+    package="com.netgpu.browser">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -38,7 +38,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
     <application
-        android:name=".FenixApplication"
+        android:name=".NetGpuBrowserApplication"
         android:allowBackup="false"
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
@@ -75,18 +75,18 @@
           Fennec declared entry for homescreen pinned shortcuts.
         -->
         <activity-alias
-            android:name="org.mozilla.gecko.BrowserApp"
+            android:name="com.netgpu.gecko.BrowserApp"
             android:targetActivity=".IntentReceiverActivity"
             android:exported="true">
         </activity-alias>
 
         <!-- Activity alias from Fennec used by PWA launchers on the home screen -->
         <activity-alias
-            android:name="org.mozilla.gecko.LauncherActivity"
+            android:name="com.netgpu.gecko.LauncherActivity"
             android:exported="true"
             android:targetActivity=".IntentReceiverActivity">
             <intent-filter>
-                <action android:name="org.mozilla.gecko.WEBAPP" />
+                <action android:name="com.netgpu.gecko.WEBAPP" />
             </intent-filter>
         </activity-alias>
 
@@ -316,7 +316,7 @@
             android:exported="false" />
 
         <receiver
-            android:name="org.mozilla.gecko.search.SearchWidgetProvider"
+            android:name="com.netgpu.gecko.search.SearchWidgetProvider"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

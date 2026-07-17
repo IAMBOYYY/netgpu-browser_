@@ -70,7 +70,7 @@ import com.netgpu.browser.helpers.ext.waitNotNull
 import com.netgpu.browser.helpers.idlingresource.NetworkConnectionIdlingResource
 import com.netgpu.browser.ui.robots.BrowserRobot
 import com.netgpu.browser.utils.IntentUtils
-import org.mozilla.gecko.util.ThreadUtils
+import com.netgpu.gecko.util.ThreadUtils
 import java.io.File
 import java.util.Locale
 import java.util.regex.Pattern
