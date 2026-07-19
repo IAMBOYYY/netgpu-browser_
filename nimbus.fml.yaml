@@ -2,7 +2,7 @@
 about:
   description: Nimbus Feature Manifest for Fenix (Firefox Android)
   kotlin:
-    package: org.mozilla.fenix
+    package: com.netgpu.browser
     class: .nimbus.FxNimbus
 channels:
   - release
