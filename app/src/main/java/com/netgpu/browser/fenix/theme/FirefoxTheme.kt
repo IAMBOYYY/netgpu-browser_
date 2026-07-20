@@ -56,7 +56,7 @@ enum class Theme {
 }
 
 /**
- * The theme for Mozilla NETGPU BROWSER for Android (Fenix).
+ * The theme for Mozilla NetGpuBrowser for Android (Fenix).
  *
  * @param theme The current [Theme] that is displayed.
  */
@@ -71,7 +71,7 @@ fun NetGpuBrowserTheme(
         Theme.Private -> privateColorPalette
     }
 
-    ProvideNETGPU BROWSERColors(colors) {
+    ProvideNetGpuBrowserColors(colors) {
         MaterialTheme(
             content = content,
         )
@@ -79,15 +79,15 @@ fun NetGpuBrowserTheme(
 }
 
 object NetGpuBrowserTheme {
-    val colors: NETGPU BROWSERColors
+    val colors: NetGpuBrowserColors
         @Composable
-        get() = localNETGPU BROWSERColors.current
+        get() = localNetGpuBrowserColors.current
 
     val typography: FenixTypography
         get() = defaultTypography
 }
 
-private val darkColorPalette = NETGPU BROWSERColors(
+private val darkColorPalette = NetGpuBrowserColors(
     layer1 = PhotonColors.DarkGrey60,
     layer2 = PhotonColors.DarkGrey30,
     layer3 = PhotonColors.DarkGrey80,
@@ -153,7 +153,7 @@ private val darkColorPalette = NETGPU BROWSERColors(
     borderWarning = PhotonColors.Red40,
 )
 
-private val lightColorPalette = NETGPU BROWSERColors(
+private val lightColorPalette = NetGpuBrowserColors(
     layer1 = PhotonColors.LightGrey10,
     layer2 = PhotonColors.White,
     layer3 = PhotonColors.LightGrey20,
@@ -226,11 +226,11 @@ private val privateColorPalette = darkColorPalette.copy(
 )
 
 /**
- * A custom Color Palette for Mozilla NETGPU BROWSER for Android (Fenix).
+ * A custom Color Palette for Mozilla NetGpuBrowser for Android (Fenix).
  */
 @Suppress("LargeClass", "LongParameterList")
 @Stable
-class NETGPU BROWSERColors(
+class NetGpuBrowserColors(
     layer1: Color,
     layer2: Color,
     layer3: Color,
@@ -543,7 +543,7 @@ class NETGPU BROWSERColors(
     var borderWarning by mutableStateOf(borderWarning)
         private set
 
-    fun update(other: NETGPU BROWSERColors) {
+    fun update(other: NetGpuBrowserColors) {
         layer1 = other.layer1
         layer2 = other.layer2
         layer3 = other.layer3
@@ -610,7 +610,7 @@ class NETGPU BROWSERColors(
     }
 
     /**
-     * Return a copy of this [NETGPU BROWSERColors] and optionally overriding any of the provided values.
+     * Return a copy of this [NetGpuBrowserColors] and optionally overriding any of the provided values.
      */
     fun copy(
         layer1: Color = this.layer1,
@@ -676,7 +676,7 @@ class NETGPU BROWSERColors(
         borderAccent: Color = this.borderAccent,
         borderDisabled: Color = this.borderDisabled,
         borderWarning: Color = this.borderWarning,
-    ): NETGPU BROWSERColors = NETGPU BROWSERColors(
+    ): NetGpuBrowserColors = NetGpuBrowserColors(
         layer1 = layer1,
         layer2 = layer2,
         layer3 = layer3,
@@ -744,8 +744,8 @@ class NETGPU BROWSERColors(
 }
 
 @Composable
-fun ProvideNETGPU BROWSERColors(
-    colors: NETGPU BROWSERColors,
+fun ProvideNetGpuBrowserColors(
+    colors: NetGpuBrowserColors,
     content: @Composable () -> Unit,
 ) {
     val colorPalette = remember {
@@ -754,9 +754,9 @@ fun ProvideNETGPU BROWSERColors(
         colors.copy()
     }
     colorPalette.update(colors)
-    CompositionLocalProvider(localNETGPU BROWSERColors provides colorPalette, content = content)
+    CompositionLocalProvider(localNetGpuBrowserColors provides colorPalette, content = content)
 }
 
-private val localNETGPU BROWSERColors = staticCompositionLocalOf<NETGPU BROWSERColors> {
-    error("No NETGPU BROWSERColors provided")
+private val localNetGpuBrowserColors = staticCompositionLocalOf<NetGpuBrowserColors> {
+    error("No NetGpuBrowserColors provided")
 }

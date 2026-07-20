@@ -106,3 +106,6 @@ test_artifacts/
 manifest.json
 
 .opencode_data/
+
+# Android SDK build tools and NDK binaries
+android-sdk/
