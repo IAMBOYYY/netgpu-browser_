@@ -2,7 +2,8 @@
   "name": "Fenix OpenCode Space",
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "postCreateCommand": "npm install -g opencode-ai@latest && echo '\n.opencode_data/' >> .gitignore && mkdir -p $(pwd)/.opencode_data && mkdir -p ~/.local/share && ln -sfn $(pwd)/.opencode_data ~/.local/share/opencode"
+  "postCreateCommand": "npm install -g opencode-ai@latest @google/gemini-cli @openai/codex @qwen-code/qwen-code@latest && curl -fsSL https://cli.kiro.dev/install | bash && curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash && echo '\n.opencode_data/' >> .gitignore && mkdir -p $(pwd)/.opencode_data && mkdir -p ~/.local/share && ln -sfn $(pwd)/.opencode_data ~/.local/share/opencode"
 }
