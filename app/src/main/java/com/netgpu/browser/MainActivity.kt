@@ -1,4 +1,4 @@
-package com.example.netgpu
+package com.netgpu.browser
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

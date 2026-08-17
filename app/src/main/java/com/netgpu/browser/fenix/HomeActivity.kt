@@ -76,6 +76,7 @@ import mozilla.telemetry.glean.private.NoExtras
 import com.netgpu.browser.GleanMetrics.Events
 import com.netgpu.browser.GleanMetrics.Metrics
 import com.netgpu.browser.GleanMetrics.StartOnHome
+import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.addons.AddonDetailsFragmentDirections
 import com.netgpu.browser.addons.AddonPermissionsDetailsFragmentDirections
 import com.netgpu.browser.browser.browsingmode.BrowsingMode
@@ -1005,8 +1006,10 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
                     true,
                     searchEngine = engine,
                 )
+                engine?.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
             } else {
                 components.useCases.searchUseCases.defaultSearch.invoke(searchTermOrURL, engine)
+                engine?.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
             }
         }
 

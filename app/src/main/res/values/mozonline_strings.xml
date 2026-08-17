@@ -4,17 +4,17 @@
     <!-- Privacy Notice title-->
     <string name="privacy_notice_title">About your rights</string>
     <!-- Privacy Notice content-->
-    <string name="privacy_notice_content">Mozilla Firefox is free and open source software, built by a community of thousands from all over the world. There are a few things you should know:
-    \n\n•Firefox is made available to you under the terms of the Mozilla Public License. This means you may use, copy and distribute Firefox to others. You are also welcome to modify the source code of Firefox as you want to meet your needs. The Mozilla Public License also gives you the right to distribute your modified versions.
-    \n•You are not granted any trademark rights or licenses to the trademarks of the Mozilla Foundation or any party, including without limitation the Firefox name or logo. Additional information on trademarks may be found here.
-    \n•Some features in Firefox, such as the Crash Reporter, give you the option to provide feedback to Mozilla. By choosing to submit feedback, you give Mozilla permission to use the feedback to improve its products, to publish the feedback on its websites, and to distribute the feedback.
-    \n•How we use your personal information and feedback submitted to Mozilla through Firefox is described in the Firefox Privacy Policy.</string>
+    <string name="privacy_notice_content">NetGPU Browser is free and open source software, built by a community of thousands from all over the world. There are a few things you should know:
+    \n\n•NetGPU Browser is made available to you under the terms of the Mozilla Public License. This means you may use, copy and distribute NetGPU Browser to others. You are also welcome to modify the source code of NetGPU Browser as you want to meet your needs. The Mozilla Public License also gives you the right to distribute your modified versions.
+    \n•You are not granted any trademark rights or licenses to the trademarks of the Mozilla Foundation or any party, including without limitation the NetGPU Browser name or logo. Additional information on trademarks may be found here.
+    \n•Some features in NetGPU Browser, such as the Crash Reporter, give you the option to provide feedback to NetGPU. By choosing to submit feedback, you give NetGPU permission to use the feedback to improve its products, to publish the feedback on its websites, and to distribute the feedback.
+    \n•How we use your personal information and feedback submitted to NetGPU through NetGPU Browser is described in the NetGPU Browser Privacy Policy.</string>
     <!-- Privacy Notice clickable-->
     <string name="privacy_notice_clickable1">Mozilla Public License</string>
     <!-- Privacy Notice clickable-->
     <string name="privacy_notice_clickable2">found here</string>
     <!-- Privacy Notice clickable-->
-    <string name="privacy_notice_clickable3">Firefox Privacy Policy</string>
+    <string name="privacy_notice_clickable3">NetGPU Browser Privacy Policy</string>
     <!-- Privacy Notice positive button-->
     <string name="privacy_notice_positive_button">Agree and Continue</string>
     <!-- Privacy Notice neutral button-->
@@ -38,7 +38,7 @@
     <!-- Instructions on how to access pairing -->
     <string name="pair_instructions_2_cn"><![CDATA[Scan the QR code shown at <b>firefox.com.cn/pair</b>]]></string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions_cn"><![CDATA[On your computer open Firefox and go to <b>https://firefox.com.cn/pair</b>]]></string>
+    <string name="sign_in_instructions_cn"><![CDATA[On your computer open NetGPU Browser and go to <b>https://netgpu-browser.com/pair</b>]]></string>
 
     <!-- Homescreen menu button -->
     <!-- Browser menu button that opens the account setting page -->

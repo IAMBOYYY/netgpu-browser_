@@ -98,6 +98,7 @@ import com.netgpu.browser.session.PerformanceActivityLifecycleCallbacks
 import com.netgpu.browser.session.VisibilityLifecycleCallback
 import com.netgpu.browser.settings.CustomizationFragment
 import com.netgpu.browser.telemetry.TelemetryLifecycleObserver
+import com.netgpu.browser.fenix.netgpu.NetGpuLifecycleObserver
 import com.netgpu.browser.utils.BrowsersCache
 import com.netgpu.browser.utils.Settings
 import com.netgpu.browser.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
@@ -258,6 +259,11 @@ open class NetGpuBrowserApplication : LocaleAwareApplication(), Provider {
         initVisualCompletenessQueueAndQueueTasks()
 
         ProcessLifecycleOwner.get().lifecycle.addObserver(TelemetryLifecycleObserver(components.core.store))
+
+        val netGpuLifecycleObserver = NetGpuLifecycleObserver(this)
+        netGpuLifecycleObserver.start()
+
+        NetGpuBridge.initialize(this, lifecycleScope)
 
         components.analytics.metricsStorage.tryRegisterAsUsageRecorder(this)
 

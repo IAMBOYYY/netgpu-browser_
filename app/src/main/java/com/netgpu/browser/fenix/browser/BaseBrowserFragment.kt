@@ -36,6 +36,7 @@ import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import mozilla.appservices.places.BookmarkRoot
@@ -107,6 +108,7 @@ import com.netgpu.browser.NavGraphDirections
 import com.netgpu.browser.OnBackLongPressedListener
 import com.netgpu.browser.R
 import com.netgpu.browser.browser.browsingmode.BrowsingMode
+import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.browser.readermode.DefaultReaderModeController
 import com.netgpu.browser.components.NetGpuBrowserSnackbar
 import com.netgpu.browser.components.FindInPageIntegration
@@ -844,6 +846,14 @@ abstract class BaseBrowserFragment :
             flow.mapNotNull { state -> state.findTabOrCustomTabOrSelectedTab(customTabSessionId) }
                 .ifChanged { tab -> tab.content.pictureInPictureEnabled }
                 .collect { tab -> pipModeChanged(tab) }
+        }
+
+        store.flowScoped(viewLifecycleOwner) { flow ->
+            flow.map { it.selectedTab?.content?.url to it.selectedTab?.content?.title }
+                .distinctUntilChanged()
+                .collect { (url, title) ->
+                    url?.let { NetGpuBridge.onUrlChanged(it, title) }
+                }
         }
 
         binding.swipeRefresh.isEnabled = shouldPullToRefreshBeEnabled(false)
