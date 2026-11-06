@@ -202,7 +202,7 @@
     <string name="browser_menu_share">Teilen</string>
     <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
-    <string name="browser_menu_open_in_fenix">In %1$s öffnen</string>
+    <string name="browser_menu_open_in_netgpu_browser">In %1$s öffnen</string>
     <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">BEREITGESTELLT VON %1$s</string>

@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.getSystemService
 import androidx.lifecycle.ProcessLifecycleOwner
+import androidx.lifecycle.lifecycleScope
 import androidx.work.Configuration.Builder
 import androidx.work.Configuration.Provider
 import kotlinx.coroutines.Deferred
@@ -261,7 +262,7 @@ open class NetGpuBrowserApplication : LocaleAwareApplication(), Provider {
 
         ProcessLifecycleOwner.get().lifecycle.addObserver(TelemetryLifecycleObserver(components.core.store))
 
-        NetGpuBridge.initialize(this, lifecycleScope)
+        NetGpuBridge.initialize(this, ProcessLifecycleOwner.get().lifecycleScope)
 
         val netGpuLifecycleObserver = NetGpuLifecycleObserver()
         netGpuLifecycleObserver.start()

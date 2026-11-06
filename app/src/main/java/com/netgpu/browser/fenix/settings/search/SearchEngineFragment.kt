@@ -18,7 +18,7 @@ import com.netgpu.browser.ext.settings
 import com.netgpu.browser.ext.showToolbar
 import com.netgpu.browser.settings.SharedPreferenceUpdater
 import com.netgpu.browser.settings.requirePreference
-import com.netgpu.gecko.search.SearchWidgetProvider
+import org.mozilla.gecko.search.SearchWidgetProvider
 
 class SearchEngineFragment : PreferenceFragmentCompat() {
 

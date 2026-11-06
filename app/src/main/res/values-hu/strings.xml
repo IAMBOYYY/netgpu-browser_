@@ -199,7 +199,7 @@
     <string name="browser_menu_share">Megosztás</string>
     <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
-    <string name="browser_menu_open_in_fenix">Megnyitás ezzel: %1$s</string>
+    <string name="browser_menu_open_in_netgpu_browser">Megnyitás ezzel: %1$s</string>
     <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s ALAPOKON</string>

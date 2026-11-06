@@ -199,7 +199,7 @@
     <string name="browser_menu_share">Համօգտագործել</string>
     <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
-    <string name="browser_menu_open_in_fenix">Բացել %1$s-ում</string>
+    <string name="browser_menu_open_in_netgpu_browser">Բացել %1$s-ում</string>
     <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
         The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s-Ի ԿՈՂՄԻՑ</string>

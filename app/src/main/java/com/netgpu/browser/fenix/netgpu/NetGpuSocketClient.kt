@@ -55,7 +55,7 @@ object NetGpuSocketClient {
 
     private fun getOrCreateBrowserId(context: Context): String {
         val prefs: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        return prefs.getString(KEY_BROWSER_ID, "").takeIf { it.isNotBlank() } ?: run {
+        return prefs.getString(KEY_BROWSER_ID, "")?.takeIf { it.isNotBlank() } ?: run {
             val newId = "browser_${UUID.randomUUID()}"
             prefs.edit().putString(KEY_BROWSER_ID, newId).apply()
             newId

@@ -23,8 +23,8 @@ import org.junit.runner.RunWith
 import com.netgpu.browser.R
 import com.netgpu.browser.ext.settings
 import com.netgpu.browser.helpers.FenixRobolectricTestRunner
-import com.netgpu.gecko.search.SearchWidgetProvider
-import com.netgpu.gecko.search.SearchWidgetProviderSize
+import org.mozilla.gecko.search.SearchWidgetProvider
+import org.mozilla.gecko.search.SearchWidgetProviderSize
 
 @RunWith(FenixRobolectricTestRunner::class)
 class SearchWidgetProviderTest {
