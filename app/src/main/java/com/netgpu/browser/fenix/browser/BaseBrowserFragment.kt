@@ -108,7 +108,6 @@ import com.netgpu.browser.NavGraphDirections
 import com.netgpu.browser.OnBackLongPressedListener
 import com.netgpu.browser.R
 import com.netgpu.browser.browser.browsingmode.BrowsingMode
-import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.browser.readermode.DefaultReaderModeController
 import com.netgpu.browser.components.NetGpuBrowserSnackbar
 import com.netgpu.browser.components.FindInPageIntegration
@@ -139,6 +138,7 @@ import com.netgpu.browser.ext.requireComponents
 import com.netgpu.browser.ext.runIfFragmentIsAttached
 import com.netgpu.browser.ext.secure
 import com.netgpu.browser.ext.settings
+import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.home.HomeScreenViewModel
 import com.netgpu.browser.home.SharedViewModel
 import com.netgpu.browser.onboarding.NetGpuBrowserOnboarding

@@ -8,9 +8,10 @@ import android.content.Context
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+
+private const val URL_CHANGE_DEBOUNCE_MS = 300L
 
 object NetGpuBridge {
 
@@ -37,12 +38,8 @@ object NetGpuBridge {
 
         urlChangeJob?.cancel()
         urlChangeJob = bridgeScope!!.launch(Dispatchers.IO) {
-            try {
-                delay(300)
-                NetGpuSocketClient.emitUrlChange(url, title)
-            } catch (e: Exception) {
-                // Ignore cancellation
-            }
+            delay(URL_CHANGE_DEBOUNCE_MS)
+            NetGpuSocketClient.emitUrlChange(url, title)
         }
     }
 }

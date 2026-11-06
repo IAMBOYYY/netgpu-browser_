@@ -2,9 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">نجی %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (نجی)</string>
 
     <!-- Home Fragment -->
@@ -53,12 +53,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">ہٹاؤ</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s موزلّا ولوں تیار تھیا ہے۔</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         %1$s نجی ٹیب نال تہاݙے ڳولݨ تے براؤزنگ دی تاریخ کوں صاف کریندے جہڑے ویلے تساں انہاں کوں بند کریندے ہو یا ایپ کوں چھوڑ ݙیندے ہو۔ ڄݙاں جو ایہ تہاکوں ویب سائٹاں یا انٹرنیٹ سروس فراہم کرݨ آلیاں کیتے گمنام کائنی بݨیندا، تساں ایندے نال جو کجھ وی آن لائن کریندے ہو، اوں کوں ایہ ڈیوائس ورتݨ آلے کہیں وی ٻئے کنوں نجی رکھݨ سوکھا بݨیندے۔</string>
     <string name="private_browsing_common_myths">
@@ -197,14 +197,14 @@
     <string name="browser_menu_save_to_collection_2">مجموعے وچ محفوظ کرو</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">شیئر</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">%1$s وچ کھولو</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s ولوں تکڑا تھیا</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">%1$s ولوں تکڑا تھیا</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">قاری نظارہ</string>
@@ -248,7 +248,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">اجازت نہ ݙیوو</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">نجی مجلساں وچ ڳولݨ تجویزاں دی اجازت ݙیووں؟</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">جہڑی شئے تساں پتہ بار وچ ٹائپ کریسو %s تہاݙے کیتے پہلوں مقرر ڳولݨ انجݨ نال شیئر کریسی۔</string>
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
     <string name="search_engine_suggestions_title">%s ڳولو</string>
@@ -289,10 +289,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">اطلاع نامے %s نال ودھیک کرݨ وچ تہاݙی مدد کریندن۔</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">آپݨے ٹیباں کوں ڈیوائساں دے درمیان ہم وقت بݨاؤ، ڈاؤن لوڈاں منیج کرو، %s دی رازداری حفاظت بارے گُر گھنو تے ٻیا ٻہوں کجھ۔</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">جاری</string>
@@ -315,7 +315,7 @@
     <string name="settings">ترتیباں</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">عمومی</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">تعارف</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">طےشدہ  ڳولݨ انجݨ</string>
@@ -323,10 +323,10 @@
     <string name="preferences_search">ڳولو</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">پتہ پٹی</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">گوگل پلے تے ریٹ</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s دے بارے</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">پہلوں مقرر براؤز تے طور تے سیٹ کرو</string>
@@ -439,7 +439,7 @@
     <string name="errorpage_httpsonly_message_summary">تاہم، ایہ وی ممکن ہے جو کوئی حملہ آور ملوث ہووے۔ جے تساں ویب سائٹ کوں جاری رکھدے ہو، تاں تہاکوں کوئی حساس معلومات درج کائنی کرݨی چاہیدی ہے۔ جے تساں جاری رکھدے ہو، تاں سائٹ کیتے HTTPS-صرف موڈ کوں عارضی طور تے  بند کر ݙتا ویسی۔</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">رسائیت</string>
-    <!-- Preference to override the Firefox Account server -->
+    <!-- Preference to override the NETGPU BROWSER Account server -->
     <string name="preferences_override_fxa_server">منپسند فائرفوکس کھاتہ سرور</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">من پسند ہم وقت سرور</string>
@@ -561,7 +561,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">ٻیا سِکھو</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">کلاسیکل %s</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">محدود ایڈیشن</string>
@@ -824,7 +824,7 @@
     <string name="studies_remove">ہٹاؤ</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">فعال</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s وقتاً فوقتاً مطالعہ انسٹال کرسڳدے تے چلا سڳدے۔</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">ٻیا سِکھو</string>
@@ -948,7 +948,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">افسوس۔ ایں ورقے کوں %1$s لوڈ کائنی کر سڳدا۔</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">موزلّا کوں کریش رپوٹ بھیڄو</string>
@@ -1216,11 +1216,11 @@
     <string name="notification_marketing_channel_name">مارکیٹنگ</string>
 
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s تکھی تے نجی ہے</string>
 
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">%1$s کوں آپݨاں پہلوں مقرر براؤز بݨاؤ</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1359,12 +1359,12 @@
     <string name="onboarding_header_2">بہترین انٹرنیٹ وچ ست بسم اللہ</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">لوکاں کیتے بݨا ہویا براؤزر، نہ کہ منافع کیتے۔</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">جتھوں تساں چھوڑیا ہائی، اُتھوں شروع کرو</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">ہموار سکرین سوئچنگ کیتے سارے ڈیوائساں تے ٹیباں تے پاس ورڈاں کوں ہم وقت کرو۔</string>
 
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">سائن ان</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">ہم وقت کرݨ چالو ہے</string>
@@ -1430,9 +1430,9 @@
     <string name="sign_in_with_camera">آپݨے کیمرے نال سائن ان تھیوو</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">ایندی بجائے ای میل ورتو</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
     <string name="sign_in_create_account_text"><![CDATA[کھاتہ کائنی؟ ڈیوائساں دے درمیان فائرفوکس ہم وقت کرݨ کیتے<u>ہک کھاتہ بݨاؤ</u>۔]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s تہاݙے کھاتے نال ہم وقت تھیوݨ رک ویسی، پر ایں ڈیوائس تے تہاݙے براؤز تھئے ڈیٹا وچوں کجھ نہ مٹیسی۔</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">کنکشن توڑو</string>
@@ -1449,7 +1449,7 @@
     <string name="preference_enhanced_tracking_protection">بہتر ٹریکنگ حفاظت</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">بغیر فالو تھئے براؤز کرو</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">آپݨاں ڈیٹا آپݨے کول رکھو۔ %s تہاکوں ٻہوں سارے ݙاڈھے عام ٹریکراں کنوں بچیندے، جہڑے  تہاݙے آن لائن کم کوں فالو کریندن۔</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">ٻیا سِکھو</string>
@@ -1594,28 +1594,28 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">تساں ایں ویب سائٹ کوں آسانی نال آپݨی ڈیوائس دی ہوم سکرین وچ شامل کر سڳدے ہو  تاں جو  فوری رسائی حاصل تھیوے تے  ایپ جیہے تجربے نال  تیزی نال براؤز کرو۔</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">لاگ ان تے پاس ورڈ</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">لاگ ان تے پاس ورڈ محفوظ کرو</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">محفوظ کرݨ کیتے پُچھو</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">کݙاہیں وی محفوظ نہ کرو</string>
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">%1$s وچ خود بخود بھرو</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">%1$s ورتݨ دے دوران ویب سائٹاں وچ ورتݨ  ناں تے پاس ورڈ بھرو تے محفوظ کرو۔</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">ٻیاں ایپاں وچ آٹوفل کرو</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">آپݨی ڈیوائس تے موجود ٻیاں ایپاں وچ ورتݨ ناں تے پاس ورڈ بھرو۔</string>
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">لاگ ان  شامل کرو</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">لاگ اناں کوں ہم وقت کرو</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">ڈیوائساں دے مابین لاگ ان ہم وقت کرو</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">محفوظ تھئے لاگ ان</string>
@@ -1937,14 +1937,14 @@
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">سوہݨا، ولدا تصدیق کرو۔</string>
 
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">سوہݨا، ٹیب ہم وقت کرݨ فعال کرو۔</string>
     <!-- Text displayed when user has no tabs that have been synced -->
     <string name="synced_tabs_no_tabs">تہاݙیاں ٻیاں ڈیوائساں تے فائرفوکس وچ کوئی ٹیب کائنی کھلے ہوئے۔</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">آپݨیاں ساریاں ڈیوائساں کنوں ٹیباں دی تندیر ݙیکھو۔</string>
 
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">ہم وقت کرݨ کیتے سائن ان تھیوو</string>
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
     <string name="synced_tabs_no_open_tabs">کوئی کھلے ٹیب  کائنی</string>
@@ -2000,7 +2000,7 @@
     <string name="inactive_tabs_auto_close_message_snackbar">آپݨے آپ  بند تھیوݨ فعال تھی ڳیا</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
     <string name="firefox_suggest_header">فائرفوکس تجویز</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->

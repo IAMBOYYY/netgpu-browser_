@@ -78,14 +78,14 @@
     <string name="browser_menu_share">Paylaş</string>
     <!-- Share menu title, displayed when a user is sharing their current site -->
     <string name="menu_share_with">Paylaş…</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">%1$s ilə aç</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s TƏRƏFİNDƏN</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">%1$s Tərəfindən</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Oxuyucu vörünüşü</string>
@@ -117,7 +117,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">İcazə vermə</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Məxfi sessiyada axtarış təkliflərinə icazə verilsin?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s ünvan sətrində yazdığınız hər şeyi əsas axtarış mühərriyiniz ilə paylaşacaq.</string>
     <!-- Search suggestion onboarding hint Learn more link text -->
     <string name="search_suggestions_onboarding_learn_more_link">Ətraflı öyrən</string>
@@ -135,7 +135,7 @@
     <string name="preferences_category_basics">Əsaslar</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Ümumi</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Haqqında</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Əsas axtarış mühərriyi</string>
@@ -143,14 +143,14 @@
     <string name="preferences_search">Axtarış</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Ünvan sətri</string>
-    <!-- Preference linking to help about Fenix -->
+    <!-- Preference linking to help about NETGPU BROWSER -->
     <string name="preferences_help">Kömək</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Google Play-də qiymətləndir</string>
-    <!-- Preference for giving feedback about Fenix -->
+    <!-- Preference for giving feedback about NETGPU BROWSER -->
     <string name="preferences_feedback">Əks-əlaqə göndər</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s Haqqında</string>
     <!-- Preference linking to the your rights SUMO page -->
     <string name="preferences_your_rights">Hüquqlarınız</string>
@@ -187,9 +187,9 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Fərdiləşdir</string>
     <!-- Preference description for banner about signing in -->
-    <string name="preferences_sign_in_description">Firefox hesabınız ilə əlfəcin, tarixçə və daha çoxunu sinxronlaşdırın</string>
+    <string name="preferences_sign_in_description">NETGPU BROWSER hesabınız ilə əlfəcin, tarixçə və daha çoxunu sinxronlaşdırın</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Firefox Hesabı</string>
+    <string name="preferences_account_default_name">NETGPU BROWSER Hesabı</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Sinxronlaşdırmaya qayıtmaq üçün təkrar qoşul</string>
     <!-- Preference for language -->
@@ -258,7 +258,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Alınan vərəqlər</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Digər Firefox cihazlarından alınan vərəqlər üçün bildirişlər.</string>
+    <string name="fxa_received_tab_channel_description">Digər NETGPU BROWSER cihazlarından alınan vərəqlər üçün bildirişlər.</string>
 
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Vərəq alındı</string>
@@ -627,11 +627,11 @@
     <string name="notification_pbm_channel_name">Məxfi səyahət sessiyası</string>
     <!-- Text shown in the notification that pops up to remind the user that a private browsing session is active. -->
     <string name="notification_pbm_delete_text_2">Məxfi vərəqləri qapat</string>
-    <!-- Notification action to open Fenix and resume the current browsing session. -->
+    <!-- Notification action to open NETGPU BROWSER and resume the current browsing session. -->
     <string name="notification_pbm_action_open">Aç</string>
-    <!-- Notification action to delete all current private browsing sessions AND switch to Fenix (bring it to the foreground) -->
+    <!-- Notification action to delete all current private browsing sessions AND switch to NETGPU BROWSER (bring it to the foreground) -->
     <string name="notification_pbm_action_delete_and_open">Sil və aç</string>
-    <!-- Name of the "Powered by Fenix" notification channel. Displayed in the "App notifications" system settings for the app -->
+    <!-- Name of the "Powered by NETGPU BROWSER" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_powered_by_channel_name">Mühərrik:</string>
 
     <!-- Text shown in snackbar when user deletes a collection -->
@@ -697,17 +697,17 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">%s üçün Xoş Gəldiniz!</string>
-    <!-- text for the Firefox Accounts section header -->
+    <!-- text for the NETGPU BROWSER Accounts section header -->
     <string name="onboarding_fxa_section_header">Artıq hesabınız var?</string>
     <!-- text for the "What's New" onboarding card header -->
     <string name="onboarding_whats_new_header1">Yenilikləri gör</string>
     <!-- text for the firefox account onboarding card header
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_firefox_account_header">%s səyyahınızdan daha çox şey əldə edin.</string>
-    <!-- text for the button to manually sign into Firefox account. The word "Firefox" should not be translated -->
-    <string name="onboarding_firefox_account_sign_in">Firefox-a daxil ol</string>
+    <!-- text for the button to manually sign into NETGPU BROWSER account. The word "NETGPU BROWSER" should not be translated -->
+    <string name="onboarding_firefox_account_sign_in">NETGPU BROWSER-a daxil ol</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync aktivdir</string>
     <!-- text for the private browsing onbording card button, that launches settings -->
@@ -850,26 +850,26 @@
     <!-- Placeholder text for the TextView in the Add to Homescreen dialog -->
     <string name="add_to_homescreen_text_placeholder">Qısayol adı</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Giriş və parollar</string>
 
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">İstifadəçi adı və parolları saxla</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Saxlamaq üçün soruş</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Heç vaxt saxlama</string>
-    <!-- Preference for autofilling saved logins in Fenix -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_autofill">Avtomatik doldurma</string>
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Hesabları sinxronlaşdır</string>
-    <!-- Syncing saved logins in Fenix is on -->
+    <!-- Syncing saved logins in NETGPU BROWSER is on -->
     <string name="preferences_passwords_sync_logins_on">Aktiv</string>
-    <!-- Syncing saved logins in Fenix is off -->
+    <!-- Syncing saved logins in NETGPU BROWSER is off -->
     <string name="preferences_passwords_sync_logins_off">Sönülü</string>
-    <!-- Syncing saved logins in Fenix needs reconnect to sync -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs reconnect to sync -->
     <string name="preferences_passwords_sync_logins_reconnect">Yenidən bağlan</string>
-    <!-- Syncing saved logins in Fenix needs login -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs login -->
     <string name="preferences_passwords_sync_logins_sign_in">Sync-ə daxil ol</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Saxlanılmış hesablar</string>
@@ -892,11 +892,11 @@
     <string name="logins_insecure_connection_warning">Bu bağlantı güvənilir deyil. Burada daxil edilən giriş məlumatları oğurlana bilər.</string>
     <!-- Learn more link that will link to a page with more information displayed when a connection is insecure and we detect the user is entering a password -->
     <string name="logins_insecure_connection_warning_learn_more">Ətraflı öyrən</string>
-    <!-- Prompt message displayed when Fenix detects a user has entered a password and user decides if Fenix should save it. The first parameter is the name of the application (For example: Fenix)  -->
+    <!-- Prompt message displayed when NETGPU BROWSER detects a user has entered a password and user decides if NETGPU BROWSER should save it. The first parameter is the name of the application (For example: NETGPU BROWSER)  -->
     <string name="logins_doorhanger_save">%s bu hesabı yadda saxlasın?</string>
-    <!-- Positive confirmation that Fenix should save the new or updated login -->
+    <!-- Positive confirmation that NETGPU BROWSER should save the new or updated login -->
     <string name="logins_doorhanger_save_confirmation">Saxla</string>
-    <!-- Negative confirmation that Fenix should not save the new or updated login -->
+    <!-- Negative confirmation that NETGPU BROWSER should not save the new or updated login -->
     <string name="logins_doorhanger_save_dont_save">Saxlama</string>
     <!-- Shown in snackbar to tell user that the password has been copied -->
     <string name="logins_password_copied">Parol mübadilə buferinə köçürüldü</string>

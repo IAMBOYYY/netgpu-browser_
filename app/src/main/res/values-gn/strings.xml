@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Ñemigua %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Ñemigua)</string>
 
     <!-- Home Fragment -->
@@ -54,12 +54,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Mboguete</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s ojapókuri Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s omopotĩ nde jeheka ha kundahára rembiasakue tendayke ñemiguápe emboty térã esẽenguévo ko tembipuru’ígui. Kóva nande kuaukáiramo jepe ñanduti rendápe térã ne ñanduti me’ẽhárape, nombohasýi eime ñemi hag̃ua opaite tapicha oipurúva ko mba’e’oka renondépe.</string>
     <string name="private_browsing_common_myths">
        Mombe’ugua’u kundahára ñemi rehegua
@@ -200,14 +200,14 @@
     <string name="browser_menu_save_to_collection_2">Eñongatu mbyatyhápe</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Moherakuã</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Embojuruja %1$s-pe</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">OHEPYME’ẼVA %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Omboguatáva %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Moñe’ẽrã rechaha</string>
@@ -252,7 +252,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Ani emoneĩ</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">¿Emoneĩ jehekarã tembiapo ñemiguápe?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s omohekuãta ehaíva guive kundaharape rendápe nde hekaha ijypykuéva ndive.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -295,7 +295,7 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">Marandu’i ne pytyvõta ejapovéta %s ndive</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">Ku’ejey</string>
@@ -319,7 +319,7 @@
     <string name="settings">Ñemboheko</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Tuichakue</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Péva rehegua</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Hekaha mongu’eha ypykuéva</string>
@@ -327,10 +327,10 @@
     <string name="preferences_search">Heka</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Kundaharape renda</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Embopapapy Google Play-pe</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s rehegua</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Emboheko kundahára ijypykuévaramo</string>
@@ -363,7 +363,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">Hendypyre</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox omboykese ijehegui kookie mba’ejerure kookie banner ndive. Ndaipóriramo emboykekuaa hag̃ua, Firefox omoneĩkuaa opaite kookie omboyke hag̃ua pe banner.</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER omboykese ijehegui kookie mba’ejerure kookie banner ndive. Ndaipóriramo emboykekuaa hag̃ua, NETGPU BROWSER omoneĩkuaa opaite kookie omboyke hag̃ua pe banner.</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">%1$s omboykese ijehegui kookie mba’ejerure kookie marandu ñemurãme.</string>
@@ -430,8 +430,8 @@
     <string name="errorpage_httpsonly_message_summary">Upéicharamo jepe, ikatu avei peteĩ mba’evaiapoha. Eime meméramo ñanduti rendápe, aníke emoinge marandu emomba’evéva. Eiméramo pype, pe HTTPS ayvu añoite omboguéta sapy’aite pe tendápe g̃uarã.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Jeikekuaaha</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Mohendahavusu Firefox Account momba’etepyre</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Mohendahavusu NETGPU BROWSER Account momba’etepyre</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Mohendahavusu Sync momba’etepyre</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
@@ -451,7 +451,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Eñepyrũ tembiapo embojuehe hag̃ua tendayke, techaukaha, ñe’ẽñemi ha hetave.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Firefox Account</string>
+    <string name="preferences_account_default_name">NETGPU BROWSER Account</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Eikejey eñepyrũjey hag̃ua ñembojuehe</string>
     <!-- Preference for language -->
@@ -549,7 +549,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">Kuaave</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">Jepokuaa %s</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">Ñemoheñói sa’íva</string>
@@ -618,7 +618,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Tendayke g̃uahẽmbyre</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Tendayke marandu’i g̃uahẽmbyre ambue Firefox mba’e’oka guive.</string>
+    <string name="fxa_received_tab_channel_description">Tendayke marandu’i g̃uahẽmbyre ambue NETGPU BROWSER mba’e’oka guive.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Tendayke g̃uahẽmbyre</string>
     <!-- %s is the device name -->
@@ -811,7 +811,7 @@
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">Myandy</string>
 
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s ikatu omohenda ha omongu’e kuaara’ã sapy’apy’a.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Kuaave</string>
@@ -939,7 +939,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Rombyasy. %1$s nomyanyhẽkuaái pe kuatiarogue.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Emomarandu Mozilla-pe jejavy rehegua</string>
@@ -1189,7 +1189,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Embojuaju ambue mba’e’oka</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Emondo hag̃ua tendayke, eñepyrũ tembiapo Firefox-pe ambue mba’e’okápe.</string>
+    <string name="sync_connect_device_dialog">Emondo hag̃ua tendayke, eñepyrũ tembiapo NETGPU BROWSER-pe ambue mba’e’okápe.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Kumbypyre</string>
     <!-- Share error message -->
@@ -1212,10 +1212,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">Jehepyme’ẽrã</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s ipya’e ha hekoñemi</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">Ejapo %1$s kundahára ypyguávarõ</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1353,11 +1353,11 @@
     <string name="onboarding_header_2">Eg̃uahẽporãite ñanduti iporãvévape</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">Kundahára heñóiva tapichápe g̃uarã, ndaha’éi virurã.</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">Eku’ejey eheja haguégui</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">Embojuehe tendayke ha ñe’ẽñemi mba’e’oka pa’ũme emoambue hag̃ua mba’erechaha oso’ỹre.</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">Eñepyrũ tembiapo</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync oñemyandýma</string>
@@ -1381,7 +1381,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">Ehechameme ne mba’ekuaarã</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox ome’ẽ ndéve pokatu emoherakuãva ñandutípe rehe ha emoherakuãva orendive avei.</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER ome’ẽ ndéve pokatu emoherakuãva ñandutípe rehe ha emoherakuãva orendive avei.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">Emoñe’ẽ ore marandu’i ñemigua</string>
 
@@ -1415,16 +1415,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Emoha’ãnga ayvu</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Ne mohendahápe, eike Firefox-pe ha eho <b>https://firefox.com/pair</b>-pe]]></string>
+    <string name="sign_in_instructions"><![CDATA[Ne mohendahápe, eike NETGPU BROWSER-pe ha eho <b>https://firefox.com/pair</b>-pe]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Ikatúma emoha’ãnga</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Eñepyrũ tembiapo ne ra’ãngamýi ndive</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Eipuru ñandutiveve</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[¿Ndererekói mba’ete? <u>Emoheñói</u> embojuehe hag̃ua Firefox mba’e’oka ndive.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[¿Ndererekói mba’ete? <u>Emoheñói</u> embojuehe hag̃ua NETGPU BROWSER mba’e’oka ndive.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s nombojuehemo’ãvéima ne mba’ete ndive, hákatu nomboguemo’ãi ne kundaha mba’ekuaarã ko mba’e’okápe.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Ñesẽte</string>
@@ -1441,7 +1441,7 @@
     <string name="preference_enhanced_tracking_protection">Tapykueho mo’ãha iporãvéva</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Eikundaha ejehapykueho’ỹre</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Emo’ã ne mba’ekuaarã. %s nemo’ãta heta tapykuehohágui ohecháva mba’etépa ejapo ñandutípe.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Kuaave</string>
@@ -1592,31 +1592,31 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Ikatu embojuaju ko ñanduti renda ne mba’e’oka mba’erechaha ñepyrũgua rehe eike hag̃ua ha eikundaha pya’eve, peteĩ tembipuru’ícharamo.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Tembiapo ñepyrũ ha ñe’ẽñemi</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Eñongatu tembiapo ñepyrũ ha ñe’ẽñemi</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Ejerure ñemoneĩ eñongatu hag̃ua</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Aníke eñongatu</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Emyenyhẽjey %1$s-pe</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">Emoĩmba ha eñongatu puruhára réra ha ñe’ẽñemi ñanduti rendápe eipuru aja %1$s.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Emyanyhẽjey ambue apps-pe</string>
 
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">Emoĩmba ha eñongatu puruhára réra ha ñe’ẽñemi ambue tembipuru’ípe ne mba’e’oka pegua.</string>
 
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">Embojuaju jeike</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Embojuehe tembiapo ñepyrũ</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Embojuehe tembiapo ñepyrũ mba’e’oka pa’ũme</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Tembiapo ñepyrũ ñongatupyre</string>
@@ -1943,14 +1943,14 @@
     <string name="synced_tabs_connect_another_device">Emoinge ambue mba’e’oka.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Ikatúpiko emoneĩjey.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Embojuruja tendayke ñembojuehe.</string>
 
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Ndererekói tendayke ijurujáva Firefox-pe ambue ne mba’e’okápe.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Ndererekói tendayke ijurujáva NETGPU BROWSER-pe ambue ne mba’e’okápe.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Ehecha tendayke rysýi ambue ne mba’e’okápe.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Eñepyrũ tembiapo embojuehe hag̃ua</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -2003,7 +2003,7 @@
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">¿Omboty ijehegui peteĩ jasy rire?</string>
 
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox ombotykuaa tendayke ehecha’ỹakuri jasy ohasaramóvape.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER ombotykuaa tendayke ehecha’ỹakuri jasy ohasaramóvape.</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">EMYANDY ÑEMBOTY IJEHEGUÍVA</string>
 
@@ -2011,8 +2011,8 @@
     <string name="inactive_tabs_auto_close_message_snackbar">Mboty jehegui jurujapyre</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Firefox Kuave’ẽmby</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">NETGPU BROWSER Kuave’ẽmby</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">Google Jehekaha</string>
@@ -2020,7 +2020,7 @@
     <string name="other_default_search_engine_suggestion_header">Eheka %s ndive</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">Emboheko ñanduti renda juajuha, ñanduti veve ha ñe’ẽmondo ijuruja hag̃ua ijehegui Firefox-pe.</string>
+    <string name="default_browser_experiment_card_text">Emboheko ñanduti renda juajuha, ñanduti veve ha ñe’ẽmondo ijuruja hag̃ua ijehegui NETGPU BROWSER-pe.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Mboguete</string>
@@ -2044,7 +2044,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">Omboguatáva %s.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Firefox reheguaite. %s</string>
+    <string name="pocket_stories_feature_caption">NETGPU BROWSER reheguaite. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">Kuaave</string>
 

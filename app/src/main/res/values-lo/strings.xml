@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">ສ່ວນຕົວ %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (ສ່ວນຕົວ)</string>
 
     <!-- Home Fragment -->
@@ -51,12 +51,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">ລຶບ</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s ແມ່ນຜະລິດຂື້ນໂດຍ Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         %1$s ຈະລຶບລ້າງປະຫວັດການຊອກຫາ ແລະການຊອກຫາຂອງທ່ານອອກຈາກແຖບສ່ວນຕົວ ເມື່ອທ່ານປິດພວກມັນ ຫຼືອອກຈາກແອັບ. ໃນຂະນະທີ່ນີ້ບໍ່ໄດ້ເຮັດໃຫ້ທ່ານບໍ່ເປີດເຜີຍຊື່ກັບເວັບໄຊທ໌ ຫຼືຜູ້ໃຫ້ບໍລິການອິນເຕີເນັດຂອງທ່ານ, ມັນເຮັດໃຫ້ມັນງ່າຍຂຶ້ນທີ່ຈະຮັກສາສິ່ງທີ່ທ່ານເຮັດອອນໄລນ໌ເປັນສ່ວນຕົວຈາກຜູ້ອື່ນທີ່ໃຊ້ອຸປະກອນນີ້.</string>
     <string name="private_browsing_common_myths">ຄວາມເຂົ້າໃຈຜິດທີ່ມັກພົບຕະລອດກ່ຽວກັບການທ່ອງເວັບແບບສ່ວນຕົວ</string>
@@ -194,14 +194,14 @@
     <string name="browser_menu_save_to_collection_2">ບັນທຶກໄປໄວ້ບ່ອນເກັບສະສົມ</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">ແບ່ງປັນ</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">ເປີດໃນ %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">ຂັບເຄື່ອນໂດຍ %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">ຂັບເຄື່ອນໂດຍ %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">ມຸມມອງຂອງຜູ້ອ່ານ</string>
@@ -247,7 +247,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">ບໍ່ອະນຸຍາດ</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">ອະນຸຍາດໃຫ້ມີຄຳແນະນຳການຄົ້ນຫາໃນແຊັສຊັນສ່ວນໂຕຫລືບໍ່?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s ຈະແຊລທຸກຢ່າງທີ່ທ່ານພິມໃນແທັບທີ່ຢູ່ກັບເຄືອງມືການຄົ້ນຫາພື້ນຖານຂອງທ່ານ.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -291,10 +291,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">ການແຈ້ງເຕືອນຊ່ວຍໃຫ້ທ່ານເຮັດໄດ້ຫຼາຍຂຶ້ນກັບ %s</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">ຊິ້ງແຖບຂອງທ່ານລະຫວ່າງອຸປະກອນ, ຈັດການການດາວໂຫຼດ, ຮັບຄໍາແນະນໍາກ່ຽວກັບການໃຊ້ປະໂຫຍດສູງສຸດຈາກການປົກປ້ອງຄວາມເປັນສ່ວນຕົວຂອງ %s ແລະອື່ນໆອີກ.</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">ສືບຕໍ່</string>
@@ -317,7 +317,7 @@
     <string name="settings">ການຕັ້ງຄ່າ</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">ທົ່ວໄປ</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">ກ່ຽວກັບ</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">ເຄື່ອງມືການຄົ້ນຫາພື້ນຖານ</string>
@@ -325,10 +325,10 @@
     <string name="preferences_search">ຄົ້ນຫາ</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">ແຖບທີ່ຢູ່</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">ໃຫ້ຄະແນນໃນ Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">ກ່ຽວກັບ %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">ຕັ້ງໃຫ້ເປັນບຣາວເຊີພື້ນຖານ</string>
@@ -360,7 +360,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">ເປີດ</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox ພະຍາຍາມປະຕິເສດການຮ້ອງຂໍຄຸກກີໃນປ້າຍໂຄສະນາຄຸກກີອັດຕະໂນມັດ. ຖ້າທາງເລືອກການປະຕິເສດບໍ່ສາມາດໃຊ້ໄດ້, Firefox ອາດຈະຍອມຮັບ cookies ທັງຫມົດເພື່ອປິດປ້າຍໂຄສະນາ.</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER ພະຍາຍາມປະຕິເສດການຮ້ອງຂໍຄຸກກີໃນປ້າຍໂຄສະນາຄຸກກີອັດຕະໂນມັດ. ຖ້າທາງເລືອກການປະຕິເສດບໍ່ສາມາດໃຊ້ໄດ້, NETGPU BROWSER ອາດຈະຍອມຮັບ cookies ທັງຫມົດເພື່ອປິດປ້າຍໂຄສະນາ.</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">%1$s ພະຍາຍາມປະຕິເສດການຮ້ອງຂໍຄຸກກີໂດຍອັດຕະໂນມັດໃນປ້າຍໂຄສະນາຄຸກກີ.</string>
@@ -438,12 +438,12 @@
     <string name="errorpage_httpsonly_message_summary">ຢ່າງໃດກໍ່ຕາມ, ມັນກໍ່ເປັນໄປໄດ້ວ່າຜູ້ໂຈມຕີມີສ່ວນຮ່ວມ. ຖ້າທ່ານສືບຕໍ່ໄປຫາເວັບໄຊທ໌, ທ່ານບໍ່ຄວນໃສ່ຂໍ້ມູນລະອຽດອ່ອນໃດໆ. ຖ້າທ່ານສືບຕໍ່, ໂໝດ HTTPS-Only ຈະຖືກປິດໄວ້ຊົ່ວຄາວສໍາລັບເວັບໄຊທ໌.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">ສິ່ງອຳນວຍຄວາມສະດວກ</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">ດັດແກ້ບັນຊີເຊີເວີ Firefox</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">ດັດແກ້ບັນຊີເຊີເວີ NETGPU BROWSER</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">ກຳຫນົດເຊີເວີ Sync</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">ບັນຊີ/Sync ຂອງ Firefox ໄດ້ຮັບການດັດແກ້ແລ້ວ. ອອກຈາກແອັບພລິເຄຊັນເພື່ອນຳໃຊ້ການດັດແກ້…</string>
+    <string name="toast_override_fxa_sync_server_done">ບັນຊີ/Sync ຂອງ NETGPU BROWSER ໄດ້ຮັບການດັດແກ້ແລ້ວ. ອອກຈາກແອັບພລິເຄຊັນເພື່ອນຳໃຊ້ການດັດແກ້…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">ບັນຊີ</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -459,7 +459,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Sync ແທັບ, ບຸກມາກ, ລະຫັດຜ່ານ ແລະ ອື່ນໆຂອງທ່ານ.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">ບັນຊີ Firefox</string>
+    <string name="preferences_account_default_name">ບັນຊີ NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">ເຊື່ອມຕໍຄືນເພື່ອເລີ່ມ sync ຄືນໃຫມ່</string>
     <!-- Preference for language -->
@@ -560,7 +560,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">ຮຽນຮູ້ເພີ່ມເຕີມ</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">ຄລາດສິກ %s</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">ມີ​ຈໍາ​ນວນ​ຈໍາ​ກັດ</string>
@@ -628,7 +628,7 @@
     <string name="fxa_received_tab_channel_name">ແຖບທີ່ໄດ້ຮັບ</string>
 
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">ການແຈ້ງເຕືອນສຳລັບແທັບທີ່ໄດ້ຮັບຈາກ Firefox ໃນເຄື່ອງອື່ນ.</string>
+    <string name="fxa_received_tab_channel_description">ການແຈ້ງເຕືອນສຳລັບແທັບທີ່ໄດ້ຮັບຈາກ NETGPU BROWSER ໃນເຄື່ອງອື່ນ.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">ແທັບທີ່ໄດ້ຮັບ</string>
     <!-- %s is the device name -->
@@ -820,7 +820,7 @@
     <string name="studies_remove">ລຶບ</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">​ເປີດໃຊ້ງານ</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s ອາດຈະຕິດຕັ້ງ ແລະດໍາເນີນການສຶກສາເປັນບາງໂອກາດ.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">ຮຽນຮູ້ເພີ່ມເຕີມ</string>
@@ -945,7 +945,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">ຂໍ​ອະໄພ. %1$s ບໍ່ສາມາດໂຫລດໜ້າເວັບນັ້ນໄດ້.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">ສົ່ງລາຍງານການຂັດຂ້ອງໄປຫາ Mozilla</string>
@@ -1194,7 +1194,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">ເຊື່ອມຕໍ່ກັບອຸປະກອນອື່ນ</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">ລົງຊື່ເຂົ້າໃຊ້ Firefox ຢ່າງນ້ອຍໃນ 1 ເຄື່ອງເພື່ອສົ່ງແທັບ</string>
+    <string name="sync_connect_device_dialog">ລົງຊື່ເຂົ້າໃຊ້ NETGPU BROWSER ຢ່າງນ້ອຍໃນ 1 ເຄື່ອງເພື່ອສົ່ງແທັບ</string>
 
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">ເຂົ້າໃຈແລ້ວ!</string>
@@ -1217,10 +1217,10 @@
     <string name="notification_marketing_channel_name">ການຕະຫຼາດ</string>
 
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s ແມ່ນໄວ ແລະ ເປັນສ່ວນໂຕ</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">ກຳນົດ %1$s ເປັນບຣາວເຊີຫລັກຂອງທ່ານ</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1359,11 +1359,11 @@
     <string name="onboarding_header_2">ຍິນດີຕ້ອນຮັບສູ່ອິນເຕີເນັດທີ່ດີກວ່າ</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">ອິນເຕີເນັດສຳລັບທຸກຄົນ, ບໍ່ແມ່ນເພືອຫວັງຜົນກຳໄລ</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">ຮັບເອົາຈາກບ່ອນທີ່ທ່ານໄດ້ປະເອົາໄວ້.</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">ຊິ້ງແຖບ ແລະລະຫັດຜ່ານໃນທົ່ວອຸປະກອນສຳລັບການສະຫຼັບໜ້າຈໍແບບບໍ່ມີຮອຍຕໍ່.</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">ເຂົ້າສູ່ລະບົບ</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync ເປີດຢູ່</string>
@@ -1389,7 +1389,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">ທ່ານຄວບຄຸມຂໍ້ມູນຂອງທ່ານ</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox ໃຫ້ທ່ານຄວບຄຸມສິ່ງທີ່ທ່ານແບ່ງປັນອອນໄລນ໌ ແລະສິ່ງທີ່ທ່ານແບ່ງປັນກັບພວກເຮົາ.</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER ໃຫ້ທ່ານຄວບຄຸມສິ່ງທີ່ທ່ານແບ່ງປັນອອນໄລນ໌ ແລະສິ່ງທີ່ທ່ານແບ່ງປັນກັບພວກເຮົາ.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">ອ່ານນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງພວກເຮົາ</string>
 
@@ -1424,7 +1424,7 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">ສະແກນລະຫັດ</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[ໃນຄອມພິວເຕີຂອງທ່ານເປີດ Firefox ແລະ ເຂົ້າໄປທີ່ <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[ໃນຄອມພິວເຕີຂອງທ່ານເປີດ NETGPU BROWSER ແລະ ເຂົ້າໄປທີ່ <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">ກຽມພ້ອມທີ່ຈະສະແກນ</string>
     <!-- Text shown for settings option for sign with pairing -->
@@ -1432,9 +1432,9 @@
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">ໃຊ້ອີເມວແທນ</string>
 
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[ບໍ່ມີບັນຊີ? <u>ສ້າງອັນໜຶ່ງ</u> ເພື່ອຊິງຄ໌ Firefox ລະຫວ່າງອຸປະກອນ.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[ບໍ່ມີບັນຊີ? <u>ສ້າງອັນໜຶ່ງ</u> ເພື່ອຊິງຄ໌ NETGPU BROWSER ລະຫວ່າງອຸປະກອນ.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s ຈະຢຸດການ Sync ກັບບັນຊີຂອງທ່ານ ແຕວ່າຈະບໍ່ລຶບຂໍ້ມູນປະຫວັດການຄົ້ນຫາຂອງທ່ານໃນອຸປະກອນນີ້.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">ຕັດການເຊື່ອມຕໍ່</string>
@@ -1450,7 +1450,7 @@
     <string name="preference_enhanced_tracking_protection">ເພີ່ມການປ້ອງກັນການຕິດຕາມ</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">ທ່ອງເວັບໂດຍບໍ່ມີການຕິດຕາມ</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">ຮັກສາຂໍ້ມູນຂອງທ່ານໃຫ້ກັບຕົວທ່ານເອງ. %s ປົກປ້ອງທ່ານຈາກຫຼາຍຕົວຕິດຕາມທົ່ວໄປທີ່ສຸດທີ່ຕິດຕາມສິ່ງທີ່ທ່ານເຮັດອອນໄລນ໌.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">ຮຽນຮູ້ເພີ່ມເຕີມ</string>
@@ -1604,29 +1604,29 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">ທ່ານສາມາດເພີ່ມເວັບໄຊທ໌ນີ້ໃສ່ໜ້າຈໍຫຼັກຂອງອຸປະກອນທ່ານໄດ້ຢ່າງງ່າຍດາຍເພື່ອໃຫ້ເຂົ້າເຖິງທັນທີ ແລະທ່ອງເວັບໄວຂຶ້ນດ້ວຍປະສົບການທີ່ຄ້າຍຄືກັບແອັບ.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">ລັອກອິນ ແລະ ລະຫັດຜ່ານ</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">ບັນທຶກການລັອກອິນ ແລະ ລະຫັດຜ່ານ</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">ຖາມເພື່ອບັນທຶກ</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">ບໍ່ຕ້ອງບັນທຶກ</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">ຕື່ມຂໍ້ມູນອັດຕະໂນມັດໃນ %1$s</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">ຕື່ມຂໍ້ມູນໃສ່ ແລະບັນທຶກຊື່ຜູ້ໃຊ້ ແລະລະຫັດຜ່ານຢູ່ໃນເວັບໄຊທ໌ໃນຂະນະທີ່ໃຊ້ %1$s.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">ຕື່ມຂໍ້ມູນອັດຕະໂນມັດໃນແອັບຯອື່ນ</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">ຕື່ມຂໍ້ມູນຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານໃນແອັບຯອື່ນໃນອຸປະກອນຂອງທ່ານ.</string>
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">ເພີ່ມການເຂົ້າສູ່ລະບົບ</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Sync ລັອກອິນ</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Sync ລັອກອິນລະຫວ່າງອຸປະກອນຕ່າງໆ</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">ບັກທຶກການລັອກອິນໄວ້</string>
@@ -1950,13 +1950,13 @@
     <string name="synced_tabs_connect_another_device">ເຊື່ອມຕໍ່ອຸປະກອນອື່ນ.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">ກະລຸນາຮັບຮອງຄວາມຖືກຕ້ອງອີກຄັ້ງຫນຶ່ງ.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">ກະລຸນາເປີດນຳໃຊ້ການ sync ແທັບ</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">ທ່ານບໍ່ໄດ້ເປີດຈັກແທັບຢູ່ Firefox ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">ທ່ານບໍ່ໄດ້ເປີດຈັກແທັບຢູ່ NETGPU BROWSER ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">ເບິງລາຍຊື່ແທັບຈາກອຸປະກອນອື່ນໆຂອງທ່ານ</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">ເຂົ້າສູ່ລະບົບເພື່ອ Sync</string>
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
     <string name="synced_tabs_no_open_tabs">ບໍ່ມີແທັບທີ່ເປີດຢູ່</string>
@@ -2006,7 +2006,7 @@
     <!-- The header text of the auto-close message when the user is asked if they want to turn on the auto-closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">ປິດອັດຕະໂນມັດຫຼັງຈາກຫນຶ່ງເດືອນບໍ?</string>
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox ສາມາດປິດແຖບທີ່ທ່ານບໍ່ໄດ້ເບິ່ງໃນເດືອນທີ່ຜ່ານມາ.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER ສາມາດປິດແຖບທີ່ທ່ານບໍ່ໄດ້ເບິ່ງໃນເດືອນທີ່ຜ່ານມາ.</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ເປີດປິດອັດຕະໂນມັດ</string>
 
@@ -2014,8 +2014,8 @@
     <string name="inactive_tabs_auto_close_message_snackbar">ປິດອັດຕະໂນມັດເປີດ</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Firefox ແນະນໍາ</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">NETGPU BROWSER ແນະນໍາ</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">ຄົ້ນ​ຫາ Google </string>
@@ -2023,7 +2023,7 @@
     <string name="other_default_search_engine_suggestion_header">%s ຄົ້ນຫາ</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">ຕັ້ງລິ້ງຈາກເວັບໄຊທ໌, ອີເມວ ແລະຂໍ້ຄວາມໃຫ້ເປີດໂດຍອັດຕະໂນມັດໃນ Firefox.</string>
+    <string name="default_browser_experiment_card_text">ຕັ້ງລິ້ງຈາກເວັບໄຊທ໌, ອີເມວ ແລະຂໍ້ຄວາມໃຫ້ເປີດໂດຍອັດຕະໂນມັດໃນ NETGPU BROWSER.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">ລົບ</string>
@@ -2047,7 +2047,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">ຂັບເຄື່ອນໂດຍ %s.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">ສ່ວນຫນຶ່ງຂອງຄອບຄົວ Firefox. %s</string>
+    <string name="pocket_stories_feature_caption">ສ່ວນຫນຶ່ງຂອງຄອບຄົວ NETGPU BROWSER. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">ຮຽນຮູ້ເພີ່ມເຕີມ</string>
     <!-- Text indicating that the Pocket story that also displays this text is a sponsored story by other 3rd party entity. -->

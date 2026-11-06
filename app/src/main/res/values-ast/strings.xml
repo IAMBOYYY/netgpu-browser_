@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s en privao</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (en privao)</string>
 
     <!-- Home Fragment -->
@@ -49,12 +49,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Quitar</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s ta producíu por Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s llimpia los historiales del mou de restolar en privao cuando coles de l\'aplicación o zarres toles llingüetes privaes. Magar qu\'esto nun t\'anonimiza n\'internet, fai que la to actividá en llinia seya fácil d\'anubrir a otros usuarios qu\'usen el preséu.</string>
     <string name="private_browsing_common_myths">Mitos comunes tocante al restolar en privao</string>
 
@@ -137,14 +137,14 @@
     <string name="browser_menu_save_to_collection_2">Guardar nuna coleición</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Compartir</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Abrir en: %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">COLA POTENCIA DE: %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Cola potencia de: %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Vista de llector</string>
@@ -191,7 +191,7 @@
 
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">¿Quies permitir les suxerencies de busca nes sesiones privaes?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s va compartir tolo que teclexes na barra de direiciones col motor de busca predetermináu.</string>
 
     <!-- Home onboarding -->
@@ -218,7 +218,7 @@
     <string name="settings">Axustes</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Xeneral</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Tocante a</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Motor de busca predetermináu</string>
@@ -226,10 +226,10 @@
     <string name="preferences_search">Busca</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Barra de direiciones</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Valorar en Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Tocante a %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Predeterminar el restolador</string>
@@ -265,12 +265,12 @@
     <string name="errorpage_httpsonly_message_title">Ye mui probable que\'l sitiu web nun seya compatible col protocolu HTTPS.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Accesibilidá</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Sirvidor personalizáu de Cuentes de Firefox</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Sirvidor personalizáu de Cuentes de NETGPU BROWSER</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Sirvidor personalizáu de sincronización</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Modificóse\'l sirvidor de cuentes/sincronización de Firefox. Colando de l\'aplicación p\'aplicar los cambeos…</string>
+    <string name="toast_override_fxa_sync_server_done">Modificóse\'l sirvidor de cuentes/sincronización de NETGPU BROWSER. Colando de l\'aplicación p\'aplicar los cambeos…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Cuenta</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -286,7 +286,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Anicia la sesión pa sincronizar les llingüetes, los marcadores, les contraseñes y muncho más.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Cuenta de Firefox</string>
+    <string name="preferences_account_default_name">Cuenta de NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Volvi conectate pa siguir cola sincronización</string>
     <!-- Preference for language -->
@@ -403,7 +403,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Llingüetes recibíes</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Los avisos de les llingüetes recibíes d\'otros preseos con Firefox n\'execución.</string>
+    <string name="fxa_received_tab_channel_description">Los avisos de les llingüetes recibíes d\'otros preseos con NETGPU BROWSER n\'execución.</string>
     <!-- %s is the device name -->
     <string name="fxa_tab_received_from_notification_name">Llingüeta de: %s</string>
 
@@ -683,7 +683,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Perdona mas %1$s nun pue cargar esa páxina.</string>
 
     <!-- Send crash report checkbox text on the tab crash page -->
@@ -891,7 +891,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Coneutar otru preséu</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Pa unviar una llingüeta, anicia sesión nel Firefox de polo menos un preséu más.</string>
+    <string name="sync_connect_device_dialog">Pa unviar una llingüeta, anicia sesión nel NETGPU BROWSER de polo menos un preséu más.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">¡Entendílo!</string>
     <!-- Share error message -->
@@ -1012,7 +1012,7 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string moz:RemovedIn="106" name="onboarding_header" tools:ignore="UnusedResources">¡Afáyate en %s!</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">La sincronización ta activada</string>
@@ -1033,7 +1033,7 @@
     <string moz:removedIn="106" name="onboarding_privacy_notice_header" tools:ignore="UnusedResources">La to privacidá</string>
 
     <!-- text for the privacy notice onboarding card description
-    The first parameter is the name of the app (e.g. Firefox Preview) Substitute %s for long browser name. -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) Substitute %s for long browser name. -->
     <string moz:removedIn="106" name="onboarding_privacy_notice_description2" tools:ignore="UnusedResources">Diseñemos %s pa date\'l control tocante a los que compartes
 en llinia y con nós.</string>
     <!-- Text for the button to read the privacy notice -->
@@ -1068,16 +1068,16 @@ en llinia y con nós.</string>
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Escanéu d\'un códigu</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Nun ordenador, abri Firefox y vete a <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Nun ordenador, abri NETGPU BROWSER y vete a <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Escaniar</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Aniciu de sesión cola cámara</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Usar una direición de corréu</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[¿Nun tienes cuenta? <u>Crea una</u> pa sincronizar Firefox ente preseos.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[¿Nun tienes cuenta? <u>Crea una</u> pa sincronizar NETGPU BROWSER ente preseos.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s va dexar de sincronizase cola to cuenta mas nun va desaniciar nengún datu d\'esti preséu.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Desconectar</string>
@@ -1095,7 +1095,7 @@ en llinia y con nós.</string>
     <string name="preference_enhanced_tracking_protection">Proteición antirrastrexu ameyorada</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Restola ensin que te sigan</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Curia los tos datos. %s protéxite de la mayoría de rastrexadores comunes que siguen lo que faes en llinia.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Saber más</string>
@@ -1231,23 +1231,23 @@ en llinia y con nós.</string>
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Pues amestar fácilmente esti sitiu web a la pantalla d\'Aniciu del preséu p\'acceder aína a elli como si fore una aplicación nativa.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Cuentes y contraseñes</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Guardáu de cuentes y contraseñes</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Entrugar</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Nun guardar</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Autorrellenu en %1$s</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Autorrellenu n\'otres aplicaciones</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Sincronización de cuentes</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Sincronizar les cuentes ente preseos</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Cuentes guardaes</string>
@@ -1460,14 +1460,14 @@ en llinia y con nós.</string>
     <string name="synced_tabs_connect_another_device">Conecta otru preséu.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Volvi autenticate.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Activa la sincronización de llingüetes.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Nun tienes llingüetes abiertes nel Firefox de los demás preseos de to.</string>
+    <string name="synced_tabs_no_tabs">Nun tienes llingüetes abiertes nel NETGPU BROWSER de los demás preseos de to.</string>
 
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Ve una llista de les llingüetes que tienes nos demás preseos de to.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Aniciar sesión pa sincronizar</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -1490,7 +1490,7 @@ en llinia y con nós.</string>
     <string name="inactive_tabs_title">Llingüetes inactives</string>
 
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox pue zarrar les llingüetes que nun visitesti demientres el mes pasáu.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER pue zarrar les llingüetes que nun visitesti demientres el mes pasáu.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Quitar</string>
@@ -1504,7 +1504,7 @@ en llinia y con nós.</string>
     <!-- Title of an app feature. Smaller than a heading.-->
     <string moz:removedIn="108" name="pocket_stories_feature_title" tools:ignore="UnusedResources">Cola potencia de Pocket.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Parte de la familia de Firefox. %s</string>
+    <string name="pocket_stories_feature_caption">Parte de la familia de NETGPU BROWSER. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">Saber más</string>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Pribado %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Pribado)</string>
 
     <!-- Home Fragment -->
@@ -35,13 +35,13 @@
     <!-- Content description on checkmark while tab is selected in multiselect mode in tab tray -->
     <string name="tab_tray_multiselect_selected_content_description">Napili</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s hinimo sa Mozilla.</string>
 
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         Ang %1$s moclear sa imong search ug browsing history sa private tabs kung i-sara o i-quit ang app. Bisan dili kini mohimo kanimo nga anonymous sa mga website ug sa imong internet service provider, gipasayon niini ang pagkapribado sa imong mga gihimo online gikan sa ubang gagamit niining device.</string>
 
@@ -141,14 +141,14 @@
     <string name="browser_menu_save_to_collection_2">i-Save sa collection</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">i-Share</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Ablihi sa %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">POWERED BY %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Powered by %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Reader view</string>
@@ -187,7 +187,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Ayaw tugoti</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">i-Allow ang search suggestions sulod sa private sessions?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">Ang %s magbutyag sa tanan nimo gitype sulod sa address bar gamit imong default nga search engine. </string>
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
     <string name="search_engine_suggestions_title">Pangitaon %1$s</string>
@@ -207,12 +207,12 @@
     <string name="settings">Mga Setting</string>
 
 
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">i-Rate sa Google Play</string>
 
 
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Mahitungod sa %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Itakda isip default browser</string>
@@ -231,12 +231,12 @@
     <!-- Preference for adding private browsing shortcut -->
     <string name="preferences_add_private_browsing_shortcut">Dugang ug shortcut sa private browsing</string>
 
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Custom nga server sa Firefox Account</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Custom nga server sa NETGPU BROWSER Account</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Custom nga Sync server</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Nausab ang Firefox Account/Sync server. Kamulong gina-quit ang application para maapply ang nausab …</string>
+    <string name="toast_override_fxa_sync_server_done">Nausab ang NETGPU BROWSER Account/Sync server. Kamulong gina-quit ang application para maapply ang nausab …</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">i-Reconnect para mapadayon ang pag-sync</string>
 
@@ -318,7 +318,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Nadawat nga mga tab</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Mga pahibalo sa mga tab nga nadawat gikan sa ubang mga Firefox device.</string>
+    <string name="fxa_received_tab_channel_description">Mga pahibalo sa mga tab nga nadawat gikan sa ubang mga NETGPU BROWSER device.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Tab nga nadawat</string>
     <!-- %s is the device name -->

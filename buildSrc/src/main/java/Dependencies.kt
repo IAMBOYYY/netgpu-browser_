@@ -51,6 +51,7 @@ object FenixVersions {
     const val junit = "5.5.2"
     const val mockk = "1.12.0"
 
+    const val okhttp = "4.10.0"
     const val mockwebserver = "4.10.0"
     const val uiautomator = "2.2.0"
     const val robolectric = "4.9"
@@ -223,6 +224,8 @@ object FenixDependencies {
 
     const val adjust = "com.adjust.sdk:adjust-android:${FenixVersions.adjust}"
     const val installreferrer = "com.android.installreferrer:installreferrer:${FenixVersions.installreferrer}"
+
+    const val okhttp = "com.squareup.okhttp3:okhttp:${FenixVersions.okhttp}"
 
     const val jna = "net.java.dev.jna:jna:${FenixVersions.jna}@jar"
 

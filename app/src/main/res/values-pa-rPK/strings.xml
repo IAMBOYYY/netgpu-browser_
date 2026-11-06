@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">نجی %s</string>
 
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (نجی)</string>
 
     <!-- Home Fragment -->
@@ -52,12 +52,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">ہٹاؤ</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s ایپ موزلے ولوں تیار کیتی اے۔</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
          جدوں تسیں ساریاں نجی ٹیباں نوں بند کردے او یا ایپ توں باہر جاندے او تاں %1$s تہاڈی کھوج تے ورتوں دی تاریخ نوں ساف کردا اے۔ حالاں‌کہ ایہہ تہانوں سائٹاں یا تہاڈے اینٹرنیٹ دیݨ والے لئی اݨپچھاتا نہیں بݨاوندا، پر ایس نال ایس فون نوں ورتے والے کسے توں وی تہاڈے ولوں آن‌لائین کیتے نوں نجی رکھݨا ہور سوکھا ہو جاندا اے۔</string>
     <string name="private_browsing_common_myths">
@@ -139,8 +139,8 @@
     <string name="browser_menu_install_on_homescreen">اینسٹال کرو</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">سانجھا کرو</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">%1$s نال کھولھو</string>
     <!-- Browser menu label for adding a bookmark -->
     <string name="browser_menu_add">پتہ پایو</string>
@@ -188,7 +188,7 @@
     <string name="settings">سیٹنگاں</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">عام</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">بارے</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">مول کھوج والا</string>
@@ -198,10 +198,10 @@
 
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">پتے دی پٹی</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">ایپ دکان تے درجہ دیو</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s بارے</string>
 
     <!-- Preference category for advanced settings -->
@@ -518,7 +518,7 @@
     <!-- Text for the allow button for the history group dialog -->
     <string name="delete_history_group_prompt_allow">مٹاؤ</string>
 
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">لوگ‌این کرو</string>
 
     <!-- Automatic theme setting (will follow device setting) -->

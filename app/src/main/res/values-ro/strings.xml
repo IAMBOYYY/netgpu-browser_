@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Privat %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Privat)</string>
 
     <!-- Home Fragment -->
@@ -35,12 +35,12 @@
     <!-- Content description on checkmark while tab is selected in multiselect mode in tab tray -->
     <string name="tab_tray_multiselect_selected_content_description">Selectate</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s este realizat de Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s îți șterge istoricul de căutare și navigare din filele private când le închizi sau când ieși din aplicație. Deși nu te anonimizează pe site-urile web sau pentru furnizorul de servicii de internet, ușurează păstrarea confidențialității asupra a ce faci online față de oricine altcineva folosește acest dispozitiv.</string>
     <string name="private_browsing_common_myths">Mituri comune despre navigarea privată</string>
 
@@ -114,14 +114,14 @@
     <string name="browser_menu_save_to_collection_2">Salvează în colecție</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Partajează</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Deschide în %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">CU TEHNOLOGIE %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Cu tehnologie %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Mod de lectură</string>
@@ -160,7 +160,7 @@
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Permiți sugestii de căutare în sesiuni private?</string>
 
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s va partaja tot ce tastezi în bara de adrese cu motorul de căutare implicit.</string>
 
     <!-- Text preview for smaller sized widgets -->
@@ -176,7 +176,7 @@
     <string name="settings">Setări</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Generalități</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Despre</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Motor de căutare implicit</string>
@@ -184,10 +184,10 @@
     <string name="preferences_search">Căutare</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Bară de adrese</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Evaluează pe Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Despre %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Setează ca browser implicit</string>
@@ -207,12 +207,12 @@
     <string name="preferences_add_private_browsing_shortcut">Adaugă o comandă rapidă pentru navigare privată</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Accesibilitate</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Server personalizat pentru contul Firefox</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Server personalizat pentru contul NETGPU BROWSER</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Server personalizat de sincronizare</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Server de cont Firefox/sincronizare modificat. Se închide aplicația pentru implementarea modificărilor…</string>
+    <string name="toast_override_fxa_sync_server_done">Server de cont NETGPU BROWSER/sincronizare modificat. Se închide aplicația pentru implementarea modificărilor…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Cont</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -222,9 +222,9 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Personalizare</string>
     <!-- Preference description for banner about signing in -->
-    <string moz:RemovedIn="104" name="preferences_sign_in_description" tools:ignore="UnusedResources">Sincronizează marcajele, istoricul și multe altele cu contul Firefox</string>
+    <string moz:RemovedIn="104" name="preferences_sign_in_description" tools:ignore="UnusedResources">Sincronizează marcajele, istoricul și multe altele cu contul NETGPU BROWSER</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Cont Firefox</string>
+    <string name="preferences_account_default_name">Cont NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Reconectează-te pentru a continua sincronizarea</string>
     <!-- Preference for language -->
@@ -305,7 +305,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">File primite</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Notificări pentru file primite de la alte dispozitive Firefox.</string>
+    <string name="fxa_received_tab_channel_description">Notificări pentru file primite de la alte dispozitive NETGPU BROWSER.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Filă primită</string>
     <!-- %s is the device name -->
@@ -487,7 +487,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Ne cerem scuze. %1$s nu poate încărca pagina.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Trimite un raport de defecțiune către Mozilla</string>
@@ -681,7 +681,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Conectează alt dispozitiv</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Pentru a trimite o filă, intră în contul Firefox de pe cel puțin un alt dispozitiv.</string>
+    <string name="sync_connect_device_dialog">Pentru a trimite o filă, intră în contul NETGPU BROWSER de pe cel puțin un alt dispozitiv.</string>
 
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Am înțeles</string>
@@ -795,9 +795,9 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">Bine ai venit pe %s!</string>
-    <!-- text for the button to manually sign into Firefox account. -->
+    <!-- text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in_1">Înscrie-te</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync este activat</string>
@@ -837,14 +837,14 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Scananează codul</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Deschide Firefox pe calculator și intră pe <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Deschide NETGPU BROWSER pe calculator și intră pe <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Gata de scanare</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Autentificare cu camera</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Folosește e-mailul în schimb</string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s va înceta să se mai sincronizeze cu contul tău, dar nu va șterge nimic din datele de navigare de pe acest dispozitiv.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Deconectează-te</string>
@@ -861,7 +861,7 @@
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Navighează fără să fii urmărit(ă)</string>
 
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Păstrează-ți datele pentru tine. %s te protejează de multe dintre cele mai frecvente elemente de urmărire care monitorizează ce faci online.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Află mai multe</string>
@@ -983,18 +983,18 @@
     <!-- Placeholder text for the TextView in the Add to Homescreen dialog -->
     <string name="add_to_homescreen_text_placeholder">Denumire comandă rapidă</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Date de autentificare și parole</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Salvează datele de autentificare și parolele</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Întreabă pentru salvare</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Nu salva niciodată</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Sincronizează datele de autentificare</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Sincronizează datele de autentificare între dispozitive</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Date de autentificare salvate</string>
@@ -1154,13 +1154,13 @@
     <string name="synced_tabs_connect_another_device">Conectează alt dispozitiv.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Te rugăm să te autentifici din nou.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Te rugăm să activezi sincronizarea filelor.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Nu ai nicio filă deschisă în Firefox pe celelalte dispozitive.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Nu ai nicio filă deschisă în NETGPU BROWSER pe celelalte dispozitive.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Afișează o listă de file de pe celelalte dispozitive.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Intră în contul Sync</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s prìobhaideach</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Prìobhaideach)</string>
 
     <!-- Home Fragment -->
@@ -45,12 +45,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Thoir air falbh</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">Chaidh %1$s a dhèanamh le Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         Falamhaichidh %1$s eachdraidh nan lorg is a’ bhrabhsaidh aig tabaichean prìobhaideachd  nuair a dhùineas tu iad no nuair a dh’fhàgas tu an aplacaid. Fhad ’s nach cuir seo am falach cò thusa mu choinneamh làraichean-lìn no solaraiche nan seirbheisean-lìn agad, cumaidh e na nì thu air loidhne am falach o dhaoine eile a chleachdas an t-uidheam seo.</string>
     <string name="private_browsing_common_myths">Faoin-sgeulan cumanta mun bhrabhsadh phrìobhaideach</string>
@@ -182,14 +182,14 @@
     <string name="browser_menu_save_to_collection_2">Sàbhail ann an cruinneachadh</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Co-roinn</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Fosgail ann am %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">LE CUMHACHD %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Le cumhachd %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">An sealladh leughaidh</string>
@@ -234,7 +234,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Na ceadaich</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">A bheil thu airson molaidhean luirg a cheadachadh ann an seiseanan prìobhaideach?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">Co-roinnidh %s gach rud a sgrìobhas tu ann am bàr an t-seòlaidh leis an einnsean-luirg bhunaiteach agad.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -264,8 +264,8 @@
     <!-- Onboarding home screen dialog description text for the history section. -->
     <string name="onboarding_home_screen_section_useful_history_description_2">Ath-thadhail air na luirg a rinn thu o chionn goirid air an duilleag-dhachaigh agad.</string>
 
-    <!-- Onboarding home screen popup dialog, shown on top of the Jump back in section. Firefox is intentionally hardcoded. -->
-    <string name="onboarding_home_screen_jump_back_contextual_hint" tools:ignore="UnusedResources">Leis gu bheil duilleag-dhachaigh phearsantaichte agad ann am Firefox a-nis, tha e nas fhasa cumail a’ dol far an do stad thu roimhe. Faigh greim air na tabaichean, comharran-lìn is toraidhean-luirg a bh’ agad o chionn goirid.</string>
+    <!-- Onboarding home screen popup dialog, shown on top of the Jump back in section. NETGPU BROWSER is intentionally hardcoded. -->
+    <string name="onboarding_home_screen_jump_back_contextual_hint" tools:ignore="UnusedResources">Leis gu bheil duilleag-dhachaigh phearsantaichte agad ann am NETGPU BROWSER a-nis, tha e nas fhasa cumail a’ dol far an do stad thu roimhe. Faigh greim air na tabaichean, comharran-lìn is toraidhean-luirg a bh’ agad o chionn goirid.</string>
 
     <!-- Search Widget -->
     <!-- Content description for searching with a widget. The first parameter is the name of the application.-->
@@ -283,7 +283,7 @@
     <string name="settings">Roghainnean</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Coitcheann</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Mu dhèidhinn</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">An t-einnsean-luirg bunaiteach</string>
@@ -291,10 +291,10 @@
     <string name="preferences_search">Lorg</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Bàr an t-seòlaidh</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Rangaich e air Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Mu dhèidhinn %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Suidhich mar am brabhsair bunaiteach</string>
@@ -337,12 +337,12 @@
     <string name="errorpage_httpsonly_message_summary">Ge-tà, dh’fhaoidte gu bheil neach-ionnsaigh na lùib ann. Ma leanas tu air adhart gun làrach-lìn, na cuir a-steach fiosrachadh dìomhair sam bith. Ma leanas tu air adhart, thèid am modh HTTPS a-mhàin a chur dheth gu sealach air an làrach ud.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">So-ruigsinneachd</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Frithealaiche chunntasan Firefox gnàthaichte</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Frithealaiche chunntasan NETGPU BROWSER gnàthaichte</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Frithealaiche sioncronachaidh gnàthaichte</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Chaidh frithealaichte nan cunntasan Firefox no an t-sioncronachaidh atharrachadh. Fàg an aplacaid gus na h-atharraichean a chur an gnìomh…</string>
+    <string name="toast_override_fxa_sync_server_done">Chaidh frithealaichte nan cunntasan NETGPU BROWSER no an t-sioncronachaidh atharrachadh. Fàg an aplacaid gus na h-atharraichean a chur an gnìomh…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Cunntas</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -356,11 +356,11 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Gnàthaich</string>
     <!-- Preference description for banner about signing in -->
-    <string moz:RemovedIn="104" name="preferences_sign_in_description" tools:ignore="UnusedResources">Sioncronaich na comharran-lìn, faclan-faire is mòran a bharrachd leis a’ chunntas Firefox agad</string>
+    <string moz:RemovedIn="104" name="preferences_sign_in_description" tools:ignore="UnusedResources">Sioncronaich na comharran-lìn, faclan-faire is mòran a bharrachd leis a’ chunntas NETGPU BROWSER agad</string>
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Clàraich a-steach gus na tabaichean, comharran-lìn, faclan-faire is mòran a bharrachd a shioncronachadh.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Cunntas Firefox</string>
+    <string name="preferences_account_default_name">Cunntas NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Ceangail ris às ùr airson leantainn air an t-sioncronachadh</string>
     <!-- Preference for language -->
@@ -442,10 +442,10 @@
     <!-- Snackbar label for action to view selected wallpaper -->
     <string name="wallpaper_updated_snackbar_action">Seall</string>
     <!-- Label for switch which toggles the "tap-to-switch" behavior on home screen logo -->
-    <string name="wallpaper_tap_to_change_switch_label_1">Atharraich am pàipear-balla le bhith a’ toirt gnogag air suaicheantas duilleag-dhachaigh Firefox</string>
+    <string name="wallpaper_tap_to_change_switch_label_1">Atharraich am pàipear-balla le bhith a’ toirt gnogag air suaicheantas duilleag-dhachaigh NETGPU BROWSER</string>
     <!-- This is the accessibility content description for the wallpapers functionality. Users are
     able to tap on the app logo in the home screen and can switch to different wallpapers by tapping. -->
-    <string name="wallpaper_logo_content_description">Suaicheantas Firefox – putan airson am pàipear-balla atharrachadh</string>
+    <string name="wallpaper_logo_content_description">Suaicheantas NETGPU BROWSER – putan airson am pàipear-balla atharrachadh</string>
 
     <!-- Add-on Installation from AMO-->
     <!-- Error displayed when user attempts to install an add-on from AMO (addons.mozilla.org) that is not supported -->
@@ -497,7 +497,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Tabaichean a fhuaras</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Brathan airson tabaichean a fhuaras o uidheaman Firefox eile.</string>
+    <string name="fxa_received_tab_channel_description">Brathan airson tabaichean a fhuaras o uidheaman NETGPU BROWSER eile.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Fhuaras taba</string>
     <!-- %s is the device name -->
@@ -664,7 +664,7 @@
     <string name="studies_remove">Thoir air falbh</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">Gnìomhach</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">Faodaidh %1$s rannsachadh a stàladh is a ruith o àm gu àm.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Barrachd fiosrachaidh</string>
@@ -786,7 +786,7 @@
     <!-- The synced history sign in dialog button text -->
     <string name="history_sign_in_button">Clàraich a-steach</string>
     <!-- The synced history sign in dialog create a new account link -->
-    <string name="history_sign_in_create_account"><![CDATA[<u>No cruthaich cunntas Firefox a thòiseachadh air sioncronachadh</u>]]></string>
+    <string name="history_sign_in_create_account"><![CDATA[<u>No cruthaich cunntas NETGPU BROWSER a thòiseachadh air sioncronachadh</u>]]></string>
 
     <!-- Downloads -->
     <!-- Text for the snackbar to confirm that multiple downloads items have been removed -->
@@ -805,7 +805,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Tha sinn duilich ach chan urrainn dha %1$s an duilleag a luchdadh.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Cuir aithisg tuislidh gu Mozilla</string>
@@ -1036,7 +1036,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Ceangail uidheam eile ris</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Airson taba a chur, clàraich a-steach gu Firefox air co-dhiù aon uidheam eile.</string>
+    <string name="sync_connect_device_dialog">Airson taba a chur, clàraich a-steach gu NETGPU BROWSER air co-dhiù aon uidheam eile.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Tha mi agaibh</string>
     <!-- Share error message -->
@@ -1056,10 +1056,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">Margaideachd</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">Tha %1$s luath ’s prìobhaideach</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">Cleachd %1$s mar am brabhsair bunaiteach agad</string>
 
     <!-- Snackbar -->
@@ -1187,13 +1187,13 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">Fàilte gu %s!</string>
-    <!-- text for the Firefox account onboarding sign in card header. The word "Firefox" should not be translated -->
-    <string name="onboarding_account_sign_in_header_1">Sioncronaich Firefox eadar uidheaman</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. The first parameter is the name of the application.-->
+    <!-- text for the NETGPU BROWSER account onboarding sign in card header. The word "NETGPU BROWSER" should not be translated -->
+    <string name="onboarding_account_sign_in_header_1">Sioncronaich NETGPU BROWSER eadar uidheaman</string>
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. The first parameter is the name of the application.-->
     <string name="onboarding_manual_sign_in_description_2">Thoir a-steach comharran-lìn, an eachdraidh is faclan-faire gu %1$s air an uidheam seo.</string>
-    <!-- text for the button to manually sign into Firefox account. -->
+    <!-- text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in_1">Clàraich leinn</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Tha an sioncronachadh air</string>
@@ -1217,7 +1217,7 @@
     <!-- text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header">Do phrìobhaideachd</string>
     <!-- text for the privacy notice onboarding card description
-    The first parameter is the name of the app (e.g. Firefox Preview) Substitute %s for long browser name. -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) Substitute %s for long browser name. -->
     <string name="onboarding_privacy_notice_description2">Dhealbh sinn %s airson ’s gum bi smachd agad-sa air na cho-roinneas tu air loidhne agus na cho-roinneas tu leinn.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">Leugh sanas na prìobhaideachd againn</string>
@@ -1250,16 +1250,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Sganaich an còd</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Fosgail Firefox air a’ choimpiutair agad is tadhail air <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Fosgail NETGPU BROWSER air a’ choimpiutair agad is tadhail air <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Deiseil airson sganadh</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Clàraich a-steach leis a’ chamara agad</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Cleachd post-d na àite</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[Nach eil cunntas agad? <u>Cruthaich fear</u> airson Firefox a shioncronachadh eadar uidheaman.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[Nach eil cunntas agad? <u>Cruthaich fear</u> airson NETGPU BROWSER a shioncronachadh eadar uidheaman.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">Sguiridh %s de shioncronachadh a’ chunntais agad ach cha sguab e às gin dhen dàta brabhsaidh agad air an uidheam seo.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Dì-cheangail</string>
@@ -1276,7 +1276,7 @@
     <string name="preference_enhanced_tracking_protection">Dìon adhartach o thracadh</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Dèan brabhsadh gun daoine a’ cumail sùil ort</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Cùm an dàta agad agad fhèin. Dìonaidh %s thu o mhòran dhe na tracaichean as cumanta a leanas mun cuairt thu air an lìon.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Barrachd fiosrachaidh</string>
@@ -1414,29 +1414,29 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Tha e furasta an duilleag seo a chur ri duilleag-dhachaigh an uidheim agad airson greim fhaighinn air gu luath.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Clàraidhean a-steach is faclan-faire</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Sàbhail clàraidhean a-steach is faclan-faire</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Faighnich mus tèid a shàbhaladh</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Na sàbhail idir</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Lìon gu fèin-obrachail ann am %1$s</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">Lìon is sàbhail ainmean-chleachdaichean is faclan-faire air làraichean-lìn ’s tu a’ cleachdadh %1$s.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Fèin-lìon ann an aplacaidean eile</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">Fèin-lìon ainmean-chleachdaichean is faclan-faire ann an aplacaidean eile air an uidheam agad.</string>
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">Cuir clàradh a-steach ris</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Sioncronaich na clàraidhean a-steach</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Sioncronaich clàraidhean a-steach thar nan uidheaman</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Clàraidhean a-steach a chaidh a shàbhaladh</string>
@@ -1755,13 +1755,13 @@
     <string name="synced_tabs_connect_another_device">Ceangail uidheam eile ris.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Dèan dearbhadh às ùr.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Cuir an comas sioncronachadh nan tabaichean.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Chan eil taba sam bith fosgailte agad ann am Firefox air uidheaman eile.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Chan eil taba sam bith fosgailte agad ann am NETGPU BROWSER air uidheaman eile.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Seall liosta nan tabaichean a tha agad air uidheaman eile.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Clàraich a-steach a shioncronachadh</string>
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
     <string name="synced_tabs_no_open_tabs">Chan eil taba fosgailte</string>
@@ -1812,7 +1812,7 @@
     <!-- The header text of the auto-close message when the user is asked if they want to turn on the auto-closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">A bheil thu airson an dùnadh an dèidh mìos?</string>
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Dùnaidh Firefox tabaichean nach tug thu sùil orra thairis air a’ mhìos seo chaidh.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Dùnaidh NETGPU BROWSER tabaichean nach tug thu sùil orra thairis air a’ mhìos seo chaidh.</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">CUIR GLEUS AN FHÈIN-DÙNAIDH AIR</string>
 
@@ -1820,7 +1820,7 @@
     <string name="inactive_tabs_auto_close_message_snackbar">Tha an dùnadh fèin-obrachail an comas</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">Suidhich ceanglaichean o làraichean-lìn, puist-d agus teachdaireachdan airson ’s gun tèid am fosgladh gu fèin-obrachail ann am Firefox.</string>
+    <string name="default_browser_experiment_card_text">Suidhich ceanglaichean o làraichean-lìn, puist-d agus teachdaireachdan airson ’s gun tèid am fosgladh gu fèin-obrachail ann am NETGPU BROWSER.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Thoir air falbh</string>
@@ -1845,7 +1845,7 @@
     <string name="pocket_stories_feature_title">Le cumhachd Pocket.</string>
 
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Na phàirt de theaghladh Firefox. %s</string>
+    <string name="pocket_stories_feature_caption">Na phàirt de theaghladh NETGPU BROWSER. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">Barrachd fiosrachaidh</string>
     <!-- Text indicating that the Pocket story that also displays this text is a sponsored story by other 3rd party entity. -->
@@ -1855,5 +1855,5 @@
     <string name="experiments_snackbar">Cuir an telemeatraidh an comas airson an dàta a chur.</string>
     <!-- Snackbar button text to navigate to telemetry settings.-->
     <string name="experiments_snackbar_button">Tadhail air na roghainnean</string>
-    <string name="firefox_suggest_header">Firefox Suggest</string>
+    <string name="firefox_suggest_header">NETGPU BROWSER Suggest</string>
 </resources>

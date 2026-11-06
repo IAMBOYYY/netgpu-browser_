@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">സ്വകാര്യം %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s(സ്വകാര്യം)</string>
     <!-- Home Fragment -->
     <!-- Content description (not visible, for screen readers etc.): "Three dot" menu button. -->
@@ -24,14 +24,14 @@
     <!-- Message announced to the user when tab tray is selected with 0 or 2+ tabs -->
     <string name="open_tab_tray_plural">%1$s തുറന്നിരിക്കുന്ന ടാബുകൾ. ടാബുകൾ മാറ്റാൻ ഇത് അമർത്തുക.</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s നിർമ്മിച്ചത് മോസില്ലയാണ്.</string>
 
     <!-- Private Browsing -->
     <!-- Title for private session option -->
     <string name="private_browsing_title">താങ്കൾ ഒരു സ്വകാര്യ സെഷനിലാണ്</string>
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s നിങ്ങളുടെ തിരയലും ബ്രൗസിംഗ് ചരിത്രവും സ്വകാര്യ ടാബുകൾ അടയ്ക്കുമ്പോൾ അല്ലെങ്കിൽ അപ്ലിക്കേഷനിൽ നിന്ന് പുറത്തുകടക്കുമ്പോൾ അവ മായ്‌ക്കുന്നു. ഇത് നിങ്ങളെ വെബ്‌സൈറ്റുകളിലേക്കോ ഇൻറർനെറ്റ് സേവന ദാതാവിലേക്കോ അജ്ഞാതനാക്കില്ലെങ്കിലും, ഈ ഉപകരണം ഉപയോഗിക്കുന്ന മറ്റെതൊരാളിൽ നിന്നും നിങ്ങൾ ഓൺലൈനിൽ ചെയ്യുന്നത് സ്വകാര്യമായി സൂക്ഷിക്കുന്നത് എളുപ്പമാക്കുന്നു.</string>
     <string name="private_browsing_common_myths">സ്വകാര്യ ബ്രൗസിങ്ങിനെക്കുറിച്ചുള്ള പൊതുവായ മിഥ്യാധാരണകൾ</string>
     <!-- Delete session button to erase your history in a private session -->
@@ -46,7 +46,7 @@
     <string name="cfr_neg_button_text">വേണ്ട, നന്ദി</string>
 
     <!-- Search widget "contextual feature recommendation" (CFR) -->
-    <!-- Text for the main message. 'Firefox' intentionally hardcoded here.-->
+    <!-- Text for the main message. 'NETGPU BROWSER' intentionally hardcoded here.-->
     <string name="search_widget_cfr_message">ഫയർഫോക്സിലേക്ക് വേഗത്തിൽ എത്തുക. നിങ്ങളുടെ ഹോം സ്‌ക്രീനിൽ ഒരു വിജറ്റ് ചേർക്കുക.</string>
     <!-- Text for the positive button -->
     <string name="search_widget_cfr_pos_button_text">വിഡ്ജറ്റ് ചേർക്കുക</string>
@@ -109,14 +109,14 @@
     <string name="browser_menu_share">പങ്കിടുക</string>
     <!-- Share menu title, displayed when a user is sharing their current site -->
     <string name="menu_share_with">… നോട് പങ്കിടുക</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">%1$s ൽ തുറക്കുക</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s ലഭ്യമാക്കുന്നത്</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">%1$s ലഭ്യമാക്കുന്നത്</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">വായനയ്ക്കുള്ള കാഴ്ച</string>
@@ -160,7 +160,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">അനുവദിക്കരുത്</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">സ്വകാര്യ സെഷനുകളിൽ തിരയൽ നിർദ്ദേശങ്ങൾ അനുവദിക്കണോ?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">നിങ്ങളുടെ സ്ഥിരസ്ഥിതി സെര്‍ച്ച് എഞ്ചിനുമായി വിലാസ ബാറിൽ നിങ്ങൾ എഴുതുന്നതെല്ലാം %s ആയി പങ്കിടും</string>
     <!-- Search suggestion onboarding hint Learn more link text -->
     <string name="search_suggestions_onboarding_learn_more_link">കൂടുതല്‍ അറിയുക</string>
@@ -181,7 +181,7 @@
     <string name="preferences_category_basics">അടിസ്ഥാനകാര്യങ്ങൾ</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">പൊതുവായവ</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">വിവരം</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">സ്വതവേയുള്ള സെര്‍ച്ച് എഞ്ചിന്‍</string>
@@ -189,14 +189,14 @@
     <string name="preferences_search">തിരയുക</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">അഡ്രസ്സ് ബാര്‍</string>
-    <!-- Preference linking to help about Fenix -->
+    <!-- Preference linking to help about NETGPU BROWSER -->
     <string name="preferences_help">സഹായം</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">ഗൂഗിൾ പ്ലേയിൽ വിലയിരുത്തുക</string>
-    <!-- Preference for giving feedback about Fenix -->
+    <!-- Preference for giving feedback about NETGPU BROWSER -->
     <string name="preferences_feedback">പ്രതികരണം നല്‍കുക</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s നെ കുറിച്ച്</string>
     <!-- Preference linking to the your rights SUMO page -->
     <string name="preferences_your_rights">താങ്കളുടെ അവകാശങ്ങള്‍</string>
@@ -225,7 +225,7 @@
     <string name="preferences_add_private_browsing_shortcut">സ്വകാര്യ ബ്രൗസിംഗ് കുറുക്കുവഴി ചേർക്കുക</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">ആക്സസ്സെബിലിറ്റി</string>
-    <!-- Preference to override the Firefox Account server -->
+    <!-- Preference to override the NETGPU BROWSER Account server -->
     <string name="preferences_override_fxa_server">ഇഷ്‌ടാനുസൃത ഫയർഫോക്‌സ് അക്കൗണ്ട് സെർവർ</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">ഇഷ്‌ടാനുസൃത സമന്വയ സെർവർ</string>
@@ -357,7 +357,7 @@
     <string name="preferences_usage_data_description">പ്രകടനം, ഉപയോഗം, ഹാർഡ്‌വെയർ തുടങ്ങിയ വിവരങ്ങൾ മോഡില്ലയുമായിമായി പങ്കു വെച്ച്  %1$s മെച്ചപ്പെടുത്തുവാൻ സഹായിക്കുക</string>
     <!-- Preference switch for marketing data collection -->
     <string name="preferences_marketing_data">വിപണനത്തിനായുള്ള ഡാറ്റ</string>
-    <!-- Preference description for marketing data collection, parameter is the app name (e.g. Firefox) -->
+    <!-- Preference description for marketing data collection, parameter is the app name (e.g. NETGPU BROWSER) -->
     <string name="preferences_marketing_data_description">%1$sൽ നിങ്ങൾ ഉപയോഗിക്കുന്ന സവിശേഷതകളുമായി ബന്ധപ്പെട്ട ഡാറ്റ ഞങ്ങളുടെ വിപണനസഹായിയായ Leanplumഉമായി പങ്കുവെയ്ക്കുന്നു.</string>
     <!-- Title for experiments preferences -->
     <string name="preference_experiments">പരീക്ഷണങ്ങള്‍</string>
@@ -367,7 +367,7 @@
     <string name="preferences_crash_reporter">തകരാർ റിപ്പോർട്ടർ</string>
     <!-- Preference switch for Mozilla location service -->
     <string name="preferences_mozilla_location_service">മോസില്ല ലൊക്കേഷൻ സേവനം</string>
-    <!-- Preference switch for app health report. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Preference switch for app health report. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preferences_fenix_health_report">%s ആരോഗ്യ റിപ്പോർട്ട്</string>
 
     <!-- Turn On Sync Preferences -->
@@ -547,7 +547,7 @@
     <string name="history_empty_message">ഇവിടെ ചരിത്രമൊന്നുമില്ല</string>
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">ക്ഷമിക്കണം. %1$s ന് ആ പേജ് ലഭ്യമാക്കാൻ കഴിഞ്ഞില്ല.</string>
     <!-- Description text displayed on the tab crash page -->
     <string name="tab_crash_description">താങ്കൾക്ക് ചുവടെയുള്ള ഈ ടാബ് പുനഃസ്ഥാപിക്കാൻ ശ്രമിക്കുകയോ അടയ്ക്കുകയോ ചെയ്യാം.</string>
@@ -784,11 +784,11 @@
     <string name="notification_pbm_delete_text">സ്വകാര്യ ടാബുകൾ നീക്കം ചെയ്യുക</string>
     <!-- Text shown in the notification that pops up to remind the user that a private browsing session is active. -->
     <string name="notification_pbm_delete_text_2">സ്വകാര്യ ടാബുകള്‍ അടയ്ക്കുക</string>
-    <!-- Notification action to open Fenix and resume the current browsing session. -->
+    <!-- Notification action to open NETGPU BROWSER and resume the current browsing session. -->
     <string name="notification_pbm_action_open">തുറക്കുക</string>
-    <!-- Notification action to delete all current private browsing sessions AND switch to Fenix (bring it to the foreground) -->
+    <!-- Notification action to delete all current private browsing sessions AND switch to NETGPU BROWSER (bring it to the foreground) -->
     <string name="notification_pbm_action_delete_and_open">നീക്കം ചെയ്തിട്ട് തുറക്കുക</string>
-    <!-- Name of the "Powered by Fenix" notification channel. Displayed in the "App notifications" system settings for the app -->
+    <!-- Name of the "Powered by NETGPU BROWSER" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_powered_by_channel_name">അവതരിപ്പിക്കുന്നത്</string>
     <!-- Text shown in snackbar when user deletes a collection -->
     <string name="snackbar_collection_deleted">ശേഖരം ഇല്ലാതാക്കി</string>
@@ -900,16 +900,16 @@
     <string name="deleting_browsing_data_in_progress">ബ്രൗസിംഗ് ഡാറ്റ നീക്കം ചെയ്യുന്നു…</string>
 
     <!-- Tips -->
-    <!-- text for firefox preview moving tip header "Firefox Preview" and "Firefox Nightly" are intentionally hardcoded -->
+    <!-- text for firefox preview moving tip header "NETGPU BROWSER Preview" and "NETGPU BROWSER NIGHTLY" are intentionally hardcoded -->
     <string name="tip_firefox_preview_moved_header">ഫയർഫോക്സ് പ്രിവ്യൂ ഇപ്പോൾ ഫയർഫോക്സ് നൈറ്റ്‌ലി ആണ്</string>
 
     <!-- text for firefox preview moving tip description -->
     <string name="tip_firefox_preview_moved_description">ഫയർഫോക്സ് നൈറ്റ്ലി എല്ലാ ദിവസവും രാത്രി അപ്ഡേറ്റ് ആവുകയും പരീക്ഷണാത്മക സവിശേഷതകൾ നേടുകയും ചെയ്യുന്നു.
         എന്നിരുന്നാലും, ഇതിന് സ്ഥിരത കുറവായേക്കാം. നല്ല സ്ഥിരതയുള്ള അനുഭവത്തിനായി ഞങ്ങളുടെ ബീറ്റാ ബ്രൗസർ ഡൗൺലോഡ് ചെയ്യുക.</string>
-    <!-- text for firefox preview moving tip button. "Firefox for Android Beta" is intentionally hardcoded -->
+    <!-- text for firefox preview moving tip button. "NETGPU BROWSER for Android Beta" is intentionally hardcoded -->
     <string name="tip_firefox_preview_moved_button_2">ആൻഡ്രോയിഡിനായുള്ള ഫയർഫോക്സ് ബീറ്റ നേടുക</string>
 
-    <!-- text for firefox preview moving tip header. "Firefox Nightly" is intentionally hardcoded -->
+    <!-- text for firefox preview moving tip header. "NETGPU BROWSER NIGHTLY" is intentionally hardcoded -->
     <string name="tip_firefox_preview_moved_header_preview_installed">ഫയർഫോക്സ് നൈറ്റ്ലി മാറിയിരിക്കുന്നു</string>
     <!-- text for firefox preview moving tip description -->
     <string name="tip_firefox_preview_moved_description_preview_installed">ഈ ആപ്പിന് ഇനി സുരക്ഷാ പുതുക്കലുകൾ  ലഭിക്കില്ല. ഈ ആപ്പ് ഉപയോഗിക്കുന്നത് നിർത്തി പുതിയ നൈറ്റ്ലിയിലേക്ക് മാറുക.
@@ -917,7 +917,7 @@
     <!-- text for firefox preview moving tip button  -->
     <string name="tip_firefox_preview_moved_button_preview_installed">പുതിയ നൈറ്റ്ലിയിലേക്ക് മാറുക</string>
 
-    <!-- text for firefox preview moving tip header. "Firefox Nightly" is intentionally hardcoded -->
+    <!-- text for firefox preview moving tip header. "NETGPU BROWSER NIGHTLY" is intentionally hardcoded -->
     <string name="tip_firefox_preview_moved_header_preview_not_installed">ഫയർഫോക്സ് നൈറ്റ്ലി മാറിയിരിക്കുന്നു</string>
     <!-- text for firefox preview moving tip description -->
     <string name="tip_firefox_preview_moved_description_preview_not_installed">.ഈ അപ്ലിക്കേഷന് ഇനി സുരക്ഷാ അപ്‌ഡേറ്റുകൾ ലഭിക്കില്ല. ഈ അപ്ലിക്കേഷൻ ഉപയോഗിക്കുന്നത് നിർത്തി പുതിയ നൈറ്റ്ലിയിലേക്ക് മാറുക.
@@ -927,32 +927,32 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">%s ലേക്ക് സ്വാഗതം!</string>
-    <!-- text for the Firefox Accounts section header -->
+    <!-- text for the NETGPU BROWSER Accounts section header -->
     <string name="onboarding_fxa_section_header">നിലവിൽ അക്കൗണ്ട് ഉണ്ടോ?</string>
-    <!-- text for the Firefox Preview feature section header
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- text for the NETGPU BROWSER Preview feature section header
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_feature_section_header">%s നെ പറ്റി അറിയുക</string>
     <!-- text for the "What's New" onboarding card header -->
     <string name="onboarding_whats_new_header1">പുതിയതെന്താണെന്ന് കാണുക</string>
     <!-- text for the "what's new" onboarding card description
-    The first parameter is the short name of the app (e.g. Firefox) -->
+    The first parameter is the short name of the app (e.g. NETGPU BROWSER) -->
     <string name="onboarding_whats_new_description">പുനർ‌രൂപകൽപ്പന ചെയ്‌ത %sനെക്കുറിച്ച് ചോദ്യങ്ങളുണ്ടോ? എന്താണ് മാറിയതെന്ന് അറിയണോ?</string>
     <!-- text for underlined clickable link that is part of "what's new" onboarding card description that links to an FAQ -->
     <string name="onboarding_whats_new_description_linktext">ഉത്തരങ്ങൾ ഇവിടെ നേടുക</string>
     <!-- text for the firefox account onboarding card header
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_firefox_account_header">%s പരമാവധി പ്രയോജനപ്പെടുത്തുക.</string>
     <!-- text for the firefox account onboarding card header when we detect you're already signed in to
-        another Firefox browser. (The word `Firefox` should not be translated)
+        another NETGPU BROWSER browser. (The word `NETGPU BROWSER` should not be translated)
         The first parameter is the email of the detected user's account -->
     <string name="onboarding_firefox_account_auto_signin_header_2">ഈ ഫോണിലെ മറ്റൊരു ഫയർ‌ഫോക്സ് ബ്രൗസറിൽ‌ നിങ്ങൾ‌ %s ആയി പ്രവേശിച്ചു. ഈ അക്കൗണ്ട് ഉപയോഗിച്ച് പ്രവേശിക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
     <!-- text for the button to confirm automatic sign-in -->
     <string name="onboarding_firefox_account_auto_signin_confirm">ഉവ്വ, പ്രവേശിക്കുക</string>
     <!-- text for the automatic sign-in button while signing in is in process -->
     <string name="onboarding_firefox_account_signing_in">പ്രവേശിക്കുന്നു…</string>
-    <!-- text for the button to manually sign into Firefox account. The word "Firefox" should not be translated -->
+    <!-- text for the button to manually sign into NETGPU BROWSER account. The word "NETGPU BROWSER" should not be translated -->
     <string name="onboarding_firefox_account_sign_in">ഫയര്‍ഫോക്സിലേക്ക് പ്രവേശിക്കുക</string>
     <!-- text for the button to stay signed out when presented with an option to automatically sign-in. -->
     <string name="onboarding_firefox_account_stay_signed_out">പുറത്തിറങ്ങിയതായി തുടരുക</string>
@@ -963,7 +963,7 @@
     <!-- text for the tracking protection onboarding card header -->
     <string name="onboarding_tracking_protection_header_2">സ്വതവേയുള്ള സ്വകാര്യത</string>
     <!-- text for the tracking protection card description
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_tracking_protection_description_2">സ്വകാര്യത, സുരക്ഷാ ക്രമീകരണങ്ങൾ താങ്കളെ പിന്തുടരുന്ന ട്രാക്കറുകൾ, മാൽവെയർ, കമ്പനികൾ എന്നിവയെ തടയുന്നു.</string>
     <!-- text for tracking protection radio button option for standard level of blocking -->
     <string name="onboarding_tracking_protection_standard_button_2">സ്റ്റാൻഡേർഡ് (തനതായിട്ടുള്ളത്)</string>
@@ -993,7 +993,7 @@
     <!-- text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header">താങ്കളുടെ സ്വകാര്യത</string>
     <!-- text for the privacy notice onboarding card description
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_privacy_notice_description">താങ്കൾ ഓൺലൈനിലും ഞങ്ങളുമായും പങ്കിടുന്ന കാര്യങ്ങളെ നിയന്ത്രിക്കാൻ
         ഞങ്ങൾ %s രൂപകൽപന ചെയ്തിരിക്കുന്നു</string>
     <!-- Text for the button to read the privacy notice -->
@@ -1041,7 +1041,7 @@
 
     <!-- Text shown in confirmation dialog to sign out of account -->
     <string name="sign_out_confirmation_message">താങ്കളുടെ അക്കൗണ്ടുമായി സമന്വയിപ്പിക്കുന്നത് ഫയർഫോക്സ് നിർത്തും പക്ഷേ ഈ ഉപകരണത്തിലുള്ള താങ്കളുടെ ബ്രൗസിങ്ങ് ഡാറ്റയൊന്നും നീക്കം ചെയ്യില്ല.</string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">താങ്കളുടെ അക്കൗണ്ടുമായി സമന്വയിപ്പിക്കുന്നത് %s നിർത്തും പക്ഷേ ഈ ഉപകരണത്തിലുള്ള താങ്കളുടെ ബ്രൗസിങ്ങ് ഡാറ്റയൊന്നും നീക്കം ചെയ്യില്ല.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">വിച്ഛേദിക്കുക</string>
@@ -1058,7 +1058,7 @@
     <string name="preference_enhanced_tracking_protection">മെച്ചപ്പെട്ട ട്രാക്കിംഗ് പരിരക്ഷണം</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">പിന്തുടരപ്പെടാതെ ബ്രൗസുചെയ്യുക</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">താങ്കളുടെ ഡാറ്റ താങ്കളുടേത് മാത്രമായി സൂക്ഷിക്കുക. ഓൺലൈനിൽ പിന്തുടരുന്ന മിക്ക ട്രാക്കറുകളിൽ നിന്നും %s താങ്കളെ പരിരക്ഷിക്കുന്നു.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">കൂടുതല്‍ അറിയുക</string>
@@ -1128,7 +1128,7 @@
     <string name="etp_tracking_content_title">പിന്തുടരുന്ന ഉള്ളടക്കം</string>
     <!-- Description of tracking content that can be blocked by Enhanced Tracking Protection -->
     <string name="etp_tracking_content_description">പിന്തുടരൽ കോഡ് അടങ്ങിയിരിക്കുന്ന പുറത്തുനിന്നുള്ള പരസ്യങ്ങൾ, വീഡിയോകൾ, മറ്റ് ഉള്ളടക്കം എന്നിവയുടെ ലഭ്യമാക്കൽ നിർത്തുന്നു. ചില വെബ്‌സൈറ്റ് പ്രവർത്തനങ്ങളെ ബാധിച്ചേക്കാം.</string>
-    <!-- Enhanced Tracking Protection Onboarding Message shown in a dialog above the toolbar. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Enhanced Tracking Protection Onboarding Message shown in a dialog above the toolbar. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="etp_onboarding_cfr_message">പരിചയ്ക്ക് പർപ്പിൾ നിറമാകുമ്പോളെല്ലാം, %s ഒരു സൈറ്റിലെ ട്രാക്കറുകളെ തടഞ്ഞിട്ടുണ്ട്. കൂടുതൽ വിവരങ്ങൾക്കായി അമർത്തുക.</string>
     <!-- Enhanced Tracking Protection message that protection is currently on for this site -->
     <string name="etp_panel_on">ഈ സൈറ്റിനായി പരിരക്ഷകൾ ഓണാണ്</string>
@@ -1195,25 +1195,25 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description">പെട്ടെന്ന് ലഭ്യമാവാനും ഒരു ആപ്പ്-പോലുള്ള അനുഭവത്തോടെ വേഗത്തിൽ ബ്രൗസ് ചെയ്യാനും ഈ വെബ്സൈറ്റിനെ താങ്കളുടെ ഫോണിന്റെ പൂമുഖത്തേക്ക് എളുപ്പത്തിൽ ചേർക്കാവുന്നതാണ്.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">ലോഗിനുകളും പാസ്‌വേഡുകളും</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">ലോഗിനുകളും പാസ്‌വേഡുകളും സംരക്ഷിക്കുക</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">സൂക്ഷിക്കാൻ ആവശ്യപ്പെടുക</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">ഒരിക്കലും സൂക്ഷിക്കേണ്ട</string>
-    <!-- Preference for autofilling saved logins in Fenix -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_autofill">സ്വയം പൂരിപ്പിക്കുക</string>
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">ലോഗിനുകൾ സമന്വയിപ്പിക്കുക</string>
-    <!-- Syncing saved logins in Fenix is on -->
+    <!-- Syncing saved logins in NETGPU BROWSER is on -->
     <string name="preferences_passwords_sync_logins_on">ഓണ്‍</string>
-    <!-- Syncing saved logins in Fenix is off -->
+    <!-- Syncing saved logins in NETGPU BROWSER is off -->
     <string name="preferences_passwords_sync_logins_off">ഓഫ്</string>
-    <!-- Syncing saved logins in Fenix needs reconnect to sync -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs reconnect to sync -->
     <string name="preferences_passwords_sync_logins_reconnect">വീണ്ടും ബന്ധിപ്പിക്കുക</string>
-    <!-- Syncing saved logins in Fenix needs login -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs login -->
     <string name="preferences_passwords_sync_logins_sign_in">സമന്വയിപ്പിക്കാനായി പ്രവേശിക്കുക</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">സൂക്ഷിച്ചിട്ടുള്ള പ്രവേശനങ്ങള്‍</string>
@@ -1247,11 +1247,11 @@
     <string name="logins_insecure_connection_warning">ഈ ബന്ധം സുരക്ഷിതമല്ല. ഇവിടെ നല്‍കിയ പ്രവേശനങ്ങളിൽ വിട്ടുവീഴ്ചകള്‍ ഉണ്ടായിട്ടുണ്ടാകാം</string>
     <!-- Learn more link that will link to a page with more information displayed when a connection is insecure and we detect the user is entering a password -->
     <string name="logins_insecure_connection_warning_learn_more">കൂടുതല്‍ അറിയുക</string>
-    <!-- Prompt message displayed when Fenix detects a user has entered a password and user decides if Fenix should save it. The first parameter is the name of the application (For example: Fenix)  -->
+    <!-- Prompt message displayed when NETGPU BROWSER detects a user has entered a password and user decides if NETGPU BROWSER should save it. The first parameter is the name of the application (For example: NETGPU BROWSER)  -->
     <string name="logins_doorhanger_save">താങ്കൾക്ക് %s ഈ ലോഗിൻ സംരക്ഷിക്കണമെന്നുണ്ടോ?</string>
-    <!-- Positive confirmation that Fenix should save the new or updated login -->
+    <!-- Positive confirmation that NETGPU BROWSER should save the new or updated login -->
     <string name="logins_doorhanger_save_confirmation">സംരക്ഷിക്കുക</string>
-    <!-- Negative confirmation that Fenix should not save the new or updated login -->
+    <!-- Negative confirmation that NETGPU BROWSER should not save the new or updated login -->
     <string name="logins_doorhanger_save_dont_save">സംരക്ഷിക്കേണ്ട</string>
     <!-- Shown in snackbar to tell user that the password has been copied -->
     <string name="logins_password_copied">ക്ലിപ്പ്ബോര്‍ഡിലേക്കു് രഹസ്യവാക്ക് പകര്‍ത്തി</string>
@@ -1415,19 +1415,19 @@
     <string name="saved_login_duplicate">അതെ പേരിൽ മറ്റൊരു ഉപയോക്താവ് നിലവിലുണ്ട്</string>
 
     <!-- Synced Tabs -->
-    <!-- Text displayed when user is not logged into a Firefox Account -->
+    <!-- Text displayed when user is not logged into a NETGPU BROWSER Account -->
     <string name="synced_tabs_connect_to_sync_account">ഫയർഫോക്സ് അക്കൗണ്ടുമായി ബന്ധിപ്പിക്കുക.</string>
     <!-- Text displayed to ask user to connect another device as no devices found with account -->
     <string name="synced_tabs_connect_another_device">മറ്റൊരു ഉപകരണം ബന്ധിപ്പിക്കുക.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">ദയവായി പുനഃപ്രമാണീകരിക്കുക</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">ടാബ് സമന്വയിപ്പിക്കൽ പ്രാപ്തമാക്കുക.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
     <string name="synced_tabs_no_tabs">താങ്കളുടെ മറ്റ് ഉപകരണങ്ങളിൽ ഫയർഫോക്സിൽ ടാബുകളൊന്നും തുറന്നതായിട്ടില്ല.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">നിങ്ങളുടെ മറ്റ് ഉപകരണങ്ങളിൽ നിന്നുള്ള ടാബുകളുടെ ഒരു ലിസ്റ്റ് കാണുക.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">സമന്വയിപ്പിക്കാനായി പ്രവേശിക്കുക</string>
 
     <!-- Top Sites -->

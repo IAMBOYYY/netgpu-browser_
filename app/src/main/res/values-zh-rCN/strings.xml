@@ -2,9 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">私密 %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (隐私模式)</string>
 
     <!-- Home Fragment -->
@@ -57,12 +57,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">移除</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s 由 Mozilla 倾力打造。</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s 会在关闭所有隐私标签页或退出应用时，清除您的搜索记录与浏览历史。虽然这样仍无法对网站和电信运营商匿名，但还是可以更简单地防止其他使用此设备的人得知您的上网活动。</string>
     <string name="private_browsing_common_myths">正确认识隐私浏览功能</string>
 
@@ -201,15 +201,15 @@
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">分享</string>
 
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">用 %1$s 打开</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">由 %1$s 驱动</string>
 
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">由 %1$s 驱动</string>
 
     <!-- Browser menu button to put the current page in reader mode -->
@@ -257,7 +257,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">不允许</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">要允许在隐私窗口中显示搜索建议吗？</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s 会把您在地址栏中输入的任何内容告知默认搜索引擎。</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -301,10 +301,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">允许通知可以让 %s 更贴心好用</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">在设备间同步标签页、管理下载、了解充分利用 %s 来保护隐私的窍门，还有更多实用功能。</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">继续</string>
@@ -328,7 +328,7 @@
 
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">常规</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">关于</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">默认搜索引擎</string>
@@ -336,10 +336,10 @@
     <string name="preferences_search">搜索</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">地址栏</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">在 Google Play 上评分</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">关于 %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">设为默认浏览器</string>
@@ -371,7 +371,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">开</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox 会自动尝试点击 Cookie 横幅上的“拒绝”按钮。若网站未提供拒绝选项，则可能会接受所有 Cookie 以关闭横幅。</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER 会自动尝试点击 Cookie 横幅上的“拒绝”按钮。若网站未提供拒绝选项，则可能会接受所有 Cookie 以关闭横幅。</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">%1$s 会尝试自动拒绝 Cookie 横幅的 Cookie 请求。</string>
@@ -450,12 +450,12 @@
     <string name="errorpage_httpsonly_message_summary">然而也可能是受到网络攻击。若您要继续访问此网站，则不应输入任何敏感信息。若继续，将暂时为此网站关闭 HTTPS-Only 模式。</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">无障碍环境</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">自定义 Firefox 账户服务器</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">自定义 NETGPU BROWSER 账户服务器</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">自定义同步服务器</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">已更改 Firefox 账户/同步服务器设置。退出应用程序以应用更改…</string>
+    <string name="toast_override_fxa_sync_server_done">已更改 NETGPU BROWSER 账户/同步服务器设置。退出应用程序以应用更改…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">账户</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -471,7 +471,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">登录后即可同步标签页、书签、密码等数据。</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Firefox 账户</string>
+    <string name="preferences_account_default_name">NETGPU BROWSER 账户</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">重新连接以恢复同步</string>
     <!-- Preference for language -->
@@ -571,7 +571,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">详细了解</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">%s 经典</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">限定版</string>
@@ -637,7 +637,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">收到标签页</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">收到来自其他 Firefox 设备的标签页通知。</string>
+    <string name="fxa_received_tab_channel_description">收到来自其他 NETGPU BROWSER 设备的标签页通知。</string>
 
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">收到标签页</string>
@@ -830,7 +830,7 @@
     <string name="studies_remove">移除</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">进行中</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s 可能会不时地安装并运行一些研究项目。</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">详细了解</string>
@@ -957,7 +957,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">抱歉，%1$s 无法加载该页面。</string>
 
     <!-- Send crash report checkbox text on the tab crash page -->
@@ -1220,7 +1220,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">连接其他设备</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">请在至少另一台设备上的 Firefox 登录才能发送标签页。</string>
+    <string name="sync_connect_device_dialog">请在至少另一台设备上的 NETGPU BROWSER 登录才能发送标签页。</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">明白了</string>
 
@@ -1242,10 +1242,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">市场营销</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s 又快、又有隐私</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">将 %1$s 设为默认浏览器</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1387,11 +1387,11 @@
     <string name="onboarding_header_2">欢迎进入更美好的互联网</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">生为民，不谋利的浏览器。</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">从上次看到的地方继续</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">跨设备同步标签页和密码，实现无缝浏览体验。</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">登录</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">同步已开启</string>
@@ -1414,7 +1414,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">数据由自己掌控</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox 让您可以控制要在网上披露哪些内容，以及告诉我们哪些信息。</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER 让您可以控制要在网上披露哪些内容，以及告诉我们哪些信息。</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">阅读我们的隐私声明</string>
 
@@ -1448,16 +1448,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">扫码</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[在计算机上使用 Firefox 打开 <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[在计算机上使用 NETGPU BROWSER 打开 <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">立即扫码</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">使用相机登录</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">改用电子邮件</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[尚无账户？<u>立即创建</u>以在设备间同步 Firefox。]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[尚无账户？<u>立即创建</u>以在设备间同步 NETGPU BROWSER。]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s 将停止与您的账户的同步，但不会删除您在这台设备上的任何上网数据。</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">断开连接</string>
@@ -1474,7 +1474,7 @@
     <string name="preference_enhanced_tracking_protection">增强型跟踪保护</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">自由上网，拒绝跟踪</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">你的数据只由你掌握。%s 可保护您免受大多数常见的跟踪器对您在线活动的窥视。</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">详细了解</string>
@@ -1618,31 +1618,31 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">您可以轻松将此网站添加到设备主屏幕，以便迅捷访问并以类似应用的体验畅享浏览。</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">密码</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">保存登录名和密码</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">询问是否保存</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">总不保存</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">在 %1$s 中自动填充</string>
 
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">在使用 %1$s 时，填充和保存网页中的用户名和密码。</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">在其他应用程序中自动填充</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">在您设备上的其他应用程序中填充用户名和密码。</string>
 
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">添加登录信息</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">同步登录信息</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">跨设备同步登录信息</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">保存的登录信息</string>
@@ -1963,13 +1963,13 @@
     <string name="synced_tabs_connect_another_device">绑定其他设备</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">请重新验证。</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">请启用标签页同步。</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">您其他设备上的 Firefox 没有打开任何标签页。</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">您其他设备上的 NETGPU BROWSER 没有打开任何标签页。</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">查看您其他设备上的标签页列表。</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">登录同步服务</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -2021,7 +2021,7 @@
     <!-- The header text of the auto-close message when the user is asked if they want to turn on the auto-closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">要一个月后自动关闭吗？</string>
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox 可自动关闭您一个月内未查看的标签页。</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER 可自动关闭您一个月内未查看的标签页。</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">启用自动关闭标签页功能</string>
 
@@ -2029,8 +2029,8 @@
     <string name="inactive_tabs_auto_close_message_snackbar">已启用“自动关闭”</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Firefox 建议</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">NETGPU BROWSER 建议</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">Google 搜索</string>
@@ -2038,7 +2038,7 @@
     <string name="other_default_search_engine_suggestion_header">%s · 搜索</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">将网站、电子邮件及聊天工具中的链接设为在 Firefox 中自动打开。</string>
+    <string name="default_browser_experiment_card_text">将网站、电子邮件及聊天工具中的链接设为在 NETGPU BROWSER 中自动打开。</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">移除</string>
@@ -2062,7 +2062,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">由 %s 提供。</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Firefox 系列产品。%s</string>
+    <string name="pocket_stories_feature_caption">NETGPU BROWSER 系列产品。%s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">详细了解</string>
 

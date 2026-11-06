@@ -594,6 +594,8 @@ dependencies {
     implementation FenixDependencies.adjust
     implementation FenixDependencies.installreferrer // Required by Adjust
 
+    implementation FenixDependencies.okhttp
+
     implementation FenixDependencies.google_ads_id // Required for the Google Advertising ID
 
     // Required for in-app reviews

@@ -60,14 +60,14 @@
     <string name="browser_menu_find_in_page">Aimsigh sa leathanach</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Comhroinn</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Oscail in %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">Á CHUMHACHTÚ AG %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Á chumhachtú ag %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Amharc léitheoireachta</string>
@@ -95,7 +95,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Ná ceadaigh</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Ceadaigh moltaí cuardaigh i seisiúin phríobháideacha?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">Comhroinneann %s gach uile rud a chuireann tú isteach sa mbarra suímh leis an inneall cuardaigh réamhshocraithe.</string>
     <!-- Search suggestion onboarding hint Learn more link text -->
     <string moz:RemovedIn="100" name="search_suggestions_onboarding_learn_more_link" tools:ignore="UnusedResources">Tuilleadh eolais</string>
@@ -110,7 +110,7 @@
     <string name="settings">Socruithe</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Ginearálta</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Maidir Leis</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Inneall cuardaigh réamhshocraithe</string>
@@ -118,10 +118,10 @@
     <string name="preferences_search">Cuardach</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Barra suímh</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Rátáil ar Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Maidir le %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Déan brabhsálaí réamhshocraithe de</string>
@@ -149,9 +149,9 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Saincheap</string>
     <!-- Preference description for banner about signing in -->
-    <string name="preferences_sign_in_description">Sioncronaigh leabharmharcanna, stair, agus tuilleadh le do chuntas Firefox</string>
+    <string name="preferences_sign_in_description">Sioncronaigh leabharmharcanna, stair, agus tuilleadh le do chuntas NETGPU BROWSER</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Cuntas Firefox</string>
+    <string name="preferences_account_default_name">Cuntas NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Athcheangail chun sioncronú a thosú arís</string>
     <!-- Preference for language -->
@@ -212,7 +212,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Cluaisíní faighte</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Fógraí maidir le cluaisíní a fhaigheann tú ó Firefox ar ghléasanna eile.</string>
+    <string name="fxa_received_tab_channel_description">Fógraí maidir le cluaisíní a fhaigheann tú ó NETGPU BROWSER ar ghléasanna eile.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Cluaisín Faighte</string>
     <!-- %s is the device name -->
@@ -324,7 +324,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Ní féidir le %1$s an leathanach sin a lódáil.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Seol tuairisc tuairteála chuig Mozilla</string>
@@ -489,7 +489,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Ceangail gléas eile</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Chun cluaisín a sheoladh, logáil isteach i bhFirefox ar ghléas amháin eile ar a laghad.</string>
+    <string name="sync_connect_device_dialog">Chun cluaisín a sheoladh, logáil isteach i bhNETGPU BROWSER ar ghléas amháin eile ar a laghad.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Tuigim</string>
     <!-- Share error message -->
@@ -594,7 +594,7 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">Fáilte go dtí %s!</string>
 
     <!-- text to display in the snackbar once account is signed-in -->
@@ -630,7 +630,7 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Scan an cód</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Oscail Firefox ar do ríomhaire agus tabhair cuairt ar <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Oscail NETGPU BROWSER ar do ríomhaire agus tabhair cuairt ar <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Réidh le scanadh</string>
     <!-- Text shown for settings option for sign with pairing -->
@@ -652,7 +652,7 @@
     <string name="preference_enhanced_tracking_protection">Ardchosaint ar Lorgaireacht</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Brabhsáil gan lorgaireacht</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Coinnigh do chuid sonraí agat féin. Cosnaíonn %s thú ar na lorgairí is coitianta a leanann na rudaí a dhéanann tú ar líne.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Tuilleadh eolais</string>
@@ -733,16 +733,16 @@
     <!-- Placeholder text for the TextView in the Add to Homescreen dialog -->
     <string name="add_to_homescreen_text_placeholder">Ainm an aicearra</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Focail fhaire</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Sábháil focail fhaire</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Fiafraigh roimh shábháil</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Ná sábháil riamh</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Sioncronaigh focail fhaire</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Focail fhaire a sábháladh</string>

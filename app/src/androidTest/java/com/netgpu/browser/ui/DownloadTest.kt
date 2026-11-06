@@ -123,7 +123,7 @@ class DownloadTest {
         }.clickDownload {}
         mDevice.openNotification()
         notificationShade {
-            verifySystemNotificationExists("NETGPU BROWSER Fenix")
+            verifySystemNotificationExists("NETGPU BROWSER")
             expandNotificationMessage()
             clickDownloadNotificationControlButton("PAUSE")
             clickDownloadNotificationControlButton("RESUME")

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Uslig %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Uslig)</string>
 
     <!-- Placeholder text shown in the search bar before a user enters text -->
@@ -48,8 +48,8 @@
     <string name="browser_menu_share">Bḍu</string>
     <!-- Share menu title, displayed when a user is sharing their current site -->
     <string name="menu_share_with">Bḍu d…</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Rẓem g %1$s</string>
     <!-- Browser menu button to open the current page in an external app -->
     <string name="browser_menu_open_app_link">Rẓem g tsensi</string>
@@ -82,8 +82,8 @@
     <string name="search_engine_suggestions_title">Rzu %s</string>
 
     <!-- Search Widget -->
-    <!-- Content description for searching with a widget. Firefox is intentionally hardcoded.-->
-    <string name="search_widget_content_description">Rẓem Aseksel amaynu n Firefox</string>
+    <!-- Content description for searching with a widget. NETGPU BROWSER is intentionally hardcoded.-->
+    <string name="search_widget_content_description">Rẓem Aseksel amaynu n NETGPU BROWSER</string>
     <!-- Text preview for smaller sized widgets -->
     <string name="search_widget_text_short">Rzu</string>
     <!-- Text preview for larger sized widgets -->
@@ -94,14 +94,14 @@
     <string name="settings">Tisɣal</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Amatay</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Ɣef</string>
     <!-- Preference for settings related to Search -->
     <string name="preferences_search">Arezzu</string>
-    <!-- Preference linking to help about Fenix -->
+    <!-- Preference linking to help about NETGPU BROWSER -->
     <string name="preferences_help">Tiwisi</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Ɣef %1$s</string>
     <!-- Preference linking to the your rights SUMO page -->
     <string name="preferences_your_rights">Izerfan-nnek/m</string>
@@ -116,7 +116,7 @@
     <!-- Preference for changing default theme to dark or light mode -->
     <string name="preferences_theme">Asgum</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Amiḍan Firefox</string>
+    <string name="preferences_account_default_name">Amiḍan NETGPU BROWSER</string>
     <!-- Preference for language -->
     <string name="preferences_language">Tutlayt</string>
     <!-- Preference for account settings -->
@@ -358,7 +358,7 @@
 
     <!-- Text shown in the notification that pops up to remind the user that a private browsing session is active. -->
     <string name="notification_pbm_delete_text_2">Mdel iseksal usligen</string>
-    <!-- Notification action to open Fenix and resume the current browsing session. -->
+    <!-- Notification action to open NETGPU BROWSER and resume the current browsing session. -->
     <string name="notification_pbm_action_open">Rẓem</string>
     <!-- Text shown in snackbar action for viewing bookmarks -->
     <string name="snackbar_message_bookmarks_view">Sken</string>
@@ -390,7 +390,7 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">Ansuf ɣer %s!</string>
     <!-- text for the private browsing onbording card button, that launches settings -->
     <string name="onboarding_private_browsing_button">Rẓem tisɣal</string>

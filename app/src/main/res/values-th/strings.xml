@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s ส่วนตัว</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (ส่วนตัว)</string>
 
     <!-- Home Fragment -->
@@ -52,12 +52,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">เอาออก</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s ผลิตขึ้นโดย Mozilla</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s จะล้างประวัติการค้นหาและประวัติการเรียกดูของคุณจากแท็บส่วนตัวเมื่อคุณปิดแท็บเหล่านั้นหรือออกจากแอป แม้ว่าสิ่งนี้จะไม่ทำให้คุณไม่เปิดเผยตัวตนกับเว็บไซต์หรือผู้ให้บริการอินเทอร์เน็ตของคุณ แต่จะทำให้การรักษาความเป็นส่วนตัวของสิ่งที่คุณทำออนไลน์จากผู้อื่นที่ใช้อุปกรณ์เครื่องนี้ง่ายขึ้น</string>
     <string name="private_browsing_common_myths">ความเข้าใจผิดที่พบบ่อยเกี่ยวกับการท่องเว็บแบบส่วนตัว</string>
 
@@ -195,14 +195,14 @@
     <string name="browser_menu_save_to_collection_2">บันทึกไปยังชุดสะสม</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">แบ่งปัน</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">เปิดใน %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">ขับเคลื่อนโดย %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">ขับเคลื่อนโดย %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">มุมมองผู้อ่าน</string>
@@ -248,7 +248,7 @@
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">อนุญาตคำแนะนำการค้นหาในวาระส่วนตัวหรือไม่?</string>
 
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s จะแบ่งปันทุกอย่างที่คุณพิมพ์ในแถบที่อยู่ไปยังเครื่องมือค้นหาเริ่มต้นของคุณ</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -291,10 +291,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">การแจ้งเตือนช่วยให้คุณทำสิ่งต่างๆ ได้มากขึ้นด้วย %s</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">ซิงค์แท็บของคุณระหว่างอุปกรณ์ต่างๆ จัดการการดาวน์โหลด รับคำแนะนำเกี่ยวกับการใช้ประโยชน์สูงสุดจากการปกป้องความเป็นส่วนตัวของ %s และอื่นๆ</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">ดำเนินการต่อ</string>
@@ -317,7 +317,7 @@
     <string name="settings">การตั้งค่า</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">ทั่วไป</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">เกี่ยวกับ</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">เครื่องมือค้นหาเริ่มต้น</string>
@@ -325,10 +325,10 @@
     <string name="preferences_search">ค้นหา</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">แถบที่อยู่</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">ให้คะแนนบน Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">เกี่ยวกับ %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">ตั้งเป็นเบราว์เซอร์เริ่มต้น</string>
@@ -361,7 +361,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">เปิด</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox จะพยายามปฏิเสธคำขอคุกกี้บนแบนเนอร์คุกกี้โดยอัตโนมัติ หากไม่มีตัวเลือกปฏิเสธ Firefox อาจยอมรับคุกกี้ทั้งหมดเพื่อปิดแบนเนอร์</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER จะพยายามปฏิเสธคำขอคุกกี้บนแบนเนอร์คุกกี้โดยอัตโนมัติ หากไม่มีตัวเลือกปฏิเสธ NETGPU BROWSER อาจยอมรับคุกกี้ทั้งหมดเพื่อปิดแบนเนอร์</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">%1$s จะพยายามปฏิเสธคำขอคุกกี้บนแบนเนอร์คุกกี้โดยอัตโนมัติ</string>
@@ -441,12 +441,12 @@
     <string name="errorpage_httpsonly_message_summary">อย่างไรก็ตาม อาจเป็นไปได้ว่าผู้โจมตีมีส่วนเกี่ยวข้อง หากคุณเข้าสู่เว็บไซต์ต่อไป คุณไม่ควรป้อนข้อมูลที่ละเอียดอ่อนใด ๆ หากคุณดำเนินการต่อ โหมด HTTPS-Only จะปิดชั่วคราวสำหรับเว็บไซต์นี้</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">การช่วยเข้าถึง</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">เซิร์ฟเวอร์บัญชี Firefox ที่กำหนดเอง</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">เซิร์ฟเวอร์บัญชี NETGPU BROWSER ที่กำหนดเอง</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">เซิร์ฟเวอร์ Sync ที่กำหนดเอง</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">เปลี่ยนแปลงเซิร์ฟเวอร์บัญชี Firefox/Sync แล้ว กำลังออกจากแอปพลิเคชันเพื่อนำการเปลี่ยนแปลงไปใช้…</string>
+    <string name="toast_override_fxa_sync_server_done">เปลี่ยนแปลงเซิร์ฟเวอร์บัญชี NETGPU BROWSER/Sync แล้ว กำลังออกจากแอปพลิเคชันเพื่อนำการเปลี่ยนแปลงไปใช้…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">บัญชี</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -462,7 +462,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">ลงชื่อเข้าเพื่อซิงค์แท็บ ที่คั่นหน้า รหัสผ่าน และอื่น ๆ ของคุณ</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">บัญชี Firefox</string>
+    <string name="preferences_account_default_name">บัญชี NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">เชื่อมต่ออีกครั้งเพื่อทำการซิงค์ต่อ</string>
     <!-- Preference for language -->
@@ -561,7 +561,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">เรียนรู้เพิ่มเติม</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">คลาสสิค %s</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">เวลาจำกัด</string>
@@ -627,7 +627,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">แท็บที่ได้รับ</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">การแจ้งเตือนสำหรับแท็บที่ได้รับจากอุปกรณ์ Firefox อื่น ๆ</string>
+    <string name="fxa_received_tab_channel_description">การแจ้งเตือนสำหรับแท็บที่ได้รับจากอุปกรณ์ NETGPU BROWSER อื่น ๆ</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">แท็บที่ได้รับ</string>
     <!-- %s is the device name -->
@@ -814,7 +814,7 @@
     <string name="studies_remove">เอาออก</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">ใช้งานอยู่</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s อาจติดตั้งและเรียกใช้การศึกษาเป็นครั้งคราว</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">เรียนรู้เพิ่มเติม</string>
@@ -939,7 +939,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">ขออภัย %1$s ไม่สามารถโหลดหน้านั้นได้</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">ส่งรายงานข้อขัดข้องไปยัง Mozilla</string>
@@ -1184,7 +1184,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">เชื่อมต่ออุปกรณ์อื่น</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">เมื่อต้องการส่งแท็บ ให้ลงชื่อเข้าไปยัง Firefox บนอุปกรณ์อื่นอย่างน้อยหนึ่งเครื่อง</string>
+    <string name="sync_connect_device_dialog">เมื่อต้องการส่งแท็บ ให้ลงชื่อเข้าไปยัง NETGPU BROWSER บนอุปกรณ์อื่นอย่างน้อยหนึ่งเครื่อง</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">เข้าใจแล้ว</string>
     <!-- Share error message -->
@@ -1204,10 +1204,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">การตลาด</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s รวดเร็วและเป็นส่วนตัว</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">ทำให้ %1$s เป็นเบราว์เซอร์เริ่มต้นของคุณ</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1343,11 +1343,11 @@
     <string name="onboarding_header_2">ยินดีต้อนรับสู่อินเทอร์เน็ตที่ดีกว่า</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">เบราว์เซอร์ที่สร้างขึ้นสำหรับผู้คนเท่านั้น ไม่ใช่ผลกำไร</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">หยิบจากที่ที่คุณทำค้างไว้</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">ซิงค์แท็บและรหัสผ่านระหว่างอุปกรณ์เพื่อการสลับหน้าจอที่ราบรื่น</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">เข้าสู่ระบบ</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync เปิดอยู่</string>
@@ -1370,7 +1370,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">คุณควบคุมข้อมูลของคุณ</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox ให้คุณควบคุมสิ่งที่คุณแบ่งปันทางออนไลน์และสิ่งที่คุณแบ่งปันกับเรา</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER ให้คุณควบคุมสิ่งที่คุณแบ่งปันทางออนไลน์และสิ่งที่คุณแบ่งปันกับเรา</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">อ่านประกาศความเป็นส่วนตัวของเรา</string>
 
@@ -1405,16 +1405,16 @@
     <string name="sync_scan_code">สแกนรหัส</string>
 
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[บนคอมพิวเตอร์ของคุณ ให้เปิด Firefox แล้วไปที่ <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[บนคอมพิวเตอร์ของคุณ ให้เปิด NETGPU BROWSER แล้วไปที่ <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">พร้อมที่จะสแกน</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">ลงชื่อเข้าด้วยกล้องของคุณ</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">ใช้อีเมลแทน</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[ไม่มีบัญชีใช่หรือไม่? <u>สร้างบัญชี</u>เพื่อซิงค์ Firefox ระหว่างอุปกรณ์]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[ไม่มีบัญชีใช่หรือไม่? <u>สร้างบัญชี</u>เพื่อซิงค์ NETGPU BROWSER ระหว่างอุปกรณ์]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s จะหยุดซิงค์กับบัญชีของคุณ แต่จะไม่ลบข้อมูลการท่องเว็บใด ๆ ของคุณบนอุปกรณ์นี้</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">ตัดการเชื่อมต่อ</string>
@@ -1430,7 +1430,7 @@
     <string name="preference_enhanced_tracking_protection">การป้องกันการติดตามที่มากขึ้น</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">เรียกดูโดยไม่ต้องมีใครมาติดตาม</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">เก็บข้อมูลของคุณไว้กับตัวคุณเอง %s ปกป้องคุณจากตัวติดตามที่พบบ่อยที่สุดซึ่งติดตามสิ่งที่คุณทำทางออนไลน์</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">เรียนรู้เพิ่มเติม</string>
@@ -1574,31 +1574,31 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">คุณสามารถเพิ่มเว็บไซต์นี้ลงในหน้าจอหลักของอุปกรณ์ของคุณเพื่อเข้าถึงและเรียกดูได้เร็วขึ้นด้วยประสบการณ์ที่เหมือนแอป</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">การเข้าสู่ระบบและรหัสผ่าน</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">บันทึกการเข้าสู่ระบบและรหัสผ่าน</string>
 
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">ถามเพื่อบันทึก</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">ไม่บันทึกเสมอ</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">กรอกอัตโนมัติ %1$s</string>
 
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">เติมและบันทึกชื่อผู้ใช้และรหัสผ่านในเว็บไซต์ต่าง ๆ ขณะที่ใช้ %1$s</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">เติมข้อมูลในแอปอื่น ๆ อัตโนมัติ</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">เติมชื่อผู้ใช้และรหัสผ่านในแอปอื่น ๆ บนอุปกรณ์ของคุณ</string>
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">เพิ่มการเข้าสู่ระบบ</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">ซิงค์การเข้าสู่ระบบ</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">ซิงค์การเข้าสู่ระบบระหว่างอุปกรณ์</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">การเข้าสู่ระบบที่บันทึกไว้</string>
@@ -1919,13 +1919,13 @@
 
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">โปรดรับรอบความถูกต้องอีกครั้ง</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">โปรดเปิดใช้งานซิงค์แท็บ</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">คุณไม่มีแท็บใด ๆ ที่เปิดอยู่ใน Firefox บนอุปกรณ์อื่น ๆ ของคุณ</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">คุณไม่มีแท็บใด ๆ ที่เปิดอยู่ใน NETGPU BROWSER บนอุปกรณ์อื่น ๆ ของคุณ</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">ดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">ลงชื่อเข้าใช้เพื่อซิงค์</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -1978,15 +1978,15 @@
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">ปิดอัตโนมัติหลังจากหนึ่งเดือน?</string>
 
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox สามารถปิดแท็บที่คุณไม่ได้ดูในช่วงเดือนที่ผ่านมาได้</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER สามารถปิดแท็บที่คุณไม่ได้ดูในช่วงเดือนที่ผ่านมาได้</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">เปิดการปิดอัตโนมัติ</string>
     <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
     <string name="inactive_tabs_auto_close_message_snackbar">เปิดใช้งานการปิดอัตโนมัติแล้ว</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Firefox Suggest</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">NETGPU BROWSER Suggest</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">ค้นหาด้วย Google</string>
@@ -1994,7 +1994,7 @@
     <string name="other_default_search_engine_suggestion_header">ค้นหาด้วย %s</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">ตั้งลิงก์จากเว็บไซต์ อีเมล และข้อความให้เปิดโดยอัตโนมัติใน Firefox</string>
+    <string name="default_browser_experiment_card_text">ตั้งลิงก์จากเว็บไซต์ อีเมล และข้อความให้เปิดโดยอัตโนมัติใน NETGPU BROWSER</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">ลบ</string>
@@ -2018,7 +2018,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">ขับเคลื่อนโดย %s</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">ส่วนหนึ่งของตระกูล Firefox %s</string>
+    <string name="pocket_stories_feature_caption">ส่วนหนึ่งของตระกูล NETGPU BROWSER %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">เรียนรู้เพิ่มเติม</string>
 

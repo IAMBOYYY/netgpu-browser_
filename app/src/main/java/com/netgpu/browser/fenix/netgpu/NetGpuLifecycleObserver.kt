@@ -4,17 +4,16 @@
 
 package com.netgpu.browser.fenix.netgpu
 
-import android.app.Application
-import android.content.Context
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 
-class NetGpuLifecycleObserver(private val context: Context) : DefaultLifecycleObserver {
+class NetGpuLifecycleObserver : DefaultLifecycleObserver {
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 

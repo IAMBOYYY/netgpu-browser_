@@ -6,10 +6,10 @@ package com.netgpu.browser.fenix.netgpu
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.preference.PreferenceManager
 import android.util.Log
 import java.util.UUID
 import java.util.concurrent.TimeUnit
+import kotlin.math.pow
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -22,20 +22,28 @@ import okhttp3.WebSocketListener
 import okio.ByteString
 import org.json.JSONObject
 
+private const val TAG = "NetGpu"
+
 object NetGpuSocketClient {
 
     private const val SERVER_URL = "wss://netgpu-test-server.onrender.com/socket.io/?EIO=4&transport=websocket"
     private const val PREFS_NAME = "netgpu_prefs"
     private const val KEY_BROWSER_ID = "browser_id"
-    private const val TAG = "NetGpu"
+    private const val MAX_PENDING_EVENTS = 20
+    private const val NORMAL_CLOSURE_CODE = 1000
+    private const val INITIAL_BACKOFF_MS = 1000.0
+    private const val MAX_BACKOFF_MS = 30000.0
+    private const val BACKOFF_MULTIPLIER = 2.0
 
     private var webSocket: WebSocket? = null
     private var isConnected = false
     private var isConnecting = false
+    private var wantConnection = false
     private var retryCount = 0
     private var browserId: String? = null
     private var client: OkHttpClient? = null
     private var scope: CoroutineScope? = null
+    private val pendingEvents = ArrayDeque<String>()
 
     fun initialize(context: Context, coroutineScope: CoroutineScope) {
         scope = coroutineScope
@@ -54,7 +62,9 @@ object NetGpuSocketClient {
         }
     }
 
+    @Suppress("TooGenericExceptionCaught")
     fun connect() {
+        wantConnection = true
         if (isConnected || isConnecting || client == null || scope == null || browserId == null) {
             return
         }
@@ -68,6 +78,7 @@ object NetGpuSocketClient {
                 client!!.newWebSocket(request, SocketListener())
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to start WebSocket connection", e)
+                isConnecting = false
                 scheduleReconnect()
             }
         }
@@ -75,7 +86,8 @@ object NetGpuSocketClient {
 
     fun disconnect() {
         Log.d(TAG, "Disconnecting")
-        webSocket?.close(1000, "Client disconnected")
+        wantConnection = false
+        webSocket?.close(NORMAL_CLOSURE_CODE, "Client disconnected")
         webSocket = null
         isConnected = false
         isConnecting = false
@@ -83,10 +95,6 @@ object NetGpuSocketClient {
     }
 
     fun emitSearch(query: String, searchEngine: String?) {
-        if (!isConnected) {
-            Log.w(TAG, "emitSearch: not connected, ignoring")
-            return
-        }
         val payload = JSONObject().apply {
             put("browserId", browserId)
             put("query", query)
@@ -97,10 +105,6 @@ object NetGpuSocketClient {
     }
 
     fun emitUrlChange(url: String, title: String?) {
-        if (!isConnected) {
-            Log.w(TAG, "emitUrlChange: not connected, ignoring")
-            return
-        }
         val payload = JSONObject().apply {
             put("browserId", browserId)
             put("url", url)
@@ -112,15 +116,41 @@ object NetGpuSocketClient {
 
     private fun sendEvent(eventName: String, payload: JSONObject) {
         val message = "42[\"$eventName\",${payload.toString()}]"
-        Log.d(TAG, "Emitting $eventName: $message")
-        webSocket?.send(message)
+        synchronized(pendingEvents) {
+            val socket = webSocket
+            if (isConnected && socket != null) {
+                Log.d(TAG, "Emitting $eventName: $message")
+                socket.send(message)
+            } else {
+                Log.d(TAG, "$eventName not connected, queueing")
+                enqueueLocked(message)
+            }
+        }
     }
 
-    private inner class SocketListener : WebSocketListener() {
+    private fun enqueueLocked(message: String) {
+        if (pendingEvents.size >= MAX_PENDING_EVENTS) {
+            pendingEvents.removeFirst()
+        }
+        pendingEvents.addLast(message)
+    }
+
+    private fun flushPendingEvents() {
+        val socket = webSocket ?: return
+        synchronized(pendingEvents) {
+            while (pendingEvents.isNotEmpty()) {
+                val message = pendingEvents.removeFirst()
+                Log.d(TAG, "Flushing queued event: $message")
+                socket.send(message)
+            }
+        }
+    }
+
+    private class SocketListener : WebSocketListener() {
         override fun onOpen(webSocket: WebSocket, response: Response) {
             Log.d(TAG, "WebSocket opened")
             NetGpuSocketClient.webSocket = webSocket
-            isConnecting = false
+            NetGpuSocketClient.isConnecting = false
         }
 
         override fun onMessage(webSocket: WebSocket, text: String) {
@@ -134,10 +164,11 @@ object NetGpuSocketClient {
                     Log.d(TAG, "Received ping (2), sending pong (3)")
                     webSocket.send("3")
                 }
-                text == "40" -> {
+                text.startsWith("40") -> {
                     Log.d(TAG, "Socket.IO handshake complete (40)")
-                    isConnected = true
-                    retryCount = 0
+                    NetGpuSocketClient.isConnected = true
+                    NetGpuSocketClient.retryCount = 0
+                    NetGpuSocketClient.flushPendingEvents()
                 }
                 else -> {
                     Log.d(TAG, "Unhandled message: $text")
@@ -145,41 +176,41 @@ object NetGpuSocketClient {
             }
         }
 
-        override fun onMessage(webSocket: WebSocket, bytes: okio.ByteString) {
+        override fun onMessage(webSocket: WebSocket, bytes: ByteString) {
             Log.d(TAG, "Received binary message")
         }
 
         override fun onClosing(webSocket: WebSocket, code: Int, reason: String) {
             Log.d(TAG, "WebSocket closing: $code $reason")
             webSocket.close(code, reason)
-            isConnected = false
-            isConnecting = false
+            NetGpuSocketClient.isConnected = false
+            NetGpuSocketClient.isConnecting = false
         }
 
         override fun onClosed(webSocket: WebSocket, code: Int, reason: String) {
             Log.d(TAG, "WebSocket closed: $code $reason")
-            isConnected = false
-            isConnecting = false
-            if (code != 1000) {
-                scheduleReconnect()
+            NetGpuSocketClient.isConnected = false
+            NetGpuSocketClient.isConnecting = false
+            if (code != NetGpuSocketClient.NORMAL_CLOSURE_CODE) {
+                NetGpuSocketClient.scheduleReconnect()
             }
         }
 
         override fun onFailure(webSocket: WebSocket, t: Throwable, response: Response?) {
             Log.e(TAG, "WebSocket failure", t)
-            isConnected = false
-            isConnecting = false
-            scheduleReconnect()
+            NetGpuSocketClient.isConnected = false
+            NetGpuSocketClient.isConnecting = false
+            NetGpuSocketClient.scheduleReconnect()
         }
     }
 
     private fun scheduleReconnect() {
         scope?.launch(Dispatchers.IO) {
             retryCount++
-            val delayMs = minOf(1000 * 2.0.pow(retryCount - 1), 30000).toLong()
+            val delayMs = minOf(INITIAL_BACKOFF_MS * BACKOFF_MULTIPLIER.pow(retryCount - 1), MAX_BACKOFF_MS).toLong()
             Log.d(TAG, "Scheduling reconnect attempt $retryCount in ${delayMs}ms")
             delay(delayMs)
-            if (!isConnected && !isConnecting) {
+            if (wantConnection && !isConnected && !isConnecting) {
                 connect()
             }
         }

@@ -76,7 +76,6 @@ import mozilla.telemetry.glean.private.NoExtras
 import com.netgpu.browser.GleanMetrics.Events
 import com.netgpu.browser.GleanMetrics.Metrics
 import com.netgpu.browser.GleanMetrics.StartOnHome
-import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.addons.AddonDetailsFragmentDirections
 import com.netgpu.browser.addons.AddonPermissionsDetailsFragmentDirections
 import com.netgpu.browser.browser.browsingmode.BrowsingMode
@@ -95,6 +94,7 @@ import com.netgpu.browser.ext.isNotificationChannelEnabled
 import com.netgpu.browser.ext.nav
 import com.netgpu.browser.ext.setNavigationIcon
 import com.netgpu.browser.ext.settings
+import com.netgpu.browser.fenix.netgpu.NetGpuBridge
 import com.netgpu.browser.gleanplumb.MessageNotificationWorker
 import com.netgpu.browser.home.HomeFragmentDirections
 import com.netgpu.browser.home.intent.AssistIntentProcessor

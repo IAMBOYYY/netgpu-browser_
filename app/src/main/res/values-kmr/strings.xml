@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s’a veşartî</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Veşartî)</string>
 
 
@@ -52,12 +52,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Rake</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s berhemeke Mozillayê ye.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         %1$s, dema ku te hilpekînên veşartî girtin an jî tu ji sepanê derket ew ê raboriya te ya gerîn û lêgerînê ji hilpekînên veşartî bên paqijkirin. Ev, rê li ber şopandina te ya ji aliyê malper û peydakerên servîsê ve nagirê lê heke hin kesên din ên vê cîhazê bi kar tînin hebin ew ê bihêle ku tu raboriya xwe ji wan veşêrî.</string>
     <string name="private_browsing_common_myths">
@@ -199,14 +199,14 @@
     <string name="browser_menu_save_to_collection_2">Li koleksiyonê tomar bike</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Parve bike</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Di %1$s de veke</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">Bihêzkirin ji aliyê %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Bihêzkirin ji aliyê %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Moda xwînerê</string>
@@ -252,7 +252,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Destûrê nede</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Bila pêşniyarên lêgerînê di rûniştina veşartî de werin pêş te?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s dê hemû tiştên tu li darika navnîşanan binivîsî bi motora te ya lêgerînê ya derbasdar re parve bike.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -294,7 +294,7 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">Bi xêra agahdariyan bi %sê re zêdetir tiştan bike</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">Bidomîne</string>
@@ -316,7 +316,7 @@
     <string name="settings">Sazkarî</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Giştî</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Derbar</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Motora lêgerînê ya jixweber</string>
@@ -324,10 +324,10 @@
     <string name="preferences_search">Lêgerîn</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Darika navnîşanê</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Li ser Google Playê puan bide</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Derbarê %1$s de</string>
 
 
@@ -357,7 +357,7 @@
     <!-- Preference for rejecting or removing as many cookie/consent banners as possible on sites. See reduce_cookie_banner_summary for additional context. -->
     <string name="reduce_cookie_banner_option">Agahdariyên xurekan kêm bike</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox bi awayekî otomatîk hewl dide ku daxwazên xurekan ên di agahdariyên xurekan de red bike. Heke vebijarka redkirinê ne berdest be, dibe ku Firefox ji bo girtina agahdariyê hemû xurekan qebûl bike.</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER bi awayekî otomatîk hewl dide ku daxwazên xurekan ên di agahdariyên xurekan de red bike. Heke vebijarka redkirinê ne berdest be, dibe ku NETGPU BROWSER ji bo girtina agahdariyê hemû xurekan qebûl bike.</string>
     <!-- Text for indicating cookie banner handling is off this site, this is shown as part of the protections panel with the tracking protection toggle -->
     <string name="reduce_cookie_banner_off_for_site">Ji bo vê malperê girtî ye</string>
     <!-- Text for indicating cookie banner handling is on this site, this is shown as part of the protections panel with the tracking protection toggle -->
@@ -401,12 +401,12 @@
     <string name="errorpage_httpsonly_message_summary">Lê îhtîmal heye ku sedem êrîşek be jî. Heke tu têkevî vê malperê, agahiyên xwe yên girîng pê re parve neke. Heke dewam bikî moda Tenê-HTTPS dê ji bo vê malperê bi awayê demdemî girtî be.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Gihînbarî</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Servera taybet a hesabê Firefoxê</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Servera taybet a hesabê NETGPU BROWSERê</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Servera Sync’ê ya taybet</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Servera Sync/Hesabê Firefoxê hat guhertin. Ji bo sepandina guhertinan ji sepanê derdikeve…</string>
+    <string name="toast_override_fxa_sync_server_done">Servera Sync/Hesabê NETGPU BROWSERê hat guhertin. Ji bo sepandina guhertinan ji sepanê derdikeve…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Hesab</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -422,7 +422,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Ji bo senkronîzekirina hilpekînan, bijareyan, şîfreyan û tiştên din têkevê.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Hesabê Firefoxê</string>
+    <string name="preferences_account_default_name">Hesabê NETGPU BROWSERê</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Ji bo senkronîzekirinê bidomînî, dîsa girê bide</string>
     <!-- Preference for language -->
@@ -518,7 +518,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">Zêdetir bizane</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">Klasîk %s</string>
 
     <!-- Text for limited edition wallpapers title. -->
@@ -587,7 +587,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Hilpekînên hatine stendin</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Danezanên hilpekînan ên ji cîhazên Firefoxê tên stendin.</string>
+    <string name="fxa_received_tab_channel_description">Danezanên hilpekînan ên ji cîhazên NETGPU BROWSERê tên stendin.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Hilpekîn hate stendin</string>
     <!-- %s is the device name -->
@@ -770,7 +770,7 @@
     <string name="studies_remove">Rake</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">Çalak</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s dikare carê lêkolînan bar bike û bide xebitandin.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Zêdetir bizane</string>
@@ -892,7 +892,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Bibore. %1$s, nikare vê rûpelê bar bike.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Rapora têkçûnê ji Mozillayê re bişîne</string>
@@ -1139,7 +1139,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Cîhazeke din girê bide</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Ji bo şandina hilpekînekê, herî kêm ji cîhazeke din têkeve Firefoxê.</string>
+    <string name="sync_connect_device_dialog">Ji bo şandina hilpekînekê, herî kêm ji cîhazeke din têkeve NETGPU BROWSERê.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Min fêm kir</string>
     <!-- Share error message -->
@@ -1162,10 +1162,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">Bazarkirin</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s him bilez him jî veşartî ye</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">%1$s bila bibe geroka te ya sereke</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1299,11 +1299,11 @@
     <string name="onboarding_header_2">Tu bi xêr hatiyî înterneta baştir</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">Gerokeke ji bo mirovan hatiye çêkirin, ne ji bo pereyan.</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">Ji ciyê lê mayî dewam bike</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">Ji bo derbasbûna bêproblem ya di navbera cîhazan de hilpekîn û şîfreyên xwe senkronîze bike.</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">Têkeve</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Sync vekirî ye</string>
@@ -1326,7 +1326,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">Kontrola daneyên te di destê te de ye</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox kontrola hindê dide te ka tu li ser înternetê bi kesên din û bi me re çi parve dikî.</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER kontrola hindê dide te ka tu li ser înternetê bi kesên din û bi me re çi parve dikî.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">Agahdariya me ya nihêniyê bixwîne</string>
 
@@ -1360,16 +1360,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Kodê bide xwendin</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Firefoxê ji ser kombersa xwe veke û here ser rûpela <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[NETGPU BROWSERê ji ser kombersa xwe veke û here ser rûpela <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Aniha kodê bide xwendin</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Bi kameraya xwe têkeve</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Bi emaîlê têkeve</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[Hesabê te tune ye? Ji bo ku Firefoxê di navbera cîhazan de senkronîze bikî <u>Hesêb veke</u>.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[Hesabê te tune ye? Ji bo ku NETGPU BROWSERê di navbera cîhazan de senkronîze bikî <u>Hesêb veke</u>.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s ew ê bi hesabê te re senkronîzekirinê rawestîne, lê ti daneyên te yên gerînê yên di vê cîhazê de nayên jêbirin.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Girêdanê qut bike</string>
@@ -1386,7 +1386,7 @@
     <string name="preference_enhanced_tracking_protection">Parastina ji şopandinê ya pêşketî</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Bêyî ku tu werî şopandin bigere</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Bila daneyên te ji te re bimînin. %s te ji gelek şopdarên dilxerab diparêze û nahêle tiştên ku tu li ser înternetê dikî ji aliyê wan ve bên dîtin.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Zêdetir bizane</string>
@@ -1531,29 +1531,29 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Tu dikarî vê malperê bi hêsanî li ekrana Destpêkê ya cîhaza xwe zêde bikî ku ji wir zûtir bigihîjî wê û wê wekî sepanekê bi kar bînî.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Hesab û pêborîn</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Hesab û pêborînan tomar bike</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Ji bo tomarkirinê, bipirse</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Qet tomar neke</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Di %1$s de bixweber dagire</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">Navên bikarhêneriyê û şîfreyên malperan di dema bikaranîna %1$s`ê de tomar bike.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Di sepanên din de bixweber dagire</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">Bila di sepanên din ên cîhaza te de navên bikarhêner û pêborîn bêne dagirtin.</string>
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">Hesêb tevlî bike</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Hesaban senkronîze bike</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Hesaban di navbera amûran de sync bike</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Hesabên tomarkirî</string>
@@ -1872,13 +1872,13 @@
     <string name="synced_tabs_connect_another_device">Cîhazeke din girê bide.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Ji kerema xwe, ji nû ve têkeve.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Ji kerema xwe, senkronîzekirina hilpekînê veke.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Di Firefoxên li ser cîhazên te yên din de ti hilpekîneke vekirî tune ye.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Di NETGPU BROWSERên li ser cîhazên te yên din de ti hilpekîneke vekirî tune ye.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Lîsteyeke hilpekînan a ji cîhazên xwe yên din bibîne.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Têkeve Sync’ê</string>
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
     <string name="synced_tabs_no_open_tabs">Hilpekînên vekirî tune</string>
@@ -1928,15 +1928,15 @@
     <!-- The header text of the auto-close message when the user is asked if they want to turn on the auto-closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Bila piştî mehekê bixweber bên girtin?</string>
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox dikare hilpekînên ku te mehekê venekirine bigire.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER dikare hilpekînên ku te mehekê venekirine bigire.</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">GIRTINA BIXWEBER VEKE</string>
     <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
     <string name="inactive_tabs_auto_close_message_snackbar">Girtina bixweber çalak bû</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Pêşniyara Firefoxê</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">Pêşniyara NETGPU BROWSERê</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">Lêgerîna Googleê</string>
@@ -1945,7 +1945,7 @@
     <string name="other_default_search_engine_suggestion_header">Lêgerîna %sê</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">Bila lînkên ji malperan, e-posteyan û peyaman xweber di Firefoxê de bên vekirin.</string>
+    <string name="default_browser_experiment_card_text">Bila lînkên ji malperan, e-posteyan û peyaman xweber di NETGPU BROWSERê de bên vekirin.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Rake</string>
@@ -1969,7 +1969,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">Bihêzkirin ji aliyê %sê.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Beşeke ji malbata Firefoxê. %s</string>
+    <string name="pocket_stories_feature_caption">Beşeke ji malbata NETGPU BROWSERê. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">Agahiyên zêdetir</string>
 

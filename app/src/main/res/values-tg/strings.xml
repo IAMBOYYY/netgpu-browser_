@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s-и хусусӣ</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Хусусӣ)</string>
 
     <!-- Home Fragment -->
@@ -53,12 +53,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Тоза кардан</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s аз ҷониби Mozilla истеҳсол карда шудааст.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">
         %1$s таърихи тамошокунӣ ва ҷустуҷӯи шуморо аз варақаҳои хусусие, ки шумо мепӯшед ё вақте ки шумо барномаро хомӯш мекунед, пок мекунад. Ин амал шуморо аз сомонаҳо ё провайдери хизматрасонии интернет пинҳон намекунад, аммо аз корбарони дигаре, ки ин дастгоҳро истифода мебаранд, фаъолияти онлайни шуморо ба осонӣ шахсӣ карда, нигоҳ медорад.</string>
     <string name="private_browsing_common_myths">
@@ -200,14 +200,14 @@
     <string name="browser_menu_save_to_collection_2">Нигоҳ доштан дар маҷмӯа</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Мубодила кардан</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Кушодан дар %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">ДАР %1$s АСОС МЕЁБАД</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Дар %1$s асос меёбад</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Намоиши хониш</string>
@@ -252,7 +252,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Иҷозат дода нашавад</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Ба пешниҳодҳои ҷустуҷӯ дар ҷаласаҳои хусусӣ иҷозат медиҳед?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s ба низоми ҷустуҷӯии пешфарз ҳамаи он чизеро, ки шумо ба навори нишонӣ ворид мекунед, мефиристонад.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -295,10 +295,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">Огоҳиҳо барои кори бештар бо «%s» ба шумо кумак мекунанд</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">Варақаҳои худро байни дастгоҳҳо ҳамоҳанг созед, боргириҳоро идора кунед, барои беҳтар танзим кардани муҳофизати махфияти «%s» маслиҳатҳо гиред ва аз чизҳои бештар истифода баред.</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">Идома додан</string>
@@ -320,7 +320,7 @@
     <string name="settings">Танзимот</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Умумӣ</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Дар бораи барнома</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Низоми ҷустуҷӯии пешфарз</string>
@@ -328,10 +328,10 @@
     <string name="preferences_search">Ҷустуҷӯ</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Лавҳаи нишонӣ</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Баҳодиҳӣ дар Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Дар бораи %1$s</string>
 
     <!-- Preference for settings related to changing the default browser -->
@@ -364,7 +364,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">Фаъол</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Браузери «Firefox» кӯшиш мекунад, ки дархостҳои кукиро дар баннерҳои куки ба таври худкор рад кунад. Агар имкони радкунӣ дастнорас аст, «Firefox» метавонад барои қатъ кардани баннер ҳамаи кукиҳоро қабул кунад.</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Браузери «NETGPU BROWSER» кӯшиш мекунад, ки дархостҳои кукиро дар баннерҳои куки ба таври худкор рад кунад. Агар имкони радкунӣ дастнорас аст, «NETGPU BROWSER» метавонад барои қатъ кардани баннер ҳамаи кукиҳоро қабул кунад.</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">«%1$s» ба таври худкор кушиш мекунад, ки дархостҳои кукиҳоро дар баннерҳои кукиҳо рад кунад.</string>
@@ -443,12 +443,12 @@
     <string name="errorpage_httpsonly_message_summary">Бо вуҷуди ин, инчунин, мумкин аст, ки ҳамлакунанда дахолат мекунад. Агар шумо кори худро бо сомона идома диҳед, шумо набояд ягон маълумоти ҳассоси шахсиро ворид намоед. Агар шумо идома диҳед, реҷаи «Танҳо HTTPS» барои сомона муваққатан ғайрифаъол мешавад.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Қобилияти дастрасӣ</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Сервери ҳисоби фармоишии Firefox</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Сервери ҳисоби фармоишии NETGPU BROWSER</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Сервери ҳамоҳангсозии фармоишӣ</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Сервери ҳисоб/ҳамоҳангсозии Firefox тағйир ёфт. Барои татбиқ кардани тағйирот барнома бояд хомӯш карда шавад…</string>
+    <string name="toast_override_fxa_sync_server_done">Сервери ҳисоб/ҳамоҳангсозии NETGPU BROWSER тағйир ёфт. Барои татбиқ кардани тағйирот барнома бояд хомӯш карда шавад…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Ҳисоб</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -464,7 +464,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Барои ҳамоҳангсозии варақаҳо, хатбаракҳо, ниҳонвожаҳо ва чизҳои дигар, ворид шавед.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Ҳисоби Firefox</string>
+    <string name="preferences_account_default_name">Ҳисоби NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Барои барқарор кардани ҳамоҳангсозӣ аз нав пайваст шавед</string>
     <!-- Preference for language -->
@@ -559,7 +559,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">Маълумоти бештар</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">Классикӣ - %s</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">Нашри маҳдуд</string>
@@ -626,7 +626,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Варақаҳо аз дастгоҳҳои дигар</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Огоҳиномаҳо дар бораи варақаҳое, ки аз дигар дастгоҳҳои Firefox гирифта шудаанд.</string>
+    <string name="fxa_received_tab_channel_description">Огоҳиномаҳо дар бораи варақаҳое, ки аз дигар дастгоҳҳои NETGPU BROWSER гирифта шудаанд.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Варақаи қабулшуда</string>
     <!-- %s is the device name -->
@@ -815,7 +815,7 @@
     <string name="studies_remove">Тоза кардан</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">Фаъол</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">Баъзе вақт %1$s метавонад омӯзишҳоро насб ва иҷро намояд.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Маълумоти бештар</string>
@@ -939,7 +939,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Мутаассифона, %1$s ин саҳифаро бор карда наметавонад.</string>
 
     <!-- Send crash report checkbox text on the tab crash page -->
@@ -1188,7 +1188,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Пайваст кардани дастгоҳи дигар</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Барои фиристодани варақа, ақаллан дар дастгоҳи дигар ба Firefox ворид шавед.</string>
+    <string name="sync_connect_device_dialog">Барои фиристодани варақа, ақаллан дар дастгоҳи дигар ба NETGPU BROWSER ворид шавед.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Фаҳмо</string>
 
@@ -1210,10 +1210,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">Бозоршиносӣ</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s тезкор ва хусусӣ мебошад</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">Гузоштани %1$s ҳамчун браузери пешфарз</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1351,11 +1351,11 @@
     <string name="onboarding_header_2">Хуш омадед ба Интернети беҳтар</string>
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">Браузере, ки барои мардум, на барои даромад сохта шудааст.</string>
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">Ба он ҷое, ки шумо ба қарибӣ тамошо кардаед, баргардонед</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">Барои гузариши бехалал байни экранҳои дастгоҳҳои худ, варақаҳо ва ниҳонвожаҳоро ҳамоҳанг созед.</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">Ворид шудан</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Ҳамоҳангсозӣ фаъол аст</string>
@@ -1378,7 +1378,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">Шумо маълумоти худро идора мекунед</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Браузери «Firefox» имкон медиҳад, ки шумо тавонед он чизҳоеро, ки дар онлайн ва бо мо мубодила мекунед, мустақилона идора намоед.</string>
+    <string name="onboarding_privacy_notice_description">Браузери «NETGPU BROWSER» имкон медиҳад, ки шумо тавонед он чизҳоеро, ки дар онлайн ва бо мо мубодила мекунед, мустақилона идора намоед.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">Огоҳиномаи махфияти моро хонед</string>
 
@@ -1412,16 +1412,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Рамзро скан кунед</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Дар компютери худ Firefox-ро кушоед ва ба <b>https://firefox.com/pair</b> гузаред]]></string>
+    <string name="sign_in_instructions"><![CDATA[Дар компютери худ NETGPU BROWSER-ро кушоед ва ба <b>https://firefox.com/pair</b> гузаред]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Барои сканкунӣ омода аст</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Ворид шудан ба воситаи камера</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Ба ҷояш почтаи электрониро истифода баред</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[Ҳисоб надоред? Барои ҳамоҳангсозӣ кардани Firefox байни дастгоҳҳо, <u>ҳисоберо эҷод намоед</u>.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[Ҳисоб надоред? Барои ҳамоҳангсозӣ кардани NETGPU BROWSER байни дастгоҳҳо, <u>ҳисоберо эҷод намоед</u>.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s ҳамоҳангсозиро бо ҳисоби шумо қатъ мекунад, аммо ягон маълумоти тамошокунии шуморо дар ин дастгоҳ нест намекунад.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Қатъ кардани пайваст</string>
@@ -1437,7 +1437,7 @@
     <string name="preference_enhanced_tracking_protection">Муҳофизати такмилёфта аз пайгирӣ</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Тамошокунӣ бе пайгирӣ</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Маълумоти худро бо худ нигоҳ доред. %s шуморо аз бисёр васоити пайгирие, ки фаъолияти шуморо дар онлайн пайгирӣ мекунанд, муҳофизат менамояд.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Маълумоти бештар</string>
@@ -1581,29 +1581,29 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Шумо метавонед ин сомонаро ба экрани асосии дастгоҳи худ ба осонӣ илова кунед, то ки ба он дастрасии фаврӣ дошта бошед ва бо таҷрибаи ба барнома монанд зудтар паймоиш кунед.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Воридшавиҳо ва ниҳонвожаҳо</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Нигоҳ доштани воридшавиҳо ва ниҳонвожаҳо</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Бо пешниҳоди нигоҳдорӣ</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Ҳеҷ гоҳ нигоҳ дошта нашавад</string>
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Пуркунии худкор дар %1$s</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">Ҳангоми истифодаи %1$s номи корбарон ва ниҳонвожаҳоро дар сомонаҳо пур кунед ва нигоҳ доред.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Пуркунии худкор дар барномаҳои дигар</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">Номи корбарон ва ниҳонвожаҳоро дар барномаҳои дигари дастгоҳи худ пур кунед.</string>
 
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">Илова кардани воридшавӣ</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Воридшавиҳои ҳамоҳангшуда</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Ҳамоҳанг кардани воридшавиҳо байни дастгоҳҳо</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Воридшавиҳои нигоҳдошташуда</string>
@@ -1925,13 +1925,13 @@
 
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Лутфан, санҷиши ҳаққониятро аз нав такрор кунед</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Лутфан ҳамоҳангсозии варақаҳоро фаъол кунед.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Шумо дар дастгоҳҳои дигари худ дар Firefox ягон варақаи кушодашуда надоред.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Шумо дар дастгоҳҳои дигари худ дар NETGPU BROWSER ягон варақаи кушодашуда надоред.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Дидани рӯйхати варақаҳо аз дастгоҳҳои дигар.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Барои ҳамоҳангсозӣ ворид шавед</string>
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
     <string name="synced_tabs_no_open_tabs">Ягон варақаи кушодашуда нест</string>
@@ -1983,7 +1983,7 @@
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Пас аз як моҳ ба таври худкор пӯшида шавад?</string>
 
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox метавонад варақаҳоеро, ки шумо дар давоми як моҳи охир надидаед, пӯшонад.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER метавонад варақаҳоеро, ки шумо дар давоми як моҳи охир надидаед, пӯшонад.</string>
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ФАЪОЛ КАРДАНИ ПӮШИШИ ХУДКОР</string>
 
@@ -1991,8 +1991,8 @@
     <string name="inactive_tabs_auto_close_message_snackbar">«Пӯшидани худкор» фаъол шуд</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Пешниҳоди Firefox</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">Пешниҳоди NETGPU BROWSER</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">Ҷустуҷӯ дар «Google»</string>
@@ -2000,7 +2000,7 @@
     <string name="other_default_search_engine_suggestion_header">Ҷустуҷӯ дар «%s»</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">Пайвандҳоеро, танзим кунед, ки онҳо аз сомонаҳо, почтаи электронӣ ва паёмҳо дар браузери Firefox ба таври худкор кушода шаванд.</string>
+    <string name="default_browser_experiment_card_text">Пайвандҳоеро, танзим кунед, ки онҳо аз сомонаҳо, почтаи электронӣ ва паёмҳо дар браузери NETGPU BROWSER ба таври худкор кушода шаванд.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Тоза кардан</string>
@@ -2024,7 +2024,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">Аз ҷониби «%s» таъмин карда шудааст.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Қисми оилаи Firefox.%s</string>
+    <string name="pocket_stories_feature_caption">Қисми оилаи NETGPU BROWSER.%s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">Маълумоти бештар</string>
 

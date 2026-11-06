@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">ખાનગી %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (ખાનગી)</string>
     <!-- Home Fragment -->
     <!-- Content description (not visible, for screen readers etc.): "Three dot" menu button. -->
@@ -106,14 +106,14 @@
     <string name="browser_menu_share">વહેંચો</string>
     <!-- Share menu title, displayed when a user is sharing their current site -->
     <string name="menu_share_with">સાથે શેર કરો…</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">%1$s માં ખોલો</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">%1$s દ્વારા સંચાલિત</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">%1$s દ્વારા સંચાલિત</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">વાંચકો જુઓ</string>
@@ -147,7 +147,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">મંજૂરી આપશો નહીં</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">ખાનગી સત્રોમાં શોધ સૂચનોને મંજૂરી આપીએ?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s એ એડ્રેસ બારમાં તમે લખો છો તે બધું તમારા ડિફોલ્ટ શોધ એંજિનથી શેર કરશે.</string>
     <!-- Search suggestion onboarding hint Learn more link text -->
     <string name="search_suggestions_onboarding_learn_more_link">વધુ શીખો</string>
@@ -168,7 +168,7 @@
     <string name="preferences_category_basics">મૂળભૂત</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">સામાન્ય</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">વિશે</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">મૂળભૂત શોધ એન્જિન</string>
@@ -176,14 +176,14 @@
     <string name="preferences_search">શોધો</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">સરનામાં બાર</string>
-    <!-- Preference linking to help about Fenix -->
+    <!-- Preference linking to help about NETGPU BROWSER -->
     <string name="preferences_help">મદદ</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">ગૂગલ પ્લે પર રેટ કરો</string>
-    <!-- Preference for giving feedback about Fenix -->
+    <!-- Preference for giving feedback about NETGPU BROWSER -->
     <string name="preferences_feedback">અભિપ્રાય આપો</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">%1$s વિશે</string>
     <!-- Preference linking to the your rights SUMO page -->
     <string name="preferences_your_rights">તમારા અધિકારો</string>
@@ -218,9 +218,9 @@
     <!-- Preference for changing default theme to dark or light mode -->
     <string name="preferences_theme">થીમ</string>
     <!-- Preference description for banner about signing in -->
-    <string name="preferences_sign_in_description">તમારા Firefox એકાઉન્ટ સાથે બુકમાર્ક્સ, ઇતિહાસ અને વધુને સમન્વયિત કરો</string>
+    <string name="preferences_sign_in_description">તમારા NETGPU BROWSER એકાઉન્ટ સાથે બુકમાર્ક્સ, ઇતિહાસ અને વધુને સમન્વયિત કરો</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Firefox ખાતુ</string>
+    <string name="preferences_account_default_name">NETGPU BROWSER ખાતુ</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">સમન્વયન ફરી શરૂ કરવા માટે ફરીથી કનેક્ટ કરો</string>
     <!-- Preference for language -->
@@ -285,7 +285,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">પ્રાપ્ત ટેબ્સ </string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">અન્ય Firefox ઉપકરણોથી પ્રાપ્ત ટેબ્સ માટેની સૂચનાઓ.</string>
+    <string name="fxa_received_tab_channel_description">અન્ય NETGPU BROWSER ઉપકરણોથી પ્રાપ્ત ટેબ્સ માટેની સૂચનાઓ.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">ટેબ પ્રાપ્ત</string>
     <!-- When multiple tabs have been received -->
@@ -327,14 +327,14 @@
     <string name="preferences_crash_reporter">ક્રેશ રિપોર્ટર</string>
     <!-- Preference switch for Mozilla location service -->
     <string name="preferences_mozilla_location_service">Mozilla સ્થાન સેવા</string>
-    <!-- Preference switch for app health report. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Preference switch for app health report. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preferences_fenix_health_report">%s આરોગ્ય અહેવાલ</string>
 
     <!-- Turn On Sync Preferences -->
     <!-- Header of the Turn on Sync preference view -->
     <string name="preferences_sync">સમન્વયન ચાલુ કરો</string>
     <!-- Preference for pairing -->
-    <string name="preferences_sync_pair">ડેસ્કટોપ માટે Firefoxમાં મેચિંગ કોડ સ્કેન કરો</string>
+    <string name="preferences_sync_pair">ડેસ્કટોપ માટે NETGPU BROWSERમાં મેચિંગ કોડ સ્કેન કરો</string>
     <!-- Preference for account login -->
     <string name="preferences_sync_sign_in">સાઇન ઇન કરો</string>
     <!-- Preference for reconnecting to FxA sync -->
@@ -491,7 +491,7 @@
     <string name="history_empty_message">અહીં કોઈ ઇતિહાસ નથી</string>
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">માફ કરશો. %1$s તે પૃષ્ઠને લોડ કરી શકતા નથી.</string>
     <!-- Description text displayed on the tab crash page -->
     <string name="tab_crash_description">તમે નીચે આપેલી ટેબને પુન:સ્થાપિત અથવા બંધ કરવાનો પ્રયાસ કરી શકો છો.</string>
@@ -692,7 +692,7 @@
     <string name="sync_connect_device">બીજા ઉપકરણ સાથે જોડાણ કરો</string>
 
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">ટેબ મોકલવા માટે, ઓછામાં ઓછા એક અન્ય ઉપકરણ પર Firefox માં સાઇન ઇન કરો.</string>
+    <string name="sync_connect_device_dialog">ટેબ મોકલવા માટે, ઓછામાં ઓછા એક અન્ય ઉપકરણ પર NETGPU BROWSER માં સાઇન ઇન કરો.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">સમજાઈ ગયું</string>
     <!-- Share error message -->
@@ -713,11 +713,11 @@
     <string name="notification_pbm_delete_text">ખાનગી ટેબ્સ કાઢી નાખો</string>
     <!-- Text shown in the notification that pops up to remind the user that a private browsing session is active. -->
     <string name="notification_pbm_delete_text_2">ખાનગી ટૅબ્સ બંધ કરો</string>
-    <!-- Notification action to open Fenix and resume the current browsing session. -->
+    <!-- Notification action to open NETGPU BROWSER and resume the current browsing session. -->
     <string name="notification_pbm_action_open">ખોલો</string>
-    <!-- Notification action to delete all current private browsing sessions AND switch to Fenix (bring it to the foreground) -->
+    <!-- Notification action to delete all current private browsing sessions AND switch to NETGPU BROWSER (bring it to the foreground) -->
     <string name="notification_pbm_action_delete_and_open">કાઢી નાખો અને ખોલો</string>
-    <!-- Name of the "Powered by Fenix" notification channel. Displayed in the "App notifications" system settings for the app -->
+    <!-- Name of the "Powered by NETGPU BROWSER" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_powered_by_channel_name">દ્વારા સંચાલિત</string>
     <!-- Text shown in snackbar when user deletes a collection -->
     <string name="snackbar_collection_deleted">સંગ્રહ કાઢી નાખ્યા</string>
@@ -827,12 +827,12 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header">%s પર આપનું સ્વાગત છે!</string>
-    <!-- text for the Firefox Accounts section header -->
+    <!-- text for the NETGPU BROWSER Accounts section header -->
     <string name="onboarding_fxa_section_header">પહેલેથી જ એકાઉન્ટ છે?</string>
-    <!-- text for the Firefox Preview feature section header
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- text for the NETGPU BROWSER Preview feature section header
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_feature_section_header">%s ને જાણો</string>
     <!-- text for the "What's New" onboarding card header -->
     <string name="onboarding_whats_new_header1">જુઓ નવુ શું છે</string>
@@ -842,8 +842,8 @@
     <string name="onboarding_firefox_account_auto_signin_confirm">હા, મને સાઇન ઇન કરો</string>
     <!-- text for the automatic sign-in button while signing in is in process -->
     <string name="onboarding_firefox_account_signing_in">સાઇન ઇન કરી રહ્યું છે…</string>
-    <!-- text for the button to manually sign into Firefox account. The word "Firefox" should not be translated -->
-    <string name="onboarding_firefox_account_sign_in">Firefoxમાં સાઇન ઇન કરો</string>
+    <!-- text for the button to manually sign into NETGPU BROWSER account. The word "NETGPU BROWSER" should not be translated -->
+    <string name="onboarding_firefox_account_sign_in">NETGPU BROWSERમાં સાઇન ઇન કરો</string>
     <!-- text for the button to stay signed out when presented with an option to automatically sign-in. -->
     <string name="onboarding_firefox_account_stay_signed_out">સાઇન આઉટ રહો</string>
     <!-- text to display in the snackbar once account is signed-in -->
@@ -898,7 +898,7 @@
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">તેના બદલે ઇમેઇલનો ઉપયોગ કરો</string>
     <!-- Text shown in confirmation dialog to sign out of account -->
-    <string name="sign_out_confirmation_message">Firefox તમારા એકાઉન્ટ સાથે સમન્વય કરવાનું બંધ કરશે, પરંતુ આ ઉપકરણ પરના તમારી કોઈપણ બ્રાઉઝિંગ માહિતીને કાઢી નાખશે નહીં.</string>
+    <string name="sign_out_confirmation_message">NETGPU BROWSER તમારા એકાઉન્ટ સાથે સમન્વય કરવાનું બંધ કરશે, પરંતુ આ ઉપકરણ પરના તમારી કોઈપણ બ્રાઉઝિંગ માહિતીને કાઢી નાખશે નહીં.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">જોડાણ તોડો</string>
     <!-- Option to cancel signing out shown in confirmation dialog to sign out of account -->
@@ -913,7 +913,7 @@
     <string name="preference_enhanced_tracking_protection">ઉન્નત ટ્રેકિંગ સંરક્ષણ</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">અનુસર્યા વિના બ્રાઉઝ કરો</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">તમારી માહિતી તમારી પાસે રાખો. %s તમને ઘણા સામાન્ય ટ્રેકર્સથી સુરક્ષિત રાખે છે જે તમે ઓનલાઇન કરો છો તેનું જાણ રાખે છે.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">વધુ શીખો</string>
@@ -1005,25 +1005,25 @@
     <!-- Placeholder text for the TextView in the Add to Homescreen dialog -->
     <string name="add_to_homescreen_text_placeholder">શોર્ટકટ નામ</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">લોગિન્સ અને પાસવર્ડ્સ</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">લોગિન્સ અને પાસવર્ડ્સ સાચવો</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">સાચવવાનું કહો</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">ક્યારેય સાચવો નહીં</string>
-    <!-- Preference for autofilling saved logins in Fenix -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_autofill">સ્વતઃ ભરો</string>
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">લોગિન સમન્વયિત કરો</string>
-    <!-- Syncing saved logins in Fenix is on -->
+    <!-- Syncing saved logins in NETGPU BROWSER is on -->
     <string name="preferences_passwords_sync_logins_on">ચાલુ કરો</string>
-    <!-- Syncing saved logins in Fenix is off -->
+    <!-- Syncing saved logins in NETGPU BROWSER is off -->
     <string name="preferences_passwords_sync_logins_off">બંધ કરો</string>
-    <!-- Syncing saved logins in Fenix needs reconnect to sync -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs reconnect to sync -->
     <string name="preferences_passwords_sync_logins_reconnect">ફરી કનેક્ટ કરો</string>
-    <!-- Syncing saved logins in Fenix needs login -->
+    <!-- Syncing saved logins in NETGPU BROWSER needs login -->
     <string name="preferences_passwords_sync_logins_sign_in">સમન્વયન માટે સાઇન ઇન કરો</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">સાચવેલા લૉગિન્સ</string>
@@ -1053,11 +1053,11 @@
     <string name="logins_insecure_connection_warning">આ જોડાણ સુરક્ષિત નથી. અહીં દાખલ કરેલા લોગિન્સ સાથે ચેડા થઈ શકે છે.</string>
     <!-- Learn more link that will link to a page with more information displayed when a connection is insecure and we detect the user is entering a password -->
     <string name="logins_insecure_connection_warning_learn_more">વધુ શીખો</string>
-    <!-- Prompt message displayed when Fenix detects a user has entered a password and user decides if Fenix should save it. The first parameter is the name of the application (For example: Fenix)  -->
+    <!-- Prompt message displayed when NETGPU BROWSER detects a user has entered a password and user decides if NETGPU BROWSER should save it. The first parameter is the name of the application (For example: NETGPU BROWSER)  -->
     <string name="logins_doorhanger_save">શું તમે ઇચ્છો છો કે %s આ લોગિનને સાચવે?</string>
-    <!-- Positive confirmation that Fenix should save the new or updated login -->
+    <!-- Positive confirmation that NETGPU BROWSER should save the new or updated login -->
     <string name="logins_doorhanger_save_confirmation">સાચવો</string>
-    <!-- Negative confirmation that Fenix should not save the new or updated login -->
+    <!-- Negative confirmation that NETGPU BROWSER should not save the new or updated login -->
     <string name="logins_doorhanger_save_dont_save">સાચવશો નહીં</string>
     <!-- Shown in snackbar to tell user that the password has been copied -->
     <string name="logins_password_copied">પાસવર્ડ ક્લિપબોર્ડ પર નકલ કરો</string>
@@ -1158,9 +1158,9 @@
     <string name="login_menu_delete_button">કાઢી નાંખો</string>
 
     <!-- depcrecated: text for the firefox account onboarding card header
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_firefox_account_header">%s માંથી સૌથી વધુ મેળવો.</string>
 
     <!-- Deprecated: text for the firefox account onboarding card header when we detect you're already signed in to -->
-    <string name="onboarding_firefox_account_auto_signin_header_2">તમે આ ફોન પરના બીજા Firefox બ્રાઉઝર પર %s તરીકે સાઇન ઇન કર્યું છે. શું તમે આ એકાઉન્ટ સાથે સાઇન ઇન કરવા માંગો છો?</string>
+    <string name="onboarding_firefox_account_auto_signin_header_2">તમે આ ફોન પરના બીજા NETGPU BROWSER બ્રાઉઝર પર %s તરીકે સાઇન ઇન કર્યું છે. શું તમે આ એકાઉન્ટ સાથે સાઇન ઇન કરવા માંગો છો?</string>
     </resources>

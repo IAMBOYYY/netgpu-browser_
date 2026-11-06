@@ -2,9 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">%s privé</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (nav. privée)</string>
 
     <!-- Home Fragment -->
@@ -55,12 +55,12 @@
     <!-- Text for the menu button to remove a recently saved bookmark from the user's home screen -->
     <string name="recently_saved_menu_item_remove">Supprimer</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s est réalisé par Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s efface vos historiques de recherche et de navigation des onglets privés lorsque vous les fermez ou quittez l’application. Bien que cela ne vous rende pas anonyme sur les sites web ni pour votre fournisseur d’accès à Internet, cela vous permet de garder confidentielle votre activité en ligne pour toutes les autres personnes qui utiliseraient votre appareil.</string>
     <string name="private_browsing_common_myths">Principales idées reçues sur la navigation privée</string>
 
@@ -198,16 +198,16 @@
     <string name="browser_menu_save_to_collection_2">Enregistrer dans une collection</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Partager</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Ouvrir avec %1$s</string>
 
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">FONCTIONNE GRÂCE À %1$s</string>
 
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Fonctionne grâce à %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Mode lecture</string>
@@ -253,7 +253,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">Ne pas autoriser</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Autoriser les suggestions de recherche dans les sessions privées ?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s enverra tout ce que vous saisirez dans la barre d’adresse à votre moteur de recherche par défaut.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -296,10 +296,10 @@
 
     <!-- Notification pre-permission dialog -->
     <!-- Enable notification pre permission dialog title
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_title">Les notifications vous aident à en faire plus avec %s</string>
     <!-- Enable notification pre permission dialog description with rationale
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="onboarding_home_enable_notifications_description">Synchronisez les onglets entre vos appareils, gérez les téléchargements, obtenez des conseils pour tirer le meilleur parti de la protection de la vie privée de %s, et bien plus.</string>
     <!-- Text for the button to request notification permission on the device -->
     <string name="onboarding_home_enable_notifications_positive_button">Continuer</string>
@@ -323,7 +323,7 @@
 
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Général</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">À propos</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Moteur de recherche par défaut</string>
@@ -331,10 +331,10 @@
     <string name="preferences_search">Recherche</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Barre d’adresse</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Attribuer une note sur Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">À propos de %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Définir comme navigateur par défaut</string>
@@ -366,7 +366,7 @@
     <!-- Summary of cookie banner handling preference if the setting enabled is set to on -->
     <string name="reduce_cookie_banner_option_on">Activée</string>
     <!-- Summary for the preference for rejecting all cookies whenever possible. -->
-    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">Firefox essaie automatiquement de refuser les demandes de dépôt de cookies quand une bannière de cookies s’affiche. Si aucune option de rejet n’est disponible, Firefox peut accepter tous les cookies pour fermer la bannière.</string>
+    <string name="reduce_cookie_banner_summary" moz:RemovedIn="110" tools:ignore="UnusedResources">NETGPU BROWSER essaie automatiquement de refuser les demandes de dépôt de cookies quand une bannière de cookies s’affiche. Si aucune option de rejet n’est disponible, NETGPU BROWSER peut accepter tous les cookies pour fermer la bannière.</string>
 
     <!-- Summary for the preference for rejecting all cookies whenever possible. The first parameter is the application name -->
     <string name="reduce_cookie_banner_summary_1">%1$s essaie automatiquement de refuser les demandes de dépôt de cookies quand une bannière de cookies s’affiche.</string>
@@ -445,12 +445,12 @@
     <string name="errorpage_httpsonly_message_summary">Il est cependant aussi possible qu’il s’agisse d’une attaque. Si vous poursuiviez vers ce site web, vous ne devriez saisir aucune donnée sensible. Si vous continuez, le mode HTTPS uniquement sera désactivé temporairement pour ce site.</string>
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Accessibilité</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Serveur de compte Firefox personnalisé</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Serveur de compte NETGPU BROWSER personnalisé</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Serveur de synchronisation personnalisé</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">Serveur de synchronisation/de compte Firefox modifié. Fermeture de l’application pour appliquer les modifications…</string>
+    <string name="toast_override_fxa_sync_server_done">Serveur de synchronisation/de compte NETGPU BROWSER modifié. Fermeture de l’application pour appliquer les modifications…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Compte</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -466,7 +466,7 @@
     <!-- Preference description for banner about signing in -->
     <string name="preferences_sign_in_description_2">Connectez-vous pour synchroniser onglets, marque-pages, mots de passe et bien plus.</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Compte Firefox</string>
+    <string name="preferences_account_default_name">Compte NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Reconnectez-vous pour reprendre la synchronisation</string>
     <!-- Preference for language -->
@@ -564,7 +564,7 @@
     <!-- Text displayed that links to website containing documentation about the "Limited Edition" wallpapers. -->
     <string name="wallpaper_learn_more">En savoir plus</string>
 
-    <!-- Text for classic wallpapers title. The first parameter is the Firefox name. -->
+    <!-- Text for classic wallpapers title. The first parameter is the NETGPU BROWSER name. -->
     <string name="wallpaper_classic_title">%s classique</string>
     <!-- Text for limited edition wallpapers title. -->
     <string name="wallpaper_limited_edition_title">Édition limitée</string>
@@ -630,7 +630,7 @@
     <string name="fxa_received_tab_channel_name">Onglets reçus</string>
 
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Notifications d’onglets reçus depuis Firefox sur d’autres appareils.</string>
+    <string name="fxa_received_tab_channel_description">Notifications d’onglets reçus depuis NETGPU BROWSER sur d’autres appareils.</string>
 
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Onglet reçu</string>
@@ -820,7 +820,7 @@
     <string name="studies_remove">Supprimer</string>
     <!-- Title of the active section on the studies list -->
     <string name="studies_active">Activées</string>
-    <!-- Description for studies, it indicates why Firefox use studies. The first parameter is the name of the application. -->
+    <!-- Description for studies, it indicates why NETGPU BROWSER use studies. The first parameter is the name of the application. -->
     <string name="studies_description_2">%1$s peut installer et lancer des études de temps en temps.</string>
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">En savoir plus</string>
@@ -947,7 +947,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">%1$s n’a pas pu charger cette page.</string>
 
     <!-- Send crash report checkbox text on the tab crash page -->
@@ -1208,7 +1208,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Connecter un autre appareil</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Pour envoyer un onglet, connectez-vous à votre compte Firefox sur au moins un autre appareil.</string>
+    <string name="sync_connect_device_dialog">Pour envoyer un onglet, connectez-vous à votre compte NETGPU BROWSER sur au moins un autre appareil.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">J’ai compris</string>
 
@@ -1230,10 +1230,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">Marketing</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s est rapide et privé</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">Faites de %1$s votre navigateur par défaut</string>
 
     <!-- Title shown in the notification that pops up to re-engage the user -->
@@ -1375,11 +1375,11 @@
     <!-- Text for the onboarding welcome message. -->
     <string name="onboarding_message">Un navigateur conçu pour les gens, pas pour l’argent.</string>
 
-    <!-- Text for the Firefox account onboarding sign in card header. -->
+    <!-- Text for the NETGPU BROWSER account onboarding sign in card header. -->
     <string name="onboarding_account_sign_in_header">Reprenez là où vous en étiez</string>
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
     <string name="onboarding_manual_sign_in_description">Synchronisez onglets et mots de passe entre vos appareils pour passer d’un écran à l’autre sans accroc.</string>
-    <!-- Text for the button to manually sign into Firefox account. -->
+    <!-- Text for the button to manually sign into NETGPU BROWSER account. -->
     <string name="onboarding_firefox_account_sign_in">Connexion</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">Synchronisation activée</string>
@@ -1402,7 +1402,7 @@
     <!-- Text for the privacy notice onboarding card header -->
     <string name="onboarding_privacy_notice_header_1">Vous gardez le contrôle de vos données</string>
     <!-- Text for the privacy notice onboarding card description. -->
-    <string name="onboarding_privacy_notice_description">Firefox vous donne le contrôle de ce que vous partagez en ligne et de ce que vous partagez avec nous.</string>
+    <string name="onboarding_privacy_notice_description">NETGPU BROWSER vous donne le contrôle de ce que vous partagez en ligne et de ce que vous partagez avec nous.</string>
     <!-- Text for the button to read the privacy notice -->
     <string name="onboarding_privacy_notice_read_button">Consulter notre politique de confidentialité</string>
 
@@ -1436,16 +1436,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Scanner le code</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Sur votre ordinateur, ouvrez Firefox et accédez à <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Sur votre ordinateur, ouvrez NETGPU BROWSER et accédez à <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Prêt·e à scanner</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Connectez-vous avec votre appareil photo</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Utiliser plutôt une adresse e-mail</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
-    <string name="sign_in_create_account_text"><![CDATA[Vous n’avez pas de compte ? <u>Créez-en un</u> pour synchroniser Firefox entre vos appareils.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
+    <string name="sign_in_create_account_text"><![CDATA[Vous n’avez pas de compte ? <u>Créez-en un</u> pour synchroniser NETGPU BROWSER entre vos appareils.]]></string>
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s ne se synchronisera plus avec votre compte, mais ne supprimera aucune donnée de navigation sur cet appareil.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Se déconnecter</string>
@@ -1461,7 +1461,7 @@
     <string name="preference_enhanced_tracking_protection">Protection renforcée contre le pistage</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Naviguez sans être suivi·e</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Gardez vos données pour vous. %s vous protège de la plupart des traqueurs les plus courants qui suivent ce que vous faites en ligne.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">En savoir plus</string>
@@ -1605,30 +1605,30 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">Vous pouvez facilement ajouter ce site à l’écran d’accueil de votre appareil pour y avoir accès directement et naviguer plus rapidement, comme si vous utilisiez une application.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Identifiants et mots de passe</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Enregistrer les identifiants et les mots de passe</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Demander pour enregistrer</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">Ne jamais enregistrer</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">Remplissage automatique dans %1$s</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">Remplir et enregistrer les noms d’utilisateur et les mots de passe dans les sites web tout en utilisant %1$s.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">Remplissage automatique dans d’autres applications</string>
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">Remplit les noms d’utilisateur et les mots de passe dans d’autres applications sur votre appareil.</string>
 
     <!-- Preference option for adding a login -->
     <string name="preferences_logins_add_login">Ajouter un identifiant</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Synchroniser les identifiants</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">Synchroniser les identifiants entre vos appareils</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Identifiants enregistrés</string>
@@ -1947,13 +1947,13 @@
     <string name="synced_tabs_connect_another_device">Connectez un autre appareil.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Veuillez vous authentifier à nouveau.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Veuillez activer la synchronisation des onglets.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">Vous n’avez aucun onglet ouvert dans Firefox sur vos autres appareils.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">Vous n’avez aucun onglet ouvert dans NETGPU BROWSER sur vos autres appareils.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Affichez la liste des onglets de vos autres appareils.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Se connecter pour synchroniser</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -2005,7 +2005,7 @@
     <!-- The header text of the auto-close message when the user is asked if they want to turn on the auto-closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Fermeture automatique après un mois ?</string>
     <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">Firefox peut fermer les onglets que vous n’avez pas consultés au cours du mois dernier.</string>
+    <string name="inactive_tabs_auto_close_message_description" tools:ignore="UnusedResources">NETGPU BROWSER peut fermer les onglets que vous n’avez pas consultés au cours du mois dernier.</string>
 
     <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
     <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ACTIVER LA FERMETURE AUTOMATIQUE</string>
@@ -2014,8 +2014,8 @@
     <string name="inactive_tabs_auto_close_message_snackbar">Fermeture automatique activée</string>
 
     <!-- Awesome bar suggestion's headers -->
-    <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header">Firefox suggère</string>
+    <!-- Search suggestions title for NETGPU BROWSER Suggest. -->
+    <string name="firefox_suggest_header">NETGPU BROWSER suggère</string>
 
     <!-- Title for search suggestions when Google is the default search suggestion engine. -->
     <string name="google_search_engine_suggestion_header">Recherche Google</string>
@@ -2023,7 +2023,7 @@
     <string name="other_default_search_engine_suggestion_header">Recherche %s</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">Faites en sorte que les liens des sites web, des e-mails et des messages s’ouvrent automatiquement dans Firefox.</string>
+    <string name="default_browser_experiment_card_text">Faites en sorte que les liens des sites web, des e-mails et des messages s’ouvrent automatiquement dans NETGPU BROWSER.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">Supprimer</string>
@@ -2047,7 +2047,7 @@
     <!-- Title of an app feature. Smaller than a heading. The first parameter is product name Pocket -->
     <string name="pocket_stories_feature_title_2">Mis en avant par %s.</string>
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Membre de la famille Firefox. %s</string>
+    <string name="pocket_stories_feature_caption">Membre de la famille NETGPU BROWSER. %s</string>
     <!-- Clickable text for opening an external link for more information about Pocket. -->
     <string name="pocket_stories_feature_learn_more">En savoir plus</string>
 

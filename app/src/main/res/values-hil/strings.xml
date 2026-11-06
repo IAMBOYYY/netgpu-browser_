@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Pribado %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Pribado)</string>
 
     <!-- Home Fragment -->
@@ -32,8 +32,8 @@
     <!-- Button in the search view that lets a user search by scanning a QR code -->
     <string name="search_scan_button">Mag-scan</string>
 
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Tuhoy sa %1$s</string>
     <!-- Preference category for advanced settings -->
     <string name="preferences_category_advanced">Abanse</string>
@@ -48,7 +48,7 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Mag-customize</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Firefox Account</string>
+    <string name="preferences_account_default_name">NETGPU BROWSER Account</string>
     <!-- Preference for language -->
     <string name="preferences_language">Lenggwahe</string>
 

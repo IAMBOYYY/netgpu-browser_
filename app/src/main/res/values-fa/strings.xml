@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">خصوصی %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (خصوصی)</string>
 
     <!-- Home Fragment -->
@@ -35,12 +35,12 @@
     <!-- Content description on checkmark while tab is selected in multiselect mode in tab tray -->
     <string name="tab_tray_multiselect_selected_content_description">انتخاب شده</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s توسط موزیلا تولید شده است.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s جست‌وجوها و تاریخچه مرور شما را هنگام خروج از برنامه یا بستن زبانه‌های خصوصی پاک می‌کند. در حالی که اینکار شما را برای وب‌سایت‌ها یا خدمات دهنده اینترنت ناشناس نمی‌کند، این کار مخفی کردن فعالیت‌های آنلاین شما را برای هرکس دیگری که از این دستگاه استفاده می‌کند را ساده‌تر می‌کند.</string>
     <string name="private_browsing_common_myths">
        باورهای غلط و رایج در مورد مرور خصوصی
@@ -122,14 +122,14 @@
     <string name="browser_menu_save_to_collection_2">افزودن به مجموعه</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">اشتراک‌گذاری</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">بازکردن در %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">قدرت گرفته توسط %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">قدرت گرفته توسط %1$s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">نمای مطالعه</string>
@@ -172,7 +172,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">اجازه ندادن</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">پیشنهادات جستجو در نشست‌های خصوصی مجاز است؟</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">%s هرچیزی را که در نوار آدرس وارد نوشته‌اید را به موتور جست‌وجو ارسال می‌کند.</string>
 
     <!-- Search engine suggestion title text. The first parameter is the name of teh suggested engine-->
@@ -193,7 +193,7 @@
     <string name="settings">تنظیمات</string>
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">عمومی</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">درباره</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">موتور جست‌وجو پیش‌فرض</string>
@@ -201,10 +201,10 @@
     <string name="preferences_search">جستجو</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">نوار آدرس</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">امتیاز دادن در Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">درباره %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">تبدیل به مرورگر پیش‌فرض</string>
@@ -227,7 +227,7 @@
 
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">دسترسی‌پذیری</string>
-    <!-- Preference to override the Firefox Account server -->
+    <!-- Preference to override the NETGPU BROWSER Account server -->
     <string name="preferences_override_fxa_server">سرور مخصوص حساب کاربری فایرفاکس</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">سرورِ همگام‌سازی سفارشی</string>
@@ -356,7 +356,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">زبانه‌های دریافت شده</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">اعلانها برای زبانه دریافت شده از سایر دستگاه های Firefox.</string>
+    <string name="fxa_received_tab_channel_description">اعلانها برای زبانه دریافت شده از سایر دستگاه های NETGPU BROWSER.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">زبانه دریافت شد</string>
     <!-- %s is the device name -->
@@ -620,7 +620,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">متاسفیم. %1$s نمی‌تواند این صفحه را بار کند.</string>
 
     <!-- Send crash report checkbox text on the tab crash page -->
@@ -827,7 +827,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">اتصال یک دستگاه دیگر</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">برای ارسال یک برگه ، حداقل در یک دستگاه دیگر به Firefox وارد شوید.</string>
+    <string name="sync_connect_device_dialog">برای ارسال یک برگه ، حداقل در یک دستگاه دیگر به NETGPU BROWSER وارد شوید.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">گرفتم</string>
     <!-- Share error message -->
@@ -848,10 +848,10 @@
     <!-- Name of the marketing notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="notification_marketing_channel_name">بازاریابی</string>
     <!-- Title shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_title">%1$s سریع و خصوصی است</string>
     <!-- Text shown in the notification that pops up to remind the user to set fenix as default browser.
-    %1$s is a placeholder that will be replaced by the app name (Fenix). -->
+    %1$s is a placeholder that will be replaced by the app name (NETGPU BROWSER). -->
     <string name="notification_default_browser_text">%1$s را به مرورگر پیشفرض خود تغییر دهید</string>
 
     <!-- Snackbar -->
@@ -949,8 +949,8 @@
     <!-- Text for the snackbar to show the user that the deletion of browsing data is in progress -->
     <string name="deleting_browsing_data_in_progress">در حال حذف اطلاعات…</string>
 
-    <!-- Text for the button to learn more about signing in to your Firefox account. -->
-    <string name="onboarding_manual_sign_in_description">نشانک‌ها، تاریخچه و گذرواژه‌های خود را به Firefox در این دستگاه بیاورید.</string>
+    <!-- Text for the button to learn more about signing in to your NETGPU BROWSER account. -->
+    <string name="onboarding_manual_sign_in_description">نشانک‌ها، تاریخچه و گذرواژه‌های خود را به NETGPU BROWSER در این دستگاه بیاورید.</string>
     <!-- text to display in the snackbar once account is signed-in -->
     <string name="onboarding_firefox_account_sync_is_on">همگام سازی روشن است</string>
     <!-- text for tracking protection radio button option for standard level of blocking -->
@@ -995,16 +995,16 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">اسکن کد</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[در رایانه خود Firefox را باز کرده و به <b> https://firefox.com/pair </b> بروید]]></string>
+    <string name="sign_in_instructions"><![CDATA[در رایانه خود NETGPU BROWSER را باز کرده و به <b> https://firefox.com/pair </b> بروید]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">آمادهٔ اسکن</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">با دوربین خود وارد سیستم شوید</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">به جای آن از ایمیل استفاده کنید</string>
-    <!-- Text shown for settings option for create new account text.'Firefox' intentionally hardcoded here.-->
+    <!-- Text shown for settings option for create new account text.'NETGPU BROWSER' intentionally hardcoded here.-->
     <string name="sign_in_create_account_text"><![CDATA[حسابی ندارید؟ برای هم‌گام‌سازی بین دستگاه‌های خود <u>یکی ایجاد کنید</u>.]]></string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">%s همگام سازی با حساب شما را متوقف خواهد کرد، ولی هیچ کدوم از داده‌های شما بر روی این مرورگر حذف نخواهد شد.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">قطع ارتباط</string>
@@ -1020,7 +1020,7 @@
     <string name="preference_enhanced_tracking_protection">محافظت پیشرفته در برابر ردیابی</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">بدون دنبال شدن مرور کنید</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">داده‌های خود را نزد خود نگه دارید.%s شما را از بسیاری از متداول‌ ترین ردیاب‌هایی که شما را به صورت آنلاین دنبال می‌کنند محافظت می‌کند.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">بیشتر بدانید</string>
@@ -1152,28 +1152,28 @@
     <!-- Describes the add to homescreen functionality -->
     <string name="add_to_homescreen_description_2">شما به راحتی می‌توانید این پایگاه اینترنتی را به صفحه خانگی تلفن خود اضافه کنید تا دسترسی مستقیم به آن داشته باشید و مرور سریعتی را مانند تجربه کردن یک برنامه داشته باشید.</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">ورودها و گذرواژه‌ها</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">ذخیره ورودها و گذرواژه‌ها</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">درخواست برای ذخیره‌ سازی</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">هرگز ذخیره نکن</string>
 
-    <!-- Preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill2">پرکننده خودکار در %1$s</string>
-    <!-- Description for the preference for autofilling saved logins in Firefox (in web content), %1$s will be replaced with the app name -->
+    <!-- Description for the preference for autofilling saved logins in NETGPU BROWSER (in web content), %1$s will be replaced with the app name -->
     <string name="preferences_passwords_autofill_description">هنگام استفاده از %1$s ، نام کاربری و گذرواژه ها را در وب سایت ها پر و ذخیره کنید.</string>
-    <!-- Preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill">تکمیل خودکار در برنامه های دیگر</string>
 
-    <!-- Description for the preference for autofilling logins from Fenix in other apps (e.g. autofilling the Twitter app) -->
+    <!-- Description for the preference for autofilling logins from NETGPU BROWSER in other apps (e.g. autofilling the Twitter app) -->
     <string name="preferences_android_autofill_description">نام کاربری و گذرواژه را در سایر برنامه های دستگاه خود پر کنید.</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">همگام‌سازی ورود‌ها</string>
-    <!-- Preference for syncing saved logins in Fenix, when not signed in-->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER, when not signed in-->
     <string name="preferences_passwords_sync_logins_across_devices">همگام‌سازی اطلاعات ورودها بین دستگاه‌ها</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">ورودهای ذخیره شده</string>
@@ -1398,13 +1398,13 @@
     <string name="synced_tabs_connect_another_device">اتصال به دستگاه دیگر.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">لطفا مجددا تایید کنید.</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">لطفاً همگام سازی برگه را فعال کنید.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
     <string name="synced_tabs_no_tabs">شما هیچ‌گونه زبانه باز دیگری در فایرفاکس در دستگاه‌های دیگر ندارید.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">نمایش فهرستی از زبانه‌ها از دستگاه‌های دیگر شما.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">برای همگام‌سازی وارد شوید</string>
 
     <!-- The text displayed when a synced device has no tabs to show in the list of Synced Tabs. -->
@@ -1425,7 +1425,7 @@
     <string name="inactive_tabs_title">برگه های غیر فعال</string>
 
     <!-- Default browser experiment -->
-    <string name="default_browser_experiment_card_text">پیوندهای وب سایت‌ها، ایمیل‌ها و پیام‌ها را تنظیم کنید تا به طور خودکار در Firefox باز شوند.</string>
+    <string name="default_browser_experiment_card_text">پیوندهای وب سایت‌ها، ایمیل‌ها و پیام‌ها را تنظیم کنید تا به طور خودکار در NETGPU BROWSER باز شوند.</string>
 
     <!-- Content description for close button in collection placeholder. -->
     <string name="remove_home_collection_placeholder_content_description">حذف</string>

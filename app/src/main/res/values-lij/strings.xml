@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_5">Privou %s</string>
-    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- App name for private browsing mode. The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="app_name_private_4">%s (Privou)</string>
 
     <!-- Home Fragment -->
@@ -20,12 +20,12 @@
     <!-- No Private Tabs Message Description -->
     <string name="no_private_tabs_description">I feuggi privæ saian mostræ chi.</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s o l\'é svilupou da Mozilla.</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="private_browsing_placeholder_description_2">%1$s o scancella a teu stöia de navegaçion e riçerche quande særi i feuggi e-i barcoin de navegaçion privâ. Sciben che questo o no te fa deventâ anònimo co-i sciti ò co-o fornitô de Internet, o l\'agiutta in a mantegnî privòu cöse ti fæ in linea a-i atri utenti de sto computer.</string>
     <string name="private_browsing_common_myths">Miti comuin in sciâ navegaçion privâ</string>
 
@@ -77,14 +77,14 @@
     <string name="browser_menu_save_to_collection_2">Sarva inta coleçion</string>
     <!-- Browser menu button that open a share menu to share the current site -->
     <string name="browser_menu_share">Condividdi</string>
-    <!-- Browser menu button shown in custom tabs that opens the current tab in Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu button shown in custom tabs that opens the current tab in NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_open_in_fenix">Arvi in %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by">FÆTO CON %1$s</string>
-    <!-- Browser menu text shown in custom tabs to indicate this is a Fenix tab
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Browser menu text shown in custom tabs to indicate this is a NETGPU BROWSER tab
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="browser_menu_powered_by2">Tecnologia de %s</string>
     <!-- Browser menu button to put the current page in reader mode -->
     <string name="browser_menu_read">Mòddo letua</string>
@@ -114,7 +114,7 @@
     <string name="search_suggestions_onboarding_do_not_allow_button">No permette</string>
     <!-- Search suggestion onboarding hint title text -->
     <string name="search_suggestions_onboarding_title">Permette i conseggi de riçerca inte sescioin privæ?</string>
-    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: Fenix)-->
+    <!-- Search suggestion onboarding hint description text, first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER)-->
     <string name="search_suggestions_onboarding_text">Tutto quello che scrivi inta bara di indirissi de %s saiâ condivizo co-o motô de riçerca predefinio.</string>
 
     <!-- Text preview for smaller sized widgets -->
@@ -130,7 +130,7 @@
 
     <!-- Preference category for general settings -->
     <string name="preferences_category_general">Generale</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">Informaçioin</string>
     <!-- Preference for settings related to changing the default search engine -->
     <string name="preferences_default_search_engine">Motô de riçerca predefinio</string>
@@ -138,10 +138,10 @@
     <string name="preferences_search">Çerca</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">Bara di indirissi</string>
-    <!-- Preference link to rating Fenix on the Play Store -->
+    <!-- Preference link to rating NETGPU BROWSER on the Play Store -->
     <string name="preferences_rate">Vota in sce Google Play</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">Informaçioin in sce %1$s</string>
     <!-- Preference for settings related to changing the default browser -->
     <string name="preferences_set_as_default_browser">Rendi navegatô predefinio</string>
@@ -163,12 +163,12 @@
 
     <!-- Preference for accessibility -->
     <string name="preferences_accessibility">Acesibilitæ</string>
-    <!-- Preference to override the Firefox Account server -->
-    <string name="preferences_override_fxa_server">Server personalizou pe-o conto Firefox</string>
+    <!-- Preference to override the NETGPU BROWSER Account server -->
+    <string name="preferences_override_fxa_server">Server personalizou pe-o conto NETGPU BROWSER</string>
     <!-- Preference to override the Sync token server -->
     <string name="preferences_override_sync_tokenserver">Server personalizou pe Sync</string>
     <!-- Toast shown after updating the FxA/Sync server override preferences -->
-    <string name="toast_override_fxa_sync_server_done">O server pe-o conto Firefox/Sync cangiou. L\'aplicaçion a saiâ serâ pe aplicâ i cangiamenti…</string>
+    <string name="toast_override_fxa_sync_server_done">O server pe-o conto NETGPU BROWSER/Sync cangiou. L\'aplicaçion a saiâ serâ pe aplicâ i cangiamenti…</string>
     <!-- Preference category for account information -->
     <string name="preferences_category_account">Conto</string>
     <!-- Preference for changing where the toolbar is positioned -->
@@ -178,7 +178,7 @@
     <!-- Preference for settings related to visual options -->
     <string name="preferences_customize">Personalizza</string>
     <!-- Preference shown instead of account display name while account profile information isn't available yet. -->
-    <string name="preferences_account_default_name">Conto Firefox</string>
+    <string name="preferences_account_default_name">Conto NETGPU BROWSER</string>
     <!-- Preference text for account title when there was an error syncing FxA -->
     <string name="preferences_account_sync_error">Conetite torna pe repigiâ a scioncronizaçion</string>
     <!-- Preference for language -->
@@ -246,7 +246,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Feuggi reçevui</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description">Notifiche pe-i feuggi reçevue da atri dispoxitivi Firefox.</string>
+    <string name="fxa_received_tab_channel_description">Notifiche pe-i feuggi reçevue da atri dispoxitivi NETGPU BROWSER.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Feuggio reçevuo</string>
     <!-- %s is the device name -->
@@ -375,7 +375,7 @@
 
 
     <!-- Crashes -->
-    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: Fenix) -->
+    <!-- Title text displayed on the tab crash page. This first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="tab_crash_title_2">Me spiaxe. %1$s o no peu caregâ sta pagina.</string>
     <!-- Send crash report checkbox text on the tab crash page -->
     <string name="tab_crash_send_report">Manda a segnalaçion do cianto a Mozilla</string>
@@ -557,7 +557,7 @@
     <!-- An option to connect additional devices -->
     <string name="sync_connect_device">Conetti atro dispoxitivo</string>
     <!-- The dialog text shown when additional devices are not available -->
-    <string name="sync_connect_device_dialog">Pe mandâ un feuggio, intra into conto Firefox almeno inte \'n atro dispoxitivo.</string>
+    <string name="sync_connect_device_dialog">Pe mandâ un feuggio, intra into conto NETGPU BROWSER almeno inte \'n atro dispoxitivo.</string>
     <!-- Confirmation dialog button -->
     <string name="sync_confirmation_button">Ò capio!</string>
     <!-- Share error message -->
@@ -700,14 +700,14 @@
     <!-- Title of QR Pairing Fragment -->
     <string name="sync_scan_code">Scançionn-a o còdice</string>
     <!-- Instructions on how to access pairing -->
-    <string name="sign_in_instructions"><![CDATA[Arvi Firefox in sciô computer e vanni chi <b>https://firefox.com/pair</b>]]></string>
+    <string name="sign_in_instructions"><![CDATA[Arvi NETGPU BROWSER in sciô computer e vanni chi <b>https://firefox.com/pair</b>]]></string>
     <!-- Text shown for sign in pairing when ready -->
     <string name="sign_in_ready_for_scan">Pronto pe-a scançion</string>
     <!-- Text shown for settings option for sign with pairing -->
     <string name="sign_in_with_camera">Acedi co-a fòtocamera</string>
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">Acedi con l’email</string>
-    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. Firefox Preview) -->
+    <!-- Text shown in confirmation dialog to sign out of account. The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="sign_out_confirmation_message_2">I dæti de navegaçion no saian ciù scincronizæ co-o conto %s, ma no saian scancelæ da sto dispoxitivo.</string>
     <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
     <string name="sign_out_disconnect">Disconnetti</string>
@@ -724,7 +724,7 @@
     <string name="preference_enhanced_tracking_protection">Proteçion anti-traciamento avansâ</string>
     <!-- Title for the description of enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_title">Navega sensa ese ascorio</string>
-    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: Fenix) -->
+    <!-- Description of enhanced tracking protection. The first parameter is the name of the application (For example: NETGPU BROWSER) -->
     <string name="preference_enhanced_tracking_protection_explanation">Mantegni i teu dæti pe ti mæximmo. %s o te protezze da-a magiô parte di elementi che te tracian in linia.</string>
     <!-- Text displayed that links to website about enhanced tracking protection -->
     <string name="preference_enhanced_tracking_protection_explanation_learn_more">Atre informaçioin</string>
@@ -842,16 +842,16 @@
     <!-- Placeholder text for the TextView in the Add to Homescreen dialog -->
     <string name="add_to_homescreen_text_placeholder">Nomme scorsaieu</string>
 
-    <!-- Preference for managing the settings for logins and passwords in Fenix -->
+    <!-- Preference for managing the settings for logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_logins_and_passwords">Acessi e poule segrete</string>
-    <!-- Preference for managing the saving of logins and passwords in Fenix -->
+    <!-- Preference for managing the saving of logins and passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins">Sarva acessi e poule segrete</string>
-    <!-- Preference option for asking to save passwords in Fenix -->
+    <!-- Preference option for asking to save passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_ask_to_save">Domanda primma de sarvâ</string>
-    <!-- Preference option for never saving passwords in Fenix -->
+    <!-- Preference option for never saving passwords in NETGPU BROWSER -->
     <string name="preferences_passwords_save_logins_never_save">No sarvâ mai</string>
 
-    <!-- Preference for syncing saved logins in Fenix -->
+    <!-- Preference for syncing saved logins in NETGPU BROWSER -->
     <string name="preferences_passwords_sync_logins">Scincronizza i acessi</string>
     <!-- Preference to access list of saved logins -->
     <string name="preferences_passwords_saved_logins">Acessi sarvæ</string>
@@ -1002,13 +1002,13 @@
     <string name="synced_tabs_connect_another_device">Conetti atro dispoxitivo.</string>
     <!-- Text displayed asking user to re-authenticate -->
     <string name="synced_tabs_reauth">Pe piaxei intra torna</string>
-    <!-- Text displayed when user has disabled tab syncing in Firefox Sync Account -->
+    <!-- Text displayed when user has disabled tab syncing in NETGPU BROWSER Sync Account -->
     <string name="synced_tabs_enable_tab_syncing">Pe piaxei ativa a scincroniaçion di feuggi.</string>
     <!-- Text displayed when user has no tabs that have been synced -->
-    <string name="synced_tabs_no_tabs">No ti gh\'æ feuggi averti in Firefox inti atri dispoxitivi.</string>
-    <!-- Text displayed in the synced tabs screen when a user is not signed in to Firefox Sync describing Synced Tabs -->
+    <string name="synced_tabs_no_tabs">No ti gh\'æ feuggi averti in NETGPU BROWSER inti atri dispoxitivi.</string>
+    <!-- Text displayed in the synced tabs screen when a user is not signed in to NETGPU BROWSER Sync describing Synced Tabs -->
     <string name="synced_tabs_sign_in_message">Amia \'na lista de tutti i feuggi da-i atri dispoxitivi.</string>
-    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to Firefox Sync -->
+    <!-- Text displayed on a button in the synced tabs screen to link users to sign in when a user is not signed in to NETGPU BROWSER Sync -->
     <string name="synced_tabs_sign_in_button">Acedi a Sync</string>
 
     <!-- Confirmation dialog button text when top sites limit is reached. -->

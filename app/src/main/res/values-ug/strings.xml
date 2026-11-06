@@ -25,7 +25,7 @@
     <!-- Title for the home screen section with recently saved bookmarks. -->
     <string name="recent_bookmarks_title">يېقىنقى خەتكۈچلەر</string>
 
-    <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
+    <!-- About content. The first parameter is the name of the application. (For example: NETGPU BROWSER) -->
     <string name="about_content">%1$s Mozilla ياسىغان.</string>
 
     <!-- Text for the negative button -->
@@ -123,14 +123,14 @@
     <!-- Preferences -->
     <!-- Title for the settings page-->
     <string name="settings">تەڭشەك</string>
-    <!-- Preference category for all links about Fenix -->
+    <!-- Preference category for all links about NETGPU BROWSER -->
     <string name="preferences_category_about">ھەققىدە</string>
     <!-- Preference for settings related to Search -->
     <string name="preferences_search">ئىزدەش</string>
     <!-- Preference for settings related to Search address bar -->
     <string name="preferences_search_address_bar">ئادرېس ستونى</string>
-    <!-- Preference linking to about page for Fenix
-        The first parameter is the name of the app defined in app_name (for example: Fenix) -->
+    <!-- Preference linking to about page for NETGPU BROWSER
+        The first parameter is the name of the app defined in app_name (for example: NETGPU BROWSER) -->
     <string name="preferences_about">ھەققىدە %1$s</string>
     <!-- Summary of tracking protection preference if tracking protection is set to on -->
     <string name="preferences_https_only_on">ئوچۇق</string>
@@ -252,7 +252,7 @@
 
     <!-- Onboarding -->
     <!-- Text for onboarding welcome message
-    The first parameter is the name of the app (e.g. Firefox Preview) -->
+    The first parameter is the name of the app (e.g. NETGPU BROWSER Preview) -->
     <string name="onboarding_header"> %sگە خۇش كەپسىز!</string>
 
     <!-- Automatic theme setting (will follow device setting) -->
