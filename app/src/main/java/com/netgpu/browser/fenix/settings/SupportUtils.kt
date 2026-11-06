@@ -88,7 +88,7 @@ object SupportUtils {
         return "https://support.mozilla.org/$langTag/kb/$escapedTopic"
     }
 
-    fun getNETGPU BROWSERAccountSumoUrl(): String {
+    fun getNetGpuBrowserAccountSumoUrl(): String {
         return "https://support.mozilla.org/kb/access-mozilla-services-firefox-account"
     }
 

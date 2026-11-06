@@ -60,7 +60,7 @@ class TopSitesTest {
 
     @SmokeTest
     @Test
-    fun verifyAddToNETGPU BROWSERHome() {
+    fun verifyAddToNetGpuBrowserHome() {
         val defaultWebPage = getGenericAsset(mockWebServer, 1)
 
         navigationToolbar {
@@ -68,7 +68,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -85,7 +85,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -112,7 +112,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -135,7 +135,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -157,7 +157,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -178,7 +178,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()
@@ -200,7 +200,7 @@ class TopSitesTest {
         }.openThreeDotMenu {
             expandMenu()
             verifyAddToShortcutsButton()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
             verifySnackBarText(getStringResource(R.string.snackbar_added_to_shortcuts))
         }.goToHomescreen {
             verifyExistingTopSitesList()

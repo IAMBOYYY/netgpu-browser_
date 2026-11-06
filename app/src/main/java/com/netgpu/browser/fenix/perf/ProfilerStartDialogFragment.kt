@@ -176,7 +176,12 @@ class ProfilerStartDialogFragment : AppCompatDialogFragment() {
                         onClick = {
                             viewStateObserver.value = CardState.WaitForProfilerToStart
                             executeStartProfilerOnClick(
-                                ProfilerSettings.valueOf(featureAndThreadsObserver.value),
+                                when (featureAndThreadsObserver.value) {
+                                    getString(R.string.profiler_filter_graphics) -> ProfilerSettings.Graphics
+                                    getString(R.string.profiler_filter_media) -> ProfilerSettings.Media
+                                    getString(R.string.profiler_filter_networking) -> ProfilerSettings.Networking
+                                    else -> ProfilerSettings.NetGpuBrowser
+                                },
                                 startProfiler,
                             )
                         },

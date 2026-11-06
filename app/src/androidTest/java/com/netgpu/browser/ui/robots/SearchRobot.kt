@@ -111,7 +111,7 @@ class SearchRobot {
         }
     }
 
-    fun verifyNETGPU BROWSERSuggestResults(rule: ComposeTestRule, searchTerm: String, vararg searchSuggestions: String) {
+    fun verifyNetGpuBrowserSuggestResults(rule: ComposeTestRule, searchTerm: String, vararg searchSuggestions: String) {
         rule.waitForIdle()
         for (i in 1..RETRY_COUNT) {
             try {

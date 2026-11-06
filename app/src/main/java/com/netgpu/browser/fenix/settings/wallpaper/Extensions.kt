@@ -21,7 +21,7 @@ fun List<Wallpaper>.groupByDisplayableCollection(): Map<Wallpaper.Collection, Li
         val wallpapers = it.value.filter { wallpaper ->
             wallpaper.thumbnailFileState == Wallpaper.ImageFileState.Downloaded
         }
-        if (it.key.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
+        if (it.key.name == Wallpaper.classicNetGpuBrowserCollectionName) {
             it.key to listOf(Wallpaper.Default) + wallpapers
         } else {
             it.key to wallpapers
@@ -29,10 +29,10 @@ fun List<Wallpaper>.groupByDisplayableCollection(): Map<Wallpaper.Collection, Li
     }.toMap().let { result ->
         // Ensure the default is shown in the classic firefox collection even if those wallpapers are
         // missing
-        if (result.keys.any { it.name == Wallpaper.classicNETGPU BROWSERCollectionName }) {
+        if (result.keys.any { it.name == Wallpaper.classicNetGpuBrowserCollectionName }) {
             result
         } else {
-            result.plus(Wallpaper.ClassicNETGPU BROWSERCollection to listOf(Wallpaper.Default))
+            result.plus(Wallpaper.ClassicNetGpuBrowserCollection to listOf(Wallpaper.Default))
         }
     }
 
@@ -52,7 +52,7 @@ fun List<Wallpaper>.getWallpapersForOnboarding(): List<Wallpaper> {
     for (wallpaper in this) {
         if (wallpaper == Wallpaper.Default) continue
 
-        if (wallpaper.collection.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
+        if (wallpaper.collection.name == Wallpaper.classicNetGpuBrowserCollectionName) {
             classicWallpapers.add(wallpaper)
         } else {
             seasonalWallpapers.add(wallpaper)

@@ -114,7 +114,7 @@ class SettingsRobot {
     fun verifyAboutHeading() = assertAboutHeading()
 
     fun verifyRateOnGooglePlay() = assertTrue(rateOnGooglePlayHeading().waitForExists(waitingTime))
-    fun verifyAboutNETGPU BROWSERPreview() = assertTrue(aboutNETGPU BROWSERHeading().waitForExists(waitingTime))
+    fun verifyAboutNetGpuBrowserPreview() = assertTrue(aboutNetGpuBrowserHeading().waitForExists(waitingTime))
     fun verifyGooglePlayRedirect() = assertGooglePlayRedirect()
 
     class Transition {
@@ -132,9 +132,9 @@ class SettingsRobot {
             return BrowserRobot.Transition()
         }
 
-        fun openAboutNETGPU BROWSERPreview(interact: SettingsSubMenuAboutRobot.() -> Unit):
+        fun openAboutNetGpuBrowserPreview(interact: SettingsSubMenuAboutRobot.() -> Unit):
             SettingsSubMenuAboutRobot.Transition {
-            aboutNETGPU BROWSERHeading().click()
+            aboutNetGpuBrowserHeading().click()
             SettingsSubMenuAboutRobot().interact()
             return SettingsSubMenuAboutRobot.Transition()
         }
@@ -586,7 +586,7 @@ private fun rateOnGooglePlayHeading(): UiObject {
     return rateOnGooglePlay
 }
 
-private fun aboutNETGPU BROWSERHeading(): UiObject {
+private fun aboutNetGpuBrowserHeading(): UiObject {
     for (i in 1..RETRY_COUNT) {
         try {
             settingsList().scrollToEnd(LISTS_MAXSWIPES)

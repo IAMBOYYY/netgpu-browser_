@@ -15,14 +15,14 @@ class ExtensionsTest {
     @Test
     fun `GIVEN wallpapers that include the default WHEN grouped by collection THEN default will be added to classic firefox`() {
         val seasonalCollection = getSeasonalCollection("finally fall")
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
         val seasonalWallpapers = (0..5).map { generateSeasonalWallpaperCollection("${seasonalCollection.name}$it", seasonalCollection.name) }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers + seasonalWallpapers
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers + seasonalWallpapers
 
         val result = allWallpapers.groupByDisplayableCollection()
 
         assertEquals(2, result.size)
-        assertEquals(listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers, result[classicCollection])
+        assertEquals(listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers, result[classicCollection])
         assertEquals(seasonalWallpapers, result[seasonalCollection])
     }
 
@@ -31,13 +31,13 @@ class ExtensionsTest {
         val result = listOf(Wallpaper.Default).groupByDisplayableCollection()
 
         assertEquals(1, result.size)
-        assertEquals(listOf(Wallpaper.Default), result[Wallpaper.ClassicNETGPU BROWSERCollection])
+        assertEquals(listOf(Wallpaper.Default), result[Wallpaper.ClassicNetGpuBrowserCollection])
     }
 
     @Test
     fun `GIVEN wallpapers with thumbnails that have not downloaded WHEN grouped by collection THEN wallpapers without thumbnails will not be included`() {
         val seasonalCollection = getSeasonalCollection("finally fall")
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
         val downloadedSeasonalWallpapers = (0..5).map { generateSeasonalWallpaperCollection("${seasonalCollection.name}$it", seasonalCollection.name) }
         val nonDownloadedSeasonalWallpapers = (0..5).map {
             generateSeasonalWallpaperCollection(
@@ -46,12 +46,12 @@ class ExtensionsTest {
                 Wallpaper.ImageFileState.Error,
             )
         }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers + downloadedSeasonalWallpapers + nonDownloadedSeasonalWallpapers
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers + downloadedSeasonalWallpapers + nonDownloadedSeasonalWallpapers
 
         val result = allWallpapers.groupByDisplayableCollection()
 
         assertEquals(2, result.size)
-        assertEquals(listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers, result[classicCollection])
+        assertEquals(listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers, result[classicCollection])
         assertEquals(downloadedSeasonalWallpapers, result[seasonalCollection])
     }
 
@@ -77,8 +77,8 @@ class ExtensionsTest {
     fun `GIVEN two collections of appropriate size WHEN fetched for onboarding THEN result contains 3 seasonal and 2 classic`() {
         val seasonalCollection = getSeasonalCollection("finally fall")
         val seasonalWallpapers = (0..5).map { generateSeasonalWallpaperCollection("${seasonalCollection.name}$it", seasonalCollection.name) }
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers + seasonalWallpapers
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers + seasonalWallpapers
 
         val result = allWallpapers.getWallpapersForOnboarding()
 
@@ -100,8 +100,8 @@ class ExtensionsTest {
         val seasonalCollectionE = getSeasonalCollection("finally vacation")
         val seasonalWallpapersE = generateSeasonalWallpaperCollection("${seasonalCollectionE.name}$0", seasonalCollectionE.name)
 
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers + seasonalWallpapers +
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers + seasonalWallpapers +
             seasonalWallpaperB + seasonalWallpapersC + seasonalWallpaperD + seasonalWallpapersE
 
         val result = allWallpapers.getWallpapersForOnboarding()
@@ -115,8 +115,8 @@ class ExtensionsTest {
     fun `GIVEN seasonal collection of insufficient size WHEN grouped for onboarding THEN result contains all seasonal and the rest is classic`() {
         val seasonalCollection = getSeasonalCollection("finally fall")
         val seasonalWallpapers = generateSeasonalWallpaperCollection("${seasonalCollection.name}$0", seasonalCollection.name)
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers + seasonalWallpapers
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers + seasonalWallpapers
 
         val result = allWallpapers.getWallpapersForOnboarding()
 
@@ -127,8 +127,8 @@ class ExtensionsTest {
 
     @Test
     fun `GIVEN no seasonal collection WHEN grouped for onboarding THEN result contains all classic`() {
-        val classicNETGPU BROWSERWallpapers = (0..5).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers
+        val classicNetGpuBrowserWallpapers = (0..5).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers
 
         val result = allWallpapers.getWallpapersForOnboarding()
 
@@ -138,8 +138,8 @@ class ExtensionsTest {
 
     @Test
     fun `GIVEN insufficient items in classic collection WHEN grouped for onboarding THEN result contains all classic`() {
-        val classicNETGPU BROWSERWallpapers = (0..2).map { generateClassicNETGPU BROWSERWallpaper("firefox$it") }
-        val allWallpapers = listOf(Wallpaper.Default) + classicNETGPU BROWSERWallpapers
+        val classicNetGpuBrowserWallpapers = (0..2).map { generateClassicNetGpuBrowserWallpaper("firefox$it") }
+        val allWallpapers = listOf(Wallpaper.Default) + classicNetGpuBrowserWallpapers
 
         val result = allWallpapers.getWallpapersForOnboarding()
 
@@ -169,7 +169,7 @@ class ExtensionsTest {
         assertTrue(result.contains(Wallpaper.Default))
     }
 
-    private fun generateClassicNETGPU BROWSERWallpaper(name: String) = Wallpaper(
+    private fun generateClassicNetGpuBrowserWallpaper(name: String) = Wallpaper(
         name = name,
         textColor = 0L,
         cardColorLight = 0L,

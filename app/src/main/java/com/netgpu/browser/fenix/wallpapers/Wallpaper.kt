@@ -65,9 +65,9 @@ data class Wallpaper(
         we find a better way of handling the edge cases around this collection. It is generally
         safer to do comparison directly with the collection name.
         */
-        const val classicNETGPU BROWSERCollectionName = "classic-firefox"
-        val ClassicNETGPU BROWSERCollection = Collection(
-            name = classicNETGPU BROWSERCollectionName,
+        const val classicNetGpuBrowserCollectionName = "classic-firefox"
+        val ClassicNetGpuBrowserCollection = Collection(
+            name = classicNetGpuBrowserCollectionName,
             heading = null,
             description = null,
             learnMoreUrl = null,

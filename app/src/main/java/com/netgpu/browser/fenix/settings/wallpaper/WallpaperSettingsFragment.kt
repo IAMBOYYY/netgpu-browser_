@@ -62,7 +62,7 @@ class WallpaperSettingsFragment : Fragment() {
                         wallpaperGroups = if (FeatureFlags.wallpaperV2Enabled) {
                             wallpapers.groupByDisplayableCollection()
                         } else {
-                            mapOf(Wallpaper.ClassicNETGPU BROWSERCollection to wallpapers)
+                            mapOf(Wallpaper.ClassicNetGpuBrowserCollection to wallpapers)
                         },
                         defaultWallpaper = Wallpaper.Default,
                         selectedWallpaper = currentWallpaper,

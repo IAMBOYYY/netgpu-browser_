@@ -112,7 +112,7 @@ class SettingsSearchTest {
         homeScreen {
         }.openSearch {
             typeSearch("test")
-            verifyNETGPU BROWSERSuggestResults(
+            verifyNetGpuBrowserSuggestResults(
                 activityTestRule,
                 "test",
                 "NETGPU BROWSER Suggest",
@@ -144,7 +144,7 @@ class SettingsSearchTest {
         homeScreen {
         }.openSearch {
             typeSearch("test")
-            verifyNETGPU BROWSERSuggestResults(
+            verifyNetGpuBrowserSuggestResults(
                 activityTestRule,
                 "test",
                 "NETGPU BROWSER Suggest",

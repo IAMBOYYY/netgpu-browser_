@@ -346,7 +346,7 @@ class HomeScreenRobot {
 
     fun clickUndoSnackBarButton() = undoSnackBarButton.click()
 
-    fun clickNETGPU BROWSERLogo() = homepageWordmark.click()
+    fun clickNetGpuBrowserLogo() = homepageWordmark.click()
 
     fun verifyThoughtProvokingStories(enabled: Boolean) {
         if (enabled) {

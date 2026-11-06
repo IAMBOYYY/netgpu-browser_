@@ -61,7 +61,7 @@ class SettingsAboutTest {
             // ABOUT
             verifyAboutHeading()
             verifyRateOnGooglePlay()
-            verifyAboutNETGPU BROWSERPreview()
+            verifyAboutNetGpuBrowserPreview()
         }
     }
 
@@ -84,7 +84,7 @@ class SettingsAboutTest {
     }
 
     @Test
-    fun verifyAboutNETGPU BROWSERPreview() {
+    fun verifyAboutNetGpuBrowserPreview() {
         activityIntentTestRule.applySettingsExceptions {
             it.isJumpBackInCFREnabled = false
             it.isTCPCFREnabled = false
@@ -92,8 +92,8 @@ class SettingsAboutTest {
         homeScreen {
         }.openThreeDotMenu {
         }.openSettings {
-        }.openAboutNETGPU BROWSERPreview {
-            verifyAboutNETGPU BROWSERPreview()
+        }.openAboutNetGpuBrowserPreview {
+            verifyAboutNetGpuBrowserPreview()
         }
     }
 }

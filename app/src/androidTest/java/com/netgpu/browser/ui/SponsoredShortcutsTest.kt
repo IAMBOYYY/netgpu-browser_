@@ -158,7 +158,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(firstWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(firstWebPage.title)
         }.openNavigationToolbar {
@@ -166,7 +166,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(secondWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(secondWebPage.title)
         }.openNavigationToolbar {
@@ -174,7 +174,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(thirdWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(thirdWebPage.title)
         }.openNavigationToolbar {
@@ -182,7 +182,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fourthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifySponsoredShortcutDetails(sponsoredShortcutTitle, 2)
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle2, 3)
@@ -209,7 +209,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(firstWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(firstWebPage.title)
         }.openNavigationToolbar {
@@ -217,7 +217,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(secondWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(secondWebPage.title)
         }.openNavigationToolbar {
@@ -225,7 +225,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(thirdWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(thirdWebPage.title)
         }.openNavigationToolbar {
@@ -233,7 +233,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fourthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifyExistingTopSitesTabs(fourthWebPage.title)
         }.openNavigationToolbar {
@@ -241,7 +241,7 @@ class SponsoredShortcutsTest {
             verifyPageContent(fifthWebPage.content)
         }.openThreeDotMenu {
             expandMenu()
-        }.addToNETGPU BROWSERHome {
+        }.addToNetGpuBrowserHome {
         }.goToHomescreen {
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle, 2)
             verifySponsoredShortcutDoesNotExist(sponsoredShortcutTitle2, 3)

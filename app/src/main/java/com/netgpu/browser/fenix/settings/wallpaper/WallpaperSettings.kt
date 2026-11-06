@@ -122,7 +122,7 @@ private fun WallpaperGroupHeading(
     // and descriptions so they could be localized.
     // In the future, we may want to either use the dynamic wallpaper properties with localized fallbacks
     // or invest in a method of localizing the remote strings themselves.
-    if (collection.name == Wallpaper.classicNETGPU BROWSERCollectionName) {
+    if (collection.name == Wallpaper.classicNetGpuBrowserCollectionName) {
         Text(
             text = stringResource(R.string.wallpaper_classic_title, stringResource(R.string.firefox)),
             color = NetGpuBrowserTheme.colors.textSecondary,

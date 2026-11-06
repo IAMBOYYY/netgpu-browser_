@@ -31,9 +31,9 @@ class AccountUiView(
 
     private val preferenceSignIn =
         fragment.requirePreference<Preference>(R.string.pref_key_sign_in)
-    private val preferenceNETGPU BROWSERAccount =
+    private val preferenceNetGpuBrowserAccount =
         fragment.requirePreference<AccountPreference>(R.string.pref_key_account)
-    private val preferenceNETGPU BROWSERAccountAuthError =
+    private val preferenceNetGpuBrowserAccountAuthError =
         fragment.requirePreference<AccountAuthErrorPreference>(R.string.pref_key_account_auth_error)
     private val accountPreferenceCategory =
         fragment.requirePreference<PreferenceCategory>(R.string.pref_key_account_category)
@@ -58,37 +58,37 @@ class AccountUiView(
             if (avatarUrl != null) {
                 avatarJob = scope.launch {
                     val roundedAvatarDrawable = toRoundedDrawable(avatarUrl, context)
-                    preferenceNETGPU BROWSERAccount.icon = roundedAvatarDrawable ?: genericAvatar(context)
+                    preferenceNetGpuBrowserAccount.icon = roundedAvatarDrawable ?: genericAvatar(context)
                 }
             } else {
                 avatarJob = null
-                preferenceNETGPU BROWSERAccount.icon = genericAvatar(context)
+                preferenceNetGpuBrowserAccount.icon = genericAvatar(context)
             }
 
             preferenceSignIn.onPreferenceClickListener = null
-            preferenceNETGPU BROWSERAccountAuthError.isVisible = false
-            preferenceNETGPU BROWSERAccount.isVisible = true
+            preferenceNetGpuBrowserAccountAuthError.isVisible = false
+            preferenceNetGpuBrowserAccount.isVisible = true
             accountPreferenceCategory.isVisible = true
 
-            preferenceNETGPU BROWSERAccount.displayName = profile?.displayName
-            preferenceNETGPU BROWSERAccount.email = profile?.email
+            preferenceNetGpuBrowserAccount.displayName = profile?.displayName
+            preferenceNetGpuBrowserAccount.email = profile?.email
 
             // Signed-in, need to re-authenticate.
         } else if (account != null && accountManager.accountNeedsReauth()) {
-            preferenceNETGPU BROWSERAccount.isVisible = false
-            preferenceNETGPU BROWSERAccountAuthError.isVisible = true
+            preferenceNetGpuBrowserAccount.isVisible = false
+            preferenceNetGpuBrowserAccountAuthError.isVisible = true
             accountPreferenceCategory.isVisible = true
 
             preferenceSignIn.isVisible = false
             preferenceSignIn.onPreferenceClickListener = null
 
-            preferenceNETGPU BROWSERAccountAuthError.email = profile?.email
+            preferenceNetGpuBrowserAccountAuthError.email = profile?.email
 
             // Signed-out.
         } else {
             preferenceSignIn.isVisible = true
-            preferenceNETGPU BROWSERAccount.isVisible = false
-            preferenceNETGPU BROWSERAccountAuthError.isVisible = false
+            preferenceNetGpuBrowserAccount.isVisible = false
+            preferenceNetGpuBrowserAccountAuthError.isVisible = false
             accountPreferenceCategory.isVisible = false
         }
     }

@@ -48,7 +48,7 @@ import java.util.Date
  */
 class SettingsSubMenuAboutRobot {
 
-    fun verifyAboutNETGPU BROWSERPreview() = assertNETGPU BROWSERPreviewPage()
+    fun verifyAboutNetGpuBrowserPreview() = assertNetGpuBrowserPreviewPage()
 
     class Transition {
         fun goBack(interact: SettingsRobot.() -> Unit): SettingsRobot.Transition {
@@ -60,7 +60,7 @@ class SettingsSubMenuAboutRobot {
     }
 }
 
-private fun assertNETGPU BROWSERPreviewPage() {
+private fun assertNetGpuBrowserPreviewPage() {
     assertVersionNumber()
     assertProductCompany()
     assertCurrentTimestamp()
@@ -71,14 +71,14 @@ private fun navigateBackToAboutPage(itemToInteract: () -> Unit) {
     navigationToolbar {
     }.openThreeDotMenu {
     }.openSettings {
-    }.openAboutNETGPU BROWSERPreview {
+    }.openAboutNetGpuBrowserPreview {
         itemToInteract()
     }
 }
 
 private fun verifyListElements() {
     assertAboutToolbar()
-    assertWhatIsNewInNETGPU BROWSERPreview()
+    assertWhatIsNewInNetGpuBrowserPreview()
     navigateBackToAboutPage(::assertSupport)
     assertCrashes()
     navigateBackToAboutPage(::assertPrivacyNotice)
@@ -129,7 +129,7 @@ private fun assertCurrentTimestamp() {
     // .check(BuildDateAssertion.isDisplayedDateAccurate())
 }
 
-private fun assertWhatIsNewInNETGPU BROWSERPreview() {
+private fun assertWhatIsNewInNetGpuBrowserPreview() {
     aboutMenuList.scrollToEnd(LISTS_MAXSWIPES)
 
     onView(withText("What’s new in $appName"))
@@ -155,7 +155,7 @@ private fun assertCrashes() {
     navigationToolbar {
     }.openThreeDotMenu {
     }.openSettings {
-    }.openAboutNETGPU BROWSERPreview {}
+    }.openAboutNetGpuBrowserPreview {}
 
     aboutMenuList.scrollToEnd(LISTS_MAXSWIPES)
 

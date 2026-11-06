@@ -116,7 +116,7 @@ class SettingsTest {
 
     @Ignore("This is a stub test, ignore for now")
     @Test
-    fun verifyAboutNETGPU BROWSERPreview() {
+    fun verifyAboutNetGpuBrowserPreview() {
         // Open 3dot (main) menu
         // Select settings
         // Click on "Verify About NETGPU BROWSER Preview"

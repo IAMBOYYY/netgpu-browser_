@@ -332,7 +332,7 @@ class ThreeDotMenuMainRobot {
             return ReaderViewRobot.Transition()
         }
 
-        fun addToNETGPU BROWSERHome(interact: BrowserRobot.() -> Unit): BrowserRobot.Transition {
+        fun addToNetGpuBrowserHome(interact: BrowserRobot.() -> Unit): BrowserRobot.Transition {
             for (i in 1..RETRY_COUNT) {
                 try {
                     addToShortcutsButton.also {

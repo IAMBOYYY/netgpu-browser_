@@ -84,7 +84,7 @@ private val networking_threads = arrayOf(
  * Profiler settings enum for grouping features and settings together
  */
 enum class ProfilerSettings(val threads: Array<String>, val features: Array<String>) {
-    NETGPU BROWSER(firefox_threads, firefox_features),
+    NetGpuBrowser(firefox_threads, firefox_features),
     Graphics(graphics_threads, graphics_features),
     Media(media_threads, media_features),
     Networking(networking_threads, networking_features),
