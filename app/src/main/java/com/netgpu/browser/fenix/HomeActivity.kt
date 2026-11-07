@@ -1006,10 +1006,10 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
                     true,
                     searchEngine = engine,
                 )
-                engine?.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
+                engine.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
             } else {
                 components.useCases.searchUseCases.defaultSearch.invoke(searchTermOrURL, engine)
-                engine?.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
+                engine.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
             }
         }
 
