@@ -5,6 +5,7 @@
 package com.netgpu.browser
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.net.Uri
 import android.os.Build
 import android.os.Build.VERSION.SDK_INT
@@ -105,6 +106,7 @@ import com.netgpu.browser.utils.BrowsersCache
 import com.netgpu.browser.utils.Settings
 import com.netgpu.browser.utils.Settings.Companion.TOP_SITES_PROVIDER_MAX_THRESHOLD
 import com.netgpu.browser.wallpapers.Wallpaper
+import java.io.File
 import java.util.UUID
 import java.util.concurrent.TimeUnit
 
@@ -124,6 +126,28 @@ open class NetGpuBrowserApplication : LocaleAwareApplication(), Provider {
 
     var visibilityLifecycleCallback: VisibilityLifecycleCallback? = null
         private set
+
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base)
+
+        val previousHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
+            try {
+                getExternalFilesDir(null)?.let { dir ->
+                    File(dir, "crash_log.txt").appendText(
+                        "=== CRASH ===\n" +
+                            "thread: ${thread.name}\n" +
+                            "timestamp: ${System.currentTimeMillis()}\n" +
+                            throwable.stackTraceToString() +
+                            "\n",
+                    )
+                }
+            } catch (e: Throwable) {
+                // The crash logger must never crash itself.
+            }
+            previousHandler?.uncaughtException(thread, throwable)
+        }
+    }
 
     override fun onCreate() {
         // We measure ourselves to avoid a call into Glean before its loaded.
