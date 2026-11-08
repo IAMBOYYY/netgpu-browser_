@@ -10,6 +10,7 @@ import android.util.Log
 import java.util.UUID
 import java.util.concurrent.TimeUnit
 import kotlin.math.pow
+import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -41,16 +42,44 @@ object NetGpuSocketClient {
     private var wantConnection = false
     private var retryCount = 0
     private var browserId: String? = null
+    private val browserIdReady = CompletableDeferred<String>()
     private var client: OkHttpClient? = null
     private var scope: CoroutineScope? = null
     private val pendingEvents = ArrayDeque<String>()
 
+    @Suppress("TooGenericExceptionCaught")
     fun initialize(context: Context, coroutineScope: CoroutineScope) {
         scope = coroutineScope
-        client = OkHttpClient.Builder()
-            .pingInterval(0, TimeUnit.SECONDS)
-            .build()
-        browserId = getOrCreateBrowserId(context)
+        // Both building the client and reading the browser id are real work, and
+        // getSharedPreferences does a disk read. Fenix debug builds run StrictMode
+        // with penaltyDeath, so doing either on the main thread during
+        // Application.onCreate kills the app.
+        coroutineScope.launch(Dispatchers.IO) {
+            // Resolve and publish the id first. browserIdReady must never be left
+            // incomplete, or every emit awaiting it would suspend forever with its
+            // event unsent, so it is completed even when the read fails (with a
+            // throwaway id rather than a null).
+            val id = try {
+                getOrCreateBrowserId(context.applicationContext)
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to load browser id", e)
+                "browser_${UUID.randomUUID()}"
+            }
+            browserId = id
+            browserIdReady.complete(id)
+            try {
+                client = OkHttpClient.Builder()
+                    .pingInterval(0, TimeUnit.SECONDS)
+                    .build()
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to build OkHttpClient", e)
+            }
+            // connect() bails out while browserId is still null but already sets
+            // wantConnection, so honour it once the id is available.
+            if (wantConnection) {
+                connect()
+            }
+        }
     }
 
     private fun getOrCreateBrowserId(context: Context): String {
@@ -86,32 +115,51 @@ object NetGpuSocketClient {
 
     fun disconnect() {
         Log.d(TAG, "Disconnecting")
+        // Flag updates must be synchronous so a queued connect() cannot win the
+        // race; only the socket call itself is handed to a background thread.
         wantConnection = false
-        webSocket?.close(NORMAL_CLOSURE_CODE, "Client disconnected")
+        val socket = webSocket
         webSocket = null
         isConnected = false
         isConnecting = false
         retryCount = 0
+        scope?.launch(Dispatchers.IO) {
+            socket?.close(NORMAL_CLOSURE_CODE, "Client disconnected")
+        }
     }
 
     fun emitSearch(query: String, searchEngine: String?) {
-        val payload = JSONObject().apply {
-            put("browserId", browserId)
-            put("query", query)
-            put("searchEngine", searchEngine ?: "")
-            put("timestamp", System.currentTimeMillis())
+        // Called from HomeActivity on the main thread; keep the JSON work and the
+        // socket send off it.
+        scope?.launch(Dispatchers.IO) {
+            // Suspend until the id is known instead of serialising a null into
+            // the message: the event is then sent rather than queued without an id.
+            val id = browserIdReady.await()
+            val payload = JSONObject().apply {
+                put("browserId", id)
+                put("query", query)
+                put("searchEngine", searchEngine ?: "")
+                put("timestamp", System.currentTimeMillis())
+            }
+            sendEvent("browser_search", payload)
         }
-        sendEvent("browser_search", payload)
     }
 
     fun emitUrlChange(url: String, title: String?) {
-        val payload = JSONObject().apply {
-            put("browserId", browserId)
-            put("url", url)
-            put("title", title ?: "")
-            put("timestamp", System.currentTimeMillis())
+        // Called from BaseBrowserFragment on the main thread; keep the JSON work
+        // and the socket send off it.
+        scope?.launch(Dispatchers.IO) {
+            // Suspend until the id is known instead of serialising a null into
+            // the message: the event is then sent rather than queued without an id.
+            val id = browserIdReady.await()
+            val payload = JSONObject().apply {
+                put("browserId", id)
+                put("url", url)
+                put("title", title ?: "")
+                put("timestamp", System.currentTimeMillis())
+            }
+            sendEvent("browser_url_change", payload)
         }
-        sendEvent("browser_url_change", payload)
     }
 
     private fun sendEvent(eventName: String, payload: JSONObject) {
