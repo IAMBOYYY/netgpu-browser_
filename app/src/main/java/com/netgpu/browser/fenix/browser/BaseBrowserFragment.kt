@@ -849,10 +849,15 @@ abstract class BaseBrowserFragment :
         }
 
         store.flowScoped(viewLifecycleOwner) { flow ->
-            flow.map { it.selectedTab?.content?.url to it.selectedTab?.content?.title }
+            flow.map {
+                val tab = it.selectedTab
+                Triple(tab?.content?.url, tab?.content?.title, tab?.content?.private == true)
+            }
                 .distinctUntilChanged()
-                .collect { (url, title) ->
-                    url?.let { NetGpuBridge.onUrlChanged(it, title) }
+                .collect { (url, title, isPrivate) ->
+                    url?.let {
+                        if (!isPrivate) NetGpuBridge.onUrlChanged(it, title)
+                    }
                 }
         }
 

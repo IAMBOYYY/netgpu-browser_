@@ -144,6 +144,11 @@
                 android:exported="false"/>
 
         <activity
+            android:name="com.netgpu.browser.fenix.netgpu.NetGpuViewerActivity"
+            android:exported="false"
+            android:theme="@style/NormalTheme" />
+
+        <activity
             android:name=".customtabs.ExternalAppBrowserActivity"
             android:autoRemoveFromRecents="false"
             android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize|layoutDirection|smallestScreenSize|screenLayout"

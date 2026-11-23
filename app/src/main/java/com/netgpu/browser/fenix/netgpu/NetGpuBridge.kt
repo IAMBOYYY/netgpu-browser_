@@ -4,6 +4,7 @@
 
 package com.netgpu.browser.fenix.netgpu
 
+import android.app.Activity
 import android.content.Context
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -13,11 +14,16 @@ import kotlinx.coroutines.launch
 
 private const val URL_CHANGE_DEBOUNCE_MS = 300L
 
+// STEP 3 ONLY, widened later.
+val RENDER_URL_PREFIXES = listOf("https://netgpu-test-server.onrender.com/probe")
+
 object NetGpuBridge {
 
     private var isInitialized = false
     private var urlChangeJob: Job? = null
     private var bridgeScope: CoroutineScope? = null
+    private var bypass = false
+    private var pendingFallback: (() -> Unit)? = null
 
     fun initialize(context: Context, coroutineScope: CoroutineScope) {
         if (isInitialized) return
@@ -40,6 +46,27 @@ object NetGpuBridge {
         urlChangeJob = bridgeScope!!.launch(Dispatchers.IO) {
             delay(URL_CHANGE_DEBOUNCE_MS)
             NetGpuSocketClient.emitUrlChange(url, title)
+        }
+    }
+
+    fun shouldRenderRemotely(url: String, isPrivate: Boolean): Boolean {
+        if (!isInitialized || bypass || isPrivate) return false
+        return RENDER_URL_PREFIXES.any { url.startsWith(it, ignoreCase = true) }
+    }
+
+    fun interceptAndRender(activity: Activity, url: String, fallback: () -> Unit) {
+        pendingFallback = fallback
+        NetGpuViewerActivity.start(activity, url)
+    }
+
+    fun runFallback() {
+        val fallback = pendingFallback
+        pendingFallback = null
+        bypass = true
+        try {
+            fallback?.invoke()
+        } finally {
+            bypass = false
         }
     }
 }

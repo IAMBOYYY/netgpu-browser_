@@ -21,6 +21,8 @@ import okhttp3.Response
 import okhttp3.WebSocket
 import okhttp3.WebSocketListener
 import okio.ByteString
+import org.json.JSONArray
+import org.json.JSONException
 import org.json.JSONObject
 
 private const val TAG = "NetGpu"
@@ -37,6 +39,7 @@ object NetGpuSocketClient {
     private const val BACKOFF_MULTIPLIER = 2.0
 
     private var webSocket: WebSocket? = null
+    @Volatile
     private var isConnected = false
     private var isConnecting = false
     private var wantConnection = false
@@ -46,6 +49,13 @@ object NetGpuSocketClient {
     private var client: OkHttpClient? = null
     private var scope: CoroutineScope? = null
     private val pendingEvents = ArrayDeque<String>()
+
+    /**
+     * Receives server events as (event name, payload) pairs. Called on the OkHttp thread, so
+     * listeners are responsible for marshalling to the UI thread.
+     */
+    @Volatile
+    var eventListener: ((String, JSONObject) -> Unit)? = null
 
     @Suppress("TooGenericExceptionCaught")
     fun initialize(context: Context, coroutineScope: CoroutineScope) {
@@ -162,6 +172,41 @@ object NetGpuSocketClient {
         }
     }
 
+    fun emitRequest(requestId: String, url: String) {
+        // Called from the viewer on the main thread; keep the JSON work and the
+        // socket send off it.
+        scope?.launch(Dispatchers.IO) {
+            val id = browserIdReady.await()
+            val payload = JSONObject().apply {
+                put("browserId", id)
+                put("requestId", requestId)
+                put("url", url)
+            }
+            sendEvent("browser_request", payload)
+        }
+    }
+
+    fun emitStop(sessionId: String) {
+        scope?.launch(Dispatchers.IO) {
+            browserIdReady.await()
+            val payload = JSONObject().apply {
+                put("sessionId", sessionId)
+            }
+            sendEvent("browser_stop", payload)
+        }
+    }
+
+    fun isLinked() = isConnected
+
+    private fun sendBrowserHello() {
+        val id = browserId ?: return
+        val payload = JSONObject().apply {
+            put("browserId", id)
+            put("timestamp", System.currentTimeMillis())
+        }
+        sendEvent("browser_hello", payload)
+    }
+
     private fun sendEvent(eventName: String, payload: JSONObject) {
         val message = "42[\"$eventName\",${payload.toString()}]"
         synchronized(pendingEvents) {
@@ -216,7 +261,18 @@ object NetGpuSocketClient {
                     Log.d(TAG, "Socket.IO handshake complete (40)")
                     NetGpuSocketClient.isConnected = true
                     NetGpuSocketClient.retryCount = 0
+                    NetGpuSocketClient.sendBrowserHello()
                     NetGpuSocketClient.flushPendingEvents()
+                }
+                text.startsWith("42[") -> {
+                    try {
+                        val array = JSONArray(text.substring(2))
+                        val event = array.getString(0)
+                        val payload = array.getJSONObject(1)
+                        NetGpuSocketClient.eventListener?.invoke(event, payload)
+                    } catch (e: JSONException) {
+                        Log.e(TAG, "Failed to parse Socket.IO event: $text", e)
+                    }
                 }
                 else -> {
                     Log.d(TAG, "Unhandled message: $text")

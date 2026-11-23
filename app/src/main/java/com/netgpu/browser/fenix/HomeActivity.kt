@@ -875,6 +875,27 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
         requestDesktopMode: Boolean = false,
         historyMetadata: HistoryMetadataKey? = null,
     ) {
+        if (
+            !forceSearch &&
+            searchTermOrURL.isUrl() &&
+            NetGpuBridge.shouldRenderRemotely(searchTermOrURL, browsingModeManager.mode.isPrivate)
+        ) {
+            openToBrowser(from, customTabSessionId)
+            NetGpuBridge.interceptAndRender(this, searchTermOrURL.toNormalizedUrl()) {
+                openToBrowserAndLoad(
+                    searchTermOrURL,
+                    newTab,
+                    from,
+                    customTabSessionId,
+                    engine,
+                    forceSearch,
+                    flags,
+                    requestDesktopMode,
+                    historyMetadata,
+                )
+            }
+            return
+        }
         openToBrowser(from, customTabSessionId)
         load(searchTermOrURL, newTab, engine, forceSearch, flags, requestDesktopMode, historyMetadata)
     }
@@ -1006,10 +1027,14 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity {
                     true,
                     searchEngine = engine,
                 )
-                engine.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
+                engine.let {
+                    if (!mode.isPrivate) NetGpuBridge.onSearchIntent(searchTermOrURL, it.name)
+                }
             } else {
                 components.useCases.searchUseCases.defaultSearch.invoke(searchTermOrURL, engine)
-                engine.let { NetGpuBridge.onSearchIntent(searchTermOrURL, it.name) }
+                engine.let {
+                    if (!mode.isPrivate) NetGpuBridge.onSearchIntent(searchTermOrURL, it.name)
+                }
             }
         }
 
